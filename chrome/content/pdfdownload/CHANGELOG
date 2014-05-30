@@ -1,5 +1,11 @@
 CHANGELOG
 
+v0.9.1	:	2007-09-03
+
+ - Fixed a regression introduced with v0.9 regarding the open PDF feature: url with parameters
+   where not handled properly and there was an error trying to save such links.
+ - Added default option values.
+
 v0.9.0  :	2007-08-25
 
  - Fixed major issue in Mac OS: now the open PDF with an external viewer works fine. 

@@ -170,7 +170,7 @@ function mouseClick(aEvent) {
 		} catch(ex) {
 			answer.res = "showPopup";
 		}
-        handlePDF(answer,ext);
+        handlePDF(answer,ext,url);
         if (answer.res != "cancel") {
 			// we set the pdf link as a visited link!!
 			var referrer = makeURL(getCurrentLocation());
@@ -185,13 +185,13 @@ function mouseClick(aEvent) {
 	}
 }
 
-function handlePDF(params,ext) {
+function handlePDF(params,ext,normalizedUrl) {
     	if ((params.res == "showPopup") || 
 			((params.res == "openHtml") && ((params.url.indexOf("//localhost") != -1) || (params.url.indexOf("//127.0.0.1") != -1)))) {
 			window.openDialog("chrome://pdfdownload/content/questionBox.xul", "PDF Download", "chrome,modal,centerscreen,dialog,resizable",params,ext);
 		} 
         var isLocalFile = isLinkType("file:",params.url);
-        var fname = params.url.substring(params.url.lastIndexOf('/') + 1);
+        var fname = normalizedUrl.substring(normalizedUrl.lastIndexOf('/') + 1);
 		var openPDF = "";
 		if (params.res == "download") {
             if (isLocalFile) {
@@ -228,7 +228,7 @@ function handlePDF(params,ext) {
             if (isLocalFile) {
                 // since we are dealing with a local file, we cannot use the "View as HTML" option
                 params.res = "showPopup";
-                handlePDF(params,ext);
+                handlePDF(params,ext,normalizedUrl);
             } else {
 			    getMirror(encodeURIComponent(params.url));
             }
