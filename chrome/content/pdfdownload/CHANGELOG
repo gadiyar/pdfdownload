@@ -1,5 +1,11 @@
 CHANGELOG
 
+v0.7.9  :   2007-02-28
+ 
+ - Fixed bug occurring when the user clicks on a tag <a> that is without the attribute 'href'.
+ - Added support for PDF links that are in the Google personalized search page.
+ - Fixed bug in the way the PDF file is downloaded in a temporary directory in order to be opened by an external reader.
+
 v0.7.8  :   2006-12-09
 
  - Fixed tooltip bug: tooltips were displayed in a wrong position on PC with low screen resolution.

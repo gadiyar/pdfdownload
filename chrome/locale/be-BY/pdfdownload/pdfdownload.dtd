@@ -1,0 +1,53 @@
+<!ENTITY pdfdownload.createdByLabel "Аўтар">
+<!ENTITY pdfdownload.websiteLabel "Сайт">
+<!ENTITY pdfdownload.defaultActionLabel "Стандартнае дзеянне">
+<!ENTITY pdfdownload.showPopup "Паказваць усплывальны дыялог">
+<!ENTITY pdfdownload.downloadButton "Захаваць">
+<!ENTITY pdfdownload.openButton "Адкрыць">
+<!ENTITY pdfdownload.viewHtmlButton "Праглядзець у HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Ігнараваць PDF Download">
+<!ENTITY pdfdownload.cancelButton "Адмена">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download не можа знайсці Ваш PDF прагляднік. Калі ласка вылучыце яго ў наладах PDF Download!">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - Аб праекце">
+<!ENTITY pdfdownload.websiteTooltip "Наведаць старонку аўтара">
+<!ENTITY pdfdownload.moreInfo "Дадаткова:">
+<!ENTITY pdfdownload.readLicenseTooltip "Чытаць ліцэнзійную дамову канчатковага карыстача">
+<!ENTITY pdfdownload.license "Ліцэнзія">
+<!ENTITY pdfdownload.readChangelogTooltip "Глядзець спіс зменаў">
+<!ENTITY pdfdownload.changelog "Спіс зменаў">
+<!ENTITY pdfdownload.acknowledgments "Падзякі">
+<!ENTITY pdfdownload.siteListTitle "Выключэнні">
+<!ENTITY pdfdownload.optionsTitle "PDFDownload - Налады">
+<!ENTITY pdfdownload.optionsGeneralTab "Асноўныя">
+<!ENTITY pdfdownload.optionsPDFTab "Адкрыццё PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Канвертаванне PDF у HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Дадаткова">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Меню прыладаў">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Паказваць PDF Download у панэлі прыладаў Firefox">
+<!ENTITY pdfdownload.optionsOpenLink "Як адчыняць PDF спасылкі, выкарыстаючы Firefox PDF убудова:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Як адчыняць HTML версію PDF файлаў:">
+<!ENTITY pdfdownload.optionsSameTab "Адчыняць у гэтай укладцы">
+<!ENTITY pdfdownload.optionsNewTab "Адчыняць у новай укладцы">
+<!ENTITY pdfdownload.optionsNewWindow "Адчыняць у новым акне">
+<!ENTITY pdfdownload.optionsOpenPdf "Адкрыццё файлаў PDF:">
+<!ENTITY pdfdownload.optionsUsePlugin "Выкарыстаць Firefox па змаўчанні">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Выкарыстаць стандартны сродак прагляду">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Выкарыстаць гэты сродак прагляду:">
+<!ENTITY pdfdownload.optionsBrowse "Агляд...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Вылучыць сродак прагляду PDF">
+<!ENTITY pdfdownload.optionsExeFiles "Windows прыкладанні">
+<!ENTITY pdfdownload.optionsAllFiles "Усе файлы">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Паказаны сродак прагляду не з&apos;яўляецца выконваемым файлам!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Абнаўленне">
+<!ENTITY pdfdownload.optionsCheckUpdates "Праверыць абнаўленні">
+<!ENTITY pdfdownload.optionsHowToHelp "Як дапамагчы">
+<!ENTITY pdfdownload.optionsMakeDonation "Зрабіць ахвяраванне">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Малюначкі">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Паказваць малюнкі ў HTML версіі PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Каб можна было бачыць малюнкі, яны павінны быць захаваныя на нашым серверы.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Малюнкі будуць аўтаматычна выдаленыя праз адзін дзень.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Загрузіце файл PDF. Калі вы ўсталявалі тэчку загрузкі па змаўчанні ў наладах Firefox, ён аўтаматычна загрузіць файл у гэтую дырэкторыю; інакш вам трэба паказаць дырэкторыю, дзе захаваць файл.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Адкрыйце файл PDF. У залежнасці ад таго, што ўсталявана ў PDF наладах Закачак, файл PDF будзе адчынены ўсярэдзіне Firefox з убудоваю (ён павінен быць ужо ўсталяваны), або адчынены з вашым стандартным PDF прагляднікам, або адчынены з іншым прагляднікам, які вы наладзілі.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Праглядзець файл PDF як HTML. Файл PDF загрузіць знешняе люстэрка і ператворыцца ў HTML. Файл PDF аўтаматычна выдаляецца з люстэрка ў канцы канверсіі.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Адкрыйце файл PDF, бо Загрузка PDF не была ўсталяваная. Вы атрымаеце тое ж паводзіны Firefox меў перад усталёўкаю Загрузкі PDF.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Зачыніце гэты дыялог. Файл PDF будзе ні загружаў, ні адчыняўся і вы будзеце працягваць свой які займаецца серфінгам досвед.">

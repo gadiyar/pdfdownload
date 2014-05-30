@@ -1,43 +1,53 @@
 <!ENTITY pdfdownload.createdByLabel "Laget av:">
-<!ENTITY pdfdownload.websiteLabel "Webside">
+<!ENTITY pdfdownload.websiteLabel "Nettside">
 <!ENTITY pdfdownload.defaultActionLabel "Standard handling">
-<!ENTITY pdfdownload.showPopup "Vis dialogvindu">
+<!ENTITY pdfdownload.showPopup "Vis sprettopp-dialog">
 <!ENTITY pdfdownload.downloadButton "Last ned">
 <!ENTITY pdfdownload.openButton "Åpne PDF">
-<!ENTITY pdfdownload.viewHtmlButton "Se som HTML">
+<!ENTITY pdfdownload.viewHtmlButton "Vis som HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Omgå PDF-nedlasting">
 <!ENTITY pdfdownload.cancelButton "Avbryt">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download kan ikke finne din forvalgte PDF-leser. Vennligst velg en i innstillingene!">
-<!ENTITY pdfdownload.aboutTitle "Om PDF Download">
-<!ENTITY pdfdownload.websiteTooltip "Se utviklers hjemmeside">
+<!ENTITY pdfdownload.osWarningMsg "PDF-nedlasting kan ikke finne din standard PDF-leser, vennligst velg en i innstillingene til PDF-nedlasting.">
+<!ENTITY pdfdownload.aboutTitle "Om PDF-nedlasting">
+<!ENTITY pdfdownload.websiteTooltip "Vis skribents nettside">
 <!ENTITY pdfdownload.moreInfo "Flere detaljer:">
-<!ENTITY pdfdownload.readLicenseTooltip "Vis sluttbrukeravtale">
+<!ENTITY pdfdownload.readLicenseTooltip "Les sluttbrukerlisens">
 <!ENTITY pdfdownload.license "Lisens">
-<!ENTITY pdfdownload.readChangelogTooltip "Vis prosjektlogg">
-<!ENTITY pdfdownload.changelog "Prosjektlogg">
-<!ENTITY pdfdownload.acknowledgments "Takk til">
-<!ENTITY pdfdownload.siteListTitle "Utelatelser">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - Innstillinger">
+<!ENTITY pdfdownload.readChangelogTooltip "Vis endringslogg">
+<!ENTITY pdfdownload.changelog "Endringslogg">
+<!ENTITY pdfdownload.acknowledgments "Anerkjennelser">
+<!ENTITY pdfdownload.siteListTitle "Unntak">
+<!ENTITY pdfdownload.optionsTitle "PDF-nedlasting - Innstillinger">
 <!ENTITY pdfdownload.optionsGeneralTab "Generelt">
-<!ENTITY pdfdownload.optionsPDFTab "Åpning av PDF-filer">
-<!ENTITY pdfdownload.optionsHTMLTab "PDF til HTML-omgjøring">
+<!ENTITY pdfdownload.optionsPDFTab "PDF-åpning">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF til HTML konvertering">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Flere detaljer">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Verktøymeny">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "Vis PDF Download i Firefox' verktøylinje">
-<!ENTITY pdfdownload.optionsOpenLink "Hvordan åpne PDF-linker med Firefoxs PDF-plugin:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hvordan åpne en HTML-versjon av PDF-filer:">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Vis PDF-nedlasting i Firefox verktøymeny">
+<!ENTITY pdfdownload.optionsOpenLink "Hvordan åpne PDF-lenker med Firefox PDF-tillegget">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hvordan åpne HTML-versjon av PDF-filer:">
 <!ENTITY pdfdownload.optionsSameTab "Åpne i samme fane">
 <!ENTITY pdfdownload.optionsNewTab "Åpne i ny fane">
 <!ENTITY pdfdownload.optionsNewWindow "Åpne i nytt vindu">
-<!ENTITY pdfdownload.optionsOpenPdf "Åpning av PDF-filer">
-<!ENTITY pdfdownload.optionsUsePlugin "Bruk PDF-plugin">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Bruk operativsystemets forvalgte leser">
-<!ENTITY pdfdownload.optionsUseCustomProgram "Bruk denne leseren:">
-<!ENTITY pdfdownload.optionsBrowse "Finn...">
-<!ENTITY pdfdownload.optionsBrowseTitle "Velg PDF-leser">
-<!ENTITY pdfdownload.optionsExeFiles "Windows-programmer">
+<!ENTITY pdfdownload.optionsOpenPdf "PDF-fil åpning:">
+<!ENTITY pdfdownload.optionsUsePlugin "Bruk PDF-tillegg">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Bruk OS standardprogram">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Bruk dette program:">
+<!ENTITY pdfdownload.optionsBrowse "Bla gjennom...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Velg PDF-program">
+<!ENTITY pdfdownload.optionsExeFiles "Windows applikasjoner">
 <!ENTITY pdfdownload.optionsAllFiles "Alle filer">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Den valgte filen lar seg ikke kjøre!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Angitt program er ikke en kjørbar fil!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Oppdater">
 <!ENTITY pdfdownload.optionsCheckUpdates "Se etter oppdateringer">
-<!ENTITY pdfdownload.optionsHowToHelp "Hvordan kan du hjelpe">
-<!ENTITY pdfdownload.optionsMakeDonation "Gi en donasjon">
+<!ENTITY pdfdownload.optionsHowToHelp "Hvordan hjelpe">
+<!ENTITY pdfdownload.optionsMakeDonation "Gi et bidrag">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Bilder">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Vis bilder i HTML-versjon av PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "For å la deg se bildene må de lagres på vår tjener.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Bildene vil automatisk slettes etter en dag.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Last ned PDF-filen. Om du har angitt en standard nedlastingsmappe i Firefox-innstillingene vil filen automatisk lastes dit, hvis ikke må du angi hvor filen skal lagres.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Åpne PDF-filen. Avhengig av hva du har angitt i valgene for PDF-nedlasting vil PDF-filen bli åpnet i PDF-tillegget til Firefox (må være installert), eller åpnes med standard PDF-leser for OS, eller åpnet med annen viser som du har angitt.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Vis PDF-filen som HTML. PDF-filen vil bli lastet ned til en eksternt plassering og konvertert til HTML, filen fjernes så automatisk etterpå.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Åpne PDF-filen som om PDF-nedlasting ikke var installert. Ting vil virke som før installasjonen av PDF-nedlasting.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Lukk dialogen. PDF-filen vil ikke bli lastet ned eller åpnet, og du kan fortsette din nettsurfing.">

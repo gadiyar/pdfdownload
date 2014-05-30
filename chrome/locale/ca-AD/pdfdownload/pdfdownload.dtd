@@ -1,43 +1,53 @@
-<!ENTITY pdfdownload.createdByLabel "Creat per:">
-<!ENTITY pdfdownload.websiteLabel "Loc web">
-<!ENTITY pdfdownload.defaultActionLabel "Acció per defecte:">
-<!ENTITY pdfdownload.showPopup "Mostrar diàleg emergent:">
-<!ENTITY pdfdownload.downloadButton "Baixar-te'l">
-<!ENTITY pdfdownload.openButton "Obrir PDF">
-<!ENTITY pdfdownload.viewHtmlButton "Veure com a HTML">
-<!ENTITY pdfdownload.cancelButton "Cancel·lar">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download no pot trobar el teu lector de fitxers PDF per defecte. Si us plau, escull-ne un des de la mateixa finestra de diàleg del PDF Download!">
-<!ENTITY pdfdownload.aboutTitle "PDF Download - Quant a">
-<!ENTITY pdfdownload.websiteTooltip "Veure el lloc web de l'autor">
-<!ENTITY pdfdownload.moreInfo "Més detalls:">
-<!ENTITY pdfdownload.readLicenseTooltip "Llegeix la llicència final d'usuari">
-<!ENTITY pdfdownload.license "Llicència">
-<!ENTITY pdfdownload.readChangelogTooltip "Veure el registre de canvis">
-<!ENTITY pdfdownload.changelog "Registre de canvis">
-<!ENTITY pdfdownload.acknowledgments "AgaraÏments">
-<!ENTITY pdfdownload.siteListTitle "Excepcions">
-<!ENTITY pdfdownload.optionsTitle "PDFDownload - Opcions">
+<!ENTITY pdfdownload.createdByLabel "Created by:">
+<!ENTITY pdfdownload.websiteLabel "Website">
+<!ENTITY pdfdownload.defaultActionLabel "Default action">
+<!ENTITY pdfdownload.showPopup "Show popup dialog">
+<!ENTITY pdfdownload.downloadButton "Download it">
+<!ENTITY pdfdownload.openButton "Open PDF">
+<!ENTITY pdfdownload.viewHtmlButton "View as HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Bypass PDF Download">
+<!ENTITY pdfdownload.cancelButton "Cancel">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download can&apos;t find your default PDF reader. Please choose one in the PDF Download option dialog!">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - About">
+<!ENTITY pdfdownload.websiteTooltip "View author&apos;s website">
+<!ENTITY pdfdownload.moreInfo "More details:">
+<!ENTITY pdfdownload.readLicenseTooltip "Read end-user license">
+<!ENTITY pdfdownload.license "License">
+<!ENTITY pdfdownload.readChangelogTooltip "View Changelog">
+<!ENTITY pdfdownload.changelog "Changelog">
+<!ENTITY pdfdownload.acknowledgments "Acknowledgments">
+<!ENTITY pdfdownload.siteListTitle "Exceptions">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Options">
 <!ENTITY pdfdownload.optionsGeneralTab "General">
-<!ENTITY pdfdownload.optionsPDFTab "Obertura de PDF">
-<!ENTITY pdfdownload.optionsHTMLTab "Conversió de PDF a HTML">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "Més detalls">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Utilitats de menú.">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "Mostra PDF Download a l'opció de menú utilitats del Firefox">
-<!ENTITY pdfdownload.optionsOpenLink "Com obrir enllaços PDF emprant el connector PDF del Firefox:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Com obrir una versió en format HTML dels fitxers PDF:">
-<!ENTITY pdfdownload.optionsSameTab "Obrir a la mateixa pestanya">
-<!ENTITY pdfdownload.optionsNewTab "Obrir a una nova pestanya">
-<!ENTITY pdfdownload.optionsNewWindow "Obrir a una nova finestra">
-<!ENTITY pdfdownload.optionsOpenPdf "Obertura de fitxer Pdf:">
-<!ENTITY pdfdownload.optionsUsePlugin "Emprar l'acció per defecte del Firefox">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Emprar el visor per defecte del SO">
-<!ENTITY pdfdownload.optionsUseCustomProgram "Emprar el següent visor:">
-<!ENTITY pdfdownload.optionsBrowse "Navega...">
-<!ENTITY pdfdownload.optionsBrowseTitle "Escull visor de PDF">
-<!ENTITY pdfdownload.optionsExeFiles "Aplicacions Windows">
-<!ENTITY pdfdownload.optionsAllFiles "Tots els fitxers">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "El fitxer seleccionat no és executable!">
-<!ENTITY pdfdownload.optionsUpdateLabel "Actualitza">
-<!ENTITY pdfdownload.optionsCheckUpdates "Comprova actualitzacions">
-<!ENTITY pdfdownload.optionsHowToHelp "Com ajudar">
-<!ENTITY pdfdownload.optionsMakeDonation "Fes una donació">
+<!ENTITY pdfdownload.optionsPDFTab "PDF opening">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF to HTML conversion">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "More details">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Tools Menu">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Show PDF Download item in Tools Firefox Menu">
+<!ENTITY pdfdownload.optionsOpenLink "How to open PDF links using Firefox PDF plugin:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "How to open HTML version of PDF files:">
+<!ENTITY pdfdownload.optionsSameTab "Open in the same tab">
+<!ENTITY pdfdownload.optionsNewTab "Open in a new tab">
+<!ENTITY pdfdownload.optionsNewWindow "Open in a new window">
+<!ENTITY pdfdownload.optionsOpenPdf "PDF file opening:">
+<!ENTITY pdfdownload.optionsUsePlugin "Use PDF plugin">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Use OS default viewer">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Use this viewer:">
+<!ENTITY pdfdownload.optionsBrowse "Browse...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Choose PDF Viewer">
+<!ENTITY pdfdownload.optionsExeFiles "Windows Applications">
+<!ENTITY pdfdownload.optionsAllFiles "All Files">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "The viewer specified is not an executable file!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Update">
+<!ENTITY pdfdownload.optionsCheckUpdates "Check updates">
+<!ENTITY pdfdownload.optionsHowToHelp "How to help">
+<!ENTITY pdfdownload.optionsMakeDonation "Make a donation">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Images">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Show images in the HTML version of PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "To let you see the images, they must be saved in our server.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "The images will be automatically deleted after one day.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Download the PDF file. If you have set a default download directory in the Firefox options, it will automatically download the file to that directory; otherwise you will need to specify a directory where to save the file.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Open the PDF file. Depending on what you have set in the PDF Download options, the PDF file will be opened inside Firefox with the PDF plugin (that must have been already installed), or opened with your OS default PDF reader, or opened with the custom viewer you specified.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "View the PDF file as HTML. The PDF file will be downloaded by an external mirror and converted into HTML. The PDF file is automatically removed from the mirror at the end of the conversion.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Open the PDF file as PDF Download was not installed. You will get the same behavior Firefox had before installing PDF Download.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Close this dialog. The PDF file will be neither downloaded nor opened and you will continue your surfing experience.">

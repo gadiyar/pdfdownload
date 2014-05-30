@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Prikazi gi slikite vo HTML verzija na PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Slikite mora da se snimeni na nasiot server kako bi bile dostapni.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Slikite ce bidat avtomatski izbrisani posle eden den">
+<!ENTITY pdfdownload.tooltip.downloadButton "Download the PDF file. If you have set a default download directory in the Firefox options, it will automatically download the file to that directory; otherwise you will need to specify a directory where to save the file.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Open the PDF file. Depending on what you have set in the PDF Download options, the PDF file will be opened inside Firefox with the PDF plugin (that must have been already installed), or opened with your OS default PDF reader, or opened with the custom viewer you specified.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "View the PDF file as HTML. The PDF file will be downloaded by an external mirror and converted into HTML. The PDF file is automatically removed from the mirror at the end of the conversion.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Open the PDF file as PDF Download was not installed. You will get the same behavior Firefox had before installing PDF Download.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Close this dialog. The PDF file will be neither downloaded nor opened and you will continue your surfing experience.">

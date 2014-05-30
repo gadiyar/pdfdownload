@@ -15,7 +15,7 @@
    - The Original Code is "PDF Download".
    -
    - The Initial Developer of the Original Code is Denis Remondini.
-   - Portions created by the Initial Developer are Copyright (C) 2005-2006 Denis Remondini.  
+   - Portions created by the Initial Developer are Copyright (C) 2005-2007 Denis Remondini.  
    - All Rights Reserved.
    -
    - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
@@ -145,7 +145,7 @@
 				<groupbox>
 					<caption label="&pdfdownload.optionsUpdateLabel;"/>
 					<hbox>
-						<label value="PDF Download 0.7.8"/>
+						<label value="PDF Download 0.7.9"/>
 						<spacer flex="1"/>
 						<button label="&pdfdownload.optionsCheckUpdates;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');" />
 					</hbox>

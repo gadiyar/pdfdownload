@@ -1,0 +1,53 @@
+<!ENTITY pdfdownload.createdByLabel "Sáng tạo bởi:">
+<!ENTITY pdfdownload.websiteLabel "Website">
+<!ENTITY pdfdownload.defaultActionLabel "Thao tác mặc định">
+<!ENTITY pdfdownload.showPopup "Hiện hộp thoại popup">
+<!ENTITY pdfdownload.downloadButton "Tải xuống">
+<!ENTITY pdfdownload.openButton "Mở PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Xem dưới dạng HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Bỏ qua PDF Download">
+<!ENTITY pdfdownload.cancelButton "Hủy bỏ">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download không tìm được ứng dụng đọc PDF mặc định. Xin chọn ứng dụng trong hộp thoại tùy chọn PDF Download!">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - Thông tin">
+<!ENTITY pdfdownload.websiteTooltip "Xem website của tác giả">
+<!ENTITY pdfdownload.moreInfo "Thêm chi tiết:">
+<!ENTITY pdfdownload.readLicenseTooltip "Đọc giấy phép cho ngưòi sử dụng">
+<!ENTITY pdfdownload.license "Giấy phép">
+<!ENTITY pdfdownload.readChangelogTooltip "Xem lịch sử thay đổi">
+<!ENTITY pdfdownload.changelog "Lịch sử thay đổi">
+<!ENTITY pdfdownload.acknowledgments "Đóng góp">
+<!ENTITY pdfdownload.siteListTitle "Ngoại lệ">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Tùy Chọn">
+<!ENTITY pdfdownload.optionsGeneralTab "Tổng quát">
+<!ENTITY pdfdownload.optionsPDFTab "Mở PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Hoán chuyển PDF sang HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Thêm chi tiết">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menu Công Cụ">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Hiện PDF Download trong Menu Công Cụ của Firefox">
+<!ENTITY pdfdownload.optionsOpenLink "Mở liên kết PDF sử dụng PDF plugin của Firefox:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Mở dạng HTML của các tệp PDF:">
+<!ENTITY pdfdownload.optionsSameTab "Mở trong cùng thẻ">
+<!ENTITY pdfdownload.optionsNewTab "Mở trong thẻ mới">
+<!ENTITY pdfdownload.optionsNewWindow "Mở trong cửa sổ mới">
+<!ENTITY pdfdownload.optionsOpenPdf "Mở tệp PDF:">
+<!ENTITY pdfdownload.optionsUsePlugin "Dùng PDF plugin">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Dùng ứng dụng mặc định của hệ thống">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Dùng ứng dụng này:">
+<!ENTITY pdfdownload.optionsBrowse "Tìm...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Chọn Ứng Dụng Xem PDF">
+<!ENTITY pdfdownload.optionsExeFiles "Ứng Dụng Windows">
+<!ENTITY pdfdownload.optionsAllFiles "Tất Cả Tệp">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Ứng dụng chọn không phải là tệp ứng dụng!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Cập nhật">
+<!ENTITY pdfdownload.optionsCheckUpdates "Kiểm tra cập nhật">
+<!ENTITY pdfdownload.optionsHowToHelp "Bạn trợ giúp thế nào">
+<!ENTITY pdfdownload.optionsMakeDonation "Quyên tặng">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Hình ảnh">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Hiện hình ảnh trong dạng HTML của PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Để bạn xem được hình ảnh, chúng phải được lưu trên máy chủ của chúng tôi.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Các hình ảnh sẽ tự động bị xóa sau một ngày.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Tải tệp PDF xuống. Nếu bạn đã định một thư mục mặc định trong Tùy Chọn của Firefox, PDF Download sẽ tự động tải tệp xuống thư mục đó; không thì bạn sẽ phải chỉ định một thư mục để lưu tệp.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Mở tệp PDF. Tùy theo những gì bạn đã định trong các tùy chọn của PDF Download, tệp PDF sẽ mở trong Firefox với PDF plugin (đã được gắn), hay mở với ứng dụng đọc PDF mặc định của hệ thống, hay mở với ứng dụng bạn đã định.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Xem tệp PDF dưới dạng HTML. Tệp PDF sẽ được tải bởi một máy chủ bên ngoài và hoán chuyển sang HTML. Máy chủ sẽ tự động xóa tệp PDF sau khi hoán chuyển.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Mở tệp PDF như trong trường hợp PDF Download chưa được gắn. Bạn sẽ thấy cách xử lý của Firefox trước khi gắn PDF Download.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Đóng hộp thoại này. Tệp PDF sẽ không được tải và không được mở, và bạn sẽ tiếp tục lướt mạng như thường.">

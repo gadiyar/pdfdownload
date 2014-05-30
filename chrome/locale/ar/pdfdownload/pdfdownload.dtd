@@ -17,7 +17,7 @@
 <!ENTITY pdfdownload.changelog "تاريخ الإصدارات">
 <!ENTITY pdfdownload.acknowledgments "المصادر">
 <!ENTITY pdfdownload.siteListTitle "إستثناءات">
-<!ENTITY pdfdownload.optionsTitle "خصثائص الإمتداد">
+<!ENTITY pdfdownload.optionsTitle "خصائص الإمتداد">
 <!ENTITY pdfdownload.optionsGeneralTab "عام">
 <!ENTITY pdfdownload.optionsPDFTab "فتح الملف">
 <!ENTITY pdfdownload.optionsHTMLTab "التحويل من PDF إلى HTML">
