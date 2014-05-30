@@ -1,7 +1,17 @@
 <!ENTITY pdfdownload.CreatedByLabel "Creato da:">
 <!ENTITY pdfdownload.WebsiteLabel "Sito web">
-<!ENTITY pdfdownload.DownloadQuestionLabel "Il file che hai selezionato è un file PDF: cosa si desidera fare?">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
 <!ENTITY pdfdownload.DownloadButton "Salva">
 <!ENTITY pdfdownload.OpenButton "Apri in una nuova scheda">
 <!ENTITY pdfdownload.ViewHtmlButton "Apri la versione HTML">
 <!ENTITY pdfdownload.CancelButton "Annulla">
+
+<!ENTITY pdfdownload.AboutTitle "PDF Download - Informazioni">
+<!ENTITY pdfdownload.WebsiteTooltip "Vedi sito web dell'autore">
+<!ENTITY pdfdownload.MoreInfo "Maggiori informazioni:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Leggi la licenza d'uso">
+<!ENTITY pdfdownload.License "Licenza">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Vedi Changelog">
+<!ENTITY pdfdownload.Changelog "Changelog">
+<!ENTITY pdfdownload.Acknowledgments "Ringraziamenti">
+

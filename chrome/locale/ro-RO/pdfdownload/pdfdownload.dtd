@@ -1,0 +1,16 @@
+<!ENTITY pdfdownload.CreatedByLabel "Creat de:">
+<!ENTITY pdfdownload.WebsiteLabel "Pagina web">
+<!ENTITY pdfdownload.DownloadQuestionLabel "Fisierul pe care l-ati selectat este un fisier PDF">
+<!ENTITY pdfdownload.DownloadButton "Salveaza-l">
+<!ENTITY pdfdownload.OpenButton "Deschide-l intr-o fereastra noua">
+<!ENTITY pdfdownload.ViewHtmlButton "Vizualizeaza-l in format HTML intr-o noua fereastra">
+<!ENTITY pdfdownload.CancelButton "Anuleaza">
+
+<!ENTITY pdfdownload.AboutTitle "PDF Download - Despre">
+<!ENTITY pdfdownload.WebsiteTooltip "Vezi site-ul autorului">
+<!ENTITY pdfdownload.MoreInfo "Mai multe detalii:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Citeste licenta de utilizare">
+<!ENTITY pdfdownload.License "Licenta">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Vezi jurnalul modificarilor">
+<!ENTITY pdfdownload.Changelog "Jurnalul modificarilor">
+<!ENTITY pdfdownload.Acknowledgments "Multumiri">

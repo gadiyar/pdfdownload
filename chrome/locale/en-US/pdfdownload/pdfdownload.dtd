@@ -1,7 +1,18 @@
 <!ENTITY pdfdownload.CreatedByLabel "Created by:">
 <!ENTITY pdfdownload.WebsiteLabel "Website">
-<!ENTITY pdfdownload.DownloadQuestionLabel "The file you have selected is a PDF file. What do you want to do?">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
 <!ENTITY pdfdownload.DownloadButton "Download it">
-<!ENTITY pdfdownload.OpenButton "Open it in a new tab">
+<!ENTITY pdfdownload.OpenButton "Open in a new tab">
 <!ENTITY pdfdownload.ViewHtmlButton "View as HTML in a new tab">
 <!ENTITY pdfdownload.CancelButton "Cancel">
+
+<!ENTITY pdfdownload.AboutTitle "PDF Download - About">
+<!ENTITY pdfdownload.WebsiteTooltip "View author's website">
+<!ENTITY pdfdownload.MoreInfo "More details:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Read end-user license">
+<!ENTITY pdfdownload.License "License">
+<!ENTITY pdfdownload.ReadChangelogTooltip "View Changelog">
+<!ENTITY pdfdownload.Changelog "Changelog">
+<!ENTITY pdfdownload.Acknowledgments "Acknowledgments">
+
+

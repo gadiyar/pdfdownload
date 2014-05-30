@@ -3,12 +3,13 @@
 <?xml-stylesheet href="chrome://pdfdownload/skin/pdfdownload.css" type="text/css"?>
 <!DOCTYPE window SYSTEM "chrome://pdfdownload/locale/pdfdownload.dtd">
 
-<dialog title="PDF Download - About" chromehidden="menubar toolbar location directories status extrachrome" id="genericAbout" onload="window.focus()" buttons="accept" xmlns:em="http://www.mozilla.org/2004/em-rdf#" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<dialog title="&pdfdownload.AboutTitle;" chromehidden="menubar toolbar location directories status extrachrome" id="genericAbout" onload="window.focus()" buttons="accept" xmlns:em="http://www.mozilla.org/2004/em-rdf#" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-<groupbox align="center" orient="horizontal">
+<groupbox align="left" orient="vertical">
+<hbox>
 <vbox>
   <text value="PDF Download" style="font-weight: bold; font-size: x-large;"/>
-  <label>ver. 0.2.5</label>
+  <label>ver. 0.3</label>
   <separator class="thin"/>
   <text value="&pdfdownload.CreatedByLabel;" style="font-weight: bold;"/>
   <label>Denis Remondini</label> 
@@ -17,18 +18,23 @@
   <label>denistn@gmail.com</label>
   <separator class="thin"/>
   <text value="&pdfdownload.WebsiteLabel;" style="font-weight: bold;"/>
-  <label class="link" tooltiptext="View Author's website" onclick="window.open('http://www.rabotat.org/firefox'); window.close();">http://www.rabotat.org/firefox</label>
-  <separator class="thin"/>
-  <text value="More details:" style="font-weight: bold;"/>
-   <hbox>
-	<label class="link" tooltiptext="Read end-user license" onclick="window.open('chrome://pdfdownload/content/LICENSE', '_blank')">License</label>
-	<spacer flex="1"/>
-	<label class="link" align="center" tooltiptext="View Changelog" onclick="window.open('chrome://pdfdownload/content/CHANGELOG', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">Changelog</label>
-	<spacer flex="1"/>
-  </hbox>
-
+  <label class="link" tooltiptext="&pdfdownload.WebsiteTooltip;" onclick="window.open('http://www.rabotat.org/firefox'); window.close();">http://www.rabotat.org/firefox</label>
 </vbox>
-<spring flex="1"/>
+<vbox>
+<spacer flex="1"/>
 <image src="chrome://pdfdownload/skin/pdfdownloadbig.png"/>
+<spacer flex="1"/>
+</vbox>
+</hbox>
+  <separator class="thin"/>
+  <separator class="thin"/>
+  <text value="&pdfdownload.MoreInfo;" style="font-weight: bold;"/>
+   <hbox flex="1">
+	<label class="link" tooltiptext="&pdfdownload.ReadLicenseTooltip;" onclick="window.open('chrome://pdfdownload/content/LICENSE', '_blank')">&pdfdownload.License;</label>
+	<spacer flex="1"/>
+	<label class="link" align="center" tooltiptext="&pdfdownload.ReadChangelogTooltip;" onclick="window.open('chrome://pdfdownload/content/CHANGELOG', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.Changelog;</label>
+	<spacer flex="1"/>
+  	<label class="link" align="center" tooltiptext="&pdfdownload.Acknowledgments;" onclick="window.open('chrome://pdfdownload/content/acknowledgments', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.Acknowledgments;</label>
+   </hbox>
 </groupbox>
 </dialog>

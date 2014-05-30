@@ -1,5 +1,16 @@
 CHANGELOG
 
+v0.3  :     2005-05-03
+
+  - Changed the service used to convert pdf to html. Now the extension don't use Adobe service anymore, because it	
+    didn't work always. Now the PDF to HTML conversion works always (depending only on the web server up-time).
+  - Changed support for local PDF files, because as made before it was pointless. Now my extension doesn't care about 
+    local files, because if you have a pdf file in your local filesystem you shouldn't need to open it from a html page!
+  - Added language support for Spanish, Romanian, German and French.
+
+v0.2.6  :   2005-05-01
+
+  - Added new functionality: now it is possible to know the PDF file size that you are going to save or view.
 
 v0.2.5  :	2005-04-30
 

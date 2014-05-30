@@ -8,12 +8,17 @@
     title="PDF Download"
     orient="horizontal"
     autostretch="always"
-    onload="sizeToContent()"
+    onload="sizeToContent(); getFileSize(window.arguments[0].url);"
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
+	
+  <stringbundle id="strings" src="chrome://pdfdownload/locale/pdfdownload.properties"/>
+
   <script type="application/x-javascript">
   <![CDATA[
+
+	var strbundle;		
 
 	// Cancel button handler
 	function doCancel() {
@@ -39,13 +44,56 @@
    		window.close();
 	}
 
+	function getFileSize(url) {
+		var xmlhttp
+		var done = 0;
+		strbundle = document.getElementById("strings");
+		var part1 = strbundle.getString("questionPart1");				
+		var descr = document.getElementById("QuestionLabel");
+		try {
+  			xmlhttp = new XMLHttpRequest();
+ 		} catch (e) {
+  			xmlhttp = false
+ 		}
+		if (xmlhttp) {
+			xmlhttp.open("HEAD", url, true);
+ 			xmlhttp.onreadystatechange=function() {
+  				if (xmlhttp.readyState == 4) {
+					if (xmlhttp.status == 200) {
+   						var size = xmlhttp.getResponseHeader("Content-Length");
+						if (size >= 1024*1024) {
+							size = size / (1024*1024);
+							part1 = part1 + " (" + size.toPrecision(3) + " MB)" ;
+						} else if (size >= 1024) {
+							size = size / 1024;
+							part1 = part1 + " (" + size.toPrecision(3) + " KB)";
+						} else {
+							part1 = part1 + " (" + size + " bytes)";
+						}
+						descr.value = part1 + strbundle.getString("questionPart2");
+						done = 1;
+					} else if (done == 0) {
+						descr.value = part1 + strbundle.getString("questionPart2");
+					} 
+				} else if (done == 0) {
+					descr.value = part1 + strbundle.getString("questionPart2");
+				}	 
+			}
+			xmlhttp.send(null);
+ 		}
+	}
+
 
   ]]>
   </script>
 
+  <hbox>
+  <vbox pack="center">
+    <image src="chrome://pdfdownload/skin/popup_dialog_question_mark.gif"/>
+  </vbox>
   <vbox flex="1">
     <separator class="thin"/>
-    <description value="&pdfdownload.DownloadQuestionLabel;"/>    
+    <description id="QuestionLabel" value=""/>    
     <separator class="thin"/>
     <hbox pack="center">    
 	<button id="download-button" label="&pdfdownload.DownloadButton;" oncommand="doDownload();"/>
@@ -54,5 +102,5 @@
   	<button id="cancel-button" label="&pdfdownload.CancelButton;" oncommand="doCancel();"/>/>
     </hbox>
   </vbox>
-
+  </hbox>
 </window>

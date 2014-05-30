@@ -107,25 +107,38 @@ function mouseClick(aEvent) {
     /* END of the code taken by an extension written by Ben Basson (Cusser) */
 	
     var url = targ.getAttribute("href");
-    if ( (!isLinkType("http:", url)) && (!isLinkType("file:",url)) ) {
+    if ( (!isLinkType("http", url)) && (!isLinkType("file:",url)) ) {
 	var dir = document.commandDispatcher.focusedWindow.location.href;
-	dir = dir.substring(0,dir.lastIndexOf('/'));
-	url = dir + "/" + url;
+	dir = dir.substring(0,dir.lastIndexOf('/')+1);
+	var pos = url.indexOf('/');
+	if (pos == 0) {
+		pos = dir.indexOf('/');
+		pos = dir.indexOf('/',pos+1);
+		pos = dir.indexOf('/',pos+1);
+		url = dir.substr(0,pos) + url;
+	} else {
+		url = dir + url;
+	}
     } 
 
     var lastDotPosition = url.lastIndexOf('.');
     var ext = url.substring(lastDotPosition + 1,url.length);
     if (ext.toLowerCase() == "pdf") {
-	var questionMarkPos = url.lastIndexOf('?');
-      if (questionMarkPos != -1) {
-		// In this case the url should be a server-side script with a pdf file name as parameter, so we don't need to 
- 		// do anything with that link.
-		// For example: http://www.google.it/search?hl=it&client=firefox-a&rls=org.mozilla%3Ait-IT%3Aofficial&q=test.pdf&btnG=Cerca&meta=
+	if (isLinkType("file:",url)) {
 		return;
+	} else {
+		var questionMarkPos = url.lastIndexOf('?');
+      	if (questionMarkPos != -1) {
+			// In this case the url should be a server-side script with a pdf file name as parameter, so we don't need to 
+ 			// do anything with that link.
+			// For example: http://www.google.it/search?hl=it&client=firefox-a&rls=org.mozilla%3Ait-IT%3Aofficial&q=test.pdf&btnG=Cerca&meta=
+			return;
+		}
 	}
 
 	var answer = new Object();
 	answer.res = "cancel";
+	answer.url = url;
 	window.openDialog("chrome://pdfdownload/content/questionBox.xul", "PDF Download", "chrome,modal,centerscreen,dialog,width=200,height=100",answer);
 	if (answer.res == "download") {
 		savelink(url);
@@ -135,7 +148,7 @@ function mouseClick(aEvent) {
 		browser.selectedTab = tab;
 	} else if (answer.res == "openHtml") {
 		var browser = getBrowser();
-		var pdf2htmlUrl = "http://access.adobe.com/access/convert.do?srcPdfUrl="+url+"&convertTo=html&visuallyImpaired=preferhtml&platform=Windows&comments=&preferHTMLReason=&platformOther=&comments=";
+		var pdf2htmlUrl = "http://ljusonoje.mine.nu/~sly/pdf2html.php?url="+url;
 		var tab = browser.addTab(pdf2htmlUrl);
 		browser.selectedTab = tab;
 	}
@@ -143,7 +156,6 @@ function mouseClick(aEvent) {
 	aEvent.stopPropagation();
     }
 }
-
 
 function isLinkType (linktype, link) {
 	try {

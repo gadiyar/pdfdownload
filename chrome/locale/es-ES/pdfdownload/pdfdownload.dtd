@@ -1,0 +1,19 @@
+<!ENTITY pdfdownload.CreatedByLabel "Creado por:">
+<!ENTITY pdfdownload.WebsiteLabel "Pagina web">
+<!ENTITY pdfdownload.DownloadQuestionLabel "El documento che has elegido es un documento en formato PDF">
+<!ENTITY pdfdownload.DownloadButton "guardar">
+<!ENTITY pdfdownload.OpenButton "Abrir en una nueva tab">
+<!ENTITY pdfdownload.ViewHtmlButton "Abrir la version html">
+<!ENTITY pdfdownload.CancelButton "Eliminar"> 
+
+<!ENTITY pdfdownload.AboutTitle "PDF Download - Información"> 
+<!ENTITY pdfdownload.WebsiteTooltip "Ver pagina web del autor"> 
+<!ENTITY pdfdownload.MoreInfo "Mayor información:"> 
+<!ENTITY pdfdownload.ReadLicenseTooltip "Leer licencia para el uso"> 
+<!ENTITY pdfdownload.License "Licencia"> 
+<!ENTITY pdfdownload.ReadChangelogTooltip "Ver Changelog"> 
+<!ENTITY pdfdownload.Changelog "Changelog">
+<!ENTITY pdfdownload.Acknowledgments "Grazias">
+
+
+ 

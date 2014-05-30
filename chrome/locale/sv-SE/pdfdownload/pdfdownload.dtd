@@ -1,8 +1,18 @@
 <!ENTITY pdfdownload.CreatedByLabel "Skapad av:">
-<!ENTITY pdfdownload.WebsiteLabel "hemsida">
-<!ENTITY pdfdownload.DownloadQuestionLabel "Filen du har valt är en PDF fil. Vad vill du göra?">
-<!ENTITY pdfdownload.DownloadButton "Spara till disk">
+<!ENTITY pdfdownload.WebsiteLabel "Webbsida">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "Spara på disk">
 <!ENTITY pdfdownload.OpenButton "Öppna i en ny flik">
-<!ENTITY pdfdownload.ViewHtmlButton "Öppna HTML version en ny flik">
+<!ENTITY pdfdownload.ViewHtmlButton "Visa som HTML i en ny flik">
 <!ENTITY pdfdownload.CancelButton "Avbryt">
+<!ENTITY pdfdownload.AboutTitle "PDF Download - Om...">
+<!ENTITY pdfdownload.WebsiteTooltip "Gå till utvecklarens hemsida">
+<!ENTITY pdfdownload.MoreInfo "Mer detalier:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Läs användar-licensen">
+<!ENTITY pdfdownload.License "Licens">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Visa ändringslogg">
+<!ENTITY pdfdownload.Changelog "ändringslogg">
+<!ENTITY pdfdownload.Acknowledgments "Tack till">
+
+
 
