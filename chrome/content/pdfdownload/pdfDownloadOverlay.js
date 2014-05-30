@@ -774,7 +774,7 @@ function isFirstPDFDownloadInstallation() {
 function init() {
 
     removeDownloadedFiles();
-	getBrowser().addEventListener("click", mouseClick, false);
+	getBrowser().addEventListener("click", mouseClick, true);
 	try {
 		//legacy options
 		retrieveLegacyOptions();
@@ -790,7 +790,7 @@ function init() {
 function uninit() {
 	unloadDownloadObserver();
     getBrowser().removeProgressListener(pdfDownloadUrlBarListener);
-	getBrowser().removeEventListener("click",mouseClick,false);
+	getBrowser().removeEventListener("click", mouseClick, true);
 	document.getElementById("menu_ToolsPopup").removeEventListener("popupshowing", pdfDownloadShared.togglePDFDownloadItem, false);
     window.removeEventListener("load", init, false);
 }

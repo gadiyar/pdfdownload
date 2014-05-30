@@ -1,5 +1,9 @@
 CHANGELOG
 
+v1.0.0.2:	2008-01-07
+
+ - Fixed regression related to middle-click detection.
+
 v1.0.0.1:	2008-01-02
 
  - Added compatibility with Firefox 3.0b3pre.
