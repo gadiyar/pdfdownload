@@ -45,6 +45,9 @@
 <!ENTITY pdfdownload.optionsHowToHelp "Cara ikut membantu">
 <!ENTITY pdfdownload.optionsMakeDonation "Berikan donasi">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Gambar">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Tampilkan gambar dalam versi HTML dari berkas PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Untuk memungkinkan Anda melihat gambar2 tsb, diharuskan untuk menyimpannya pada server kami.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Gambar tsb secara otomatis dihapus setelah satu hari.">

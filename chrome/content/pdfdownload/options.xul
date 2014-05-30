@@ -160,7 +160,7 @@
 				<groupbox>
 					<caption label="&pdfdownload.optionsUpdateLabel;"/>
 					<hbox>
-						<label value="PDF Download 0.9.3"/>
+						<label value="PDF Download 0.9.3.1"/>
 						<spacer flex="1"/>
 						<button label="&pdfdownload.optionsCheckUpdates;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');" />
 					</hbox>

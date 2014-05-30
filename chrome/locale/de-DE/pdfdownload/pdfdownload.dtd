@@ -26,13 +26,13 @@
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Eintrag für PDF-Download im Menü &quot;Extras&quot; anzeigen">
 <!ENTITY pdfdownload.optionsTooltips "Tooltips">
 <!ENTITY pdfdownload.optionsShowTooltips "Tooltips für Schaltflächen im Bestätigungs-Dialog anzeigen">
-<!ENTITY pdfdownload.optionsOpenLink "Beim Öffnen von PDF-Links mit dem Firefox-Plugin:">
+<!ENTITY pdfdownload.optionsOpenLink "Beim Öffnen von PDF-Links mit dem Firefox-Plug-in:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Beim Öffnen der HTML-Version einer PDF-Datei:">
 <!ENTITY pdfdownload.optionsSameTab "Im selben Tab/Fenster öffnen">
 <!ENTITY pdfdownload.optionsNewTab "In neuem Tab öffnen">
 <!ENTITY pdfdownload.optionsNewWindow "In neuem Fenster öffnen">
 <!ENTITY pdfdownload.optionsOpenPdf "Beim Öffnen von PDF-Dateien:">
-<!ENTITY pdfdownload.optionsUsePlugin "Standard-Plugin von Firefox benutzen">
+<!ENTITY pdfdownload.optionsUsePlugin "Standard-Plug-in von Firefox benutzen">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Standardbetrachter des Betriebssystems benutzen">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Diesen Betrachter benutzen:">
 <!ENTITY pdfdownload.optionsBrowse "Durchsuchen...">

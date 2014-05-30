@@ -45,6 +45,9 @@
 <!ENTITY pdfdownload.optionsHowToHelp "Ajutor">
 <!ENTITY pdfdownload.optionsMakeDonation "Faceţi o donaţie">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Imagini">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Arată imaginile în versiunea HTML a fişierului PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Pentru a fi vizualizate, imaginile trebuie salvate pe serverul nostru.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Imaginile salvate vor fi şterse automat după o zi.">

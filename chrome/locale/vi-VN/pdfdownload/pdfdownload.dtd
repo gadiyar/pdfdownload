@@ -45,6 +45,9 @@
 <!ENTITY pdfdownload.optionsHowToHelp "Bạn trợ giúp thế nào">
 <!ENTITY pdfdownload.optionsMakeDonation "Quyên tặng">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Hình ảnh">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Hiện hình ảnh trong dạng HTML của PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Để bạn xem được hình ảnh, chúng phải được lưu trên máy chủ của chúng tôi.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Các hình ảnh sẽ tự động bị xóa sau một ngày.">

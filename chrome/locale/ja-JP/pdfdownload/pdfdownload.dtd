@@ -46,7 +46,7 @@
 <!ENTITY pdfdownload.optionsMakeDonation "寄付をする">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "画像">
 <!ENTITY pdfdownload.options.width "80ex">
-<!ENTITY pdfdownload.options.height "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "PDF 内の画像を HTML で表示">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "画像を表示するには一旦サーバーに保存する必要があります。">

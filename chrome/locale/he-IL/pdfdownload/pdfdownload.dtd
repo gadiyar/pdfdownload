@@ -45,6 +45,9 @@
 <!ENTITY pdfdownload.optionsHowToHelp "כיצד לעזור">
 <!ENTITY pdfdownload.optionsMakeDonation "תרום ליוצרים">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "תמונות">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "PDF-של ה HTML-הראה תמונות בגרסת ה">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 ".על מנת שתוכל לצפות בתמונות, הן חייבות להישמר על שרתינו">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 ".התמונות ימחקו באופן עצמאי אחרי יום אחד">
