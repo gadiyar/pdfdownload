@@ -18,7 +18,8 @@
    - Portions created by the Initial Developer are Copyright (C) 2005-2007 Denis Remondini.  
    - All Rights Reserved.
    -
-   - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
+   - Portions created from Jan 2008 are Copyright (C) 2008 Nitro PDF, Inc. & Nitro PDF Pty Ltd. 
+   - All Rights Reserved.
    -
    - Alternatively, the contents of this file may be used under the terms of
    - either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -54,10 +55,10 @@
 		<hbox>
 			<vbox>
 				<text value="PDF Download" style="font-weight: bold; font-size: x-large;"/>
-				<label>ver. 2.0.0.0</label>
+				<hbox><label>ver.</label><label class="small-margin" id="version"/></hbox>
 				<separator class="thin"/>
 				<text value="&pdfdownload.createdByLabel;" style="font-weight: bold;"/>
-				<label>Denis Remondini</label> 
+				<label>Nitro PDF, Inc.</label> 
 				<separator class="thin"/>
 				<text value="E-mail" style="font-weight: bold;"/>
 				<label>pdfdownload@nitropdf.com</label>
@@ -82,4 +83,8 @@
 		<separator class="thin"/>
 		<label class="link" align="center" tooltiptext="&pdfdownload.acknowledgments;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/acknowledgments', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.acknowledgments;</label>
 	</groupbox>
+	
+	<script>
+ 		document.getElementById("version").setAttribute("value", pdfDownloadShared.getVersion());
+ 	</script>
 </dialog>

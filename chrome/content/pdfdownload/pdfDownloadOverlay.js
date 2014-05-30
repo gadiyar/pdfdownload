@@ -17,7 +17,8 @@
    - Portions created by the Initial Developer are Copyright (C) 2005-2007 Denis Remondini.  
    - All Rights Reserved.
    -
-   - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
+   - Portions created from Jan 2008 are Copyright (C) 2008 Nitro PDF, Inc. & Nitro PDF Pty Ltd. 
+   - All Rights Reserved.
    -
    - Alternatively, the contents of this file may be used under the terms of
    - either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -751,9 +752,7 @@ function generatePDFFromPageWithAction(action) {
     var left = 0.5;
     var right = 0.5;
     var pageOrientation = 0; // portrait
-/**
- * the margins are not used in PDF Download 2.0.0.0 but they should be in a future version 
- * 
+    
     try {
         top = sltPrefs.getCharPref("extensions.pdfdownload.webToPDF.margins.top");
     } catch (e) {}
@@ -766,12 +765,11 @@ function generatePDFFromPageWithAction(action) {
     try {
         right = sltPrefs.getCharPref("extensions.pdfdownload.webToPDF.margins.right");
     } catch (e) {}
-    */
+    
     try {
         pageOrientation = sltPrefs.getCharPref("extensions.pdfdownload.webToPDF.pageOrientation");
     } catch (e) {}
-    //saveAsPdfUrl = saveAsPdfUrl + "page="+pageOrientation+"&top="+top+"&bottom="+bottom+"&left="+left+"&right="+right+"&cURL="+encodeURIComponent(currentUrl);
-    saveAsPdfUrl = saveAsPdfUrl + "page="+pageOrientation+"&cURL="+encodeURIComponent(currentUrl);
+    saveAsPdfUrl = saveAsPdfUrl + "page="+pageOrientation+"&top="+top+"&bottom="+bottom+"&left="+left+"&right="+right+"&cURL="+encodeURIComponent(currentUrl);
     if (action == "download") {
         var tab = getBrowser().addTab(saveAsPdfUrl);
         getBrowser().selectedTab = tab;
@@ -895,7 +893,7 @@ function isFirstPDFDownloadInstallation() {
 	return false;
 }
 
-function checkPDFDownloadContextMenu(event) {
+function checkPDFDownloadContextMenu() {
     if (gContextMenu != null) {   
         var display = !(gContextMenu.inDirList || gContextMenu.onTextInput || gContextMenu.onLink ||
                        gContextMenu.isContentSelected || gContextMenu.onImage || gContextMenu.onCanvas);
@@ -907,7 +905,7 @@ function checkPDFDownloadContextMenu(event) {
 function init() {
 
     removeDownloadedFiles();
-    document.getElementById("contentAreaContextMenu").addEventListener("popupshowing", function(e) { checkPDFDownloadContextMenu(e); }, false);
+    document.getElementById("contentAreaContextMenu").addEventListener("popupshowing", checkPDFDownloadContextMenu, false);
     // Place the button just at the end of the navigation bar, only if it is 
     // the first time 
     var navbar = document.getElementById("nav-bar");
@@ -952,8 +950,15 @@ function uninit() {
 	unloadDownloadObserver();
     getBrowser().removeProgressListener(pdfDownloadUrlBarListener);
 	getBrowser().removeEventListener("click", mouseClick, true);
-	document.getElementById("menu_ToolsPopup").removeEventListener("popupshowing", pdfDownloadShared.togglePDFDownloadToolsItem, false);
-	document.getElementById("menu_FilePopup").removeEventListener("popupshowing", pdfDownloadShared.togglePDFDownloadFileItem, false);
+    if (document.getElementById("contentAreaContextMenu") != null) {
+        document.getElementById("contentAreaContextMenu").removeEventListener("popupshowing", checkPDFDownloadContextMenu, false);
+    }
+	if (document.getElementById("menu_ToolsPopup") != null) {
+        document.getElementById("menu_ToolsPopup").removeEventListener("popupshowing", pdfDownloadShared.togglePDFDownloadToolsItem, false);
+	}
+    if (document.getElementById("menu_FilePopup") != null) {
+        document.getElementById("menu_FilePopup").removeEventListener("popupshowing", pdfDownloadShared.togglePDFDownloadFileItem, false);
+    }
     window.removeEventListener("load", init, false);
     //register the uninstall observer
     UninstallObserver.unregister();

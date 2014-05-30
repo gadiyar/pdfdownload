@@ -17,7 +17,8 @@
    - Portions created by the Initial Developer are Copyright (C) 2005-2007 Denis Remondini.  
    - All Rights Reserved.
    -
-   - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
+   - Portions created from Jan 2008 are Copyright (C) 2008 Nitro PDF, Inc. & Nitro PDF Pty Ltd. 
+   - All Rights Reserved.
    -
    - Alternatively, the contents of this file may be used under the terms of
    - either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -58,10 +59,10 @@ function onOK(notExecutableFileMsg) {
 				return false;
 		}
     }
-    if (/*!checkMargin("marginTop") ||
+    if (!checkMargin("marginTop") ||
         !checkMargin("marginBottom") ||
         !checkMargin("marginLeft") ||
-        !checkMargin("marginRight") ||*/
+        !checkMargin("marginRight") ||
         (document.getElementById("webToPdfAction").selectedItem.id == "sendEmailRadio" && 
           !checkEmail("emailAddress")) ) {
             var strings = pdfDownloadShared.getBundle();
