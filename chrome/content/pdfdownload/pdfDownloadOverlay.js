@@ -148,7 +148,7 @@ function mouseClick(aEvent) {
 
 	var answer = new Object();
 	answer.res = "cancel";
-	answer.url = url;
+	answer.url = originalUrl;
       try {
 	  answer.res = sltPrefs.getCharPref("extensions.pdfdownload.defaultAction");
       } catch(ex) {
@@ -161,7 +161,7 @@ function mouseClick(aEvent) {
 	} 
 	var openPDF = "";
 	if (answer.res == "download") {
-		savelink(url);
+		savelink(originalUrl);
 	} else if (answer.res == "open") {
 		// we check how to open the PDF
 		try {
@@ -193,10 +193,10 @@ function mouseClick(aEvent) {
 		} else {
 			// In the preferences there was written to open the PDF file using a PDF viewer (default or custom).
 			var fname = url.substring(url.lastIndexOf('/') + 1);
-			saveTempFile(url,fname);	
+			saveTempFile(originalUrl,fname);	
 		}
 	} else if (answer.res == "openHtml") {
-		getMirror(url);
+		getMirror(originalUrl);
 	}
 	if (answer.res != "cancel") {
 		// we set the pdf link as a visited link!!

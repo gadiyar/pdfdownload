@@ -130,7 +130,7 @@
 						} else if (size >= 1024) {
 							size = size / 1024;
 							part1 = part1 + " (" + size.toPrecision(3) + " KB)";
-						} else {
+						} else if (size != null) {
 							part1 = part1 + " (" + size + " bytes)";
 						}
 						descr.value = part1 + strbundle.getString("questionPart2");

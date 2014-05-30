@@ -1,5 +1,10 @@
 CHANGELOG
 
+v0.7.3  :   2006-07-05
+ 
+ - Fixed bug about PDF links having parameters in the url. Now the entire url (with parameters) is used to download, open and view as html; before,
+   the parameters were removed from the url and some webservers didn't answer well to the download request.
+
 v0.7.2  :   2006-06-19
 
  - Fixed bug about local PDF files: now, when the PDF url is related to localhost or 127.0.0.1 it is 
@@ -15,7 +20,7 @@ v0.7.1  :   2006-06-14
      - the chance to remove the PDF Download item from the Tools menu of Firefox.
  - For now the support for local PDF files has been removed.
 
-v0.7	  :   2006-05-24
+v0.7    :   2006-05-24
 
  - Changed the way a PDF file is intercepted by PDF Download: now EVERY PDF file is intercepted!!
  - Added a default action: if set, PDF Download will not show the popup dialog but it will do the default action chosen by the user.
