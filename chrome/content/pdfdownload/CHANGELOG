@@ -1,5 +1,11 @@
 CHANGELOG
 
+v0.7.2  :   2006-06-19
+
+ - Fixed bug about local PDF files: now, when the PDF url is related to localhost or 127.0.0.1 it is 
+   not possible to use the "View as HTML" feature anymore (the other feature are still available). 
+   Before, it was allowed but it generated an error page. 
+
 v0.7.1  :   2006-06-14
 
  - Since the 0.7 version had some problems, this new version uses the old way to intercept the PDF files (hence

@@ -15,7 +15,7 @@
    - The Original Code is "PDF Download".
    -
    - The Initial Developer of the Original Code is Denis Remondini.
-   - Portions created by the Initial Developer are Copyright (C) 2005 Denis Remondini.  
+   - Portions created by the Initial Developer are Copyright (C) 2005-2006 Denis Remondini.  
    - All Rights Reserved.
    -
    - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
@@ -44,7 +44,7 @@
     title="PDF Download"
     orient="horizontal"
     align="stretch"
-    onload="sizeToContentTrick(); disableOpenBtn(window.arguments[1]); getFileSize(window.arguments[0].url);"
+    onload="sizeToContentTrick(); disableBtns(window.arguments[0].url,window.arguments[1]); getFileSize(window.arguments[0].url);"
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
@@ -80,13 +80,16 @@
    		window.close();
 	}
 
-	function disableOpenBtn(ext) {
+	function disableBtns(url,ext) {
 		/*
              * If it is a pdf.gz file, we disable the open button because usually a 
              * pdf viewer is not able to open this kind of file.
 		 */
 		if (ext == "pdf.gz") {
 			document.getElementById("open-button").disabled = true;
+		}
+		if ((url.indexOf("//localhost") != -1) || (url.indexOf("//127.0.0.1") != -1)) {
+			document.getElementById("openHTML-button").disabled = true;
 		}
 	}
 

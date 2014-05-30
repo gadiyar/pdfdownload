@@ -14,7 +14,7 @@
    - The Original Code is "PDF Download".
    -
    - The Initial Developer of the Original Code is Denis Remondini.
-   - Portions created by the Initial Developer are Copyright (C) 2005 Denis Remondini.  
+   - Portions created by the Initial Developer are Copyright (C) 2005-2006 Denis Remondini.  
    - All Rights Reserved.
    -
    - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
@@ -155,7 +155,8 @@ function mouseClick(aEvent) {
 	  answer.res = "showPopup";
 	}
 
-	if (answer.res == "showPopup") {
+	if ((answer.res == "showPopup") || 
+		((answer.res == "openHtml") && ((url.indexOf("//localhost") != -1) || (url.indexOf("//127.0.0.1") != -1)))) {
 		window.openDialog("chrome://pdfdownload/content/questionBox.xul", "PDF Download", "chrome,modal,centerscreen,dialog,resizable",answer,ext);
 	} 
 	var openPDF = "";
