@@ -7,7 +7,7 @@
 <!ENTITY pdfdownload.viewHtmlButton "HTML로 보기">
 <!ENTITY pdfdownload.openWithoutExtension "PDF 우회 다운로드">
 <!ENTITY pdfdownload.cancelButton "취소">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download는 기본 PDF 뷰어를 찾아낼 수 없습니다. PDF Download의 환경설정에서 1개를 선택하십시오!">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download가 기본 PDF 뷰어를 찾아낼 수 없습니다. PDF Download의 환경설정에서 1개를 선택하십시오!">
 <!ENTITY pdfdownload.about.Title "Nitro PDF Software의 PDF Download - 정보">
 <!ENTITY pdfdownload.about.width "55ex">
 <!ENTITY pdfdownload.websiteTooltip "저작자의 웹사이트 보기">
@@ -51,10 +51,10 @@
 <!ENTITY pdfdownload.popup.title "Nitro PDF Software의 PDF Download">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "PDF의 HTML 버전 내 그림 보이기">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "그림을 보도록 하면, 그것들은 반드시 우리 서버에 저장됩니다.">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "그림들은 1일 후 자동으로 삭제될 것입니다.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "그림들은 1일 후 자동으로 삭제됩니다.">
 <!ENTITY pdfdownload.options.CompanyInformation "회사 정보">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
-<!ENTITY pdfdownload.options.nitroDescription "Nitro PDF Software 에서 만든 PDF Download는 무료 제품입니다. Nitro PDF Software는 최초로 Adobe® Acrobat®의 진정한 대체품인 Nitro PDF Professional을 개발했습니다. Nitro PDF Professional은 제작, 변환, 편집, 보안, 조작, PDF를 통한 공동작업을 당신이 할 수 있게 합니다.">
+<!ENTITY pdfdownload.options.nitroDescription "Nitro PDF Software 에서 만든 PDF Download는 무료 제품입니다. Nitro PDF Software는 최초의 진정한 Adobe® Acrobat® 대체품인 Nitro PDF Professional을 개발했습니다. Nitro PDF Professional은 제작, 변환, 편집, 보안, 조작, PDF를 통한 공동작업을 당신이 할 수 있게 합니다.">
 <!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
 <!ENTITY pdfdownload.options.tryNitroPDFProfessional "Nitro PDF Professional 체험 -">
 <!ENTITY pdfdownload.options.free14dayTrial "14일 무료 체험.">

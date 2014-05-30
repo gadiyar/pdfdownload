@@ -47,14 +47,14 @@
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Imagini">
 <!ENTITY pdfdownload.options.width "80ex">
 <!ENTITY pdfdownload.options.height "55ex">
-<!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.popup.width "80ex">
 <!ENTITY pdfdownload.popup.title "PDF Download, creat de Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Arată imaginile în versiunea HTML a fişierului PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Pentru a fi vizualizate, imaginile trebuie salvate pe serverul nostru.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Imaginile salvate vor fi şterse automat după o zi.">
 <!ENTITY pdfdownload.options.CompanyInformation "Informaţii companie">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software">
-<!ENTITY pdfdownload.options.nitroDescription "PDF Download este un produs gratuit al companiei Nitro PDF Software, care a creat Nitro PDF Professional, prima alternativă viabilă a produsului Adobe&#174; Acrobat&#174;.">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download este un produs gratuit al companiei Nitro PDF Software, care a creat Nitro PDF Professional, prima alternativă viabilă a produsului Adobe® Acrobat®.">
 <!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
 <!ENTITY pdfdownload.options.tryNitroPDFProfessional "Probează Nitro PDF Professional -">
 <!ENTITY pdfdownload.options.free14dayTrial "varianta de încercare gratuită (14 zile).">

@@ -8,13 +8,13 @@ SHA1-Digest: jCy5+JoYHOK2bTDMyVwpC3zlf00=
 
 Name: chrome/pdfdownload.jar
 Digest-Algorithms: MD5 SHA1
-MD5-Digest: buBVQQYfSjnN2m4SfOrluw==
-SHA1-Digest: +YS6bWtRkW43aEXk4ICJCgoUf3s=
+MD5-Digest: RBMgChFnm2hTnz7hZdNjIA==
+SHA1-Digest: 3YySKFRiQwMa4cxEMLbr8Wh3mIo=
 
 Name: chrome.manifest
 Digest-Algorithms: MD5 SHA1
-MD5-Digest: I9K/xYifDaLQc4uPsuLUlg==
-SHA1-Digest: RvS9eu2GDYxOEAEJySJCcqC/Uj4=
+MD5-Digest: DhqpC71fOuEtp4deSldhvA==
+SHA1-Digest: 7wlXykm+HfUHdY2YPSFy4qWfTQA=
 
 Name: defaults/preferences/prefs.js
 Digest-Algorithms: MD5 SHA1
@@ -23,5 +23,5 @@ SHA1-Digest: Hc30hfoIpsGHbu34WpvmATWxWW8=
 
 Name: install.rdf
 Digest-Algorithms: MD5 SHA1
-MD5-Digest: aSnInuv8NKs8G+3MLgeXcQ==
-SHA1-Digest: mpuv91nyQ0YMyChz6uzRLUvyWSE=
+MD5-Digest: adIzbFOeoz4gJCkVC+9tMg==
+SHA1-Digest: 1CzaylQgHnIbC/pJ/rcBVyyPwBM=

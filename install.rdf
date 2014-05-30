@@ -7,7 +7,7 @@
     <em:type>2</em:type>
     <em:id>{37E4D8EA-8BDA-4831-8EA1-89053939A250}</em:id>
     <em:name>PDF Download</em:name>
-    <em:version>1.0.1.0</em:version>
+    <em:version>1.0.1.1</em:version>
     <em:description>Allows you to choose what to do with a PDF file: download it, view it with an external viewer or view it as HTML.</em:description>
     <em:creator>Denis Remondini</em:creator>
     <em:iconURL>chrome://pdfdownload/skin/pdfdownload.png</em:iconURL>
@@ -20,7 +20,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>1.5</em:minVersion>
-        <em:maxVersion>3.0b3pre</em:maxVersion>
+        <em:maxVersion>3.0b4pre</em:maxVersion>
       </Description>
     </em:targetApplication> 
     
@@ -28,7 +28,7 @@
 	<em:targetApplication>
 		<Description>
 			<em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
-			<em:maxVersion>3.0b3pre</em:maxVersion>
+			<em:maxVersion>3.0b4pre</em:maxVersion>
 			<em:minVersion>0.2</em:minVersion>
 		</Description>
 	</em:targetApplication>

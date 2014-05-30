@@ -1,53 +1,65 @@
 <!ENTITY pdfdownload.createdByLabel "Lavet af:">
 <!ENTITY pdfdownload.websiteLabel "Hjemmeside">
 <!ENTITY pdfdownload.defaultActionLabel "Standardhandling">
-<!ENTITY pdfdownload.showPopup "Vis popup dialog">
+<!ENTITY pdfdownload.showPopup "Vis popup-dialog">
 <!ENTITY pdfdownload.downloadButton "Download den">
 <!ENTITY pdfdownload.openButton "Åbn PDF">
-<!ENTITY pdfdownload.viewHtmlButton "Vis som HTML">
+<!ENTITY pdfdownload.viewHtmlButton "Se som HTML">
 <!ENTITY pdfdownload.openWithoutExtension "Omgå PDF Download">
 <!ENTITY pdfdownload.cancelButton "Annuller">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download kan ikke finde en standard PDF-fremviser. Vælg venligst en i indstillingerne for PDF Download!">
-<!ENTITY pdfdownload.aboutTitle "PDF Download - Om">
-<!ENTITY pdfdownload.websiteTooltip "Besøg programmørens hjemmeside">
-<!ENTITY pdfdownload.moreInfo "Flere oplysninger:">
-<!ENTITY pdfdownload.readLicenseTooltip "Læs slutbrugerlicens">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download kan ikke finde dit standard PDF program. Vælg venligst en i PDF Download indstillinger!">
+<!ENTITY pdfdownload.about.Title "PDF Download af Nitro PDF Software - Om">
+<!ENTITY pdfdownload.about.width "55ex">
+<!ENTITY pdfdownload.websiteTooltip "Se udviklerens hjemmeside">
+<!ENTITY pdfdownload.moreInfo "Flere detaljer:">
+<!ENTITY pdfdownload.readLicenseTooltip "Læs slutbruger licens">
 <!ENTITY pdfdownload.license "Licens">
-<!ENTITY pdfdownload.readChangelogTooltip "Vis versionsændringer">
-<!ENTITY pdfdownload.changelog "Versionsændringer">
+<!ENTITY pdfdownload.readChangelogTooltip "Se ændringslog">
+<!ENTITY pdfdownload.changelog "Ændringslog">
 <!ENTITY pdfdownload.acknowledgments "Tak til">
 <!ENTITY pdfdownload.siteListTitle "Undtagelser">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - Indstillinger">
+<!ENTITY pdfdownload.options.Title "PDF Download af Nitro PDF Software - Indstillinger">
 <!ENTITY pdfdownload.optionsGeneralTab "Generelt">
 <!ENTITY pdfdownload.optionsPDFTab "PDF åbning">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF til HTML konvertering">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "Flere oplysninger">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Værktøjslinie">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "Vis PDF Download i menupunktet Funktioner i Firefox">
-<!ENTITY pdfdownload.optionsOpenLink "Hvordan skal PDF-links åbnes ved brug af Firefox PDF-udvidelsen:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hvordan skal HTML version af PDF-filer åbnes:">
-<!ENTITY pdfdownload.optionsSameTab "Åbn i samme faneblad">
-<!ENTITY pdfdownload.optionsNewTab "Åbn i nyt faneblad">
-<!ENTITY pdfdownload.optionsNewWindow "Åbn i nyt vindue">
+<!ENTITY pdfdownload.options.UpdatesTab "Gratis opdateringer">
+<!ENTITY pdfdownload.options.CompanyTab "Om Nitro PDF Software">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menuen Funktioner">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Vis PDF Download punkt i Firefox menuen Funktioner">
+<!ENTITY pdfdownload.optionsTooltips "Værktøjstips">
+<!ENTITY pdfdownload.optionsShowTooltips "Vis værktøjstips i dialogboksen">
+<!ENTITY pdfdownload.optionsOpenLink "Hvordan PDF links åbnes med Firefox PDF plugin:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hvordan HTML versioner af PDF filer åbnes:">
+<!ENTITY pdfdownload.optionsSameTab "Åbn i samme fane">
+<!ENTITY pdfdownload.optionsNewTab "Åbn i en ny fane">
+<!ENTITY pdfdownload.optionsNewWindow "Åbn i et nyt vindue">
 <!ENTITY pdfdownload.optionsOpenPdf "PDF filåbning:">
-<!ENTITY pdfdownload.optionsUsePlugin "Benyt PDF-plugin">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Brug styresystemets standard-fremviser">
-<!ENTITY pdfdownload.optionsUseCustomProgram "Brug denne fremviser:">
+<!ENTITY pdfdownload.optionsUsePlugin "Anvend PDF plugin">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Anvend OS standard program">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Anvend dette program:">
 <!ENTITY pdfdownload.optionsBrowse "Gennemse...">
-<!ENTITY pdfdownload.optionsBrowseTitle "Vælg PDF-fremviser">
+<!ENTITY pdfdownload.optionsBrowseTitle "Vælg PDF program">
 <!ENTITY pdfdownload.optionsExeFiles "Windows programmer">
 <!ENTITY pdfdownload.optionsAllFiles "Alle filer">
-<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Den valgte fremviser er ikke en eksekverbar fil!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Det angivne program er ikke en eksekverbar fil!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Opdater">
-<!ENTITY pdfdownload.optionsCheckUpdates "Tjek for opdateringer">
-<!ENTITY pdfdownload.optionsHowToHelp "Hvordan du kan hjælpe">
-<!ENTITY pdfdownload.optionsMakeDonation "Giv en donation">
+<!ENTITY pdfdownload.optionsCheckUpdates "Check opdateringer">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Billeder">
-<!ENTITY pdfdownload.optionsShowImagesInHTML "Vis billeder i HTML-versionen af PDF-filen">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "For at kunne vise billederne skal de gemmes på vores server.">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Billederne slettes automatisk efter en dag.">
-<!ENTITY pdfdownload.tooltip.downloadButton "Download PDF-filen. Har du i indstillingerne for Firefox valgt en standardplacering for downloadede filer, vil den automatisk blive gemt her. Hvis ikke bliver du bedt om at vælge en mappe som filen gemmes i.">
-<!ENTITY pdfdownload.tooltip.openPDFButton "Åbn PDF-filen. Alt efter indstillingerne i PDF Download vil PDF-filen blive åbnet i Firefox med PDF-udvidelsen (som derfor allerede skal være installeret),  åbnet med standard PDF-fremviseren for dit styresystem eller åbnet med en PDF-fremviser efter eget valg.">
-<!ENTITY pdfdownload.tooltip.viewHtmlButton "Vis PDF-filen som HTML. PDF-filen vil blive hentet af en ekstern server og konverteret til HTML. PDF-filen fjernes automatisk fra den eksterne server efter konverteringen.">
-<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Åbn PDF-filen som om PDF Download ikke var installeret. Du opnår så samme funktionalitet som Firefox havde inden installationen af PDF Download.">
-<!ENTITY pdfdownload.tooltip.cancelButton "Luk dette vindue. PDF-filen vil hverken blive downloadet eller åbnet, og du kan fortsætte med at surfe.">
+<!ENTITY pdfdownload.options.width "85ex">
+<!ENTITY pdfdownload.options.height "58ex">
+<!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.popup.title "PDF Download af Nitro PDF Software">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Vis billeder i HTML versionen af PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "For at du kan se billederne, skal de gemmes på vores server">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Billederne bliver automatisk slettet efter en dag.">
+<!ENTITY pdfdownload.options.CompanyInformation "Virksomhedsinformation">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download er et gratis produkt fra  Nitro PDF Software teamet. Nitro PDF Software det første rigtige alternativ til Adobe® Acrobat®, Nitro PDF Professional. Nitro PDF Professional lader dig oprette, konvertere, redigere, sikre, håndtere og samarbejde ved hjælp af PDF.">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Prøv Nitro PDF Professional -">
+<!ENTITY pdfdownload.options.free14dayTrial "gratis 14-dages prøveperiode.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Download PDF filen med de indstillinger du har valgt i Firefox. I Indstillinger kan du sætte den til at spørge dig hver gang eller anføre en mappe der anvendes automatisk.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Åbner PDF filen med de indstillinger du har valgt i Firefox. For at redigere dine indstillinger, gå til Funktioner &gt; PDF Download af Nitro PDF Software - Indstillinger &gt; PDF Åbning.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Konvertér PDF filen til HTML og vis den i Firefox. For at gemme HTML filen, gå til menuen Filer i din browser.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Ignorer PDF Download indstillingerne og lad Firefox anvende dens vanlige måde at håndtere den slags filer på.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Luk denne dialog og gør intet med PDF filen.">

@@ -1,0 +1,65 @@
+<!ENTITY pdfdownload.createdByLabel "Аутор:">
+<!ENTITY pdfdownload.websiteLabel "Интернет страна">
+<!ENTITY pdfdownload.defaultActionLabel "Уобичајена акција">
+<!ENTITY pdfdownload.showPopup "Прикажи изборник акција">
+<!ENTITY pdfdownload.downloadButton "Преузми PDF датотеку">
+<!ENTITY pdfdownload.openButton "Отвори PDF датотеку">
+<!ENTITY pdfdownload.viewHtmlButton "Прикажи као HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Заобиђи PDF Download">
+<!ENTITY pdfdownload.cancelButton "Откажи">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download није у стању да пронађе PDF прегледач. Изаберите један у подешавањима за PDF Download!">
+<!ENTITY pdfdownload.about.Title "PDF Download by Nitro PDF Software - О програму">
+<!ENTITY pdfdownload.about.width "55ex">
+<!ENTITY pdfdownload.websiteTooltip "Посетите интернет страну аутора">
+<!ENTITY pdfdownload.moreInfo "Више детаља:">
+<!ENTITY pdfdownload.readLicenseTooltip "Прочитајте корисничку лиценцу ">
+<!ENTITY pdfdownload.license "Лиценца">
+<!ENTITY pdfdownload.readChangelogTooltip "Погледајте списак измена">
+<!ENTITY pdfdownload.changelog "Списак измена">
+<!ENTITY pdfdownload.acknowledgments "Признања">
+<!ENTITY pdfdownload.siteListTitle "Изузеци">
+<!ENTITY pdfdownload.options.Title "PDF Download by Nitro PDF Software - Подешавања">
+<!ENTITY pdfdownload.optionsGeneralTab "Општа">
+<!ENTITY pdfdownload.optionsPDFTab "Отварање PDF-а">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF у HTML превођење">
+<!ENTITY pdfdownload.options.UpdatesTab "Бесплатна унапређења">
+<!ENTITY pdfdownload.options.CompanyTab "О Nitro PDF Software-у">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Листа алата">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Прикажи PDF Download у листи алата">
+<!ENTITY pdfdownload.optionsTooltips "Објашњења">
+<!ENTITY pdfdownload.optionsShowTooltips "Прикажи објашњења у изборнику акција">
+<!ENTITY pdfdownload.optionsOpenLink "Начин отварања PDF веза коришћењем Firefox PDF додатка:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Начин отварања HTML верзије PDF датотеке:">
+<!ENTITY pdfdownload.optionsSameTab "Отвори на истом листу">
+<!ENTITY pdfdownload.optionsNewTab "Отвори на новом листу">
+<!ENTITY pdfdownload.optionsNewWindow "Отвори у новом прозору">
+<!ENTITY pdfdownload.optionsOpenPdf "Отварање PDF датотеке:">
+<!ENTITY pdfdownload.optionsUsePlugin "Користи PDF додатак">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Користи уобичајени прегледач на овом систему">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Користи овај прегледач:">
+<!ENTITY pdfdownload.optionsBrowse "Пронађи...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Избор PDF прегледача">
+<!ENTITY pdfdownload.optionsExeFiles "Windows Програми">
+<!ENTITY pdfdownload.optionsAllFiles "Све датотеке">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Изабрани прегледач није извршна датотека!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Унапређења">
+<!ENTITY pdfdownload.optionsCheckUpdates "Провери постојања унапређења">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Слике">
+<!ENTITY pdfdownload.options.width "85ex">
+<!ENTITY pdfdownload.options.height "58ex">
+<!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.popup.title "PDF Download by Nitro PDF Software">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Прикажи слике у HTML верзији PDF датотеке">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Да би сте видели слике, оне морају бити сачуване на нашем серверу.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Све слике ће аутоматски бити обрисане након једног дана.">
+<!ENTITY pdfdownload.options.CompanyInformation "Информације о компанији">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download је бесплатан производ Nitro PDF Software тима. Nitro PDF Software је направио прву, праву алтернативу Adobe&#174; Acrobat&#174; - у, Nitro PDF Professional. Nitro PDF Professional вам омогућује да правите, преводите, уређујете, обезбедите и манипулишете PDF датотекама.">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Пробајте Nitro PDF Professional -">
+<!ENTITY pdfdownload.options.free14dayTrial "бесплатан пробни период од 14 дана.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Преузми PDF датотеку користећи подешавања Firefox-а. У подешавањима можете поставити да увек будете питани у вези са преузимањем или можете одредити директоријум у коме ће датотеке аутоматски бити сачуване.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Отвори PDF датотеку користећи подешавања Firefox-а. Да уредите подешавања, идите на &apos;Алати &gt; PDF Download by Nitro PDF Software - Подешавања &gt; Отварање PDF-а&apos;.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Преведи PDF у HTML и онда прикажи у Firefox-у. HTML верзију датотеке можете и сачувати на ваш систем.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Заобиђи PDF Download подешавања и дозволи Firefox-у да рукује овом врстом датотека.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Затвори овај изборник акција и не ради ништа са PDF датотеком.">
