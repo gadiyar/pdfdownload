@@ -42,25 +42,10 @@ var sltPrefs = Components.classes['@mozilla.org/preferences-service;1']
 var fileCID  = '@mozilla.org/file/local;1';
 var fileIID  = Components.interfaces.nsILocalFile;
 
-// register the event listener for every link present inside the webpage
-function registerListener(){
-	var links = document.commandDispatcher.focusedWindow.document.getElementsByTagNameNS("*", "a");
-	var urls = new Array();
-	
-	if (links && links.length) {
-		var len = links.length;
-		
-		for (var i = 0; i < len; ++i) {
-			links[i].addEventListener("click",checkUrl,false);
-		}
-		
-	}
-}
-
 // check if the linked file is a pdf file. In that case, ask to the user what he wants to do with it.
 function checkUrl(event) {
    var url = event.currentTarget.href;
-   var ext = url.substr(url.lastIndexOf(".")+1,url.length);
+   var ext = url.substring(url.lastIndexOf('.') + 1,url.length);
    if (ext.toLowerCase() == "pdf") {
 	if (confirm("The file you are going to view is a PDF file.\nClick OK to download it!")) {
 		savelink(url);
@@ -87,14 +72,17 @@ function savelink(url) {
 	catch(e) {
 		// nothing to do
 	}
-	file.initWithPath(folder);
+	
 	var nsIFilePicker = Components.interfaces.nsIFilePicker;
 	var fp = Components.classes["@mozilla.org/filepicker;1"]
       	  .createInstance(nsIFilePicker);
 	fp.init(window, "Save PDF File", nsIFilePicker.modeSave);
 	fp.appendFilters(Components.interfaces.nsIFilePicker.filterAll);
       fp.defaultString = fname;
-	fp.displayDirectory = file;
+	if (folder) {
+		file.initWithPath(folder);
+		fp.displayDirectory = file;
+	}	
 
 	var res = fp.show();
 	if ((res == Components.interfaces.nsIFilePicker.returnOK) || (res == Components.interfaces.nsIFilePicker.returnReplace)) {
@@ -107,9 +95,56 @@ function savelink(url) {
 }
 
 
+function mousedown(aEvent) {
+
+    if (!aEvent)
+      return;
+      
+    if (aEvent.target)
+      var targ = aEvent.originalTarget;
+  
+    /* BEGIN of the code taken by an extension written by Ben Basson (Cusser)  */
+    if (targ.tagName.toUpperCase() != "A")
+    {
+      // Recurse until reaching root node
+      while (targ.parentNode) 
+      {
+        targ = targ.parentNode;
+        // stop if an anchor is located
+        if (targ.tagName && targ.tagName.toUpperCase() == "A")
+        break;
+      }
+      if (!targ.tagName || targ.tagName.toUpperCase() != "A")
+        return;
+    }
+    /* END of the code taken by an extension written by Ben Basson (Cusser) */
+
+    var url = targ.getAttribute("href");
+    if (url) url = url.toLowerCase();
+
+	var ext = url.substring(url.lastIndexOf('.') + 1,url.length);
+      if (ext.toLowerCase() == "pdf") {
+	if (confirm("The file you are going to view is a PDF file.\nClick OK to download it!")) {
+		savelink(url);
+	} else {
+		var browser = getBrowser();
+		var tab = browser.addTab(url);
+		browser.selectedTab = tab;
+	}
+	aEvent.stopPropagation();
+	aEvent.preventDefault();
+   }
+}
+
+function donothing() {
+	event.stopPropagation();
+	event.preventDefault();
+}
 
 function init() {
-	window._content.addEventListener('load', registerListener, true);
+	//window._content.addEventListener('load', registerListener, true);
+	getBrowser().addEventListener("click", mousedown, true);
+	getBrowser().addEventListener("mouseup", donothing, true);
 }
 
 // do the init on load

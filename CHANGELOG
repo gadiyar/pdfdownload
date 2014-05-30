@@ -1,0 +1,9 @@
+CHANGELOG
+
+v0.2.1:     2005-04-27
+  
+  Now it works also inside webpages with frame
+
+v0.2  :	2005-04-26
+
+  Fixed the problem that occurred if no "Default directory" is set in download options. 
