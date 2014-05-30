@@ -5,8 +5,9 @@
 <!ENTITY pdfdownload.downloadButton "Изтегли">
 <!ENTITY pdfdownload.openButton "Отвори PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Покажи като HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Отвори без PDF Даунлоуд">
 <!ENTITY pdfdownload.cancelButton "Отмени">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download не може да намери PDF четец по подразбиране. Моля, изберете такъв от настройките на PDF Download!">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download не може да намери подразбиращ се PDF четец . Моля, изберете такъв от настройките на PDF Download!">
 <!ENTITY pdfdownload.aboutTitle "PDF Даунлоуд - За">
 <!ENTITY pdfdownload.websiteTooltip "Виж сайта на автора">
 <!ENTITY pdfdownload.moreInfo "Още детайли:">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Избери PDF Визуализатор">
 <!ENTITY pdfdownload.optionsExeFiles "Windows Апликации">
 <!ENTITY pdfdownload.optionsAllFiles "Всички Файлове">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Избраната функция не може да се изпълни за този файл!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Избраният четец не е изпълним файл!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Обнови">
 <!ENTITY pdfdownload.optionsCheckUpdates "Провери за ъпдейти">
 <!ENTITY pdfdownload.optionsHowToHelp "Как да помогнеш">
 <!ENTITY pdfdownload.optionsMakeDonation "Направи дарение">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Картинки">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Показвай картинки в ХТМЛ версията на PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "За да разглеждате картинки, те трябва да се запазват на сървъра ни.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Картинките автоматично ще бъдат изтривани след един ден.">

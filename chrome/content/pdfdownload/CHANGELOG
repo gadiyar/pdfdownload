@@ -1,5 +1,11 @@
 CHANGELOG
 
+v0.7.5  :   2006-09-14
+
+ - Added the feature "Bypass PDF Download" to give to the user the chance to open a PDF without PDF Download. This feature can be 
+   used pressing CTRL-SHIFT when a PDF link is clicked or choosing the relative button on the PDF Download popup dialog.
+ - Fixed bug about javascript links: now if the link contains some javascript, it is not intercepted anymore.
+
 v0.7.4  :   2006-07-10
  
  - Fixed bug about pages containing the BASE html tag.

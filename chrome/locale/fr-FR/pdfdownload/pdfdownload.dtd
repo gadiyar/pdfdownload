@@ -1,16 +1,17 @@
 <!ENTITY pdfdownload.createdByLabel "Créée par :">
 <!ENTITY pdfdownload.websiteLabel "Site web">
 <!ENTITY pdfdownload.defaultActionLabel "Comportement par défaut">
-<!ENTITY pdfdownload.showPopup "Afficher la boîte de dialogue">
+<!ENTITY pdfdownload.showPopup "Afficher la fenêtre de dialogue">
 <!ENTITY pdfdownload.downloadButton "Télécharger">
 <!ENTITY pdfdownload.openButton "Ouvrir en PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Voir en HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Court-circuiter PDF Download">
 <!ENTITY pdfdownload.cancelButton "Annuler">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download ne trouve pas votre lecteur de PDF par défaut. Veuillez en choisir un dans les options de PDF Download !">
 <!ENTITY pdfdownload.aboutTitle "À propos de PDF Download">
-<!ENTITY pdfdownload.websiteTooltip "Voir le site web de l'auteur">
+<!ENTITY pdfdownload.websiteTooltip "Voir le site web de l&apos;auteur">
 <!ENTITY pdfdownload.moreInfo "Davantage de détails :">
-<!ENTITY pdfdownload.readLicenseTooltip "Lire la licence d'utilisateur final">
+<!ENTITY pdfdownload.readLicenseTooltip "Lire la licence d&apos;utilisateur final">
 <!ENTITY pdfdownload.license "Licence">
 <!ENTITY pdfdownload.readChangelogTooltip "Voir le journal des changements">
 <!ENTITY pdfdownload.changelog "Journal des changements">
@@ -22,22 +23,26 @@
 <!ENTITY pdfdownload.optionsHTMLTab "Conversion du PDF en HTML">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Complémentaires">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menu Outils">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "Affiche l'entrée PDF Download dans le menu Outils de Firefox">
-<!ENTITY pdfdownload.optionsOpenLink "Comment ouvrir les liens en PDF avec le plugin PDF de Firefox">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Comment ouvrir la version HTML des fichiers PDF">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Affiche l&apos;entrée PDF Download dans le menu Outils de Firefox">
+<!ENTITY pdfdownload.optionsOpenLink "Comment ouvrir les liens en PDF avec le plugin PDF de Firefox :">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Comment ouvrir la version HTML des fichiers PDF :">
 <!ENTITY pdfdownload.optionsSameTab "Ouvrir dans le même onglet">
 <!ENTITY pdfdownload.optionsNewTab "Ouvrir dans un nouvel onglet">
 <!ENTITY pdfdownload.optionsNewWindow "Ouvrir dans une nouvelle fenêtre">
-<!ENTITY pdfdownload.optionsOpenPdf "Ouverture du fichier Pdf :">
-<!ENTITY pdfdownload.optionsUsePlugin "Utiliser l'action de Firefox par défaut">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Utiliser le programme par défaut du système d'exploitation">
+<!ENTITY pdfdownload.optionsOpenPdf "Ouverture du fichier PDF :">
+<!ENTITY pdfdownload.optionsUsePlugin "Utiliser l&apos;action de Firefox par défaut">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Utiliser le programme par défaut du système d&apos;exploitation">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Utiliser cette application :">
 <!ENTITY pdfdownload.optionsBrowse "Parcourir...">
-<!ENTITY pdfdownload.optionsBrowseTitle "Choisir un visualiseur de PDF">
+<!ENTITY pdfdownload.optionsBrowseTitle "Choisir une visionneuse PDF">
 <!ENTITY pdfdownload.optionsExeFiles "Applications Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Tous les fichiers">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Fichier sélectionné non exécutable !">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "La visionneuse précisée n&apos;est pas un fichier exécutable !">
 <!ENTITY pdfdownload.optionsUpdateLabel "Mise à jour">
 <!ENTITY pdfdownload.optionsCheckUpdates "Vérifier les mises à jour">
 <!ENTITY pdfdownload.optionsHowToHelp "Comment contribuer">
 <!ENTITY pdfdownload.optionsMakeDonation "Faire un don">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Images">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Afficher les images dans la version HTML du fichier PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Pour que vous puissiez voir les images, elles doivent être enregistrées sur votre serveur.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Les images seront automatiquement au bout de 24 heures.">

@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Ladda ner">
 <!ENTITY pdfdownload.openButton "Öppna PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Visa som HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Kringgå PDF Download">
 <!ENTITY pdfdownload.cancelButton "Avbryt">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download kan inte hitta din standardläsare för PDF. Välj en i dialogen för inställningar för PDF Download!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - om">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Välj PDF-läsare">
 <!ENTITY pdfdownload.optionsExeFiles "Program">
 <!ENTITY pdfdownload.optionsAllFiles "Alla filer">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "The valda filen är inte körbar!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Den indikerade läsaren är inte en körbar fil!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Uppdatera">
 <!ENTITY pdfdownload.optionsCheckUpdates "Sök uppdateringar">
 <!ENTITY pdfdownload.optionsHowToHelp "Hjälp till">
 <!ENTITY pdfdownload.optionsMakeDonation "Ge ett bidrag">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Bilder">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Visa bilder i HTML-versionen av PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "För att låta dig se bilder måste de sparas på vår server">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Bilderna kommer att tas bort automatiskt efter ett dygn.">

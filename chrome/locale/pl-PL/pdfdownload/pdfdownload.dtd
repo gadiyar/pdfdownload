@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Pobierz plik">
 <!ENTITY pdfdownload.openButton "Otwórz plik">
 <!ENTITY pdfdownload.viewHtmlButton "Wyświetl w formacie HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Otwórz standardowo">
 <!ENTITY pdfdownload.cancelButton "Anuluj">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download nie może znaleźć domyślnego czytnika plików PDF. Proszę wybrać czytnik w opcjach rozszerzenia.">
 <!ENTITY pdfdownload.aboutTitle "O PDF Download">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Wybierz czytnik plików PDF">
 <!ENTITY pdfdownload.optionsExeFiles "Aplikacje Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Wszystkie pliki">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Wybrany plik nie jest plikiem wykonywalnym!">
-<!ENTITY pdfdownload.optionsUpdateLabel "Zainstalowana wersja rozszerzenia">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Wybrany plik przeglądarki nie jest plikiem wykonywalnym!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Aktualizacja">
 <!ENTITY pdfdownload.optionsCheckUpdates "Sprawdź aktualizacje">
 <!ENTITY pdfdownload.optionsHowToHelp "Dotacje">
 <!ENTITY pdfdownload.optionsMakeDonation "Wspomóż autora">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Grafiki">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Pokaż grafiki w wersji HTML rozszerzenia">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Aby zobaczyć grafiki, muszą być one zapisane na naszym serwerze">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Grafiki zostaną automatycznie usunięte po upływie jednego dnia">

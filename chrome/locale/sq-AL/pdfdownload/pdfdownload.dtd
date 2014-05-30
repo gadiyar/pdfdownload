@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Sharkoje">
 <!ENTITY pdfdownload.openButton "Hape">
 <!ENTITY pdfdownload.viewHtmlButton "Shikoje si HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Mënjanoje PDF Download">
 <!ENTITY pdfdownload.cancelButton "Anulo">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download nuk mund ta gjejë lexuesin tuaj të PDFve! Ju lutemi zgjidhni një në tabelën e mundësive të PDF Download!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - Info">
@@ -22,22 +23,26 @@
 <!ENTITY pdfdownload.optionsHTMLTab "Konvertimi i PDFve në HTML">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Më tepër detaje">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menyja e mjeteve">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "Shfaqe njësinë 'PDF Download' në menynë e Mjeteve të Firefox">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Shfaqe njësinë &apos;PDF Download&apos; në menynë e Mjeteve të Firefox">
 <!ENTITY pdfdownload.optionsOpenLink "Si do i hapni linket PDF me prizën e Firefox:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Si do e hapni versionin HTML të skedarëve PDF:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Si do e hapni versionin HTML të skedave PDF:">
 <!ENTITY pdfdownload.optionsSameTab "Në të njëjtën tabelë">
 <!ENTITY pdfdownload.optionsNewTab "Në një tabelë të re">
 <!ENTITY pdfdownload.optionsNewWindow "Në një dritare të re">
-<!ENTITY pdfdownload.optionsOpenPdf "Si do i hapni skedarët PDF:">
+<!ENTITY pdfdownload.optionsOpenPdf "Si do i hapni skedat PDF:">
 <!ENTITY pdfdownload.optionsUsePlugin "Me prizën e PDFve">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Me shikuesin tipik të sistemit">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Me këtë:">
 <!ENTITY pdfdownload.optionsBrowse "Shfleto...">
 <!ENTITY pdfdownload.optionsBrowseTitle "Zgjidhni shikuesin e PDFve">
 <!ENTITY pdfdownload.optionsExeFiles "Aplikime">
-<!ENTITY pdfdownload.optionsAllFiles "Gjithë skedarët">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Ky skedar nuk ekzekutohet!">
+<!ENTITY pdfdownload.optionsAllFiles "Gjithë skedat">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Shikuesi i përcaktuar nuk ekzekutohet!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Ridatime">
 <!ENTITY pdfdownload.optionsCheckUpdates "Ridatoje">
 <!ENTITY pdfdownload.optionsHowToHelp "Si të ndihmoni">
 <!ENTITY pdfdownload.optionsMakeDonation "Kontribuoni">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Figura">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Shfaqi figurat në versionin HTML">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Që t&apos;i shikoni figurat, ruajini në serverin tonë.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Figurat fshihen automatikisht pas një dite.">

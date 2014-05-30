@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Fitxategia ekarri">
 <!ENTITY pdfdownload.openButton "PDF fitxategia ireki">
 <!ENTITY pdfdownload.viewHtmlButton "HTML moduan ikusi">
+<!ENTITY pdfdownload.openWithoutExtension "PDF Download sahiestu">
 <!ENTITY pdfdownload.cancelButton "Utzi">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download-ek ezin du sistemaren PDF irakurgailua topatu. Mesedez, aukeratu bat PDF Download-en aukeretan.">
 <!ENTITY pdfdownload.aboutTitle "PDF Download-en gainean">
@@ -22,22 +23,26 @@
 <!ENTITY pdfdownload.optionsHTMLTab "PDF-tik HTML-ra bihurtzean">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Aukera gehiago">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Tresna menua">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF Download Firefoxe-eko tresna menuan erakutsi">
-<!ENTITY pdfdownload.optionsOpenLink "Firefoxen PDF irakurgailua erabiltzean PDF fitxategiak nola ireki:">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF Download Firefox-eko tresna menuan erakutsi">
+<!ENTITY pdfdownload.optionsOpenLink "Firefox-en PDF irakurgailua erabiltzean PDF fitxategiak nola ireki:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF fitxategien HTML bertsioa honela ireki:">
 <!ENTITY pdfdownload.optionsSameTab "Fitxa berean ireki">
 <!ENTITY pdfdownload.optionsNewTab "Fitxa berri batean ireki">
 <!ENTITY pdfdownload.optionsNewWindow "Lehio berri batean ireki">
 <!ENTITY pdfdownload.optionsOpenPdf "PDF fitxategia irekitzean:">
-<!ENTITY pdfdownload.optionsUsePlugin "Firefoxen aukeratutakoa egin">
+<!ENTITY pdfdownload.optionsUsePlugin "Aukeratutakoa PDF plugin-a erabili">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Sistemaren irakurgailua erabili">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Irakurgailu hau erabili:">
 <!ENTITY pdfdownload.optionsBrowse "Arakatu...">
 <!ENTITY pdfdownload.optionsBrowseTitle "PDF irakurgailua aukeratu">
 <!ENTITY pdfdownload.optionsExeFiles "Windows programak">
 <!ENTITY pdfdownload.optionsAllFiles "Fitxategi guztiak">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Aukeratutako fitxategia ez da programa bat!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Aukeratutako irakurgailua ez da fitxategi exekutagarri bat!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Eguneraketa">
 <!ENTITY pdfdownload.optionsCheckUpdates "Arakatu orain">
 <!ENTITY pdfdownload.optionsHowToHelp "Nola lagun dezakezun">
 <!ENTITY pdfdownload.optionsMakeDonation "Dohaintza bat egin">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Irudiak">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "PDF fitxategia HTML moduan ikustean, irudiak erakutsi">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Irudiak ikus ditzazun, gure zerbitzarian gorde behar dira.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Irudiak egun baten ondoren automatikoki ezabatuko dira.">

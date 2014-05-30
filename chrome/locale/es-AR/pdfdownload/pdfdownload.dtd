@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Descargarlo ya">
 <!ENTITY pdfdownload.openButton "Abrir PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Ver como HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Evitar descarga PDF">
 <!ENTITY pdfdownload.cancelButton "Cancelar">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download no puede encontrar un visor de PDF. Por favor seleccione uno en opciones de PDF Download">
 <!ENTITY pdfdownload.aboutTitle "Acerca de PDF Download">
@@ -33,11 +34,15 @@
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Usar el visor por defecto del SO">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Usar este visor:">
 <!ENTITY pdfdownload.optionsBrowse "Explorar...">
-<!ENTITY pdfdownload.optionsBrowseTitle "Elejir visor de PDF">
+<!ENTITY pdfdownload.optionsBrowseTitle "Elegir visor de PDF">
 <!ENTITY pdfdownload.optionsExeFiles "Aplicaciones Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Todos los Archivos">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "¡El archivo elejido no es un ejecutable!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "El visualizador elegido no es un archivo ejecutable!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Actualizar">
 <!ENTITY pdfdownload.optionsCheckUpdates "Revisar actualizaciones">
 <!ENTITY pdfdownload.optionsHowToHelp "¿Como Ayudar?">
 <!ENTITY pdfdownload.optionsMakeDonation "Hacer una donación">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Imágenes">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Mostrar imágenes en la versión HTML del PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Las imágenes deben ser descargadas en nuestro servidor para que Usted pueda verlas.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Las imágenes se borrarán automáticamente pasado un día.">

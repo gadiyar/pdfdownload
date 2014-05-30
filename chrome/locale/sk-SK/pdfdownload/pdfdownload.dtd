@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Stiahnuť">
 <!ENTITY pdfdownload.openButton "Otvoriť PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Zobraziť ako HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Obísť PDF Download">
 <!ENTITY pdfdownload.cancelButton "Zrušiť">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download nedokázal nájsť váš predvolený program na čítanie PDF súborov. Prosím, vyberte si ho v dialógovom okne nastavení rozšírenia PDF Download!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - Čo je...">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Výber programu na zobrazovanie PDF súborov">
 <!ENTITY pdfdownload.optionsExeFiles "Aplikácie">
 <!ENTITY pdfdownload.optionsAllFiles "Všetky súbory">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Vybratý súbor nie je spustiteľný!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Zadaný prehliadač nie je spustiteľná aplikácia!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Aktualizácia">
 <!ENTITY pdfdownload.optionsCheckUpdates "Zistiť aktualizácie">
 <!ENTITY pdfdownload.optionsHowToHelp "Ako pomôcť">
 <!ENTITY pdfdownload.optionsMakeDonation "Príspevok autorovi">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Obrázky">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Zobraziť obrázky v HTML verzii PDF súboru">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Ak chcete vidieť obrázky, musia byť uložené na náš server.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Obrázky budú po jednom dni automaticky odstránené.">

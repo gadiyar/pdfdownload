@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Λήψη του αρχείου">
 <!ENTITY pdfdownload.openButton "Άνοιγμα PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Εμφάνιση σε μορφή HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Παράκαμψη του PDF Download">
 <!ENTITY pdfdownload.cancelButton "Ακύρωση">
 <!ENTITY pdfdownload.osWarningMsg "Το PDF Download δεν μπορεί να εντοπίσει το προεπιλεγμένο πρόγραμμα ανάγνωσης αρχείων PDF. Παρακαλούμε επιλέξτε ένα από το διάλογο επιλογών του PDF Download!">
 <!ENTITY pdfdownload.aboutTitle "Περί - PDF Download">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Επιλέξτε πρόγραμμα ανάγνωσης PDF">
 <!ENTITY pdfdownload.optionsExeFiles "Εφαρμογές Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Όλα τα αρχεία">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Το επιλεγμένο αρχείο δεν είναι εκτελέσιμο!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Το καθορισμένο πρόγραμμα ανάγνωσης δεν είναι εκτελέσιμο αρχείο!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Ενημέρωση">
 <!ENTITY pdfdownload.optionsCheckUpdates "Έλεγχος για ενημερώσεις">
 <!ENTITY pdfdownload.optionsHowToHelp "Πώς να βοηθήσετε">
 <!ENTITY pdfdownload.optionsMakeDonation "Κάντε μια δωρεά">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Εικόνες">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Προβολή εικόνων όταν προβάλονται αρχεία PDF σε μορφή HTML">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Για να είναι δυνατή η προβολή εικόνων, πρέπει να αποθηκευθούν στον διακομιστή μας">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Οι εικόνες θα διαγράφούν αυτόματα μετά από μια ημέρα.">

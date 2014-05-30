@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Letöltés">
 <!ENTITY pdfdownload.openButton "PDF megnyitása">
 <!ENTITY pdfdownload.viewHtmlButton "Nézet HTML-ként">
+<!ENTITY pdfdownload.openWithoutExtension "A PDF Download kihagyása">
 <!ENTITY pdfdownload.cancelButton "Mégse">
 <!ENTITY pdfdownload.osWarningMsg "Nem találja a PDF Download az alapértelmezett PDF-olvasót. Válassza ki a PDF Download beállítások párbeszédablakában!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - Névjegy">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "A PDF-megjelenítő kiválasztása">
 <!ENTITY pdfdownload.optionsExeFiles "Windows alkalmazások">
 <!ENTITY pdfdownload.optionsAllFiles "Minden fájl">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Nem végrehajtható a kijelölt fájl!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "A megadott megjelenítőnek nem végrehajtható a fájlja!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Frissítés">
 <!ENTITY pdfdownload.optionsCheckUpdates "Frissítés ellenőrzése">
 <!ENTITY pdfdownload.optionsHowToHelp "Hogyan segíthetünk">
 <!ENTITY pdfdownload.optionsMakeDonation "Adományozás">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Képek">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "A képek megjelenítése a HTML-változatú PDF-ben">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Mentenie kell a képeket a kiszolgálónkon, hogy meg tudja tekinteni a képeket.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "A képek egy nap múlva automatikusan törlésre kerülnek.">

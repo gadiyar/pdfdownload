@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Download den">
 <!ENTITY pdfdownload.openButton "Åbn PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Vis som HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Omgå PDF Download">
 <!ENTITY pdfdownload.cancelButton "Annuller">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download kan ikke finde en standard PDF-fremviser. Vælg venligst en i indstillingerne for PDF Download!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - Om">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Vælg PDF-fremviser">
 <!ENTITY pdfdownload.optionsExeFiles "Windows programmer">
 <!ENTITY pdfdownload.optionsAllFiles "Alle filer">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Den valgte fil kan ikke eksekveres!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Den valgte fremviser er ikke en eksekverbar fil!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Opdater">
 <!ENTITY pdfdownload.optionsCheckUpdates "Tjek for opdateringer">
 <!ENTITY pdfdownload.optionsHowToHelp "Hvordan du kan hjælpe">
 <!ENTITY pdfdownload.optionsMakeDonation "Giv en donation">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Billeder">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Vis billeder i HTML-versionen af PDF-filen">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "For at kunne vise billederne skal de gemmes på vores server.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Billederne slettes automatisk efter en dag.">

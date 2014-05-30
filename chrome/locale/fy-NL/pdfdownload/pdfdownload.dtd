@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Laadt it yn">
 <!ENTITY pdfdownload.openButton "Iepenje PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Besjoch as HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Bypass PDF Download">
 <!ENTITY pdfdownload.cancelButton "Annulearje">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download kin jo primaire PDF lêzer net fine. Kies ien fan de PDF Download opsjes dialooch!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - Oer">
@@ -12,8 +13,8 @@
 <!ENTITY pdfdownload.moreInfo "Mear details:">
 <!ENTITY pdfdownload.readLicenseTooltip "Lês brûkerslisinsje">
 <!ENTITY pdfdownload.license "Lisinsje">
-<!ENTITY pdfdownload.readChangelogTooltip "Besjoch Wizigingslog">
-<!ENTITY pdfdownload.changelog "Wizigingslog">
+<!ENTITY pdfdownload.readChangelogTooltip "Besjoch Wizigingsloch">
+<!ENTITY pdfdownload.changelog "Wizigingsloch">
 <!ENTITY pdfdownload.acknowledgments "Tank">
 <!ENTITY pdfdownload.siteListTitle "Utsunderings">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Opsjes">
@@ -21,7 +22,7 @@
 <!ENTITY pdfdownload.optionsPDFTab "PDF wurdt iepend">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF nei HTML konferzje">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Mear details">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Ark Menu">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Arkmenu">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Toan PDF Download ûnderdiel yn it Ekstra Firefox Menu">
 <!ENTITY pdfdownload.optionsOpenLink "Hoe PDF-keppelings iepenje mei de Firefox PDF-ynstekker:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hoe de HTML-ferzje fan PDF-bestannen iepenje:">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Kies PDF viewer">
 <!ENTITY pdfdownload.optionsExeFiles "Windows Applikaasjes">
 <!ENTITY pdfdownload.optionsAllFiles "Alle bestannen">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "It selektearre bestân is net útfierber">
-<!ENTITY pdfdownload.optionsUpdateLabel "Update">
-<!ENTITY pdfdownload.optionsCheckUpdates "Kontrolearje op updates">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "The viewer specified is not an executable file!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Fernijing">
+<!ENTITY pdfdownload.optionsCheckUpdates "Kontrolearje op fernijings">
 <!ENTITY pdfdownload.optionsHowToHelp "Hoe kinne jo stypje">
 <!ENTITY pdfdownload.optionsMakeDonation "Meitsje in donaasje">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Ofbyldings">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Toan ôfbyldings yn de HTML ferzje fan PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Om jo ôfbyldings te toanen, moatte se bewarre wêze op ús tsjinner.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "De ôfbyldings sille automatysk nei ien dei fuortsmiten wurde.">

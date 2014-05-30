@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Lataa">
 <!ENTITY pdfdownload.openButton "Avaa PDF:nä">
 <!ENTITY pdfdownload.viewHtmlButton "Avaa HTML:nä">
+<!ENTITY pdfdownload.openWithoutExtension "Ohita PDF Download">
 <!ENTITY pdfdownload.cancelButton "Peruuta">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download ei kyennyt paikallistamaan PDF-tiedostojen oletuslukijaa. Ole hyvä ja valitse yksi lukija PDF Downloadin valintaikkunasta!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - Tietoja">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Valitse PDF-lukija">
 <!ENTITY pdfdownload.optionsExeFiles "Windowsin sovellukset (*.exe)">
 <!ENTITY pdfdownload.optionsAllFiles "Kaikki tiedostot (*.*)">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Valittu tiedosto ei ole suoritettava!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Valittu lukijan tiedosto ei ole suoritettava!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Päivittäminen">
 <!ENTITY pdfdownload.optionsCheckUpdates "Tarkista päivitykset">
 <!ENTITY pdfdownload.optionsHowToHelp "Auttaminen">
 <!ENTITY pdfdownload.optionsMakeDonation "Tee lahjoitus">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Kuvat">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Näytä kuvat PDF:n HTML-versiossa">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Jotta näkisit kuvat, on ne tallennettava meidän palvelimelle.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Tallennetut kuvat poistetaan automaattisesti yhden päivän kuluessa.">

@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Simni">
 <!ENTITY pdfdownload.openButton "Otvori PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Pogledni kako HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Bypass PDF Download">
 <!ENTITY pdfdownload.cancelButton "Otkazi">
 <!ENTITY pdfdownload.osWarningMsg "PDF Simnuvacot ne moze da go najde vasiot osnoven PDF citac. Ve molime odberete eden vo dijalogot za PDF Simnuvac opcii!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download-Za programata">
@@ -26,7 +27,7 @@
 <!ENTITY pdfdownload.optionsOpenLink "Kako da otvoram PDF linkovi upotrebuvajci PDF dodatoci:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Kako da otvoram HTML verzija od PDF datoteki:">
 <!ENTITY pdfdownload.optionsSameTab "Otvori vo istiot tab">
-<!ENTITY pdfdownload.optionsNewTab "Otvori vo noc tab">
+<!ENTITY pdfdownload.optionsNewTab "Otvori vo nov tab">
 <!ENTITY pdfdownload.optionsNewWindow "Otvori vo nov prozorec">
 <!ENTITY pdfdownload.optionsOpenPdf "Otvoranje na PDF datoteki:">
 <!ENTITY pdfdownload.optionsUsePlugin "Upotrebi PDF dodatok">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Odberi PDF viewer">
 <!ENTITY pdfdownload.optionsExeFiles "Windows Aplikacii">
 <!ENTITY pdfdownload.optionsAllFiles "Site datoteki">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Selektiranata datoteka ne e izvrsna!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Konkretniot vjuwer ne e izvrsen fajl.">
 <!ENTITY pdfdownload.optionsUpdateLabel "Obnovi">
 <!ENTITY pdfdownload.optionsCheckUpdates "Proveri gi novite obnovuvanja">
 <!ENTITY pdfdownload.optionsHowToHelp "Kako do pomos">
 <!ENTITY pdfdownload.optionsMakeDonation "Donirajte">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "ImagesSliki">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Prikazi gi slikite vo HTML verzija na PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Slikite mora da se snimeni na nasiot server kako bi bile dostapni.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Slikite ce bidat avtomatski izbrisani posle eden den">

@@ -5,8 +5,9 @@
 <!ENTITY pdfdownload.downloadButton "Prenesi">
 <!ENTITY pdfdownload.openButton "Odpri PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Oglej kot HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Obidi Prenos PDF">
 <!ENTITY pdfdownload.cancelButton "Prekliči">
-<!ENTITY pdfdownload.osWarningMsg "PrenosPDF ne more najti privzetega bralnika PDF. Prosimo, da ga izberete v pogovornem oknu možnosti prenosa PDF!">
+<!ENTITY pdfdownload.osWarningMsg "Prenos PDF ne najde privzetega bralnika PDF. Prosimo, da ga izberete v pogovornem oknu možnosti prenosa PDF!">
 <!ENTITY pdfdownload.aboutTitle "Prenos PDF - O razširitvi">
 <!ENTITY pdfdownload.websiteTooltip "Ogled spletne strani avtorja">
 <!ENTITY pdfdownload.moreInfo "Več podrobnosti:">
@@ -18,7 +19,7 @@
 <!ENTITY pdfdownload.siteListTitle "Izjeme">
 <!ENTITY pdfdownload.optionsTitle "PrenosPDF - Možnosti">
 <!ENTITY pdfdownload.optionsGeneralTab "Splošno">
-<!ENTITY pdfdownload.optionsPDFTab "Opdiranje PDF">
+<!ENTITY pdfdownload.optionsPDFTab "Odpiranje PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Pretvorba PDF v HTML">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Več podrobnosti">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Meni Orodja">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Izberite ogledovalnik PDF">
 <!ENTITY pdfdownload.optionsExeFiles "aplikacije Windows">
 <!ENTITY pdfdownload.optionsAllFiles "vse datoteke">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Izbrane datoteke ni mogoče pognati!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Navedeni pregledovalnik ni izvršilna datoteka!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Posodobitve">
 <!ENTITY pdfdownload.optionsCheckUpdates "Preveri za posodobitve">
 <!ENTITY pdfdownload.optionsHowToHelp "Kako lahko pomagam?">
 <!ENTITY pdfdownload.optionsMakeDonation "Donirajte">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Slike">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Pokaži slike v različici HTML dokumenta PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Da bi videli slike, jih je potrebno prej shraniti na našem strežniku.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Slike bodo samodejno izbrisane po enem dnevu.">

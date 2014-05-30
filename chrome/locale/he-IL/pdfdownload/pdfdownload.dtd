@@ -3,10 +3,11 @@
 <!ENTITY pdfdownload.defaultActionLabel "פעולת ברירת מחדל">
 <!ENTITY pdfdownload.showPopup "הראה דיאלוג קופץ">
 <!ENTITY pdfdownload.downloadButton "הורד">
-<!ENTITY pdfdownload.openButton "פתח PDF">
-<!ENTITY pdfdownload.viewHtmlButton "הראה כ- HTML">
+<!ENTITY pdfdownload.openButton "PDF פתח">
+<!ENTITY pdfdownload.viewHtmlButton "HTML-הראה כ">
+<!ENTITY pdfdownload.openWithoutExtension "PDF דלג על הורדת">
 <!ENTITY pdfdownload.cancelButton "בטל">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download לא יכול למצוא את קורא ה-PDF שלך. נא בחר באחת בתוך האפשרויות של PDF Download.">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download שלך. נא בחר אחד באפשרויות של PDF-לא יכול למצוא את קורא ה PDF Download">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - אודות">
 <!ENTITY pdfdownload.websiteTooltip "ראה את אתר היוצר">
 <!ENTITY pdfdownload.moreInfo "עוד פרטים:">
@@ -18,26 +19,30 @@
 <!ENTITY pdfdownload.siteListTitle "יוצאים מן הכלל">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - אפשרויות">
 <!ENTITY pdfdownload.optionsGeneralTab "כללי">
-<!ENTITY pdfdownload.optionsPDFTab "פתיחת PDF">
-<!ENTITY pdfdownload.optionsHTMLTab "המרה מ-PDF ל-HTML">
+<!ENTITY pdfdownload.optionsPDFTab "PDF פתיחת">
+<!ENTITY pdfdownload.optionsHTMLTab "HTML-ל PDF-המרה מ">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "פרטים נוספים">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "תפריט כלים">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "הראה &quot;PDF Download&quot; בתפריט כלים">
-<!ENTITY pdfdownload.optionsOpenLink "כיצד להשתמש בצופה ה-PDF של Firefox כדי לפתוח קישורי PDF">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "כיצד לפתוח גרסאות HTML של קבצי ה-PDF">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "בתפריט כלים &quot;PDF Download&quot; הראה את">
+<!ENTITY pdfdownload.optionsOpenLink "PDF כדי לפתוח קישורי Firefox של PDF-כיצד להשתמש בצופה ה">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF-של קבצי ה HTML כיצד לפתוח גרסאת">
 <!ENTITY pdfdownload.optionsSameTab "פתח באותה הלשונית">
 <!ENTITY pdfdownload.optionsNewTab "פתח בלשונית חדשה">
 <!ENTITY pdfdownload.optionsNewWindow "פתח בחלון חדש">
-<!ENTITY pdfdownload.optionsOpenPdf "קובץ ה-PDF נפתח:">
-<!ENTITY pdfdownload.optionsUsePlugin "השתמש בברירת המחדל של Firefox">
+<!ENTITY pdfdownload.optionsOpenPdf "PDF-פתיחת קובץ ה:">
+<!ENTITY pdfdownload.optionsUsePlugin "Firefox השתמש בברירת המחדל של">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "השתמש בברירת המחדל של מערכת ההפעלה">
-<!ENTITY pdfdownload.optionsUseCustomProgram "השתמש בתוכנה זו">
-<!ENTITY pdfdownload.optionsBrowse "עיון...">
+<!ENTITY pdfdownload.optionsUseCustomProgram "השתמש בצופה זה">
+<!ENTITY pdfdownload.optionsBrowse "...עיון">
 <!ENTITY pdfdownload.optionsBrowseTitle "PDF-בחר בצופה ה">
 <!ENTITY pdfdownload.optionsExeFiles "אפליקציות ווינדוס">
 <!ENTITY pdfdownload.optionsAllFiles "כל הקבצים">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "הקובץ שבחרת אינו ניתן להרצה">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "!הנבחר איננו קובץ הרצה PDF-צופה ה">
 <!ENTITY pdfdownload.optionsUpdateLabel "עדכון">
 <!ENTITY pdfdownload.optionsCheckUpdates "בדוק עדכונים">
 <!ENTITY pdfdownload.optionsHowToHelp "כיצד לעזור">
 <!ENTITY pdfdownload.optionsMakeDonation "תרום ליוצרים">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "תמונות">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "PDF-של ה HTML-הראה תמונות בגרסת ה">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 ".על מנת שתוכל לצפות בתמונות, הן חייבות להישמר על שרתינו">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 ".התמונות ימחקו באופן עצמאי אחרי יום אחד">

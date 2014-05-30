@@ -76,7 +76,11 @@ function mouseClick(aEvent) {
     // if right click, we do not do anything
     if (aEvent.button == 2)
 	return;
-      
+
+    // if Shift key and Ctrl key were pressed, it means that the user wants to open the PDF file without "PDF Download"
+    if (aEvent.shiftKey && aEvent.ctrlKey) 
+	return;
+
     if (aEvent.target)
       var targ = aEvent.originalTarget;
   
@@ -112,6 +116,10 @@ function mouseClick(aEvent) {
 		url = dir + url;
 	}
     } 
+
+    // if it is a javascript link, we do not do anything
+    if (url.indexOf('javascript:') != -1)
+	return;
 
     var originalUrl = url;
     // we remove eventual parameters in the url    
@@ -208,8 +216,10 @@ function mouseClick(aEvent) {
 		var visitedURI = gURIFixer.createFixupURI(targ.href, 0)
 		markLinkVisited(visitedURI.spec, targ, referrer);
 	}
-	aEvent.preventDefault();
-	aEvent.stopPropagation();	
+	if (answer.res != "openWithoutExtension") {
+		aEvent.preventDefault();
+		aEvent.stopPropagation();	
+	}
     }
 }
 

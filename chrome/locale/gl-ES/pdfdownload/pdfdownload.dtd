@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Baixalo">
 <!ENTITY pdfdownload.openButton "Abrir o PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Ver como HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Non usar &quot;PDF Download&quot;">
 <!ENTITY pdfdownload.cancelButton "Cancelar">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download non pode atopar o seu lector de PDF por defecto. Por favor, escolla un no diálogo de opcións de PDF Download">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - Arredor de">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Escoller visor de PDF">
 <!ENTITY pdfdownload.optionsExeFiles "Aplicacións de Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Tódolos arquivos">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "¡O arquivo seleccionado non é executable!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "¡O visualizador especificado non é un arquivo executable!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Actualizar">
 <!ENTITY pdfdownload.optionsCheckUpdates "Comprobar actualizacións">
 <!ENTITY pdfdownload.optionsHowToHelp "Como axudar">
 <!ENTITY pdfdownload.optionsMakeDonation "Facer unha doazón">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Imaxes">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Amosar imaxes no versión HTML do PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Para que poida ver as imaxes, deben estar gardadas no noso servidor.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "As imaxes serán automaticamente borradas ó cabo dun día.">

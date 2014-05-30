@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "下载该文件">
 <!ENTITY pdfdownload.openButton "打开该 PDF 文件">
 <!ENTITY pdfdownload.viewHtmlButton "以 HTML 方式查看该文件">
+<!ENTITY pdfdownload.openWithoutExtension "不使用 PDF Download 打开">
 <!ENTITY pdfdownload.cancelButton "取消">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download无法检测到您默认的PDF阅读器.请在PDF Download选项对话框中选择一个PDF阅读器!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download － 关于">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "选择一个PDF查看器">
 <!ENTITY pdfdownload.optionsExeFiles "Windows应用程序">
 <!ENTITY pdfdownload.optionsAllFiles "所有文件">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "该选择的文件不是一个可执行文件!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "指定的查看器不是一个可执行文件！">
 <!ENTITY pdfdownload.optionsUpdateLabel "更新">
 <!ENTITY pdfdownload.optionsCheckUpdates "检查更新">
 <!ENTITY pdfdownload.optionsHowToHelp "如何帮助">
 <!ENTITY pdfdownload.optionsMakeDonation "捐助:">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "图片">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "按 PDF 的 HTML 版本显示图片">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "在您查看这些图片之前，图片必须先保存在我们的服务器上。">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "这些图片将在一天之后自动删除。">

@@ -1,0 +1,48 @@
+<!ENTITY pdfdownload.createdByLabel "Kreirao:">
+<!ENTITY pdfdownload.websiteLabel "Web stranica">
+<!ENTITY pdfdownload.defaultActionLabel "Zadana akcija">
+<!ENTITY pdfdownload.showPopup "Prikaži skočni izbornik">
+<!ENTITY pdfdownload.downloadButton "Preuzmi">
+<!ENTITY pdfdownload.openButton "Otvori PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Pogledaj kao HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Zaobiđi PDF Download">
+<!ENTITY pdfdownload.cancelButton "Odustani">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download ne može pronaći Vaš zadani PDF preglednik. Molimo Vas, odaberite ga u PDF Download izborniku opcija!">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - O">
+<!ENTITY pdfdownload.websiteTooltip "Pogledaj autorovu web stranicu">
+<!ENTITY pdfdownload.moreInfo "Još detalja:">
+<!ENTITY pdfdownload.readLicenseTooltip "Pročitaj licencu za krajnjeg korisnika">
+<!ENTITY pdfdownload.license "Licenca">
+<!ENTITY pdfdownload.readChangelogTooltip "Pogledaj popis promjena">
+<!ENTITY pdfdownload.changelog "Popis promjena">
+<!ENTITY pdfdownload.acknowledgments "Priznanja">
+<!ENTITY pdfdownload.siteListTitle "Izuzeci">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Opcije">
+<!ENTITY pdfdownload.optionsGeneralTab "Općenito">
+<!ENTITY pdfdownload.optionsPDFTab "PDF otvaranje">
+<!ENTITY pdfdownload.optionsHTMLTab "Pretvaranje PDF u HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Još detalja">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Alatni izbornik">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Prikaži stavku PDF Download u Firefox alatnom izborniku">
+<!ENTITY pdfdownload.optionsOpenLink "Kako otvoriti PDF veze koristeći Firefox PDF dodatak:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Kako otvoriti HTML inačicu PDF datoteka:">
+<!ENTITY pdfdownload.optionsSameTab "Otvori u istoj kartici">
+<!ENTITY pdfdownload.optionsNewTab "Otvori u novoj kartici">
+<!ENTITY pdfdownload.optionsNewWindow "Otvori u novom prozoru">
+<!ENTITY pdfdownload.optionsOpenPdf "Otvaranje PDF datoteke:">
+<!ENTITY pdfdownload.optionsUsePlugin "Koristi PDF dodatak">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Koristi zadanji preglednik OS-a">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Koristi ovaj preglednik:">
+<!ENTITY pdfdownload.optionsBrowse "Potraži...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Izaberite PDF preglednik">
+<!ENTITY pdfdownload.optionsExeFiles "Windows programi">
+<!ENTITY pdfdownload.optionsAllFiles "Sve datoteke">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Navedeni preglednik nije izvršna datoteka!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Nadogradnja">
+<!ENTITY pdfdownload.optionsCheckUpdates "Provjeri za nadogradnje">
+<!ENTITY pdfdownload.optionsHowToHelp "Kako pomoći">
+<!ENTITY pdfdownload.optionsMakeDonation "Donirajte">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Slike">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Prikaži slike u HTML inačici PDF-a">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Da biste mogli vidjeti slike, one moraju biti spremljene na našem poslužitelju.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Slike će biti automatski obrisane nakon jednog dana.">

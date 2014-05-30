@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "ダウンロード">
 <!ENTITY pdfdownload.openButton "PDF を開く">
 <!ENTITY pdfdownload.viewHtmlButton "HTML で表示">
+<!ENTITY pdfdownload.openWithoutExtension "PDF Download を無視">
 <!ENTITY pdfdownload.cancelButton "キャンセル">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download はデフォルトの PDF リーダーを見つけることができませんでした。PDF Download のオプション ダイアログから設定してください。">
 <!ENTITY pdfdownload.aboutTitle "PDF Download について">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "PDF ビューアーの選択">
 <!ENTITY pdfdownload.optionsExeFiles "Windows アプリケーション">
 <!ENTITY pdfdownload.optionsAllFiles "すべてのファイル">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "選択されたファイルは実行可能な形式ではありません!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "指定されたビューアーでは開けません!">
 <!ENTITY pdfdownload.optionsUpdateLabel "更新">
 <!ENTITY pdfdownload.optionsCheckUpdates "更新の確認">
 <!ENTITY pdfdownload.optionsHowToHelp "開発を助けてください">
 <!ENTITY pdfdownload.optionsMakeDonation "寄付をする">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "画像">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "PDF 内の画像を HTML で表示">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "画像を表示するには一旦サーバーに保存する必要があります。">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "画像は一日後に自動的に削除されます。">

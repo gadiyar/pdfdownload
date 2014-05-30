@@ -5,10 +5,11 @@
 <!ENTITY pdfdownload.downloadButton "Download it">
 <!ENTITY pdfdownload.openButton "Open PDF">
 <!ENTITY pdfdownload.viewHtmlButton "View as HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Bypass PDF Download">
 <!ENTITY pdfdownload.cancelButton "Cancel">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download can't find your default PDF reader. Please choose one in the PDF Download option dialog!">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download can&apos;t find your default PDF reader. Please choose one in the PDF Download option dialog!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - About">
-<!ENTITY pdfdownload.websiteTooltip "View author's website">
+<!ENTITY pdfdownload.websiteTooltip "View author&apos;s website">
 <!ENTITY pdfdownload.moreInfo "More details:">
 <!ENTITY pdfdownload.readLicenseTooltip "Read end-user license">
 <!ENTITY pdfdownload.license "License">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Choose PDF Viewer">
 <!ENTITY pdfdownload.optionsExeFiles "Windows Applications">
 <!ENTITY pdfdownload.optionsAllFiles "All Files">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "The selected file is not executable!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "The viewer specified is not an executable file!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Update">
 <!ENTITY pdfdownload.optionsCheckUpdates "Check updates">
 <!ENTITY pdfdownload.optionsHowToHelp "How to help">
 <!ENTITY pdfdownload.optionsMakeDonation "Make a donation">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Images">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Show images in the HTML version of PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "To let you see the images, they must be saved in our server.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "The images will be automatically deleted after one day.">

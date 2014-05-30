@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "İndir">
 <!ENTITY pdfdownload.openButton "PDF dosyasını aç">
 <!ENTITY pdfdownload.viewHtmlButton "HTML olarak göster">
+<!ENTITY pdfdownload.openWithoutExtension "Bypass PDF Download">
 <!ENTITY pdfdownload.cancelButton "Vazgeç">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download, varsayılan PDF okuyucunuzu bulamadı. Lütfen PDF Download Seçenekler bölümünden seçiniz!">
 <!ENTITY pdfdownload.aboutTitle "PDF indirme hakkında">
@@ -19,7 +20,7 @@
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Seçenekler">
 <!ENTITY pdfdownload.optionsGeneralTab "Genel">
 <!ENTITY pdfdownload.optionsPDFTab "PDF açılması">
-<!ENTITY pdfdownload.optionsHTMLTab "PDF'ten HTML'e dönüştür">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF&apos;ten HTML&apos;e dönüştür">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Daha fazla bilgi">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Araçlar menüsü">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Firefox araçlar menüsünde PDF indirmeyi göster">
@@ -29,15 +30,19 @@
 <!ENTITY pdfdownload.optionsNewTab "Yeni sekmede aç">
 <!ENTITY pdfdownload.optionsNewWindow "Yeni pencerede aç">
 <!ENTITY pdfdownload.optionsOpenPdf "PDF dosyası açılması:">
-<!ENTITY pdfdownload.optionsUsePlugin "Firefox'un varsayılan işlemini kullan">
+<!ENTITY pdfdownload.optionsUsePlugin "Firefox&apos;un varsayılan işlemini kullan">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "İşletim sisteminin varsayılan görüntüleyicisini kullan">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Bu görüntüleyiciyi kullan">
 <!ENTITY pdfdownload.optionsBrowse "Gözat...">
 <!ENTITY pdfdownload.optionsBrowseTitle "PDF görüntüleyici seç">
 <!ENTITY pdfdownload.optionsExeFiles "Windows uygulamaları">
 <!ENTITY pdfdownload.optionsAllFiles "Tüm dosyalar">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Seçilen dosya çalıştırılabilir değil!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Gösterici programı çalıştırılabilir bir dosya değil.">
 <!ENTITY pdfdownload.optionsUpdateLabel "Güncelle">
 <!ENTITY pdfdownload.optionsCheckUpdates "Güncelleme ara">
 <!ENTITY pdfdownload.optionsHowToHelp "Yardım">
 <!ENTITY pdfdownload.optionsMakeDonation "Bağış yap">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Resimler">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Resim dosyalarını PDF dosyasının HTML sürümünde göster">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Resim dosyalarını sunucunuzda kayıt edilmiş halde bulabilirsiniz.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Resim dosyaları bir günden sonra otomatikman silinir.">

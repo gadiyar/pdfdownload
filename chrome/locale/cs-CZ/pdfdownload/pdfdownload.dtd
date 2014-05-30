@@ -5,8 +5,9 @@
 <!ENTITY pdfdownload.downloadButton "Stáhnout">
 <!ENTITY pdfdownload.openButton "Otevřít PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Zobrazit ve formě HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Obejít rozšíření „PDF Download“">
 <!ENTITY pdfdownload.cancelButton "Zrušit">
-<!ENTITY pdfdownload.osWarningMsg "Nepodařilo se najít výchozí prohlížeč PDF. Prosím zadejte jeho umístění ručně v dialogu nastavení rozšíření 'PDF Download'">
+<!ENTITY pdfdownload.osWarningMsg "Nepodařilo se najít výchozí prohlížeč PDF. Prosím zadejte jeho umístění ručně v dialogu nastavení rozšíření &apos;PDF Download&apos;">
 <!ENTITY pdfdownload.aboutTitle "O rozšíření PDF Download">
 <!ENTITY pdfdownload.websiteTooltip "Přejít na autorovu stránku">
 <!ENTITY pdfdownload.moreInfo "Více informací:">
@@ -16,7 +17,7 @@
 <!ENTITY pdfdownload.changelog "Seznam změn">
 <!ENTITY pdfdownload.acknowledgments "Poděkování">
 <!ENTITY pdfdownload.siteListTitle "Vyjímky">
-<!ENTITY pdfdownload.optionsTitle "Možnosti rozšíření 'PDF Download'">
+<!ENTITY pdfdownload.optionsTitle "Možnosti rozšíření &apos;PDF Download&apos;">
 <!ENTITY pdfdownload.optionsGeneralTab "Obecné">
 <!ENTITY pdfdownload.optionsPDFTab "Otevření PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Převod PDF do HTML">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Zvolte PDF prohlížeč">
 <!ENTITY pdfdownload.optionsExeFiles "Aplikace Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Všechny soubory">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Zvolený soubor není spustitelnou aplikací">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Specifikovaný prohlížeč nelze spustit!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Aktualizovat">
 <!ENTITY pdfdownload.optionsCheckUpdates "Vyhledat aktualizace">
 <!ENTITY pdfdownload.optionsHowToHelp "Jak pomoci">
 <!ENTITY pdfdownload.optionsMakeDonation "Přispět">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Obrázky">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Zobrazit obrázky v HTML verzi PDF dokumentu.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Obrázky musí být uloženy na serveru, aby bylo možné je zobrazit.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Obrázky budou do jednoho dne automaticky vymazány.">

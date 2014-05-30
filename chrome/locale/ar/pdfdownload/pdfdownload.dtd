@@ -1,0 +1,48 @@
+<!ENTITY pdfdownload.createdByLabel "صمم بواسطة :">
+<!ENTITY pdfdownload.websiteLabel "الموقع الإلكتروني">
+<!ENTITY pdfdownload.defaultActionLabel "التصرف الإفتراضي">
+<!ENTITY pdfdownload.showPopup "إظهار صفحة حوار منبثقة">
+<!ENTITY pdfdownload.downloadButton "قم بتنزيله">
+<!ENTITY pdfdownload.openButton "إفتح الملف">
+<!ENTITY pdfdownload.viewHtmlButton "إعرضه كـ HTML">
+<!ENTITY pdfdownload.openWithoutExtension "تنزيل سريع للملف">
+<!ENTITY pdfdownload.cancelButton "إلغاء الأمر">
+<!ENTITY pdfdownload.osWarningMsg "لم يستطع الإمتداد إيجاد برنامج قرائة الـ PDF الإفتراضي الخاص بك. رجاءً إختر واحداً في صفحة خصائص التنزيل.">
+<!ENTITY pdfdownload.aboutTitle "حول الإمتداد">
+<!ENTITY pdfdownload.websiteTooltip "تصفع موقع المؤلف">
+<!ENTITY pdfdownload.moreInfo "تفاصيل أخرى:">
+<!ENTITY pdfdownload.readLicenseTooltip "إقرأ ترخيص المستخدم النهائي">
+<!ENTITY pdfdownload.license "الترخيص">
+<!ENTITY pdfdownload.readChangelogTooltip "إستعرض تاريخ الإصدارات">
+<!ENTITY pdfdownload.changelog "تاريخ الإصدارات">
+<!ENTITY pdfdownload.acknowledgments "المصادر">
+<!ENTITY pdfdownload.siteListTitle "إستثناءات">
+<!ENTITY pdfdownload.optionsTitle "خصثائص الإمتداد">
+<!ENTITY pdfdownload.optionsGeneralTab "عام">
+<!ENTITY pdfdownload.optionsPDFTab "فتح الملف">
+<!ENTITY pdfdownload.optionsHTMLTab "التحويل من PDF إلى HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "تفاصيل أخرى">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "قائمة الأدوات">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "إظهر زر خاص بالإمتداد في قائمة أدوات فايرفوكس">
+<!ENTITY pdfdownload.optionsOpenLink "كيف يتم فتح وصلات ملفات الـ PDF بإستخدام الإمتداد :">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "كيف يتم فتح ملفات الـ PDF في هيئة HTML :">
+<!ENTITY pdfdownload.optionsSameTab "إفتح في نفس التبويب">
+<!ENTITY pdfdownload.optionsNewTab "إفتح في تبويب جديد">
+<!ENTITY pdfdownload.optionsNewWindow "إفتح في نافذة جديدة">
+<!ENTITY pdfdownload.optionsOpenPdf "فتح ملف الـPDF">
+<!ENTITY pdfdownload.optionsUsePlugin "إستخدم الإمتداد">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "إستخدم المستعرض الإفتراضي لنظام التشغيل">
+<!ENTITY pdfdownload.optionsUseCustomProgram "إستخدم هذا المستعرض:">
+<!ENTITY pdfdownload.optionsBrowse "البحث...">
+<!ENTITY pdfdownload.optionsBrowseTitle "إختر برنامج لإستعراض الـ PDF">
+<!ENTITY pdfdownload.optionsExeFiles "تطبيقات النوافذ">
+<!ENTITY pdfdownload.optionsAllFiles "كل الملفات">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "المستعرض المحدد ليس برنامج تنفيذي!">
+<!ENTITY pdfdownload.optionsUpdateLabel "تحديث">
+<!ENTITY pdfdownload.optionsCheckUpdates "إبحث عن التحديثات">
+<!ENTITY pdfdownload.optionsHowToHelp "كيف يمكنك المساعدة">
+<!ENTITY pdfdownload.optionsMakeDonation "تبرع">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "صور">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "إعرض الصور في نسخة الـ HTML للـ PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "لكى تتمكن من مشاهدة الصور لابد أن يتم حفظهم على خادمنا.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "سيتم حذف الصور تلقائيا بعد 24 ساعة">

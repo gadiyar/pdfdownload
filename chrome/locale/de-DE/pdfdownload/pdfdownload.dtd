@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "PDF herunterladen">
 <!ENTITY pdfdownload.openButton "PDF öffnen">
 <!ENTITY pdfdownload.viewHtmlButton "PDF als HTML anzeigen">
+<!ENTITY pdfdownload.openWithoutExtension "PDF Download umgehen">
 <!ENTITY pdfdownload.cancelButton "Abbrechen">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download kann keinen Standard-Dateibetrachter für PDF-Dokumente finden. Bitte wählen sie ein entsprechendes Programm im Einstellungsdialog von PDF Download aus!">
 <!ENTITY pdfdownload.aboutTitle "Über PDF Download">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "PDF-Betrachter auswählen">
 <!ENTITY pdfdownload.optionsExeFiles "Programme">
 <!ENTITY pdfdownload.optionsAllFiles "Alle Dateien">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Die ausgewählte Datei ist nicht ausführbar!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Der benutzerdefinierte Betrachter ist keine ausführbare Datei!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Versionsinformation">
 <!ENTITY pdfdownload.optionsCheckUpdates "Auf Updates überprüfen">
 <!ENTITY pdfdownload.optionsHowToHelp "Unterstützung">
 <!ENTITY pdfdownload.optionsMakeDonation "Spenden mit PayPal">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Grafiken">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Grafiken in der HTLM-Version einer PDF-Datei anzeigen">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Um die Grafiken anzeigen zu können, müssen sie auf unserem Server gespeichert werden.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Die Grafiken werden automatisch nach einem Tag gelöscht.">

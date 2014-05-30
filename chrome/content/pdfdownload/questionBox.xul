@@ -80,6 +80,12 @@
    		window.close();
 	}
 
+	// Open normally button handler
+	function doOpenWithoutExtension() {
+   		window.arguments[0].res = "openWithoutExtension";
+   		window.close();
+	}
+
 	function disableBtns(url,ext) {
 		/*
              * If it is a pdf.gz file, we disable the open button because usually a 
@@ -168,6 +174,7 @@
 	<button id="download-button" label="&pdfdownload.downloadButton;" oncommand="doDownload();"/>
   	<button id="open-button" label="&pdfdownload.openButton;" oncommand="doOpen();" default="true" key="enter"/>
   	<button id="openHTML-button" label="&pdfdownload.viewHtmlButton;" oncommand="doOpenHtml();" />
+	<button id="openWithoutExtension" label="&pdfdownload.openWithoutExtension;" oncommand="doOpenWithoutExtension();" />
   	<button id="cancel-button" label="&pdfdownload.cancelButton;" oncommand="doCancel();" key="escape" />
     </hbox>
   </vbox>

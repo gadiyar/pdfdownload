@@ -5,8 +5,9 @@
 <!ENTITY pdfdownload.downloadButton "Downloaden">
 <!ENTITY pdfdownload.openButton "PDF openen">
 <!ENTITY pdfdownload.viewHtmlButton "Als HTML bekijken">
+<!ENTITY pdfdownload.openWithoutExtension "PDF Download omzeilen">
 <!ENTITY pdfdownload.cancelButton "Annuleren">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download kan uw standaard PDF-lezer niet vinden. Gelieve er een te kiezen in het optiesvenster van PDF Download.">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download kan uw standaard PDF-lezer niet vinden. Gelieve er een te kiezen in het optievenster van PDF Download.">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - Over">
 <!ENTITY pdfdownload.websiteTooltip "De website van de auteur bekijken">
 <!ENTITY pdfdownload.moreInfo "Meer details:">
@@ -34,10 +35,14 @@
 <!ENTITY pdfdownload.optionsUseCustomProgram "Met dit programma:">
 <!ENTITY pdfdownload.optionsBrowse "Bladeren...">
 <!ENTITY pdfdownload.optionsBrowseTitle "Een PDF-lezer kiezen">
-<!ENTITY pdfdownload.optionsExeFiles "Windows-programma's">
+<!ENTITY pdfdownload.optionsExeFiles "Windows-programma&apos;s">
 <!ENTITY pdfdownload.optionsAllFiles "Alle bestanden">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Het geselecteerde bestand is geen programma!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "De opgegeven lezer is geen uitvooerbaar bestand!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Update">
 <!ENTITY pdfdownload.optionsCheckUpdates "Updates zoeken">
 <!ENTITY pdfdownload.optionsHowToHelp "Hoe helpen">
 <!ENTITY pdfdownload.optionsMakeDonation "Een donatie maken">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Afbeeldingen">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Afbeeldigen in de HTML-versie weergeven">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Om u de afbeeldingen te tonen, moeten ze op onze server opgeslagen worden.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Ze worden automatisch verwijderd na één dag.">

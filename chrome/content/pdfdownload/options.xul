@@ -44,7 +44,7 @@
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
   buttons="accept, cancel"
   onload="onLoad();" 
-  ondialogaccept='return onOK("&pdfdownload.optionsNotExecutableFileMsg;");'
+  ondialogaccept='return onOK("&pdfdownload.optionsViewerNotExecutableFileMsg;");'
   title="&pdfdownload.optionsTitle;">
 
   <stringbundle id="strings" src="chrome://pdfdownload/locale/pdfdownload.properties"/>
@@ -111,7 +111,7 @@
   								<radio id="customViewer"  label="&pdfdownload.optionsUseCustomProgram;" value="customViewer"/>
 								<textbox readonly="true" flex="1" id="pdfdownload-pdfViewerPath" preference="pd_viewerPath" preference-editable="true" />
 								<button id="pdfdownload-pickPdfViewerPath" label="&pdfdownload.optionsBrowse;"
-                                				oncommand='return onPickPdfViewerPath("&pdfdownload.optionsBrowseTitle;","&pdfdownload.optionsExeFiles;","&pdfdownload.optionsAllFiles;","&pdfdownload.optionsNotExecutableFileMsg;");' />
+                                				oncommand='return onPickPdfViewerPath("&pdfdownload.optionsBrowseTitle;","&pdfdownload.optionsExeFiles;","&pdfdownload.optionsAllFiles;","&pdfdownload.optionsViewerNotExecutableFileMsg;");' />
 							</hbox>
 						</radiogroup>
 					</vbox>
@@ -143,7 +143,7 @@
 				<groupbox>
 					<caption label="&pdfdownload.optionsUpdateLabel;"/>
 					<hbox>
-						<label value="PDF Download 0.7.4"/>
+						<label value="PDF Download 0.7.5"/>
 						<spacer flex="1"/>
 						<button label="&pdfdownload.optionsCheckUpdates;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');" />
 					</hbox>

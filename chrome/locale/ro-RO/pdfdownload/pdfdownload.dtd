@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Descarcă">
 <!ENTITY pdfdownload.openButton "Deschide">
 <!ENTITY pdfdownload.viewHtmlButton "Vizualizare în format HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Ignoră PDF Download">
 <!ENTITY pdfdownload.cancelButton "Renunţă">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download nu găseşte programul implicit pentru fişiere PDF. Specificaţi un program în Opţiuni.">
 <!ENTITY pdfdownload.aboutTitle "Despre PDF Download">
@@ -12,7 +13,7 @@
 <!ENTITY pdfdownload.moreInfo "Mai multe informaţii:">
 <!ENTITY pdfdownload.readLicenseTooltip "Citeşte Acordul de Utilizator">
 <!ENTITY pdfdownload.license "Licenţă">
-<!ENTITY pdfdownload.readChangelogTooltip "Arată jurnalul de schimbăro">
+<!ENTITY pdfdownload.readChangelogTooltip "Arată jurnalul de schimbări">
 <!ENTITY pdfdownload.changelog "Jurnal schimbări">
 <!ENTITY pdfdownload.acknowledgments "Mulţumiri">
 <!ENTITY pdfdownload.siteListTitle "Excepţii">
@@ -36,8 +37,12 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Alege programul de vizualizat fişiere PDF">
 <!ENTITY pdfdownload.optionsExeFiles "Aplicaţii Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Toate fişierele">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Fişierul selectat nu este executabil!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Programul de vizualizare specificat nu este executabil!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Actualizeză">
 <!ENTITY pdfdownload.optionsCheckUpdates "Caută actualizări">
 <!ENTITY pdfdownload.optionsHowToHelp "Ajutor">
 <!ENTITY pdfdownload.optionsMakeDonation "Faceţi o donaţie">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Imagini">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Arată imaginile în versiunea HTML a fişierului PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Pentru a fi vizualizate, imaginile trebuie salvate pe serverul nostru.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Imaginile salvate vor fi şterse automat după o zi.">

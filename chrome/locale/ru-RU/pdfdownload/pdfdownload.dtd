@@ -5,6 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Сохранить">
 <!ENTITY pdfdownload.openButton "Открыть">
 <!ENTITY pdfdownload.viewHtmlButton "Просмотреть в HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Игнорировать PDF Download">
 <!ENTITY pdfdownload.cancelButton "Отмена">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download не может найти Ваш PDF просмотрщик. Пожалуйста выберите его в настройках PDF Download!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - О проекте">
@@ -30,14 +31,18 @@
 <!ENTITY pdfdownload.optionsNewWindow "Открывать в новом окне">
 <!ENTITY pdfdownload.optionsOpenPdf "Открытие файлов PDF:">
 <!ENTITY pdfdownload.optionsUsePlugin "Использовать Firefox по умолчанию">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Использовать OS стандартную программу">
-<!ENTITY pdfdownload.optionsUseCustomProgram "Использовать эту программу:">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Использовать стандартное средство просмотра">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Использовать это средство просмотра:">
 <!ENTITY pdfdownload.optionsBrowse "Обзор...">
-<!ENTITY pdfdownload.optionsBrowseTitle "Выбрать PDF Просмотрщик">
+<!ENTITY pdfdownload.optionsBrowseTitle "Выбрать средство просмотра PDF">
 <!ENTITY pdfdownload.optionsExeFiles "Windows приложения">
 <!ENTITY pdfdownload.optionsAllFiles "Все файлы">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Выбранный файл не является исполняемым!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Указанное средство просмотра не является исполняемым файлом!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Обновление">
 <!ENTITY pdfdownload.optionsCheckUpdates "Проверить обновления">
 <!ENTITY pdfdownload.optionsHowToHelp "Как помочь">
 <!ENTITY pdfdownload.optionsMakeDonation "Сделать пожертвование">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Картинки">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Показывать изображения в HTML версии PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Чтобы можно было видеть изображения, они должны быть сохранены на нашем сервере.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Изображения будут автоматически удалены через один день.">
