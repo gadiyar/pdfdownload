@@ -1,0 +1,18 @@
+<!ENTITY pdfdownload.CreatedByLabel "Автор:">
+<!ENTITY pdfdownload.WebsiteLabel "Сайт">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "Скачать">
+<!ENTITY pdfdownload.OpenButton "Открыть в новой вкладке">
+<!ENTITY pdfdownload.ViewHtmlButton "Просмотреть как HTML, в новой вкладке">
+<!ENTITY pdfdownload.CancelButton "Отмена">
+
+<!ENTITY pdfdownload.AboutTitle "PDF Download - О проекте">
+<!ENTITY pdfdownload.WebsiteTooltip "Посетить домашнюю страницу">
+<!ENTITY pdfdownload.MoreInfo "Дополнительно:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Лицензионное соглашение конечного пользователя">
+<!ENTITY pdfdownload.License "Лицензия">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Просмотреть список изменений">
+<!ENTITY pdfdownload.Changelog "Список изменений">
+<!ENTITY pdfdownload.Acknowledgments "Благодарности">
+
+
