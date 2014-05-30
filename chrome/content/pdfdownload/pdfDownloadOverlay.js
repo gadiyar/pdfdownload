@@ -576,16 +576,6 @@ function shouldNewTabFocused() {
 	return focusNewTab;
 }
 
-function togglePDFDownloadItem() {
-	if (!sltPrefs.prefHasUserValue("extensions.pdfdownload.showToolsMenuItem")) {
-		sltPrefs.setBoolPref("extensions.pdfdownload.showToolsMenuItem",true);
-	}
-	if (sltPrefs.getBoolPref("extensions.pdfdownload.showToolsMenuItem") == true) {
-		document.getElementById("PDFDownloadToolsItem").hidden = false;
-	} else {
-		document.getElementById("PDFDownloadToolsItem").hidden = true;
-	}
-}
 
 function retrieveLegacyOptions() {
 	const oldPrefix = "pdfdownload.";
@@ -784,14 +774,13 @@ function isFirstPDFDownloadInstallation() {
 function init() {
 
     removeDownloadedFiles();
-	window.removeEventListener("load", init, true);
-	getBrowser().addEventListener("click", mouseClick, true);
+	getBrowser().addEventListener("click", mouseClick, false);
 	try {
 		//legacy options
 		retrieveLegacyOptions();
 	} catch(ex) {}
 
-	document.getElementById("menu_ToolsPopup").addEventListener("popupshowing",togglePDFDownloadItem, false);
+	document.getElementById("menu_ToolsPopup").addEventListener("popupshowing", pdfDownloadShared.togglePDFDownloadItem, false);
     getBrowser().addProgressListener(pdfDownloadUrlBarListener, Components.interfaces.nsIWebProgress.NOTIFY_STATE_DOCUMENT);
 
 	//add download observer
@@ -801,12 +790,13 @@ function init() {
 function uninit() {
 	unloadDownloadObserver();
     getBrowser().removeProgressListener(pdfDownloadUrlBarListener);
-	getBrowser().removeEventListener("click",mouseClick,true);
-	document.getElementById("menu_ToolsPopup").removeEventListener("popupshowing",togglePDFDownloadItem, false);
+	getBrowser().removeEventListener("click",mouseClick,false);
+	document.getElementById("menu_ToolsPopup").removeEventListener("popupshowing", pdfDownloadShared.togglePDFDownloadItem, false);
+    window.removeEventListener("load", init, false);
 }
 
 
 //do the init on load
-window.addEventListener("load", init, true);
+window.addEventListener("load", init, false);
 //do the unload
 window.addEventListener("unload",uninit,false);

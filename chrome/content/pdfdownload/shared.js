@@ -37,6 +37,11 @@
 var PdfDownloadShared = function() {}
 
 
+PdfDownloadShared.prototype.openInNewTab = function(url) {
+	var aTab = getBrowser().addTab(url);
+	getBrowser().selectedTab = aTab;
+}
+
 PdfDownloadShared.prototype.openURL = function(aURL) {
 	var navWindow;
 	try {
@@ -285,6 +290,19 @@ PdfDownloadShared.prototype.help = function(s) {
 		url += "#" + s;
 	}
 	pdfDownloadShared.openURL(url);
+}
+
+PdfDownloadShared.prototype.togglePDFDownloadItem = function() {
+    var prefs = Components.classes["@mozilla.org/preferences-service;1"]
+		                               .getService(Components.interfaces.nsIPrefBranch);
+	if (!prefs.prefHasUserValue("extensions.pdfdownload.showToolsMenuItem")) {
+		prefs.setBoolPref("extensions.pdfdownload.showToolsMenuItem",true);
+	}
+	if (prefs.getBoolPref("extensions.pdfdownload.showToolsMenuItem") == true) {
+		document.getElementById("PDFDownloadToolsItem").hidden = false;
+	} else {
+		document.getElementById("PDFDownloadToolsItem").hidden = true;
+	}
 }
 
 // create the object

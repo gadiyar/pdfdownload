@@ -1,5 +1,10 @@
 CHANGELOG
 
+v1.0.0.1:	2008-01-02
+
+ - Added compatibility with Firefox 3.0b3pre.
+ - Fixed incompatibility with TinyMenu extension that was preventing to hide the item from Firefox Tools menu.
+
 v1.0.0.0:	2007-12-20
 
  - Restyled the options window.
