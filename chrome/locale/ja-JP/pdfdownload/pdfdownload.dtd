@@ -1,18 +1,18 @@
-<!ENTITY pdfdownload.CreatedByLabel "ф╜ЬцИРшАЕ:">
-<!ENTITY pdfdownload.WebsiteLabel "уГЫуГ╝уГауГЪуГ╝уВ╕">
+<!ENTITY pdfdownload.CreatedByLabel "作成者:">
+<!ENTITY pdfdownload.WebsiteLabel "ホームページ">
 <!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "уГАуВжуГ│уГнуГ╝уГЙ">
-<!ENTITY pdfdownload.OpenButton "цЦ░уБЧуБДуВ┐уГЦуБзщЦЛуБП">
-<!ENTITY pdfdownload.ViewHtmlButton "цЦ░уБЧуБДуВ┐уГЦуБз HTML уБиуБЧуБжшбичд║">
-<!ENTITY pdfdownload.CancelButton "уВнуГгуГ│уВ╗уГл">
+<!ENTITY pdfdownload.DownloadButton "ダウンロード">
+<!ENTITY pdfdownload.OpenButton "新しいタブで開く">
+<!ENTITY pdfdownload.ViewHtmlButton "新しいタブで HTML として表示">
+<!ENTITY pdfdownload.CancelButton "キャンセル">
 
-<!ENTITY pdfdownload.AboutTitle "PDF уГАуВжуГ│уГнуГ╝уГЙуБлуБдуБДуБжуАВ">
-<!ENTITY pdfdownload.WebsiteTooltip "ф╜ЬцИРшАЕуБоуГЫуГ╝уГауГЪуГ╝уВ╕уВТшбичд║уБЧуБ╛уБЩуАВ">
-<!ENTITY pdfdownload.MoreInfo "уБЭуБоф╗Ц шй│ч┤░:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "уВиуГ│уГЙуГжуГ╝уВ╢уГ╝ уГйуВдуВ╗уГ│уВ╣уВТшкнуВАуБУуБиуБМхЗ║цЭеуБ╛уБЩуАВ">
-<!ENTITY pdfdownload.License "уГйуВдуВ╗уГ│уВ╣">
-<!ENTITY pdfdownload.ReadChangelogTooltip "цЫ┤цЦ░х▒ецн┤уВТшбичд║уБЧуБ╛уБЩуАВ">
-<!ENTITY pdfdownload.Changelog "цЫ┤цЦ░х▒ецн┤">
-<!ENTITY pdfdownload.Acknowledgments "шмЭш╛Ю">
+<!ENTITY pdfdownload.AboutTitle "PDF ダウンロードについて。">
+<!ENTITY pdfdownload.WebsiteTooltip "作成者のホームページを表示します。">
+<!ENTITY pdfdownload.MoreInfo "その他 詳細:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "エンドユーザー ライセンスを読むことが出来ます。">
+<!ENTITY pdfdownload.License "ライセンス">
+<!ENTITY pdfdownload.ReadChangelogTooltip "更新履歴を表示します。">
+<!ENTITY pdfdownload.Changelog "更新履歴">
+<!ENTITY pdfdownload.Acknowledgments "謝辞">
 
 
