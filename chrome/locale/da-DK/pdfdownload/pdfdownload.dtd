@@ -22,15 +22,15 @@
 <!ENTITY pdfdownload.optionsPDFTab "PDF åbning">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF til HTML konvertering">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Flere oplysninger">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Vækrtøjslinie">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Værktøjslinie">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Vis PDF Download i menupunktet Funktioner i Firefox">
-<!ENTITY pdfdownload.optionsOpenLink "Hvordan skal PDF links åbnes ved brug af PDF plugin:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hvordan skal HTML version af PDF filer åbnes:">
+<!ENTITY pdfdownload.optionsOpenLink "Hvordan skal PDF-links åbnes ved brug af Firefox PDF-udvidelsen:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hvordan skal HTML version af PDF-filer åbnes:">
 <!ENTITY pdfdownload.optionsSameTab "Åbn i samme faneblad">
 <!ENTITY pdfdownload.optionsNewTab "Åbn i nyt faneblad">
 <!ENTITY pdfdownload.optionsNewWindow "Åbn i nyt vindue">
 <!ENTITY pdfdownload.optionsOpenPdf "PDF filåbning:">
-<!ENTITY pdfdownload.optionsUsePlugin "Benyt samme handling som Firefox">
+<!ENTITY pdfdownload.optionsUsePlugin "Benyt PDF-plugin">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Brug styresystemets standard-fremviser">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Brug denne fremviser:">
 <!ENTITY pdfdownload.optionsBrowse "Gennemse...">
@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Vis billeder i HTML-versionen af PDF-filen">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "For at kunne vise billederne skal de gemmes på vores server.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Billederne slettes automatisk efter en dag.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Download PDF-filen. Har du i indstillingerne for Firefox valgt en standardplacering for downloadede filer, vil den automatisk blive gemt her. Hvis ikke bliver du bedt om at vælge en mappe som filen gemmes i.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Åbn PDF-filen. Alt efter indstillingerne i PDF Download vil PDF-filen blive åbnet i Firefox med PDF-udvidelsen (som derfor allerede skal være installeret),  åbnet med standard PDF-fremviseren for dit styresystem eller åbnet med en PDF-fremviser efter eget valg.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Vis PDF-filen som HTML. PDF-filen vil blive hentet af en ekstern server og konverteret til HTML. PDF-filen fjernes automatisk fra den eksterne server efter konverteringen.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Åbn PDF-filen som om PDF Download ikke var installeret. Du opnår så samme funktionalitet som Firefox havde inden installationen af PDF Download.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Luk dette vindue. PDF-filen vil hverken blive downloadet eller åbnet, og du kan fortsætte med at surfe.">

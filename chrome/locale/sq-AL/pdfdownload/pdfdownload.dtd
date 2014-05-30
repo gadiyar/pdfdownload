@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Shfaqi figurat në versionin HTML">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Që t&apos;i shikoni figurat, ruajini në serverin tonë.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Figurat fshihen automatikisht pas një dite.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Shkarkoje skedën PDF. Nëse keni vendosur një direktori tipike në mundësitë e Firefox, skeda do të shkarkohet automatikisht; përndryshe ju duhet të përcaktoni direktorinë ku do të ruhet skeda.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Hape skedën PDF. Sipas zgjedhjeve që keni bërë në mundësitë e PDF Download, skeda PDF do të hapet brenda Firefox-it me prizën PDF (e cila duhet të jetë instaluar më parë), ose me lexuesin tuaj tipik për PDF, ose do të hapet me shikuesin me porosi që keni zgjedhur.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Shikoje skedën PDF si HTML. Skeda PDF do të shkarkohet nga një pasqyrë e jashtme dhe do të kthehet në HTML. Skeda PDF do të fshihet automatikisht nga pasqyra pas kthimit.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Hape skedëm PDF pasi PDF Download nuk u instalua. Firefox do të sillet njësoj si para instalimit të PDF Download.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Mbylle tabelën. Skeda PDF as do të shkarkohet, as do të hapet, kurse ju do të vijoni me lundrimin.">

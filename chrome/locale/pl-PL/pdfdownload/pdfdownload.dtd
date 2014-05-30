@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Pokaż grafiki w wersji HTML rozszerzenia">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Aby zobaczyć grafiki, muszą być one zapisane na naszym serwerze">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Grafiki zostaną automatycznie usunięte po upływie jednego dnia">
+<!ENTITY pdfdownload.tooltip.downloadButton "Jeśli w opcjach Firefoksa jest określony folder pobierania to  nastąpi automatyczny zapis pobieranego pliku w tym folderze. Jeśli nie ma określonego folderu pobierania, należy wskazać folder gdzie plik zostanie zapisany.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "W zależności od ustawień rozszerzenia plik PDF zostanie otworzony w Firefoksie za pomocą wtyczki PDF (musi być ona zainstalowana), otworzony za pomocą domyślnego czytnika plików PDF systemu operacyjnego lub innego, określonego przez użytkownika, czytnika.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Plik PDF zostanie pobrany przez zewnętrzny serwer i przekonwertowany do HTML. Plik ten jest automatycznie usuwany z serwera po wykonaniu konwersji.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Otwiera plik PDF tak jakby nie było zainstalowanego rozszerzenia PDF Download. Firefox będzie zachowywał się w sposób standardowy.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Zamyka to okno dialogowe. Żaden plik PDF nie zostanie pobrany ani otworzony. Powrócisz do przeglądania aktywnej witryny.">

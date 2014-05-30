@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Exibir imagens na versão HTML do arquivo PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Para que você possa visualizar as imagens, elas devem ser salvas no nosso servidor.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "As imagens serão excluídas automaticamente um dia após serem salvas.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Salva o arquivo PDF. Se você especificou a pasta padrão de downloads nas opções do Firefox, ele será salvo automaticamente nessa pasta; caso contrário, você deverá especificar a pasta onde o arquivo será salvo.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Abre o arquivo PDF. Dependendo do que você selecionou nas opções do PDF Download, o arquivo PDF será aberto dentro do Firefox com o plugin PDF (que deverá estar instalado) ou será aberto com o leitor de PDF padrão do seu sistema, ou ainda será aberto com o programa que você especificar.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Exibe o arquivo PDF como HTML. O arquivo PDF será baixado por um espelho e convertido em HTML. O arquivo PDF será automaticamente removido do espelho no fim da conversão.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Abre o arquivo PDF como se o PDF Download não estivesse instalado. Você terá o mesmo comportamento que o Firefox teria antes de instalar o PDF Download.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Fecha este diálogo. O arquivo PDF não será salvo tampouco aberto e você poderá continuar navegando.">

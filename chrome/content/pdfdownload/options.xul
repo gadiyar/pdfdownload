@@ -39,11 +39,13 @@
 <?xml-stylesheet href="chrome://pdfdownload/skin/pdfdownload.css" type="text/css"?>
 <!DOCTYPE window SYSTEM "chrome://pdfdownload/locale/pdfdownload.dtd">
 
+
 <prefwindow id="PDFDownload_Options"
-  type="prefwindow"
-  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-  buttons="accept, cancel"
-  onload="onLoad();" 
+  windowtype="Browser:Preferences" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+  dlgbuttons="accept,cancel" 
+  onload="onLoad();"  
+  ondialogcancel='return onOK("&pdfdownload.optionsViewerNotExecutableFileMsg;");'
   ondialogaccept='return onOK("&pdfdownload.optionsViewerNotExecutableFileMsg;");'
   title="&pdfdownload.optionsTitle;">
 
@@ -143,7 +145,7 @@
 				<groupbox>
 					<caption label="&pdfdownload.optionsUpdateLabel;"/>
 					<hbox>
-						<label value="PDF Download 0.7.6"/>
+						<label value="PDF Download 0.7.7"/>
 						<spacer flex="1"/>
 						<button label="&pdfdownload.optionsCheckUpdates;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');" />
 					</hbox>

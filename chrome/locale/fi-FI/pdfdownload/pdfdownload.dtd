@@ -46,3 +46,9 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Näytä kuvat PDF:n HTML-versiossa">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Jotta näkisit kuvat, on ne tallennettava meidän palvelimelle.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Tallennetut kuvat poistetaan automaattisesti yhden päivän kuluessa.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Lataa PDF-tiedosto. Jos olet asettanut Firefoxin asetuksista tallennuskansion,
+tiedosto tallennetaan sinne. Muutoin sijainti, johon tiedosto tallennetaan tulee määritellä erikseen joka kerta.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Avaa PDF-tiedosto. Riippuen PDF Downloadin asetuksista, PDF-tiedostot avataan Firefoxin sisällä PDF-liitännäisellä (, joka täytyy olla asennettuna) tai käyttöjärjestelmän PDF-lukijalla tai määrittelemälläsi omalla PDF-lukijalla.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Näytä PDF HTML:nä. PDF-tiedostot avataan ulkoiselle palvelimelle ja muutetaan HTML:ksi. PDF-tiedosto poistetaan palvelimelta automaattisesti muuttamisen lopuksi.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "PDF-tiedoston avataan niin kuin PDF Downloadia ei olisi asennettu. Firefox käsittelee PDF-tiedostot samalla tavalla, kuin ennen PDF Downloadin asentamista.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Sulje valintaikkuna. PDF-tiedostoa ei ladata eikä avata ja jatkat selailuasi.">

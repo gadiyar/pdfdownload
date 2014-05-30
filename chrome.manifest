@@ -6,9 +6,9 @@ skin	pdfdownload	classic/1.0	jar:chrome/pdfdownload.jar!/skin/classic/pdfdownloa
 
 locale	pdfdownload	en-US	jar:chrome/pdfdownload.jar!/locale/en-US/pdfdownload/
 
-locale	pdfdownload	bg-BG	jar:chrome/pdfdownload.jar!/locale/bg-BG/pdfdownload/
-
 locale	pdfdownload	ar	jar:chrome/pdfdownload.jar!/locale/ar/pdfdownload/
+
+locale	pdfdownload	bg-BG	jar:chrome/pdfdownload.jar!/locale/bg-BG/pdfdownload/
 
 locale	pdfdownload	cs-CZ	jar:chrome/pdfdownload.jar!/locale/cs-CZ/pdfdownload/
 
@@ -30,11 +30,7 @@ locale	pdfdownload	fr-FR	jar:chrome/pdfdownload.jar!/locale/fr-FR/pdfdownload/
 
 locale	pdfdownload	fy-NL	jar:chrome/pdfdownload.jar!/locale/fy-NL/pdfdownload/
 
-locale	pdfdownload	gl-ES	jar:chrome/pdfdownload.jar!/locale/gl-ES/pdfdownload/
-
 locale	pdfdownload	he-IL	jar:chrome/pdfdownload.jar!/locale/he-IL/pdfdownload/
-
-locale	pdfdownload	hu-HU	jar:chrome/pdfdownload.jar!/locale/hu-HU/pdfdownload/
 
 locale	pdfdownload	hr-HR	jar:chrome/pdfdownload.jar!/locale/hr-HR/pdfdownload/
 
@@ -42,13 +38,11 @@ locale	pdfdownload	it-IT	jar:chrome/pdfdownload.jar!/locale/it-IT/pdfdownload/
 
 locale	pdfdownload	ja-JP	jar:chrome/pdfdownload.jar!/locale/ja-JP/pdfdownload/
 
-locale	pdfdownload	mk-MK	jar:chrome/pdfdownload.jar!/locale/mk-MK/pdfdownload/
-
 locale	pdfdownload	nl-NL	jar:chrome/pdfdownload.jar!/locale/nl-NL/pdfdownload/
 
-locale	pdfdownload	pt-BR	jar:chrome/pdfdownload.jar!/locale/pt-BR/pdfdownload/
-
 locale	pdfdownload	pl-PL	jar:chrome/pdfdownload.jar!/locale/pl-PL/pdfdownload/
+
+locale	pdfdownload	pt-BR	jar:chrome/pdfdownload.jar!/locale/pt-BR/pdfdownload/
 
 locale	pdfdownload	pt-PT	jar:chrome/pdfdownload.jar!/locale/pt-PT/pdfdownload/
 
@@ -58,15 +52,11 @@ locale	pdfdownload	ru-RU	jar:chrome/pdfdownload.jar!/locale/ru-RU/pdfdownload/
 
 locale	pdfdownload	sk-SK	jar:chrome/pdfdownload.jar!/locale/sk-SK/pdfdownload/
 
+locale	pdfdownload	sl-SI	jar:chrome/pdfdownload.jar!/locale/sl-SI/pdfdownload/
+
 locale	pdfdownload	sq-AL	jar:chrome/pdfdownload.jar!/locale/sq-AL/pdfdownload/
 
 locale	pdfdownload	sv-SE	jar:chrome/pdfdownload.jar!/locale/sv-SE/pdfdownload/
-
-locale	pdfdownload	sl-SI	jar:chrome/pdfdownload.jar!/locale/sl-SI/pdfdownload/
-
-locale	pdfdownload	tr-TR	jar:chrome/pdfdownload.jar!/locale/tr-TR/pdfdownload/
-
-locale	pdfdownload	uk-UA	jar:chrome/pdfdownload.jar!/locale/uk-UA/pdfdownload/
 
 locale	pdfdownload	zh-CN	jar:chrome/pdfdownload.jar!/locale/zh-CN/pdfdownload/
 

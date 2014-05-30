@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Показывать изображения в HTML версии PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Чтобы можно было видеть изображения, они должны быть сохранены на нашем сервере.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Изображения будут автоматически удалены через один день.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Загрузите файл PDF. Если вы установили папку загрузки по умолчанию в настройках Firefox, он автоматически загрузит файл в эту директорию; иначе вам нужно указать директорию, где сохранить файл.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Откройте файл PDF. В зависимости от того, что установлено в PDF настройках Загрузкок, файл PDF будет открыт внутри Firefox с плагином (он должен быть уже установлен), или открыт с вашим стандартным PDF просмотрщиком, или открыт с другим просмотрщиком, который вы настроили.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Просмотреть файл PDF как HTML. Файл PDF загрузит внешнее зеркало и превратится в HTML. Файл PDF автоматически удаляется из зеркала в конце конверсии.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Откройте файл PDF, так как Загрузка PDF не была установлена. Вы получите то же поведение Firefox имел перед установкой Загрузки PDF.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Закройте этот диалог. Файл PDF будет ни загружал, ни открывался и вы будете продолжать свой занимающийся серфингом опыт.">

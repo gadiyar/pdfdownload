@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Arată imaginile în versiunea HTML a fişierului PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Pentru a fi vizualizate, imaginile trebuie salvate pe serverul nostru.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Imaginile salvate vor fi şterse automat după o zi.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Descărcare fişier PDF. Dacă în prealabil aţi setat un dosar de descărcare în Firefox, atunci fişierul se va salva automat acolo. Dacă nu, atunci va trebui să specificaţi dosarul în care doriţi să salvaţi fişierul.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Deschidere fişier PDF. În funcţie de ceea ce aţi setat în Opţiunile PDF Download, fişierul va fi deschis de către: pluginul PDF al navigatorului (care trebuie să fie deja instalat), aplicaţia implicită a sistemului de operare sau de către programul individual specificat.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Vizualizare fişier PDF ca HTML. Fişierul va fi descărcat de câtre un server extern şi convertit în HTML. Serverul extern va şterge fişierul imediat după terminarea conversiei.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Deschidere fişier în maniera standard. Fişierul va fi deschis de către navigator ca şi cum extensia PDF Download nu ar fi fost instalată.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Închidere fereastră de dialog. Fişierul PDF nu va fi nici descărcat, nicu deschis.">

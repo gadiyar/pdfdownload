@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Mostrar imagens na versão HTML do ficheiro PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Para mostrar as imagens, estas devem estar guardadas no nosso servidor.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "As imagens serão automaticamente apagadas no prazo de um dia.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Fazer download do ficheiro PDF. Se seleccionou uma directoria por defeito nas opções do Firefox o ficheiro será automaticamente guardado nessa directoria; de outra forma necessitará de especificar uma directoria onde guardar o ficheiro.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Abrir o ficheiro PDF. Dependendo do que determinou nas opções do PDF Download o ficheiro PDF será aberto dentro do Firefox com o plugin (que deverá ter sido instalado), aberto com o visualizador PDF por defeito ou aberto com o visualizador que especificou.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Ver ficheiro PDF como HTML. O ficheiro PDF será copiado por um servidor externo e convertido para HTML. O ficheiro PDF será automaticamente removido desse servidor no final da conversão.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Abrir ficheiro PDF como se o PDF Download não estivesse instalado. O comportamento do Firefox será semelhante a antes de ter instalado o PDF Download.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Fechar este diálogo. O ficheiro PDF não será copiado nem aberto e poderá continuar a navegar na web.">

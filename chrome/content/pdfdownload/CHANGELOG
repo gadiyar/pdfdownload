@@ -1,5 +1,11 @@
 CHANGELOG
 
+v0.7.7  :   2006-12-04
+
+ - Fixed bug related to the download feature 
+ - Fixed bug in the GUI of the options window: now it is well displayed also in Mac OS, with a close button.
+ - Added tooltips in the dialog box 
+
 v0.7.6  :   2006-09-27
 
  - Added support for Firefox 2.0

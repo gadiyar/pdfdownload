@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Zobraziť obrázky v HTML verzii PDF súboru">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Ak chcete vidieť obrázky, musia byť uložené na náš server.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Obrázky budú po jednom dni automaticky odstránené.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Stiahne PDF súbor. Ak máte určený predvolený priečinok, do ktorého sú ukladané sťahované súbory, PDF súbor bude uložený tam, inak budete musieť určiť priečinok, kam bude súbor uložený.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Otvorí PDF súbor. V závislosti na tom, čo máte nastavené v nastaveniach rozšírenia bude súbor otvorený vo Firefoxe pomocou PDF modulu (musí byť nainštalovaný) alebo bude otvorený predvoleným prehliadačom PDF súborov, prípadne prehliadačom, ktorý určíte.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Zobrazí PDF súbor ako HTML. PDF súbor bude stiahnutý na externý server a skonvertovaný na HTML. Po konverzii bude súbor zo servera automaticky odstránený.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Otvorí PDF súbor ako keby toto rozšírenie nebolo nainštalované. Firefox sa bude správať presne tak ako pred inštaláciou rozšírenia PDF Download.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Zatvorí toto dialógové okno. PDF súbor nebude ani stiahnutý ani otvorený a vy môžete pokračovať v surfovaní.">

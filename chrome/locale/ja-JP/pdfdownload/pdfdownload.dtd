@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "PDF 内の画像を HTML で表示">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "画像を表示するには一旦サーバーに保存する必要があります。">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "画像は一日後に自動的に削除されます。">
+<!ENTITY pdfdownload.tooltip.downloadButton "PDF ファイルをダウンロードします。Firefox のオプションでデフォルトのダウンロードフォルダを設定されている場合は、そのフォルダに自動的にダウンロードされます。もし設定されていない場合は保存先のフォルダを指定してください。">
+<!ENTITY pdfdownload.tooltip.openPDFButton "PDF ファイルを開きます。PDF Download の設定に従って、PDF ファイルを PDF プラグイン (PDF プラグインがインストールされている必要があります) を使用して Firefox で表示したり 、OS によって設定された既定の PDF リーダーやあなたが指定した PDF リーダーで開く事ができます。">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "PDF ファイルを HTML として表示します。PDF ファイルは外部サーバーにアップロードされ HTML に変換されます。アップロードされた PDF ファイルは変換終了後に自動的にサーバーから削除されます。">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "PDF Download がインストールされていなかった時のように PDF ファイルを開きます。Firefox は PDF Download がインストールされる前と同じ動作をします。">
+<!ENTITY pdfdownload.tooltip.cancelButton "このダイアログを閉じます。PDF ファイルのダウンロードや表示を行なわず、ネットサーフィンを続ける事ができます。">

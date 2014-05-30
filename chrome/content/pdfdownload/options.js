@@ -46,9 +46,18 @@ function onOK(notExecutableFileMsg) {
 
     var path = document.getElementById(_pdfViewerPathTextBox).value;
     var openPDF = document.getElementById(_openPDFRadioGroup);
-    if ((openPDF.selectedItem.id == "customViewer") && (path == "")) {
-      alert(notExecutableFileMsg);
-	return false;
+    if (openPDF.selectedItem.id == "customViewer") {
+	var file  = Components.classes[fileCID].createInstance(fileIID);
+	try {
+		file.initWithPath(path);
+		if (!file.isFile() || !file.isExecutable()) {
+     			alert(notExecutableFileMsg);
+			return false;
+		}
+	} catch (ex) {
+     		alert(notExecutableFileMsg);
+		return false;
+	}
     }
 
     return true;

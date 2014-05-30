@@ -7,7 +7,7 @@
 <!ENTITY pdfdownload.viewHtmlButton "Voir en HTML">
 <!ENTITY pdfdownload.openWithoutExtension "Court-circuiter PDF Download">
 <!ENTITY pdfdownload.cancelButton "Annuler">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download ne trouve pas votre lecteur de PDF par défaut. Veuillez en choisir un dans les options de PDF Download !">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download ne trouve pas votre lecteur de PDF par défaut. Veuillez en choisir un  dans les options de PDF Download !">
 <!ENTITY pdfdownload.aboutTitle "À propos de PDF Download">
 <!ENTITY pdfdownload.websiteTooltip "Voir le site web de l&apos;auteur">
 <!ENTITY pdfdownload.moreInfo "Davantage de détails :">
@@ -34,15 +34,20 @@
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Utiliser le programme par défaut du système d&apos;exploitation">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Utiliser cette application :">
 <!ENTITY pdfdownload.optionsBrowse "Parcourir...">
-<!ENTITY pdfdownload.optionsBrowseTitle "Choisir une visionneuse PDF">
+<!ENTITY pdfdownload.optionsBrowseTitle "Choisir un lecteur de PDF">
 <!ENTITY pdfdownload.optionsExeFiles "Applications Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Tous les fichiers">
-<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "La visionneuse précisée n&apos;est pas un fichier exécutable !">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Le lecteur précisé n&apos;est pas un fichier exécutable !">
 <!ENTITY pdfdownload.optionsUpdateLabel "Mise à jour">
 <!ENTITY pdfdownload.optionsCheckUpdates "Vérifier les mises à jour">
 <!ENTITY pdfdownload.optionsHowToHelp "Comment contribuer">
 <!ENTITY pdfdownload.optionsMakeDonation "Faire un don">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Images">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Afficher les images dans la version HTML du fichier PDF">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Pour que vous puissiez voir les images, elles doivent être enregistrées sur votre serveur.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Pour que vous puissiez voir les images, elles doivent être enregistrées sur notre serveur.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Les images seront automatiquement supprimées au bout de 24 heures.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Télécharge le fichier PDF. Si vous avez précisé un répertoire de téléchargement par défaut dans les options de Firefox, le fichier sera automatiquement enregistré dans ce répertoire ; sinon vous devrez préciser dans quel répertoire l&apos;enregistrer.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Ouvre le fichier PDF. Suivant le choix que vous avez opéré dans les options de PDF Download, le fichier PDF s&apos;ouvrira dans Firefox avec le plugin PDF (qui doit être déjà installé), ou bien s&apos;ouvrira avec la visionneuse PDF par défaut de votre système d&apos;exploitation, ou encore s&apos;ouvrira avec la visionneuse personnalisée que vous avez précisée.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Voir le fichier PDF en HTML. Le fichier PDF sera envoyé sur un site-miroir externe et converti en HTML. Le fichier HTML sera automatiquement supprimé du site-miroir dès la fin de la conversion.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "L&apos;option d&apos;ouverture du fichier PDF avec l&apos;extension PDF Download n&apos;est pas sélectionnée. Firefox se comportera comme si PDF Download n&apos;était pas installée.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Fermer cette fenêtre de dialogue. Le fichier PDF ne sera ni téléchargé ni ouvert et vous pourrez poursuivre votre navigation.">

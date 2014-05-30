@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Visa bilder i HTML-versionen av PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "För att låta dig se bilder måste de sparas på vår server">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Bilderna kommer att tas bort automatiskt efter ett dygn.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Ladda ner PDF-filen. Om du har ställt in en standardmapp för nedladdning i Firefoxinställningarna kommer den automatiskt ladda ner filen till den mappen. Annars behöver du indikera en mapp där filen skall sparas.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Öppna PDF-filen. Beroende på hur du har ställt in inställningarna för PDF Download kommer PDF-filen öppnas i Firefox med pluginen för PDF (som redan måste ha installerats), öppnas med ditt operativsystems standardläsare för PDF eller öppnas med läsaren som du har ställt in.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Visa PDF-filen som HTML. PDF-filen kommer att laddas ner av en extern spegelserver som omvandlar filen till HTML. PDF-filen kommer att automatiskt tas bort från spegelservern vid slutet av omvandlingen.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Öppna PDF-filen som om PDF Download inte var installerat. Du kommer att få samma beteende som Firefox hade innan PDF Download installerades.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Stäng denna dialog. PDF-filen kommer varken laddas ner eller öppnas och du kan fortsätta att surfa.">

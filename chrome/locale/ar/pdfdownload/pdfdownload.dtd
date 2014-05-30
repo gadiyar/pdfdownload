@@ -7,7 +7,7 @@
 <!ENTITY pdfdownload.viewHtmlButton "إعرضه كـ HTML">
 <!ENTITY pdfdownload.openWithoutExtension "تنزيل سريع للملف">
 <!ENTITY pdfdownload.cancelButton "إلغاء الأمر">
-<!ENTITY pdfdownload.osWarningMsg "لم يستطع الإمتداد إيجاد برنامج قرائة الـ PDF الإفتراضي الخاص بك. رجاءً إختر واحداً في صفحة خصائص التنزيل.">
+<!ENTITY pdfdownload.osWarningMsg "لم يستطع الإمتداد إيجاد برنامج قراءة الـ PDF الإفتراضي الخاص بك. رجاءً إختر واحداً في صفحة خصائص التنزيل.">
 <!ENTITY pdfdownload.aboutTitle "حول الإمتداد">
 <!ENTITY pdfdownload.websiteTooltip "تصفح موقع المؤلف">
 <!ENTITY pdfdownload.moreInfo "تفاصيل أخرى:">
@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "إعرض الصور في نسخة الـ HTML للـ PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "لكى تتمكن من مشاهدة الصور لابد أن يتم حفظهم على خادمنا.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "سيتم حذف الصور تلقائيا بعد 24 ساعة">
+<!ENTITY pdfdownload.tooltip.downloadButton "تنزيل ملف الـ PDF. إذا كنت قد خصصت ممجلد معين لتنزيل الملفات فيه في خصائص فايرفوكس سيتم تلقائياً تنزيل الملفات في هذا المجلد وإلا فستحتاج لتحديد مجلد لتنزيل الملفات فيه.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "إفتح الـ PDF . يعتمد على ما حددته في خصائص الإمتداد فإما سيفتح الملف داخل فايرفوكس عن طريق إضافة الـ PDF (والتى من المفترض أن تكون قد ركبتها من قبل) أو سيتم فتح الملف عن طريق قارئ الـ PDF الإفتراضي في نظامك أو سيفتح الملف في قارئ تختاره بنفسك.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "شاهد ملف الـ PDF كملف HTML . سيتم تنزيل الـ PDF بواسطة مرآة خارجية ويتم تحويله إلى HTML . سيتم حذف ملف الـ PDF تلقائياً من المرآة فى نهاية الحوار.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "إفتح هذا الملف كما لو كان هذا الإمتداد غير موجود. سوف يقوم فايرفوكس بما كان يقوم به مع مثل هذه الملفات قبل تركيب الإمتداد.">
+<!ENTITY pdfdownload.tooltip.cancelButton "إغلاق مربع الحوار. في هذه الحالة إما سيكون الملف قد تم تنزيله أو فتحه وتكمل أنت عملية تصفحك.">

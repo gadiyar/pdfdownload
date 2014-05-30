@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "PDF-של ה HTML-הראה תמונות בגרסת ה">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 ".על מנת שתוכל לצפות בתמונות, הן חייבות להישמר על שרתינו">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 ".התמונות ימחקו באופן עצמאי אחרי יום אחד">
+<!ENTITY pdfdownload.tooltip.downloadButton "הורד את קובץ ה PDF. אם קבעת תיקיית ברירת מחדל באפשרויות הדפדפן, הקובץ יירד אוטומטית אל התיקיה הזאת; אחרת, אתה תצטרך לציין את התיקיה לשמירת הקובץ.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "פתח את קובץ ה PDF. תלוי באפשרות שקבעת באפשרויות ההרחבה, הקובץ ייפתח בתוך הדפדפן עם פלאג-אין ה PDF שלך (שחייב להיות כבר מותקן) , או ייפתח בתוכנת ברירת המחדל לפתיחת קבצי PDF המוגדרת במחשב שלך, או ייפתח עם תוכנה מותאמת לבחירתך.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "צפה בקובץ ה PDF כקובץ HTML. קובץ ה PDF יירד על-ידי שרת-מראה חיצוני ויומר ל HTML. קובץ ה PDF יימחק באופן אוטומטי מהשרת בסוף ההמרה (הקובץ לא(!) יירד למחשב)">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "פתח את קובץ ה PDF כרגיל, כאילו לא התקנת את ההרחבה הזאת. אתה תקבל את אותה התנהגות ההורדה של הדפדפן כפי שהייתה לפני שהתקנת את ההרחבה (מבטל את פעולת ההרחבה)">
+<!ENTITY pdfdownload.tooltip.cancelButton "סגור דיאלוג זה. קובץ ה PDF לא יירד או ייפתח ואתה תוכל להמשיך בחווית הגלישה שלך.">

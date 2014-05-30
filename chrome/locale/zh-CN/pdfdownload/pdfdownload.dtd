@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "按 PDF 的 HTML 版本显示图片">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "在您查看这些图片之前，图片必须先保存在我们的服务器上。">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "这些图片将在一天之后自动删除。">
+<!ENTITY pdfdownload.tooltip.downloadButton "下载该 PDF 文件。如果您在 Firefox 的选项中设置了默认的下载目录，它将自动下载文件到该目录，否则您需要指定一个目录来保存文件。">
+<!ENTITY pdfdownload.tooltip.openPDFButton "打开该 PDF 文件。取决于您在 PDF Download 的选项中的设置，PDF 文件将使用 PDF 插件在 Firefox 中打开（该插件必须已安装），或使用您系统默认 PDF 阅读器打开，或使用您指定的的查看器打开。">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "以 HTML 形式查看该 PDF 文件。该 PDF 文件下载自外部镜像并转换到 HTML。在转换结束后 PDF 文件自动从镜像中移除。">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "在 PDF Download 未安装下打开该 PDF 文件。您将执行安装 PDF Download 之前 Firefox 中设置的操作。">
+<!ENTITY pdfdownload.tooltip.cancelButton "关闭该对话框。该 PDF 文件既不会被下载也不会被打开，您将继续您的冲浪体验。">

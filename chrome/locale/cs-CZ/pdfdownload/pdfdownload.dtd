@@ -5,10 +5,10 @@
 <!ENTITY pdfdownload.downloadButton "Stáhnout">
 <!ENTITY pdfdownload.openButton "Otevřít PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Zobrazit ve formě HTML">
-<!ENTITY pdfdownload.openWithoutExtension "Obejít doplněk „PDF Download“">
+<!ENTITY pdfdownload.openWithoutExtension "Obejít rozšíření „PDF Download“">
 <!ENTITY pdfdownload.cancelButton "Zrušit">
 <!ENTITY pdfdownload.osWarningMsg "Nepodařilo se najít výchozí prohlížeč PDF. Prosím zadejte jeho umístění ručně v dialogu nastavení rozšíření &apos;PDF Download&apos;">
-<!ENTITY pdfdownload.aboutTitle "O doplňku PDF Download">
+<!ENTITY pdfdownload.aboutTitle "O rozšíření PDF Download">
 <!ENTITY pdfdownload.websiteTooltip "Přejít na autorovu stránku">
 <!ENTITY pdfdownload.moreInfo "Více informací:">
 <!ENTITY pdfdownload.readLicenseTooltip "Licence koncového uživatele">
@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Zobrazit obrázky v HTML verzi PDF dokumentu.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Obrázky musí být uloženy na serveru, aby bylo možné je zobrazit.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Obrázky budou do jednoho dne automaticky vymazány.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Stáhne PDF soubor. Pokud máte napevno nastaveno umístění pro stažené soubory v možnostech Firefoxu (správce stahování), bude tento PDF soubor stažen právě do tohoto adresáře, jinak budete dotázáni na umístění kam PDF soubor uložit.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Otevře PDF soubor. V závislosti na nastavení rozšíření &quot;PDF Download&quot; bude PDF soubor buď 1.) otevřen (prostřednictvím PDF prohlížeče ve formě zásuvného modulu) přímo ve Firefoxu nebo 2.) bude otevřen v samostatné aplikaci, která je ve vašem systému nastavena jako výchozí prohlížeč PDF dokumentů nebo 3.) bude PDF dokument otevřen přímo ve vámi specifikované aplikaci.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Otevře PDF dokument ve formě HTML. PDF dokument bude stažen prostřednictvím externí služby, která jej přeformátuje do HTML dokumentu.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Otevřít PDF soubor tak, jako by toto rozšíření (tj. &quot;PDF Download&quot;) vůbec nebylo nainstalováno. Firefox naloží s PDF dokumentem po svém, jak jste byly zvyklí před instalací rozšíření &quot;PDF Download&quot;">
+<!ENTITY pdfdownload.tooltip.cancelButton "Uzavře toto okno. PDF soubor nebude ani stažen, ani otevřen.">

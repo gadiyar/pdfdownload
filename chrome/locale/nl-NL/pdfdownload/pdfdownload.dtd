@@ -7,7 +7,7 @@
 <!ENTITY pdfdownload.viewHtmlButton "Als HTML bekijken">
 <!ENTITY pdfdownload.openWithoutExtension "PDF Download omzeilen">
 <!ENTITY pdfdownload.cancelButton "Annuleren">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download kan uw standaard PDF-lezer niet vinden. Gelieve er een te kiezen in het optievenster van PDF Download.">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download kan uw standaard PDF-lezer niet vinden. Gelieve er een te kiezen in de instellingen van PDF Download.">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - Over">
 <!ENTITY pdfdownload.websiteTooltip "De website van de auteur bekijken">
 <!ENTITY pdfdownload.moreInfo "Meer details:">
@@ -22,8 +22,8 @@
 <!ENTITY pdfdownload.optionsPDFTab "PDF wordt geopend">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF naar HTML-conversie">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Meer details">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Extra-menu">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF Download in menu Extra weergeven">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menu Extra">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF Download in het menu Extra weergeven">
 <!ENTITY pdfdownload.optionsOpenLink "Hoe PDF-links openen met de Firefox PDF-plugin:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hoe de HTML-versie van PDF-bestanden openen:">
 <!ENTITY pdfdownload.optionsSameTab "In hetzelfde tabblad openen">
@@ -31,18 +31,23 @@
 <!ENTITY pdfdownload.optionsNewWindow "In een nieuw venster openen">
 <!ENTITY pdfdownload.optionsOpenPdf "Open het PDF-bestand:">
 <!ENTITY pdfdownload.optionsUsePlugin "Met de PDF-plugin">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Met het standaardprogramma van het besturingssyteem">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Met de standaard PDF-lezer van het besturingssysteem">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Met dit programma:">
 <!ENTITY pdfdownload.optionsBrowse "Bladeren...">
 <!ENTITY pdfdownload.optionsBrowseTitle "Een PDF-lezer kiezen">
 <!ENTITY pdfdownload.optionsExeFiles "Windows-programma&apos;s">
 <!ENTITY pdfdownload.optionsAllFiles "Alle bestanden">
-<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "De opgegeven lezer is geen uitvooerbaar bestand!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "De opgegeven lezer is geen uitvoerbaar bestand!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Update">
 <!ENTITY pdfdownload.optionsCheckUpdates "Updates zoeken">
 <!ENTITY pdfdownload.optionsHowToHelp "Hoe helpen">
 <!ENTITY pdfdownload.optionsMakeDonation "Een donatie maken">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Afbeeldingen">
-<!ENTITY pdfdownload.optionsShowImagesInHTML "Afbeeldigen in de HTML-versie weergeven">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Om u de afbeeldingen te tonen, moeten ze op onze server opgeslagen worden.">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Afbeeldingen in de HTML-versie weergeven">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Om de afbeeldingen te kunnen weergeven, moeten ze op onze server opgeslagen worden.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Ze worden automatisch verwijderd na één dag.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Het bestand downloaden naar oftewel een standaard downloadmap, als u deze heeft ingesteld in de Firefox-opties, of naar de map die u selecteert in het volgende venster.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Het bestand openen in de lezer die u selecteerde in de PDF Download-opties. Dit kan de standaard PDF-lezer van uw besturingssysteem zijn, een andere externe lezer, of de ingebouwde lezer van Firefox.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Het PDF-bestand naar een externe mirror downloaden, en converteren naar HTML. Na de conversie wordt het PDF-bestand direct verwijderd van de mirror.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Het PDF-bestand openen zoals dat gebeurde voordat PDF Download geïnstalleerd werd.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Het PDF-bestand niet downloaden of openen, maar verder surfen zoals u bezig was.">

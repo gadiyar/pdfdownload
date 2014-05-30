@@ -23,7 +23,7 @@
 <!ENTITY pdfdownload.optionsHTMLTab "Μετατροπή PDF σε HTML">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Περισσότερες λεπτομέρειες">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Μενού εργαλείων">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "Προβολή του PDF Download στο μενού εργασιών του Firefox">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Προβολή του PDF Download στο μενού εργαλείων του Firefox">
 <!ENTITY pdfdownload.optionsOpenLink "Οι δεσμοί PDF θα ανοίγουν με το πρόσθετο πρόγραμμα του Firefox:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Τα αρχεία PDF σε μορφή HTML θα ανοίγουν:">
 <!ENTITY pdfdownload.optionsSameTab "Στην ίδια καρτέλα">
@@ -31,7 +31,7 @@
 <!ENTITY pdfdownload.optionsNewWindow "Σε νέο παράθυρο">
 <!ENTITY pdfdownload.optionsOpenPdf "Άνοιγμα αρχείου PDF:">
 <!ENTITY pdfdownload.optionsUsePlugin "Χρήση του πρόσθετου PDF">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Χρήση του εξ ορισμού προγράμματος ανάγνωσης του λειτουργικού">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Χρήση του προεπιλεγμένου προγράμματος ανάγνωσης του λειτουργικού">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Χρήση αυτού του προγράμματος ανάγνωσης:">
 <!ENTITY pdfdownload.optionsBrowse "Εντοπισμός...">
 <!ENTITY pdfdownload.optionsBrowseTitle "Επιλέξτε πρόγραμμα ανάγνωσης PDF">
@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Προβολή εικόνων όταν προβάλονται αρχεία PDF σε μορφή HTML">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Για να είναι δυνατή η προβολή εικόνων, πρέπει να αποθηκευθούν στον διακομιστή μας">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Οι εικόνες θα διαγράφούν αυτόματα μετά από μια ημέρα.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Λήψη του αρχείου PDF. Αν έχετε ορίσει κατάλογο αποθήκευσης στις επιλογές του Firefox θα αποθηκευθεί εκεί αυτόματα, αλλιώς θα σας ζητηθεί να ορίσετε κατάλογο για την αποθήκευση.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Άνοιγμα του αρχείου PDF. Αναλόγως με τις ρυθμίσεις του PDF Download, το αρχείο θα ανοιχθεί από τον Firefox με το πρόσθετο PDF (αν έχει ήδη εγκατασταθεί), με το προεπιλεγμένο πρόγραμμα ανάγνωσης PDF του λειτουργικού σας, ή με οποιοδήποτε πρόγραμμα ανάγνωσης έχετε ορίσει.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Εμφάνιση σε μορφή HTML. Το αρχείο PDF θα μεταφορτωθεί σε εναλλακτική τοποθεσία αρχείων και θα μετατραπεί σε μορφή HTML. Αφού ολοκληρωθεί η εργασία, το αρχείο PDF θα διαγραφεί αυτόματα από την εναλλακτική τοποθεσία.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Αντιμετώπιση του αρχείου PDF, σαν να μην υπήρχε το PDF Download . Ο Firefox θα αντιμετωπίσει το αρχείο όπως έκανε πριν εγκαταστήσετε το PDF Download.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Έξοδος από τον διάλογο. Δεν θα γίνει λήψη του αρχείου PDF, ούτε θα ανοιχθεί κι εσείς απλά θα συνεχίσετε.">

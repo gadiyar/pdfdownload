@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Prikaži slike u HTML inačici PDF-a">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Da biste mogli vidjeti slike, one moraju biti spremljene na našem poslužitelju.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Slike će biti automatski obrisane nakon jednog dana.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Preuzmite PDF datoteku. Ako ste u Firefox opcijama postavili zadani direktorij za preuzimanje, to će automatski preuzeti datoteku u taj direktorij, u suprotnom će biti potrebno da odredite direktorij gdje će se spremiti datoteka.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Otvorite PDF datoteku. Ovisno o tome što ste postavili u PDF Download opcijama, PDF datoteka će biti otvorena ili unutar Firefoxa s PDF dodatkom (koji već mora biti instaliran), ili otvoren s zadanim PDF čitačem Vašeg OS-a, ili otvoren s korisničkim preglednikom kojeg ste Vi odredili.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Pogledajte PDF datoteku kao HTML. PDF datoteka će biti preuzeta od strane vanjskog zrcala i pretvorena u HTML. PDF datoteka se automatski uklanja sa zrcala na kraju pretvaranja.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Otvorite PDF datoteku kao da PDF Download nije instaliran. Dobit ćete isto ponašanje Firefoxa kao što je bilo prije instaliranja PDF Download.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Zatvorite ovaj izbornik. PDF datoteća neće biti niti preuzeta niti otvorena, a Vi ćete nastaviti Vaše iskustvo pretraživanja Interneta.">

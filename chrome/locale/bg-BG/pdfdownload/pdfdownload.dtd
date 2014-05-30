@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Показвай картинки в ХТМЛ версията на PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "За да разглеждате картинки, те трябва да се запазват на сървъра ни.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Картинките автоматично ще бъдат изтривани след един ден.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Изтегли PDF файла. Ако имаш стандартно избрана даунлоуд директория в настройките на Firefox, файла ще бъде автоматично изтеглен до тази директория; иначе ще трябва да изберем директория, в която да запазиш файла.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Отвори PDF файла. В зависимост от настройките ти на PDF Даунлоуд, PDF файла ще бъде отворен вътре във Firefox чрез PDF плъгина ( който си инсталирал ), или отворен чрез стандартния PDF четец на твоя ОС, или чрез лично избран такъв от тебе.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Разгледай PDF файла като ХТМЛ. PDF файла ще бъде изтеглен чрез външен огледален сайт и преобразуван в ХТМЛ. След като го затворите, той ще бъде изтрит от огледалния сайт.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Отвори PDF файла, сякаш PDF Даунлоуд добавката не е инсталирана. Ще получиш автоматичното държание на Firefox, преди да инсталираш PDF Даунлоуд.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Затвори този прозорец. PDF файла няма да бъде нито изтеглен, нито отворен, а вие ще продължите сърфирането си из интернета.">

@@ -55,7 +55,7 @@ PdfDownloadShared.prototype.openURL = function(aURL) {
 	}	else {
 		var ass = Components.classes["@mozilla.org/appshell/appShellService;1"].getService(Components.interfaces.nsIAppShellService);
 		w = ass.hiddenDOMWindow;
-		w.openDialog(getBrowserURL(), "_blank", "chrome,all,dialog=no", aURL);
+		w.openDialog("chrome://browser/content/browser.xul", "_blank", "chrome,all,dialog=no", aURL);
 	}
 }
 

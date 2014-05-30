@@ -17,7 +17,7 @@
 <!ENTITY pdfdownload.changelog "Dnevnik sprememb">
 <!ENTITY pdfdownload.acknowledgments "Zahvale">
 <!ENTITY pdfdownload.siteListTitle "Izjeme">
-<!ENTITY pdfdownload.optionsTitle "PrenosPDF - Možnosti">
+<!ENTITY pdfdownload.optionsTitle "Prenos PDF - Možnosti">
 <!ENTITY pdfdownload.optionsGeneralTab "Splošno">
 <!ENTITY pdfdownload.optionsPDFTab "Odpiranje PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Pretvorba PDF v HTML">
@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Pokaži slike v različici HTML dokumenta PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Da bi videli slike, jih je potrebno prej shraniti na našem strežniku.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Slike bodo samodejno izbrisane po enem dnevu.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Prenesi datoteko PDF. Če ste nastavili privzeto mapo za prenos v možnostih Firefoxa, bo samodejno prenesel datoteko v to mapo; sicer boste morali navesti mapo, kamor naj shrani datoteko.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Odpri datoteko PDF. Glede na nastavitve bo datoteka odprta v Firefoxu z razširitvijo PDF (če ste jo namestili) ali odprta v privzetem bralniku PDF ali v posebej navedenem ogledovalniku.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Prikaži datoteko PDF kot HTML. Datoteka PDF bo prenesena na zrcalni strežnik in pretvorjena v HTML. Datoteka PDF je po pretvorbi samodejno odstranjena s tega strežnika.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Odpri datoteko PDF kot prenos PDF ni bil nameščen. Vedenje Firefoxa bo enako tistemu pred nameščanjem razširitve Prenos PDF.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Zapri to pogovorno okno. Datoteka PDF ne bo niti prenesena ne odprta, sami pa boste nadaljevali z brskanjem.">

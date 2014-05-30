@@ -46,3 +46,8 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Toan ôfbyldings yn de HTML ferzje fan PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Om jo ôfbyldings te toanen, moatte se bewarre wêze op ús tsjinner.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "De ôfbyldings sille automatysk nei ien dei fuortsmiten wurde.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Laadt it PDF-bestân yn. As jo in standert ynlaadmap ynstelt hawwe yn the Firefox opsjes, sill it automatysk nei die map ynladen wurde; oars moatte jo in map opjaan om te bewarjen.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Iepen it PDF-bestân. Ofhinklik fan wat jo ynsteld hawwe yn de PDF Download opsjes, sil it PDF-bestân iepene wurde yn Firefox mei de PDF-ynstekker (die moat al ynstallearre wêze), of iepene wurde mei jo standert OS PDF lêzer, of mei it sels spesifisearre programma.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Besjoch it PDF-bestân as HTML. It PDF-bestân sil ynladen wurde troch in eksterne spegel en konferteard nei HTML. It PDF-bestân wurdt automatysk fuortsmiten fan de spegel oan it ein fan de konferzje.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Iepen it PDF-bestân as PDF Download net ynstallearre is. Jo krije itselde gedrach as Firefox hat foardat jo PDF Download ynstallearre.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Slút dizze dialooch. It PDF-bestân sill net ynladen of iepene wurde en jo kinne fierder gean mei blêdzjen.">

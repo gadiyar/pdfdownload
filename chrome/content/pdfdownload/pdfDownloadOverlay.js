@@ -38,7 +38,7 @@
 
 var sltPrefs = Components.classes['@mozilla.org/preferences-service;1']
                .getService(Components.interfaces.nsIPrefBranch);
-
+const nsIWBP = Components.interfaces.nsIWebBrowserPersist;
 var fileCID  = '@mozilla.org/file/local;1';
 var fileIID  = Components.interfaces.nsILocalFile;
 var strings  = document.getElementById("pdfdownloadStrings");
@@ -254,6 +254,11 @@ function makeURL(aURL)
 	return ioService.newURI(aURL, null, null);
 } 
 
+function makeFileURL(aFile) {
+ 	var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+ 	return ioService.newFileURI(aFile);
+  } 
+
 // we find which mirror is better to use to do the PDF->HTML conversion
 function getMirror(url) {
 	var http;
@@ -317,12 +322,18 @@ function saveTempFile(url,fname) {
   uri.spec = url;
 
   downloadQueue[downloadQueue.length] = localTarget.path;
-  try  {
-	var acObject = new AutoChosen(localTarget, uri);
-      internalSave(url, null, fname, null, null, false, null, acObject, null, false);
-  } catch (e) {
-	saveURL(url, localTarget, null, false, false, null);
-  }
+
+  var progressPersist = Components.classes['@mozilla.org/embedding/browser/nsWebBrowserPersist;1'].createInstance(Components.interfaces.nsIWebBrowserPersist);
+
+  var flags = nsIWBP.PERSIST_FLAGS_NO_CONVERSION | nsIWBP.PERSIST_FLAGS_REPLACE_EXISTING_FILES | nsIWBP.PERSIST_FLAGS_BYPASS_CACHE;
+  progressPersist.persistFlags = flags;
+
+  var tr = Components.classes["@mozilla.org/transfer;1"].createInstance(Components.interfaces.nsITransfer);
+  tr.init(uri,makeFileURI(localTarget), "", null, null, null, progressPersist);
+  progressPersist.progressListener = tr;
+
+  progressPersist.saveURI(uri, null, null, null, null, localTarget);
+
 
 }
 
@@ -406,7 +417,17 @@ function createNumber(number) {
 
 // shows the options dialog for PDF Download
 function showPDFDownloadSettings() {
-	var settingsHandle = window.openDialog("chrome://pdfdownload/content/options.xul", "","chrome,resizable,centerscreen,close=no,modal");
+     	var features;
+     	try {
+     		var prefs = Components.classes["@mozilla.org/preferences-service;1"]
+                                  .getService(Components.interfaces.nsIPrefBranch);
+      	var instantApply = prefs.getBoolPref("browser.preferences.instantApply");
+      	features = "chrome,titlebar,toolbar,centerscreen" + (instantApply ? ",dialog=no" : ",modal");
+      }
+      catch (e) {
+           	features = "chrome,titlebar,toolbar,centerscreen,modal";
+	}
+	var settingsHandle = window.openDialog("chrome://pdfdownload/content/options.xul", "",features);
 	settingsHandle.focus();
 }
 
