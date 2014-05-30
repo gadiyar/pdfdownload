@@ -59,6 +59,43 @@ PdfDownloadShared.prototype.openURL = function(aURL) {
 	}
 }
 
+PdfDownloadShared.prototype.resolveFileName = function(fileName) {
+   	var oFile 	= Components.classes["@mozilla.org/file/local;1"].getService(Components.interfaces.nsILocalFile);
+	try {
+		oFile.initWithPath(fileName);
+	   	if (oFile.isFile() && oFile.isExecutable()) {
+	   		return oFile.path;
+	   	}
+   	} catch (ex) {}
+	var userEnvironment = Components.classes["@mozilla.org/process/environment;1"].getService(Components.interfaces.nsIEnvironment);
+	var path_separator = "";
+	var platform = /mac/i.test(navigator.platform) ? "mac" :
+                   /win/i.test(navigator.platform) ? "win" :
+                   /os\/2/i.test(navigator.platform) ? "os/2" : "unix";
+    if (platform == "win") {
+    	path_separator = ";";
+    } else if (platform == "mac") {
+    	path_separator = ":";
+    } else if (platform == "os/2") {
+    	path_separator = ";";
+    } else {
+    	path_separator = ":";
+    }
+    if (userEnvironment.exists("PATH")) {
+    	var systemPath = userEnvironment.get("PATH").split(path_separator);
+    	for(var i = 0; i < systemPath.length; i++) {
+    		try {
+				oFile.initWithPath(systemPath[i]);
+				oFile.append(fileName);
+	   			if (oFile.isFile() && oFile.isExecutable()) {
+	   				return oFile.path;
+	   			}
+   			} catch (ex) {}
+    	}
+    }
+    return null;
+}
+
 PdfDownloadShared.prototype.help = function(s) {
 	var url = "http://www.pdfdownload.org";
 	if (s) {

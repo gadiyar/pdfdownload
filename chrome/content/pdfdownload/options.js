@@ -47,16 +47,9 @@ function onOK(notExecutableFileMsg) {
     var path = document.getElementById(_pdfViewerPathTextBox).value;
     var openPDF = document.getElementById(_openPDFRadioGroup);
     if (openPDF.selectedItem.id == "customViewer") {
-		var file  = Components.classes[fileCID].createInstance(fileIID);
-		try {
-			file.initWithPath(path);
-			if (!file.isFile() || !file.isExecutable()) {
-     			alert(notExecutableFileMsg);
+		if (pdfDownloadShared.resolveFileName(path) == null) {
+				alert(notExecutableFileMsg);
 				return false;
-			}
-		} catch (ex) {
-     		alert(notExecutableFileMsg);
-			return false;
 		}
     }
     return true;
@@ -85,32 +78,38 @@ function onPickPdfViewerPath(dialogTitle,exeFiles,allFiles,notExecutableFileMsg)
 	var pdfViewer;
 	var path;
 	var prefname = "pdfViewerPath";
-    	try {
-      		pdfViewer = preferencesService.getCharPref(prefname);
-    	} catch(ex) {
-			pdfViewer = "";
-    	}
+	try {
+  		pdfViewer = preferencesService.getCharPref(prefname);
+	} catch(ex) {
+		pdfViewer = "";
+	}
 	if (pdfViewer != "") {
 		var fileLocator = Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties);
 		var sTmp	= (fileLocator.get("TmpD", Components.interfaces.nsILocalFile)).path;
 		var slash 	= (sTmp.indexOf("\\") > -1) ? "\\" : "/";
 		var slashPos = pdfViewer.lastIndexOf(slash);
-		path = pdfViewer.substring(0, slashPos);       
-		file.initWithPath(path);
+		path = pdfViewer.substring(0, slashPos);   
+		try {
+			file.initWithPath(path);
+			fp.displayDirectory = file;
+		} catch (ex) {}
 		fp.defaultString = pdfViewer.substring(slashPos+1);
-		fp.displayDirectory = file;
 	}	
 
 	var res = fp.show();
 	if (res == Components.interfaces.nsIFilePicker.returnOK) {
-		file.initWithPath(fp.file.path);
-		if (file.isFile() && file.isExecutable()) {
-			preferencesService.setCharPref(prefname,fp.file.path);
-			document.getElementById(_pdfViewerPathTextBox).value = fp.file.path;
-			document.getElementById(_pdfViewerPathTextBox).disabled = false;
-			var openPDF = document.getElementById(_openPDFRadioGroup);
-			openPDF.selectedItem = document.getElementById("customViewer");
-		} else {
+		try {
+			file.initWithPath(fp.file.path);
+			if (file.isFile() && file.isExecutable()) {
+				preferencesService.setCharPref(prefname,fp.file.path);
+				document.getElementById(_pdfViewerPathTextBox).value = fp.file.path;
+				document.getElementById(_pdfViewerPathTextBox).disabled = false;
+				var openPDF = document.getElementById(_openPDFRadioGroup);
+				openPDF.selectedItem = document.getElementById("customViewer");
+			} else {
+				alert(notExecutableFileMsg);
+			}
+		} catch (ex) {
 			alert(notExecutableFileMsg);
 		}
 	}

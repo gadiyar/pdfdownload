@@ -121,7 +121,8 @@
   							<radio id="defaultViewer" label="&pdfdownload.optionsUseDefaultProgram;" value="defaultViewer"/>
 							<hbox>
   								<radio id="customViewer"  label="&pdfdownload.optionsUseCustomProgram;" value="customViewer"/>
-								<textbox readonly="true" flex="1" id="pdfdownload-pdfViewerPath" preference="pd_viewerPath" preference-editable="true" />
+								<textbox flex="1" id="pdfdownload-pdfViewerPath" preference="pd_viewerPath" preference-editable="true" 
+									onfocus='document.getElementById("pdfdownload-openPDF").selectedItem = document.getElementById("customViewer")'/>
 								<button id="pdfdownload-pickPdfViewerPath" label="&pdfdownload.optionsBrowse;"
                                 				oncommand='return onPickPdfViewerPath("&pdfdownload.optionsBrowseTitle;","&pdfdownload.optionsExeFiles;","&pdfdownload.optionsAllFiles;","&pdfdownload.optionsViewerNotExecutableFileMsg;");' />
 							</hbox>
@@ -164,7 +165,7 @@
 				<groupbox>
 					<caption label="&pdfdownload.optionsUpdateLabel;"/>
 					<hbox>
-						<label value="PDF Download 0.8"/>
+						<label value="PDF Download 0.8.1"/>
 						<spacer flex="1"/>
 						<button label="&pdfdownload.optionsCheckUpdates;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');" />
 					</hbox>

@@ -1,9 +1,17 @@
 CHANGELOG
 
-v0.8    :   2007-03-26
+v0.8.1  :   2007-06-02
+
+ - Fixed bug about URL, sent to the conversion mirrors, that contains special characters.
+ - Fixed the detection of default PDF viewer: now it works also in Linux. The same work-around used in the Firefox Download Manager, has been implemented. 
+ - Introduced the possibility to type by hand the path of custom viewer: it is also possible to write just the name of the file 
+   (and not the absolute path) if the directory containing that file is defined in the PATH environment variable.
+ - Added icon in the Tools menu item.
+
+v0.8    :   2007-04-16
 
  - Added support for images in the PDF to HTML conversion: it is possible to enable/disable this feature in the options window.
- - Added the possibility to enable/disable the tooltips of the popup dialog box
+ - Added the possibility to enable/disable the tooltips of the popup dialog box.
 
 v0.7.9  :   2007-02-28
  

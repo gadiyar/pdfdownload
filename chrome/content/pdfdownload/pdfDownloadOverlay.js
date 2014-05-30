@@ -34,7 +34,9 @@
  ***** END LICENSE BLOCK *****/
 
 
-
+var bundleService = Components.classes["@mozilla.org/intl/stringbundle;1"]
+                          .getService(Components.interfaces.nsIStringBundleService);
+var bundle = bundleService.createBundle("chrome://pdfdownload/locale/pdfdownload.properties");
 var sltPrefs = Components.classes['@mozilla.org/preferences-service;1']
                                   .getService(Components.interfaces.nsIPrefBranch);
 const nsIWBP = Components.interfaces.nsIWebBrowserPersist;
@@ -215,7 +217,7 @@ function mouseClick(aEvent) {
 				saveTempFile(originalUrl,fname);	
 			}
 		} else if (answer.res == "openHtml") {
-			getMirror(originalUrl);
+			getMirror(encodeURIComponent(originalUrl));
 		}
 		if (answer.res != "cancel") {
 			// we set the pdf link as a visited link!!
@@ -371,41 +373,63 @@ function openPDF(filename) {
 			try {
 				oFile.launch();
 			} catch (e) {
-				/*
-				 * PDF Download has not been able to find a default viewer, so now we ask to the user to choose a custom viewer.
-				 */
-				window.openDialog("chrome://pdfdownload/content/osWarning.xul","pdfdownload-OS-warning-window","centerscreen,chrome,modal");
-				showPDFDownloadSettings();
 				try {
-					openPDF = sltPrefs.getCharPref("extensions.pdfdownload.openPDF");
-					pdfViewerPath = sltPrefs.getCharPref("extensions.pdfdownload.pdfViewerPath");
-				} catch(ex) {
-					openPDF = "defaultViewer";
+					openExternal(oFile);
+				} catch (ex) {
+					/*
+					 * PDF Download has not been able to find a default viewer, so now we ask to the user to choose a custom viewer.
+					 */
+					window.openDialog("chrome://pdfdownload/content/osWarning.xul","pdfdownload-OS-warning-window","centerscreen,chrome,modal");
+					showPDFDownloadSettings();
+					try {
+						openPDF = sltPrefs.getCharPref("extensions.pdfdownload.openPDF");
+						pdfViewerPath = sltPrefs.getCharPref("extensions.pdfdownload.pdfViewerPath");
+					} catch(ex) {
+						openPDF = "defaultViewer";
+					}
 				}
 			}
 		} 
 		if (openPDF == "customViewer") {
 			// In the preferences there was written to open PDF files using a custom viewer
-
-			oFile.initWithPath(pdfViewerPath);
-			// create an nsIProcess
-			var process = Components.classes["@mozilla.org/process/util;1"]
-			                                 .createInstance(Components.interfaces.nsIProcess);
-			process.init(oFile);
-
-			// Run the process.
-			// If first param is true, calling process will be blocked until
-			// called process terminates. 
-			// Second and third params are used to pass command-line arguments
-			// to the process.
-			var args = [filename];
-			process.run(false, args, args.length);
+			var absoluteFileName = pdfDownloadShared.resolveFileName(pdfViewerPath);
+			
+			if (absoluteFileName != null) {
+				oFile.initWithPath(absoluteFileName);
+				// create an nsIProcess
+				var process = Components.classes["@mozilla.org/process/util;1"]
+				                                 .createInstance(Components.interfaces.nsIProcess);
+				process.init(oFile);
+	
+				// Run the process.
+				// If first param is true, calling process will be blocked until
+				// called process terminates. 
+				// Second and third params are used to pass command-line arguments
+				// to the process.
+				var args = [filename];
+				process.run(false, args, args.length);
+			}
+			else {
+				alert(bundle.GetStringFromName("openPDFError"));
+			}
 		}
 	} else {
-		alert("Error: cannot open that file. Probably it does not exist.");
+		alert(bundle.GetStringFromName("openPDFError"));
 	}
 }
 
+function openExternal(aFile)
+{
+   var uri = Components.classes["@mozilla.org/network/io-service;1"]
+                       .getService(Components.interfaces.nsIIOService)
+                       .newFileURI(aFile);
+ 
+   var protocolSvc = Components.classes["@mozilla.org/uriloader/external-protocol-service;1"]
+					.getService(Components.interfaces.nsIExternalProtocolService);
+ 
+   protocolSvc.loadUrl(uri);
+   return;
+}
 
 //Checks the type of a link
 function isLinkType (linktype, link) {
@@ -574,7 +598,7 @@ var DQ_DownloadObserver = {
 			try {
 				openPDF(oFile.path);
 			} catch(err) {
-				alert("Unexpected error: contact the author!");
+				alert(bundle.GetStringFromName("fatalException"));
 			}
 		}		
 	}
