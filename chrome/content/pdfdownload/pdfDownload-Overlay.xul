@@ -49,21 +49,20 @@
     <!-- Tools menu -->
 	<menupopup id="menu_ToolsPopup">
 		<menuitem insertafter="devToolsSeparator" label="&pdfdownload.options.Title;" id="PDFDownloadToolsItem" 
-			image="chrome://pdfdownload/skin/pdfdownload_16.png" class="menuitem-iconic" oncommand="showPDFDownloadSettings();" />
+			image="chrome://pdfdownload/skin/pdfdownload_16.png" class="menuitem-iconic" oncommand="pdfDownloadAddonOverlay.showPDFDownloadSettings();" />
 	</menupopup>    
 	
 	<!-- File menu -->
 	<menupopup id="menu_FilePopup">
     	<menuitem insertbefore="menu_sendLink" id="filemenu-pdfdownload-savepdf" label="&pdfdownload.webtopdf.action.saveAsPDFMenuItem;"
-              accesskey="&pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu;" oncommand="generatePDFFromPageWithAction('download');"/>
+              accesskey="&pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu;" oncommand="pdfDownloadAddonOverlay.generatePDFFromPageWithAction('download');"/>
   	</menupopup>
 	
 	<!-- Context menu -->
 	<popup id="contentAreaContextMenu">
 		<menuitem id="context-pdfdownload-savepdf" label="&pdfdownload.webtopdf.action.saveAsPDFMenuItem;" 
-			accesskey="&pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu;" insertafter="context-savepage" oncommand="generatePDFFromPageWithAction('download');"/>
+			accesskey="&pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu;" insertafter="context-savepage" oncommand="pdfDownloadAddonOverlay.generatePDFFromPageWithAction('download');"/>
 	</popup>
-	
 	
 	<!-- firefox status bar -->
 	<statusbar id="status-bar">
@@ -73,8 +72,9 @@
                     quickblock="off"
                     xxinsertafter="statusbarpanel-progress, security-button, privacy-button, offline-status, popupIcon, statusbar-display, component-bar"
                     >
-			<box id="pdfdownload-statusbarButton" onclick="onStatusBarButtonClick();" onmouseover="onMouseOver(event);" onmouseout="onMouseOut(event);">
-				<!--<image tooltiptext="&pdfdownload.banList.StatusbarButtonLabel;" class="pdfDownloadButton" /> -->
+			<box id="pdfdownload-statusbarButton" onclick="pdfDownloadAddonOverlay.onStatusBarButtonClick();" 
+												  onmouseover="pdfDownloadAddonOverlay.onMouseOver(event);" 
+												  onmouseout="pdfDownloadAddonOverlay.onMouseOut(event);">
 				<image id="statusBarButtonIcon" src="chrome://pdfdownload/skin/pdfdownload_ff_active.png" />
 				
 				<tooltip id="enableAddonTooltip" orient="vertical">
@@ -93,7 +93,6 @@
 			</box>
 		</statusbarpanel>
 	</statusbar>
-
 	
 	<!-- firefox toolbar -->
 	<toolbarpalette id="BrowserToolbarPalette">
@@ -102,27 +101,27 @@
 		      class="toolbarbutton-1 chromeclass-toolbar-additional" 
 		      label="&pdfdownload.options.WebToPDFTab;" 
 		      tooltiptext="&pdfdownload.webtopdf.generatePDFBtn.tooltip;" 
-		      oncommand="generatePDFFromPage();">
+		      oncommand="pdfDownloadAddonOverlay.generatePDFFromPage();">
 		      
 		      <menupopup>
 				    <menuitem label="&pdfdownload.webtopdf.action.downloadDirectly;"  
 				     		  tooltiptext="&pdfdownload.webtopdf.action.downloadDirectly.tooltip;" image="chrome://pdfdownload/skin/menu_convert.png" class="menuitem-iconic"
-				              oncommand="generatePDFFromPageWithAction('download'); event.stopPropagation();" />
+				              oncommand="pdfDownloadAddonOverlay.generatePDFFromPageWithAction('download'); event.stopPropagation();" />
 				              
 				    <menuitem label="&pdfdownload.webtopdf.action.emailWebPageAsPDF;" 
 				     		  tooltiptext="&pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip;" image="chrome://pdfdownload/skin/menu_email.png" class="menuitem-iconic"
-				              oncommand="generatePDFFromPageWithAction('sendEmail'); event.stopPropagation();" />
+				              oncommand="pdfDownloadAddonOverlay.generatePDFFromPageWithAction('sendEmail'); event.stopPropagation();" />
 				              
 					<menuitem label="&pdfdownload.help;" 
 							  tooltiptext="&pdfdownload.help.tooltip;" image="chrome://pdfdownload/skin/menu_help.png" class="menuitem-iconic"
-							  oncommand="pdfDownloadShared.help(); event.stopPropagation();" />
+							  oncommand="NitroPDF.PDFDownload.Shared.help(); event.stopPropagation();" />
 					<menuseparator/>
 					<menuitem label="&pdfdownload.banList.ToolbarButtonMenuItemLabel;"
-							  oncommand="onAddSiteToBanListMenuItemClick(); event.stopPropagation();" />
+							  oncommand="pdfDownloadAddonOverlay.onAddSiteToBanListMenuItemClick(); event.stopPropagation();" />
 					<menuseparator/>
 				    <menuitem label="&pdfdownload.webtopdf.options;" 
 				    		  tooltiptext="&pdfdownload.webtopdf.options.tooltip;" image="chrome://pdfdownload/skin/pdfdownload_16.png" class="menuitem-iconic"
-				              oncommand="showPDFDownloadSettings(); event.stopPropagation();" />
+				              oncommand="pdfDownloadAddonOverlay.showPDFDownloadSettings(); event.stopPropagation();" />
 				
 			  </menupopup>
 			</toolbarbutton>

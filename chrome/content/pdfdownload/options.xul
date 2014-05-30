@@ -45,9 +45,9 @@
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 	dlgbuttons="accept,cancel"
 	style="max-width: &pdfdownload.options.width; !important;"
-	onload="onLoad();"
-	ondialogcancel='return onCancel("&pdfdownload.optionsViewerNotExecutableFileMsg;");'
-	ondialogaccept='return onOK("&pdfdownload.optionsViewerNotExecutableFileMsg;");'
+	onload="NitroPDF.PDFDownload.Options.onLoad();"
+	ondialogcancel='return NitroPDF.PDFDownload.Options.onCancel("&pdfdownload.optionsViewerNotExecutableFileMsg;");'
+	ondialogaccept='return NitroPDF.PDFDownload.Options.onOK("&pdfdownload.optionsViewerNotExecutableFileMsg;");'
 	title="&pdfdownload.options.Title;">
 
 	<prefpane id="generalPane" label="&pdfdownload.optionsGeneralTab;">
@@ -59,14 +59,17 @@
 			<preference id="pd_clickMode"
 				name="extensions.pdfdownload.clickMode"
 				type="string"/>
-			<preference id="pd_showTooltips"
+			<!--preference id="pd_showTooltips"
 				name="extensions.pdfdownload.showTooltips"
-				type="bool"/>
+				type="bool"/-->
 			<preference id="pd_showToolsMenuItem"
 				name="extensions.pdfdownload.showToolsMenuItem"
 				type="bool"/>
 			<preference id="pd_showFileMenuItem"
 				name="extensions.pdfdownload.showFileMenuItem"
+				type="bool"/>
+			<preference id="pd_showEnableDisableIcon"
+				name="extensions.pdfdownload.showEnableDisableIcon"
 				type="bool"/>
 		</preferences>
 
@@ -100,7 +103,9 @@
 		<groupbox class="box-inset">
 			<caption label="&pdfdownload.optionsToggleFirefoxMenus;" class="rounded outset"/>
 			<checkbox id="showItemTools" label="&pdfdownload.optionsShowItemToolsMenu;" preference="pd_showToolsMenuItem"/>
-			<checkbox id="showFileMenu" label="&pdfdownload.optionsShowItemFileMenu;" preference="pd_showFileMenuItem"/>			
+			<checkbox id="showFileMenu" label="&pdfdownload.optionsShowItemFileMenu;" preference="pd_showFileMenuItem"/>
+			<checkbox id="showEnableDisableIcon" label="&pdfdownload.optionsShowEnableDisableIcon;" preference="pd_showEnableDisableIcon" 
+					  onclick="NitroPDF.PDFDownload.Shared.showMessage('Restart FireFox is required for this change to take effect');" />
 		</groupbox>
 	</prefpane>
 
@@ -126,9 +131,9 @@
 				<hbox>
 					<radio id="customViewer"	label="&pdfdownload.optionsUseCustomProgram;" value="customViewer"/>
 					<textbox flex="1" id="pdfdownload-pdfViewerPath" preference="pd_viewerPath" preference-editable="true" 
-						onfocus='enableCustomViewer()'/>
+						onfocus='NitroPDF.PDFDownload.Options.enableCustomViewer()'/>
 					<button id="pdfdownload-pickPdfViewerPath" label="&pdfdownload.optionsBrowse;"
-						oncommand='return onPickPdfViewerPath("&pdfdownload.optionsBrowseTitle;","&pdfdownload.optionsExeFiles;","&pdfdownload.optionsAllFiles;","&pdfdownload.optionsViewerNotExecutableFileMsg;");' />
+						oncommand='return NitroPDF.PDFDownload.Options.onPickPdfViewerPath("&pdfdownload.optionsBrowseTitle;","&pdfdownload.optionsExeFiles;","&pdfdownload.optionsAllFiles;","&pdfdownload.optionsViewerNotExecutableFileMsg;");' />
 				</hbox>
 			</radiogroup>
 		</groupbox>
@@ -228,13 +233,13 @@
 					<hbox>			
 						<spacer width="20"/>
 						<vbox>
-							<hbox align="center"><label value="&pdfdownload.webtopdf.margins.top;"/><spacer flex="1"/><textbox size="5" maxlength="4" id="marginTop" preference="pd_webToPDF_margin_top" preference-editable="true" onchange="checkMargin('marginTop')"/><label value="&pdfdownload.webtopdf.margins.inches;"/></hbox>
-							<hbox align="center"><label value="&pdfdownload.webtopdf.margins.bottom;"/><spacer flex="1"/><textbox size="5" maxlength="4" id="marginBottom" preference="pd_webToPDF_margin_bottom" preference-editable="true" onchange="checkMargin('marginBottom')"/><label value="&pdfdownload.webtopdf.margins.inches;"/></hbox>
+							<hbox align="center"><label value="&pdfdownload.webtopdf.margins.top;"/><spacer flex="1"/><textbox size="5" maxlength="4" id="marginTop" preference="pd_webToPDF_margin_top" preference-editable="true" onchange="NitroPDF.PDFDownload.Options.checkMargin('marginTop')"/><label value="&pdfdownload.webtopdf.margins.inches;"/></hbox>
+							<hbox align="center"><label value="&pdfdownload.webtopdf.margins.bottom;"/><spacer flex="1"/><textbox size="5" maxlength="4" id="marginBottom" preference="pd_webToPDF_margin_bottom" preference-editable="true" onchange="NitroPDF.PDFDownload.Options.checkMargin('marginBottom')"/><label value="&pdfdownload.webtopdf.margins.inches;"/></hbox>
 						</vbox>
 						<spacer width="20"/>
 						<vbox>			
-							<hbox align="center"><label value="&pdfdownload.webtopdf.margins.left;"/><spacer flex="1"/><textbox size="5" maxlength="4" id="marginLeft" preference="pd_webToPDF_margin_left" preference-editable="true" onchange="checkMargin('marginLeft')"/><label value="&pdfdownload.webtopdf.margins.inches;"/></hbox>
-							<hbox align="center"><label value="&pdfdownload.webtopdf.margins.right;"/><spacer flex="1"/><textbox size="5" maxlength="4" id="marginRight" preference="pd_webToPDF_margin_right" preference-editable="true" onchange="checkMargin('marginRight')"/><label value="&pdfdownload.webtopdf.margins.inches;"/></hbox>
+							<hbox align="center"><label value="&pdfdownload.webtopdf.margins.left;"/><spacer flex="1"/><textbox size="5" maxlength="4" id="marginLeft" preference="pd_webToPDF_margin_left" preference-editable="true" onchange="NitroPDF.PDFDownload.Options.checkMargin('marginLeft')"/><label value="&pdfdownload.webtopdf.margins.inches;"/></hbox>
+							<hbox align="center"><label value="&pdfdownload.webtopdf.margins.right;"/><spacer flex="1"/><textbox size="5" maxlength="4" id="marginRight" preference="pd_webToPDF_margin_right" preference-editable="true" onchange="NitroPDF.PDFDownload.Options.checkMargin('marginRight')"/><label value="&pdfdownload.webtopdf.margins.inches;"/></hbox>
 						</vbox>
 					</hbox>
 				</vbox>						
@@ -246,7 +251,7 @@
 				<radio label="&pdfdownload.webtopdf.action.downloadDirectly;" value="download"/>
 				<radio label="&pdfdownload.webtopdf.action.askEmail;" value="askEmail"/>
 				<hbox>
-					<radio id="sendEmailRadio" label="&pdfdownload.webtopdf.action.sendEmail;" value="sendEmail"/><textbox size="40" id="emailAddress" preference="pd_webToPDF_emailAddress" preference-editable="true" onfocus='enableSendEmail()' onchange="checkEmail('emailAddress',true)"/>
+					<radio id="sendEmailRadio" label="&pdfdownload.webtopdf.action.sendEmail;" value="sendEmail"/><textbox size="40" id="emailAddress" preference="pd_webToPDF_emailAddress" preference-editable="true" onfocus='NitroPDF.PDFDownload.Options.enableSendEmail()' onchange="NitroPDF.PDFDownload.Options.checkEmail('emailAddress',true)"/>
 				</hbox>
 			</radiogroup>
 		</groupbox>
@@ -270,14 +275,14 @@
 			<caption label="&pdfdownload.optionsDetectingLinksLabel;" class="rounded outset"/>
 			<hbox align="center">
 				<label value="&pdfdownload.advanced.banlistLabel;" />
-				<button label="&pdfdownload.advanced.viewBanlistButton;" onclick="showExclusionListDialog();" />
+				<button label="&pdfdownload.advanced.viewBanlistButton;" onclick="NitroPDF.PDFDownload.Options.showExclusionListDialog();" />
 			</hbox>
 		</groupbox>
 		
 	</prefpane>
 	
 
-	<prefpane id="UpdatesPane" label="&pdfdownload.options.UpdatesTab;">
+	<prefpane id="UpdatesPane" label="&pdfdownload.options.UpdatesTab;" onpaneload="NitroPDF.PDFDownload.Options.onUpdatesPaneLoad();">
 		<preferences/>
 		
 		<groupbox class="box-inset">
@@ -285,7 +290,7 @@
 			<hbox>
 				<label value="PDF Download"/><label class="small-margin" id="version"/>
 				<spacer flex="1"/>
-				<button label="&pdfdownload.optionsCheckUpdates;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');"/>
+				<button label="&pdfdownload.optionsCheckUpdates;" onclick="NitroPDF.PDFDownload.Shared.openURL('http://www.pdfdownload.org');"/>
 			</hbox>
 		</groupbox>
 		
@@ -296,7 +301,7 @@
 				<hbox align="center">
 					<label value="&pdfdownload.optionsSubscribeEmailLabel;" />
 					<textbox id="subscribeEmailValue" flex="1" />
-					<button label="&pdfdownload.optionsSubscribeButton;" onclick="subscribe();"/>
+					<button label="&pdfdownload.optionsSubscribeButton;" onclick="NitroPDF.PDFDownload.Options.subscribe();"/>
 				</hbox>
 				<!--<spacer flex="1"/>-->
 			</vbox>
@@ -326,11 +331,11 @@
 					<spacer height="15"/>
 					<row>
 						<label value="&pdfdownload.options.pdfNitroSoftware;"/>
-						<label class="link" onclick="pdfDownloadShared.openURL('http://www.nitropdf.com', '_blank')">http://www.nitropdf.com</label>
+						<label class="link" onclick="NitroPDF.PDFDownload.Shared.openURL('http://www.nitropdf.com', '_blank')">http://www.nitropdf.com</label>
 					</row>
 					<row>
 						<label value="&pdfdownload.options.pdfDownload;"/>
-						<label class="link" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org', '_blank')">http://www.pdfdownload.org</label>
+						<label class="link" onclick="NitroPDF.PDFDownload.Shared.openURL('http://www.pdfdownload.org', '_blank')">http://www.pdfdownload.org</label>
 					</row>
 				</rows>
 			</grid>
@@ -341,7 +346,7 @@
 	  <vbox flex="1">
 	  	<hbox align="center">
 	  	  <spacer width="6"/>
-		  	<text style="margin-left: 5px;" value="&pdfdownload.options.tryNitroPDFProfessional;"/><text onclick="pdfDownloadShared.openURL('http://www.nitropdf.com/professional/trial.asp', '_blank')"  class="link-trial" value="&pdfdownload.options.free14dayTrial;"/>
+		  	<text style="margin-left: 5px;" value="&pdfdownload.options.tryNitroPDFProfessional;"/><text onclick="NitroPDF.PDFDownload.Shared.openURL('http://www.nitropdf.com/professional/trial.asp', '_blank')"  class="link-trial" value="&pdfdownload.options.free14dayTrial;"/>
 	      <spacer flex="1"/>
 	      <button dlgtype="accept" id="myAccept"/>
 	      <button dlgtype="cancel" id="myCancel"/>
@@ -350,10 +355,10 @@
 	    <spacer height="2"/>
 	  </vbox>
 
-
-	<script type="application/x-javascript" src="chrome://pdfdownload/content/options.js"/>
-	<script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
-	<script>
- 		document.getElementById("version").setAttribute("value", pdfDownloadShared.getVersion());
- 	</script>
+        <script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
+	<script type="application/x-javascript" src="chrome://pdfdownload/content/options.js"/>	
+	<!--script>
+ 		document.getElementById("version").setAttribute("value", NitroPDF.PDFDownload.Shared.getVersion());
+ 	</script-->
+		
 </prefwindow>

@@ -64,7 +64,7 @@
 				<label>pdfdownload@nitropdf.com</label>
 				<separator class="thin"/>
 				<text value="&pdfdownload.websiteLabel;" style="font-weight: bold;"/>
-				<label class="link" tooltiptext="&pdfdownload.websiteTooltip;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');">http://www.pdfdownload.org</label>
+				<label class="link" tooltiptext="&pdfdownload.websiteTooltip;" onclick="NitroPDF.PDFDownload.Shared.openURL('http://www.pdfdownload.org');">http://www.pdfdownload.org</label>
 			</vbox>
 			<spacer flex="1"/>
 			<vbox>
@@ -77,14 +77,14 @@
 		<separator class="thin"/>
 		<separator class="thin"/>
 		<text value="&pdfdownload.moreInfo;" style="font-weight: bold;"/> 
-		<label class="link" tooltiptext="&pdfdownload.readLicenseTooltip;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/LICENSE', '_blank')">&pdfdownload.license;</label>
+		<label class="link" tooltiptext="&pdfdownload.readLicenseTooltip;" onclick="NitroPDF.PDFDownload.Shared.openURL('chrome://pdfdownload/content/LICENSE', '_blank')">&pdfdownload.license;</label>
 		<separator class="thin"/>
-		<label class="link" align="center" tooltiptext="&pdfdownload.readChangelogTooltip;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/CHANGELOG', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.changelog;</label>
+		<label class="link" align="center" tooltiptext="&pdfdownload.readChangelogTooltip;" onclick="NitroPDF.PDFDownload.Shared.openURL('chrome://pdfdownload/content/CHANGELOG', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.changelog;</label>
 		<separator class="thin"/>
-		<label class="link" align="center" tooltiptext="&pdfdownload.acknowledgments;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/acknowledgments', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.acknowledgments;</label>
+		<label class="link" align="center" tooltiptext="&pdfdownload.acknowledgments;" onclick="NitroPDF.PDFDownload.Shared.openURL('chrome://pdfdownload/content/acknowledgments', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.acknowledgments;</label>
 	</groupbox>
 	
 	<script>
- 		document.getElementById("version").setAttribute("value", pdfDownloadShared.getVersion());
+ 		document.getElementById("version").setAttribute("value", NitroPDF.PDFDownload.Shared.getVersion());
  	</script>
 </dialog>

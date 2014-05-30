@@ -114,3 +114,4 @@
 <!ENTITY pdfdownload.banList.StatusbarEnableLabel "Add-On für diese Seite aktivieren">
 <!ENTITY pdfdownload.banList.StatusbarDisableLabel "Add-On für diese Seite deaktivieren">
 <!ENTITY pdfdownload.banList.ToolbarButtonMenuItemLabel "Diese Seite zur Ausschlussliste hinzufügen">
+<!ENTITY pdfdownload.optionsShowEnableDisableIcon "Show Enable/Disable icon in Status bar">

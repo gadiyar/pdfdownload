@@ -8,25 +8,26 @@
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 
 <window id="pdfdownload-OS-warning-window"
-title="PDF Download"
-orient="vertical"
-xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-<script type="application/x-javascript" src="chrome://pdfdownload/content/osWarning.js"/>
+    title="PDF Download"
+    orient="vertical"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
+    <script type="application/x-javascript" src="chrome://pdfdownload/content/osWarning.js"/>
 
-<hbox>
-<vbox>
-<spacer flex="1"/>
-<image class="alert-icon" width="32px" height="32px"/>
-<spacer flex="2"/>
-</vbox>
-<spacer width="10px"/>
-<textbox id="os-warning" multiline="true" rows="3" cols="40" readonly="true" style="padding: 3px" value="&pdfdownload.osWarningMsg;"/>
-</hbox>
+    <hbox>
+        <vbox>
+            <spacer flex="1"/>
+            <image class="alert-icon" width="32px" height="32px"/>
+            <spacer flex="2"/>
+        </vbox>
+        <spacer width="10px"/>
+        <textbox id="os-warning" multiline="true" rows="3" cols="40" readonly="true" style="padding: 3px" value="&pdfdownload.osWarningMsg;"/>
+    </hbox>
 
-<hbox>
-<spacer flex="1"/>
-<button id="os-warning-ok" label="OK" oncommand="osWarningOk()"/>
-<spacer flex="1"/>
-</hbox>
+    <hbox>
+        <spacer flex="1"/>
+        <button id="os-warning-ok" label="OK" oncommand="NitroPDF.PDFDownload.Warning.osWarningOk()"/>
+        <spacer flex="1"/>
+    </hbox>
 
 </window>

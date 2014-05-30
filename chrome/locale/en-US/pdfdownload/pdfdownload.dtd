@@ -5,7 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Download">
 <!ENTITY pdfdownload.openButton "Open PDF">
 <!ENTITY pdfdownload.viewHtmlButton "View as HTML">
-<!ENTITY pdfdownload.openWithoutExtension "Bypass PDF Download">
+<!-- <!ENTITY pdfdownload.openWithoutExtension "Bypass PDF Download"> -->
 <!ENTITY pdfdownload.cancelButton "Cancel">
 <!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "Convert web page to PDF">
 <!ENTITY pdfdownload.webtopdf.outputSettings "PDF output settings">
@@ -88,7 +88,7 @@
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "The images will be automatically deleted after one day.">
 <!ENTITY pdfdownload.options.CompanyInformation "Company information">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
-<!ENTITY pdfdownload.options.nitroDescription "PDF Download is a free product from the Nitro PDF Software team. Nitro PDF Software created the first true alternative to Adobe&amp;#174; Acrobat&amp;#174;, Nitro PDF Professional. Nitro PDF Professional lets you create, convert, edit, secure, manipulate and collaborate using PDF.">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download is a free product from the Nitro PDF Software team. Nitro PDF Software created the first true alternative to Adobe&#174; Acrobat&#174;, Nitro PDF Professional. Nitro PDF Professional lets you create, convert, edit, secure, manipulate and collaborate using PDF.">
 <!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
 <!ENTITY pdfdownload.options.tryNitroPDFProfessional "Try Nitro PDF Professional -">
 <!ENTITY pdfdownload.options.free14dayTrial "free 14-day trial.">
@@ -96,7 +96,7 @@
 <!ENTITY pdfdownload.tooltip.openPDFButton "Opens the PDF using the settings specified in Firefox. To edit your setting, go to &apos;Tools &gt; PDF Download - Options &gt; Opening PDF&apos;.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "Convert the PDF to HTML and then display it in Firefox. To save the HTML, go to the File menu in your browser.">
 <!ENTITY pdfdownload.tooltip.viewOnlineButton "Convert the PDF to image and then display it in Firefox for quick viewing.">
-<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Ignore the PDF Download settings and let Firefox use its normal method for handling this kind of file.">
+<!-- <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Ignore the PDF Download settings and let Firefox use its normal method for handling this kind of file."> -->
 <!ENTITY pdfdownload.tooltip.cancelButton "Close this dialog and don&apos;t do anything with the PDF file.">
 <!ENTITY pdfdownload.clickModeLabel "How to catch PDF links">
 <!ENTITY pdfdownload.clickModeName "By name">
@@ -111,6 +111,7 @@
 <!ENTITY pdfdownload.banList.DeleteButtonLable "Delete">
 <!ENTITY pdfdownload.banList.CloseButtonLable "Close">
 <!ENTITY pdfdownload.banList.StatusbarButtonLabel "PDF Download">
-<!ENTITY pdfdownload.banList.StatusbarEnableLabel "Enable addon for this site">
-<!ENTITY pdfdownload.banList.StatusbarDisableLabel "Disable addon for this site">
+<!ENTITY pdfdownload.banList.StatusbarEnableLabel "Enable PDF Download for this site">
+<!ENTITY pdfdownload.banList.StatusbarDisableLabel "Disable PDF Download for this site">
 <!ENTITY pdfdownload.banList.ToolbarButtonMenuItemLabel "Add this site to Exclusion list">
+<!ENTITY pdfdownload.optionsShowEnableDisableIcon "Show Enable/Disable icon in Status bar">

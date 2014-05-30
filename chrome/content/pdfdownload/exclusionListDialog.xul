@@ -48,7 +48,7 @@
 	align="stretch"
 	width="350"
 	height="350"
-	onload="onLoad();"
+	onload="NitroPDF.PDFDownload.Exclusion.onLoad();"
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	
@@ -56,9 +56,9 @@
 		<preference id="pd_exclusionListPreference" name="extensions.pdfdownload.exclusionListPref" type="string" />
 	</preferences>
 	
-	<script type="application/x-javascript" src="chrome://pdfdownload/content/exclusionListDialog.js"/>
 	<script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
-	
+	<script type="application/x-javascript" src="chrome://pdfdownload/content/exclusionListDialog.js"/>
+		
 	<hbox flex="1" pack="center">
 	
 		<vbox flex="1">
@@ -70,9 +70,9 @@
 		
 		<vbox>
 			
-			<button id="pdfdownload-addSiteButton" label="&pdfdownload.banList.AddButtonLable;" oncommand="addWebSiteToBanList();" />
-			<button id="pdfdownload-deleteSiteButton" label="&pdfdownload.banList.DeleteButtonLable;" oncommand="deleteWebSiteFromBanList();" />
-			<button id="pdfdownload-closeDialogButton" label="&pdfdownload.banList.CloseButtonLable;" oncommand="closeDialog();" />	
+			<button id="pdfdownload-addSiteButton" label="&pdfdownload.banList.AddButtonLable;" oncommand="NitroPDF.PDFDownload.Exclusion.addWebSiteToBanList();" />
+			<button id="pdfdownload-deleteSiteButton" label="&pdfdownload.banList.DeleteButtonLable;" oncommand="NitroPDF.PDFDownload.Exclusion.deleteWebSiteFromBanList();" />
+			<button id="pdfdownload-closeDialogButton" label="&pdfdownload.banList.CloseButtonLable;" oncommand="NitroPDF.PDFDownload.Exclusion.closeDialog();" />	
 			
 		</vbox>
 	

@@ -112,7 +112,7 @@
 			var size = menu.childNodes.length;
             newValue = newValue.replace(/^\s+/,'').replace(/\s+$/,'');
 			var values = newValue;
-			if (!pdfDownloadShared.validateEmail(values)) {
+			if (!NitroPDF.PDFDownload.Shared.validateEmail(values)) {
 				var strbundle = document.getElementById("strings");
 				alert(strbundle.getString("invalidEmailAddress"));
 				return false;

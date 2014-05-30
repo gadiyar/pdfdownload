@@ -34,8 +34,8 @@
    -
    - 
 ***** END LICENSE BLOCK *****/
-
-function osWarningOk() {
-	window.close();
-}
-
+NitroPDF.PDFDownload.Warning = {
+	osWarningOk : function() {
+		window.close();
+	}	
+};

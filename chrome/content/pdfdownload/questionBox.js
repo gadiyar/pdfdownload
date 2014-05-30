@@ -33,134 +33,149 @@
    - the terms of any one of the MPL, the GPL or the LGPL.
    -
  ***** END LICENSE BLOCK *****/	
-	
-var strbundle;	
-var sltPrefs = Components.classes['@mozilla.org/preferences-service;1']
-          .getService(Components.interfaces.nsIPrefBranch);
 
-
-// Cancel button handler
-function doCancel() {
-	window.arguments[0].res = "cancel";
-	window.close();
-}
-
-// Download button handler
-function doDownload() {
-	window.arguments[0].res = "download";
-	window.close();
-}
-
-// Open button handler
-function doOpen() {
-	window.arguments[0].res = "open";
-	window.close();
-}
-
-// Open button handler
-function doOpenHtml() {
-	window.arguments[0].res = "openHtml";
-	window.arguments[0].filesize = document.getElementById("fileSize").value;
-	window.close();
-}
-
-// Open normally button handler
-function doOpenWithoutExtension() {
-	window.arguments[0].res = "openWithoutExtension";
-	window.close();
-}
-
-// Open normally button handler
-function doOpenOnline() {
-	window.arguments[0].res = "viewOnline";
-	window.close();
-}
-
-
-function disableBtns(url,ext) {
-	/*
-	 * If it is a pdf.gz file, we disable the open button because usually a 
-	 * pdf viewer is not able to open this kind of file.
-	 */
-	if (ext == "pdf.gz") {
-		document.getElementById("open-button").disabled = true;
-	}
-	if (isLinkType("file:",url) || (url.indexOf("//localhost") != -1) || (url.indexOf("//127.0.0.1") != -1)) {
-		document.getElementById("openHTML-button").disabled = true;
-	}
-}
-	
-// Checks the type of a link
-function isLinkType(linktype, link) {
-	try {
-		var protocol = link.substr(0, linktype.length);
-		return protocol.toLowerCase() == linktype;
-	} catch(e) {
-		return false;
-	}
-}
-
-function getFileSize(url, size) {
-	strbundle = document.getElementById("strings");
-	var part1 = strbundle.getString("questionPart1");				
-	var descr = document.getElementById("QuestionLabel");
-	var fileSize = document.getElementById("fileSize");	
-
-	fileSize.value = size;								
-	
-	if (size >= 1024*1024) {
-		size = size / (1024*1024);
-		part1 = part1 + " (" + size.toFixed(1) + " MB)" ;
-	} else if (size >= 1024) {
-		size = size / 1024;
-		part1 = part1 + " (" + parseInt(size + .5) + " KB)";
-	} else if (size != null) {
-		part1 = part1 + " (" + size + " bytes)";
-	}
-
-	descr.value = part1 + strbundle.getString("questionPart2");
-}
-
-					
-function isTooltipEnabled() {
-	if (!sltPrefs.prefHasUserValue("extensions.pdfdownload.showTooltips")) {
-		sltPrefs.setBoolPref("extensions.pdfdownload.showTooltips",true);
-	}
-	return sltPrefs.getBoolPref("extensions.pdfdownload.showTooltips");
-}
-
-function onTooltipPopupShowing(popup) {
-	if (!firefox3) {
-		var diff = popup.boxObject.height - popup.firstChild.boxObject.height;
-		popup.sizeTo(popup.boxObject.width, popup.firstChild.boxObject.height + diff);
-	}
-	return true;
-}
-
-function onMouseOver(e,toolTipName,obj) {
-	if (isTooltipEnabled()) {
-		var xulWindow = document.getElementById("PDFDownload-question-window");
-		var popup = document.getElementById(toolTipName);
-		if (!firefox3) {
-			var diff = popup.boxObject.height - popup.firstChild.boxObject.height;
-	
-			popup.sizeTo(popup.boxObject.width, popup.firstChild.boxObject.height + diff);
-			popup.showPopup(obj, e.clientX+xulWindow.boxObject.screenX-(popup.boxObject.width/2), xulWindow.boxObject.screenY+window.innerHeight-10, "tooltip", "bottomleft", "topleft");
-		} else {
-			//popup.openPopup(obj, "after_start", 0,0, false, false);
-			popup.openPopupAtScreen(e.clientX+xulWindow.boxObject.screenX, xulWindow.boxObject.screenY+e.clientY+5,false);
-		}
-	}
-}
-
-function onMouseOut(toolTipName) {
-	var popup = document.getElementById(toolTipName);
-	popup.hidePopup();
-}
-
+/*
 var firefox3 = true;
 try {
   var version = Application.version;  // use of FUEL that has been introducted only in FF3
 } catch(e) {
   firefox3 = false;	
 }
+*/
+NitroPDF.PDFDownload.Question = {
+	
+	_strbundle : null,
+	
+	_sltPrefs : Components.classes['@mozilla.org/preferences-service;1']
+				.getService(Components.interfaces.nsIPrefBranch),
+	
+	
+	IsFUEL : function() {
+		try {
+			var version = Application.version;  // use of FUEL that has been introducted only in FF3
+		} catch(e) {
+			return false;	
+		}
+		return true;
+	},
+	
+	// Cancel button handler
+	doCancel : function() {
+		window.arguments[0].res = "cancel";
+		window.close();
+	},
+	
+	// Download button handler
+	doDownload : function() {
+		window.arguments[0].res = "download";
+		window.close();
+	},
+	
+	// Open button handler
+	doOpen : function() {
+		window.arguments[0].res = "open";
+		window.close();
+	},
+	
+	// Open button handler
+	doOpenHtml : function() {
+		window.arguments[0].res = "openHtml";
+		window.arguments[0].filesize = document.getElementById("fileSize").value;
+		window.close();
+	},
+	
+	// Open normally button handler
+	doOpenWithoutExtension : function() {
+		window.arguments[0].res = "openWithoutExtension";
+		window.close();
+	},
+	
+	// Open normally button handler
+	doOpenOnline : function() {
+		window.arguments[0].res = "viewOnline";
+		window.close();
+	},
+	
+	
+	disableBtns : function(url,ext) {
+		/*
+		 * If it is a pdf.gz file, we disable the open button because usually a 
+		 * pdf viewer is not able to open this kind of file.
+		 */
+		if (ext == "pdf.gz") {
+			document.getElementById("open-button").disabled = true;
+		}
+		if (this.isLinkType("file:",url) || (url.indexOf("//localhost") != -1) || (url.indexOf("//127.0.0.1") != -1)) {
+			document.getElementById("openHTML-button").disabled = true;
+		}
+	},
+		
+	// Checks the type of a link
+	isLinkType : function(linktype, link) {
+		try {
+			var protocol = link.substr(0, linktype.length);
+			return protocol.toLowerCase() == linktype;
+		} catch(e) {
+			return false;
+		}
+	},
+	
+	getFileSize : function(url, size) {
+		this._strbundle = document.getElementById("strings");
+		var part1 = this._strbundle.getString("questionPart1");				
+		var descr = document.getElementById("QuestionLabel");
+		var fileSize = document.getElementById("fileSize");	
+	
+		fileSize.value = size;								
+		
+		if (size >= 1024*1024) {
+			size = size / (1024*1024);
+			part1 = part1 + " (" + size.toFixed(1) + " MB)" ;
+		} else if (size >= 1024) {
+			size = size / 1024;
+			part1 = part1 + " (" + parseInt(size + .5) + " KB)";
+		} else if (size != null) {
+			part1 = part1 + " (" + size + " bytes)";
+		}
+	
+		descr.value = part1 + this._strbundle.getString("questionPart2");
+	},
+	
+						
+	isTooltipEnabled : function() {
+		if (!this._sltPrefs.prefHasUserValue("extensions.pdfdownload.showTooltips")) {
+			this._sltPrefs.setBoolPref("extensions.pdfdownload.showTooltips",true);
+		}
+		return this._sltPrefs.getBoolPref("extensions.pdfdownload.showTooltips");
+	},
+	
+	onTooltipPopupShowing : function(popup) {
+		if (!this.IsFUEL()) {
+			var diff = popup.boxObject.height - popup.firstChild.boxObject.height;
+			popup.sizeTo(popup.boxObject.width, popup.firstChild.boxObject.height + diff);
+		}
+		return true;
+	},
+	
+	onMouseOver : function(e,toolTipName,obj) {
+		if (this.isTooltipEnabled()) {
+			var xulWindow = document.getElementById("PDFDownload-question-window");
+			var popup = document.getElementById(toolTipName);
+			if (!this.IsFUEL()) {
+				var diff = popup.boxObject.height - popup.firstChild.boxObject.height;
+		
+				popup.sizeTo(popup.boxObject.width, popup.firstChild.boxObject.height + diff);
+				popup.showPopup(obj, e.clientX+xulWindow.boxObject.screenX-(popup.boxObject.width/2), xulWindow.boxObject.screenY+window.innerHeight-10, "tooltip", "bottomleft", "topleft");
+			} else {
+				//popup.openPopup(obj, "after_start", 0,0, false, false);
+				popup.openPopupAtScreen(e.clientX+xulWindow.boxObject.screenX, xulWindow.boxObject.screenY+e.clientY+5,false);
+			}
+		}
+	},
+	
+	onMouseOut : function(toolTipName) {
+		var popup = document.getElementById(toolTipName);
+		popup.hidePopup();
+	}
+
+};

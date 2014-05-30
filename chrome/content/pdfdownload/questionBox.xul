@@ -47,23 +47,23 @@
     title="&pdfdownload.popup.title;"
     orient="horizontal"
     align="stretch"
-    onload="disableBtns(window.arguments[0].url,window.arguments[1]); getFileSize(window.arguments[0].url, window.arguments[0].filesize);"
+    onload="NitroPDF.PDFDownload.Question.disableBtns(window.arguments[0].url,window.arguments[1]); NitroPDF.PDFDownload.Question.getFileSize(window.arguments[0].url, window.arguments[0].filesize);"
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	
-	
+	<script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
 	<script type="application/x-javascript" src="chrome://pdfdownload/content/questionBox.js"/>
 	<stringbundleset id="stringbundleset">
 		<stringbundle id="strings" src="chrome://pdfdownload/locale/pdfdownload.properties"/>
 	</stringbundleset>
 	
 	<keyset>
-		<key id="enter" keycode="VK_RETURN" oncommand="doOpen();"/>
-		<key id="escape" keycode="VK_ESCAPE" oncommand="doCancel();"/>
+		<key id="enter" keycode="VK_RETURN" oncommand="NitroPDF.PDFDownload.Question.doOpen();"/>
+		<key id="escape" keycode="VK_ESCAPE" oncommand="NitroPDF.PDFDownload.Question.doCancel();"/>
 	</keyset>
 
 	<tooltip id="downloadTooltip" orient="vertical"
-	   onpopupshowing="return onTooltipPopupShowing(this);">
+	   onpopupshowing="return NitroPDF.PDFDownload.Question.onTooltipPopupShowing(this);">
 		<vbox>
 			<label class="tooltipTitle">&pdfdownload.downloadButton;</label>
 			<label>&pdfdownload.tooltip.downloadButton;</label>
@@ -72,7 +72,7 @@
 	</tooltip>
 
 	<tooltip id="openTooltip" orient="vertical"
-	   onpopupshowing="return onTooltipPopupShowing(this);">
+	   onpopupshowing="return NitroPDF.PDFDownload.Question.onTooltipPopupShowing(this);">
 		<vbox>
 			<label class="tooltipTitle">&pdfdownload.openButton;</label>
 			<label>&pdfdownload.tooltip.openPDFButton;</label>
@@ -81,7 +81,7 @@
 	</tooltip>
 
 	<tooltip id="viewHTMLTooltip" orient="vertical"
-	   onpopupshowing="return onTooltipPopupShowing(this);">
+	   onpopupshowing="return NitroPDF.PDFDownload.Question.onTooltipPopupShowing(this);">
 		<vbox>
 			<label class="tooltipTitle">&pdfdownload.viewHtmlButton;</label>
 			<label>&pdfdownload.tooltip.viewHtmlButton;</label>
@@ -90,7 +90,7 @@
 	</tooltip>
 	
 	<tooltip id="viewOnlineTooltip" orient="vertical"
-	         onpopupshowing="return onTooltipPopupShowing(this);">
+	         onpopupshowing="return NitroPDF.PDFDownload.Question.onTooltipPopupShowing(this);">
 		<vbox>
 			<label class="tooltipTitle">&pdfdownload.viewOnlineButton;</label>
 			<label>&pdfdownload.tooltip.viewOnlineButton;</label>
@@ -99,7 +99,7 @@
 	</tooltip>
 
 	<!-- <tooltip id="openWithoutExtensionTooltip" orient="vertical"
-	   onpopupshowing="return onTooltipPopupShowing(this);">
+	   onpopupshowing="return NitroPDF.PDFDownload.Question.onTooltipPopupShowing(this);">
 		<vbox>
 			<label class="tooltipTitle">&pdfdownload.openWithoutExtension;</label>
 			<label>&pdfdownload.tooltip.openWithoutExtensionButton;</label>
@@ -108,7 +108,7 @@
 	</tooltip> -->
 
 	<tooltip id="cancelTooltip" orient="vertical"
-	   onpopupshowing="return onTooltipPopupShowing(this);">
+	   onpopupshowing="return NitroPDF.PDFDownload.Question.onTooltipPopupShowing(this);">
 		<vbox>
 			<label class="tooltipTitle">&pdfdownload.cancelButton;</label>
 			<label>&pdfdownload.tooltip.cancelButton;</label>
@@ -126,12 +126,12 @@
 			<description id="QuestionLabel" value=""/>    
 			<separator class="thin"/>
 			<hbox pack="center">    
-				<button id="download-button" label="&pdfdownload.downloadButton;" oncommand="doDownload();" onmouseover="onMouseOver(event,'downloadTooltip',this)" onmouseout="onMouseOut('downloadTooltip')" />
-				<button id="open-button" label="&pdfdownload.openButton;" oncommand="doOpen();" default="true" key="enter" onmouseover="onMouseOver(event,'openTooltip',this)" onmouseout="onMouseOut('openTooltip')"/>
-				<button id="openHTML-button" label="&pdfdownload.viewHtmlButton;" oncommand="doOpenHtml();" onmouseover="onMouseOver(event,'viewHTMLTooltip',this)" onmouseout="onMouseOut('viewHTMLTooltip')"/>
-				<!-- <button id="openWithoutExtension" label="&pdfdownload.openWithoutExtension;" oncommand="doOpenWithoutExtension();" onmouseover="onMouseOver(event,'openWithoutExtensionTooltip',this)" onmouseout="onMouseOut('openWithoutExtensionTooltip')"/> -->
-				<button id="online" label="&pdfdownload.viewOnlineButton;" oncommand="doOpenOnline()();" onmouseover="onMouseOver(event,'viewOnlineTooltip',this)" onmouseout="onMouseOut('viewOnlineTooltip')"/>
-				<button id="cancel-button" label="&pdfdownload.cancelButton;" oncommand="doCancel();" key="escape" onmouseover="onMouseOver(event,'cancelTooltip',this)" onmouseout="onMouseOut('cancelTooltip')"/>
+				<button id="download-button" label="&pdfdownload.downloadButton;" oncommand="NitroPDF.PDFDownload.Question.doDownload();" onmouseover="NitroPDF.PDFDownload.Question.onMouseOver(event,'downloadTooltip',this)" onmouseout="NitroPDF.PDFDownload.Question.onMouseOut('downloadTooltip')" />
+				<button id="open-button" label="&pdfdownload.openButton;" oncommand="NitroPDF.PDFDownload.Question.doOpen();" default="true" key="enter" onmouseover="NitroPDF.PDFDownload.Question.onMouseOver(event,'openTooltip',this)" onmouseout="NitroPDF.PDFDownload.Question.onMouseOut('openTooltip')"/>
+				<button id="openHTML-button" label="&pdfdownload.viewHtmlButton;" oncommand="NitroPDF.PDFDownload.Question.doOpenHtml();" onmouseover="NitroPDF.PDFDownload.Question.onMouseOver(event,'viewHTMLTooltip',this)" onmouseout="NitroPDF.PDFDownload.Question.onMouseOut('viewHTMLTooltip')"/>
+				<!-- <button id="openWithoutExtension" label="&pdfdownload.openWithoutExtension;" oncommand="NitroPDF.PDFDownload.Question.doOpenWithoutExtension();" onmouseover="NitroPDF.PDFDownload.Question.onMouseOver(event,'openWithoutExtensionTooltip',this)" onmouseout="NitroPDF.PDFDownload.Question.onMouseOut('openWithoutExtensionTooltip')"/> -->
+				<button id="online" label="&pdfdownload.viewOnlineButton;" oncommand="NitroPDF.PDFDownload.Question.doOpenOnline();" onmouseover="NitroPDF.PDFDownload.Question.onMouseOver(event,'viewOnlineTooltip',this)" onmouseout="NitroPDF.PDFDownload.Question.onMouseOut('viewOnlineTooltip')"/>
+				<button id="cancel-button" label="&pdfdownload.cancelButton;" oncommand="NitroPDF.PDFDownload.Question.doCancel();" key="escape" onmouseover="NitroPDF.PDFDownload.Question.onMouseOver(event,'cancelTooltip',this)" onmouseout="NitroPDF.PDFDownload.Question.onMouseOut('cancelTooltip')"/>
 			</hbox>
 		</vbox>
 		<spacer width="25" />

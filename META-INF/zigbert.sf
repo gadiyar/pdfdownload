@@ -8,20 +8,30 @@ SHA1-Digest: jCy5+JoYHOK2bTDMyVwpC3zlf00=
 
 Name: chrome/pdfdownload.jar
 Digest-Algorithms: MD5 SHA1
-MD5-Digest: jyHHhQXnCBBXIn+Kad5+VA==
-SHA1-Digest: O9iDu7zW1dHX/07dHAgyn3v3DSw=
+MD5-Digest: s3gxE0e6lSW69QVMHOhkPA==
+SHA1-Digest: vLZL2P31XJIPRl0zYeh9Fr7Ah2o=
 
 Name: chrome.manifest
 Digest-Algorithms: MD5 SHA1
-MD5-Digest: GfP0CfcdLY2KeK74z63RKw==
-SHA1-Digest: LZJlzE7nXEBHLRQW9ZriCZbP+fg=
+MD5-Digest: PoHdLx79WVC8qbrV0a5DJA==
+SHA1-Digest: 0pBtNLHnId5iBWVtxQgHxGAbfUA=
 
 Name: defaults/preferences/prefs.js
 Digest-Algorithms: MD5 SHA1
-MD5-Digest: kwd2dNM2oqZJBkRYd6ML+A==
-SHA1-Digest: 4r18CHNp6tCa6pgkhVl3j44126Q=
+MD5-Digest: oJ6e0EQ9wC2iH4bR2tPGbw==
+SHA1-Digest: QGtcXziLIZULL/ZU91+hcgiYWS0=
 
 Name: install.rdf
 Digest-Algorithms: MD5 SHA1
-MD5-Digest: 1BQ73rVLD1ExPYMG3Bkfsw==
-SHA1-Digest: 4U6hPOVH3asXzDlxzAM+35rxLB8=
+MD5-Digest: j/wwND1wduybqzUs3eu8Iw==
+SHA1-Digest: TX2Eatln00A7+M5dIhsVfurcrRk=
+
+Name: modules/NitroStartup.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: uN/gv8UtqKJ5Hp77uFAtYA==
+SHA1-Digest: 7qk91ArYbu+m5Z0Ksbs8NgDPJ0M=
+
+Name: modules/NitroStartupImpl.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: wLrZg9TPcXFQ183Lpc6J3g==
+SHA1-Digest: Kdq7wqWJKDBLPaEIrztIifwClFI=

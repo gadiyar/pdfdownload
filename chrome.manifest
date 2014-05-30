@@ -2,6 +2,7 @@
 overlay	chrome://browser/content/browser.xul	chrome://pdfdownload/content/pdfDownload-Overlay.xul
 content	pdfdownload	jar:chrome/pdfdownload.jar!/content/pdfdownload/
 style	chrome://global/content/customizeToolbar.xul	chrome://pdfdownload/skin/pdfdownload.css
+resource  pdfdownload              modules/
 
 skin	pdfdownload	classic/1.0	jar:chrome/pdfdownload.jar!/skin/classic/pdfdownload/
 

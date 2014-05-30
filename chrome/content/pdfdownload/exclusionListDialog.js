@@ -37,119 +37,121 @@
  const preferencesService  = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch("extensions.pdfdownload.");
  const delimiter = ';';
  
- 
- function onLoad() {
-	 
-	 var preferencesString = "";
-	 try {
+ NitroPDF.PDFDownload.Exclusion = {
+	
+	onLoad : function() {
 		
-		preferencesString = preferencesService.getCharPref("exclusionListPref");
-	 }
-	 catch (ex) { }
-	 
-	 var items = preferencesString.split(delimiter);
-	 var excludedSitesListBox = document.getElementById("pdfdownload-exclusionList");
-	 for (i = 0; i < items.length; i++) {
-	
-		 if (items[i] != "") {
-		 
-			excludedSitesListBox.appendItem(items[i], items[i]);
-		 }
-	 }
- }
-	
- function closeDialog() {
-	 
-	 var excludedSitesListBox = document.getElementById("pdfdownload-exclusionList");
-	 var rowsCount = excludedSitesListBox.getRowCount();
-	 
-	 var preferencesString = "";
-	 for (i = 0; i < rowsCount; i++) {
+		var preferencesString = "";
+		try {
+		       
+		       preferencesString = preferencesService.getCharPref("exclusionListPref");
+		}
+		catch (ex) { }
 		
-		 preferencesString = preferencesString.concat(excludedSitesListBox.getItemAtIndex(i).value);
-		 
-		 if (i != rowsCount - 1) {
-		 
-			preferencesString = preferencesString.concat(delimiter);
-		 }
-	 }
-	 
-	 preferencesService.setCharPref("exclusionListPref", preferencesString);
-	 
-	 window.close();
- }
- 
- 
- function addWebSiteToBanList() {
-	 
-	 siteUrl = document.getElementById("pdfdownload-bannedWebSite").value;
-	 
-	 if (siteUrl != "") {
-		 
-		 if (doesSiteExistInBanlist(siteUrl)) {
-		 
-			 pdfDownloadShared.showMessage("This site is already in Exclusion List.");
-			 return;
-		 } 
-		 
-		document.getElementById("pdfdownload-exclusionList").appendItem(siteUrl, siteUrl);
-		document.getElementById("pdfdownload-bannedWebSite").value = "";
-	 }
-	 else {
-		 
-		 pdfDownloadShared.showMessage("You must enter a URL in order to add.");
-	 }
- }
- 
- 
- function deleteWebSiteFromBanList() {
-	 
-	 var excludedSitesListBox = document.getElementById("pdfdownload-exclusionList");
-	 var sitesToDelete = excludedSitesListBox.selectedItems;
-	 
-	 if (sitesToDelete.length == 0) {
+		var items = preferencesString.split(delimiter);
+		var excludedSitesListBox = document.getElementById("pdfdownload-exclusionList");
+		for (i = 0; i < items.length; i++) {
+	       
+			if (items[i] != "") {
+			
+			       excludedSitesListBox.appendItem(items[i], items[i]);
+			}
+		}
+	},
+	       
+	closeDialog : function() {
 		
-		pdfDownloadShared.showMessage("You must select one or more URLs to delete."); 
-	 }
-	 else {
-		 
-		 // used to store elements for deleting 
-		 var tempArray = new Array(sitesToDelete.length);
-		 
-		 for (i = 0; i < tempArray.length; i++) {
-		 
-			 tempArray[i] = sitesToDelete[i];
-		 }
-
-		 // remove items from Exclusion List Box
-		 for (i = 0; i < tempArray.length; i++) {
-									
-			index = excludedSitesListBox.getIndexOfItem(tempArray[i]);
-			excludedSitesListBox.removeItemAt(index); 
-		 }
-	 }
- }
- 
- 
- /*function showMessage(errorMessage) {
+		var excludedSitesListBox = document.getElementById("pdfdownload-exclusionList");
+		var rowsCount = excludedSitesListBox.getRowCount();
+		
+		var preferencesString = "";
+		for (i = 0; i < rowsCount; i++) {
+		       
+			preferencesString = preferencesString.concat(excludedSitesListBox.getItemAtIndex(i).value);
+			
+			if (i != rowsCount - 1) {
+			
+			       preferencesString = preferencesString.concat(delimiter);
+			}
+		}
+		
+		preferencesService.setCharPref("exclusionListPref", preferencesString);
+		
+		window.close();
+	},
 	
-	var prompts = Components.classes["@mozilla.org/embedcomp/prompt-service;1"].getService(Components.interfaces.nsIPromptService);
-	prompts.alert(this, "PDF Download", errorMessage); 
- }*/
- 
- 
- function doesSiteExistInBanlist(siteUrl) {
 	
-	 var excludedSitesListBox = document.getElementById("pdfdownload-exclusionList");
-	 var listBoxRowsCount = excludedSitesListBox.getRowCount();
-	 	 
-	 for (i = 0; i < listBoxRowsCount; i++) {
-	 
-		 if (siteUrl == excludedSitesListBox.getItemAtIndex(i).value) {
-		 
-			 return true;
-		 }
-	 }
-	 
-	 return false;
- }
+	addWebSiteToBanList : function() {
+		
+		siteUrl = document.getElementById("pdfdownload-bannedWebSite").value;
+		
+		if (siteUrl != "") {
+			
+			if (doesSiteExistInBanlist(siteUrl)) {
+			
+				NitroPDF.PDFDownload.Shared.showMessage("This site is already in Exclusion List.");
+				return;
+			} 
+			
+		       document.getElementById("pdfdownload-exclusionList").appendItem(siteUrl, siteUrl);
+		       document.getElementById("pdfdownload-bannedWebSite").value = "";
+		}
+		else {
+			
+			NitroPDF.PDFDownload.Shared.showMessage("You must enter a URL in order to add.");
+		}
+	},
+	
+	
+	deleteWebSiteFromBanList : function() {
+		
+		var excludedSitesListBox = document.getElementById("pdfdownload-exclusionList");
+		var sitesToDelete = excludedSitesListBox.selectedItems;
+		
+		if (sitesToDelete.length == 0) {
+		       
+		       NitroPDF.PDFDownload.Shared.showMessage("You must select one or more URLs to delete."); 
+		}
+		else {
+			
+			// used to store elements for deleting 
+			var tempArray = new Array(sitesToDelete.length);
+			
+			for (i = 0; i < tempArray.length; i++) {
+			
+				tempArray[i] = sitesToDelete[i];
+			}
+       
+			// remove items from Exclusion List Box
+			for (i = 0; i < tempArray.length; i++) {
+									       
+			       index = excludedSitesListBox.getIndexOfItem(tempArray[i]);
+			       excludedSitesListBox.removeItemAt(index); 
+			}
+		}
+	},
+	
+	
+	/*function showMessage(errorMessage) {
+	       
+	       var prompts = Components.classes["@mozilla.org/embedcomp/prompt-service;1"].getService(Components.interfaces.nsIPromptService);
+	       prompts.alert(this, "PDF Download", errorMessage); 
+	}*/
+	
+	
+	doesSiteExistInBanlist : function(siteUrl) {
+	       
+		var excludedSitesListBox = document.getElementById("pdfdownload-exclusionList");
+		var listBoxRowsCount = excludedSitesListBox.getRowCount();
+			
+		for (i = 0; i < listBoxRowsCount; i++) {
+		
+			if (siteUrl == excludedSitesListBox.getItemAtIndex(i).value) {
+			
+				return true;
+			}
+		}
+		
+		return false;
+	}
+ };
