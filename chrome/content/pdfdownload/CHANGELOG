@@ -1,5 +1,10 @@
 CHANGELOG
 
+v0.5.1  :   2005-07-25
+
+ - Solved a problem with PDF to HTML conversion. Every user should update to this version!!! 
+   PDF to HTML conversion feature is not working anymore with PDF Download <= 0.5: please update it!!!
+
 v0.5    :   2005-07-06
 
  - Added support for pdf.gz file type (compressed pdf files).

@@ -146,7 +146,6 @@ function mouseClick(aEvent) {
 	var answer = new Object();
 	answer.res = "cancel";
 	answer.url = url;
-	answer.mirror = "";
 	window.openDialog("chrome://pdfdownload/content/questionBox.xul", "PDF Download", "chrome,modal,centerscreen,dialog,width=200,height=100",answer);
 	if (answer.res == "download") {
 		savelink(url);
@@ -155,15 +154,37 @@ function mouseClick(aEvent) {
 		// Removed because many users have asked to remove it and give them the chance to enable it in the option dialog
 		//getBrowser().selectedTab = myTab;
 	} else if (answer.res == "openHtml") {
-		var hash = computeHash(url);
-		var pdf2htmlUrl = answer.mirror+"?url="+url+"&ID="+hash;
-		var myTab = getBrowser().addTab(pdf2htmlUrl);
-		// Removed because many users have asked to remove it and give them the chance to enable it in the option dialog
-		//getBrowser().selectedTab = myTab;
+		getMirror(url);
 	}
 	aEvent.preventDefault();
 	aEvent.stopPropagation();
     }
+}
+
+function getMirror(url) {
+	var http;
+	try {
+  		http = new XMLHttpRequest();
+ 	} catch (e) {
+  		http = false
+ 	}
+	if (http) {
+		var uri = "http://www.rabotat.org/firefox/pdfdownload/getmirror.php";
+		http.open("GET", uri, true);
+		http.onreadystatechange=function() {
+			if (http.readyState == 4) {
+				if (http.status == 200) {
+					if (http.responseText != "") {
+						var mirror = http.responseText;
+						var hash = computeHash(url);
+						var pdf2htmlUrl = mirror+"?url="+url+"&ID="+hash;
+						getBrowser().addTab(pdf2htmlUrl);
+					}
+   				}
+			}
+		}	
+		http.send(null);
+	}
 }
 
 function computeHash(url) {
