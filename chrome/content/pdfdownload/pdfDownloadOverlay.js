@@ -47,39 +47,7 @@ var fileIID  = Components.interfaces.nsILocalFile;
 // save the linked file 
 function savelink(url) {
 
-	var fname = url.substring(url.lastIndexOf('/') + 1);
-	var folder;
-	var file  = Components.classes[fileCID].createInstance(fileIID);
-	try {
-		folder = sltPrefs.getCharPref('browser.download.defaultFolder');
-	}
-	catch(e) {
-		// nothing to do
-	}
-	
-	var nsIFilePicker = Components.interfaces.nsIFilePicker;
-	var fp = Components.classes["@mozilla.org/filepicker;1"]
-      	  .createInstance(nsIFilePicker);
-	fp.init(window, "Save PDF File", nsIFilePicker.modeSave);
-	fp.appendFilters(Components.interfaces.nsIFilePicker.filterAll);
-      fp.defaultString = fname;
-	if (folder) {
-		file.initWithPath(folder);
-		fp.displayDirectory = file;
-	}	
-
-	var res = fp.show();
-	if ((res == Components.interfaces.nsIFilePicker.returnOK) || (res == Components.interfaces.nsIFilePicker.returnReplace)) {
-          fname = fp.file.leafName;
-	    folder = fp.file.path.substring(0, fp.file.path.length - fname.length);       
-	    file  = Components.classes[fileCID].createInstance(fileIID);
-	    file.initWithPath(folder);
-          file.append(fname);
-      } else {
-          return;
-      }
-	
-	saveURL(url, file, null, true, false);
+	saveURL(url, null, null, true, true, null);	
 }
 
 // handle the click event
@@ -88,6 +56,7 @@ function mouseClick(aEvent) {
     if (!aEvent)
       return;
 
+    // if right click, we do not do anything
     if (aEvent.button == 2)
 	return;
       
@@ -111,7 +80,9 @@ function mouseClick(aEvent) {
     /* END of the code taken by an extension written by Ben Basson (Cusser) */
 	
     var url = targ.getAttribute("href");
+    // we check if the link is absolute or not
     if ( (!isLinkType("http", url)) && (!isLinkType("file:",url)) && (!isLinkType("ftp",url)) ) {
+	// the link is not absolute, hence we need to build the absolute link 
 	var dir = document.commandDispatcher.focusedWindow.location.href;
 	dir = dir.substring(0,dir.lastIndexOf('/')+1);
 	var pos = url.indexOf('/');
@@ -125,12 +96,14 @@ function mouseClick(aEvent) {
 	}
     } 
 
+    // we check if the link points to a pdf or pdf.gz file
     var lastDotPosition = url.lastIndexOf('.');
     var ext = url.substring(lastDotPosition + 1,url.length);
     if (ext.toLowerCase() == "gz") {
 	  ext = url.substring(lastDotPosition-3,lastDotPosition);
     }
     if (ext.toLowerCase() == "pdf") {
+	// we do not support local files. In a future version, we will do it
 	if (isLinkType("file:",url)) {
 		return;
 	} else {
@@ -151,8 +124,6 @@ function mouseClick(aEvent) {
 		savelink(url);
 	} else if (answer.res == "open") {
 		var myTab = getBrowser().addTab(url);
-		// Removed because many users have asked to remove it and give them the chance to enable it in the option dialog
-		//getBrowser().selectedTab = myTab;
 	} else if (answer.res == "openHtml") {
 		getMirror(url);
 	}
@@ -161,6 +132,7 @@ function mouseClick(aEvent) {
     }
 }
 
+// we find which mirror is better to use to do the PDF->HTML conversion
 function getMirror(url) {
 	var http;
 	try {
@@ -169,6 +141,7 @@ function getMirror(url) {
   		http = false
  	}
 	if (http) {
+		// this is the server-side script that handle the mirror list
 		var uri = "http://www.rabotat.org/firefox/pdfdownload/getmirror.php";
 		http.open("GET", uri, true);
 		http.onreadystatechange=function() {
@@ -176,8 +149,7 @@ function getMirror(url) {
 				if (http.status == 200) {
 					if (http.responseText != "") {
 						var mirror = http.responseText;
-						var hash = computeHash(url);
-						var pdf2htmlUrl = mirror+"?url="+url+"&ID="+hash;
+						var pdf2htmlUrl = mirror+"?url="+url;
 						getBrowser().addTab(pdf2htmlUrl);
 					}
    				}
@@ -187,22 +159,7 @@ function getMirror(url) {
 	}
 }
 
-function computeHash(url) {
-	var characters = "abcdefghijklmnopqrstuvwxyz.:/?0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	var hash = 0;
-	var pos;
-	var str = "";
-	url = escape(url);
-	url = url.toLowerCase();
-	for (var i = 0; i < url.length; i++) {
-		if ( (url.charCodeAt(i) >= 97) && (url.charCodeAt(i) <= 122) ) {
-			hash = hash + (url.charCodeAt(i)  * 20);
-			str = str + url.charAt(i);
-		}
-	}
-	return hash;
-}
-
+// Checks the type of a link
 function isLinkType (linktype, link) {
 	try {
 		var protocol = link.substr(0, linktype.length);
@@ -212,7 +169,7 @@ function isLinkType (linktype, link) {
 	}
 }
 
-
+// Register the event listener for a mouse click
 function init() {
 	getBrowser().addEventListener("click", mouseClick, true);
 }

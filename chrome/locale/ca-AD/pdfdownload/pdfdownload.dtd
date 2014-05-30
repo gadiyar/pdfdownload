@@ -1,0 +1,16 @@
+<!ENTITY pdfdownload.CreatedByLabel "Creat per:">
+<!ENTITY pdfdownload.WebsiteLabel "Lloc Web">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "Baixa-t'ho">
+<!ENTITY pdfdownload.OpenButton "Obri a una nova pestanya">
+<!ENTITY pdfdownload.ViewHtmlButton "Visualitza com a HTML a una nova pestanya">
+<!ENTITY pdfdownload.CancelButton "Cancel·la">
+
+<!ENTITY pdfdownload.AboutTitle "Sobre PDF Download">
+<!ENTITY pdfdownload.WebsiteTooltip "Visualitza el lloc web de l'autor">
+<!ENTITY pdfdownload.MoreInfo "Més detalls:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Llegeix la llicència final d'usuari">
+<!ENTITY pdfdownload.License "Llicència">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Visualitza el registre de canvis">
+<!ENTITY pdfdownload.Changelog "Registre de canvis">
+<!ENTITY pdfdownload.Acknowledgments "Agraïments">

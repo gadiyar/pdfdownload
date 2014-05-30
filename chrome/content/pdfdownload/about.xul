@@ -9,7 +9,7 @@
 <hbox>
 <vbox>
   <text value="PDF Download" style="font-weight: bold; font-size: x-large;"/>
-  <label>ver. 0.5.1</label>
+  <label>ver. 0.5.1.1</label>
   <separator class="thin"/>
   <text value="&pdfdownload.CreatedByLabel;" style="font-weight: bold;"/>
   <label>Denis Remondini</label> 
@@ -18,7 +18,7 @@
   <label>denistn@gmail.com</label>
   <separator class="thin"/>
   <text value="&pdfdownload.WebsiteLabel;" style="font-weight: bold;"/>
-  <label class="link" tooltiptext="&pdfdownload.WebsiteTooltip;" onclick="window.open('http://www.rabotat.org/firefox'); window.close();">http://www.rabotat.org/firefox</label>
+  <label class="link" tooltiptext="&pdfdownload.WebsiteTooltip;" onclick="window.open('http://www.rabotat.org/firefox/'); window.close();">http://www.rabotat.org/firefox/</label>
 </vbox>
 <vbox>
 <spacer flex="1"/>

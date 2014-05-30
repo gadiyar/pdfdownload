@@ -7,12 +7,12 @@
 
     <em:id>{37E4D8EA-8BDA-4831-8EA1-89053939A250}</em:id>
     <em:name>PDF Download</em:name>
-    <em:version>0.5.1</em:version>
+    <em:version>0.5.1.1</em:version>
     <em:description>Allows to choose whether you want to view a PDF file inside the browser (as PDF or HTML) or you want to download it!</em:description>
     <em:creator>Denis Remondini</em:creator>
     <em:iconURL>chrome://pdfdownload/skin/pdfdownload.png</em:iconURL>
     <em:aboutURL>chrome://pdfdownload/content/about.xul</em:aboutURL>
-    <em:homepageURL>http://www.rabotat.org/firefox</em:homepageURL>
+    <em:homepageURL>http://www.rabotat.org/firefox/</em:homepageURL>
     <em:file>
 	<Description about="urn:mozilla:extension:file:pdfdownload.jar">
 		<em:package>content/pdfdownload/</em:package>
@@ -39,6 +39,7 @@
 		<em:locale>locale/ru-RU/pdfdownload/</em:locale>
 		<em:locale>locale/pl-PL/pdfdownload/</em:locale>
 		<em:locale>locale/sl-SI/pdfdownload/</em:locale>
+		<em:locale>locale/ca-AD/pdfdownload/</em:locale>
 		<em:skin>skin/classic/pdfdownload/</em:skin>
     	</Description>
     </em:file>
@@ -47,7 +48,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>0.7</em:minVersion>
-        <em:maxVersion>1.0+</em:maxVersion>
+        <em:maxVersion>1.4</em:maxVersion>
       </Description>
     </em:targetApplication> 
     

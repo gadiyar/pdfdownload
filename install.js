@@ -6,7 +6,7 @@ var XpiInstaller = {
 	// --- Editable items begin ---
 	extFullName: 'PDF Download',
 	extShortName: 'pdfdownload',
-	extVersion: '0.5
+	extVersion: '0.5.1.1',
 	extAuthor: 'Denis Remondini',
 	extLocaleNames: ['en-US', 'cs-CZ',
 			     'da-DK', 'de-DE',
