@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "その他">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "ツール メニュー">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF Download の項目を Firefox のツールに表示">
+<!ENTITY pdfdownload.optionsTooltips "ツールチップ">
+<!ENTITY pdfdownload.optionsShowTooltips "ダイアログ内にツールチップを表示">
 <!ENTITY pdfdownload.optionsOpenLink "Firefox PDF プラグインを使用して PDF リンクを開く時の動作:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF ファイルを HTML で開く時の動作:">
 <!ENTITY pdfdownload.optionsSameTab "現在のタブで開く">

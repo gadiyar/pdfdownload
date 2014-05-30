@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "פרטים נוספים">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "תפריט כלים">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "בתפריט כלים &quot;PDF Download&quot; הראה את">
+<!ENTITY pdfdownload.optionsTooltips "לשוניות עזרה">
+<!ENTITY pdfdownload.optionsShowTooltips "הראה לשוניות עזרה בחלון הדיאלוג">
 <!ENTITY pdfdownload.optionsOpenLink "PDF כדי לפתוח קישורי Firefox של PDF-כיצד להשתמש בצופה ה">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF-של קבצי ה HTML כיצד לפתוח גרסאת">
 <!ENTITY pdfdownload.optionsSameTab "פתח באותה הלשונית">

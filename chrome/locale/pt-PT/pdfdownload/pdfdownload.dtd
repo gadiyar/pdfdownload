@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Mais detalhes">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menu Ferramentas">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Mostrar o PDF Download no Menu Ferramentas do Firefox">
+<!ENTITY pdfdownload.optionsTooltips "Dicas">
+<!ENTITY pdfdownload.optionsShowTooltips "Mostrar dicas nas caixas de diálogo">
 <!ENTITY pdfdownload.optionsOpenLink "Como abrir ligações PDF usando a extensão PDF do Firefox:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Como abrir ficheiros PDF em versão HTML">
 <!ENTITY pdfdownload.optionsSameTab "Abrir no mesmo separador">

@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Още детайли:">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Меню Инструменти">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Показвай PDF Даунлоуд във Firefox Меню Инструменти.">
+<!ENTITY pdfdownload.optionsTooltips "Туултипове">
+<!ENTITY pdfdownload.optionsShowTooltips "Показвай туултиповете в диалоговия прозорец">
 <!ENTITY pdfdownload.optionsOpenLink "Как да отваряш PDF линкове, когато използваш Firefox PDF приставка:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Как да отвориш HTML версията на PDF файла:">
 <!ENTITY pdfdownload.optionsSameTab "Отвори в същия подпрозорец">
@@ -33,7 +35,7 @@
 <!ENTITY pdfdownload.optionsUsePlugin "Използвай PDF приставка-та">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Използвай">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Използвай следния визуализатор:">
-<!ENTITY pdfdownload.optionsBrowse "Брауз...">
+<!ENTITY pdfdownload.optionsBrowse "Разгледай...">
 <!ENTITY pdfdownload.optionsBrowseTitle "Избери PDF Визуализатор">
 <!ENTITY pdfdownload.optionsExeFiles "Windows Апликации">
 <!ENTITY pdfdownload.optionsAllFiles "Всички Файлове">

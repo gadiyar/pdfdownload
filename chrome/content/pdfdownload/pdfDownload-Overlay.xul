@@ -40,18 +40,17 @@
 <overlay id="pdfDownloadOverlay" 
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-  <script type="application/x-javascript" src="chrome://pdfdownload/content/pdfDownloadOverlay.js"/>
-  <script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
+	<script type="application/x-javascript" src="chrome://pdfdownload/content/pdfDownloadOverlay.js"/>
+	<script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
 
     <!-- Tools menu -->
-    <menupopup id="menu_ToolsPopup">
-        <menuitem insertafter="devToolsSeparator" label="&pdfdownload.optionsTitle;" id="PDFDownloadToolsItem" oncommand="showPDFDownloadSettings();" />
-    </menupopup>    
+	<menupopup id="menu_ToolsPopup">
+		<menuitem insertafter="devToolsSeparator" label="&pdfdownload.optionsTitle;" id="PDFDownloadToolsItem" oncommand="showPDFDownloadSettings();" />
+	</menupopup>    
 
 
-  <stringbundleset id="stringbundleset">
-    	<stringbundle id="pdfdownloadStrings" src="chrome://pdfdownload/locale/pdfdownload.properties"/>
-  </stringbundleset>
-  
+	<stringbundleset id="stringbundleset">
+		<stringbundle id="pdfdownloadStrings" src="chrome://pdfdownload/locale/pdfdownload.properties"/>
+	</stringbundleset>
 
 </overlay>

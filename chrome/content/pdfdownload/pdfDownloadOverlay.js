@@ -31,249 +31,247 @@
    - the provisions above, a recipient may use your version of this file under
    - the terms of any one of the MPL, the GPL or the LGPL.
    -
-   - 
-***** END LICENSE BLOCK *****/
+ ***** END LICENSE BLOCK *****/
 
 
 
 var sltPrefs = Components.classes['@mozilla.org/preferences-service;1']
-               .getService(Components.interfaces.nsIPrefBranch);
+                                  .getService(Components.interfaces.nsIPrefBranch);
 const nsIWBP = Components.interfaces.nsIWebBrowserPersist;
 var fileCID  = '@mozilla.org/file/local;1';
 var fileIID  = Components.interfaces.nsILocalFile;
-var strings  = document.getElementById("pdfdownloadStrings");
 const focusNewTabPref = "browser.tabs.loadInBackground";
 
 var downloadQueue = new Array();
 
-// find the base URL for the document
+function getCurrentLocation() {
+	return document.commandDispatcher.focusedWindow.location.href;
+}
+
+//find the base URL for the document
 function getBaseUrl() {
-	var dir = document.commandDispatcher.focusedWindow.location.href;
-      var baseTag = window._content.document.getElementsByTagName('base')[0];
+	var dir = getCurrentLocation();
+	var baseTag = window._content.document.getElementsByTagName('base')[0];
 	if (baseTag != null) {
 		if ((baseTag.href != null) && (baseTag.href != "")) {
-	    		dir = baseTag.href;
+			dir = baseTag.href;
 		}
 	}
 	return dir;
 }
 
 
-// save the linked file 
+//save the linked file 
 function savelink(url) {
 	saveURL(url, null, null, true, true, null);	
 }
 
-// handle the click event
+//handle the click event
 function mouseClick(aEvent) {
 
-    var globalHistory = Components.classes["@mozilla.org/browser/global-history;2"]
-					.getService(Components.interfaces.nsIBrowserHistory);
+	var globalHistory = Components.classes["@mozilla.org/browser/global-history;2"]
+	                                       .getService(Components.interfaces.nsIBrowserHistory);
 
-    if (!aEvent)
-      return;
-
-    // if right click, we do not do anything
-    if (aEvent.button == 2)
-	return;
-
-    // if Shift key and Ctrl key were pressed, it means that the user wants to open the PDF file without "PDF Download"
-    if (aEvent.shiftKey && aEvent.ctrlKey) 
-	return;
-
-    if (aEvent.target)
-      var targ = aEvent.originalTarget;
-  
-    /* BEGIN of the code taken by an extension written by Ben Basson (Cusser)  */
-    if (targ.tagName.toUpperCase() != "A")
-    {
-      // Recurse until reaching root node
-      while (targ.parentNode) 
-      {
-        targ = targ.parentNode;
-        // stop if an anchor is located
-        if (targ.tagName && targ.tagName.toUpperCase() == "A")
-        break;
-      }
-      if (!targ.tagName || targ.tagName.toUpperCase() != "A")
-        return;
-    }
-    /* END of the code taken by an extension written by Ben Basson (Cusser) */
-	
-    var url = targ.getAttribute("href");	
-    if (url == null) return;
-    
-    // we check if the link is absolute or not
-    if ( (!isLinkType("http", url)) && (!isLinkType("file:",url)) && (!isLinkType("ftp",url)) ) {
-	// the link is not absolute, hence we need to build the absolute link
-      var dir = getBaseUrl();
-	dir = dir.substring(0,dir.lastIndexOf('/')+1);
-	var pos = url.indexOf('/');
-	if (pos == 0) {
-		pos = dir.indexOf('/');
-		pos = dir.indexOf('/',pos+1);
-		pos = dir.indexOf('/',pos+1);
-		url = dir.substr(0,pos) + url;
-	} else {
-		url = dir + url;
-	}
-    } 
-
-    // if it is a javascript link, we do not do anything
-    if (url.indexOf('javascript:') != -1)
-	return;
-  
-    //retrieve the url from a google link
-    if ((url.match(/^http:\/\/[a-z.]+google.[a-z.]+\/url\?/i)) && (url.match(/[\\?&]url=([^&#]+)/i))) {
-	url = decodeURIComponent(RegExp.$1);
-    }
-
-    var originalUrl = url;
-    // we remove eventual parameters in the url    
-    var firstSharpPosition = url.indexOf('#');  
-    if (firstSharpPosition != -1) {
-    	url = url.substring(0,firstSharpPosition);
-    } 
-    var firstQuestionMarkPosition = url.indexOf('?');  
-    if (firstQuestionMarkPosition != -1) {
-    	url = url.substring(0,firstQuestionMarkPosition);
-    } 
-    
-    // we check if the link points to a pdf or pdf.gz file
-    var lastDotPosition = url.lastIndexOf('.');
-    var ext = url.substring(lastDotPosition + 1,lastDotPosition + 3);
-    
-    // we check if the extension is part of a directory name or if it is a real filename extension
-    var lastSlashPosition = url.lastIndexOf('/');
-    if (lastSlashPosition > lastDotPosition) {	
-	  // the extension we found is not the filename extension but it is part of a directory name
-	  // ex: http://groups.google.com/group/comp.text.pdf/browse_thread/thread/a7e39729ab3bc5d/9d9408322b2a77ff
-	  return;
-    }
-    if (ext.toLowerCase() == "gz") {
-	  ext = url.substring(lastDotPosition-3,lastDotPosition+3);
-  	  url = url.substring(0, lastDotPosition+3);
-    } else {
-	  ext = url.substring(lastDotPosition + 1, lastDotPosition + 4);
-	  url = url.substring(0, lastDotPosition + 4);
-    }
-    if ( (ext.toLowerCase() == "pdf") || (ext.toLowerCase() == "pdf.gz") ) {
-	// we do not support local files. In a future version, we will do it (maybe)
-	if (isLinkType("file:",url)) {
+	if (!aEvent)
 		return;
-	} 
 
-	var answer = new Object();
-	answer.res = "cancel";
-	answer.url = originalUrl;
-      try {
-	  answer.res = sltPrefs.getCharPref("extensions.pdfdownload.defaultAction");
-      } catch(ex) {
-	  answer.res = "showPopup";
-	}
+	// if right click, we do not do anything
+	if (aEvent.button == 2)
+		return;
 
-	if ((answer.res == "showPopup") || 
-		((answer.res == "openHtml") && ((url.indexOf("//localhost") != -1) || (url.indexOf("//127.0.0.1") != -1)))) {
-		window.openDialog("chrome://pdfdownload/content/questionBox.xul", "PDF Download", "chrome,modal,centerscreen,dialog,resizable",answer,ext);
-	} 
-	var openPDF = "";
-	if (answer.res == "download") {
-		savelink(originalUrl);
-	} else if (answer.res == "open") {
-		// we check how to open the PDF
-		try {
-			openPDF = sltPrefs.getCharPref("extensions.pdfdownload.openPDF");
-		} catch(ex) {
-			openPDF = "";
+	// if Shift key and Ctrl key were pressed, it means that the user wants to open the PDF file without "PDF Download"
+	if (aEvent.shiftKey && aEvent.ctrlKey) 
+		return;
+
+	if (aEvent.target)
+		var targ = aEvent.originalTarget;
+
+	/* BEGIN of the code taken by an extension written by Ben Basson (Cusser)  */
+	if (targ.tagName.toUpperCase() != "A")
+	{
+		// Recurse until reaching root node
+		while (targ.parentNode) 
+		{
+			targ = targ.parentNode;
+			// stop if an anchor is located
+			if (targ.tagName && targ.tagName.toUpperCase() == "A")
+				break;
 		}
-		if (openPDF == "usePlugin") {
-			/*
-			 In the preferences there was written to open the PDF file using the PDF plugin.
-			 Now we check in which tab/window we must open the PDF file using the PDF plugin.
-			 */		
-			var prefvalue;
-			try {
-      			prefvalue = sltPrefs.getCharPref("extensions.pdfdownload.openPDFLink");
-    			} catch(ex) {
-				prefvalue = "openPDFNewTab";
-    			}
-			if (prefvalue == "openPDFNewTab") {
-				var tab = getBrowser().addTab(originalUrl);
-				if (shouldNewTabFocused()) {
-			  	  getBrowser().selectedTab = tab;
-				}
-			} else if (prefvalue == "openPDFNewWindow") {
-				openNewWindowWith(originalUrl, null, null);
-			} else {
-				getBrowser().loadURI(originalUrl);
-			} 
+		if (!targ.tagName || targ.tagName.toUpperCase() != "A")
+			return;
+	}
+	/* END of the code taken by an extension written by Ben Basson (Cusser) */
+
+	var url = targ.getAttribute("href");	
+	if (url == null) return;
+
+	// we check if the link is absolute or not
+	if ( (!isLinkType("http", url)) && (!isLinkType("file:",url)) && (!isLinkType("ftp",url)) ) {
+		// the link is not absolute, hence we need to build the absolute link
+		var dir = getBaseUrl();
+		dir = dir.substring(0,dir.lastIndexOf('/')+1);
+		var pos = url.indexOf('/');
+		if (pos == 0) {
+			pos = dir.indexOf('/');
+			pos = dir.indexOf('/',pos+1);
+			pos = dir.indexOf('/',pos+1);
+			url = dir.substr(0,pos) + url;
 		} else {
-			// In the preferences there was written to open the PDF file using a PDF viewer (default or custom).
-			var fname = url.substring(url.lastIndexOf('/') + 1);
-			saveTempFile(originalUrl,fname);	
+			url = dir + url;
 		}
-	} else if (answer.res == "openHtml") {
-		getMirror(originalUrl);
+	} 
+
+	// if it is a javascript link, we do not do anything
+	if (url.indexOf('javascript:') != -1)
+		return;
+
+	//retrieve the url from a google link
+	if ((url.match(/^http:\/\/[a-z.]+google.[a-z.]+\/url\?/i)) && (url.match(/[\\?&]url=([^&#]+)/i))) {
+		url = decodeURIComponent(RegExp.$1);
 	}
-	if (answer.res != "cancel") {
-		// we set the pdf link as a visited link!!
-		var referrer = makeURL(document.commandDispatcher.focusedWindow.location.href);
-		var gURIFixer = Components.classes["@mozilla.org/docshell/urifixup;1"].
-		     			getService(Components.interfaces.nsIURIFixup);
-		var visitedURI = gURIFixer.createFixupURI(targ.href, 0)
-		markLinkVisited(visitedURI.spec, targ, referrer);
+
+	var originalUrl = url;
+	// we remove eventual parameters in the url    
+	var firstSharpPosition = url.indexOf('#');  
+	if (firstSharpPosition != -1) {
+		url = url.substring(0,firstSharpPosition);
+	} 
+	var firstQuestionMarkPosition = url.indexOf('?');  
+	if (firstQuestionMarkPosition != -1) {
+		url = url.substring(0,firstQuestionMarkPosition);
+	} 
+
+	// we check if the link points to a pdf or pdf.gz file
+	var lastDotPosition = url.lastIndexOf('.');
+	var ext = url.substring(lastDotPosition + 1,lastDotPosition + 3);
+
+	// we check if the extension is part of a directory name or if it is a real filename extension
+	var lastSlashPosition = url.lastIndexOf('/');
+	if (lastSlashPosition > lastDotPosition) {	
+		// the extension we found is not the filename extension but it is part of a directory name
+		// ex: http://groups.google.com/group/comp.text.pdf/browse_thread/thread/a7e39729ab3bc5d/9d9408322b2a77ff
+		return;
 	}
-	if (answer.res != "openWithoutExtension") {
-		aEvent.preventDefault();
-		aEvent.stopPropagation();	
+	if (ext.toLowerCase() == "gz") {
+		ext = url.substring(lastDotPosition-3,lastDotPosition+3);
+		url = url.substring(0, lastDotPosition+3);
+	} else {
+		ext = url.substring(lastDotPosition + 1, lastDotPosition + 4);
+		url = url.substring(0, lastDotPosition + 4);
 	}
-    }
+	if ( (ext.toLowerCase() == "pdf") || (ext.toLowerCase() == "pdf.gz") ) {
+		// we do not support local files. In a future version, we will do it (maybe)
+		if (isLinkType("file:",url)) {
+			return;
+		} 
+
+		var answer = new Object();
+		answer.res = "cancel";
+		answer.url = originalUrl;
+		try {
+			answer.res = sltPrefs.getCharPref("extensions.pdfdownload.defaultAction");
+		} catch(ex) {
+			answer.res = "showPopup";
+		}
+
+		if ((answer.res == "showPopup") || 
+				((answer.res == "openHtml") && ((url.indexOf("//localhost") != -1) || (url.indexOf("//127.0.0.1") != -1)))) {
+			window.openDialog("chrome://pdfdownload/content/questionBox.xul", "PDF Download", "chrome,modal,centerscreen,dialog,resizable",answer,ext);
+		} 
+		var openPDF = "";
+		if (answer.res == "download") {
+			savelink(originalUrl);
+		} else if (answer.res == "open") {
+			// we check how to open the PDF
+			try {
+				openPDF = sltPrefs.getCharPref("extensions.pdfdownload.openPDF");
+			} catch(ex) {
+				openPDF = "";
+			}
+			if (openPDF == "usePlugin") {
+				/*
+				 * In the preferences there was written to open the PDF file using the PDF plugin.
+				 * Now we check in which tab/window we must open the PDF file using the PDF plugin.
+				 */		
+				var prefvalue;
+				try {
+					prefvalue = sltPrefs.getCharPref("extensions.pdfdownload.openPDFLink");
+				} catch(ex) {
+					prefvalue = "openPDFNewTab";
+				}
+				if (prefvalue == "openPDFNewTab") {
+					var tab = getBrowser().addTab(originalUrl);
+					if (shouldNewTabFocused()) {
+						getBrowser().selectedTab = tab;
+					}
+				} else if (prefvalue == "openPDFNewWindow") {
+					openNewWindowWith(originalUrl, null, null);
+				} else {
+					getBrowser().loadURI(originalUrl);
+				} 
+			} else {
+				// In the preferences there was written to open the PDF file using a PDF viewer (default or custom).
+				var fname = url.substring(url.lastIndexOf('/') + 1);
+				saveTempFile(originalUrl,fname);	
+			}
+		} else if (answer.res == "openHtml") {
+			getMirror(originalUrl);
+		}
+		if (answer.res != "cancel") {
+			// we set the pdf link as a visited link!!
+			var referrer = makeURL(getCurrentLocation());
+			var gURIFixer = Components.classes["@mozilla.org/docshell/urifixup;1"].
+			getService(Components.interfaces.nsIURIFixup);
+			var visitedURI = gURIFixer.createFixupURI(targ.href, 0)
+			markLinkVisited(visitedURI.spec, targ, referrer);
+		}
+		if (answer.res != "openWithoutExtension") {
+			aEvent.preventDefault();
+			aEvent.stopPropagation();	
+		}
+	}
 }
 
-// function taken from old contentAreaUtils.js and fixed up a little bit 
-// to support Firefox 1.5
+//function taken from old contentAreaUtils.js and fixed up a little bit 
+//to support Firefox 1.5
 function markLinkVisited(href, linkNode,referrer)
 {
-  var globalHistory = Components.classes["@mozilla.org/browser/global-history;2"]
-                                .getService(Components.interfaces.nsIGlobalHistory2);
+	var globalHistory = Components.classes["@mozilla.org/browser/global-history;2"]
+	                                       .getService(Components.interfaces.nsIGlobalHistory2);
 
-  var uri = makeURL(href);
-  if (!globalHistory.isVisited(uri)) {
-    globalHistory.addURI(uri, false, true,referrer);
-    var oldHref = linkNode.getAttribute("href");
-    if (typeof oldHref == "string") {
-      // Use setAttribute instead of direct assignment.
-      // (bug 217195, bug 187195)
-      linkNode.setAttribute("href", "");
-      linkNode.setAttribute("href", oldHref);
-    }
-    else {
-      // Converting to string implicitly would be a 
-      // minor security hole (similar to bug 202994).
-    }
-  }
+	var uri = makeURL(href);
+	if (!globalHistory.isVisited(uri)) {
+		globalHistory.addURI(uri, false, true,referrer);
+		var oldHref = linkNode.getAttribute("href");
+		if (typeof oldHref == "string") {
+			// Use setAttribute instead of direct assignment.
+			// (bug 217195, bug 187195)
+			linkNode.setAttribute("href", "");
+			linkNode.setAttribute("href", oldHref);
+		}
+	}
 }
 
 function makeURL(aURL)
 {
 	var ioService = Components.classes["@mozilla.org/network/io-service;1"]
-				.getService(Components.interfaces.nsIIOService);
+	                                   .getService(Components.interfaces.nsIIOService);
 	return ioService.newURI(aURL, null, null);
 } 
 
 function makeFileURL(aFile) {
- 	var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
- 	return ioService.newFileURI(aFile);
-  } 
+	var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+	return ioService.newFileURI(aFile);
+} 
 
-// we find which mirror is better to use to do the PDF->HTML conversion
+//we find which mirror is better to use to do the PDF->HTML conversion
 function getMirror(url) {
 	var http;
 	try {
-  		http = new XMLHttpRequest();
- 	} catch (e) {
-  		http = false
- 	}
+		http = new XMLHttpRequest();
+	} catch (e) {
+		http = false
+	}
 	if (http) {
 		// this is the server-side script that handle the mirror list
 		var uri = "http://www.rabotat.org/firefox/pdfdownload/getmirror.php";
@@ -286,65 +284,75 @@ function getMirror(url) {
 						var pdf2htmlUrl = mirror+"?url="+url;
 						const preferencesService = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch("extensions.pdfdownload.");
 						var prefvalue;
+						var htmlWithImages = false;
 						try {
-      						prefvalue = preferencesService.getCharPref("openPDFtoHTML");
-    						} catch(ex) {
+							prefvalue = preferencesService.getCharPref("openPDFtoHTML");
+							htmlWithImages = preferencesService.getBoolPref("showImagesInHTML");
+						} catch(ex) {
 							prefvalue = "openHTMLNewTab";
-    						}
+							htmlWithImage = false;
+						}
+						if (htmlWithImages) {
+							pdf2htmlUrl = pdf2htmlUrl + "&images=yes";
+						}
 						if (prefvalue == "openHTMLNewTab") {
 							var tab = getBrowser().addTab(pdf2htmlUrl);
 							if (shouldNewTabFocused()) {
-						  	  getBrowser().selectedTab = tab;
+								getBrowser().selectedTab = tab;
 							}
 						} else if (prefvalue == "openHTMLNewWindow") {
-    							openNewWindowWith(pdf2htmlUrl, null, null);
+							openNewWindowWith(pdf2htmlUrl, null, null);
 						} else {
 							getBrowser().loadURI(pdf2htmlUrl); // Just do a normal load.
 						}
 					}
-   				}
+				}
 			}
 		}	
 		http.send(null);
 	}
 }
 
-// save the file in a temporary directory
+//save the file in a temporary directory
 function saveTempFile(url,fname) {
-  // Local File Target
-  var fileLocator = Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties);
-  var dir = fileLocator.get("TmpD", Components.interfaces.nsILocalFile);
-  var localTarget = dir.clone();
-  localTarget.append(fname);
-  var i = 0;
-  while (localTarget.exists()) {
-	i++;
-	localTarget = null;
-	localTarget = dir.clone();
-	localTarget.append(createNumber(i) + "_" + fname);
-  }
+	// Local File Target
+	var fileLocator = Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties);
+	var dir = fileLocator.get("TmpD", Components.interfaces.nsILocalFile);
+	var localTarget = dir.clone();
+	localTarget.append(fname);
+	var i = 0;
+	while (localTarget.exists()) {
+		i++;
+		localTarget = null;
+		localTarget = dir.clone();
+		localTarget.append(createNumber(i) + "_" + fname);
+	}
 
-  var uri = Components.classes["@mozilla.org/network/standard-url;1"]
-                      .createInstance(Components.interfaces.nsIURI);
-  uri.spec = url;
+	var uri = Components.classes["@mozilla.org/network/standard-url;1"]
+	                             .createInstance(Components.interfaces.nsIURI);
+	uri.spec = url;
 
-  downloadQueue[downloadQueue.length] = localTarget.path;
+	var referer = Components.classes["@mozilla.org/network/standard-url;1"]
+	                             .createInstance(Components.interfaces.nsIURI);
+	referer.spec = getCurrentLocation();
 
-  var progressPersist = Components.classes['@mozilla.org/embedding/browser/nsWebBrowserPersist;1'].createInstance(Components.interfaces.nsIWebBrowserPersist);
+	downloadQueue[downloadQueue.length] = localTarget.path;
 
-  var flags = nsIWBP.PERSIST_FLAGS_AUTODETECT_APPLY_CONVERSION | nsIWBP.PERSIST_FLAGS_REPLACE_EXISTING_FILES | nsIWBP.PERSIST_FLAGS_BYPASS_CACHE;
-  progressPersist.persistFlags = flags;
+	var progressPersist = Components.classes['@mozilla.org/embedding/browser/nsWebBrowserPersist;1'].createInstance(Components.interfaces.nsIWebBrowserPersist);
 
-  var tr = Components.classes["@mozilla.org/transfer;1"].createInstance(Components.interfaces.nsITransfer);
-  tr.init(uri,makeFileURI(localTarget), "", null, null, null, progressPersist);
-  progressPersist.progressListener = tr;
+	var flags = nsIWBP.PERSIST_FLAGS_AUTODETECT_APPLY_CONVERSION | nsIWBP.PERSIST_FLAGS_REPLACE_EXISTING_FILES | nsIWBP.PERSIST_FLAGS_BYPASS_CACHE;
+	progressPersist.persistFlags = flags;
 
-  progressPersist.saveURI(uri, null, null, null, null, localTarget);
+	var tr = Components.classes["@mozilla.org/transfer;1"].createInstance(Components.interfaces.nsITransfer);
+	tr.init(uri,makeFileURI(localTarget), "", null, null, null, progressPersist);
+	progressPersist.progressListener = tr;
+
+	progressPersist.saveURI(uri, null, referer, null, null, localTarget);
 
 
 }
 
-// Opens the pdf file with an external program (the os default one or the one specified by the user under the PDF Download options)
+//Opens the pdf file with an external program (the os default one or the one specified by the user under the PDF Download options)
 function openPDF(filename) {
 	var oFile 	= Components.classes["@mozilla.org/file/local;1"].getService(Components.interfaces.nsILocalFile);
 	oFile.initWithPath(filename);
@@ -353,27 +361,27 @@ function openPDF(filename) {
 		var openPDF = "";
 		// we check how to open the PDF
 		try {
-                  openPDF = sltPrefs.getCharPref("extensions.pdfdownload.openPDF");
+			openPDF = sltPrefs.getCharPref("extensions.pdfdownload.openPDF");
 			pdfViewerPath = sltPrefs.getCharPref("extensions.pdfdownload.pdfViewerPath");
 		} catch(ex) {
 			pdfViewerPath = "";
 		}
 		if (openPDF == "defaultViewer") {
 			// In the preferences there was written to open PDF files using the default viewer
-  			try {
-			  oFile.launch();
-  			} catch (e) {
+			try {
+				oFile.launch();
+			} catch (e) {
 				/*
-				 PDF Download has not been able to find a default viewer, so now we ask to the user to choose a custom viewer.
+				 * PDF Download has not been able to find a default viewer, so now we ask to the user to choose a custom viewer.
 				 */
 				window.openDialog("chrome://pdfdownload/content/osWarning.xul","pdfdownload-OS-warning-window","centerscreen,chrome,modal");
 				showPDFDownloadSettings();
 				try {
-                              openPDF = sltPrefs.getCharPref("extensions.pdfdownload.openPDF");
-  					pdfViewerPath = sltPrefs.getCharPref("extensions.pdfdownload.pdfViewerPath");
+					openPDF = sltPrefs.getCharPref("extensions.pdfdownload.openPDF");
+					pdfViewerPath = sltPrefs.getCharPref("extensions.pdfdownload.pdfViewerPath");
 				} catch(ex) {
 					openPDF = "defaultViewer";
-		      	}
+				}
 			}
 		} 
 		if (openPDF == "customViewer") {
@@ -382,7 +390,7 @@ function openPDF(filename) {
 			oFile.initWithPath(pdfViewerPath);
 			// create an nsIProcess
 			var process = Components.classes["@mozilla.org/process/util;1"]
-                            .createInstance(Components.interfaces.nsIProcess);
+			                                 .createInstance(Components.interfaces.nsIProcess);
 			process.init(oFile);
 
 			// Run the process.
@@ -399,7 +407,7 @@ function openPDF(filename) {
 }
 
 
-// Checks the type of a link
+//Checks the type of a link
 function isLinkType (linktype, link) {
 	try {
 		var protocol = link.substr(0, linktype.length);
@@ -409,30 +417,30 @@ function isLinkType (linktype, link) {
 	}
 }
 
-// Builds a three char string representing the specified number
+//Builds a three char string representing the specified number
 function createNumber(number) {
 	var Stringa;
 	if (number <= 9) { 
-         Stringa = "00" + number;
-      } else if (number <= 99 && number >= 10) { 
-         Stringa = "0" + number;
-      } else {
-         Stringa = number;
-      }
+		Stringa = "00" + number;
+	} else if (number <= 99 && number >= 10) { 
+		Stringa = "0" + number;
+	} else {
+		Stringa = number;
+	}
 	return Stringa;
 }
 
-// shows the options dialog for PDF Download
+//shows the options dialog for PDF Download
 function showPDFDownloadSettings() {
-     	var features;
-     	try {
-     		var prefs = Components.classes["@mozilla.org/preferences-service;1"]
-                                  .getService(Components.interfaces.nsIPrefBranch);
-      	var instantApply = prefs.getBoolPref("browser.preferences.instantApply");
-      	features = "chrome,titlebar,toolbar,centerscreen" + (instantApply ? ",dialog=no" : ",modal");
-      }
-      catch (e) {
-           	features = "chrome,titlebar,toolbar,centerscreen,modal";
+	var features;
+	try {
+		var prefs = Components.classes["@mozilla.org/preferences-service;1"]
+		                               .getService(Components.interfaces.nsIPrefBranch);
+		var instantApply = prefs.getBoolPref("browser.preferences.instantApply");
+		features = "chrome,titlebar,toolbar,centerscreen" + (instantApply ? ",dialog=no" : ",modal");
+	}
+	catch (e) {
+		features = "chrome,titlebar,toolbar,centerscreen,modal";
 	}
 	var settingsHandle = window.openDialog("chrome://pdfdownload/content/options.xul", "",features);
 	settingsHandle.focus();
@@ -440,23 +448,23 @@ function showPDFDownloadSettings() {
 
 function shouldNewTabFocused() {
 	var focusNewTab;
-      try {
-	  focusNewTab = !sltPrefs.getBoolPref(focusNewTabPref);
+	try {
+		focusNewTab = !sltPrefs.getBoolPref(focusNewTabPref);
 	} catch(ex) {
-        focusNewTab = false;
-      }
+		focusNewTab = false;
+	}
 	return focusNewTab;
 }
 
 function togglePDFDownloadItem() {
-    if (!sltPrefs.prefHasUserValue("extensions.pdfdownload.showToolsMenuItem")) {
-	sltPrefs.setBoolPref("extensions.pdfdownload.showToolsMenuItem",true);
-    }
-    if (sltPrefs.getBoolPref("extensions.pdfdownload.showToolsMenuItem") == true) {
-	document.getElementById("PDFDownloadToolsItem").hidden = false;
-    } else {
-	document.getElementById("PDFDownloadToolsItem").hidden = true;
-    }
+	if (!sltPrefs.prefHasUserValue("extensions.pdfdownload.showToolsMenuItem")) {
+		sltPrefs.setBoolPref("extensions.pdfdownload.showToolsMenuItem",true);
+	}
+	if (sltPrefs.getBoolPref("extensions.pdfdownload.showToolsMenuItem") == true) {
+		document.getElementById("PDFDownloadToolsItem").hidden = false;
+	} else {
+		document.getElementById("PDFDownloadToolsItem").hidden = true;
+	}
 }
 
 function retrieveLegacyOptions() {
@@ -471,7 +479,7 @@ function retrieveLegacyOptions() {
 			sltPrefs.setCharPref(oldPrefix+"openPDF","");
 		}		
 	} else if (!sltPrefs.prefHasUserValue(newPrefix+"openPDF")) {
-			sltPrefs.setCharPref(newPrefix+"openPDF","defaultViewer");	
+		sltPrefs.setCharPref(newPrefix+"openPDF","defaultViewer");	
 	}
 	if (sltPrefs.prefHasUserValue(oldPrefix+"openPDFLink")) {
 		prefValue = sltPrefs.getCharPref(oldPrefix+"openPDFLink");
@@ -480,7 +488,7 @@ function retrieveLegacyOptions() {
 			sltPrefs.setCharPref(oldPrefix+"openPDFLink","");
 		}		
 	} else if (!sltPrefs.prefHasUserValue(newPrefix+"openPDFLink")) {
-			sltPrefs.setCharPref(newPrefix+"openPDFLink","openPDFNewTab");	
+		sltPrefs.setCharPref(newPrefix+"openPDFLink","openPDFNewTab");	
 	}
 	if (sltPrefs.prefHasUserValue(oldPrefix+"openPDFtoHTML")) {
 		prefValue = sltPrefs.getCharPref(oldPrefix+"openPDFtoHTML");
@@ -489,7 +497,7 @@ function retrieveLegacyOptions() {
 			sltPrefs.setCharPref(oldPrefix+"openPDFtoHTML","");
 		}		
 	} else if (!sltPrefs.prefHasUserValue(newPrefix+"openPDFtoHTML")) {
-			sltPrefs.setCharPref(newPrefix+"openPDFtoHTML","openHTMLNewTab");	
+		sltPrefs.setCharPref(newPrefix+"openPDFtoHTML","openHTMLNewTab");	
 	}
 	if (sltPrefs.prefHasUserValue(oldPrefix+"pdfViewerPath")) {
 		prefValue = sltPrefs.getCharPref(oldPrefix+"pdfViewerPath");
@@ -513,67 +521,67 @@ function retrieveLegacyOptions() {
  *  Download manager listener part
  */
 
-// Adds download listener
+//Adds download listener
 function initDownloadObserver() {
 
-  // Observer Service for events generated by the Download Manager
-  var observerService = Components.classes["@mozilla.org/observer-service;1"].getService(Components.interfaces.nsIObserverService);
-  observerService.addObserver(DQ_DownloadObserver, "dl-done",   false);
-  observerService.addObserver(DQ_DownloadObserver, "dl-cancel", false);
-  observerService.addObserver(DQ_DownloadObserver, "dl-failed", false); 
-  observerService.addObserver(DQ_DownloadObserver, "dl-start",  false);
+	// Observer Service for events generated by the Download Manager
+	var observerService = Components.classes["@mozilla.org/observer-service;1"].getService(Components.interfaces.nsIObserverService);
+	observerService.addObserver(DQ_DownloadObserver, "dl-done",   false);
+	observerService.addObserver(DQ_DownloadObserver, "dl-cancel", false);
+	observerService.addObserver(DQ_DownloadObserver, "dl-failed", false); 
+	observerService.addObserver(DQ_DownloadObserver, "dl-start",  false);
 }
 
 
-// Removes download listener
+//Removes download listener
 function unloadDownloadObserver() {
 
-  var observerService = Components.classes["@mozilla.org/observer-service;1"].getService(Components.interfaces.nsIObserverService);
+	var observerService = Components.classes["@mozilla.org/observer-service;1"].getService(Components.interfaces.nsIObserverService);
 
-  observerService.removeObserver(DQ_DownloadObserver, "dl-done");
-  observerService.removeObserver(DQ_DownloadObserver, "dl-cancel");
-  observerService.removeObserver(DQ_DownloadObserver, "dl-failed"); 
-  observerService.removeObserver(DQ_DownloadObserver, "dl-start");
-  
-  downloadQueue = null;
-  DQ_DownloadObserver = null;
+	observerService.removeObserver(DQ_DownloadObserver, "dl-done");
+	observerService.removeObserver(DQ_DownloadObserver, "dl-cancel");
+	observerService.removeObserver(DQ_DownloadObserver, "dl-failed"); 
+	observerService.removeObserver(DQ_DownloadObserver, "dl-start");
+
+	downloadQueue = null;
+	DQ_DownloadObserver = null;
 }
 
 
 var DQ_DownloadObserver = {
 
-  observe: function (subject, topic, state) {
-	
-    	var oDownload 	= subject.QueryInterface(Components.interfaces.nsIDownload);
-	var oFile	= null;
-		
-	try{
-		oFile = oDownload.targetFile;  // New firefox 0.9
-	} catch (e){
-		oFile = oDownload.target;      // Old firefox 0.8
-	}
+	observe: function (subject, topic, state) {
 
-	if(topic == "dl-cancel" || topic == "dl-failed"){ removeFileFromQueue(oFile.path); }
-	else if(topic == "dl-done"){
-		// File in open queue?
-		if(oFile == null || FileInQueue(oFile.path) < 0) {
-			return;
-		}
-		else
-			removeFileFromQueue(oFile.path);
-			
-		// Execute			
-		try {
-			openPDF(oFile.path);
-		}catch(err){
-			alert("Unexpected error: contact the author!");
-		}
-	}		
-  }
+		var oDownload 	= subject.QueryInterface(Components.interfaces.nsIDownload);
+		var oFile	= null;
+
+//		try {
+			oFile = oDownload.targetFile;  // New firefox 0.9
+//		} catch (e){
+//			oFile = oDownload.target;      // Old firefox 0.8
+//		}
+
+		if (topic == "dl-cancel" || topic == "dl-failed") { removeFileFromQueue(oFile.path); }
+		else if(topic == "dl-done"){
+			// File in open queue?
+			if(oFile == null || FileInQueue(oFile.path) < 0) {
+				return;
+			}
+			else
+				removeFileFromQueue(oFile.path);
+
+			// Execute			
+			try {
+				openPDF(oFile.path);
+			} catch(err) {
+				alert("Unexpected error: contact the author!");
+			}
+		}		
+	}
 }; 
 
-// Is file in Queue?
-//	returns index, or -1
+//Is file in Queue?
+//returns index, or -1
 function FileInQueue(sPath){
 	for(var i = 0; i < downloadQueue.length; i++) {
 		if(downloadQueue[i] == sPath){
@@ -583,7 +591,7 @@ function FileInQueue(sPath){
 	return -1;
 }
 
-// Remove file from Queue
+//Remove file from Queue
 function removeFileFromQueue(sPath){
 	var index = FileInQueue(sPath);
 	if (index > -1) {
@@ -594,31 +602,31 @@ function removeFileFromQueue(sPath){
 
 function removeSubString(str, subStr) {
 	var newString = str.split(subStr).join('').split(',,').join(',');
-	if (newString.indexOf(',')==0) newString = newString.substring(1); // reomove leading comma
-	if (newString.lastIndexOf(',')==newString.length-1) newString = newString.substring(0,newString.length-1); // remove trailing comma
+	if (newString.indexOf(',') == 0) newString = newString.substring(1); // reomove leading comma
+	if (newString.lastIndexOf(',') == newString.length-1) newString = newString.substring(0,newString.length-1); // remove trailing comma
 	return newString;
 }
 
-// Register the event listener for a mouse click
+//Register the event listener for a mouse click
 function init() {
 
 	window.removeEventListener("load", init, true);
 	getBrowser().addEventListener("click", mouseClick, true);
 	//re-enable pdf plugin
 	const kDisabledPluginTypesPref = "plugin.disable_full_page_plugin_for_types";
-      var prefs = Components.classes["@mozilla.org/preferences-service;1"]
-                            .getService(Components.interfaces.nsIPrefBranch);
+	var prefs = Components.classes["@mozilla.org/preferences-service;1"]
+	                               .getService(Components.interfaces.nsIPrefBranch);
 
 	var prefValue = "";
 	try {
-	  prefValue = prefs.getCharPref(kDisabledPluginTypesPref);
+		prefValue = prefs.getCharPref(kDisabledPluginTypesPref);
 	} catch(ex) {}
 	prefValue = removeSubString(prefValue, "application/pdf");
-      prefs.setCharPref(kDisabledPluginTypesPref, prefValue);   
-	
+	prefs.setCharPref(kDisabledPluginTypesPref, prefValue);   
+
 	try {
-	  //legacy options
-	  retrieveLegacyOptions();
+		//legacy options
+		retrieveLegacyOptions();
 	} catch(ex) {}
 
 	document.getElementById("menu_ToolsPopup").addEventListener("popupshowing",togglePDFDownloadItem, false);
@@ -634,7 +642,7 @@ function uninit() {
 }
 
 
-// do the init on load
+//do the init on load
 window.addEventListener("load", init, true);
-// do the unload
+//do the unload
 window.addEventListener("unload",uninit,false);

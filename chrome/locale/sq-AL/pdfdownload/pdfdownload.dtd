@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Më tepër detaje">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menyja e mjeteve">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Shfaqe njësinë &apos;PDF Download&apos; në menynë e Mjeteve të Firefox">
+<!ENTITY pdfdownload.optionsTooltips "Këshilla ndihmëse">
+<!ENTITY pdfdownload.optionsShowTooltips "Shfaq këshilla ndihmëse në tabelë">
 <!ENTITY pdfdownload.optionsOpenLink "Si do i hapni linket PDF me prizën e Firefox:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Si do e hapni versionin HTML të skedave PDF:">
 <!ENTITY pdfdownload.optionsSameTab "Në të njëjtën tabelë">

@@ -74,6 +74,12 @@
       <preference id="pd_showToolsMenuItem"
         name="extensions.pdfdownload.showToolsMenuItem"
         type="bool"/>
+      <preference id="pd_showTooltips"
+        name="extensions.pdfdownload.showTooltips"
+        type="bool"/>
+      <preference id="pd_imagesInHTML"
+        name="extensions.pdfdownload.showImagesInHTML"
+        type="bool"/>
     </preferences>
 
   
@@ -96,6 +102,10 @@
 							<radio label="&pdfdownload.viewHtmlButton;" value="openHtml"/>
 						</vbox>
 					</radiogroup>
+			</groupbox>
+			<groupbox>
+				<caption label="&pdfdownload.optionsTooltips;"/>
+				<checkbox id="showTooltips" label="&pdfdownload.optionsShowTooltips;" preference="pd_showTooltips"/>
 			</groupbox>
 			<groupbox>
 				<caption label="&pdfdownload.optionsToggleItemToolsMenu;"/>
@@ -140,12 +150,21 @@
 						</radiogroup>
 					</vbox>
 				</groupbox>
+				<groupbox>
+					<caption label="&pdfdownload.imagesIntoTheHTMLVersion;"/>
+					<vbox>
+						<checkbox id="showImagesInHTML" label="&pdfdownload.optionsShowImagesInHTML;" preference="pd_imagesInHTML"/>
+						<spacer style="height: 10px"/>
+                              	<description>&pdfdownload.optionsImagesInHTMLPrivacyWarningPart1;</description>
+						<description>&pdfdownload.optionsImagesInHTMLPrivacyWarningPart2;</description>
+					</vbox>
+				</groupbox>
 			</tabpanel>			
 			<tabpanel orient="vertical">
 				<groupbox>
 					<caption label="&pdfdownload.optionsUpdateLabel;"/>
 					<hbox>
-						<label value="PDF Download 0.7.9"/>
+						<label value="PDF Download 0.8"/>
 						<spacer flex="1"/>
 						<button label="&pdfdownload.optionsCheckUpdates;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');" />
 					</hbox>

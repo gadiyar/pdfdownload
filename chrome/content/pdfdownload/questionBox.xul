@@ -49,203 +49,211 @@
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	
-  <stringbundle id="strings" src="chrome://pdfdownload/locale/pdfdownload.properties"/>
+	<stringbundle id="strings" src="chrome://pdfdownload/locale/pdfdownload.properties"/>
 
 
-  <script type="application/x-javascript">
-  <![CDATA[
+	<script type="application/x-javascript">
+		<![CDATA[
 
-	var strbundle;		
+			var strbundle;	
+			var sltPrefs = Components.classes['@mozilla.org/preferences-service;1']
+                                  .getService(Components.interfaces.nsIPrefBranch);
+	
 
-	// Cancel button handler
-	function doCancel() {
-   		window.arguments[0].res = "cancel";
-   		window.close();
-	}
-
-	// Download button handler
-	function doDownload() {
-   		window.arguments[0].res = "download";
-   		window.close();
-	}
-
-	// Open button handler
-	function doOpen() {
-   		window.arguments[0].res = "open";
-   		window.close();
-	}
-
-	// Open button handler
-	function doOpenHtml() {
-   		window.arguments[0].res = "openHtml";
-   		window.close();
-	}
-
-	// Open normally button handler
-	function doOpenWithoutExtension() {
-   		window.arguments[0].res = "openWithoutExtension";
-   		window.close();
-	}
-
-	function disableBtns(url,ext) {
-		/*
-             * If it is a pdf.gz file, we disable the open button because usually a 
-             * pdf viewer is not able to open this kind of file.
-		 */
-		if (ext == "pdf.gz") {
-			document.getElementById("open-button").disabled = true;
-		}
-		if ((url.indexOf("//localhost") != -1) || (url.indexOf("//127.0.0.1") != -1)) {
-			document.getElementById("openHTML-button").disabled = true;
-		}
-	}
-
-	function sizeToContentTrick() {
-		/*
-		 * Workaround to sizeToContent bug (Bug 91137)
-		 */
-		var xulWindow = document.getElementById("PDFDownload-question-window");
-		var wdth = window.innerWidth; // THIS IS NEEDED,
-		window.sizeToContent();
-		xulWindow.setAttribute("width",window.innerWidth + 30);
-
-		var hght = window.innerHeight; // THIS IS NEEDED,
-		window.sizeToContent();
-		xulWindow.setAttribute("height",window.innerHeight + 30);     
-	}
-
-	function getFileSize(url) {
-		var xmlhttp
-		var done = 0;
-		strbundle = document.getElementById("strings");
-		var part1 = strbundle.getString("questionPart1");				
-		var descr = document.getElementById("QuestionLabel");
-		try {
-  			xmlhttp = new XMLHttpRequest();
- 		} catch (e) {
-  			xmlhttp = false
- 		}
-		if (xmlhttp) {
-			xmlhttp.open("HEAD", url, true);
- 			xmlhttp.onreadystatechange=function() {
-  				if (xmlhttp.readyState == 4) {
-					if (xmlhttp.status == 200) {
-   						var size = xmlhttp.getResponseHeader("Content-Length");
-						if (size >= 1024*1024) {
-							size = size / (1024*1024);
-							part1 = part1 + " (" + size.toPrecision(3) + " MB)" ;
-						} else if (size >= 1024) {
-							size = size / 1024;
-							part1 = part1 + " (" + size.toPrecision(3) + " KB)";
-						} else if (size != null) {
-							part1 = part1 + " (" + size + " bytes)";
-						}
-						descr.value = part1 + strbundle.getString("questionPart2");
-						done = 1;
-					} else if (done == 0) {
-						descr.value = part1 + strbundle.getString("questionPart2");
-					} 
-				} else if (done == 0) {
-					descr.value = part1 + strbundle.getString("questionPart2");
-				}	 
+			// Cancel button handler
+			function doCancel() {
+				window.arguments[0].res = "cancel";
+				window.close();
 			}
-			xmlhttp.send(null);
- 		}
-	}
 
-	function onTooltipPopupShowing(popup) {
-    
-    		var diff = popup.boxObject.height - popup.firstChild.boxObject.height;
+			// Download button handler
+			function doDownload() {
+				window.arguments[0].res = "download";
+				window.close();
+			}
+
+			// Open button handler
+			function doOpen() {
+				window.arguments[0].res = "open";
+				window.close();
+			}
+
+			// Open button handler
+			function doOpenHtml() {
+				window.arguments[0].res = "openHtml";
+				window.close();
+			}
+
+			// Open normally button handler
+			function doOpenWithoutExtension() {
+				window.arguments[0].res = "openWithoutExtension";
+				window.close();
+			}
+
+			function disableBtns(url,ext) {
+				/*
+				 * If it is a pdf.gz file, we disable the open button because usually a 
+				 * pdf viewer is not able to open this kind of file.
+				 */
+				if (ext == "pdf.gz") {
+					document.getElementById("open-button").disabled = true;
+				}
+				if ((url.indexOf("//localhost") != -1) || (url.indexOf("//127.0.0.1") != -1)) {
+					document.getElementById("openHTML-button").disabled = true;
+				}
+			}
+
+			function sizeToContentTrick() {
+				/*
+				 * Workaround to sizeToContent bug (Bug 91137)
+				 */
+				var xulWindow = document.getElementById("PDFDownload-question-window");
+				var wdth = window.innerWidth; // THIS IS NEEDED,
+				window.sizeToContent();
+				xulWindow.setAttribute("width",window.innerWidth + 30);
+
+				var hght = window.innerHeight; // THIS IS NEEDED,
+				window.sizeToContent();
+				xulWindow.setAttribute("height",window.innerHeight + 30);     
+			}
+
+			function getFileSize(url) {
+				var xmlhttp
+				var done = 0;
+				strbundle = document.getElementById("strings");
+				var part1 = strbundle.getString("questionPart1");				
+				var descr = document.getElementById("QuestionLabel");
+				try {
+					xmlhttp = new XMLHttpRequest();
+				} catch (e) {
+					xmlhttp = false;
+				}
+				if (xmlhttp) {
+					xmlhttp.open("HEAD", url, true);
+					xmlhttp.onreadystatechange=function() {
+						if (xmlhttp.readyState == 4) {
+							if (xmlhttp.status == 200) {
+								var size = xmlhttp.getResponseHeader("Content-Length");
+								if (size >= 1024*1024) {
+									size = size / (1024*1024);
+									part1 = part1 + " (" + size.toPrecision(3) + " MB)" ;
+								} else if (size >= 1024) {
+									size = size / 1024;
+									part1 = part1 + " (" + size.toPrecision(3) + " KB)";
+								} else if (size != null) {
+									part1 = part1 + " (" + size + " bytes)";
+								}
+								descr.value = part1 + strbundle.getString("questionPart2");
+								done = 1;
+							} else if (done == 0) {
+								descr.value = part1 + strbundle.getString("questionPart2");
+							} 
+						} else if (done == 0) {
+							descr.value = part1 + strbundle.getString("questionPart2");
+						}	 
+					}
+					xmlhttp.send(null);
+				}
+			}
+
+			function isTooltipEnabled() {
+				if (!sltPrefs.prefHasUserValue("extensions.pdfdownload.showTooltips")) {
+					sltPrefs.setBoolPref("extensions.pdfdownload.showTooltips",true);
+				}
+				return sltPrefs.getBoolPref("extensions.pdfdownload.showTooltips");
+			}
+		
+			function onTooltipPopupShowing(popup) {
+				var diff = popup.boxObject.height - popup.firstChild.boxObject.height;
+				popup.sizeTo(popup.boxObject.width, popup.firstChild.boxObject.height + diff);
+				return true;
+			}
+
+			function onMouseOver(e,toolTipName,obj) {
+				if (isTooltipEnabled()) {
+					var xulWindow = document.getElementById("PDFDownload-question-window");
+					var popup = document.getElementById(toolTipName);
+					var diff = popup.boxObject.height - popup.firstChild.boxObject.height;
         
-    		popup.sizeTo(popup.boxObject.width, popup.firstChild.boxObject.height + diff);
-    
-    		return true;
-	}
+					popup.sizeTo(popup.boxObject.width, popup.firstChild.boxObject.height + diff);
+					popup.showPopup(obj, e.clientX+xulWindow.boxObject.screenX-(popup.boxObject.width/2), xulWindow.boxObject.screenY+window.innerHeight-10, "tooltip", "bottomleft", "topleft");
+				}
+			}
 
-	function onMouseOver(e,toolTipName,obj) {
-		var xulWindow = document.getElementById("PDFDownload-question-window");
-		var popup = document.getElementById(toolTipName);
-     		var diff = popup.boxObject.height - popup.firstChild.boxObject.height;
-        
-    		popup.sizeTo(popup.boxObject.width, popup.firstChild.boxObject.height + diff);
-		popup.showPopup(obj, e.clientX+xulWindow.boxObject.screenX-(popup.boxObject.width/2), xulWindow.boxObject.screenY+window.innerHeight-10, "tooltip", "bottomleft", "topleft");
-	}
+			function onMouseOut(toolTipName) {
+				var popup = document.getElementById(toolTipName);
+				popup.hidePopup();
+			}
 
-	function onMouseOut(toolTipName) {
-		var popup = document.getElementById(toolTipName);
-		popup.hidePopup();
-	}
+		]]>
+	</script>
 
+	<keyset>
+		<key id="enter" keycode="VK_RETURN" oncommand="doOpen();"/>
+		<key id="escape" keycode="VK_ESCAPE" oncommand="doCancel();"/>
+	</keyset>
 
-  ]]>
-  </script>
+	<tooltip id="downloadTooltip" orient="vertical"
+	   onpopupshowing="return onTooltipPopupShowing(this);">
+		<vbox>
+			<label class="tooltipTitle">&pdfdownload.downloadButton;</label>
+			<label>&pdfdownload.tooltip.downloadButton;</label>
+		</vbox>
+		<spacer flex="1"/>
+	</tooltip>
 
-  <keyset>
-    <key id="enter" keycode="VK_RETURN" oncommand="doOpen();"/>
-    <key id="escape" keycode="VK_ESCAPE" oncommand="doCancel();"/>
-  </keyset>
+	<tooltip id="openTooltip" orient="vertical"
+	   onpopupshowing="return onTooltipPopupShowing(this);">
+		<vbox>
+			<label class="tooltipTitle">&pdfdownload.openButton;</label>
+			<label>&pdfdownload.tooltip.openPDFButton;</label>
+		</vbox>
+		<spacer flex="1"/>
+	</tooltip>
 
-  <tooltip id="downloadTooltip" orient="vertical"
-	onpopupshowing="return onTooltipPopupShowing(this);">
-    <vbox>
-	<label class="tooltipTitle">&pdfdownload.downloadButton;</label>
-      <label>&pdfdownload.tooltip.downloadButton;</label>
-    </vbox>
-    <spacer flex="1"/>
-  </tooltip>
+	<tooltip id="viewHTMLTooltip" orient="vertical"
+	   onpopupshowing="return onTooltipPopupShowing(this);">
+		<vbox>
+			<label class="tooltipTitle">&pdfdownload.viewHtmlButton;</label>
+			<label>&pdfdownload.tooltip.viewHtmlButton;</label>
+		</vbox>
+		<spacer flex="1"/>
+	</tooltip>
 
-  <tooltip id="openTooltip" orient="vertical"
-	onpopupshowing="return onTooltipPopupShowing(this);">
-    <vbox>
-      <label class="tooltipTitle">&pdfdownload.openButton;</label>
-      <label>&pdfdownload.tooltip.openPDFButton;</label>
-    </vbox>
-    <spacer flex="1"/>
-  </tooltip>
+	<tooltip id="openWithoutExtensionTooltip" orient="vertical"
+	   onpopupshowing="return onTooltipPopupShowing(this);">
+		<vbox>
+			<label class="tooltipTitle">&pdfdownload.openWithoutExtension;</label>
+			<label>&pdfdownload.tooltip.openWithoutExtensionButton;</label>
+		</vbox>
+		<spacer flex="1"/>
+	</tooltip>
 
-  <tooltip id="viewHTMLTooltip" orient="vertical"
-	onpopupshowing="return onTooltipPopupShowing(this);">
-    <vbox>
-      <label class="tooltipTitle">&pdfdownload.viewHtmlButton;</label>
-      <label>&pdfdownload.tooltip.viewHtmlButton;</label>
-    </vbox>
-    <spacer flex="1"/>
-  </tooltip>
-
-  <tooltip id="openWithoutExtensionTooltip" orient="vertical"
-	onpopupshowing="return onTooltipPopupShowing(this);">
-    <vbox>
-      <label class="tooltipTitle">&pdfdownload.openWithoutExtension;</label>
-      <label>&pdfdownload.tooltip.openWithoutExtensionButton;</label>
-    </vbox>
-    <spacer flex="1"/>
-  </tooltip>
-
-  <tooltip id="cancelTooltip" orient="vertical"
-	onpopupshowing="return onTooltipPopupShowing(this);">
-    <vbox>
-      <label class="tooltipTitle">&pdfdownload.cancelButton;</label>
-      <label>&pdfdownload.tooltip.cancelButton;</label>
-    </vbox>
-    <spacer flex="1"/>
-  </tooltip>
+	<tooltip id="cancelTooltip" orient="vertical"
+	   onpopupshowing="return onTooltipPopupShowing(this);">
+		<vbox>
+			<label class="tooltipTitle">&pdfdownload.cancelButton;</label>
+			<label>&pdfdownload.tooltip.cancelButton;</label>
+		</vbox>
+		<spacer flex="1"/>
+	</tooltip>
 
 
-  <hbox>
-  <vbox pack="center">
-    <image src="chrome://pdfdownload/skin/popup_dialog_question_mark.gif"/>
-  </vbox>
-  <vbox flex="1">
-    <separator class="thin"/>
-    <description id="QuestionLabel" value=""/>    
-    <separator class="thin"/>
-    <hbox pack="center">    
-	<button id="download-button" label="&pdfdownload.downloadButton;" oncommand="doDownload();" onmouseover="onMouseOver(event,'downloadTooltip',this)" onmouseout="onMouseOut('downloadTooltip')" />
-  	<button id="open-button" label="&pdfdownload.openButton;" oncommand="doOpen();" default="true" key="enter" onmouseover="onMouseOver(event,'openTooltip',this)" onmouseout="onMouseOut('openTooltip')"/>
-  	<button id="openHTML-button" label="&pdfdownload.viewHtmlButton;" oncommand="doOpenHtml();" onmouseover="onMouseOver(event,'viewHTMLTooltip',this)" onmouseout="onMouseOut('viewHTMLTooltip')"/>
-	<button id="openWithoutExtension" label="&pdfdownload.openWithoutExtension;" oncommand="doOpenWithoutExtension();" onmouseover="onMouseOver(event,'openWithoutExtensionTooltip',this)" onmouseout="onMouseOut('openWithoutExtensionTooltip')"/>
-  	<button id="cancel-button" label="&pdfdownload.cancelButton;" oncommand="doCancel();" key="escape" onmouseover="onMouseOver(event,'cancelTooltip',this)" onmouseout="onMouseOut('cancelTooltip')"/>
-    </hbox>
-  </vbox>
-  </hbox>
+	<hbox>
+		<vbox pack="center">
+			<image src="chrome://pdfdownload/skin/popup_dialog_question_mark.gif"/>
+		</vbox>
+		<vbox flex="1">
+			<separator class="thin"/>
+			<description id="QuestionLabel" value=""/>    
+			<separator class="thin"/>
+			<hbox pack="center">    
+				<button id="download-button" label="&pdfdownload.downloadButton;" oncommand="doDownload();" onmouseover="onMouseOver(event,'downloadTooltip',this)" onmouseout="onMouseOut('downloadTooltip')" />
+				<button id="open-button" label="&pdfdownload.openButton;" oncommand="doOpen();" default="true" key="enter" onmouseover="onMouseOver(event,'openTooltip',this)" onmouseout="onMouseOut('openTooltip')"/>
+				<button id="openHTML-button" label="&pdfdownload.viewHtmlButton;" oncommand="doOpenHtml();" onmouseover="onMouseOver(event,'viewHTMLTooltip',this)" onmouseout="onMouseOut('viewHTMLTooltip')"/>
+				<button id="openWithoutExtension" label="&pdfdownload.openWithoutExtension;" oncommand="doOpenWithoutExtension();" onmouseover="onMouseOver(event,'openWithoutExtensionTooltip',this)" onmouseout="onMouseOut('openWithoutExtensionTooltip')"/>
+				<button id="cancel-button" label="&pdfdownload.cancelButton;" oncommand="doCancel();" key="escape" onmouseover="onMouseOver(event,'cancelTooltip',this)" onmouseout="onMouseOut('cancelTooltip')"/>
+			</hbox>
+		</vbox>
+	</hbox>
 </window>

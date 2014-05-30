@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Detaily">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Ponuka Nástroje">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Zobraziť položku PDF Download v hlavnej ponuke Nástroje">
+<!ENTITY pdfdownload.optionsTooltips "Bublinové popisy">
+<!ENTITY pdfdownload.optionsShowTooltips "Zobrazovať bublinové popisy v dialógovom okne">
 <!ENTITY pdfdownload.optionsOpenLink "Ako otvárať PDF odkazy využitím plug-inu Firefoxu:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Ako otvárať HTML verzie PDF súborov:">
 <!ENTITY pdfdownload.optionsSameTab "Otvoriť na aktuálnej karte">

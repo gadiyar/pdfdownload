@@ -7,7 +7,7 @@
 <!ENTITY pdfdownload.viewHtmlButton "Avaa HTML:nä">
 <!ENTITY pdfdownload.openWithoutExtension "Ohita PDF Download">
 <!ENTITY pdfdownload.cancelButton "Peruuta">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download ei kyennyt paikallistamaan PDF-tiedostojen oletuslukijaa. Ole hyvä ja valitse yksi lukija PDF Downloadin valintaikkunasta!">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download ei kyennyt paikallistamaan PDF-tiedostojen oletuslukijaa. Ole hyvä ja valitse yksi lukija PDF Downloadin asetusikkunasta!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - Tietoja">
 <!ENTITY pdfdownload.websiteTooltip "Vieraile tekijän verkkosivulla">
 <!ENTITY pdfdownload.moreInfo "Lisää tietoja:">
@@ -24,20 +24,22 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Lisää toimintoja">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Työkalut-valikko">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Näytä PDF Downloadin kohta Firefoxin Työkalut-valikossa">
+<!ENTITY pdfdownload.optionsTooltips "Työkaluvihjeet">
+<!ENTITY pdfdownload.optionsShowTooltips "Näytä työkaluvihjeet valintaikkunassa">
 <!ENTITY pdfdownload.optionsOpenLink "PDF-linkkien avaaminen käyttäen Firefoxin PDF-liitännäistä:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF-tiedostojen HTML-version avaaminen:">
 <!ENTITY pdfdownload.optionsSameTab "Avaa avoimeen välilehteen">
 <!ENTITY pdfdownload.optionsNewTab "Avaa uuteen välilehteen">
 <!ENTITY pdfdownload.optionsNewWindow "Avaa uuteen ikkunaan">
 <!ENTITY pdfdownload.optionsOpenPdf "PDF-tiedoston avaaminen:">
-<!ENTITY pdfdownload.optionsUsePlugin "Käytä Firefoxin oletustoimintoa">
+<!ENTITY pdfdownload.optionsUsePlugin "Käytä PDF-liitännäistä">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Käytä käyttöjärjestelmän oletuslukijaa">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Käytä tätä lukijaa:">
 <!ENTITY pdfdownload.optionsBrowse "Selaa...">
 <!ENTITY pdfdownload.optionsBrowseTitle "Valitse PDF-lukija">
-<!ENTITY pdfdownload.optionsExeFiles "Windowsin sovellukset (*.exe)">
-<!ENTITY pdfdownload.optionsAllFiles "Kaikki tiedostot (*.*)">
-<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Valittu lukijan tiedosto ei ole suoritettava!">
+<!ENTITY pdfdownload.optionsExeFiles "Windowsin sovellukset">
+<!ENTITY pdfdownload.optionsAllFiles "Kaikki tiedostot">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Valittu lukijan tiedosto ei ole suoritettava tiedosto!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Päivittäminen">
 <!ENTITY pdfdownload.optionsCheckUpdates "Tarkista päivitykset">
 <!ENTITY pdfdownload.optionsHowToHelp "Auttaminen">
@@ -46,9 +48,9 @@
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Näytä kuvat PDF:n HTML-versiossa">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Jotta näkisit kuvat, on ne tallennettava meidän palvelimelle.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Tallennetut kuvat poistetaan automaattisesti yhden päivän kuluessa.">
-<!ENTITY pdfdownload.tooltip.downloadButton "Lataa PDF-tiedosto. Jos olet asettanut Firefoxin asetuksista tallennuskansion,
+<!ENTITY pdfdownload.tooltip.downloadButton "Lataa PDF-tiedoston. Jos olet asettanut Firefoxin asetuksista tallennuskansion,
 tiedosto tallennetaan sinne. Muutoin sijainti, johon tiedosto tallennetaan tulee määritellä erikseen joka kerta.">
-<!ENTITY pdfdownload.tooltip.openPDFButton "Avaa PDF-tiedosto. Riippuen PDF Downloadin asetuksista, PDF-tiedostot avataan Firefoxin sisällä PDF-liitännäisellä (, joka täytyy olla asennettuna) tai käyttöjärjestelmän PDF-lukijalla tai määrittelemälläsi omalla PDF-lukijalla.">
-<!ENTITY pdfdownload.tooltip.viewHtmlButton "Näytä PDF HTML:nä. PDF-tiedostot avataan ulkoiselle palvelimelle ja muutetaan HTML:ksi. PDF-tiedosto poistetaan palvelimelta automaattisesti muuttamisen lopuksi.">
-<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "PDF-tiedoston avataan niin kuin PDF Downloadia ei olisi asennettu. Firefox käsittelee PDF-tiedostot samalla tavalla, kuin ennen PDF Downloadin asentamista.">
-<!ENTITY pdfdownload.tooltip.cancelButton "Sulje valintaikkuna. PDF-tiedostoa ei ladata eikä avata ja jatkat selailuasi.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Avaa PDF-tiedoston. Riippuen PDF Downloadin asetuksista, PDF-tiedostot avataan Firefoxin sisällä PDF-liitännäisellä (, joka täytyy olla asennettuna) tai käyttöjärjestelmän PDF-lukijalla tai määrittelemälläsi omalla PDF-lukijalla.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Näyttää PDF:n HTML:nä. PDF-tiedostot avataan ulkoiselle palvelimelle ja muutetaan HTML:ksi. PDF-tiedosto poistetaan palvelimelta automaattisesti muuttamisen lopuksi.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Avaa PDF-tiedoston niin kuin PDF Downloadia ei olisi asennettu. Firefox käsittelee PDF-tiedostot samalla tavalla kuin ennen PDF Downloadin asentamista.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Sulkee tämän valintaikkunan. PDF-tiedostoa ei ladata eikä avata ja jatkat selailuasi.">

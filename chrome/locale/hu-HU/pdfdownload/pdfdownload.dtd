@@ -1,48 +1,55 @@
-<!ENTITY pdfdownload.createdByLabel "Készítette:">
-<!ENTITY pdfdownload.websiteLabel "Webhely:">
+<!ENTITY pdfdownload.createdByLabel "Szerző:">
+<!ENTITY pdfdownload.websiteLabel "Weboldal">
 <!ENTITY pdfdownload.defaultActionLabel "Alapértelmezett művelet">
-<!ENTITY pdfdownload.showPopup "Előugró ablak megnyitása">
+<!ENTITY pdfdownload.showPopup "Előbukkanó ablak megjelenítése">
 <!ENTITY pdfdownload.downloadButton "Letöltés">
 <!ENTITY pdfdownload.openButton "PDF megnyitása">
-<!ENTITY pdfdownload.viewHtmlButton "Nézet HTML-ként">
-<!ENTITY pdfdownload.openWithoutExtension "A PDF Download kihagyása">
-<!ENTITY pdfdownload.cancelButton "Mégse">
-<!ENTITY pdfdownload.osWarningMsg "Nem találja a PDF Download az alapértelmezett PDF-olvasót. Válassza ki a PDF Download beállítások párbeszédablakában!">
-<!ENTITY pdfdownload.aboutTitle "PDF Download - Névjegy">
-<!ENTITY pdfdownload.websiteTooltip "Keresse fel a szerző webhelyét">
-<!ENTITY pdfdownload.moreInfo "További részletek:">
-<!ENTITY pdfdownload.readLicenseTooltip "Olvassa el a végfelhasználói licencszerződést">
+<!ENTITY pdfdownload.viewHtmlButton "Megjelenítés HTML-ként">
+<!ENTITY pdfdownload.openWithoutExtension "PDF Download megkerülése">
+<!ENTITY pdfdownload.cancelButton "Mégsem">
+<!ENTITY pdfdownload.osWarningMsg "A PDF Download nem találja a PDF fájl olvasásához alapértelmezettként megadott alkalmazást. Kérem, válassza ki a PDF Download beállításainak párbeszédablakából!">
+<!ENTITY pdfdownload.aboutTitle "A PDF Download névjegye">
+<!ENTITY pdfdownload.websiteTooltip "Honlap meglátogatása">
+<!ENTITY pdfdownload.moreInfo "További információk:">
+<!ENTITY pdfdownload.readLicenseTooltip "Felhsználói licenc">
 <!ENTITY pdfdownload.license "Licenc">
-<!ENTITY pdfdownload.readChangelogTooltip "Tekintse meg a fejlesztési naplót">
-<!ENTITY pdfdownload.changelog "Fejlesztési napló">
-<!ENTITY pdfdownload.acknowledgments "Elismerések">
+<!ENTITY pdfdownload.readChangelogTooltip "Változások megtekintése">
+<!ENTITY pdfdownload.changelog "Változtatások">
+<!ENTITY pdfdownload.acknowledgments "Köszönet">
 <!ENTITY pdfdownload.siteListTitle "Kivételek">
-<!ENTITY pdfdownload.optionsTitle "PDF Download beállításai">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Beállítások">
 <!ENTITY pdfdownload.optionsGeneralTab "Általános">
 <!ENTITY pdfdownload.optionsPDFTab "PDF megnyitása">
-<!ENTITY pdfdownload.optionsHTMLTab "Konvertálás HTML formátumba">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "Egyebek">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF -&gt; HTML konverzió">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Részletek">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Eszközök menü">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "A PDF Download menüpont látható a Firefox Eszközök menüjében">
-<!ENTITY pdfdownload.optionsOpenLink "A PDF-hivatkozások megnyitása a Firefox PDF beépülő moduljával:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "A PDF-fájlok HTML-változatainak megnyitása">
-<!ENTITY pdfdownload.optionsSameTab "Ugyanazon a fülön">
-<!ENTITY pdfdownload.optionsNewTab "Új fülön">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "&apos;PDF Download - Beállítások&apos; megjelenítése a Firefox Eszközök menüjében">
+<!ENTITY pdfdownload.optionsTooltips "Tooltippek">
+<!ENTITY pdfdownload.optionsShowTooltips "Tooltippek megjelenítése a párbeszédablakban">
+<!ENTITY pdfdownload.optionsOpenLink "PDF linkek megnyitásának módja a Firefox beépülőjének segítségével:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "A PDF fájlok HTML változatának megnyitása:">
+<!ENTITY pdfdownload.optionsSameTab "Az aktuális lapon">
+<!ENTITY pdfdownload.optionsNewTab "Új lapon">
 <!ENTITY pdfdownload.optionsNewWindow "Új ablakban">
-<!ENTITY pdfdownload.optionsOpenPdf "PDF fájl megnyitása">
-<!ENTITY pdfdownload.optionsUsePlugin "A Firefox alapértelmezett műveletével">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Az operációs rendszer alapértelmezett megjelenítőjével">
-<!ENTITY pdfdownload.optionsUseCustomProgram "A következő megjelenítővel:">
+<!ENTITY pdfdownload.optionsOpenPdf "PDF fájlok megnyitása:">
+<!ENTITY pdfdownload.optionsUsePlugin "Firefox alapértelmezett műveletének végrehajtása">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Operációs redszer alapértelmezett műveletének végrehajtása">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Más alkalmazás használata:">
 <!ENTITY pdfdownload.optionsBrowse "Tallózás...">
-<!ENTITY pdfdownload.optionsBrowseTitle "A PDF-megjelenítő kiválasztása">
-<!ENTITY pdfdownload.optionsExeFiles "Windows alkalmazások">
-<!ENTITY pdfdownload.optionsAllFiles "Minden fájl">
-<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "A megadott megjelenítőnek nem végrehajtható a fájlja!">
+<!ENTITY pdfdownload.optionsBrowseTitle "Alkalmazás kiválasztása a PDF fájlok megnyitásához">
+<!ENTITY pdfdownload.optionsExeFiles "Alkalmazások">
+<!ENTITY pdfdownload.optionsAllFiles "Összes fájl">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "A kiválaszott program nem indítható alkalmazásként!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Frissítés">
-<!ENTITY pdfdownload.optionsCheckUpdates "Frissítés ellenőrzése">
-<!ENTITY pdfdownload.optionsHowToHelp "Hogyan segíthetünk">
-<!ENTITY pdfdownload.optionsMakeDonation "Adományozás">
+<!ENTITY pdfdownload.optionsCheckUpdates "Frissítés keresése">
+<!ENTITY pdfdownload.optionsHowToHelp "Hogyan segíthet">
+<!ENTITY pdfdownload.optionsMakeDonation "Felajánlás a készítőnek">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Képek">
-<!ENTITY pdfdownload.optionsShowImagesInHTML "A képek megjelenítése a HTML-változatú PDF-ben">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Mentenie kell a képeket a kiszolgálónkon, hogy meg tudja tekinteni a képeket.">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "A képek egy nap múlva automatikusan törlésre kerülnek.">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Képek megjelenítése a PDF fájl HTML változatában">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Ha szeretné látni a képeket, a szerverünkre kell őket elmentenie.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Egy nap múlva a képek automatikusan törlődnek.">
+<!ENTITY pdfdownload.tooltip.downloadButton "A PDF fájl letöltése. Ha van alapértelmezett mappa kijelölve a mentésre, akkor oda töltődik le, máskülönben meg kell adnia egy mappát, ahova a fájl mentésre kerül.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "A PDF fájl megnyitása. A kiterjesztés beállításaitól függően a fájl a Firefoxban PDF modullal (telepítve kell lennie), alapértelmezett PDF fájl alkalmazással, vagy a megadott program segítségével lesz megnyitva.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "A PDF fájl megjelenítése HTML fájlként. A PDF fájl egy külső szerverre lesz feltöltve és konvertálva HTML fájlra. A művelet után automatikusan törlődik a szerverről.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "A PDF fájl megyitása (mintha a PDF Download kiterjesztés nem lenne telepítve). A Firefox úgy fog viselkedni, mint a PDF Download kiterjesztés telepítése előtt.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Bezárja ezt a párbeszédablakot. A PDF fájl nem kerül letöltésre és megnyitásra - folytathatja tovább a böngészést.">

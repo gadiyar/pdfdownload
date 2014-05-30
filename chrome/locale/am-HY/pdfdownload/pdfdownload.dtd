@@ -1,0 +1,55 @@
+<!ENTITY pdfdownload.createdByLabel "Ստեղծեց՝">
+<!ENTITY pdfdownload.websiteLabel "Կայքը.">
+<!ENTITY pdfdownload.defaultActionLabel "Լռելայն գործողություն">
+<!ENTITY pdfdownload.showPopup "Ցույց տալ հայտնվող պատուհանը">
+<!ENTITY pdfdownload.downloadButton "Բեռնել">
+<!ENTITY pdfdownload.openButton "Բացել PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Դիտել որպես HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Շրջանցել PDF-ի Բեռնումը">
+<!ENTITY pdfdownload.cancelButton "Հրաժարվել">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download-ը կարող է&apos;t գտնել Ձեր լռելայն PDF կարդացող ծրագիրը։ Խնդրում ենք ընտրել մեկը PDF Download-ի ընտրանքների պատուհանում։">
+<!ENTITY pdfdownload.aboutTitle "PDF Download-ի մասին">
+<!ENTITY pdfdownload.websiteTooltip "Դիտել հեղինակի&apos;s վեբ կայքը">
+<!ENTITY pdfdownload.moreInfo "Մանրամասն.">
+<!ENTITY pdfdownload.readLicenseTooltip "Կարդալ լիցենզիային համաձայնությունը">
+<!ENTITY pdfdownload.license "Համաձայնություն">
+<!ENTITY pdfdownload.readChangelogTooltip "Նայել փոփոխությունները">
+<!ENTITY pdfdownload.changelog "Փոփոխություններ">
+<!ENTITY pdfdownload.acknowledgments "Մաղթանքներ">
+<!ENTITY pdfdownload.siteListTitle "Բացառություններ">
+<!ENTITY pdfdownload.optionsTitle "PDF Download-ի ընտրանքներ">
+<!ENTITY pdfdownload.optionsGeneralTab "Գլխավոր">
+<!ENTITY pdfdownload.optionsPDFTab "Բացել PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Ձևափոխել PDF HTML-ի">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Մանրամասն">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Գործիքների ընտրացանկ">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Ցույց տալ PDF Download-ի միավորը Firefox-ի ընտրացանկի գործիքներում">
+<!ENTITY pdfdownload.optionsTooltips "Գործիքներ">
+<!ENTITY pdfdownload.optionsShowTooltips "Ցույց տալ գործիքները">
+<!ENTITY pdfdownload.optionsOpenLink "Ինչպես բացել PDF հղումները Firefox PDF ընդլայնման միջոցով.">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Ինչպես բացել PDF ֆայլերի HTML տարբերակը.">
+<!ENTITY pdfdownload.optionsSameTab "Բացել որոշակի ներդրուկում">
+<!ENTITY pdfdownload.optionsNewTab "Բացել նոր ներդրուկում">
+<!ENTITY pdfdownload.optionsNewWindow "Բացել նոր պատուհանում">
+<!ENTITY pdfdownload.optionsOpenPdf "Բացել PDF ֆայլը.">
+<!ENTITY pdfdownload.optionsUsePlugin "Օգտագործել PDF ընդլայնումը">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Օգտագործել համակարգչի լռելայն ծրագիրը">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Օգտագործել այս ծրագիրը">
+<!ENTITY pdfdownload.optionsBrowse "Դիտել...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Ընտրել PDF ծրագիրը">
+<!ENTITY pdfdownload.optionsExeFiles "Windows աշխատածրագրեր">
+<!ENTITY pdfdownload.optionsAllFiles "Բոլոր ֆայլերը">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Որոշված ծրագիրը կիրառելի չէ:">
+<!ENTITY pdfdownload.optionsUpdateLabel "Թարմացնել">
+<!ENTITY pdfdownload.optionsCheckUpdates "Ստուգել թարմացումները">
+<!ENTITY pdfdownload.optionsHowToHelp "Ինչպես օգնել">
+<!ENTITY pdfdownload.optionsMakeDonation "Մեկենասություն">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Պատկերներ">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Ցույց տալ պատկերները PDF-ի HTML տարբերակում">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Պատկերները տեսնելու համար դրանք պետք է պահպանվեն կոշտ պնակի վրա:">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Պատկերը կջնջվի լռելայն մեկ օրից:">
+<!ENTITY pdfdownload.tooltip.downloadButton "Բեռնել PDF ֆայլը:Եթե Դուք նշել եք Firefox-ի ընտրանքներում բեռնումների լռելայն թղթապանակը, ապա ֆայլը կբեռնվի այդտեղ:Հակառակ դեպքում Դուք պետք է նշեք, թե որտեղ պահպանել ֆայլը:">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Բացել PDF ֆայլը: Ֆայլը կբացվի կամ PDF ընդլայնման կամ Ձեր նշած PDF ծրագրի միջոցով:">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Դիտել PDF ֆայլը որպես HTML: PDF կբեռնվի և կձևափոխվի HTML-ի:Միաժամանակ PDF ինքնաշխատ  ձևով կջնջվի ձևափոխումից հետո:">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Բացել PDF ֆայլը, եթե բեռնումը հնարավոր չէ:">
+<!ENTITY pdfdownload.tooltip.cancelButton "Փակել այս պատուհանը:">

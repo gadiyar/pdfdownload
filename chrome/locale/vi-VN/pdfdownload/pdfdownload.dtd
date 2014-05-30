@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Thêm chi tiết">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menu Công Cụ">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Hiện PDF Download trong Menu Công Cụ của Firefox">
+<!ENTITY pdfdownload.optionsTooltips "Hướng dẫn">
+<!ENTITY pdfdownload.optionsShowTooltips "Hiện hướng dẫn trong hộp thoại">
 <!ENTITY pdfdownload.optionsOpenLink "Mở liên kết PDF sử dụng PDF plugin của Firefox:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Mở dạng HTML của các tệp PDF:">
 <!ENTITY pdfdownload.optionsSameTab "Mở trong cùng thẻ">

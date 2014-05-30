@@ -39,38 +39,44 @@
 <?xml-stylesheet href="chrome://pdfdownload/skin/pdfdownload.css" type="text/css"?>
 <!DOCTYPE window SYSTEM "chrome://pdfdownload/locale/pdfdownload.dtd">
 
-<dialog title="&pdfdownload.aboutTitle;" chromehidden="menubar toolbar location directories status extrachrome" id="genericAbout" onload="window.focus()" buttons="accept" xmlns:em="http://www.mozilla.org/2004/em-rdf#" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<dialog title="&pdfdownload.aboutTitle;" 
+	chromehidden="menubar toolbar location directories status extrachrome" 
+	id="genericAbout" 
+	onload="window.focus()" 
+	buttons="accept" 
+	xmlns:em="http://www.mozilla.org/2004/em-rdf#" 
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-  <script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
+	<script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
 
-<groupbox align="left" orient="vertical">
-<hbox>
-<vbox>
-  <text value="PDF Download" style="font-weight: bold; font-size: x-large;"/>
-  <label>ver. 0.7.9</label>
-  <separator class="thin"/>
-  <text value="&pdfdownload.createdByLabel;" style="font-weight: bold;"/>
-  <label>Denis Remondini</label> 
-  <separator class="thin"/>
-  <text value="E-mail" style="font-weight: bold;"/>
-  <label>denistn@gmail.com</label>
-  <separator class="thin"/>
-  <text value="&pdfdownload.websiteLabel;" style="font-weight: bold;"/>
-  <label class="link" tooltiptext="&pdfdownload.websiteTooltip;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');">http://www.pdfdownload.org</label>
-</vbox>
-<vbox>
-<spacer flex="1"/>
-<image src="chrome://pdfdownload/skin/pdfdownloadbig.png"/>
-<spacer flex="1"/>
-</vbox>
-</hbox>
-  <separator class="thin"/>
-  <separator class="thin"/>
-  <text value="&pdfdownload.moreInfo;" style="font-weight: bold;"/> 
-  <label class="link" tooltiptext="&pdfdownload.readLicenseTooltip;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/LICENSE', '_blank')">&pdfdownload.license;</label>
-  <separator class="thin"/>
-  <label class="link" align="center" tooltiptext="&pdfdownload.readChangelogTooltip;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/CHANGELOG', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.changelog;</label>
-  <separator class="thin"/>
-  <label class="link" align="center" tooltiptext="&pdfdownload.acknowledgments;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/acknowledgments', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.acknowledgments;</label>
-</groupbox>
+	<groupbox align="left" orient="vertical">
+		<hbox>
+			<vbox>
+				<text value="PDF Download" style="font-weight: bold; font-size: x-large;"/>
+				<label>ver. 0.8</label>
+				<separator class="thin"/>
+				<text value="&pdfdownload.createdByLabel;" style="font-weight: bold;"/>
+				<label>Denis Remondini</label> 
+				<separator class="thin"/>
+				<text value="E-mail" style="font-weight: bold;"/>
+				<label>denistn@gmail.com</label>
+				<separator class="thin"/>
+				<text value="&pdfdownload.websiteLabel;" style="font-weight: bold;"/>
+				<label class="link" tooltiptext="&pdfdownload.websiteTooltip;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');">http://www.pdfdownload.org</label>
+			</vbox>
+			<vbox>
+				<spacer flex="1"/>
+				<image src="chrome://pdfdownload/skin/pdfdownloadbig.png"/>
+				<spacer flex="1"/>
+			</vbox>
+		</hbox>
+		<separator class="thin"/>
+		<separator class="thin"/>
+		<text value="&pdfdownload.moreInfo;" style="font-weight: bold;"/> 
+		<label class="link" tooltiptext="&pdfdownload.readLicenseTooltip;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/LICENSE', '_blank')">&pdfdownload.license;</label>
+		<separator class="thin"/>
+		<label class="link" align="center" tooltiptext="&pdfdownload.readChangelogTooltip;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/CHANGELOG', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.changelog;</label>
+		<separator class="thin"/>
+		<label class="link" align="center" tooltiptext="&pdfdownload.acknowledgments;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/acknowledgments', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.acknowledgments;</label>
+	</groupbox>
 </dialog>

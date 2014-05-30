@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Más detalles">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menú Herramientas">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Mostrar el elemento PDF Download en el menú Herramientas de Firefox">
+<!ENTITY pdfdownload.optionsTooltips "Consejos">
+<!ENTITY pdfdownload.optionsShowTooltips "Mostrar consejos en la ventana de diálogo">
 <!ENTITY pdfdownload.optionsOpenLink "Cómo abrir enlaces PDF utilizando la extensión PDF de Firefox:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Cómo abrir la versión HTML de archivos PDF:">
 <!ENTITY pdfdownload.optionsSameTab "Abrir en misma pestaña">

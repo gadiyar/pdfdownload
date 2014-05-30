@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "More details">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Tools Menu">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Show PDF Download item in Tools Firefox Menu">
+<!ENTITY pdfdownload.optionsTooltips "Tooltips">
+<!ENTITY pdfdownload.optionsShowTooltips "Show tooltips in the dialog box">
 <!ENTITY pdfdownload.optionsOpenLink "How to open PDF links using Firefox PDF plugin:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "How to open HTML version of PDF files:">
 <!ENTITY pdfdownload.optionsSameTab "Open in the same tab">

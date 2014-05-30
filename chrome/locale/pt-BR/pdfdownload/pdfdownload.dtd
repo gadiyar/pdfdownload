@@ -1,4 +1,4 @@
-<!ENTITY pdfdownload.createdByLabel "Criado por:">
+<!ENTITY pdfdownload.createdByLabel "Criação:">
 <!ENTITY pdfdownload.websiteLabel "Home Page">
 <!ENTITY pdfdownload.defaultActionLabel "Ação padrão">
 <!ENTITY pdfdownload.showPopup "Exibir diálogo popup">
@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Mais informações">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menu Ferramentas">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Exibir item do PDF Download no menu Ferramentas">
+<!ENTITY pdfdownload.optionsTooltips "Dicas de ferramentas">
+<!ENTITY pdfdownload.optionsShowTooltips "Exibir dicas de ferramentas na caixa de diálogo">
 <!ENTITY pdfdownload.optionsOpenLink "Abrir PDFs usando o plugin do Firefox em:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Abrir PDFs convertidos para HTML em:">
 <!ENTITY pdfdownload.optionsSameTab "Aba atual">

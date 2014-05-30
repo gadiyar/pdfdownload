@@ -7,7 +7,7 @@
 <!ENTITY pdfdownload.viewHtmlButton "Voir en HTML">
 <!ENTITY pdfdownload.openWithoutExtension "Court-circuiter PDF Download">
 <!ENTITY pdfdownload.cancelButton "Annuler">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download ne trouve pas votre lecteur de PDF par défaut. Veuillez en choisir un  dans les options de PDF Download !">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download ne trouve pas votre lecteur de PDF par défaut. Veuillez en choisir un dans les options de PDF Download !">
 <!ENTITY pdfdownload.aboutTitle "À propos de PDF Download">
 <!ENTITY pdfdownload.websiteTooltip "Voir le site web de l&apos;auteur">
 <!ENTITY pdfdownload.moreInfo "Davantage de détails :">
@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Complémentaires">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menu Outils">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Affiche l&apos;entrée PDF Download dans le menu Outils de Firefox">
+<!ENTITY pdfdownload.optionsTooltips "Infobulles">
+<!ENTITY pdfdownload.optionsShowTooltips "Afficher des infobulles dans la boite de dialogue">
 <!ENTITY pdfdownload.optionsOpenLink "Comment ouvrir les liens en PDF avec le plugin PDF de Firefox :">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Comment ouvrir la version HTML des fichiers PDF :">
 <!ENTITY pdfdownload.optionsSameTab "Ouvrir dans le même onglet">

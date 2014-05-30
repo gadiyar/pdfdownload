@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Još detalja">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Alatni izbornik">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Prikaži stavku PDF Download u Firefox alatnom izborniku">
+<!ENTITY pdfdownload.optionsTooltips "Alatne oznake">
+<!ENTITY pdfdownload.optionsShowTooltips "Prikaži alatne oznake u okviru izbornika">
 <!ENTITY pdfdownload.optionsOpenLink "Kako otvoriti PDF veze koristeći Firefox PDF dodatak:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Kako otvoriti HTML inačicu PDF datoteka:">
 <!ENTITY pdfdownload.optionsSameTab "Otvori u istoj kartici">
@@ -50,4 +52,4 @@
 <!ENTITY pdfdownload.tooltip.openPDFButton "Otvorite PDF datoteku. Ovisno o tome što ste postavili u PDF Download opcijama, PDF datoteka će biti otvorena ili unutar Firefoxa s PDF dodatkom (koji već mora biti instaliran), ili otvoren s zadanim PDF čitačem Vašeg OS-a, ili otvoren s korisničkim preglednikom kojeg ste Vi odredili.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "Pogledajte PDF datoteku kao HTML. PDF datoteka će biti preuzeta od strane vanjskog zrcala i pretvorena u HTML. PDF datoteka se automatski uklanja sa zrcala na kraju pretvaranja.">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Otvorite PDF datoteku kao da PDF Download nije instaliran. Dobit ćete isto ponašanje Firefoxa kao što je bilo prije instaliranja PDF Download.">
-<!ENTITY pdfdownload.tooltip.cancelButton "Zatvorite ovaj izbornik. PDF datoteća neće biti niti preuzeta niti otvorena, a Vi ćete nastaviti Vaše iskustvo pretraživanja Interneta.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Zatvorite ovaj izbornik. PDF datoteka neće biti niti preuzeta niti otvorena, a Vi ćete nastaviti Vaše iskustvo pretraživanja Interneta.">

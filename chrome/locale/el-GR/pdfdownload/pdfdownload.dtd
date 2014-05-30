@@ -1,5 +1,5 @@
-<!ENTITY pdfdownload.createdByLabel "Δημιουργήθηκε από:">
-<!ENTITY pdfdownload.websiteLabel "Ιστοσελίδα">
+<!ENTITY pdfdownload.createdByLabel "Δημιουργός:">
+<!ENTITY pdfdownload.websiteLabel "Αρχική σελίδα">
 <!ENTITY pdfdownload.defaultActionLabel "Αρχική ενέργεια">
 <!ENTITY pdfdownload.showPopup "Προβολή αναδυόμενου διαλόγου">
 <!ENTITY pdfdownload.downloadButton "Λήψη του αρχείου">
@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Περισσότερες λεπτομέρειες">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Μενού εργαλείων">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Προβολή του PDF Download στο μενού εργαλείων του Firefox">
+<!ENTITY pdfdownload.optionsTooltips "Συμβουλές εργαλείων">
+<!ENTITY pdfdownload.optionsShowTooltips "Προβολή συμβουλών εργαλείων στον διάλογο">
 <!ENTITY pdfdownload.optionsOpenLink "Οι δεσμοί PDF θα ανοίγουν με το πρόσθετο πρόγραμμα του Firefox:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Τα αρχεία PDF σε μορφή HTML θα ανοίγουν:">
 <!ENTITY pdfdownload.optionsSameTab "Στην ίδια καρτέλα">

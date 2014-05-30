@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Flere detaljer">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Verktøymeny">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Vis PDF-nedlasting i Firefox verktøymeny">
+<!ENTITY pdfdownload.optionsTooltips "Verktøytips">
+<!ENTITY pdfdownload.optionsShowTooltips "Vis verktøytips i dialogboks">
 <!ENTITY pdfdownload.optionsOpenLink "Hvordan åpne PDF-lenker med Firefox PDF-tillegget">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hvordan åpne HTML-versjon av PDF-filer:">
 <!ENTITY pdfdownload.optionsSameTab "Åpne i samme fane">

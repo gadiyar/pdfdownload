@@ -7,7 +7,7 @@
 <!ENTITY pdfdownload.viewHtmlButton "以HTML檢視">
 <!ENTITY pdfdownload.openWithoutExtension "跳過PDF Download">
 <!ENTITY pdfdownload.cancelButton "取消">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download找不到您預設的PDF軟體。請在選項的視窗中指定一個！">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download找不到您預設的PDF閱讀軟體。請在選項的視窗中指定一個！">
 <!ENTITY pdfdownload.aboutTitle "關於PDF Download">
 <!ENTITY pdfdownload.websiteTooltip "檢視作者的網站">
 <!ENTITY pdfdownload.moreInfo "更多詳情：">
@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "詳情">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "工具選單">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "在Firefox的工具選單中顯示PDF Download">
+<!ENTITY pdfdownload.optionsTooltips "工具提示">
+<!ENTITY pdfdownload.optionsShowTooltips "在對話框顯示工具提示">
 <!ENTITY pdfdownload.optionsOpenLink "如何使用Firefox的PDF外掛來開啟PDF檔的連結：">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "如何開啟轉換成HTML的PDF檔案：">
 <!ENTITY pdfdownload.optionsSameTab "用同一個分頁開啟">
@@ -47,7 +49,7 @@
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "為了要讓您能檢視影像，圖片將會存在我們的伺服器上。">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "這些圖片在一天之後就會被移除。">
 <!ENTITY pdfdownload.tooltip.downloadButton "下載PDF檔案。如果你在Firefox選項中已經設定了預設的下載資料夾，檔案將會自動下載到該資料夾中。若否，你就必須指定檔案儲存的資料夾。">
-<!ENTITY pdfdownload.tooltip.openPDFButton "打開PDF檔案。依照您在PDF Download中的設定，PDF檔將可能在Firefox中使用PDF外掛程式（必須已經安裝），或者作業系統的預設PDF瀏覽軟體，或是您指定的自訂軟體開啟。">
-<!ENTITY pdfdownload.tooltip.viewHtmlButton "以HTML格式檢視PDF。PDF檔案將會由一個外部伺服器轉換成HTML。PDF檔案接會在轉換完成後自動從外部伺服器上刪除。">
+<!ENTITY pdfdownload.tooltip.openPDFButton "打開PDF檔案。依照您在PDF Download中的設定，PDF檔將可能在Firefox中使用PDF外掛程式（必須已經安裝），或者作業系統的預設PDF瀏覽軟體，或是您指定的軟體開啟。">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "以HTML格式檢視PDF。PDF檔案將會由一個外部伺服器轉換成HTML。PDF檔案會在轉換完成後自動從外部伺服器上刪除。">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "依照Firefox預設打開PDF檔案。這跟沒有安裝PDF Download的情況是一樣的。">
-<!ENTITY pdfdownload.tooltip.cancelButton "關閉對話視窗。PDF檔將不會被下載也不會被打開，您可以繼續瀏覽網頁。">
+<!ENTITY pdfdownload.tooltip.cancelButton "關閉對話視窗。PDF檔將不會被下載，也不會被打開，您可以繼續瀏覽網頁。">

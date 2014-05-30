@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "세부 상세">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "도구 메뉴">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Firefox 메뉴내 도구에 있는 PDF 다운로드 항목 보기">
+<!ENTITY pdfdownload.optionsTooltips "툴팁">
+<!ENTITY pdfdownload.optionsShowTooltips "대화상자내 툴팁 표시">
 <!ENTITY pdfdownload.optionsOpenLink "PDF 링크를 Firefox PDF 플러그인을 사용해 여는 방법:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF파일의 HTML 버전으로 여는 방법:">
 <!ENTITY pdfdownload.optionsSameTab "같은 탭에 열기">

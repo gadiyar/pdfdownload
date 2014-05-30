@@ -7,7 +7,7 @@
 <!ENTITY pdfdownload.viewHtmlButton "Besjoch as HTML">
 <!ENTITY pdfdownload.openWithoutExtension "Bypass PDF Download">
 <!ENTITY pdfdownload.cancelButton "Annulearje">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download kin jo primaire PDF lêzer net fine. Kies ien fan de PDF Download opsjes dialooch!">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download kin jo standert PDF lêzer net fine. Kies ien fan de PDF Download opsjes dialooch!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - Oer">
 <!ENTITY pdfdownload.websiteTooltip "Besyk webstee fan de auteur">
 <!ENTITY pdfdownload.moreInfo "Mear details:">
@@ -16,18 +16,20 @@
 <!ENTITY pdfdownload.readChangelogTooltip "Besjoch Wizigingsloch">
 <!ENTITY pdfdownload.changelog "Wizigingsloch">
 <!ENTITY pdfdownload.acknowledgments "Tank">
-<!ENTITY pdfdownload.siteListTitle "Utsunderings">
+<!ENTITY pdfdownload.siteListTitle "Útsûnderings">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Opsjes">
 <!ENTITY pdfdownload.optionsGeneralTab "Algemien">
-<!ENTITY pdfdownload.optionsPDFTab "PDF wurdt iepend">
-<!ENTITY pdfdownload.optionsHTMLTab "PDF nei HTML konferzje">
+<!ENTITY pdfdownload.optionsPDFTab "PDF wurdt iepene">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF nei HTML konverzje">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Mear details">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Arkmenu">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Toan PDF Download ûnderdiel yn it Ekstra Firefox Menu">
+<!ENTITY pdfdownload.optionsTooltips "Arktips">
+<!ENTITY pdfdownload.optionsShowTooltips "Toan arktips yn it dialoochfak">
 <!ENTITY pdfdownload.optionsOpenLink "Hoe PDF-keppelings iepenje mei de Firefox PDF-ynstekker:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hoe de HTML-ferzje fan PDF-bestannen iepenje:">
-<!ENTITY pdfdownload.optionsSameTab "Iepenje yn itselde ljebblêd">
-<!ENTITY pdfdownload.optionsNewTab "Iepenje yn in nij ljebblêd">
+<!ENTITY pdfdownload.optionsSameTab "Iepenje yn itselde ljepblêd">
+<!ENTITY pdfdownload.optionsNewTab "Iepenje yn in nij ljepblêd">
 <!ENTITY pdfdownload.optionsNewWindow "Iepenje yn in nij skerm">
 <!ENTITY pdfdownload.optionsOpenPdf "Iepenje it PDF-bestân:">
 <!ENTITY pdfdownload.optionsUsePlugin "Brûk Firefox syn standert aksje">
@@ -37,7 +39,7 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Kies PDF viewer">
 <!ENTITY pdfdownload.optionsExeFiles "Windows Applikaasjes">
 <!ENTITY pdfdownload.optionsAllFiles "Alle bestannen">
-<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "The viewer specified is not an executable file!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "De spesifisearre viewer is net in útfierber bestân!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Fernijing">
 <!ENTITY pdfdownload.optionsCheckUpdates "Kontrolearje op fernijings">
 <!ENTITY pdfdownload.optionsHowToHelp "Hoe kinne jo stypje">
@@ -48,6 +50,6 @@
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "De ôfbyldings sille automatysk nei ien dei fuortsmiten wurde.">
 <!ENTITY pdfdownload.tooltip.downloadButton "Laadt it PDF-bestân yn. As jo in standert ynlaadmap ynstelt hawwe yn the Firefox opsjes, sill it automatysk nei die map ynladen wurde; oars moatte jo in map opjaan om te bewarjen.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "Iepen it PDF-bestân. Ofhinklik fan wat jo ynsteld hawwe yn de PDF Download opsjes, sil it PDF-bestân iepene wurde yn Firefox mei de PDF-ynstekker (die moat al ynstallearre wêze), of iepene wurde mei jo standert OS PDF lêzer, of mei it sels spesifisearre programma.">
-<!ENTITY pdfdownload.tooltip.viewHtmlButton "Besjoch it PDF-bestân as HTML. It PDF-bestân sil ynladen wurde troch in eksterne spegel en konferteard nei HTML. It PDF-bestân wurdt automatysk fuortsmiten fan de spegel oan it ein fan de konferzje.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Besjoch it PDF-bestân as HTML. It PDF-bestân sil ynladen wurde troch in eksterne spegel en omset nei HTML. It PDF-bestân wurdt automatysk fuortsmiten fan de spegel oan it ein fan de konverzje.">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Iepen it PDF-bestân as PDF Download net ynstallearre is. Jo krije itselde gedrach as Firefox hat foardat jo PDF Download ynstallearre.">
-<!ENTITY pdfdownload.tooltip.cancelButton "Slút dizze dialooch. It PDF-bestân sill net ynladen of iepene wurde en jo kinne fierder gean mei blêdzjen.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Slút dizze dialooch. It PDF-bestân sil net ynladen of iepene wurde en jo kinne fierder gean mei blêdzjen.">

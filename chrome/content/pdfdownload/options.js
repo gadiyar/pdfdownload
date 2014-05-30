@@ -47,28 +47,30 @@ function onOK(notExecutableFileMsg) {
     var path = document.getElementById(_pdfViewerPathTextBox).value;
     var openPDF = document.getElementById(_openPDFRadioGroup);
     if (openPDF.selectedItem.id == "customViewer") {
-	var file  = Components.classes[fileCID].createInstance(fileIID);
-	try {
-		file.initWithPath(path);
-		if (!file.isFile() || !file.isExecutable()) {
+		var file  = Components.classes[fileCID].createInstance(fileIID);
+		try {
+			file.initWithPath(path);
+			if (!file.isFile() || !file.isExecutable()) {
      			alert(notExecutableFileMsg);
+				return false;
+			}
+		} catch (ex) {
+     		alert(notExecutableFileMsg);
 			return false;
 		}
-	} catch (ex) {
-     		alert(notExecutableFileMsg);
-		return false;
-	}
     }
-
     return true;
 }
 
 function onLoad() {
     sizeToContent();
-    
     if (!preferencesService.prefHasUserValue("showToolsMenuItem")) {
-	preferencesService.setBoolPref("showToolsMenuItem",true);
-	document.getElementById("showItemTools").checked = true;
+		preferencesService.setBoolPref("showToolsMenuItem",true);
+		document.getElementById("showItemTools").checked = true;
+    }
+    if (!preferencesService.prefHasUserValue("showTooltips")) {
+		preferencesService.setBoolPref("showTooltips",true);
+		document.getElementById("showTooltips").checked = true;
     }
 }
 
@@ -84,16 +86,16 @@ function onPickPdfViewerPath(dialogTitle,exeFiles,allFiles,notExecutableFileMsg)
 	var path;
 	var prefname = "pdfViewerPath";
     	try {
-      	pdfViewer = preferencesService.getCharPref(prefname);
+      		pdfViewer = preferencesService.getCharPref(prefname);
     	} catch(ex) {
-		pdfViewer = "";
+			pdfViewer = "";
     	}
 	if (pdfViewer != "") {
 		var fileLocator = Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties);
 		var sTmp	= (fileLocator.get("TmpD", Components.interfaces.nsILocalFile)).path;
 		var slash 	= (sTmp.indexOf("\\") > -1) ? "\\" : "/";
 		var slashPos = pdfViewer.lastIndexOf(slash);
-	      path = pdfViewer.substring(0, slashPos);       
+		path = pdfViewer.substring(0, slashPos);       
 		file.initWithPath(path);
 		fp.defaultString = pdfViewer.substring(slashPos+1);
 		fp.displayDirectory = file;

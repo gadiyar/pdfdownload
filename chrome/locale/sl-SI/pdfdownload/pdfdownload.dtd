@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Več podrobnosti">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Meni Orodja">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Pokaži možnost Prenesi PDF v meniju Orodja v Firefoxu">
+<!ENTITY pdfdownload.optionsTooltips "Nasveti">
+<!ENTITY pdfdownload.optionsShowTooltips "Pokaži nasvete v pojavnem okencu">
 <!ENTITY pdfdownload.optionsOpenLink "Povezave PDF z uporabo razširitve Firefox PDF:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Različico HTML datotek PDF:">
 <!ENTITY pdfdownload.optionsSameTab "odpri v istem zavihku">

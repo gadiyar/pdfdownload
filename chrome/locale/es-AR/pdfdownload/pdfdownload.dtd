@@ -1,6 +1,6 @@
 <!ENTITY pdfdownload.createdByLabel "Creado por:">
 <!ENTITY pdfdownload.websiteLabel "Sitio Web">
-<!ENTITY pdfdownload.defaultActionLabel "Acción por defecto">
+<!ENTITY pdfdownload.defaultActionLabel "Acción por omisión">
 <!ENTITY pdfdownload.showPopup "Mostrar diálogo emergente">
 <!ENTITY pdfdownload.downloadButton "Descargarlo ya">
 <!ENTITY pdfdownload.openButton "Abrir PDF">
@@ -20,12 +20,14 @@
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Opciones">
 <!ENTITY pdfdownload.optionsGeneralTab "General">
 <!ENTITY pdfdownload.optionsPDFTab "Abriendo PDF">
-<!ENTITY pdfdownload.optionsHTMLTab "Conversion de PDF a HTML">
+<!ENTITY pdfdownload.optionsHTMLTab "Conversión de PDF a HTML">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Mas Detalles">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menu de Herramientas">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "Mostar los elementos de PDF Download en el Menú de Herramientas de Firefox">
-<!ENTITY pdfdownload.optionsOpenLink "¿Como abrir link de archivos PDF usando el plugin en Firefox?:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "¿Como abrir la version en HTML de archivos PDF?:">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menú de Herramientas">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Mostrar los elementos de PDF Download en el Menú de Herramientas de Firefox">
+<!ENTITY pdfdownload.optionsTooltips "Tooltips">
+<!ENTITY pdfdownload.optionsShowTooltips "Mostrar Tooltips en el cuadro de diálogo">
+<!ENTITY pdfdownload.optionsOpenLink "¿Como abrir enlaces de archivos PDF usando el plugin en Firefox?:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "¿Como abrir la versión en HTML de archivos PDF?:">
 <!ENTITY pdfdownload.optionsSameTab "Abrir en la misma pestaña">
 <!ENTITY pdfdownload.optionsNewTab "Abrir en nueva pestaña">
 <!ENTITY pdfdownload.optionsNewWindow "Abrir en nueva ventana">

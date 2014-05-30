@@ -15,7 +15,7 @@
 <!ENTITY pdfdownload.license "Licens">
 <!ENTITY pdfdownload.readChangelogTooltip "Visa ändringslogg">
 <!ENTITY pdfdownload.changelog "Ändringslogg">
-<!ENTITY pdfdownload.acknowledgments "Erkännanden">
+<!ENTITY pdfdownload.acknowledgments "Tack till personer som har bidragit">
 <!ENTITY pdfdownload.siteListTitle "Undantag">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Inställningar">
 <!ENTITY pdfdownload.optionsGeneralTab "Allmänt">
@@ -24,6 +24,8 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Mer detaljer">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Verktygsmeny">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Visa PDF Download-post i Firefox verktygsmeny">
+<!ENTITY pdfdownload.optionsTooltips "Verktygstips">
+<!ENTITY pdfdownload.optionsShowTooltips "Visa verktygstips i dialogrutan">
 <!ENTITY pdfdownload.optionsOpenLink "Hur PDF-länkar skall öppnas med hjälp av Firefox PDF plugin:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hur HTML-versioner av PDF-filer skall öppnas:">
 <!ENTITY pdfdownload.optionsSameTab "Öppna i samma flik">

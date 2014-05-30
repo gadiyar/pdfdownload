@@ -60,7 +60,7 @@ PdfDownloadShared.prototype.openURL = function(aURL) {
 }
 
 PdfDownloadShared.prototype.help = function(s) {
-	var url = "http://www.rabotat.org/firefox/";
+	var url = "http://www.pdfdownload.org";
 	if (s) {
 		url += "#" + s;
 	}

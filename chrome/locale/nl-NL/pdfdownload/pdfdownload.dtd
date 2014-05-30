@@ -1,7 +1,7 @@
 <!ENTITY pdfdownload.createdByLabel "Gemaakt door:">
 <!ENTITY pdfdownload.websiteLabel "Website">
 <!ENTITY pdfdownload.defaultActionLabel "Standaard actie">
-<!ENTITY pdfdownload.showPopup "Popupdialoogvenster weergeven">
+<!ENTITY pdfdownload.showPopup "Popupvenster weergeven">
 <!ENTITY pdfdownload.downloadButton "Downloaden">
 <!ENTITY pdfdownload.openButton "PDF openen">
 <!ENTITY pdfdownload.viewHtmlButton "Als HTML bekijken">
@@ -17,18 +17,20 @@
 <!ENTITY pdfdownload.changelog "Changelog">
 <!ENTITY pdfdownload.acknowledgments "Dankbetuigingen">
 <!ENTITY pdfdownload.siteListTitle "Uitzonderingen">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - Opties">
+<!ENTITY pdfdownload.optionsTitle "PDF Download Opties">
 <!ENTITY pdfdownload.optionsGeneralTab "Algemeen">
-<!ENTITY pdfdownload.optionsPDFTab "PDF wordt geopend">
+<!ENTITY pdfdownload.optionsPDFTab "PDF openen">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF naar HTML-conversie">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Meer details">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menu Extra">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF Download in het menu Extra weergeven">
+<!ENTITY pdfdownload.optionsTooltips "Tooltips">
+<!ENTITY pdfdownload.optionsShowTooltips "Tooltips weergeven in het dialoogvenster">
 <!ENTITY pdfdownload.optionsOpenLink "Hoe PDF-links openen met de Firefox PDF-plugin:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hoe de HTML-versie van PDF-bestanden openen:">
-<!ENTITY pdfdownload.optionsSameTab "In hetzelfde tabblad openen">
-<!ENTITY pdfdownload.optionsNewTab "In een nieuw tabblad openen">
-<!ENTITY pdfdownload.optionsNewWindow "In een nieuw venster openen">
+<!ENTITY pdfdownload.optionsSameTab "In hetzelfde tabblad">
+<!ENTITY pdfdownload.optionsNewTab "In een nieuw tabblad">
+<!ENTITY pdfdownload.optionsNewWindow "In een nieuw venster">
 <!ENTITY pdfdownload.optionsOpenPdf "Open het PDF-bestand:">
 <!ENTITY pdfdownload.optionsUsePlugin "Met de PDF-plugin">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Met de standaard PDF-lezer van het besturingssysteem">
@@ -43,11 +45,11 @@
 <!ENTITY pdfdownload.optionsHowToHelp "Hoe helpen">
 <!ENTITY pdfdownload.optionsMakeDonation "Een donatie maken">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Afbeeldingen">
-<!ENTITY pdfdownload.optionsShowImagesInHTML "Afbeeldingen in de HTML-versie weergeven">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Afbeeldingen weergeven in de HTML-versie">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Om de afbeeldingen te kunnen weergeven, moeten ze op onze server opgeslagen worden.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Ze worden automatisch verwijderd na één dag.">
-<!ENTITY pdfdownload.tooltip.downloadButton "Het bestand downloaden naar oftewel een standaard downloadmap, als u deze heeft ingesteld in de Firefox-opties, of naar de map die u selecteert in het volgende venster.">
-<!ENTITY pdfdownload.tooltip.openPDFButton "Het bestand openen in de lezer die u selecteerde in de PDF Download-opties. Dit kan de standaard PDF-lezer van uw besturingssysteem zijn, een andere externe lezer, of de ingebouwde lezer van Firefox.">
-<!ENTITY pdfdownload.tooltip.viewHtmlButton "Het PDF-bestand naar een externe mirror downloaden, en converteren naar HTML. Na de conversie wordt het PDF-bestand direct verwijderd van de mirror.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Het bestand downloaden. Als u een standaard downloadmap heeft ingesteld in de Firefox-opties, wordt het naar deze map gedownload, anders naar de map die u selecteert in het venster erna.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Het bestand openen. Afhankelijk van de PDF Download-instellingen, zal het PDF-bestand geopend worden in Firefox met de PDF-plugin (die al moet geïnstalleerd zijn), met de standaard PDF-lezer van uw besturingssysteem, of met een andere PDF-lezer die u koos.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Het PDF-bestand als HTML bekijken. Het PDF-bestand zal naar een externe mirror gedownload worden, en geconverteerd worden naar HTML. Na de conversie wordt het PDF-bestand verwijderd van de mirror.">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Het PDF-bestand openen zoals dat gebeurde voordat PDF Download geïnstalleerd werd.">
-<!ENTITY pdfdownload.tooltip.cancelButton "Het PDF-bestand niet downloaden of openen, maar verder surfen zoals u bezig was.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Dit venster sluiten. Het PDF-bestand niet downloaden of openen, maar verder surfen zoals u bezig was.">
