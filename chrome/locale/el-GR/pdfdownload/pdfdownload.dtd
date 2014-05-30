@@ -2,7 +2,7 @@
 <!ENTITY pdfdownload.websiteLabel "Αρχική σελίδα">
 <!ENTITY pdfdownload.defaultActionLabel "Αρχική ενέργεια">
 <!ENTITY pdfdownload.showPopup "Προβολή αναδυόμενου διαλόγου">
-<!ENTITY pdfdownload.downloadButton "Λήψη του αρχείου">
+<!ENTITY pdfdownload.downloadButton "Λήψη αρχείου">
 <!ENTITY pdfdownload.openButton "Άνοιγμα PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Εμφάνιση σε μορφή HTML">
 <!ENTITY pdfdownload.openWithoutExtension "Παράκαμψη του PDF Download">
@@ -13,7 +13,7 @@
 <!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "Κατακόρυφος">
 <!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "Οριζόντιος">
 <!ENTITY pdfdownload.webtopdf.margins.label "Περιθώρια:">
-<!ENTITY pdfdownload.webtopdf.margins.inches "σε">
+<!ENTITY pdfdownload.webtopdf.margins.inches "ίντσες">
 <!ENTITY pdfdownload.webtopdf.margins.top "Πάνω:">
 <!ENTITY pdfdownload.webtopdf.margins.bottom "Κάτω:">
 <!ENTITY pdfdownload.webtopdf.margins.left "Αριστερά:">
@@ -50,8 +50,8 @@
 <!ENTITY pdfdownload.optionsPDFTab "Άνοιγμα PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Μετατροπή PDF σε HTML">
 <!ENTITY pdfdownload.options.WebToPDFTab "Απ&apos; τον ιστό σε PDF">
-<!ENTITY pdfdownload.options.UpdatesTab "Δωρεάν ενημερώσεις">
-<!ENTITY pdfdownload.options.CompanyTab "Περί Nitro PDF Software">
+<!ENTITY pdfdownload.options.UpdatesTab "Ενημερώσεις">
+<!ENTITY pdfdownload.options.CompanyTab "Περί Nitro">
 <!ENTITY pdfdownload.optionsToggleFirefoxMenus "Μενού του Firefox">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Προβολή του PDF Download στο μενού εργαλείων του Firefox">
 <!ENTITY pdfdownload.optionsShowItemFileMenu "Προβολή του «Αποθήκευση σελίδας ως PDF...» στο μενού «Αρχείο»">
@@ -71,23 +71,23 @@
 <!ENTITY pdfdownload.optionsExeFiles "Εφαρμογές Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Όλα τα αρχεία">
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Το καθορισμένο πρόγραμμα ανάγνωσης δεν είναι εκτελέσιμο αρχείο!">
-<!ENTITY pdfdownload.optionsUpdateLabel "Ενημέρωση">
+<!ENTITY pdfdownload.optionsUpdateLabel "Εγκαταστημένη έκδοση">
 <!ENTITY pdfdownload.optionsCheckUpdates "Έλεγχος για ενημερώσεις">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Εικόνες">
 <!ENTITY pdfdownload.options.width "75ex">
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.popup.title "PDF Download από την Nitro PDF Software">
-<!ENTITY pdfdownload.optionsShowImagesInHTML "Προβολή εικόνων όταν προβάλονται αρχεία PDF σε μορφή HTML">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Προβολή εικόνων όταν προβάλλονται αρχεία PDF σε μορφή HTML">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Για να είναι δυνατή η προβολή εικόνων, πρέπει να αποθηκευθούν στον διακομιστή μας">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Οι εικόνες θα διαγράφούν αυτόματα μετά από μια ημέρα.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Οι εικόνες θα διαγραφούν αυτόματα μετά από μια ημέρα.">
 <!ENTITY pdfdownload.options.CompanyInformation "Πληροφορίες εταιρίας">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
-<!ENTITY pdfdownload.options.nitroDescription "Το PDF Download είαι ένα δωρεάν προϊόν της Nitro PDF Software. Η Nitro PDF Software δημιούργησε το πραγματικό εναλλακτικό πρόγραμμα για το Adobe® Acrobat®,το Nitro PDF Professional. Το Nitro PDF Professional σας επιτρέπει να δημιουργήσετε, να μετατρέψετε, να επεξεργαστείτε, να διασφαλίσετε και γενικά να εργαστείτε με PDF αρχεία.">
+<!ENTITY pdfdownload.options.nitroDescription "Το PDF Download είαι ένα δωρεάν προϊόν της Nitro PDF Software. Η Nitro PDF Software δημιούργησε το πρώτο πραγματικά εναλλακτικό πρόγραμμα για το Adobe® Acrobat®,το Nitro PDF Professional. Το Nitro PDF Professional σας επιτρέπει να δημιουργήσετε, να μετατρέψετε, να επεξεργαστείτε, να διασφαλίσετε και γενικά να εργαστείτε με PDF αρχεία.">
 <!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
 <!ENTITY pdfdownload.options.tryNitroPDFProfessional "Δοκιμάστε το Nitro PDF Professional -">
 <!ENTITY pdfdownload.options.free14dayTrial "δωρεάν δοκιμαστική έκδοση 14 ημερών.">
-<!ENTITY pdfdownload.tooltip.downloadButton "Λήψη του αρχείου PDF. Αν έχετε ορίσει κατάλογο αποθήκευσης στις επιλογές του Firefox θα αποθηκευθεί εκεί αυτόματα, αλλιώς θα σας ζητηθεί να ορίσετε κατάλογο για την αποθήκευση.">
-<!ENTITY pdfdownload.tooltip.openPDFButton "Άνοιγμα του αρχείου PDF. Αναλόγως με τις ρυθμίσεις του PDF Download, το αρχείο θα ανοιχθεί από τον Firefox με το πρόσθετο PDF (αν έχει ήδη εγκατασταθεί), με το προεπιλεγμένο πρόγραμμα ανάγνωσης PDF του λειτουργικού σας, ή με οποιοδήποτε πρόγραμμα ανάγνωσης έχετε ορίσει.">
-<!ENTITY pdfdownload.tooltip.viewHtmlButton "Εμφάνιση σε μορφή HTML. Το αρχείο PDF θα μεταφορτωθεί σε εναλλακτική τοποθεσία αρχείων και θα μετατραπεί σε μορφή HTML. Αφού ολοκληρωθεί η εργασία, το αρχείο PDF θα διαγραφεί αυτόματα από την εναλλακτική τοποθεσία.">
-<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Αντιμετώπιση του αρχείου PDF, σαν να μην υπήρχε το PDF Download . Ο Firefox θα αντιμετωπίσει το αρχείο όπως έκανε πριν εγκαταστήσετε το PDF Download.">
-<!ENTITY pdfdownload.tooltip.cancelButton "Έξοδος από τον διάλογο. Δεν θα γίνει λήψη του αρχείου PDF, ούτε θα ανοιχθεί κι εσείς απλά θα συνεχίσετε.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Λήψη του αρχείου PDF με τις ρυθμίσεις που έχετε ορίσει στον Firefox. Μπορείτε να ορίσετε στις επιλογές κατάλογο αποθήκευσης για να αποθηκευθεί αυτόματα, ή να γίνεται ερώτηση κάθε φορά για το που θα αποθηκευθεί.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Άνοιγμα του αρχείου PDF σύμφωνα με τις ρυθμίσεις του firefox. Για να αλλάξετε τις επιλογές, πηγαίνετε στο«Εργαλεία &gt; Επιλογές - PDF Download &gt; Άνοιγμα PDF».">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Μετατροπή του αρχείου σε μορφή HTML και εμφάνιση στον Firefox. Για να αποθηκεύσετε το αρχείο HTML πηγαίνετε στο μενού «Αρχείο» του περιηγητή.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Αγνόηση  των ρυθμίσεων του PDF Download και διαχείριση του αρχείου με την ορισμένη από τον Firefox μέθοδο.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Έξοδος από τον διάλογο χωρίς να γίνει καμία ενέργεια για το αρχείο PDF.">

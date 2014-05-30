@@ -51,7 +51,7 @@
 <!ENTITY pdfdownload.optionsHTMLTab "HTML　へ変換">
 <!ENTITY pdfdownload.options.WebToPDFTab "PDF　へ変換">
 <!ENTITY pdfdownload.options.UpdatesTab "フリーアップデート">
-<!ENTITY pdfdownload.options.CompanyTab "About Nitro PDF Software">
+<!ENTITY pdfdownload.options.CompanyTab "Nitro PDF Software について">
 <!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefox のメニュー">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF Download の項目を Firefox のツールに表示">
 <!ENTITY pdfdownload.optionsShowItemFileMenu "ファイルメニューに &apos;ページを PDF で保存...&apos; を表示">
@@ -78,7 +78,7 @@
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.popup.title "PDF Download by Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "PDF 内の画像を HTML で表示">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "画像を表示するには一旦サーバーに保存する必要があります。">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "画像を表示するには一度サーバーに保存する必要があります。">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "画像は一日後に自動的に削除されます。">
 <!ENTITY pdfdownload.options.CompanyInformation "会社情報">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">

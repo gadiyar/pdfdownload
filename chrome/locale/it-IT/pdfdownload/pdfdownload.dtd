@@ -21,15 +21,15 @@
 <!ENTITY pdfdownload.webtopdf.defaulAction "Azione predefinita">
 <!ENTITY pdfdownload.webtopdf.action.downloadDirectly "Salva la pagina web come PDF">
 <!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "Converte la pagina web in un file PDF e avvia il download">
-<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "Salva pagina come PDF...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "Salva pagina come PDF…">
 <!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "D">
-<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "F">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "S">
 <!ENTITY pdfdownload.webtopdf.action.askEmail "Richiedi un indirizzo e-mail">
 <!ENTITY pdfdownload.webtopdf.action.sendEmail "Invia sempre un&apos;e-mail al seguente destinatario:">
 <!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "Richiedi sempre un indirizzo e-mail">
 <!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "Invia la pagina web come PDF tramite e-mail">
 <!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "Converte la pagina web in un file PDF e la allega ad un&apos;e-mail">
-<!ENTITY pdfdownload.webtopdf.options "Opzioni...">
+<!ENTITY pdfdownload.webtopdf.options "Opzioni…">
 <!ENTITY pdfdownload.webtopdf.options.tooltip "Personalizza le caratteristiche di PDF Download">
 <!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "Inserire l&apos;indirizzo e-mail del destinatario. La pagina web attuale verrà convertita in formato PDF ed inviata come allegato">
 <!ENTITY pdfdownload.help "Contenuti guida di PDF Download">
@@ -54,7 +54,7 @@
 <!ENTITY pdfdownload.options.CompanyTab "Informazioni su Nitro">
 <!ENTITY pdfdownload.optionsToggleFirefoxMenus "Menu di Firefox">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Mostra PDF Download nel menu Strumenti di Firefox">
-<!ENTITY pdfdownload.optionsShowItemFileMenu "Mostra &apos;Salva pagina come PDF...&apos; nel menu File di Firefox">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "Mostra &apos;Salva pagina come PDF…&apos; nel menu File di Firefox">
 <!ENTITY pdfdownload.optionsTooltips "Tooltip">
 <!ENTITY pdfdownload.optionsShowTooltips "Mostra i tooltip nella finestra di dialogo">
 <!ENTITY pdfdownload.optionsOpenLink "Come aprire i link a file PDF usando il plugin di Firefox:">
@@ -66,11 +66,11 @@
 <!ENTITY pdfdownload.optionsUsePlugin "Usa il plugin PDF">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Usa programma predefinito">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Usa questo programma:">
-<!ENTITY pdfdownload.optionsBrowse "Sfoglia...">
+<!ENTITY pdfdownload.optionsBrowse "Sfoglia…">
 <!ENTITY pdfdownload.optionsBrowseTitle "Selezione del programma">
 <!ENTITY pdfdownload.optionsExeFiles "Applicazioni Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Tutti i file">
-<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Il programma specificato non è un file eseguibile!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Il programma specificato non è un file eseguibile">
 <!ENTITY pdfdownload.optionsUpdateLabel "Aggiornamenti">
 <!ENTITY pdfdownload.optionsCheckUpdates "Controlla aggiornamenti">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Immagini">
