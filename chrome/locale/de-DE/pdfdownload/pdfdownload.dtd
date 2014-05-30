@@ -7,33 +7,62 @@
 <!ENTITY pdfdownload.viewHtmlButton "PDF als HTML anzeigen">
 <!ENTITY pdfdownload.openWithoutExtension "PDF Download umgehen">
 <!ENTITY pdfdownload.cancelButton "Abbrechen">
+<!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "Webseite in PDF umwandeln">
+<!ENTITY pdfdownload.webtopdf.outputSettings "PDF-Ausgabeeinstellungen">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.label "Seitenausrichtung:">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "Hochformat">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "Querformat">
+<!ENTITY pdfdownload.webtopdf.margins.label "Ränder:">
+<!ENTITY pdfdownload.webtopdf.margins.inches "in">
+<!ENTITY pdfdownload.webtopdf.margins.top "Ober:">
+<!ENTITY pdfdownload.webtopdf.margins.bottom "Unten:">
+<!ENTITY pdfdownload.webtopdf.margins.left "Links:">
+<!ENTITY pdfdownload.webtopdf.margins.right "Rechts:">
+<!ENTITY pdfdownload.webtopdf.defaulAction "Standardaktion beim Anklicken eines PDF-Links:">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly "Webseite als PDF speichern">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "Seite in PDF umwandeln und dann herunterladen.">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "Seite als PDF speichern...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "D">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "F">
+<!ENTITY pdfdownload.webtopdf.action.askEmail "Nach E-Mail fragen">
+<!ENTITY pdfdownload.webtopdf.action.sendEmail "Immer versenden an:">
+<!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "Immer nach E-Mail fragen">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "Webseite als PDF versenden">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "Seite in PDF umwandeln und an eine E-Mail anhängen">
+<!ENTITY pdfdownload.webtopdf.options "Optionen...">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "Funktionsweise von PDF Download anpassen:">
+<!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "Zieladresse eingeben. Die aktuelle Seite wird in PDF umgewandelt und als E-Mail-Anhang versendet.">
+<!ENTITY pdfdownload.help "PDF Download Hilfe">
+<!ENTITY pdfdownload.help.tooltip "Hilfe zu PDF Download erhalten.">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download kann keinen Standard-Dateibetrachter für PDF-Dokumente finden. Bitte wählen Sie ein entsprechendes Programm im Einstellungsdialog von PDF Download aus!">
-<!ENTITY pdfdownload.about.Title "Über PDF Download von Nitro PDF Software">
+<!ENTITY pdfdownload.about.Title "PDF Download von Nitro PDF Software - Über">
 <!ENTITY pdfdownload.about.width "55ex">
 <!ENTITY pdfdownload.websiteTooltip "Homepage des Autors besuchen">
-<!ENTITY pdfdownload.moreInfo "Weitere Informationen">
+<!ENTITY pdfdownload.moreInfo "Weitere Informationen:">
 <!ENTITY pdfdownload.readLicenseTooltip "Lizenzbedingungen anzeigen">
 <!ENTITY pdfdownload.license "Lizenzbedingungen (engl.)">
 <!ENTITY pdfdownload.readChangelogTooltip "Versionshinweise anzeigen">
 <!ENTITY pdfdownload.changelog "Versionshinweise (engl.)">
 <!ENTITY pdfdownload.acknowledgments "Danksagungen (engl.)">
 <!ENTITY pdfdownload.siteListTitle "Ausnahmen">
-<!ENTITY pdfdownload.options.Title "PDF Download von Nitro PDF Software - Einstellungen">
+<!ENTITY pdfdownload.options.Title "PDF Download - Einstellungen">
 <!ENTITY pdfdownload.optionsGeneralTab "Allgemein">
 <!ENTITY pdfdownload.optionsPDFTab "PDF öffnen">
-<!ENTITY pdfdownload.optionsHTMLTab "PDF in HTML umwandeln">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF zu HTML">
+<!ENTITY pdfdownload.options.WebToPDFTab "Webseite zu PDF">
 <!ENTITY pdfdownload.options.UpdatesTab "Updateprüfung">
-<!ENTITY pdfdownload.options.CompanyTab "Über Nitro PDF Software">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Extras-Menü:">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "Eintrag für PDF-Download im Menü &quot;Extras&quot; anzeigen">
-<!ENTITY pdfdownload.optionsTooltips "Tooltips">
-<!ENTITY pdfdownload.optionsShowTooltips "Tooltips für Schaltflächen im Bestätigungs-Dialog anzeigen">
-<!ENTITY pdfdownload.optionsOpenLink "Beim Öffnen von PDF-Links mit dem Firefox-Plug-in:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Beim Öffnen der HTML-Version einer PDF-Datei:">
+<!ENTITY pdfdownload.options.CompanyTab "Über Nitro">
+<!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefox Menüs">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF-Download im Firefox-Menü &apos;Extras&apos; anzeigen">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "Anzeige von &apos;Seite als PDF speichern...&apos; im Dateimenü">
+<!ENTITY pdfdownload.optionsTooltips "Tipps">
+<!ENTITY pdfdownload.optionsShowTooltips "Tooltips in Fenstern anzeigen">
+<!ENTITY pdfdownload.optionsOpenLink "Beim Öffnen von PDF-Links mit dem Firefox-Plug-in">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Beim Öffnen der HTML-Version einer PDF-Datei">
 <!ENTITY pdfdownload.optionsSameTab "Im selben Tab/Fenster öffnen">
 <!ENTITY pdfdownload.optionsNewTab "In neuem Tab öffnen">
 <!ENTITY pdfdownload.optionsNewWindow "In neuem Fenster öffnen">
-<!ENTITY pdfdownload.optionsOpenPdf "Beim Öffnen von PDF-Dateien:">
+<!ENTITY pdfdownload.optionsOpenPdf "Beim Öffnen von PDF-Dateien">
 <!ENTITY pdfdownload.optionsUsePlugin "Standard-Plug-in von Firefox benutzen">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Standardbetrachter des Betriebssystems benutzen">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Diesen Betrachter benutzen:">
@@ -41,25 +70,24 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "PDF-Betrachter auswählen">
 <!ENTITY pdfdownload.optionsExeFiles "Programme">
 <!ENTITY pdfdownload.optionsAllFiles "Alle Dateien">
-<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Der benutzerdefinierte Betrachter ist keine ausführbare Datei!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Der ausgewählte Betrachter ist keine ausführbare Datei!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Versionsinformation">
 <!ENTITY pdfdownload.optionsCheckUpdates "Auf Updates überprüfen">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Grafiken">
 <!ENTITY pdfdownload.options.width "85ex">
-<!ENTITY pdfdownload.options.height "57ex">
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.popup.title "PDF Download von Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Grafiken in der HTML-Version einer PDF-Datei anzeigen">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Um die Grafiken anzeigen zu können, müssen diese auf unserem Server gespeichert werden.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Die Grafiken werden automatisch nach einem Tag gelöscht.">
-<!ENTITY pdfdownload.options.CompanyInformation "Firmeninformationen">
+<!ENTITY pdfdownload.options.CompanyInformation "Firmeninformation">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
-<!ENTITY pdfdownload.options.nitroDescription "&quot;PDF Download&quot; ist ein kostenfreies Produkt vom &quot;Nitro PDF Software&quot;-Team. &quot;Nitro PDF Software&quot; erstellte als einer der ersten eine echte Alternative zu Adobe® Acrobat®. Mit &quot;Nitro PDF Professional&quot; haben Sie die Möglichkeit PDF-Dateien zu erstellen, editieren, schützen, manipulieren und zusammenzuführen.">
+<!ENTITY pdfdownload.options.nitroDescription "&apos;PDF Download&apos; ist ein kostenfreies Produkt des &apos;Nitro PDF Software&apos;-Team. &apos;Nitro PDF Software&apos; erstellte als einer der ersten eine echte Alternative zu Adobe® Acrobat®. Mit &apos;Nitro PDF Professional&apos; können Sie  PDF-Dateien erstellen, bearbeiten, schützen, kommentieren und zusammenführen.">
 <!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
 <!ENTITY pdfdownload.options.tryNitroPDFProfessional "Nitro PDF Professional -">
 <!ENTITY pdfdownload.options.free14dayTrial "Testen Sie unverbindlich für 14 Tage">
 <!ENTITY pdfdownload.tooltip.downloadButton "Lädt die PDF-Datei herunter. Falls ein Standard-Download-Ordner in den Firefox-Einstellungen festgelegt wurde, wird die Datei automatisch dort gespeichert. Andernfalls muss ein Download-Ziel angegeben werden.">
-<!ENTITY pdfdownload.tooltip.openPDFButton "Öffnet die PDF-Datei. Abhängig davon, welche Option in den Einstellungen von PDF Download gewählt wurde, wird die Datei entweder in Firefox mit dem entsprechenden Plug-in angezeigt oder mit dem Standard-PDF-Betrachter des Betriebssystems oder mit einem benutzerdefinierten Programm geöffnet.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Lädt die PDF-Datei herunter. Falls ein Standard-Download-Ordner in den Firefox-Einstellungen festgelegt wurde, wird die Datei automatisch dort gespeichert. Andernfalls muss ein Download-Ziel angegeben werden.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "Zeigt die PDF-Datei im HTML-Format an. Die Datei wird dazu durch einen externen Spiegelserver heruntergeladen und in HTML konvertiert. Das PDF wird nach Beendigung der Konvertierung automatisch von dem externen Server entfernt.">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Öffnet die PDF-Datei, als ob PDF Download nicht installiert wäre. Das Download-Verhalten entspricht dem, das Firefox hatte, bevor PDF Download installiert wurde.">
 <!ENTITY pdfdownload.tooltip.cancelButton "Schließt diesen Dialog. Die PDF-Datei wird weder heruntergeladen noch geöffnet.">

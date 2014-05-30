@@ -7,6 +7,33 @@
 <!ENTITY pdfdownload.viewHtmlButton "Ver como HTML">
 <!ENTITY pdfdownload.openWithoutExtension "Evitar descarga PDF">
 <!ENTITY pdfdownload.cancelButton "Cancelar">
+<!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "Convertir la página web a PDF">
+<!ENTITY pdfdownload.webtopdf.outputSettings "Configuración de salida PDF">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.label "Orientación de la página:">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "Vertical">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "Apaisada">
+<!ENTITY pdfdownload.webtopdf.margins.label "Márgenes:">
+<!ENTITY pdfdownload.webtopdf.margins.inches "pulgadas">
+<!ENTITY pdfdownload.webtopdf.margins.top "Superior:">
+<!ENTITY pdfdownload.webtopdf.margins.bottom "Inferior:">
+<!ENTITY pdfdownload.webtopdf.margins.left "Izquierdo:">
+<!ENTITY pdfdownload.webtopdf.margins.right "Derecho:">
+<!ENTITY pdfdownload.webtopdf.defaulAction "Acción por omisión">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly "Guardar la Página Web como PDF">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "Convierte a PDF la página y luego la descarga.">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "Guardar la Página Como PDF...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "D">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "F">
+<!ENTITY pdfdownload.webtopdf.action.askEmail "Ingreso de dirección de email">
+<!ENTITY pdfdownload.webtopdf.action.sendEmail "Siempre enviar por email a:">
+<!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "Siempre preguntar por la dirección de email">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "Enviar por email la Página Web como PDF">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "Convierte a PDF la página y luego la envía como archivo adjunto por email.">
+<!ENTITY pdfdownload.webtopdf.options "Opciones...">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "Personalizar a su gusto cómo prefiere que trabaje PDF Download.">
+<!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "Ingrese la dirección de email del destinatario. La página web actual será convertida a PDF y le enviada como adjunto en un correo electrónico.">
+<!ENTITY pdfdownload.help "Ayuda de PDF Download">
+<!ENTITY pdfdownload.help.tooltip "Obtenga ayuda para utilizar PDF Download.">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download no puede encontrar un visor de PDF. Por favor seleccione uno en opciones de PDF Download">
 <!ENTITY pdfdownload.about.Title "PDF Download por Nitro PDF Software - Acerca de">
 <!ENTITY pdfdownload.about.width "65ex">
@@ -22,11 +49,13 @@
 <!ENTITY pdfdownload.optionsGeneralTab "General">
 <!ENTITY pdfdownload.optionsPDFTab "Abriendo PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Conversión de PDF a HTML">
+<!ENTITY pdfdownload.options.WebToPDFTab "Web a PDF">
 <!ENTITY pdfdownload.options.UpdatesTab "Actualizaciones gratis">
 <!ENTITY pdfdownload.options.CompanyTab "Acerca de Nitro PDF Software">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menú de Herramientas">
+<!ENTITY pdfdownload.optionsToggleFirefoxMenus "Menues de Firefox">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Mostrar los elementos de PDF Download en el Menú de Herramientas de Firefox">
-<!ENTITY pdfdownload.optionsTooltips "Tooltips">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "Mostrar &apos;Guardar Página Como PDF...&apos; en  el menú de Archivo">
+<!ENTITY pdfdownload.optionsTooltips "Sugerencias">
 <!ENTITY pdfdownload.optionsShowTooltips "Mostrar Tooltips en el cuadro de diálogo">
 <!ENTITY pdfdownload.optionsOpenLink "¿Como abrir enlaces de archivos PDF usando el plugin en Firefox?:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "¿Como abrir la versión en HTML de archivos PDF?:">

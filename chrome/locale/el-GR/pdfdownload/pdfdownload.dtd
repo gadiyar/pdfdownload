@@ -7,8 +7,35 @@
 <!ENTITY pdfdownload.viewHtmlButton "Εμφάνιση σε μορφή HTML">
 <!ENTITY pdfdownload.openWithoutExtension "Παράκαμψη του PDF Download">
 <!ENTITY pdfdownload.cancelButton "Ακύρωση">
-<!ENTITY pdfdownload.osWarningMsg "Το PDF Download δεν μπορεί να εντοπίσει το προεπιλεγμένο πρόγραμμα ανάγνωσης αρχείων PDF. Παρακαλούμε επιλέξτε ένα από το διάλογο επιλογών του PDF Download!">
-<!ENTITY pdfdownload.about.Title "Περί PDF Download από την Nitro PDF Software">
+<!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "Μετατροπή ιστοσελίδας σε PDF">
+<!ENTITY pdfdownload.webtopdf.outputSettings "Ρυθμίσεις εξόδου PDF">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.label "Προσανατολισμός σελίδας:">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "Κατακόρυφος">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "Οριζόντιος">
+<!ENTITY pdfdownload.webtopdf.margins.label "Περιθώρια:">
+<!ENTITY pdfdownload.webtopdf.margins.inches "σε">
+<!ENTITY pdfdownload.webtopdf.margins.top "Πάνω:">
+<!ENTITY pdfdownload.webtopdf.margins.bottom "Κάτω:">
+<!ENTITY pdfdownload.webtopdf.margins.left "Αριστερά:">
+<!ENTITY pdfdownload.webtopdf.margins.right "Δεξιά:">
+<!ENTITY pdfdownload.webtopdf.defaulAction "Αρχική ενέργεια">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly "Αποθήκευση ιστοσελίδας ως PDF">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "Μετατροπή ιστοσελίδας σε PDF και λήψη της μετά.">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "Αποθήκευση σελίδας ως PDF...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "θ">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "Α">
+<!ENTITY pdfdownload.webtopdf.action.askEmail "Ερώτηση για διεύθυνση ηλεκτρονικού ταχυδρομείου">
+<!ENTITY pdfdownload.webtopdf.action.sendEmail "Αποστολή πάντα στη διεύθυνση:">
+<!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "Να γίνεται πάντα ερώτηση για διεύθυνση">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "Αποστολή ιστοσελίδας ως PDF μέσω ηλεκτρονικού ταχυδρομείου">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "Μετατροπή σελίδας σε PDF και επισύναψη σε μήνυμα ηλεκτρονικού ταχυδρομείου">
+<!ENTITY pdfdownload.webtopdf.options "Επιλογές...">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "Προσαρμόστε τη λειτουργία του PDF Download">
+<!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "Εισάγετε διεύθυνση ηλεκτρονικού ταχυδρομείου. Η τρέχουσα ιστοσελίδα θα μετατραπεί σε PDF και θα σας αποσταλεί ως συνημμένο σε μήνυμα ηλεκτρονικού ταχυδρομείου.">
+<!ENTITY pdfdownload.help "Βοήθεια PDF Download">
+<!ENTITY pdfdownload.help.tooltip "Βρείτε βοήθεια σχετικά με τη λειτουργία του PDF Download.">
+<!ENTITY pdfdownload.osWarningMsg "Το PDF Download δεν μπορεί να εντοπίσει το προεπιλεγμένο πρόγραμμα ανάγνωσης αρχείων PDF. Παρακαλούμε επιλέξτε ένα από το διάλογο επιλογών του PDF Download.">
+<!ENTITY pdfdownload.about.Title "Περί PDF Download από τη Nitro PDF Software">
 <!ENTITY pdfdownload.about.width "70ex">
 <!ENTITY pdfdownload.websiteTooltip "Προβολή ιστοσελίδας δημιουργού">
 <!ENTITY pdfdownload.moreInfo "Περισσότερες λεπτομέρειες:">
@@ -18,14 +45,16 @@
 <!ENTITY pdfdownload.changelog "Ιστορικό μετατροπών">
 <!ENTITY pdfdownload.acknowledgments "Αναγνώριση">
 <!ENTITY pdfdownload.siteListTitle "Εξαιρέσεις">
-<!ENTITY pdfdownload.options.Title "Επιλογές PDF Download από την Nitro PDF Software">
+<!ENTITY pdfdownload.options.Title "Επιλογές - PDF Download">
 <!ENTITY pdfdownload.optionsGeneralTab "Γενικά">
 <!ENTITY pdfdownload.optionsPDFTab "Άνοιγμα PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Μετατροπή PDF σε HTML">
+<!ENTITY pdfdownload.options.WebToPDFTab "Απ&apos; τον ιστό σε PDF">
 <!ENTITY pdfdownload.options.UpdatesTab "Δωρεάν ενημερώσεις">
 <!ENTITY pdfdownload.options.CompanyTab "Περί Nitro PDF Software">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Μενού εργαλείων">
+<!ENTITY pdfdownload.optionsToggleFirefoxMenus "Μενού του Firefox">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Προβολή του PDF Download στο μενού εργαλείων του Firefox">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "Προβολή του «Αποθήκευση σελίδας ως PDF...» στο μενού «Αρχείο»">
 <!ENTITY pdfdownload.optionsTooltips "Συμβουλές εργαλείων">
 <!ENTITY pdfdownload.optionsShowTooltips "Προβολή συμβουλών εργαλείων στον διάλογο">
 <!ENTITY pdfdownload.optionsOpenLink "Οι δεσμοί PDF θα ανοίγουν με το πρόσθετο πρόγραμμα του Firefox:">
@@ -54,7 +83,7 @@
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Οι εικόνες θα διαγράφούν αυτόματα μετά από μια ημέρα.">
 <!ENTITY pdfdownload.options.CompanyInformation "Πληροφορίες εταιρίας">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
-<!ENTITY pdfdownload.options.nitroDescription "Το PDF Download είαι ένα δωρεάν προϊόν της Nitro PDF Software. Η Nitro PDF Software δημιούργησε το πραγματικό εναλλακτικό πρόγραμμα για το Adobe&#174; Acrobat&#174;,το Nitro PDF Professional. Το Nitro PDF Professional σας επιτρέπει να δημιουργήσετε, να μετατρέψετε, να επεξεργαστείτε, να διασφαλίσετε και γενικά να εργαστείτε με PDF αρχεία.">
+<!ENTITY pdfdownload.options.nitroDescription "Το PDF Download είαι ένα δωρεάν προϊόν της Nitro PDF Software. Η Nitro PDF Software δημιούργησε το πραγματικό εναλλακτικό πρόγραμμα για το Adobe® Acrobat®,το Nitro PDF Professional. Το Nitro PDF Professional σας επιτρέπει να δημιουργήσετε, να μετατρέψετε, να επεξεργαστείτε, να διασφαλίσετε και γενικά να εργαστείτε με PDF αρχεία.">
 <!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
 <!ENTITY pdfdownload.options.tryNitroPDFProfessional "Δοκιμάστε το Nitro PDF Professional -">
 <!ENTITY pdfdownload.options.free14dayTrial "δωρεάν δοκιμαστική έκδοση 14 ημερών.">

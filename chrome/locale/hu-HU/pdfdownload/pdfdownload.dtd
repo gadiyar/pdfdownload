@@ -7,6 +7,33 @@
 <!ENTITY pdfdownload.viewHtmlButton "Megjelenítés HTML-ként">
 <!ENTITY pdfdownload.openWithoutExtension "PDF Download megkerülése">
 <!ENTITY pdfdownload.cancelButton "Mégse">
+<!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "Weboldal konvertálása PDF fájlra">
+<!ENTITY pdfdownload.webtopdf.outputSettings "A létrehozott PDF fájl beállításai">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.label "Oldal orientáció:">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "Álló">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "Fekvő">
+<!ENTITY pdfdownload.webtopdf.margins.label "Szegélyek:">
+<!ENTITY pdfdownload.webtopdf.margins.inches "inch">
+<!ENTITY pdfdownload.webtopdf.margins.top "Felül:">
+<!ENTITY pdfdownload.webtopdf.margins.bottom "Alul:">
+<!ENTITY pdfdownload.webtopdf.margins.left "Balra:">
+<!ENTITY pdfdownload.webtopdf.margins.right "Jobbra:">
+<!ENTITY pdfdownload.webtopdf.defaulAction "Alapértelmezett művelet">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly "Oldal mentése PDF-ként">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "Oldal konvertálása PDF fájlba és letöltése">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "Oldal mentése PDF-ként...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "P">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "D">
+<!ENTITY pdfdownload.webtopdf.action.askEmail "Rákérdezés az email címre">
+<!ENTITY pdfdownload.webtopdf.action.sendEmail "Email küldése az alábbi címre:">
+<!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "Rákérdezés az email címre mindig">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "Oldal küldése PDF-ként emailben">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "Oldal PDF fájlba történő convertálása és hozzáadása mint email melléklet">
+<!ENTITY pdfdownload.webtopdf.options "Beállítások...">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "A PDF Download működésének testreszabása">
+<!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "A címzett email címének megadása. A jelenlegi weboldal konvertálása PDF fájlba és elküldése mint email melléklete.">
+<!ENTITY pdfdownload.help "PDF Download súgó">
+<!ENTITY pdfdownload.help.tooltip "A PDF Download súgójának megjelenítése">
 <!ENTITY pdfdownload.osWarningMsg "A PDF Download nem találja a PDF fájl olvasásához alapértelmezettként megadott alkalmazást. Kérem, válassza ki a PDF Download beállításainak párbeszédablakából!">
 <!ENTITY pdfdownload.about.Title "PDF Download (Nitro PDF Software) névjegye">
 <!ENTITY pdfdownload.about.width "55ex">
@@ -22,27 +49,29 @@
 <!ENTITY pdfdownload.optionsGeneralTab "Általános">
 <!ENTITY pdfdownload.optionsPDFTab "Megnyitás">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF -&gt; HTML">
-<!ENTITY pdfdownload.options.UpdatesTab "Szabad frissítések">
-<!ENTITY pdfdownload.options.CompanyTab "Nitro PDF Software">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Eszközök menü">
+<!ENTITY pdfdownload.options.WebToPDFTab "Web -&gt; PDF">
+<!ENTITY pdfdownload.options.UpdatesTab "Frissítések">
+<!ENTITY pdfdownload.options.CompanyTab "Névjegy">
+<!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefox menük">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "A PDF Download menüpont megjelenítése az Eszközök menüben">
-<!ENTITY pdfdownload.optionsTooltips "Buboréksúgó (Tooltipp)">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "Az &apos;Oldal mentése mint PDF...&apos; menüpont megjelenítése a Fájl menüben">
+<!ENTITY pdfdownload.optionsTooltips "Buboréksúgó">
 <!ENTITY pdfdownload.optionsShowTooltips "Buboréksúgó megjelenítése a párbeszédablakban">
-<!ENTITY pdfdownload.optionsOpenLink "PDF linkek megnyitásának módja a Firefox beépülőjének segítségével:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "A PDF fájlok HTML változatának megnyitása:">
-<!ENTITY pdfdownload.optionsSameTab "A jelenlegi lapon">
+<!ENTITY pdfdownload.optionsOpenLink "PDF linkek megnyitása a Firefox beépülőjének segítségével:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "A PDF fájlok HTML konverziójának megnyitása:">
+<!ENTITY pdfdownload.optionsSameTab "Jelenlegi lapon">
 <!ENTITY pdfdownload.optionsNewTab "Új lapon">
 <!ENTITY pdfdownload.optionsNewWindow "Új ablakban">
 <!ENTITY pdfdownload.optionsOpenPdf "PDF fájlok megnyitása:">
 <!ENTITY pdfdownload.optionsUsePlugin "A Firefox alapértelmezett műveletének végrehajtása">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Az operációs redszer alapértelmezett műveletének végrehajtása">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Az operációs rendszer alapértelmezett műveletének végrehajtása">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Más alkalmazás használata:">
 <!ENTITY pdfdownload.optionsBrowse "Tallózás...">
 <!ENTITY pdfdownload.optionsBrowseTitle "Alkalmazás kiválasztása a PDF fájlok megnyitásához">
 <!ENTITY pdfdownload.optionsExeFiles "Alkalmazások">
 <!ENTITY pdfdownload.optionsAllFiles "Összes fájl">
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "A kiválaszott fájl nem indítható alkalmazásként!">
-<!ENTITY pdfdownload.optionsUpdateLabel "Frissítés">
+<!ENTITY pdfdownload.optionsUpdateLabel "Telepített változat">
 <!ENTITY pdfdownload.optionsCheckUpdates "Frissítések keresése...">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Képek">
 <!ENTITY pdfdownload.options.width "80ex">
@@ -57,7 +86,7 @@
 <!ENTITY pdfdownload.options.nitroDescription "A PDF Download a Nitro PDF Software csoport szabadon használható terméke. A Nitro PDF Software elkészítette az Adobe® Acrobat® első valódi alternatíváját, a Nitro PDF Professional alkalmazást. A Nitro PDF Professional segít Önnek a PDF fájlokkal kapcsolatos műveletekben (létrehozás, konverzió, szerkesztés, kezelés) és a PDF fájlok biztonságossá tételében.">
 <!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
 <!ENTITY pdfdownload.options.tryNitroPDFProfessional "Nitro PDF Professional –">
-<!ENTITY pdfdownload.options.free14dayTrial "14 napos változat.">
+<!ENTITY pdfdownload.options.free14dayTrial "14 napos változat">
 <!ENTITY pdfdownload.tooltip.downloadButton "A PDF fájl letöltése. Ha van alapértelmezett mappa kijelölve a mentésre, akkor oda töltődik le, máskülönben meg kell adnia egy mappát, ahova a fájl mentésre kerül.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "A PDF fájl megnyitása. A kiterjesztés beállításaitól függően a fájl a Firefoxban PDF modullal (telepítve kell lennie), alapértelmezett PDF fájl alkalmazással, vagy a megadott program segítségével lesz megnyitva.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "A PDF fájl megjelenítése HTML fájlként. A PDF fájl egy külső szerverre lesz feltöltve és konvertálva HTML fájlra. A művelet után automatikusan törlődik a szerverről.">

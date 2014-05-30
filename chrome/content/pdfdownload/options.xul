@@ -61,10 +61,13 @@
 			<preference id="pd_showToolsMenuItem"
 				name="extensions.pdfdownload.showToolsMenuItem"
 				type="bool"/>
+			<preference id="pd_showFileMenuItem"
+				name="extensions.pdfdownload.showFileMenuItem"
+				type="bool"/>
 		</preferences>
 
-		<groupbox class="box-inset">
-			<caption label="&pdfdownload.defaultActionLabel;" class="rounded outset"/>
+		<groupbox>
+			<caption label="&pdfdownload.defaultActionLabel;"/>
 				<radiogroup preference="pd_defaultAction" orient="horizontal">
 					<vbox>
 						<radio label="&pdfdownload.showPopup;" value="showPopup"/>
@@ -76,13 +79,14 @@
 					</vbox>					
 				</radiogroup>
 		</groupbox>
-		<groupbox class="box-inset">
-			<caption label="&pdfdownload.optionsTooltips;" class="rounded outset"/>
+		<groupbox>
+			<caption label="&pdfdownload.optionsTooltips;"/>
 			<checkbox id="showTooltips" label="&pdfdownload.optionsShowTooltips;" preference="pd_showTooltips"/>
 		</groupbox>
-		<groupbox class="box-inset">
-			<caption label="&pdfdownload.optionsToggleItemToolsMenu;" class="rounded outset"/>
+		<groupbox>
+			<caption label="&pdfdownload.optionsToggleFirefoxMenus;"/>
 			<checkbox id="showItemTools" label="&pdfdownload.optionsShowItemToolsMenu;" preference="pd_showToolsMenuItem"/>
+			<checkbox id="showFileMenu" label="&pdfdownload.optionsShowItemFileMenu;" preference="pd_showFileMenuItem"/>			
 		</groupbox>
 	</prefpane>
 
@@ -100,8 +104,8 @@
 				type="string"/>
 		</preferences>
 
-		<groupbox class="box-inset">
-			<caption label="&pdfdownload.optionsOpenPdf;" class="rounded outset"/>
+		<groupbox>
+			<caption label="&pdfdownload.optionsOpenPdf;"/>
 			<radiogroup id="pdfdownload-openPDF" preference="pd_openPDF">
 				<radio id="usePlugin" label="&pdfdownload.optionsUsePlugin;" value="usePlugin" />
 				<radio id="defaultViewer" label="&pdfdownload.optionsUseDefaultProgram;" value="defaultViewer"/>
@@ -114,8 +118,8 @@
 				</hbox>
 			</radiogroup>
 		</groupbox>
-		<groupbox class="box-inset">
-			<caption label="&pdfdownload.optionsOpenLink;" class="rounded outset"/>
+		<groupbox>
+			<caption label="&pdfdownload.optionsOpenLink;"/>
 			<radiogroup id="pdfdownload-openPDFLink" preference="pd_openPDFLink">
 				<radio id="openPDFSameTab" label="&pdfdownload.optionsSameTab;" value="openPDFSameTab"/>
 				<radio id="openPDFNewTab"	label="&pdfdownload.optionsNewTab;" value="openPDFNewTab"/>
@@ -135,16 +139,16 @@
 				type="bool"/>
 		</preferences>
 
-		<groupbox class="box-inset">
-			<caption label="&pdfdownload.optionsOpenPDFtoHTML;" class="rounded outset"/>
+		<groupbox>
+			<caption label="&pdfdownload.optionsOpenPDFtoHTML;"/>
 			<radiogroup id="pdfdownload-openPDFtoHTML" preference="pd_openPDFtoHTML">
 						<radio id="openHTMLSameTab" label="&pdfdownload.optionsSameTab;" value="openHTMLSameTab"/>
 						<radio id="openHTMLNewTab"	label="&pdfdownload.optionsNewTab;" value="openHTMLNewTab"/>
 				<radio id="openHTMLNewWindow" label="&pdfdownload.optionsNewWindow;" value="openHTMLNewWindow"/>
 			</radiogroup>
 		</groupbox>
-		<groupbox class="box-inset">
-			<caption label="&pdfdownload.imagesIntoTheHTMLVersion;" class="rounded outset"/>
+		<groupbox>
+			<caption label="&pdfdownload.imagesIntoTheHTMLVersion;"/>
 			<vbox>
 				<checkbox id="showImagesInHTML" label="&pdfdownload.optionsShowImagesInHTML;" preference="pd_imagesInHTML"/>
 				<spacer style="height: 10px"/>
@@ -153,12 +157,51 @@
 			</vbox>
 		</groupbox>
 	</prefpane>
+	
+	<prefpane id="optionsWebToPDFPane" label="&pdfdownload.options.WebToPDFTab;">
+
+		<preferences>
+			<preference id="pd_webToPDF_orientation"
+				name="extensions.pdfdownload.webToPDF.pageOrientation"
+				type="string"/>
+			<preference id="pd_webToPDF_action"
+				name="extensions.pdfdownload.webToPDF.action"
+				type="string"/>
+			<preference id="pd_webToPDF_emailAddress"
+				name="extensions.pdfdownload.webToPDF.emailAddress"
+				type="string"/>
+		</preferences>
+
+		<groupbox>
+			<caption label="&pdfdownload.webtopdf.outputSettings;"/>
+			<hbox align="center">
+                    <label value="&pdfdownload.webtopdf.pageOrientation.label;"/>
+					     <radiogroup preference="pd_webToPDF_orientation" orient="horizontal">
+							<radio label="&pdfdownload.webtopdf.pageOrientation.portrait;" value="0"/>
+							<radio label="&pdfdownload.webtopdf.pageOrientation.landscape;" value="1"/>
+					    </radiogroup>
+			</hbox>
+		</groupbox>
+		<groupbox>
+			<caption label="&pdfdownload.webtopdf.defaulAction;"/>
+			<radiogroup id="webToPdfAction" preference="pd_webToPDF_action">
+				<radio label="&pdfdownload.webtopdf.action.downloadDirectly;" value="download"/>
+				<radio label="&pdfdownload.webtopdf.action.askEmail;" value="askEmail"/>
+				<hbox>
+					<radio id="sendEmailRadio" label="&pdfdownload.webtopdf.action.sendEmail;" value="sendEmail"/><textbox size="40" id="emailAddress" preference="pd_webToPDF_emailAddress" preference-editable="true" onfocus='enableSendEmail()' onchange="checkEmail('emailAddress',true)"/>
+				</hbox>
+			</radiogroup>
+		</groupbox>
+	</prefpane>
+	
 
 	<prefpane id="UpdatesPane" label="&pdfdownload.options.UpdatesTab;">
-		<groupbox class="box-inset">
-			<caption label="&pdfdownload.optionsUpdateLabel;" class="rounded outset"/>
+		<preferences/>
+		
+		<groupbox>
+			<caption label="&pdfdownload.optionsUpdateLabel;"/>
 			<hbox>
-				<label value="PDF Download 1.0.1.2"/>
+				<label value="PDF Download 2.0.0.0"/>
 				<spacer flex="1"/>
 				<button label="&pdfdownload.optionsCheckUpdates;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');"/>
 			</hbox>
@@ -166,8 +209,10 @@
 	</prefpane>
 
 	<prefpane id="CompanyPane" label="&pdfdownload.options.CompanyTab;">
-		<groupbox class="box-inset">
-			<caption label="&pdfdownload.options.CompanyInformation;" class="rounded outset"/>
+		<preferences/>
+		
+		<groupbox>
+			<caption label="&pdfdownload.options.CompanyInformation;"/>
 			<grid flex="1">
 				<columns>
 					<spacer style="width: .83ex"/>
@@ -201,7 +246,6 @@
 	  <vbox flex="1">
 	  	<hbox align="center">
 	  	  <spacer width="6"/>
-	      <image class="box-padded1"/>
 		  	<text style="margin-left: 5px;" value="&pdfdownload.options.tryNitroPDFProfessional;"/><text onclick="pdfDownloadShared.openURL('http://www.nitropdf.com/professional/trial.asp', '_blank')"  class="link-trial" value="&pdfdownload.options.free14dayTrial;"/>
 	      <spacer flex="1"/>
 	      <button dlgtype="accept" id="myAccept"/>
@@ -212,7 +256,6 @@
 	  </vbox>
 
 
-	<stringbundle id="strings" src="chrome://pdfdownload/locale/pdfdownload.properties"/>
 	<script type="application/x-javascript" src="chrome://pdfdownload/content/options.js"/>
 	<script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
 

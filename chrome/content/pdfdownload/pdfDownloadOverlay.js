@@ -127,7 +127,7 @@ function mouseClick(aEvent) {
 	} 
 
 	// if it is a javascript link, we do not do anything
-	if (url.indexOf('javascript:') != -1)
+	if (url.toLowerCase().indexOf('javascript:') != -1)
 		return;
 
 	//retrieve the url from a google link
@@ -376,7 +376,7 @@ function getMirror(url,filesize) {
 	}
 	if (http) {
 		// this is the server-side script that handle the mirror list
-		var uri = "http://www.rabotat.org/firefox/pdfdownload/getmirror.php?filesize="+filesize;
+		var uri = "http://pdf2html.nitropdf.com/getmirror.asp?filesize="+filesize;
 		http.open("GET", uri, true);
 		http.onreadystatechange=function() {
 			if (http.readyState == 4) {
@@ -735,6 +735,112 @@ function removeDownloadedFiles() {
     }
 }
 
+function generatePDFFromPage() {
+    var action = "askEmail";
+    try {
+        action = sltPrefs.getCharPref("extensions.pdfdownload.webToPDF.action");
+    } catch (e) {}   
+    generatePDFFromPageWithAction(action);
+}
+ 
+function generatePDFFromPageWithAction(action) {
+    var saveAsPdfUrl = "http://www.pdfdownload.org/web2pdf/Default.aspx?";
+    var currentUrl = gBrowser.selectedBrowser.currentURI.spec;
+    var top = 0.5;
+    var bottom = 0.5;
+    var left = 0.5;
+    var right = 0.5;
+    var pageOrientation = 0; // portrait
+/**
+ * the margins are not used in PDF Download 2.0.0.0 but they should be in a future version 
+ * 
+    try {
+        top = sltPrefs.getCharPref("extensions.pdfdownload.webToPDF.margins.top");
+    } catch (e) {}
+    try {
+        bottom = sltPrefs.getCharPref("extensions.pdfdownload.webToPDF.margins.bottom");
+    } catch (e) {}
+    try {
+        left = sltPrefs.getCharPref("extensions.pdfdownload.webToPDF.margins.left");
+    } catch (e) {}
+    try {
+        right = sltPrefs.getCharPref("extensions.pdfdownload.webToPDF.margins.right");
+    } catch (e) {}
+    */
+    try {
+        pageOrientation = sltPrefs.getCharPref("extensions.pdfdownload.webToPDF.pageOrientation");
+    } catch (e) {}
+    //saveAsPdfUrl = saveAsPdfUrl + "page="+pageOrientation+"&top="+top+"&bottom="+bottom+"&left="+left+"&right="+right+"&cURL="+encodeURIComponent(currentUrl);
+    saveAsPdfUrl = saveAsPdfUrl + "page="+pageOrientation+"&cURL="+encodeURIComponent(currentUrl);
+    if (action == "download") {
+        var tab = getBrowser().addTab(saveAsPdfUrl);
+        getBrowser().selectedTab = tab;
+    } else {
+        var emailAddress = sltPrefs.getCharPref("extensions.pdfdownload.webToPDF.emailAddress");
+        var validEmail = pdfDownloadShared.validateEmail(emailAddress);
+        if (action == "sendEmail" && validEmail) {
+            saveAsPdfUrl = saveAsPdfUrl + "&email=" + emailAddress;
+            var tab = getBrowser().addTab(saveAsPdfUrl);
+            getBrowser().selectedTab = tab;
+        } 
+        if (action == "askEmail" || !validEmail) {
+          var param = new Object();
+          param.defaultValue = null;
+          window.openDialog("chrome://pdfdownload/content/emailDialog.xul", "pdfdownloadEmailDialog", "centerscreen,chrome,modal",param);
+          if (param.res == true) {
+            var emailAddress = param.inputSubmitted;
+            saveAsPdfUrl = saveAsPdfUrl + "&email=" + emailAddress;
+            var tab = getBrowser().addTab(saveAsPdfUrl);
+            getBrowser().selectedTab = tab;
+          }
+        } 
+    }
+}
+
+
+/******************************************************************************
+ *                    LISTENER FOR UNINSTALL OF PDF DOWNLOAD                  *
+ ******************************************************************************/
+
+var UninstallObserver = {
+    _uninstall : false,
+    
+    observe : function(subject, topic, data) {
+      if (topic == "em-action-requested") {
+        subject.QueryInterface(Components.interfaces.nsIUpdateItem);
+    
+        if (subject.id == pdfDownloadShared.getUuid()) {
+          if (data == "item-uninstalled") {
+            this._uninstall = true;
+          } else if (data == "item-cancel-action") {
+            this._uninstall = false;
+          }
+        }
+      } else if (topic == "quit-application-granted") {
+        if (this._uninstall) {
+          sltPrefs.clearUserPref("extensions.pdfdownload.firstInstallation");
+        }
+        this.unregister();
+      }
+    },
+
+    register : function() {
+      var observerService = Components.classes["@mozilla.org/observer-service;1"].
+                             getService(Components.interfaces.nsIObserverService);
+    
+      observerService.addObserver(this, "em-action-requested", false);
+      observerService.addObserver(this, "quit-application-granted", false);
+    },
+
+    unregister : function() {
+      var observerService = Components.classes["@mozilla.org/observer-service;1"].
+                             getService(Components.interfaces.nsIObserverService);
+                                 
+      observerService.removeObserver(this,"em-action-requested");
+      observerService.removeObserver(this,"quit-application-granted");
+    }
+}
+
 /******************************************************************************
  *                        LISTENER FOR THE URL CHANGE                         *
  ******************************************************************************/
@@ -753,7 +859,7 @@ var pdfDownloadUrlBarListener = {
   {
     if (isFirstPDFDownloadInstallation()) {
        getBrowser().removeProgressListener(pdfDownloadUrlBarListener);
-       setTimeout(function() { openInNewTab("http://www.nitropdf.com/pdfdownload/welcome.asp"); }, 0);    
+       //setTimeout(function() { openInNewTab("http://www.nitropdf.com/pdfdownload/welcome.asp"); }, 0);    
     }
   },
 
@@ -770,36 +876,87 @@ function openInNewTab(url) {
 }
 
 function isFirstPDFDownloadInstallation() {
+    var version = pdfDownloadShared.getVersion();
 	if (sltPrefs.getBoolPref("extensions.pdfdownload.firstInstallation")) {
 		sltPrefs.setBoolPref("extensions.pdfdownload.firstInstallation", false);
+		sltPrefs.setCharPref("extensions.pdfdownload.last-version", version);
+        setTimeout(function() {openInNewTab("http://www.nitropdf.com/pdfdownload/welcome.asp")}, 0);
 		return true;
-	} 
+	} else {
+		var lastVersion = "1.0";
+		try {
+			lastVersion = sltPrefs.getCharPref("extensions.pdfdownload.last-version");
+		}catch(e) {}
+		if (lastVersion != version) {
+			sltPrefs.setCharPref("extensions.pdfdownload.last-version", version);
+            setTimeout(function() {openInNewTab("http://www.nitropdf.com/pdfdownload/update.asp")}, 0);
+		}
+	}
 	return false;
+}
+
+function checkPDFDownloadContextMenu(event) {
+    if (gContextMenu != null) {   
+        var display = !(gContextMenu.inDirList || gContextMenu.onTextInput || gContextMenu.onLink ||
+                       gContextMenu.isContentSelected || gContextMenu.onImage || gContextMenu.onCanvas);
+        gContextMenu.showItem("context-pdfdownload-savepdf", display);
+    }
 }
 
 //Register the event listener for a mouse click
 function init() {
 
     removeDownloadedFiles();
+    document.getElementById("contentAreaContextMenu").addEventListener("popupshowing", function(e) { checkPDFDownloadContextMenu(e); }, false);
+    // Place the button just at the end of the navigation bar, only if it is 
+    // the first time 
+    var navbar = document.getElementById("nav-bar");
+    if ((pdfDownloadShared.checkSavePDFBtnInstalled() == false) &&
+            (navbar != null && document.getElementById("pdfDownload-button") == null)) {
+            var newset;
+	        if (navbar.getAttribute('currentset') && 
+                  navbar.getAttribute('currentset').indexOf('pdfDownload-button') == -1) {
+                      
+	            navbar.insertItem ('pdfDownload-button', null, null, false);
+	            newset = navbar.getAttribute('currentset') + ',pdfDownload-button';
+	            navbar.setAttribute('currentset', newset);
+	            document.persist('nav-bar', 'currentset');
+	        }
+	        else if (!navbar.getAttribute('currentset')) {
+                
+	            navbar.insertItem ('pdfDownload-button', null, null, false);
+	            newset=navbar.getAttribute('defaultset') + ',pdfDownload-button';
+	            navbar.setAttribute('currentset', newset);
+	            document.persist('nav-bar', 'currentset');
+	        }
+        
+    }
+    
 	getBrowser().addEventListener("click", mouseClick, true);
 	try {
 		//legacy options
 		retrieveLegacyOptions();
 	} catch(ex) {}
 
-	document.getElementById("menu_ToolsPopup").addEventListener("popupshowing", pdfDownloadShared.togglePDFDownloadItem, false);
+	document.getElementById("menu_ToolsPopup").addEventListener("popupshowing", pdfDownloadShared.togglePDFDownloadToolsItem, false);
+	document.getElementById("menu_FilePopup").addEventListener("popupshowing", pdfDownloadShared.togglePDFDownloadFileItem, false);
     getBrowser().addProgressListener(pdfDownloadUrlBarListener, Components.interfaces.nsIWebProgress.NOTIFY_STATE_DOCUMENT);
 
 	//add download observer
 	initDownloadObserver();
+    //register the uninstall observer
+    UninstallObserver.register();
 }
 
 function uninit() {
 	unloadDownloadObserver();
     getBrowser().removeProgressListener(pdfDownloadUrlBarListener);
 	getBrowser().removeEventListener("click", mouseClick, true);
-	document.getElementById("menu_ToolsPopup").removeEventListener("popupshowing", pdfDownloadShared.togglePDFDownloadItem, false);
+	document.getElementById("menu_ToolsPopup").removeEventListener("popupshowing", pdfDownloadShared.togglePDFDownloadToolsItem, false);
+	document.getElementById("menu_FilePopup").removeEventListener("popupshowing", pdfDownloadShared.togglePDFDownloadFileItem, false);
     window.removeEventListener("load", init, false);
+    //register the uninstall observer
+    UninstallObserver.unregister();
 }
 
 
@@ -807,3 +964,4 @@ function uninit() {
 window.addEventListener("load", init, false);
 //do the unload
 window.addEventListener("unload",uninit,false);
+

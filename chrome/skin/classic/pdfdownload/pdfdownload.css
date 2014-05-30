@@ -1,3 +1,10 @@
+#pdfDownload-button {
+  list-style-image: url("chrome://pdfdownload/skin/pdfdownload_24.png");
+}
+
+toolbar[iconsize="small"] #pdfDownload-button {
+  list-style-image: url("chrome://pdfdownload/skin/pdfdownload_16.png");
+}
 
 radio[pane] {
   list-style-image: url("chrome://pdfdownload/skin/options.png");
@@ -5,7 +12,7 @@ radio[pane] {
 
 radio[pane=generalPane] {
   -moz-image-region: rect(0px, 32px, 32px, 0px);
- }
+}
 
 radio[pane=generalPane]:hover, radio[pane=generalPane][selected="true"]  {
   -moz-image-region: rect(32px, 32px,  64px, 0px)
@@ -16,40 +23,43 @@ radio[pane=optionsPDFPane] {
 }
 
 radio[pane=optionsPDFPane]:hover, radio[pane=optionsPDFPane][selected="true"]  {
-  -moz-image-region: rect(32px, 64px,  64px, 32px)
+  -moz-image-region: rect(32px, 64px,  64px, 32px);
+}
+
+radio[pane=optionsWebToPDFPane] {
+  -moz-image-region: rect(0px, 128px, 32px, 96px);
+}
+
+radio[pane=optionsWebToPDFPane]:hover, radio[pane=optionsWebToPDFPane][selected="true"]  {
+  -moz-image-region: rect(32px, 128px,  64px, 96px)
 }
 
 radio[pane=optionsHTMLPane] {
   -moz-image-region: rect(0px, 96px, 32px, 64px);
- }
+}
 
 radio[pane=optionsHTMLPane]:hover, radio[pane=optionsHTMLPane][selected="true"]  {
   -moz-image-region: rect(32px, 96px,  64px, 64px)
 }
 
 radio[pane=UpdatesPane] {
-  -moz-image-region: rect(0px, 128px, 32px, 96px);
+  -moz-image-region: rect(0px, 160px, 32px, 128px);
 }
 
 radio[pane=UpdatesPane]:hover, radio[pane=UpdatesPane][selected="true"]  {
-  -moz-image-region: rect(32px, 128px,  64px, 96px)
+  -moz-image-region: rect(32px, 160px,  64px, 128px)
 }
 
 radio[pane=CompanyPane] {
-  -moz-image-region: rect(0px, 160px, 32px, 128px);
+  -moz-image-region: rect(0px, 192px, 32px, 160px);
  }
 
 radio[pane=CompanyPane]:hover, radio[pane=CompanyPane][selected="true"]  {
-  -moz-image-region: rect(32px, 160px,  64px, 128px)
+  -moz-image-region: rect(32px, 192px,  64px, 160px)
 }
 
 .box-padded {
   list-style-image: url("chrome://pdfdownload/skin/nitropdfsoftware_logo.png");
-}
-
-.box-padded1 {
-  list-style-image: url("chrome://pdfdownload/skin/options.png");
-  -moz-image-region: rect(32px, 160px,  64px, 128px)
 }
 
 #myButtons {
@@ -78,7 +88,7 @@ radio[pane=CompanyPane]:hover, radio[pane=CompanyPane][selected="true"]  {
 }
 
 .rounded {
-	background-color: rgb(255,255,255);
+    background-color: rgb(255,255,255);
 	-moz-border-radius: 3ex;
 	padding-bottom: .4ex;
 }

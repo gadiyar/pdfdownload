@@ -5,9 +5,36 @@
 <!ENTITY pdfdownload.downloadButton "下載">
 <!ENTITY pdfdownload.openButton "開啟PDF">
 <!ENTITY pdfdownload.viewHtmlButton "以HTML檢視">
-<!ENTITY pdfdownload.openWithoutExtension "跳過PDF Download">
+<!ENTITY pdfdownload.openWithoutExtension "略過PDF Download">
 <!ENTITY pdfdownload.cancelButton "取消">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download找不到您預設的PDF閱讀軟體。請在選項的視窗中指定一個！">
+<!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "轉換網頁成PDF">
+<!ENTITY pdfdownload.webtopdf.outputSettings "PDF輸出設定">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.label "頁面方向:">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "直向">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "橫向">
+<!ENTITY pdfdownload.webtopdf.margins.label "邊界:">
+<!ENTITY pdfdownload.webtopdf.margins.inches "in">
+<!ENTITY pdfdownload.webtopdf.margins.top "上:">
+<!ENTITY pdfdownload.webtopdf.margins.bottom "下:">
+<!ENTITY pdfdownload.webtopdf.margins.left "左:">
+<!ENTITY pdfdownload.webtopdf.margins.right "右:">
+<!ENTITY pdfdownload.webtopdf.defaulAction "預設值">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly "儲存網頁為PDF">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "轉換網頁成PDF，然後下載">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "儲存頁面為PDF...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "D">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "F">
+<!ENTITY pdfdownload.webtopdf.action.askEmail "提示輸入電郵地址">
+<!ENTITY pdfdownload.webtopdf.action.sendEmail "所有電郵寄到:">
+<!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "每次都提示輸入電郵地址">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "將PDF版本的網頁發送到電郵">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "轉換網頁成PDF，然後將PDF檔案附上電郵上">
+<!ENTITY pdfdownload.webtopdf.options "設定...">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "設定 PDF Download 如何運作">
+<!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "輸入要發送的電郵地址。本頁將會轉換為PDF，上傳到電郵的附件並發送給您。">
+<!ENTITY pdfdownload.help "PDF Download 說明">
+<!ENTITY pdfdownload.help.tooltip "取得 PDF Download 的使用方法">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download找不到預設的PDF閱讀軟體。請在選項視窗中指定一個！">
 <!ENTITY pdfdownload.about.Title "PDF Download by Nitro PDF Software - 關於">
 <!ENTITY pdfdownload.about.width "55ex">
 <!ENTITY pdfdownload.websiteTooltip "檢視作者的網站">
@@ -22,10 +49,12 @@
 <!ENTITY pdfdownload.optionsGeneralTab "一般">
 <!ENTITY pdfdownload.optionsPDFTab "開啟PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF轉換成HTML">
+<!ENTITY pdfdownload.options.WebToPDFTab "頁面轉換成PDF">
 <!ENTITY pdfdownload.options.UpdatesTab "免費更新">
 <!ENTITY pdfdownload.options.CompanyTab "關於 Nitro PDF Software">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "工具選單">
+<!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefox 菜單">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "在Firefox的工具選單中顯示PDF Download">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "在&apos;檔案&apos;菜單顯示 &apos;儲存頁面為PDF...&apos;">
 <!ENTITY pdfdownload.optionsTooltips "工具提示">
 <!ENTITY pdfdownload.optionsShowTooltips "在對話框顯示工具提示">
 <!ENTITY pdfdownload.optionsOpenLink "如何使用Firefox的PDF外掛來開啟PDF檔的連結：">
@@ -54,7 +83,7 @@
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "這些圖片在一天之後就會被移除。">
 <!ENTITY pdfdownload.options.CompanyInformation "公司資料">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
-<!ENTITY pdfdownload.options.nitroDescription "PDF Download 是一個免費軟件，由 Nitro PDF Software team 製作。Nitro PDF Software 製作首個真正代替到Adobe&#174; Acrobat&#174; 的軟件，Nitro PDF Professional。Nitro PDF Professional可以讓你自由建立，轉換，修改，加密，控管，合作 PDF。">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download 是一個免費軟件，由 Nitro PDF Software team 製作。Nitro PDF Software 製作首個真正代替到Adobe® Acrobat® 的軟件，Nitro PDF Professional。Nitro PDF Professional可以讓你自由建立，轉換，修改，加密，控管，合作 PDF。">
 <!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
 <!ENTITY pdfdownload.options.tryNitroPDFProfessional "試用 Nitro PDF Professional -">
 <!ENTITY pdfdownload.options.free14dayTrial "14 日免費版">

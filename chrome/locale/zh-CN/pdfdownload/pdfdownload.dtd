@@ -7,6 +7,33 @@
 <!ENTITY pdfdownload.viewHtmlButton "以 HTML 方式查看该文件">
 <!ENTITY pdfdownload.openWithoutExtension "不使用 PDF Download 打开">
 <!ENTITY pdfdownload.cancelButton "取消">
+<!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "将网页转换为 PDF">
+<!ENTITY pdfdownload.webtopdf.outputSettings "PDF 输出设定">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.label "页面设置：">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "Portrait">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "Landscape">
+<!ENTITY pdfdownload.webtopdf.margins.label "页边距：">
+<!ENTITY pdfdownload.webtopdf.margins.inches "英寸">
+<!ENTITY pdfdownload.webtopdf.margins.top "顶部：">
+<!ENTITY pdfdownload.webtopdf.margins.bottom "底部：">
+<!ENTITY pdfdownload.webtopdf.margins.left "左侧：">
+<!ENTITY pdfdownload.webtopdf.margins.right "右侧：">
+<!ENTITY pdfdownload.webtopdf.defaulAction "默认动作">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly "网页另存为 PDF">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "将页面转换为 PDF 并下载。">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "网页另存为 PDF...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "D">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "F">
+<!ENTITY pdfdownload.webtopdf.action.askEmail "提示输入 email 地址">
+<!ENTITY pdfdownload.webtopdf.action.sendEmail "总是发送 email 到：">
+<!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "总是提示输入 email 地址">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "网页发送 email 为 PDF">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "将页面转换为 PDF 并添加到 email 进行发送。">
+<!ENTITY pdfdownload.webtopdf.options "选项...">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "自定义 PDF Download 的工作方式。">
+<!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "输入要发送到的 email 地址，然后当前页面将会转换为 PDF 文件并作为 email 的附件发送到您指定的地址。">
+<!ENTITY pdfdownload.help "PDF Download 帮助">
+<!ENTITY pdfdownload.help.tooltip "获取 PDF Download 使用方面的帮助。">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download 无法检测到您默认的 PDF 阅读器.请在 PDF Download 选项对话框中选择一个 PDF 阅读器!">
 <!ENTITY pdfdownload.about.Title "Nitro PDF Software 出品的 PDF Download - 关于">
 <!ENTITY pdfdownload.about.width "55ex">
@@ -22,10 +49,12 @@
 <!ENTITY pdfdownload.optionsGeneralTab "常规">
 <!ENTITY pdfdownload.optionsPDFTab "打开 PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF 转换到 HTML">
+<!ENTITY pdfdownload.options.WebToPDFTab "网页转换到 PDF">
 <!ENTITY pdfdownload.options.UpdatesTab "随意更新">
 <!ENTITY pdfdownload.options.CompanyTab "关于 Nitro PDF Software">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "工具菜单">
+<!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefox 菜单">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "在 Firefox 工具菜单显示 PDF Download 选项">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "在文件菜单下显示 &apos;网页另存为 PDF...&apos;">
 <!ENTITY pdfdownload.optionsTooltips "工具提示">
 <!ENTITY pdfdownload.optionsShowTooltips "在对话框显示工具提示">
 <!ENTITY pdfdownload.optionsOpenLink "如何使用 Firefox 的 PDF 插件打开 PDF 链接:">
@@ -54,7 +83,7 @@
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "这些图片将在一天之后自动删除。">
 <!ENTITY pdfdownload.options.CompanyInformation "公司信息">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software：">
-<!ENTITY pdfdownload.options.nitroDescription "PDF Download 是 Nitro PDF Software 小组出品的一款自由产品。Nitro PDF Software 曾出品过有别于 Adobe&#174; Acrobat&#174; 的第一款软件 Nitro PDF Professional，该软件允许您对 PDF 文件进行创建、转换、编辑、加密、操作以与其他人合作。">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download 是 Nitro PDF Software 小组出品的一款自由产品。Nitro PDF Software 曾出品过有别于 Adobe® Acrobat® 的第一款软件 Nitro PDF Professional，该软件允许您对 PDF 文件进行创建、转换、编辑、加密、操作以与其他人合作。">
 <!ENTITY pdfdownload.options.pdfDownload "PDF Download：">
 <!ENTITY pdfdownload.options.tryNitroPDFProfessional "试用 Nitro PDF Professional -">
 <!ENTITY pdfdownload.options.free14dayTrial "14 天免费试用。">

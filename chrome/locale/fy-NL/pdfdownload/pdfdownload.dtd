@@ -7,6 +7,33 @@
 <!ENTITY pdfdownload.viewHtmlButton "Besjoch as HTML">
 <!ENTITY pdfdownload.openWithoutExtension "PDF Download Oerslaan">
 <!ENTITY pdfdownload.cancelButton "Annulearje">
+<!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "Konvertearje weside nei PDF">
+<!ENTITY pdfdownload.webtopdf.outputSettings "PDF úterlik ynstellings">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.label "Side-oriintaasje">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "Steand">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "Lizzend">
+<!ENTITY pdfdownload.webtopdf.margins.label "Marges:">
+<!ENTITY pdfdownload.webtopdf.margins.inches "in">
+<!ENTITY pdfdownload.webtopdf.margins.top "Bopp:">
+<!ENTITY pdfdownload.webtopdf.margins.bottom "Under:">
+<!ENTITY pdfdownload.webtopdf.margins.left "Links:">
+<!ENTITY pdfdownload.webtopdf.margins.right "Rjochts:">
+<!ENTITY pdfdownload.webtopdf.defaulAction "Standert aksje">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly "Bewarje webside as PDF">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "Konvertearje side nei PDF en laad dan yn.">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "Bewarje side as PDF...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "D">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "F">
+<!ENTITY pdfdownload.webtopdf.action.askEmail "Freegje nei emailadres">
+<!ENTITY pdfdownload.webtopdf.action.sendEmail "Altyd emaile nei:">
+<!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "Altyd freegje om emailadres">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "Email webside as PDF">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "Konvertearje side nei PDF en heakje dan ta oan email.">
+<!ENTITY pdfdownload.webtopdf.options "Opsjes...">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "Jou oan hoe&apos;t jo de PDF ynlade wolle.">
+<!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "Jou emailadres. De aktuele webside sil konvertearre wurde nei PDF en nei jo tastjoert wurde as emailtaheaksel.">
+<!ENTITY pdfdownload.help "PDF ynlaadhelp">
+<!ENTITY pdfdownload.help.tooltip "Krij help foar it gebrûk fan PDF Download.">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download kin jo standert PDF lêzer net fine. Kies ien fan de PDF Download opsjes dialooch!">
 <!ENTITY pdfdownload.about.Title "PDF Download troch Nitro PDF Software - Oer">
 <!ENTITY pdfdownload.about.width "55ex">
@@ -22,10 +49,12 @@
 <!ENTITY pdfdownload.optionsGeneralTab "Algemien">
 <!ENTITY pdfdownload.optionsPDFTab "PDF wurdt iepene">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF nei HTML konverzje">
+<!ENTITY pdfdownload.options.WebToPDFTab "Web nei PDF">
 <!ENTITY pdfdownload.options.UpdatesTab "Fergese fernijings">
 <!ENTITY pdfdownload.options.CompanyTab "Oer Nitro PDF Software">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Arkmenu">
+<!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefox menu&apos;s">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Toan PDF Download ûnderdiel yn it Ekstra Firefox Menu">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "Toan &apos;Bewarje side as PDF...&apos; yn Bestânsmenu">
 <!ENTITY pdfdownload.optionsTooltips "Arktips">
 <!ENTITY pdfdownload.optionsShowTooltips "Toan arktips yn it dialoochfak">
 <!ENTITY pdfdownload.optionsOpenLink "Hoe PDF-keppelings iepenje mei de Firefox PDF-ynstekker:">
@@ -54,7 +83,7 @@
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "De ôfbyldings sille automatysk nei ien dei fuortsmiten wurde.">
 <!ENTITY pdfdownload.options.CompanyInformation "Bedriuwsynformaasje">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
-<!ENTITY pdfdownload.options.nitroDescription "PDF Download is in fergees produkt fan it Nitro PDF Software team. Nitro PDF Software makke it earste echte alternatief foar Adobe&#174; Acrobat&#174;, Nitro PDF Professional. Nitro PDF Professional lit jo meitsje, konfertearje, bewurkje, befeiligje, manipulearje en gearwurkje mei gebrûk fan PDF.">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download is in fergees produkt fan it Nitro PDF Software team. Nitro PDF Software makke it earste echte alternatief foar Adobe® Acrobat®, Nitro PDF Professional. Nitro PDF Professional lit jo meitsje, konfertearje, bewurkje, befeiligje, manipulearje en gearwurkje mei gebrûk fan PDF.">
 <!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
 <!ENTITY pdfdownload.options.tryNitroPDFProfessional "Probearje Nitro PDF Professional -">
 <!ENTITY pdfdownload.options.free14dayTrial "fergese 14-dagen proef.">

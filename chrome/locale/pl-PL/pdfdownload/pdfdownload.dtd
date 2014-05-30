@@ -7,6 +7,33 @@
 <!ENTITY pdfdownload.viewHtmlButton "Wyświetl w formacie HTML">
 <!ENTITY pdfdownload.openWithoutExtension "Otwórz standardowo">
 <!ENTITY pdfdownload.cancelButton "Anuluj">
+<!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "Konwertuj stronę do PDF">
+<!ENTITY pdfdownload.webtopdf.outputSettings "Ustawienia danych wyjściowych PDF">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.label "Orientacja strony:">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "Pionowa">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "Pozioma">
+<!ENTITY pdfdownload.webtopdf.margins.label "Marginesy:">
+<!ENTITY pdfdownload.webtopdf.margins.inches "w">
+<!ENTITY pdfdownload.webtopdf.margins.top "Górny:">
+<!ENTITY pdfdownload.webtopdf.margins.bottom "Dolny:">
+<!ENTITY pdfdownload.webtopdf.margins.left "Lewy:">
+<!ENTITY pdfdownload.webtopdf.margins.right "Prawy:">
+<!ENTITY pdfdownload.webtopdf.defaulAction "Domyślne działanie">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly "Zapisuj stronę jako PDF">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "Konwertuj stronę do PDF i pobierz">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "Zapisz stronę jako PDF...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "D">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "Z">
+<!ENTITY pdfdownload.webtopdf.action.askEmail "Proś o podanie adresu e-mail">
+<!ENTITY pdfdownload.webtopdf.action.sendEmail "Zawsze wysyłaj e-mail do:">
+<!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "Zawsze proś o podanie adresu e-mail">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "Wyślij stronę jako PDF">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "Konwertuj stronę do PDF i dołącz do e-maila">
+<!ENTITY pdfdownload.webtopdf.options "Opcje...">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "Konfiguruj działanie PDF Download">
+<!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "Wprowadź docelowy adres e-mail">
+<!ENTITY pdfdownload.help "PDF Download - pomoc">
+<!ENTITY pdfdownload.help.tooltip "Zobacz pomoc dla PDF Download">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download nie może znaleźć domyślnego czytnika plików PDF. Proszę wybrać czytnik w opcjach rozszerzenia.">
 <!ENTITY pdfdownload.about.Title "PDF Download - informacje">
 <!ENTITY pdfdownload.about.width "55ex">
@@ -22,14 +49,16 @@
 <!ENTITY pdfdownload.optionsGeneralTab "Ogólne">
 <!ENTITY pdfdownload.optionsPDFTab "Otwieranie">
 <!ENTITY pdfdownload.optionsHTMLTab "Konwersja">
+<!ENTITY pdfdownload.options.WebToPDFTab "Sieć a PDF">
 <!ENTITY pdfdownload.options.UpdatesTab "Aktualizacja">
 <!ENTITY pdfdownload.options.CompanyTab "Info">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Narzędzia">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "Wyświetl element &quot;PDF Download - opcje&quot; w menu &quot;Narzędzia&quot;">
+<!ENTITY pdfdownload.optionsToggleFirefoxMenus "Menu Firefoksa">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Wyświetlaj element &quot;PDF Download - opcje&quot; w menu &quot;Narzędzia&quot;">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "Wyświetlaj element &quot;Zapisz stronę jako PDF&quot; w menu &quot;Plik&quot;">
 <!ENTITY pdfdownload.optionsTooltips "Podpowiedzi">
 <!ENTITY pdfdownload.optionsShowTooltips "Wyświetlaj podpowiedzi w oknach dialogowych">
-<!ENTITY pdfdownload.optionsOpenLink "Odnośniki do plików PDF otwierane za pomocą wtyczki PDF otwórz w:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Pliki PDF skonwertowane do formatu HTML otwórz w:">
+<!ENTITY pdfdownload.optionsOpenLink "Odnośniki do plików PDF otwierane za pomocą wtyczki PDF otwieraj w:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Pliki PDF skonwertowane do formatu HTML otwieraj w:">
 <!ENTITY pdfdownload.optionsSameTab "aktywnej karcie">
 <!ENTITY pdfdownload.optionsNewTab "nowej karcie">
 <!ENTITY pdfdownload.optionsNewWindow "nowym oknie">
@@ -37,15 +66,15 @@
 <!ENTITY pdfdownload.optionsUsePlugin "Użyj wtyczki PDF Firefoksa">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Użyj domyślnego czytnika plików PDF systemu operacyjnego">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Użyj tego czytnika:">
-<!ENTITY pdfdownload.optionsBrowse "Szukaj">
+<!ENTITY pdfdownload.optionsBrowse "Przeglądaj">
 <!ENTITY pdfdownload.optionsBrowseTitle "Wybierz czytnik plików PDF">
 <!ENTITY pdfdownload.optionsExeFiles "Aplikacje Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Wszystkie pliki">
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Wybrany plik przeglądarki nie jest plikiem wykonywalnym!">
-<!ENTITY pdfdownload.optionsUpdateLabel "Aktualna wersja">
+<!ENTITY pdfdownload.optionsUpdateLabel "Zainstalowana wersja">
 <!ENTITY pdfdownload.optionsCheckUpdates "Sprawdź aktualizacje">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Grafiki">
-<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.width "75ex">
 <!ENTITY pdfdownload.options.height "55ex">
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.popup.title "PDF Download">
@@ -54,7 +83,7 @@
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Grafiki zostaną automatycznie usunięte po upływie jednego dnia">
 <!ENTITY pdfdownload.options.CompanyInformation "Informacje o firmie Nitro PDF Software">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
-<!ENTITY pdfdownload.options.nitroDescription "PDF Download jest darmowym oprogramowaniem wyprodukowanym przez zespół Nitro PDF Software. Nitro PDF Software stworzyło pierwszą, naprawdę alternatywną dla programu Adobe&#174; Acrobat&#174; aplikację. Nitro PDF Professional pozwala utworzyć, konwertować, edytować, współpracować i bezpiecznie manipulować plikami PDF.">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download jest darmowym oprogramowaniem wyprodukowanym przez zespół Nitro PDF Software. Nitro PDF Software stworzyło pierwszą, naprawdę alternatywną dla programu Adobe® Acrobat® aplikację. Nitro PDF Professional pozwala tworzyć, konwertować, edytować, współpracować i bezpiecznie manipulować plikami PDF.">
 <!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
 <!ENTITY pdfdownload.options.tryNitroPDFProfessional "Wypróbuj Nitro PDF Professional -">
 <!ENTITY pdfdownload.options.free14dayTrial "okres próbny 14 dni">

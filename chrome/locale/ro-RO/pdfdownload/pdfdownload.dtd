@@ -7,6 +7,33 @@
 <!ENTITY pdfdownload.viewHtmlButton "Vizualizare în format HTML">
 <!ENTITY pdfdownload.openWithoutExtension "Ignoră PDF Download">
 <!ENTITY pdfdownload.cancelButton "Renunţă">
+<!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "Convertire pagină Web către fişier PDF">
+<!ENTITY pdfdownload.webtopdf.outputSettings "">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.label "Orientare pagină:">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "Tip portret">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "Tip vedere">
+<!ENTITY pdfdownload.webtopdf.margins.label "Margini:">
+<!ENTITY pdfdownload.webtopdf.margins.inches "ţoli">
+<!ENTITY pdfdownload.webtopdf.margins.top "Sus:">
+<!ENTITY pdfdownload.webtopdf.margins.bottom "Jos:">
+<!ENTITY pdfdownload.webtopdf.margins.left "Stânga">
+<!ENTITY pdfdownload.webtopdf.margins.right "Dreapta:">
+<!ENTITY pdfdownload.webtopdf.defaulAction "Acţiune implicită">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly "Salvare pagină ca fişier PDF">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "Convertire pagină în fişier PDF şi apoi descărcare">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "Salvare pagină ca fişier PDF...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "D">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "F">
+<!ENTITY pdfdownload.webtopdf.action.askEmail "Adresă email:">
+<!ENTITY pdfdownload.webtopdf.action.sendEmail "Trimite întotdeauna la (email):">
+<!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "Cere întotdeauna adresă de email">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "Trimite prin email pagina ca fişier PDF">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "Convertire pagină în fişier PDF şi apoi trimitere">
+<!ENTITY pdfdownload.webtopdf.options "Preferinţe...">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "Particularizează felul în care extensia PDF Download funcţionează">
+<!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "Trimite adresa de destinaţie. Pagina curentă va fi convertită în fişier PDF şi apoi trimisă ca fişier ataşat unui email.">
+<!ENTITY pdfdownload.help "Ajutor PDF Download">
+<!ENTITY pdfdownload.help.tooltip "Ajutor online PDF Download.">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download nu găseşte programul implicit pentru fişiere PDF. Specificaţi un program în Opţiuni.">
 <!ENTITY pdfdownload.about.Title "Despre PDF Download, creat de Nitro PDF Software">
 <!ENTITY pdfdownload.about.width "55ex">
@@ -22,10 +49,12 @@
 <!ENTITY pdfdownload.optionsGeneralTab "General">
 <!ENTITY pdfdownload.optionsPDFTab "Deschidere fişiere PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Conversie din PDF în HTML">
+<!ENTITY pdfdownload.options.WebToPDFTab "Web către PDF">
 <!ENTITY pdfdownload.options.UpdatesTab "Actualizări gratuite">
 <!ENTITY pdfdownload.options.CompanyTab "Despre Nitro PDF Software">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Meniul Unelte">
+<!ENTITY pdfdownload.optionsToggleFirefoxMenus "Meniuri Firefox">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Arată intrare în meniul Unelte al navigatorului">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "Arată &apos;Salvare pagină ca fişier PDF...&apos; în meniul Fişier">
 <!ENTITY pdfdownload.optionsTooltips "Sfaturi ecran">
 <!ENTITY pdfdownload.optionsShowTooltips "Arată sfaturi ecran în căsuţele de dialog">
 <!ENTITY pdfdownload.optionsOpenLink "Deschidere legături spre fişiere PDF folosind pluginul Firefox:">

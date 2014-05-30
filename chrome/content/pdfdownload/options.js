@@ -37,6 +37,9 @@
 var _openPDFRadioGroup	  = "pdfdownload-openPDF";
 var _pdfViewerPathTextBox = "pdfdownload-pdfViewerPath";
 
+var previousValueOpenPDFPref = "";
+var previousValueWebToPDFDefaultAction = "";
+
 const preferencesService  = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch("extensions.pdfdownload.");
 
 const fileCID  = "@mozilla.org/file/local;1";
@@ -54,7 +57,18 @@ function onOK(notExecutableFileMsg) {
                 }
 				return false;
 		}
-    } else if (openPDF.selectedItem.id == "usePlugin") {
+    }
+    if (/*!checkMargin("marginTop") ||
+        !checkMargin("marginBottom") ||
+        !checkMargin("marginLeft") ||
+        !checkMargin("marginRight") ||*/
+        (document.getElementById("webToPdfAction").selectedItem.id == "sendEmailRadio" && 
+          !checkEmail("emailAddress")) ) {
+            var strings = pdfDownloadShared.getBundle();
+            alert(strings.GetStringFromName("invalidEmailAddress"));
+            return false;
+    }
+    if (openPDF.selectedItem.id == "usePlugin") {
         const kDisabledPluginTypesPref = "plugin.disable_full_page_plugin_for_types";
 	    var prefs = Components.classes["@mozilla.org/preferences-service;1"]
 	                               .getService(Components.interfaces.nsIPrefBranch);
@@ -76,18 +90,26 @@ function onCancel(notExecutableFileMsg) {
     var openPDF = document.getElementById(_openPDFRadioGroup);
     if (preferencesService.getCharPref("openPDF") == "customViewer") {
 		if (pdfDownloadShared.resolveFileName(path) == null) {
-				alert(notExecutableFileMsg);
-                if (openPDF.selectedItem.id != preferencesService.getCharPref("openPDF")) {
-                    openPDF.selectedItem = document.getElementById(preferencesService.getCharPref("openPDF"));
-                }
-				return false;
+				//alert(notExecutableFileMsg);
+               // if (openPDF.selectedItem.id != preferencesService.getCharPref("openPDF")) {
+               //     openPDF.selectedItem = document.getElementById(preferencesService.getCharPref("openPDF"));
+               // }
+                preferencesService.setCharPref("openPDF", previousValueOpenPDFPref);
+				//return false;
 		}
+    }
+    if (preferencesService.getCharPref("webToPDF.action") == "sendEmail" && 
+          !checkEmail("emailAddress")) {
+              preferencesService.setCharPref("webToPDF.action", previousValueWebToPDFDefaultAction);
+              //return false;
     }
     return true;
 }
 
 function onLoad() {
     //sizeToContentTrick();
+    previousValueOpenPDFPref = preferencesService.getCharPref("openPDF");
+    previousValueWebToPDFDefaultAction = preferencesService.getCharPref("webToPDF.action");
     if (!preferencesService.prefHasUserValue("showToolsMenuItem")) {
 		preferencesService.setBoolPref("showToolsMenuItem",true);
 		document.getElementById("showItemTools").checked = true;
@@ -163,4 +185,27 @@ function onPickPdfViewerPath(dialogTitle,exeFiles,allFiles,notExecutableFileMsg)
 
  function enableCustomViewer() {
      document.getElementById("pdfdownload-openPDF").selectedItem = document.getElementById("customViewer");
+ }
+
+ function enableSendEmail() {
+     document.getElementById("webToPdfAction").selectedItem = document.getElementById("sendEmailRadio");
+ }
+ 
+ function checkEmail(fieldName) {
+     var field = document.getElementById(fieldName);
+     if (!pdfDownloadShared.validateEmail(field.value)) {
+         field.focus();
+         return false;
+     }
+     return true;
+ }
+ 
+ function checkMargin(fieldName) {
+     var field = document.getElementById(fieldName);
+     if (isNaN(field.value) || field.value < 0 || field.value > 3) {
+         alert("You entered an invalid value. Please enter a margin value between 0-3 inches.");
+         field.focus();
+         return false;
+     }
+     return true;
  }

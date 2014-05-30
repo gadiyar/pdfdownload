@@ -7,6 +7,33 @@
 <!ENTITY pdfdownload.viewHtmlButton "HTML로 보기">
 <!ENTITY pdfdownload.openWithoutExtension "PDF 우회 다운로드">
 <!ENTITY pdfdownload.cancelButton "취소">
+<!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "웹 페이지를 PDF로 변환">
+<!ENTITY pdfdownload.webtopdf.outputSettings "PDF 출력 설정">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.label "쪽 방향:">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "세로">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "가로">
+<!ENTITY pdfdownload.webtopdf.margins.label "여백:">
+<!ENTITY pdfdownload.webtopdf.margins.inches "인치">
+<!ENTITY pdfdownload.webtopdf.margins.top "상단:">
+<!ENTITY pdfdownload.webtopdf.margins.bottom "하단:">
+<!ENTITY pdfdownload.webtopdf.margins.left "왼쪽:">
+<!ENTITY pdfdownload.webtopdf.margins.right "오른쪽:">
+<!ENTITY pdfdownload.webtopdf.defaulAction "기본 동작">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly "웹 페이지를 PDF로 저장">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "PDF로 페이지 변환 후 내려받기">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "PDF로 페이지 저장...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "D">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "F">
+<!ENTITY pdfdownload.webtopdf.action.askEmail "이메일 주소에 대해 묻기">
+<!ENTITY pdfdownload.webtopdf.action.sendEmail "언제나 다음으로 이메일 전송:">
+<!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "이메일 주소에 대해 언제나 묻기">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "PDF로 웹 페이지를 이메일로 전송">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "PDF로 페이지 변환 후 첨부해 이메일로 전송">
+<!ENTITY pdfdownload.webtopdf.options "선택사항...">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "PDF Download를 사용자가 지정한 방법으로 작동합니다.">
+<!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "받을곳의 이메일 주소 입력. 현재 웹페이지를 PDF로 변환해 이메일에 첨부해 보냅니다.">
+<!ENTITY pdfdownload.help "PDF 내려받기 도움말">
+<!ENTITY pdfdownload.help.tooltip "PDF Download 사용중 도움 받기.">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download가 기본 PDF 뷰어를 찾아낼 수 없습니다. PDF Download의 환경설정에서 1개를 선택하십시오!">
 <!ENTITY pdfdownload.about.Title "Nitro PDF Software의 PDF Download - 정보">
 <!ENTITY pdfdownload.about.width "55ex">
@@ -22,10 +49,12 @@
 <!ENTITY pdfdownload.optionsGeneralTab "기본">
 <!ENTITY pdfdownload.optionsPDFTab "PDF 열기">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF를 HTML로 변환">
+<!ENTITY pdfdownload.options.WebToPDFTab "웹을 PDF로">
 <!ENTITY pdfdownload.options.UpdatesTab "무료 갱신">
 <!ENTITY pdfdownload.options.CompanyTab "Nitro PDF Software에 대해서">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "도구 메뉴">
+<!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefox 메뉴">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Firefox 메뉴내 도구에 있는 PDF 다운로드 항목 보기">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "파일 메뉴내 &apos;PDF로 페이지 저장&apos; 표시">
 <!ENTITY pdfdownload.optionsTooltips "툴팁">
 <!ENTITY pdfdownload.optionsShowTooltips "대화상자내 툴팁 표시">
 <!ENTITY pdfdownload.optionsOpenLink "PDF 링크를 Firefox PDF 플러그인을 사용해 여는 방법:">

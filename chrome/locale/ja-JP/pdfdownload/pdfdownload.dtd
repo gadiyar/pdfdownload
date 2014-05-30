@@ -7,6 +7,33 @@
 <!ENTITY pdfdownload.viewHtmlButton "HTML で表示">
 <!ENTITY pdfdownload.openWithoutExtension "PDF Download を無視">
 <!ENTITY pdfdownload.cancelButton "キャンセル">
+<!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "Web ページを PDF へ変換します">
+<!ENTITY pdfdownload.webtopdf.outputSettings "PDF の出力設定">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.label "ページの向き:">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "ポートレイト">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "ランドスケープ">
+<!ENTITY pdfdownload.webtopdf.margins.label "余白:">
+<!ENTITY pdfdownload.webtopdf.margins.inches "in">
+<!ENTITY pdfdownload.webtopdf.margins.top "上：">
+<!ENTITY pdfdownload.webtopdf.margins.bottom "下:">
+<!ENTITY pdfdownload.webtopdf.margins.left "左:">
+<!ENTITY pdfdownload.webtopdf.margins.right "右:">
+<!ENTITY pdfdownload.webtopdf.defaulAction "デフォルトの動作">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly "Web ページを PDF で保存">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "ページを PDF へ変換した後ダウンロードします。">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "ページを PDF で保存...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "D">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "F">
+<!ENTITY pdfdownload.webtopdf.action.askEmail "送信先のメールアドレスを確認">
+<!ENTITY pdfdownload.webtopdf.action.sendEmail "常にメールで送信:">
+<!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "常に送信先のメールアドレスを確認">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "Web ページの PDF をメールで送信">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "ページを PDF に変換しメールに添付します。">
+<!ENTITY pdfdownload.webtopdf.options "オプション...">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "PDF Download の動作をカスタマイします。">
+<!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "送信先のメールアドレスを入力してください。Web ページは PDF に変換されて添付ファイルとして指定されたメールアドレスに送信されます。">
+<!ENTITY pdfdownload.help "PDF Download ヘルプ">
+<!ENTITY pdfdownload.help.tooltip "PDF Download のヘルプを表示します。">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download はデフォルトの PDF リーダーを見つけることができませんでした。PDF Download のオプション ダイアログから設定してください。">
 <!ENTITY pdfdownload.about.Title "About - PDF Download by Nitro PDF Software">
 <!ENTITY pdfdownload.about.width "55ex">
@@ -21,11 +48,13 @@
 <!ENTITY pdfdownload.options.Title "オプション - PDF Download by Nitro PDF Software">
 <!ENTITY pdfdownload.optionsGeneralTab "全般">
 <!ENTITY pdfdownload.optionsPDFTab "PDF を開く">
-<!ENTITY pdfdownload.optionsHTMLTab "PDF から HTML への変換">
+<!ENTITY pdfdownload.optionsHTMLTab "HTML　へ変換">
+<!ENTITY pdfdownload.options.WebToPDFTab "PDF　へ変換">
 <!ENTITY pdfdownload.options.UpdatesTab "フリーアップデート">
 <!ENTITY pdfdownload.options.CompanyTab "About Nitro PDF Software">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "ツール メニュー">
+<!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefox のメニュー">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF Download の項目を Firefox のツールに表示">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "ファイルメニューに &apos;ページを PDF で保存...&apos; を表示">
 <!ENTITY pdfdownload.optionsTooltips "ツールチップ">
 <!ENTITY pdfdownload.optionsShowTooltips "ダイアログ内にツールチップを表示">
 <!ENTITY pdfdownload.optionsOpenLink "Firefox PDF プラグインを使用して PDF リンクを開く時の動作:">

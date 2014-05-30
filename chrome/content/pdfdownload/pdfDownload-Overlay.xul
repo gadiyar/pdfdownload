@@ -35,6 +35,8 @@
    - 
 ***** END LICENSE BLOCK ***** -->
 
+<?xml-stylesheet href="chrome://pdfdownload/skin/pdfdownload.css" type="text/css"?>
+
 <!DOCTYPE overlay SYSTEM "chrome://pdfdownload/locale/pdfdownload.dtd">
 
 <overlay id="pdfDownloadOverlay" 
@@ -43,12 +45,54 @@
 	<script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
 	<script type="application/x-javascript" src="chrome://pdfdownload/content/pdfDownloadOverlay.js"/>
 
-
     <!-- Tools menu -->
 	<menupopup id="menu_ToolsPopup">
 		<menuitem insertafter="devToolsSeparator" label="&pdfdownload.options.Title;" id="PDFDownloadToolsItem" 
-			image="chrome://pdfdownload/skin/pdfdownloadsmall.png" class="menuitem-iconic" oncommand="showPDFDownloadSettings();" />
+			image="chrome://pdfdownload/skin/pdfdownload_16.png" class="menuitem-iconic" oncommand="showPDFDownloadSettings();" />
 	</menupopup>    
+	
+	<!-- File menu -->
+	<menupopup id="menu_FilePopup">
+    	<menuitem insertbefore="menu_sendLink" id="filemenu-pdfdownload-savepdf" label="&pdfdownload.webtopdf.action.saveAsPDFMenuItem;"
+              accesskey="&pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu;" oncommand="generatePDFFromPageWithAction('download');"/>
+  	</menupopup>
+	
+	<!-- Context menu -->
+	<popup id="contentAreaContextMenu">
+		<menuitem id="context-pdfdownload-savepdf" label="&pdfdownload.webtopdf.action.saveAsPDFMenuItem;" 
+			accesskey="&pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu;" insertafter="context-savepage" oncommand="generatePDFFromPageWithAction('download');"/>
+	</popup>
+	
+	<!-- firefox toolbar -->
+	<toolbarpalette id="BrowserToolbarPalette">
+	
+		   <toolbarbutton id="pdfDownload-button" type="menu-button" 
+		      class="toolbarbutton-1 chromeclass-toolbar-additional" 
+		      label="&pdfdownload.options.WebToPDFTab;" 
+		      tooltiptext="&pdfdownload.webtopdf.generatePDFBtn.tooltip;" 
+		      oncommand="generatePDFFromPage();">
+		      
+		      <menupopup>
+				    <menuitem label="&pdfdownload.webtopdf.action.downloadDirectly;"  
+				     		  tooltiptext="&pdfdownload.webtopdf.action.downloadDirectly.tooltip;" image="chrome://pdfdownload/skin/menu_convert.png" class="menuitem-iconic"
+				              oncommand="generatePDFFromPageWithAction('download'); event.stopPropagation();" />
+				              
+				    <menuitem label="&pdfdownload.webtopdf.action.emailWebPageAsPDF;" 
+				     		  tooltiptext="&pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip;" image="chrome://pdfdownload/skin/menu_email.png" class="menuitem-iconic"
+				              oncommand="generatePDFFromPageWithAction('sendEmail'); event.stopPropagation();" />
+				              
+					<menuitem label="&pdfdownload.help;" 
+							  tooltiptext="&pdfdownload.help.tooltip;" image="chrome://pdfdownload/skin/menu_help.png" class="menuitem-iconic"
+							  oncommand="pdfDownloadShared.help(); event.stopPropagation();" />
+					<menuseparator/>
+				    <menuitem label="&pdfdownload.webtopdf.options;" 
+				    		  tooltiptext="&pdfdownload.webtopdf.options.tooltip;" image="chrome://pdfdownload/skin/pdfdownload_16.png" class="menuitem-iconic"
+				              oncommand="showPDFDownloadSettings(); event.stopPropagation();" />
+				
+			  </menupopup>
+			</toolbarbutton>
+
+	</toolbarpalette>
 
 
 	<stringbundleset id="stringbundleset">

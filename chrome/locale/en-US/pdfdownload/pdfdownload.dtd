@@ -7,6 +7,33 @@
 <!ENTITY pdfdownload.viewHtmlButton "View as HTML">
 <!ENTITY pdfdownload.openWithoutExtension "Bypass PDF Download">
 <!ENTITY pdfdownload.cancelButton "Cancel">
+<!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "Convert web page to PDF">
+<!ENTITY pdfdownload.webtopdf.outputSettings "PDF output settings">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.label "Page orientation:">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "Portrait">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "Landscape">
+<!ENTITY pdfdownload.webtopdf.margins.label "Margins:">
+<!ENTITY pdfdownload.webtopdf.margins.inches "in">
+<!ENTITY pdfdownload.webtopdf.margins.top "Top:">
+<!ENTITY pdfdownload.webtopdf.margins.bottom "Bottom:">
+<!ENTITY pdfdownload.webtopdf.margins.left "Left:">
+<!ENTITY pdfdownload.webtopdf.margins.right "Right:">
+<!ENTITY pdfdownload.webtopdf.defaulAction "Default action">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly "Save Web Page as PDF">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "Convert page to PDF and then download.">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "Save Page As PDF...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "D">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "F">
+<!ENTITY pdfdownload.webtopdf.action.askEmail "Prompt for email address">
+<!ENTITY pdfdownload.webtopdf.action.sendEmail "Always email to:">
+<!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "Always prompt for email address">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "Email Web Page as PDF">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "Convert page to PDF and then attach to an email.">
+<!ENTITY pdfdownload.webtopdf.options "Options...">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "Customize how you'd like PDF Download to work.">
+<!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "Enter destination email address. The current webpage will be converted to PDF and sent to you as an email attachment.">
+<!ENTITY pdfdownload.help "PDF Download Help">
+<!ENTITY pdfdownload.help.tooltip "Get help using PDF Download.">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download can&apos;t find your default PDF reader. Please choose one in the PDF Download option dialog!">
 <!ENTITY pdfdownload.about.Title "PDF Download by Nitro PDF Software - About">
 <!ENTITY pdfdownload.about.width "55ex">
@@ -18,22 +45,24 @@
 <!ENTITY pdfdownload.changelog "Changelog">
 <!ENTITY pdfdownload.acknowledgments "Acknowledgments">
 <!ENTITY pdfdownload.siteListTitle "Exceptions">
-<!ENTITY pdfdownload.options.Title "PDF Download by Nitro PDF Software - Options">
+<!ENTITY pdfdownload.options.Title "PDF Download - Options">
 <!ENTITY pdfdownload.optionsGeneralTab "General">
-<!ENTITY pdfdownload.optionsPDFTab "PDF opening">
-<!ENTITY pdfdownload.optionsHTMLTab "PDF to HTML conversion">
-<!ENTITY pdfdownload.options.UpdatesTab "Free updates">
-<!ENTITY pdfdownload.options.CompanyTab "About Nitro PDF Software">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Tools Menu">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "Show PDF Download item in Tools Firefox Menu">
+<!ENTITY pdfdownload.optionsPDFTab "Opening PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF to HTML">
+<!ENTITY pdfdownload.options.WebToPDFTab "Web to PDF">
+<!ENTITY pdfdownload.options.UpdatesTab "Updates">
+<!ENTITY pdfdownload.options.CompanyTab "About Nitro">
+<!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefox menus">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Show PDF Download item in Tools Firefox menu">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "Show &apos;Save Page As PDF...&apos; in File menu">
 <!ENTITY pdfdownload.optionsTooltips "Tooltips">
 <!ENTITY pdfdownload.optionsShowTooltips "Show tooltips in the dialog box">
-<!ENTITY pdfdownload.optionsOpenLink "How to open PDF links using Firefox PDF plugin:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "How to open HTML version of PDF files:">
+<!ENTITY pdfdownload.optionsOpenLink "When using browser PDF plugin">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "When converting to HTML">
 <!ENTITY pdfdownload.optionsSameTab "Open in the same tab">
 <!ENTITY pdfdownload.optionsNewTab "Open in a new tab">
 <!ENTITY pdfdownload.optionsNewWindow "Open in a new window">
-<!ENTITY pdfdownload.optionsOpenPdf "PDF file opening:">
+<!ENTITY pdfdownload.optionsOpenPdf "When opening PDF files">
 <!ENTITY pdfdownload.optionsUsePlugin "Use PDF plugin">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Use OS default viewer">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Use this viewer:">
@@ -42,11 +71,10 @@
 <!ENTITY pdfdownload.optionsExeFiles "Windows Applications">
 <!ENTITY pdfdownload.optionsAllFiles "All Files">
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "The viewer specified is not an executable file!">
-<!ENTITY pdfdownload.optionsUpdateLabel "Update">
-<!ENTITY pdfdownload.optionsCheckUpdates "Check updates">
+<!ENTITY pdfdownload.optionsUpdateLabel "Installed version">
+<!ENTITY pdfdownload.optionsCheckUpdates "Check for updates">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Images">
 <!ENTITY pdfdownload.options.width "85ex">
-<!ENTITY pdfdownload.options.height "58ex">
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.popup.title "PDF Download by Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Show images in the HTML version of PDF">
@@ -59,7 +87,7 @@
 <!ENTITY pdfdownload.options.tryNitroPDFProfessional "Try Nitro PDF Professional -">
 <!ENTITY pdfdownload.options.free14dayTrial "free 14-day trial.">
 <!ENTITY pdfdownload.tooltip.downloadButton "Download the PDF file using the settings you have chosen in Firefox. In Options you can set it to ask you each time or specify a folder to use automatically.">
-<!ENTITY pdfdownload.tooltip.openPDFButton "Opens the PDF using the settings specified in Firefox. To edit your setting, go to &apos;Tools &gt; PDF Download by Nitro PDF Software - Options &gt; PDF opening&apos;.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Opens the PDF using the settings specified in Firefox. To edit your setting, go to &apos;Tools &gt; PDF Download - Options &gt; Opening PDF&apos;.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "Convert the PDF to HTML and then display it in Firefox. To save the HTML, go to the File menu in your browser.">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Ignore the PDF Download settings and let Firefox use its normal method for handling this kind of file.">
 <!ENTITY pdfdownload.tooltip.cancelButton "Close this dialog and don&apos;t do anything with the PDF file.">

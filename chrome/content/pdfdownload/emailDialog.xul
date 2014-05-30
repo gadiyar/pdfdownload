@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1/GPL 2.0/LGPL 2.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is "PDF Download".
+   -
+   - The Initial Developer of the Original Code is Denis Remondini.
+   - Portions created by the Initial Developer are Copyright (C) 2005-2007 Denis Remondini.  
+   - All Rights Reserved.
+   -
+   - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
+   -
+   - Alternatively, the contents of this file may be used under the terms of
+   - either the GNU General Public License Version 2 or later (the "GPL"), or
+   - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+   - in which case the provisions of the GPL or the LGPL are applicable instead
+   - of those above. If you wish to allow use of your version of this file only
+   - under the terms of either the GPL or the LGPL, and not to allow others to
+   - use your version of this file under the terms of the MPL, indicate your
+   - decision by deleting the provisions above and replace them with the notice
+   - and other provisions required by the LGPL or the GPL. If you do not delete
+   - the provisions above, a recipient may use your version of this file under
+   - the terms of any one of the MPL, the GPL or the LGPL.
+   -
+   - 
+***** END LICENSE BLOCK ***** -->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://pdfdownload/skin/pdfdownload.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://pdfdownload/locale/pdfdownload.dtd">
+
+<dialog title="PDF Download" 
+	chromehidden="menubar toolbar location directories status extrachrome" 
+	id="pdfdownloadEmailDialog" 
+	onload="onLoad()" 
+    style="max-width: 55ex !important" 
+	buttons="accept,cancel" 
+	ondialogaccept="return onOK()"  
+	ondialogcancel="onCancel()" 
+	xmlns:em="http://www.mozilla.org/2004/em-rdf#" 
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+	<script src="shared.js"/>
+	<script type="application/x-javascript">
+	  <![CDATA[
+  		
+        var sltPrefs = Components.classes['@mozilla.org/preferences-service;1']
+                                  .getService(Components.interfaces.nsIPrefBranch);
+                                  
+	 	function onLoad() {
+		
+	 		var alwaysAsk = true;
+            try {
+                var action = sltPrefs.getCharPref("extensions.pdfdownload.webToPDF.action");
+                if (action != "askEmail") {
+                    alwaysAsk = false;
+                }
+            } catch (e) {}
+            document.getElementById("alwaysAsk").checked = alwaysAsk;
+            if (window.arguments[0].defaultValue != null) {
+	 		    document.getElementById("menuList").value = window.arguments[0].defaultValue;
+            }
+	 		onPopupShow();
+            window.focus();
+	 	}
+	 	
+	 	function onPopupShow() {
+			var menu = document.getElementById("inputTextField");
+			var maxItems = 10;
+		    // Remove all of the items currently in the popup menu
+		    for(var i=menu.childNodes.length - 1; i >= 0; i--)
+		    {
+		        menu.removeChild(menu.childNodes.item(i));
+		    }
+			var values = "";
+			try {
+				values = sltPrefs.getCharPref("extensions.pdfdownload.webToPDF.emailAddresses").split(" ");
+			} catch(e) {}
+			if (values != "") {
+				var i = 0;
+				while (i < values.length && i < maxItems) {
+			        // Create a new menu item to be added
+			        var tempItem = document.createElement("menuitem");
+			
+			        // Set the new menu item's label
+			        tempItem.setAttribute("label", values[i++]);
+			
+			        // Add the item to our menu
+			        menu.appendChild(tempItem);
+			    }
+                if (window.arguments[0].defaultValue == null) {
+	 		        document.getElementById("menuList").value = values[0];
+                }
+			}
+	  	}
+
+	  	
+	  	function onOK() {
+			var menu = document.getElementById("inputTextField");
+			var newValue = document.getElementById("menuList").inputField.value;
+			var size = menu.childNodes.length;
+            newValue = newValue.replace(/^\s+/,'').replace(/\s+$/,'');
+			var values = newValue;
+			if (!pdfDownloadShared.validateEmail(values)) {
+				var strbundle = document.getElementById("strings");
+				alert(strbundle.getString("invalidEmailAddress"));
+				return false;
+			} else {
+				var i = 0;
+				var maxItems = 5;
+				while (i < size && i < maxItems) {
+			        var el = menu.removeChild(menu.childNodes.item(0));
+			        var currentValue = el.getAttribute("label");
+			        if (currentValue != newValue) {
+				        if (values == "") {
+				        	values = currentValue;
+				        } else {
+				        	values += " " + currentValue;
+				        }
+			        }
+			        i++;
+			    }
+				sltPrefs.setCharPref("extensions.pdfdownload.webToPDF.emailAddresses", values);
+                var alwaysAsk = document.getElementById("alwaysAsk").checked;
+                var action = "sendEmail"
+                if (alwaysAsk == true) {
+                    action = "askEmail";
+                } else {
+                    sltPrefs.setCharPref("extensions.pdfdownload.webToPDF.emailAddress", newValue);
+                }
+                sltPrefs.setCharPref("extensions.pdfdownload.webToPDF.action", action);
+                
+				window.arguments[0].res = true;
+				window.arguments[0].inputSubmitted = newValue;
+				window.close();
+			}
+	  	}	
+	  	
+	  	function onCancel() {
+	  		window.arguments[0].res = false;
+	  	}		
+	  	
+	  ]]>
+	  </script>
+	  
+	  <stringbundleset id="stringbundleset">
+		 <stringbundle id="strings" src="chrome://pdfdownload/locale/pdfdownload.properties"/>
+	  </stringbundleset>
+
+		<vbox>
+			<description id="inputLabel">&pdfdownload.webtopdf.emaildialog.topDescription;</description>
+			<menulist editable="true" id="menuList">  
+				<menupopup id="inputTextField" onpopupshowing="onPopupShow()"/>
+		    </menulist>
+            <checkbox id="alwaysAsk"  label="&pdfdownload.webtopdf.action.alwaysAskEmail;" />
+		</vbox>
+
+</dialog>

@@ -289,10 +289,10 @@ PdfDownloadShared.prototype.help = function(s) {
 	if (s) {
 		url += "#" + s;
 	}
-	pdfDownloadShared.openURL(url);
+	pdfDownloadShared.openInNewTab(url);
 }
 
-PdfDownloadShared.prototype.togglePDFDownloadItem = function() {
+PdfDownloadShared.prototype.togglePDFDownloadToolsItem = function() {
     var prefs = Components.classes["@mozilla.org/preferences-service;1"]
 		                               .getService(Components.interfaces.nsIPrefBranch);
 	if (!prefs.prefHasUserValue("extensions.pdfdownload.showToolsMenuItem")) {
@@ -305,6 +305,61 @@ PdfDownloadShared.prototype.togglePDFDownloadItem = function() {
 	}
 }
 
+PdfDownloadShared.prototype.togglePDFDownloadFileItem = function() {
+    var prefs = Components.classes["@mozilla.org/preferences-service;1"]
+		                               .getService(Components.interfaces.nsIPrefBranch);
+	if (!prefs.prefHasUserValue("extensions.pdfdownload.showFileMenuItem")) {
+		prefs.setBoolPref("extensions.pdfdownload.showFileMenuItem",true);
+	}
+	if (prefs.getBoolPref("extensions.pdfdownload.showFileMenuItem") == true) {
+		document.getElementById("filemenu-pdfdownload-savepdf").hidden = false;
+	} else {
+		document.getElementById("filemenu-pdfdownload-savepdf").hidden = true;
+	}
+}
+
+PdfDownloadShared.prototype.getUuid = function() {
+    return "{37E4D8EA-8BDA-4831-8EA1-89053939A250}";
+}
+
+PdfDownloadShared.prototype.getVersion = function() {
+    var em = Components.classes["@mozilla.org/extensions/manager;1"]
+                .getService(Components.interfaces.nsIExtensionManager);
+    
+    var addon = em.getItemForID(pdfDownloadShared.getUuid());
+    return addon.version;
+}
+
+PdfDownloadShared.prototype.checkSavePDFBtnInstalled = function() {
+    var prefs = Components.classes["@mozilla.org/preferences-service;1"]
+		                               .getService(Components.interfaces.nsIPrefBranch);
+    var btnInstalled = false;
+    if (prefs.prefHasUserValue("extensions.pdfdownload.savePDFBtnInstalled")) {
+        btnInstalled = prefs.getBoolPref("extensions.pdfdownload.savePDFBtnInstalled");
+    }
+    if (!btnInstalled) {
+        prefs.setBoolPref("extensions.pdfdownload.savePDFBtnInstalled", true);
+    }
+    return btnInstalled;
+}
+
+PdfDownloadShared.prototype.validateEmail = function(elementValue) {
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/; 
+    return emailPattern.test(elementValue); 
+}
+
+PdfDownloadShared.prototype.getBundle = function() {
+       const bundleURL = "chrome://pdfdownload/locale/pdfdownload.properties";
+       const sbsContractID = "@mozilla.org/intl/stringbundle;1";
+       const sbsIID = Components.interfaces.nsIStringBundleService;
+       const sbs = Components.classes[sbsContractID].getService(sbsIID);
+   
+       const lsContractID = "@mozilla.org/intl/nslocaleservice;1";
+       const lsIID = Components.interfaces.nsILocaleService;
+       const ls = Components.classes[lsContractID].getService(lsIID);
+       var appLocale = ls.getApplicationLocale();
+       return sbs.createBundle(bundleURL, appLocale);          
+}
 // create the object
 const pdfDownloadShared = new PdfDownloadShared();
 

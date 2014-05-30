@@ -12,6 +12,13 @@ pref("extensions.pdfdownload.openPDFtoHTML","openHTMLNewTab");
 pref("extensions.pdfdownload.openPDFLink","openPDFNewTab");
 pref("extensions.pdfdownload.showImagesInHTML",true);
 pref("extensions.pdfdownload.showToolsMenuItem",true);
+pref("extensions.pdfdownload.showFileMenuItem",true);
 pref("extensions.pdfdownload.showTooltips",true);
 pref("extensions.pdfdownload.firstInstallation",true);
-
+pref("extensions.pdfdownload.webToPDF.pageOrientation","0");
+pref("extensions.pdfdownload.webToPDF.margins.top","0.5");
+pref("extensions.pdfdownload.webToPDF.margins.bottom","0.5");
+pref("extensions.pdfdownload.webToPDF.margins.left","0.5");
+pref("extensions.pdfdownload.webToPDF.margins.right","0.5");
+pref("extensions.pdfdownload.webToPDF.action","download");
+pref("extensions.pdfdownload.webToPDF.emailAddress","");

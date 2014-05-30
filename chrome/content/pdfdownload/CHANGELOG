@@ -1,13 +1,12 @@
 CHANGELOG
 
+v2.0.0.0:	2008-07-13
+
+ - Added new feature to convert web pages to PDF: the PDF can be saved or received by email.
+
 v1.0.1.2:	2008-06-17
 
  - Added support for Firefox 3.0
-
-v1.0.1.1:	2008-02-26
-
- - Added support for Firefox 3.0b4pre
- - Added language support for da-DK, sr-YU, sl-SI locales
 
 v1.0.1.0:	2008-01-22
 

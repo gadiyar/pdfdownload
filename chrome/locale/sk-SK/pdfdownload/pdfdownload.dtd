@@ -7,6 +7,33 @@
 <!ENTITY pdfdownload.viewHtmlButton "Zobraziť ako HTML">
 <!ENTITY pdfdownload.openWithoutExtension "Obísť PDF Download">
 <!ENTITY pdfdownload.cancelButton "Zrušiť">
+<!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "Konvertovať stránku do PDF">
+<!ENTITY pdfdownload.webtopdf.outputSettings "Nastavenie výstupu do PDF">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.label "Orientácia stránky">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "Na výšku">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "Na šírku">
+<!ENTITY pdfdownload.webtopdf.margins.label "Okraje:">
+<!ENTITY pdfdownload.webtopdf.margins.inches "in">
+<!ENTITY pdfdownload.webtopdf.margins.top "Hore:">
+<!ENTITY pdfdownload.webtopdf.margins.bottom "Dole:">
+<!ENTITY pdfdownload.webtopdf.margins.left "Vľavo:">
+<!ENTITY pdfdownload.webtopdf.margins.right "Vpravo:">
+<!ENTITY pdfdownload.webtopdf.defaulAction "Predvolená akcia">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly "Uložiť webovú stránku ako PDF">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "Konvertovať stránku do PDF a potom prevziať.">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "Uložiť stránku ako PDF...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "F">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "F">
+<!ENTITY pdfdownload.webtopdf.action.askEmail "Vyžiadať e-mailovú adresu">
+<!ENTITY pdfdownload.webtopdf.action.sendEmail "Vždy posielať na:">
+<!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "Vždy vyžiadať e-mailovú adresu">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "Odoslať webovú stránku ako PDF">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "Konvertovať stránku do PDF a priložiť k e-mailovej správe">
+<!ENTITY pdfdownload.webtopdf.options "Možnosti...">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "Nastavte si, ako by malo rozšírenie PDF Download pracovať">
+<!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "Zadajte cieľovú e-mailovú adresu. Aktuálna webová stránka bude skonvertovaná do PDF a odoslaná ako príloha e-mailovej správy.">
+<!ENTITY pdfdownload.help "Pomocník pre PDF Download">
+<!ENTITY pdfdownload.help.tooltip "Získať pomocníka pre PDF Download">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download nedokázal nájsť váš predvolený program na čítanie súborov PDF. Prosím, vyberte si ho v dialógovom okne nastavení rozšírenia PDF Download!">
 <!ENTITY pdfdownload.about.Title "Čo je PDF Download - produkt Nitro PDF Software">
 <!ENTITY pdfdownload.about.width "55ex">
@@ -22,10 +49,12 @@
 <!ENTITY pdfdownload.optionsGeneralTab "Všeobecné">
 <!ENTITY pdfdownload.optionsPDFTab "Otváranie súborov PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Konverzia PDF do HTML">
+<!ENTITY pdfdownload.options.WebToPDFTab "Web do PDF">
 <!ENTITY pdfdownload.options.UpdatesTab "Aktualizácie zadarmo">
 <!ENTITY pdfdownload.options.CompanyTab "Čo je Nitro PDF Software">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Ponuka Nástroje">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "Zobraziť položku PDF Download v hlavnej ponuke Nástroje">
+<!ENTITY pdfdownload.optionsToggleFirefoxMenus "Ponuky Firefoxu">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "V ponuke Nástroje zobraziť položku PDF Download">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "V ponuke Súbor zobraziť položku &apos;Uložiť stránku ako PDF...&apos;">
 <!ENTITY pdfdownload.optionsTooltips "Bublinové popisy">
 <!ENTITY pdfdownload.optionsShowTooltips "Zobrazovať bublinové popisy v dialógovom okne">
 <!ENTITY pdfdownload.optionsOpenLink "Ako otvárať odkazy na súbory PDF využitím zásuvného modulu Firefoxu:">
