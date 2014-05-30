@@ -1,0 +1,38 @@
+<!ENTITY pdfdownload.CreatedByLabel "Vytvoril:">
+<!ENTITY pdfdownload.WebsiteLabel "Webová stránka">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "Stiahnuť">
+<!ENTITY pdfdownload.OpenButton "Otvoriť na novej karte">
+<!ENTITY pdfdownload.ViewHtmlButton "Zobraziť na novej karte ako HTML">
+<!ENTITY pdfdownload.CancelButton "Zrušiť">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download nedokázal nájsť váš predvolený program na čítanie PDF súborov. Prosím, vyberte si ho v dialógovom okne nastavení rozšírenia PDF Download!">
+<!ENTITY pdfdownload.AboutTitle "Čo je PDF Download">
+<!ENTITY pdfdownload.WebsiteTooltip "Zobraziť www stránku autora">
+<!ENTITY pdfdownload.MoreInfo "Viac podrobností:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Prečítať licenciu pre koncových používateľov">
+<!ENTITY pdfdownload.License "Licencia">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Zobraziť zmeny v jednotlivých verziách">
+<!ENTITY pdfdownload.Changelog "Zmeny v jednotlivých verziách">
+<!ENTITY pdfdownload.Acknowledgments "Poďakovanie">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Nastavenia">
+<!ENTITY pdfdownload.optionsPDFTab "Otváranie PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Konverzia PDF do HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Detaily">
+<!ENTITY pdfdownload.optionsOpenLink "Ako otvárať PDF odkazy využitím plug-inu Firefoxu:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Ako otvárať HTML verzie PDF súborov:">
+<!ENTITY pdfdownload.optionsSameTab "Otvoriť na aktuálnej karte">
+<!ENTITY pdfdownload.optionsNewTab "Otvoriť na novej karte">
+<!ENTITY pdfdownload.optionsNewWindow "Otvoriť v novom okne">
+<!ENTITY pdfdownload.optionsOpenPdf "Otváranie pdf súborov:">
+<!ENTITY pdfdownload.optionsUsePlugin "Vykonať predvolenú akciu Firefoxu">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Použiť program predvolený v systéme">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Použiť tento program:">
+<!ENTITY pdfdownload.optionsBrowse "Prehľadávať...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Výber programu na zobrazovanie PDF súborov">
+<!ENTITY pdfdownload.optionsExeFiles "Aplikácie">
+<!ENTITY pdfdownload.optionsAllFiles "Všetky súbory">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Vybratý súbor nie je spustiteľný!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Aktualizácia">
+<!ENTITY pdfdownload.optionsCheckUpdates "Zistiť aktualizácie">
+<!ENTITY pdfdownload.optionsHowToHelp "Ako pomôcť">
+<!ENTITY pdfdownload.optionsMakeDonation "Príspevok autorovi">

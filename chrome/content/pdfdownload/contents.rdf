@@ -11,6 +11,7 @@
     chrome:author="Denis Remondini"
     chrome:authorURL="http://www.rabotat.org/firefox/"
     chrome:name="pdfdownload"
+    chrome:settingsURL="chrome://pdfdownload/content/options.xul"
     chrome:extension="true"
     chrome:description="PDF Download">
   </RDF:Description>

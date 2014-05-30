@@ -3,9 +3,9 @@
 <!ENTITY pdfdownload.DownloadQuestionLabel "Fisierul pe care l-ati selectat este un fisier PDF">
 <!ENTITY pdfdownload.DownloadButton "Salveaza-l">
 <!ENTITY pdfdownload.OpenButton "Deschide-l intr-o fereastra noua">
-<!ENTITY pdfdownload.ViewHtmlButton "Vizualizeaza-l in format HTML intr-o noua fereastra">
+<!ENTITY pdfdownload.ViewHtmlButton "Vizualizeaza-l in format HTML">
 <!ENTITY pdfdownload.CancelButton "Anuleaza">
-
+<!ENTITY pdfdownload.osWarningMsg "PDF Download nu gaseste programul.Va rugam alegeti unul din optiunile:">
 <!ENTITY pdfdownload.AboutTitle "PDF Download - Despre">
 <!ENTITY pdfdownload.WebsiteTooltip "Vezi site-ul autorului">
 <!ENTITY pdfdownload.MoreInfo "Mai multe detalii:">
@@ -14,3 +14,25 @@
 <!ENTITY pdfdownload.ReadChangelogTooltip "Vezi jurnalul modificarilor">
 <!ENTITY pdfdownload.Changelog "Jurnalul modificarilor">
 <!ENTITY pdfdownload.Acknowledgments "Multumiri">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Optiuni">
+<!ENTITY pdfdownload.optionsPDFTab "Deschidere PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Conversie PDF-HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Detalii">
+<!ENTITY pdfdownload.optionsOpenLink "Cum sa deschizi link-uri PDF folosind plugin-ul Firefox">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Cum sa deschizi versiuni HTML ale fisierelor PDF">
+<!ENTITY pdfdownload.optionsSameTab "Deschide in acelasi tab">
+<!ENTITY pdfdownload.optionsNewTab "Deschide intr-un nou tab">
+<!ENTITY pdfdownload.optionsNewWindow "Deschide intr-o noua fereastra">
+<!ENTITY pdfdownload.optionsOpenPdf "Deschidere fisier PDF:">
+<!ENTITY pdfdownload.optionsUsePlugin "Foloseste optiunea default a Firefox-ului">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Foloseste programul default OS">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Foloseste programul:">
+<!ENTITY pdfdownload.optionsBrowse "Cauta...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Alege programul">
+<!ENTITY pdfdownload.optionsExeFiles "Aplicatii Windows">
+<!ENTITY pdfdownload.optionsAllFiles "Toate fisierele">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Fisierul selectat nu este executabil!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Actualizeza">
+<!ENTITY pdfdownload.optionsCheckUpdates "Cauta actualizari">
+<!ENTITY pdfdownload.optionsHowToHelp "Ajutor">
+<!ENTITY pdfdownload.optionsMakeDonation "Faceti o donatie">

@@ -1,0 +1,38 @@
+<!ENTITY pdfdownload.CreatedByLabel "Hazırlayan:">
+<!ENTITY pdfdownload.WebsiteLabel "Anasayfa">
+<!ENTITY pdfdownload.DownloadQuestionLabel ".">
+<!ENTITY pdfdownload.DownloadButton "İndir">
+<!ENTITY pdfdownload.OpenButton "Aç">
+<!ENTITY pdfdownload.ViewHtmlButton "HTML olarak görüntüle">
+<!ENTITY pdfdownload.CancelButton "İptal">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download, varsayılan PDF okuyucunuzu bulamadı. Lütfen PDF Download Seçenekler bölümünden seçiniz!">
+<!ENTITY pdfdownload.AboutTitle "PDF Download - Hakkında">
+<!ENTITY pdfdownload.WebsiteTooltip "Hazırlayanın anasayfasına git">
+<!ENTITY pdfdownload.MoreInfo "Daha fazla bilgi:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Son kullanıcı lisans sözleşmesini okuyun">
+<!ENTITY pdfdownload.License "Lisans">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Değişim günlüğünü görüntüle">
+<!ENTITY pdfdownload.Changelog "Değişim günlüğü">
+<!ENTITY pdfdownload.Acknowledgments "Teşekkür">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Seçenekler">
+<!ENTITY pdfdownload.optionsPDFTab "PDF açılması">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF'ten HTML'e dönüştür">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Daha fazla bilgi">
+<!ENTITY pdfdownload.optionsOpenLink "Firefox PDF eklentisi ile PDF bağlantılarının açılması:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF dosyalarının HTML biçiminde açılması:">
+<!ENTITY pdfdownload.optionsSameTab "Aynı sekmede aç">
+<!ENTITY pdfdownload.optionsNewTab "Yeni sekmede aç">
+<!ENTITY pdfdownload.optionsNewWindow "Yeni pencerede aç">
+<!ENTITY pdfdownload.optionsOpenPdf "PDF dosyası açılması:">
+<!ENTITY pdfdownload.optionsUsePlugin "Firefox'un varsayılan işlemini kullan">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "İşletim sisteminin varsayılan görüntüleyicisini kullan">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Bu görüntüleyiciyi kullan">
+<!ENTITY pdfdownload.optionsBrowse "Gözat...">
+<!ENTITY pdfdownload.optionsBrowseTitle "PDF görüntüleyici seç">
+<!ENTITY pdfdownload.optionsExeFiles "Windows uygulamaları">
+<!ENTITY pdfdownload.optionsAllFiles "Tüm dosyalar">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Seçilen dosya çalıştırılabilir değil!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Güncelle">
+<!ENTITY pdfdownload.optionsCheckUpdates "Güncelleme ara">
+<!ENTITY pdfdownload.optionsHowToHelp "Yardım">
+<!ENTITY pdfdownload.optionsMakeDonation "Bağış yap">

@@ -5,7 +5,7 @@
 <!ENTITY pdfdownload.OpenButton "Ouvrir dans un nouvel onglet">
 <!ENTITY pdfdownload.ViewHtmlButton "Ouvrir en HTML dans un nouvel onglet">
 <!ENTITY pdfdownload.CancelButton "Annuler">
-
+<!ENTITY pdfdownload.osWarningMsg "PDF Download ne trouve pas votre lecteur de PDF par défaut. Veuillez en choisir un dans les options de PDF Download !">
 <!ENTITY pdfdownload.AboutTitle "À propos de PDF Download">
 <!ENTITY pdfdownload.WebsiteTooltip "Aller au site web de l'auteur">
 <!ENTITY pdfdownload.MoreInfo "Plus d'infos :">
@@ -14,5 +14,25 @@
 <!ENTITY pdfdownload.ReadChangelogTooltip "Voir les derniers changements">
 <!ENTITY pdfdownload.Changelog "Journal des nouveautés">
 <!ENTITY pdfdownload.Acknowledgments "Remerciements">
-
-
+<!ENTITY pdfdownload.optionsTitle "Options de PDFDownload">
+<!ENTITY pdfdownload.optionsPDFTab "Ouverture du PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Conversion du PDF en HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Complémentaires">
+<!ENTITY pdfdownload.optionsOpenLink "Comment ouvrir les liens en PDF avec le plugin PDF de Firefox">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Comment ouvrir la version HTML des fichiers PDF">
+<!ENTITY pdfdownload.optionsSameTab "Ouvrir dans le même onglet">
+<!ENTITY pdfdownload.optionsNewTab "Ouvrir dans un nouvel onglet">
+<!ENTITY pdfdownload.optionsNewWindow "Ouvrir dans une nouvelle fenêtre">
+<!ENTITY pdfdownload.optionsOpenPdf "Ouverture du fichier Pdf :">
+<!ENTITY pdfdownload.optionsUsePlugin "Utiliser l'action de Firefox par défaut">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Utiliser le programme par défaut du système d'exploitation">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Utiliser cette application :">
+<!ENTITY pdfdownload.optionsBrowse "Parcourir...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Choisir un visualiseur de PDF">
+<!ENTITY pdfdownload.optionsExeFiles "Applications Windows">
+<!ENTITY pdfdownload.optionsAllFiles "Tous les fichiers">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Le fichier sélectionné n'est pas un exécutable !">
+<!ENTITY pdfdownload.optionsUpdateLabel "Mise à jour">
+<!ENTITY pdfdownload.optionsCheckUpdates "Vérifier les mises à jour">
+<!ENTITY pdfdownload.optionsHowToHelp "Comment contribuer">
+<!ENTITY pdfdownload.optionsMakeDonation "Faire un don">

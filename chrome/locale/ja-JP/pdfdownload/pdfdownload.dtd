@@ -2,10 +2,10 @@
 <!ENTITY pdfdownload.WebsiteLabel "ホームページ">
 <!ENTITY pdfdownload.DownloadQuestionLabel "">
 <!ENTITY pdfdownload.DownloadButton "ダウンロード">
-<!ENTITY pdfdownload.OpenButton "新しいタブで開く">
-<!ENTITY pdfdownload.ViewHtmlButton "新しいタブで HTML として表示">
+<!ENTITY pdfdownload.OpenButton "PDF を開く">
+<!ENTITY pdfdownload.ViewHtmlButton "HTML で表示">
 <!ENTITY pdfdownload.CancelButton "キャンセル">
-
+<!ENTITY pdfdownload.osWarningMsg "PDF Download はデフォルトの PDF リーダーを見つけることができませんでした。PDF Download のオプション ダイアログから設定してください。">
 <!ENTITY pdfdownload.AboutTitle "PDF ダウンロードについて。">
 <!ENTITY pdfdownload.WebsiteTooltip "作成者のホームページを表示します。">
 <!ENTITY pdfdownload.MoreInfo "その他 詳細:">
@@ -14,5 +14,25 @@
 <!ENTITY pdfdownload.ReadChangelogTooltip "更新履歴を表示します。">
 <!ENTITY pdfdownload.Changelog "更新履歴">
 <!ENTITY pdfdownload.Acknowledgments "謝辞">
-
-
+<!ENTITY pdfdownload.optionsTitle "PDF Download - オプション">
+<!ENTITY pdfdownload.optionsPDFTab "PDF を開く">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF から HTML への変換">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "その他">
+<!ENTITY pdfdownload.optionsOpenLink "Firefox PDF プラグインを使用して PDF リンクを開く時の動作:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF ファイルを HTML で開く時の動作:">
+<!ENTITY pdfdownload.optionsSameTab "現在のタブで開く">
+<!ENTITY pdfdownload.optionsNewTab "新しいタブで開く">
+<!ENTITY pdfdownload.optionsNewWindow "新しいウィンドウで開く">
+<!ENTITY pdfdownload.optionsOpenPdf "PDF ファイルを開く:">
+<!ENTITY pdfdownload.optionsUsePlugin "Firefox のデフォルトの動作を使用">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "OS によって設定されたビューアーを使用">
+<!ENTITY pdfdownload.optionsUseCustomProgram "このビューアーを使用:">
+<!ENTITY pdfdownload.optionsBrowse "参照...">
+<!ENTITY pdfdownload.optionsBrowseTitle "PDF ビューアーの選択">
+<!ENTITY pdfdownload.optionsExeFiles "Windows アプリケーション">
+<!ENTITY pdfdownload.optionsAllFiles "すべてのファイル">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "選択されたファイルは実行可能な形式ではありません!">
+<!ENTITY pdfdownload.optionsUpdateLabel "更新">
+<!ENTITY pdfdownload.optionsCheckUpdates "更新の確認">
+<!ENTITY pdfdownload.optionsHowToHelp "開発を助けてください">
+<!ENTITY pdfdownload.optionsMakeDonation "寄付をする">

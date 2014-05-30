@@ -1,18 +1,38 @@
 <!ENTITY pdfdownload.CreatedByLabel "作者:">
-<!ENTITY pdfdownload.WebsiteLabel "網站">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.WebsiteLabel "網站：">
+<!ENTITY pdfdownload.DownloadQuestionLabel "null">
 <!ENTITY pdfdownload.DownloadButton "下載">
-<!ENTITY pdfdownload.OpenButton "在新標簽頁中打開">
-<!ENTITY pdfdownload.ViewHtmlButton "在新標簽頁中以HTML方式查看">
+<!ENTITY pdfdownload.OpenButton "開啟於新分頁">
+<!ENTITY pdfdownload.ViewHtmlButton "轉換成網頁（HTML）格式並開啟於新分頁">
 <!ENTITY pdfdownload.CancelButton "取消">
-
+<!ENTITY pdfdownload.osWarningMsg "找不到PDF閱讀軟體！請於選項中設定。">
 <!ENTITY pdfdownload.AboutTitle "PDF Download - 關於">
-<!ENTITY pdfdownload.WebsiteTooltip "訪問作者的網站">
-<!ENTITY pdfdownload.MoreInfo "更多詳情:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "閲讀最終用戶許可協議">
-<!ENTITY pdfdownload.License "許可協議">
+<!ENTITY pdfdownload.WebsiteTooltip "瀏覽作者網站">
+<!ENTITY pdfdownload.MoreInfo "更多資訊:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "閲讀軟體合約">
+<!ENTITY pdfdownload.License "軟體合約">
 <!ENTITY pdfdownload.ReadChangelogTooltip "查看更新記錄">
 <!ENTITY pdfdownload.Changelog "更新記錄">
 <!ENTITY pdfdownload.Acknowledgments "致謝">
-
-
+<!ENTITY pdfdownload.optionsTitle "PDF Download - 選項">
+<!ENTITY pdfdownload.optionsPDFTab "PDF格式設定">
+<!ENTITY pdfdownload.optionsHTMLTab "HTML格式設定">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "更多資訊">
+<!ENTITY pdfdownload.optionsOpenLink "開啟於：">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "開啟於：">
+<!ENTITY pdfdownload.optionsSameTab "目前的分頁">
+<!ENTITY pdfdownload.optionsNewTab "新分頁">
+<!ENTITY pdfdownload.optionsNewWindow "新視窗">
+<!ENTITY pdfdownload.optionsOpenPdf "PDF文件開啟方式：">
+<!ENTITY pdfdownload.optionsUsePlugin "使用Firefox開啟">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "使用預設的閱讀軟體開啟">
+<!ENTITY pdfdownload.optionsUseCustomProgram "使用自訂的閱讀軟體開啟">
+<!ENTITY pdfdownload.optionsBrowse "瀏覽...">
+<!ENTITY pdfdownload.optionsBrowseTitle "選擇PDF瀏覽軟體">
+<!ENTITY pdfdownload.optionsExeFiles "執行檔">
+<!ENTITY pdfdownload.optionsAllFiles "所有檔案">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "您所選擇的檔案不是執行檔！">
+<!ENTITY pdfdownload.optionsUpdateLabel "更新">
+<!ENTITY pdfdownload.optionsCheckUpdates "檢查更新">
+<!ENTITY pdfdownload.optionsHowToHelp "求助">
+<!ENTITY pdfdownload.optionsMakeDonation "捐獻">

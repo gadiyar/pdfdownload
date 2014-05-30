@@ -1,11 +1,11 @@
 <!ENTITY pdfdownload.CreatedByLabel "נוצר על ידי">
 <!ENTITY pdfdownload.WebsiteLabel "אתר אינטרנט">
-<!ENTITY pdfdownload.DownloadQuestionLabel"">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
 <!ENTITY pdfdownload.DownloadButton "הורד את זה">
 <!ENTITY pdfdownload.OpenButton "פתח בלשונית חדשה">
-<!ENTITY pdfdownload.ViewHtnlButton "צפה בלשונית חדשה כ-HTML">
+<!ENTITY pdfdownload.ViewHtmlButton "צפה כ-HTML">
 <!ENTITY pdfdownload.CancelButton "בטל">
-
+<!ENTITY pdfdownload.osWarningMsg "PDF Download לא יכול למצוא את קורא ה-PDF שלך. נא בחר באחת בתוך האפשרויות של PDF Download.">
 <!ENTITY pdfdownload.AboutTitle "אודות הורדת PDF">
 <!ENTITY pdfdownload.WebsiteTooltip "צפה באתר המחבר">
 <!ENTITY pdfdownload.MoreInfo "פרטים נוספים:">
@@ -13,4 +13,26 @@
 <!ENTITY pdfdownload.License "רשיון">
 <!ENTITY pdfdownload.ReadChangelogTooltip "ראה יומן שינויים">
 <!ENTITY pdfdownload.Changelog "יומן שינויים">
-<!ENTITY pdfdownload.Acknowledgments "הודאה באמיתות">
+<!ENTITY pdfdownload.Acknowledgments "הבעת תודה">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - אפשרויות">
+<!ENTITY pdfdownload.optionsPDFTab "פתיחת PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "המרה מ-PDF ל-HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "פרטים נוספים">
+<!ENTITY pdfdownload.optionsOpenLink "כיצד להשתמש בצופה ה-PDF של Firefox כדי לפתוח קישורי PDF">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "כיצד לפתוח גרסאות HTML של קבצי ה-PDF">
+<!ENTITY pdfdownload.optionsSameTab "פתח באותה הלשונית">
+<!ENTITY pdfdownload.optionsNewTab "פתח בלשונית חדשה">
+<!ENTITY pdfdownload.optionsNewWindow "פתח בחלון חדש">
+<!ENTITY pdfdownload.optionsOpenPdf "קובץ ה-PDF נפתח:">
+<!ENTITY pdfdownload.optionsUsePlugin "השתמש בברירת המחדל של Firefox">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "השתמש בברירת המחדל של מערכת ההפעלה">
+<!ENTITY pdfdownload.optionsUseCustomProgram "השתמש בתוכנה זו">
+<!ENTITY pdfdownload.optionsBrowse "עיון...">
+<!ENTITY pdfdownload.optionsBrowseTitle "PDF-בחר בצופה ה">
+<!ENTITY pdfdownload.optionsExeFiles "אפליקציות ווינדוס">
+<!ENTITY pdfdownload.optionsAllFiles "כל הקבצים">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "הקובץ שבחרת אינו ניתן להרצה">
+<!ENTITY pdfdownload.optionsUpdateLabel "עדכון">
+<!ENTITY pdfdownload.optionsCheckUpdates "בדוק עדכונים">
+<!ENTITY pdfdownload.optionsHowToHelp "כיצד לעזור">
+<!ENTITY pdfdownload.optionsMakeDonation "תרום ליוצרים">

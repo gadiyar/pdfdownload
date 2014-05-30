@@ -1,15 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1/GPL 2.0/LGPL 2.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is "PDF Download".
+   -
+   - The Initial Developer of the Original Code is Denis Remondini.
+   - Portions created by the Initial Developer are Copyright (C) 2005 Denis Remondini.  
+   - All Rights Reserved.
+   -
+   - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
+   -
+   - Alternatively, the contents of this file may be used under the terms of
+   - either the GNU General Public License Version 2 or later (the "GPL"), or
+   - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+   - in which case the provisions of the GPL or the LGPL are applicable instead
+   - of those above. If you wish to allow use of your version of this file only
+   - under the terms of either the GPL or the LGPL, and not to allow others to
+   - use your version of this file under the terms of the MPL, indicate your
+   - decision by deleting the provisions above and replace them with the notice
+   - and other provisions required by the LGPL or the GPL. If you do not delete
+   - the provisions above, a recipient may use your version of this file under
+   - the terms of any one of the MPL, the GPL or the LGPL.
+   -
+   - 
+***** END LICENSE BLOCK ***** -->
+
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <?xml-stylesheet href="chrome://pdfdownload/skin/pdfdownload.css" type="text/css"?>
 <!DOCTYPE window SYSTEM "chrome://pdfdownload/locale/pdfdownload.dtd">
 
 <dialog title="&pdfdownload.AboutTitle;" chromehidden="menubar toolbar location directories status extrachrome" id="genericAbout" onload="window.focus()" buttons="accept" xmlns:em="http://www.mozilla.org/2004/em-rdf#" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
+  <script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
+
 <groupbox align="left" orient="vertical">
 <hbox>
 <vbox>
   <text value="PDF Download" style="font-weight: bold; font-size: x-large;"/>
-  <label>ver. 0.5.1.2</label>
+  <label>ver. 0.6</label>
   <separator class="thin"/>
   <text value="&pdfdownload.CreatedByLabel;" style="font-weight: bold;"/>
   <label>Denis Remondini</label> 
@@ -18,7 +56,7 @@
   <label>denistn@gmail.com</label>
   <separator class="thin"/>
   <text value="&pdfdownload.WebsiteLabel;" style="font-weight: bold;"/>
-  <label class="link" tooltiptext="&pdfdownload.WebsiteTooltip;" onclick="window.open('http://www.rabotat.org/firefox/'); window.close();">http://www.rabotat.org/firefox/</label>
+  <label class="link" tooltiptext="&pdfdownload.WebsiteTooltip;" onclick="pdfDownloadShared.openURL('http://www.rabotat.org/firefox/');">http://www.rabotat.org/firefox/</label>
 </vbox>
 <vbox>
 <spacer flex="1"/>
@@ -29,10 +67,10 @@
   <separator class="thin"/>
   <separator class="thin"/>
   <text value="&pdfdownload.MoreInfo;" style="font-weight: bold;"/> 
-  <label class="link" tooltiptext="&pdfdownload.ReadLicenseTooltip;" onclick="window.open('chrome://pdfdownload/content/LICENSE', '_blank')">&pdfdownload.License;</label>
+  <label class="link" tooltiptext="&pdfdownload.ReadLicenseTooltip;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/LICENSE', '_blank')">&pdfdownload.License;</label>
   <separator class="thin"/>
-  <label class="link" align="center" tooltiptext="&pdfdownload.ReadChangelogTooltip;" onclick="window.open('chrome://pdfdownload/content/CHANGELOG', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.Changelog;</label>
+  <label class="link" align="center" tooltiptext="&pdfdownload.ReadChangelogTooltip;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/CHANGELOG', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.Changelog;</label>
   <separator class="thin"/>
-  <label class="link" align="center" tooltiptext="&pdfdownload.Acknowledgments;" onclick="window.open('chrome://pdfdownload/content/acknowledgments', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.Acknowledgments;</label>
+  <label class="link" align="center" tooltiptext="&pdfdownload.Acknowledgments;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/acknowledgments', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.Acknowledgments;</label>
 </groupbox>
 </dialog>

@@ -1,16 +1,38 @@
 <!ENTITY pdfdownload.CreatedByLabel "Creat per:">
-<!ENTITY pdfdownload.WebsiteLabel "Lloc Web">
+<!ENTITY pdfdownload.WebsiteLabel "Lloc web">
 <!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Baixa-t'ho">
-<!ENTITY pdfdownload.OpenButton "Obri a una nova pestanya">
-<!ENTITY pdfdownload.ViewHtmlButton "Visualitza com a HTML a una nova pestanya">
-<!ENTITY pdfdownload.CancelButton "Cancel·la">
-
-<!ENTITY pdfdownload.AboutTitle "Sobre PDF Download">
-<!ENTITY pdfdownload.WebsiteTooltip "Visualitza el lloc web de l'autor">
+<!ENTITY pdfdownload.DownloadButton "Baixar-te'l">
+<!ENTITY pdfdownload.OpenButton "Obrir PDF">
+<!ENTITY pdfdownload.ViewHtmlButton "Veure com a HTML">
+<!ENTITY pdfdownload.CancelButton "Cancel·lar">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download no pot trobar el teu lector de fitxers PDF per defecte. Si us plau, escull-ne un des de la mateixa finestra de diàleg del PDF Download!">
+<!ENTITY pdfdownload.AboutTitle "PDF Download - Quant a">
+<!ENTITY pdfdownload.WebsiteTooltip "Veure el lloc web de l'autor">
 <!ENTITY pdfdownload.MoreInfo "Més detalls:">
 <!ENTITY pdfdownload.ReadLicenseTooltip "Llegeix la llicència final d'usuari">
 <!ENTITY pdfdownload.License "Llicència">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Visualitza el registre de canvis">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Veure el registre de canvis">
 <!ENTITY pdfdownload.Changelog "Registre de canvis">
 <!ENTITY pdfdownload.Acknowledgments "Agraïments">
+<!ENTITY pdfdownload.optionsTitle "PDFDownload - Opcions">
+<!ENTITY pdfdownload.optionsPDFTab "Obertura de PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Conversió de PDF a HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Més detalls">
+<!ENTITY pdfdownload.optionsOpenLink "Com obrir enllaços PDF emprant el connector PDF del Firefox:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Com obrir una versió en format HTML dels fitxers PDF:">
+<!ENTITY pdfdownload.optionsSameTab "Obrir a la mateixa pestanya">
+<!ENTITY pdfdownload.optionsNewTab "Obrir a una nova pestanya">
+<!ENTITY pdfdownload.optionsNewWindow "Obrir a una nova finestra">
+<!ENTITY pdfdownload.optionsOpenPdf "Obertura de fitxer Pdf:">
+<!ENTITY pdfdownload.optionsUsePlugin "Emprar l'acció per defecte del Firefox">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Emprar el visor per defecte del SO">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Emprar el següent visor:">
+<!ENTITY pdfdownload.optionsBrowse "Navega...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Escull visor de PDF">
+<!ENTITY pdfdownload.optionsExeFiles "Aplicacions Windows">
+<!ENTITY pdfdownload.optionsAllFiles "Tots els fitxers">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "El fitxer seleccionat no és executable!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Actualitza">
+<!ENTITY pdfdownload.optionsCheckUpdates "Comprova actualitzacions">
+<!ENTITY pdfdownload.optionsHowToHelp "Com ajudar">
+<!ENTITY pdfdownload.optionsMakeDonation "Fes una donació">

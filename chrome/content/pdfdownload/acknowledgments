@@ -7,8 +7,7 @@ Special thanks to:
 
 For mirroring, I would like to thank
 
-- Drew Drew 
-- Michele Facca 
+- Drew Drew  
 - Stephan Menzel (http://stmenzel.mine.nu) 
 - Mike Schroll (MSchroll.com)
 - Jason Edson (oceighty.net)
@@ -16,9 +15,40 @@ For mirroring, I would like to thank
 For bugs discovering:
 
 - Jason Siegel
+- Michael Zaugg
 
 
-For language packs:
+I would like to thanks the Babelzilla team (www.babelzilla.org) for their help providing so many localizations. 
+In particular:
+
+- mau    		[ ca-AD / Catalan ]
+- Ge0rge    	[ cs-CZ / Czech ]
+- el_barto    	[ da-DK / Danish ]
+- ReinekeFux, Team erweiterungen.de		[ de-DE / German ]
+- EDTM    	[ es-AR / Spanish (Latin American) ]
+- Pak    	[ es-ES / Spanish (Spain) ]
+- iabaro    [ eu-ES / Basque ]
+- Akilles	[ fi-FI / Finnish ]
+- Goofy, Ptit Lutin	[ fr-FR / French ]
+- noonand, Sibéal Nic Suibhne, Niall Mac Suibhne	[ ga-IE / Irish ]
+- asfaltboy    	[ he-IL / Hebrew ]
+- LocaLiceR    	[ hu-HU / Hungarian ]
+- Norah    		[ ja-JP / Japanese ]
+- Melon    		[ nb-NO / Norwegian (Bokmål) ]
+- JW_00000    	[ nl-NL / Dutch ]
+- teo    		[ pl-PL / Polish ]
+- fernph    	[ pt-BR / Portuguese (Brazilian) ]
+- zefranc    	[ pt-PT / Portuguese (Portugal) ]
+- Lucian    	[ ro-RO / Romanian ] 	
+- wladow    	[ sk-SK / Slovak ]
+- miles    		[ sl-SI / Slovenian ]
+- e93al    		[ sv-SE / Swedish ]
+- Yavuz Kaynar, batuhancetin, ErkanKaplan    [ tr-TR / Turkish ]
+- fang5566    	[ zh-CN / Chinese (Simplified) ]
+- petertc    	[ zh-TW / Chinese (Traditional) ]
+
+And finally I don't want to forget the guys that helped me providing their localizations for old
+versions of PDF Download:
 
 - Jonas Zetterberg (Swedish translation)
 - Razvan Pitic (Romanian translation)
@@ -35,7 +65,8 @@ For language packs:
 - TnT (Greek translation)
 - Steve (Hungarian translation)
 - Andre L. Pan (Simplified and Traditional Chinese translation)
-- Nik (Russian translation)
+- Nikolay Shaterkin (Russian translation)
 - Bor (Slovenian translation)
 - Grzegorz (Polish translation)
 - Maurici Garcia (Catalan translation)
+- Iñaki Arrieta Baro (Basque translation)

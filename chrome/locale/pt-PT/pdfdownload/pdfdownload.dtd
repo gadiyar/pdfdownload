@@ -1,0 +1,38 @@
+<!ENTITY pdfdownload.CreatedByLabel "Criado por:">
+<!ENTITY pdfdownload.WebsiteLabel "Página web">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "Descarregar">
+<!ENTITY pdfdownload.OpenButton "Abrir num novo separador">
+<!ENTITY pdfdownload.ViewHtmlButton "Ver como HTML num novo separador">
+<!ENTITY pdfdownload.CancelButton "Cancelar">
+<!ENTITY pdfdownload.osWarningMsg "O PDF Download nao consegue encontrar o seu leitor de PDFs. Por favor, escolha um no menu Opcoes">
+<!ENTITY pdfdownload.AboutTitle "PDF Download - Acerca">
+<!ENTITY pdfdownload.WebsiteTooltip "Ver a página web do autor">
+<!ENTITY pdfdownload.MoreInfo "Mais detalhes:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Ler licença de utilizador final">
+<!ENTITY pdfdownload.License "Licença">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Ver Relatório de Alterações">
+<!ENTITY pdfdownload.Changelog "Relatório de Alterações">
+<!ENTITY pdfdownload.Acknowledgments "Agradecimentos">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Opcoes">
+<!ENTITY pdfdownload.optionsPDFTab "Abrindo PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Conversao de PDF para HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Mais detalhes">
+<!ENTITY pdfdownload.optionsOpenLink "Como abrir ligacoes em PDF usando a extensao PDF do Firefox">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Como abrir ficheiros PDF em versao HTML">
+<!ENTITY pdfdownload.optionsSameTab "Abrir no mesmo separador">
+<!ENTITY pdfdownload.optionsNewTab "Abrir num novo separador">
+<!ENTITY pdfdownload.optionsNewWindow "Abrir numa nova janela">
+<!ENTITY pdfdownload.optionsOpenPdf "Abertura do ficheiro PDF:">
+<!ENTITY pdfdownload.optionsUsePlugin "Usar a acçao original do Firefox">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Usar o programa utilisado pelo sistema operativo">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Usar este visualizador">
+<!ENTITY pdfdownload.optionsBrowse "Procurar...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Escolha o Visualizador PDF">
+<!ENTITY pdfdownload.optionsExeFiles "Aplicacoes do Windows">
+<!ENTITY pdfdownload.optionsAllFiles "Todos os Ficheiros">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "O ficheiro seleccionado nao é executavel!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Actualizar">
+<!ENTITY pdfdownload.optionsCheckUpdates "Ver Actualizacoes">
+<!ENTITY pdfdownload.optionsHowToHelp "Como ajudar">
+<!ENTITY pdfdownload.optionsMakeDonation "Fazer uma doação">

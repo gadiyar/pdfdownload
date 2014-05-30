@@ -2,10 +2,10 @@
 <!ENTITY pdfdownload.WebsiteLabel "Website">
 <!ENTITY pdfdownload.DownloadQuestionLabel "">
 <!ENTITY pdfdownload.DownloadButton "Downloaden">
-<!ENTITY pdfdownload.OpenButton "In een nieuwe tab openen">
-<!ENTITY pdfdownload.ViewHtmlButton "Als HTML bekijken in een nieuwe tab">
+<!ENTITY pdfdownload.OpenButton "Open PDF">
+<!ENTITY pdfdownload.ViewHtmlButton "Als HTML bekijken">
 <!ENTITY pdfdownload.CancelButton "Annuleren">
-
+<!ENTITY pdfdownload.osWarningMsg "PDF Download kan uw standaard PDF-lezer niet vinden. Gelieve er een te kiezen in het optiesvenster van PDF Download.">
 <!ENTITY pdfdownload.AboutTitle "PDF Download - Over">
 <!ENTITY pdfdownload.WebsiteTooltip "Ga naar de website van de auteur">
 <!ENTITY pdfdownload.MoreInfo "Meer details:">
@@ -14,3 +14,25 @@
 <!ENTITY pdfdownload.ReadChangelogTooltip "Changelog bekijken">
 <!ENTITY pdfdownload.Changelog "Changelog">
 <!ENTITY pdfdownload.Acknowledgments "Dankbetuigingen">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Opties">
+<!ENTITY pdfdownload.optionsPDFTab "PDF aan het openen">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF naar HTML-conversie">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Meer details">
+<!ENTITY pdfdownload.optionsOpenLink "Hoe PDF-links openen met de Firefox PDF-plugin:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hoe de HTML-versie van PDF-bestanden openen:">
+<!ENTITY pdfdownload.optionsSameTab "Open in hetzelfde tabblad">
+<!ENTITY pdfdownload.optionsNewTab "Open in een nieuw tabblad">
+<!ENTITY pdfdownload.optionsNewWindow "Open in een nieuw venster">
+<!ENTITY pdfdownload.optionsOpenPdf "Open het PDF-bestand:">
+<!ENTITY pdfdownload.optionsUsePlugin "Gebruik de standaardactie van Firefox">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Met het standaardprogramma van uw besturingssysteem">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Met dit programma:">
+<!ENTITY pdfdownload.optionsBrowse "Bladeren...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Kies een PDF-lezer">
+<!ENTITY pdfdownload.optionsExeFiles "Windows-programma's">
+<!ENTITY pdfdownload.optionsAllFiles "Alle bestanden">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Het geselecteerde bestand is geen programma!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Update">
+<!ENTITY pdfdownload.optionsCheckUpdates "Controleer voor updates">
+<!ENTITY pdfdownload.optionsHowToHelp "Hoe helpen">
+<!ENTITY pdfdownload.optionsMakeDonation "Een donatie maken">

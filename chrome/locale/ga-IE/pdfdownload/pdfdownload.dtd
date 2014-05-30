@@ -1,0 +1,38 @@
+<!ENTITY pdfdownload.CreatedByLabel "Cruthaithe ag:">
+<!ENTITY pdfdownload.WebsiteLabel "Suíomh">
+<!ENTITY pdfdownload.DownloadQuestionLabel "Tada">
+<!ENTITY pdfdownload.DownloadButton "Íoslódáil é">
+<!ENTITY pdfdownload.OpenButton "Oscail PDF">
+<!ENTITY pdfdownload.ViewHtmlButton "Féach air mar HTML">
+<!ENTITY pdfdownload.CancelButton "Cealaigh">
+<!ENTITY pdfdownload.osWarningMsg "Ní féidir le PDF Download do féachadóir réamhshocraithe PDF a aimsiú. Roghnaigh ceann amháin i Rogha PDF Download">
+<!ENTITY pdfdownload.AboutTitle "PDF Íoslódáil - Eolas">
+<!ENTITY pdfdownload.WebsiteTooltip "Féach ar suíomh an údair">
+<!ENTITY pdfdownload.MoreInfo "Níos mó sonraí:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Léigh ceadúnas an úsáideora">
+<!ENTITY pdfdownload.License "Ceadúnas">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Féach ar iarchomhad athraithe">
+<!ENTITY pdfdownload.Changelog "Iarchomhad athruithe">
+<!ENTITY pdfdownload.Acknowledgments "Admháil">
+<!ENTITY pdfdownload.optionsTitle "PDF Íoslódáil - Roghanna">
+<!ENTITY pdfdownload.optionsPDFTab "PDF ag oscailt">
+<!ENTITY pdfdownload.optionsHTMLTab "Athraigh PDF go HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Níos mó sonraí">
+<!ENTITY pdfdownload.optionsOpenLink "An modh nascanna PDF a oscailt ag baint usáid as breiseán Firefox PDF">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "An modh leagan HTML de throdán PDF a oscailt">
+<!ENTITY pdfdownload.optionsSameTab "Oscail sa tábáil céanna">
+<!ENTITY pdfdownload.optionsNewTab "Oscail sa tábáil nua">
+<!ENTITY pdfdownload.optionsNewWindow "Oscail i bhfuinneog nua">
+<!ENTITY pdfdownload.optionsOpenPdf "Trodán PDF ag oscailt">
+<!ENTITY pdfdownload.optionsUsePlugin "Bain úsáid as gníomh réamhshocraithe Firefox">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Bain úsáid as féachadóir réamhshocraithe an chórais oibriúcháin">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Bain úsáid as an féachadóir seo">
+<!ENTITY pdfdownload.optionsBrowse "Cuartaigh">
+<!ENTITY pdfdownload.optionsBrowseTitle "Pioc féachadóir PDF">
+<!ENTITY pdfdownload.optionsExeFiles "Feidhm-oideas Window">
+<!ENTITY pdfdownload.optionsAllFiles "Uile throdán">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Ní féidir an trodán roghnaithe feidhmniú">
+<!ENTITY pdfdownload.optionsUpdateLabel "Nuashonraigh">
+<!ENTITY pdfdownload.optionsCheckUpdates "Cinntigh nuashonraigh">
+<!ENTITY pdfdownload.optionsHowToHelp "An modh cabhraithe">
+<!ENTITY pdfdownload.optionsMakeDonation "Tabhair síntiús">

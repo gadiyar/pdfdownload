@@ -1,14 +1,50 @@
 <?xml version="1.0"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1/GPL 2.0/LGPL 2.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is "PDF Download".
+   -
+   - The Initial Developer of the Original Code is Denis Remondini.
+   - Portions created by the Initial Developer are Copyright (C) 2005 Denis Remondini.  
+   - All Rights Reserved.
+   -
+   - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
+   -
+   - Alternatively, the contents of this file may be used under the terms of
+   - either the GNU General Public License Version 2 or later (the "GPL"), or
+   - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+   - in which case the provisions of the GPL or the LGPL are applicable instead
+   - of those above. If you wish to allow use of your version of this file only
+   - under the terms of either the GPL or the LGPL, and not to allow others to
+   - use your version of this file under the terms of the MPL, indicate your
+   - decision by deleting the provisions above and replace them with the notice
+   - and other provisions required by the LGPL or the GPL. If you do not delete
+   - the provisions above, a recipient may use your version of this file under
+   - the terms of any one of the MPL, the GPL or the LGPL.
+   -
+   - 
+***** END LICENSE BLOCK ***** -->
+
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <!DOCTYPE window SYSTEM "chrome://pdfdownload/locale/pdfdownload.dtd">
 
 
 <window class="dialog"
-    id="question-window"
+    id="PDFDownload-question-window"
     title="PDF Download"
     orient="horizontal"
-    autostretch="always"
-    onload="sizeToContent(); getFileSize(window.arguments[0].url);"
+    align="stretch"
+    onload="sizeToContentTrick(); disableOpenBtn(window.arguments[1]); getFileSize(window.arguments[0].url);"
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
@@ -42,6 +78,30 @@
 	function doOpenHtml() {
    		window.arguments[0].res = "openHtml";
    		window.close();
+	}
+
+	function disableOpenBtn(ext) {
+		/*
+             * If it is a pdf.gz file, we disable the open button because usually a 
+             * pdf viewer is not able to open this kind of file.
+		 */
+		if (ext == "pdf.gz") {
+			document.getElementById("open-button").disabled = true;
+		}
+	}
+
+	function sizeToContentTrick() {
+		/*
+		 * Workaround to sizeToContent bug (Bug 91137)
+		 */
+		var xulWindow = document.getElementById("PDFDownload-question-window");
+		var wdth = window.innerWidth; // THIS IS NEEDED,
+		window.sizeToContent();
+		xulWindow.setAttribute("width",window.innerWidth + 30);
+
+		var hght = window.innerHeight; // THIS IS NEEDED,
+		window.sizeToContent();
+		xulWindow.setAttribute("height",window.innerHeight + 30);     
 	}
 
 	function getFileSize(url) {
@@ -88,6 +148,11 @@
   ]]>
   </script>
 
+  <keyset>
+    <key id="enter" keycode="VK_RETURN" oncommand="doOpen();"/>
+    <key id="escape" keycode="VK_ESCAPE" oncommand="doCancel();"/>
+  </keyset>
+
   <hbox>
   <vbox pack="center">
     <image src="chrome://pdfdownload/skin/popup_dialog_question_mark.gif"/>
@@ -98,9 +163,9 @@
     <separator class="thin"/>
     <hbox pack="center">    
 	<button id="download-button" label="&pdfdownload.DownloadButton;" oncommand="doDownload();"/>
-  	<button id="open-button" label="&pdfdownload.OpenButton;" oncommand="doOpen();"/>/>
-  	<button id="openHTML-button" label="&pdfdownload.ViewHtmlButton;" oncommand="doOpenHtml();"/>/>
-  	<button id="cancel-button" label="&pdfdownload.CancelButton;" oncommand="doCancel();"/>/>
+  	<button id="open-button" label="&pdfdownload.OpenButton;" oncommand="doOpen();" default="true" key="enter"/>
+  	<button id="openHTML-button" label="&pdfdownload.ViewHtmlButton;" oncommand="doOpenHtml();" />
+  	<button id="cancel-button" label="&pdfdownload.CancelButton;" oncommand="doCancel();" key="escape" />
     </hbox>
   </vbox>
   </hbox>

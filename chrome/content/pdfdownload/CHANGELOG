@@ -1,10 +1,24 @@
 CHANGELOG
 
-v0.5.1.2  :   2005-09-15
+v0.6    :   2006-01-02
+
+ - Added new feature: now it is possible to open a pdf file directly with an external program. 
+ - Added options dialog.
+ - Added support for marking as visited the pdf links that have been opened using "PDF Download"
+ - Added support for the BASE html tag.
+ - Added support for URL containing the '#' char.
+ - Added access keys for the popup dialog: 
+     - pressing the ESCAPE key the popup dialog is closed
+     - pressing the RETURN key the pdf file is opened with an external program
+ - Fixed bug about wrong size of the popup dialog.
+ - Added language support for Basque and Irish.
+ - Removed language support for Greek (unfortunately, I hope to reintroduced it in the future)
+
+v0.5.1.2:   2005-09-15
 
  - Added support for Firefox 1.6a
 
-v0.5.1.1  :   2005-09-10
+v0.5.1.1:   2005-09-10
 
  - Added support for Firefox 1.5 Beta1
  - Added support for the default directory where to save downloaded files. Now, if the user has specified

@@ -5,7 +5,7 @@
 <!ENTITY pdfdownload.OpenButton "Åben i nyt faneblad">
 <!ENTITY pdfdownload.ViewHtmlButton "Vis som HTML i nyt faneblad">
 <!ENTITY pdfdownload.CancelButton "Annuller">
-
+<!ENTITY pdfdownload.osWarningMsg "PDF Download kan ikke finde en standard PDF-fremviser. Vælg venligst en i indstillingerne for PDF Download!">
 <!ENTITY pdfdownload.AboutTitle "Om PDF Download">
 <!ENTITY pdfdownload.WebsiteTooltip "Vis forfatterens hjemmeside">
 <!ENTITY pdfdownload.MoreInfo "Vis flere detaljer:">
@@ -14,5 +14,25 @@
 <!ENTITY pdfdownload.ReadChangelogTooltip "Vis ændringsdokument">
 <!ENTITY pdfdownload.Changelog "Ændringsdokument">
 <!ENTITY pdfdownload.Acknowledgments "Tak til bidragsydere">
-
-
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Indstillinger">
+<!ENTITY pdfdownload.optionsPDFTab "PDF åbning">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF til HTML konvertering">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Flere oplysninger">
+<!ENTITY pdfdownload.optionsOpenLink "Hvordan skal PDF links åbnes ved brug af PDF plugin:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hvordan skal HTML version af PDF filer åbnes:">
+<!ENTITY pdfdownload.optionsSameTab "Åbn i samme faneblad">
+<!ENTITY pdfdownload.optionsNewTab "Åbn i nyt faneblad">
+<!ENTITY pdfdownload.optionsNewWindow "Åbn i nyt vindue">
+<!ENTITY pdfdownload.optionsOpenPdf "PDF filåbning:">
+<!ENTITY pdfdownload.optionsUsePlugin "Benyt samme handling som Firefox">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Brug styresystemets standard-fremviser">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Brug denne fremviser:">
+<!ENTITY pdfdownload.optionsBrowse "Gennemse...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Vælg PDF-fremviser">
+<!ENTITY pdfdownload.optionsExeFiles "Windows programmer">
+<!ENTITY pdfdownload.optionsAllFiles "Alle filer">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Den valgte fil kan ikke eksekveres!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Opdater">
+<!ENTITY pdfdownload.optionsCheckUpdates "Tjek for opdateringer">
+<!ENTITY pdfdownload.optionsHowToHelp "Hvordan du kan hjælpe">
+<!ENTITY pdfdownload.optionsMakeDonation "Giv en donation">

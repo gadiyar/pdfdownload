@@ -5,7 +5,7 @@
 <!ENTITY pdfdownload.OpenButton "在新标签页中打开">
 <!ENTITY pdfdownload.ViewHtmlButton "在新标签页中以HTML方式查看">
 <!ENTITY pdfdownload.CancelButton "取消">
-
+<!ENTITY pdfdownload.osWarningMsg "PDF Download无法检测到您默认的PDF阅读器.请在PDF Download选项对话框中选择一个PDF阅读器!">
 <!ENTITY pdfdownload.AboutTitle "PDF Download - 关于">
 <!ENTITY pdfdownload.WebsiteTooltip "访问作者的网站">
 <!ENTITY pdfdownload.MoreInfo "更多详情:">
@@ -14,5 +14,25 @@
 <!ENTITY pdfdownload.ReadChangelogTooltip "查看更新记录">
 <!ENTITY pdfdownload.Changelog "更新记录">
 <!ENTITY pdfdownload.Acknowledgments "致谢">
-
-
+<!ENTITY pdfdownload.optionsTitle "PDF Download - 选项">
+<!ENTITY pdfdownload.optionsPDFTab "打开PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF转换到HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "更多细节">
+<!ENTITY pdfdownload.optionsOpenLink "如何使用Firefox的PDF插件打开PDF链接:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "如何以HTML形式打开PDF文件:">
+<!ENTITY pdfdownload.optionsSameTab "打开于当前标签页">
+<!ENTITY pdfdownload.optionsNewTab "打开于新标签页">
+<!ENTITY pdfdownload.optionsNewWindow "打开于新窗口">
+<!ENTITY pdfdownload.optionsOpenPdf "打开PDF文件:">
+<!ENTITY pdfdownload.optionsUsePlugin "使用Firefox默认的下载">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "使用操作系统默认查看器">
+<!ENTITY pdfdownload.optionsUseCustomProgram "使用以下查看器:">
+<!ENTITY pdfdownload.optionsBrowse "浏览...">
+<!ENTITY pdfdownload.optionsBrowseTitle "选择一个PDF查看器">
+<!ENTITY pdfdownload.optionsExeFiles "Windows应用程序">
+<!ENTITY pdfdownload.optionsAllFiles "所有文件">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "该选择的文件不是一个可执行文件!">
+<!ENTITY pdfdownload.optionsUpdateLabel "更新">
+<!ENTITY pdfdownload.optionsCheckUpdates "检查更新">
+<!ENTITY pdfdownload.optionsHowToHelp "如何帮助">
+<!ENTITY pdfdownload.optionsMakeDonation "捐助:">

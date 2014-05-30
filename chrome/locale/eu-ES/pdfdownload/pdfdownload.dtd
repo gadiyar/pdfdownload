@@ -1,0 +1,38 @@
+<!ENTITY pdfdownload.CreatedByLabel "Egilea:">
+<!ENTITY pdfdownload.WebsiteLabel "Webgunea">
+<!ENTITY pdfdownload.DownloadQuestionLabel "#Mezu hutsa#">
+<!ENTITY pdfdownload.DownloadButton "Fitxategia ekarri">
+<!ENTITY pdfdownload.OpenButton "PDF fitxategia ireki">
+<!ENTITY pdfdownload.ViewHtmlButton "HTML moduan ikusi">
+<!ENTITY pdfdownload.CancelButton "Utzi">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download-ek ezin du sistemaren PDF irakurgailua topatu. Mesedez, aukeratu bat PDF Download-en aukeretan.">
+<!ENTITY pdfdownload.AboutTitle "PDF Download-en gainean">
+<!ENTITY pdfdownload.WebsiteTooltip "Egilearen webgunea ikusi">
+<!ENTITY pdfdownload.MoreInfo "Informazio gehiago:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Erabiltzaile lizentzia irakurri">
+<!ENTITY pdfdownload.License "Lizentzia">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Aldaketa zerrenda ikusi">
+<!ENTITY pdfdownload.Changelog "Aldaketa zerrenda">
+<!ENTITY pdfdownload.Acknowledgments "Esker onak">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Aukerak">
+<!ENTITY pdfdownload.optionsPDFTab "PDF fitxategia irekitzean">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF-tik HTML-ra bihurtzean">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Aukera gehiago">
+<!ENTITY pdfdownload.optionsOpenLink "Firefoxen PDF irakurgailua erabiltzean PDF fitxategiak nola ireki:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF fitxategien HTML bertsioa honela ireki:">
+<!ENTITY pdfdownload.optionsSameTab "Fitxa berean ireki">
+<!ENTITY pdfdownload.optionsNewTab "Fitxa berri batean ireki">
+<!ENTITY pdfdownload.optionsNewWindow "Lehio berri batean ireki">
+<!ENTITY pdfdownload.optionsOpenPdf "PDF fitxategia irekitzean:">
+<!ENTITY pdfdownload.optionsUsePlugin "Firefoxen aukeratutakoa egin">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Sistemaren irakurgailua erabili">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Irakurgailu hau erabili:">
+<!ENTITY pdfdownload.optionsBrowse "Arakatu...">
+<!ENTITY pdfdownload.optionsBrowseTitle "PDF irakurgailua aukeratu">
+<!ENTITY pdfdownload.optionsExeFiles "Windows programak">
+<!ENTITY pdfdownload.optionsAllFiles "Fitxategi guztiak">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Aukeratutako fitxategia ez da programa bat!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Eguneraketa">
+<!ENTITY pdfdownload.optionsCheckUpdates "Arakatu orain">
+<!ENTITY pdfdownload.optionsHowToHelp "Nola lagun dezakezun">
+<!ENTITY pdfdownload.optionsMakeDonation "Dohaintza bat egin">

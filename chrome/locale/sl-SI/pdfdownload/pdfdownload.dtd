@@ -1,18 +1,38 @@
-<!ENTITY pdfdownload.CreatedByLabel "Izdelal:">
-<!ENTITY pdfdownload.WebsiteLabel "Domaca stran">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.CreatedByLabel "Avtor:">
+<!ENTITY pdfdownload.WebsiteLabel "Spletna stran">
+<!ENTITY pdfdownload.DownloadQuestionLabel "?">
 <!ENTITY pdfdownload.DownloadButton "Prenesi">
-<!ENTITY pdfdownload.OpenButton "Odpri v novem zavihku">
-<!ENTITY pdfdownload.ViewHtmlButton "Odpri kot HTML v novem zavihku">
-<!ENTITY pdfdownload.CancelButton "Preklici">
-
-<!ENTITY pdfdownload.AboutTitle "PDF Download - O programu">
-<!ENTITY pdfdownload.WebsiteTooltip "Avtorjeva domaca stran">
+<!ENTITY pdfdownload.OpenButton "Odpri PDF">
+<!ENTITY pdfdownload.ViewHtmlButton "Oglej kot HTML">
+<!ENTITY pdfdownload.CancelButton "Prekliči">
+<!ENTITY pdfdownload.osWarningMsg "PrenosPDF ne more najti privzetega bralnika PDF. Prosimo, da ga izberete v pogovornem oknu možnosti prenosa PDF!">
+<!ENTITY pdfdownload.AboutTitle "PrenosPDF - O programu">
+<!ENTITY pdfdownload.WebsiteTooltip "Avtorjeva domača stran">
 <!ENTITY pdfdownload.MoreInfo "Podrobnosti:">
 <!ENTITY pdfdownload.ReadLicenseTooltip "Preberi licenco">
 <!ENTITY pdfdownload.License "Licenca">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Poglej log spremeb">
-<!ENTITY pdfdownload.Changelog "Poglej log">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Poglej dnevnik sprememb">
+<!ENTITY pdfdownload.Changelog "Dnevnik sprememb">
 <!ENTITY pdfdownload.Acknowledgments "Zahvale">
-
-
+<!ENTITY pdfdownload.optionsTitle "PrenosPDF - Možnosti">
+<!ENTITY pdfdownload.optionsPDFTab "Opdiranje PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Pretvorba PDF v HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Več podrobnosti">
+<!ENTITY pdfdownload.optionsOpenLink "Povezave PDF z uporabo razširitve Firefox PDF:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Različico HTML datotek PDF:">
+<!ENTITY pdfdownload.optionsSameTab "odpri v istem zavihku">
+<!ENTITY pdfdownload.optionsNewTab "odpri v novem zavihku">
+<!ENTITY pdfdownload.optionsNewWindow "odpri v novem oknu">
+<!ENTITY pdfdownload.optionsOpenPdf "Odpiranje datoteke PDF:">
+<!ENTITY pdfdownload.optionsUsePlugin "uporabi privzeto dejanje Firefoxa">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "uporabi privzeti sistemski ogledovalnik">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Uporabi ta ogledovalnik:">
+<!ENTITY pdfdownload.optionsBrowse "Prebrskaj ...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Izberite ogledovalnik PDF">
+<!ENTITY pdfdownload.optionsExeFiles "aplikacije Windows">
+<!ENTITY pdfdownload.optionsAllFiles "vse datoteke">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Izbrane datoteke ni mogoče pognati!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Posodobitve">
+<!ENTITY pdfdownload.optionsCheckUpdates "Preveri za posodobitve">
+<!ENTITY pdfdownload.optionsHowToHelp "Kako lahko pomagam?">
+<!ENTITY pdfdownload.optionsMakeDonation "Donirajte">

@@ -1,17 +1,38 @@
 <!ENTITY pdfdownload.CreatedByLabel "Erstellt von:">
-<!ENTITY pdfdownload.WebsiteLabel "Web Seite">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Speichern">
-<!ENTITY pdfdownload.OpenButton "In einem neuen Fenster &#x00F6;ffnen">
-<!ENTITY pdfdownload.ViewHtmlButton "Als HTML-Seite anzeigen">
+<!ENTITY pdfdownload.WebsiteLabel "Homepage:">
+<!ENTITY pdfdownload.DownloadQuestionLabel " ">
+<!ENTITY pdfdownload.DownloadButton "PDF herunterladen">
+<!ENTITY pdfdownload.OpenButton "PDF öffnen">
+<!ENTITY pdfdownload.ViewHtmlButton "PDF als HTML anzeigen">
 <!ENTITY pdfdownload.CancelButton "Abbrechen">
-
-<!ENTITY pdfdownload.AboutTitle "&#x00DC;ber - PDF Download">
-<!ENTITY pdfdownload.WebsiteTooltip "Webseite des Authors">
-<!ENTITY pdfdownload.MoreInfo "Mehr Info">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download kann keinen Standard-Dateibetrachter für PDF-Dokumente finden. Bitte wählen sie ein entsprechendes Programm im Einstellungsdialog von PDF Download aus!">
+<!ENTITY pdfdownload.AboutTitle "Über PDF Download">
+<!ENTITY pdfdownload.WebsiteTooltip "Homepage des Autors besuchen">
+<!ENTITY pdfdownload.MoreInfo "Weitere Informationen:">
 <!ENTITY pdfdownload.ReadLicenseTooltip "Lizenzbedingungen anzeigen">
-<!ENTITY pdfdownload.License "Lizenz">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Siehe Programmänderungen">
-<!ENTITY pdfdownload.Changelog "Programmänderungen">
+<!ENTITY pdfdownload.License "Lizenzbedingungen">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Changelog anzeigen">
+<!ENTITY pdfdownload.Changelog "Changelog">
 <!ENTITY pdfdownload.Acknowledgments "Danksagungen">
-
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Einstellungen">
+<!ENTITY pdfdownload.optionsPDFTab "PDF öffnen">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF in HTML umwandeln">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Weitere Informationen">
+<!ENTITY pdfdownload.optionsOpenLink "Beim Öffnen von PDF-Links mit dem Firefox-Plugin:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Beim Öffnen der HTML-Version einer PDF-Datei:">
+<!ENTITY pdfdownload.optionsSameTab "Im selben Tab/Fenster öffnen">
+<!ENTITY pdfdownload.optionsNewTab "In neuem Tab öffnen">
+<!ENTITY pdfdownload.optionsNewWindow "In neuem Fenster öffnen">
+<!ENTITY pdfdownload.optionsOpenPdf "Beim Öffnen von PDF-Dateien:">
+<!ENTITY pdfdownload.optionsUsePlugin "Standard-Plugin von Firefox benutzen">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Standardbetrachter des Betriebssystems benutzen">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Diesen Betrachter benutzen:">
+<!ENTITY pdfdownload.optionsBrowse "Durchsuchen...">
+<!ENTITY pdfdownload.optionsBrowseTitle "PDF-Betrachter auswählen">
+<!ENTITY pdfdownload.optionsExeFiles "Windows-Anwendungen">
+<!ENTITY pdfdownload.optionsAllFiles "Alle Dateien">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Die ausgewählte Datei ist nicht ausführbar!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Versionsinformation">
+<!ENTITY pdfdownload.optionsCheckUpdates "Auf Updates überprüfen">
+<!ENTITY pdfdownload.optionsHowToHelp "Unterstützung">
+<!ENTITY pdfdownload.optionsMakeDonation "Spenden mit PayPal">
