@@ -46,7 +46,7 @@
 <!ENTITY pdfdownload.optionsMakeDonation "Մեկենասություն">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Պատկերներ">
 <!ENTITY pdfdownload.options.width "80ex">
-<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.options.height "60ex">
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Ցույց տալ պատկերները PDF-ի HTML տարբերակում">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Պատկերները տեսնելու համար դրանք պետք է պահպանվեն կոշտ պնակի վրա:">

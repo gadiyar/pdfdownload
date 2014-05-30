@@ -1,9 +1,13 @@
 CHANGELOG
 
+v0.9.3.2:	2007-11-01
+
+ - Fixed sk-SK and am-HY localization problem occurring with Microsoft Vista.
+
 v0.9.3.1:	2007-10-11
 
  - Fixed regression introduced in 0.9.3 regarding some localization.
-
+ 
 v0.9.3	:	2007-10-08
 
  - Added functionality to remove automatically the temporary files created by PDF Download. 

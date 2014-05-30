@@ -165,6 +165,7 @@ function mouseClick(aEvent) {
 		var answer = new Object();
 		answer.res = "cancel";
 		answer.url = originalUrl;
+		answer.filesize = "unknown";
 		try {
 			answer.res = sltPrefs.getCharPref("extensions.pdfdownload.defaultAction");
 		} catch(ex) {
@@ -230,7 +231,7 @@ function handlePDF(params,ext,normalizedUrl) {
                 params.res = "showPopup";
                 handlePDF(params,ext,normalizedUrl);
             } else {
-			    getMirror(encodeURIComponent(params.url));
+			    getMirror(encodeURIComponent(params.url),params.filesize);
             }
 		}
 }
@@ -359,7 +360,7 @@ function copyFile(sourceFile,destFile) {
  
 
 //we find which mirror is better to use to do the PDF->HTML conversion
-function getMirror(url) {
+function getMirror(url,filesize) {
 	var http;
 	try {
 		http = new XMLHttpRequest();
@@ -368,7 +369,7 @@ function getMirror(url) {
 	}
 	if (http) {
 		// this is the server-side script that handle the mirror list
-		var uri = "http://www.rabotat.org/firefox/pdfdownload/getmirror.php";
+		var uri = "http://www.rabotat.org/firefox/pdfdownload/getmirror.php?filesize="+filesize;
 		http.open("GET", uri, true);
 		http.onreadystatechange=function() {
 			if (http.readyState == 4) {

@@ -82,6 +82,7 @@
 			// Open button handler
 			function doOpenHtml() {
 				window.arguments[0].res = "openHtml";
+				window.arguments[0].filesize = document.getElementById("fileSize").value;
 				window.close();
 			}
 
@@ -120,6 +121,7 @@
 				strbundle = document.getElementById("strings");
 				var part1 = strbundle.getString("questionPart1");				
 				var descr = document.getElementById("QuestionLabel");
+				var fileSize = document.getElementById("fileSize");
 				try {
 					xmlhttp = new XMLHttpRequest();
 				} catch (e) {
@@ -130,7 +132,8 @@
 					xmlhttp.onreadystatechange=function() {
 						if (xmlhttp.readyState == 4) {
 							if (xmlhttp.status == 200) {
-								var size = xmlhttp.getResponseHeader("Content-Length");					
+								var size = xmlhttp.getResponseHeader("Content-Length");		
+								fileSize.value = size;								
 								if (size >= 1024*1024) {
 									size = size / (1024*1024);
 									part1 = part1 + " (" + size.toFixed(1) + " MB)" ;
@@ -235,7 +238,7 @@
 		<spacer flex="1"/>
 	</tooltip>
 
-
+	<label id="fileSize" value="unknown" hidden="true"/>
 	<hbox>
 		<vbox pack="center">
 			<image src="chrome://pdfdownload/skin/popup_dialog_question_mark.gif"/>

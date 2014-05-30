@@ -7,7 +7,7 @@
 
     <em:id>{37E4D8EA-8BDA-4831-8EA1-89053939A250}</em:id>
     <em:name>PDF Download</em:name>
-    <em:version>0.9.3.1</em:version>
+    <em:version>0.9.3.2</em:version>
     <em:description>Allows to choose if you want to view a PDF file inside the browser (as PDF or HTML), if you want to view it outside Firefox with your default or custom PDF reader, or if you want to download it!</em:description>
     <em:creator>Denis Remondini</em:creator>
     <em:iconURL>chrome://pdfdownload/skin/pdfdownload.png</em:iconURL>
