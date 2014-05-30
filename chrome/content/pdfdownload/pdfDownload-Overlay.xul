@@ -41,6 +41,7 @@
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
   <script type="application/x-javascript" src="chrome://pdfdownload/content/pdfDownloadOverlay.js"/>
+  <script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
 
     <!-- Tools menu -->
     <menupopup id="menu_ToolsPopup">

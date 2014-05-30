@@ -15,7 +15,7 @@
    - The Original Code is "PDF Download".
    -
    - The Initial Developer of the Original Code is Denis Remondini.
-   - Portions created by the Initial Developer are Copyright (C) 2005-2006 Denis Remondini.  
+   - Portions created by the Initial Developer are Copyright (C) 2005 Denis Remondini.  
    - All Rights Reserved.
    -
    - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
@@ -44,7 +44,7 @@
     title="PDF Download"
     orient="horizontal"
     align="stretch"
-    onload="sizeToContentTrick(); disableButtons(window.arguments[0].url); displayQuestion(window.arguments[0].size);"
+    onload="sizeToContentTrick(); disableOpenBtn(window.arguments[1]); getFileSize(window.arguments[0].url);"
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
@@ -55,7 +55,6 @@
   <![CDATA[
 
 	var strbundle;		
-	var xmlhttp;
 
 	// Cancel button handler
 	function doCancel() {
@@ -81,36 +80,13 @@
    		window.close();
 	}
 
-	function displayQuestion(size) {
-		strbundle = document.getElementById("strings");
-		var part1 = strbundle.getString("questionPart1");				
-		var descr = document.getElementById("QuestionLabel");
-		if (size >= 1024*1024) {
-			size = size / (1024*1024);
-			part1 = part1 + " (" + size.toPrecision(3) + " MB)" ;
-		} else if (size >= 1024) {
-			size = size / 1024;
-			part1 = part1 + " (" + size.toPrecision(3) + " KB)";
-		} else if (size != -1) {
-			part1 = part1 + " (" + size + " bytes)";
-		}
-		descr.value = part1 + strbundle.getString("questionPart2");
-	}
-
-
-	function disableButtons(url) {
-		if (isLinkType("file:",url)) {
-			document.getElementById("openHTML-button").disabled = true;
-		}
-	}
-
-	// Checks the type of a link
-	function isLinkType(linktype, link) {
-		try {
-			var protocol = link.substr(0, linktype.length);
-			return protocol.toLowerCase() == linktype;
-		} catch(e) {
-			return false;
+	function disableOpenBtn(ext) {
+		/*
+             * If it is a pdf.gz file, we disable the open button because usually a 
+             * pdf viewer is not able to open this kind of file.
+		 */
+		if (ext == "pdf.gz") {
+			document.getElementById("open-button").disabled = true;
 		}
 	}
 
@@ -127,6 +103,47 @@
 		window.sizeToContent();
 		xulWindow.setAttribute("height",window.innerHeight + 30);     
 	}
+
+	function getFileSize(url) {
+		var xmlhttp
+		var done = 0;
+		strbundle = document.getElementById("strings");
+		var part1 = strbundle.getString("questionPart1");				
+		var descr = document.getElementById("QuestionLabel");
+		try {
+  			xmlhttp = new XMLHttpRequest();
+ 		} catch (e) {
+  			xmlhttp = false
+ 		}
+		if (xmlhttp) {
+			xmlhttp.open("HEAD", url, true);
+ 			xmlhttp.onreadystatechange=function() {
+  				if (xmlhttp.readyState == 4) {
+					if (xmlhttp.status == 200) {
+   						var size = xmlhttp.getResponseHeader("Content-Length");
+						if (size >= 1024*1024) {
+							size = size / (1024*1024);
+							part1 = part1 + " (" + size.toPrecision(3) + " MB)" ;
+						} else if (size >= 1024) {
+							size = size / 1024;
+							part1 = part1 + " (" + size.toPrecision(3) + " KB)";
+						} else {
+							part1 = part1 + " (" + size + " bytes)";
+						}
+						descr.value = part1 + strbundle.getString("questionPart2");
+						done = 1;
+					} else if (done == 0) {
+						descr.value = part1 + strbundle.getString("questionPart2");
+					} 
+				} else if (done == 0) {
+					descr.value = part1 + strbundle.getString("questionPart2");
+				}	 
+			}
+			xmlhttp.send(null);
+ 		}
+	}
+
+	
 
   ]]>
   </script>
