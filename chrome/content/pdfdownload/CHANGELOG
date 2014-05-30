@@ -1,5 +1,16 @@
 CHANGELOG
 
+v0.9.2	:	2007-09-13
+
+ - Added possibility to specify relative path for the custom PDF viewer: the relative path is
+   relative to the path where Firefox is installed (the path containing the executable file 
+   used to launch Firefox).
+ - Fixed small bug in the PDF Download option dialog: with the previous code it was possible
+   to close the window with a wrong filename set in the options.
+ - Fixed bug about the file size displayed in the popup dialog in case the size is between
+   1000 and 1024 byte or KB.
+ - Fixed size issue for the option window: now it should be always displayed with the proper size.
+
 v0.9.1	:	2007-09-03
 
  - Fixed a regression introduced with v0.9 regarding the open PDF feature: url with parameters

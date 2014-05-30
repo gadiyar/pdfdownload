@@ -144,13 +144,13 @@
 					xmlhttp.onreadystatechange=function() {
 						if (xmlhttp.readyState == 4) {
 							if (xmlhttp.status == 200) {
-								var size = xmlhttp.getResponseHeader("Content-Length");
+								var size = xmlhttp.getResponseHeader("Content-Length");					
 								if (size >= 1024*1024) {
 									size = size / (1024*1024);
-									part1 = part1 + " (" + size.toPrecision(3) + " MB)" ;
+									part1 = part1 + " (" + size.toFixed(1) + " MB)" ;
 								} else if (size >= 1024) {
 									size = size / 1024;
-									part1 = part1 + " (" + size.toPrecision(3) + " KB)";
+									part1 = part1 + " (" + parseInt(size + .5) + " KB)";
 								} else if (size != null) {
 									part1 = part1 + " (" + size + " bytes)";
 								}

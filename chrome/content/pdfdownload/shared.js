@@ -59,7 +59,7 @@ PdfDownloadShared.prototype.openURL = function(aURL) {
 	}
 }
 
-function writeLog(msg) {
+PdfDownloadShared.prototype.writeLog = function(msg) {
     Components.classes["@mozilla.org/consoleservice;1"].getService(Components.interfaces.nsIConsoleService).logStringMessage("PDF Download: " + msg);
 }
 
@@ -67,21 +67,30 @@ PdfDownloadShared.prototype.resolveFileName = function(fileName) {
 	var platform = /mac/i.test(navigator.platform) ? "mac" :
                    /win/i.test(navigator.platform) ? "win" :
                    /os\/2/i.test(navigator.platform) ? "os/2" : "unix";
-
+    var path = null;
    	var oFile 	= Components.classes["@mozilla.org/file/local;1"].getService(Components.interfaces.nsILocalFile);
 	try {
 		oFile.initWithPath(fileName);
-        if (platform != "mac") {
-    	   	if (oFile.exists() && oFile.isFile() && oFile.isExecutable()) {
-    	   		return oFile.path;
-    	   	}
-        } else {
-            var path = pdfDownloadShared.getFileNameToExecuteForMac(oFile);
-            if (path != null) {
-                return path;
-            }
+        path = pdfDownloadShared.getFilePath(oFile,platform);
+        if (path != null) {
+            return path;
         }
    	} catch (ex) {}
+    /* check if the viewer specified exists using the path specified as a relative path
+     * starting from the path where Firefox is installed
+     */
+    oFile = Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("CurProcD", Components.interfaces.nsIFile);
+    try {
+		var tmpPath = oFile.path;
+		oFile 	= Components.classes["@mozilla.org/file/local;1"].getService(Components.interfaces.nsILocalFile);
+		oFile.initWithPath(((tmpPath.search(/\\/) != -1) ? tmpPath + "\\" : tmpPath + "/") + fileName);
+        //oFile.append(fileName);
+        path = pdfDownloadShared.getFilePath(oFile,platform);
+        if (path != null) {
+            return path;
+        }
+    } catch (ex) { pdfDownloadShared.writeLog(ex); }
+    /* check if the viewer specified exists using the PATH system variable */
 	var userEnvironment = Components.classes["@mozilla.org/process/environment;1"].getService(Components.interfaces.nsIEnvironment);
 	var path_separator = "";
     if (platform == "win") {
@@ -93,24 +102,34 @@ PdfDownloadShared.prototype.resolveFileName = function(fileName) {
     } else {
     	path_separator = ":";
     }
+	
     if (userEnvironment.exists("PATH")) {
     	var systemPath = userEnvironment.get("PATH").split(path_separator);
+		oFile 	= Components.classes["@mozilla.org/file/local;1"].getService(Components.interfaces.nsILocalFile);
     	for(var i = 0; i < systemPath.length; i++) {
     		try {
-				oFile.initWithPath(systemPath[i]);
-				oFile.append(fileName);
-                if (platform != "mac") {
-    	   			if (oFile.exists() && oFile.isFile() && oFile.isExecutable()) {
-    	   				return oFile.path;
-    	   			}
-                } else {
-                    var path = pdfDownloadShared.getFileNameToExecuteForMac(oFile);
-                    if (path != null) {
-                        return path;
-                    }
+				oFile.initWithPath(((systemPath[i].search(/\\/) != -1) ? systemPath[i] + "\\" : systemPath[i] + "/") + fileName);
+				//oFile.append(fileName);
+                path = pdfDownloadShared.getFilePath(oFile,platform);
+                if (path != null) {
+                    return path;
                 }
-   			} catch (ex) {}
+   			} catch (ex) { pdfDownloadShared.writeLog(ex); }
     	}
+    }
+    return null;
+}
+
+PdfDownloadShared.prototype.getFilePath = function (oFile,platform) {
+    if (platform != "mac") {
+    	if (oFile.exists() && oFile.isFile() && oFile.isExecutable()) {
+    		return oFile.path;
+    	}
+    } else {
+        var path = pdfDownloadShared.getFileNameToExecuteForMac(oFile);
+        if (path != null) {
+           return path;
+        }
     }
     return null;
 }

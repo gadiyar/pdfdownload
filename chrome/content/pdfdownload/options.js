@@ -46,9 +46,12 @@ function onOK(notExecutableFileMsg) {
 
     var path = document.getElementById(_pdfViewerPathTextBox).value;
     var openPDF = document.getElementById(_openPDFRadioGroup);
-    if (openPDF.selectedItem.id == "customViewer") {
+    if (preferencesService.getCharPref("openPDF") == "customViewer") {
 		if (pdfDownloadShared.resolveFileName(path) == null) {
 				alert(notExecutableFileMsg);
+                if (openPDF.selectedItem.id != preferencesService.getCharPref("openPDF")) {
+                    openPDF.selectedItem = document.getElementById(preferencesService.getCharPref("openPDF"));
+                }
 				return false;
 		}
     }
@@ -56,7 +59,7 @@ function onOK(notExecutableFileMsg) {
 }
 
 function onLoad() {
-    sizeToContent();
+    sizeToContentTrick();
     if (!preferencesService.prefHasUserValue("showToolsMenuItem")) {
 		preferencesService.setBoolPref("showToolsMenuItem",true);
 		document.getElementById("showItemTools").checked = true;
@@ -67,6 +70,19 @@ function onLoad() {
     }
 }
 
+function sizeToContentTrick() {
+	/*
+	 * Workaround to sizeToContent bug (Bug 91137)
+	 */
+	var xulWindow = document.getElementById("PDFDownload_Options");
+	var wdth = window.innerWidth; // THIS IS NEEDED,
+	window.sizeToContent();
+	xulWindow.setAttribute("width",window.innerWidth + 30);
+    
+	var hght = window.innerHeight; // THIS IS NEEDED,
+	window.sizeToContent();
+	xulWindow.setAttribute("height",window.innerHeight + 30);     
+}
 
 function onPickPdfViewerPath(dialogTitle,exeFiles,allFiles,notExecutableFileMsg) {
 	var nsIFilePicker = Components.interfaces.nsIFilePicker;
@@ -111,7 +127,7 @@ function onPickPdfViewerPath(dialogTitle,exeFiles,allFiles,notExecutableFileMsg)
 				alert(notExecutableFileMsg);
 			}
 		} catch (ex) {
-            //writeLog("Exception: "+ex);
+            //pdfDownloadShared.writeLog("Exception: "+ex);
 			alert(notExecutableFileMsg);
 		}
 	}
