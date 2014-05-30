@@ -9,7 +9,7 @@
 <hbox>
 <vbox>
   <text value="PDF Download" style="font-weight: bold; font-size: x-large;"/>
-  <label>ver. 0.5.1.1</label>
+  <label>ver. 0.5.1.2</label>
   <separator class="thin"/>
   <text value="&pdfdownload.CreatedByLabel;" style="font-weight: bold;"/>
   <label>Denis Remondini</label> 
