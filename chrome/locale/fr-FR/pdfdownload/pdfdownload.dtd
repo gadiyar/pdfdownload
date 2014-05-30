@@ -17,7 +17,7 @@
 <!ENTITY pdfdownload.changelog "Journal des changements">
 <!ENTITY pdfdownload.acknowledgments "Remerciements">
 <!ENTITY pdfdownload.siteListTitle "Exceptions">
-<!ENTITY pdfdownload.optionsTitle "Options de PDFDownload">
+<!ENTITY pdfdownload.optionsTitle "Options de PDF Download">
 <!ENTITY pdfdownload.optionsGeneralTab "Générales">
 <!ENTITY pdfdownload.optionsPDFTab "Ouverture du PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Conversion du PDF en HTML">
@@ -45,4 +45,4 @@
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Images">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Afficher les images dans la version HTML du fichier PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Pour que vous puissiez voir les images, elles doivent être enregistrées sur votre serveur.">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Les images seront automatiquement au bout de 24 heures.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Les images seront automatiquement supprimées au bout de 24 heures.">

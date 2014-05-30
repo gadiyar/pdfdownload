@@ -1,14 +1,14 @@
-<!ENTITY pdfdownload.createdByLabel "Autor">
+<!ENTITY pdfdownload.createdByLabel "Autor:">
 <!ENTITY pdfdownload.websiteLabel "Domovská stránka">
 <!ENTITY pdfdownload.defaultActionLabel "Výchozí akce">
 <!ENTITY pdfdownload.showPopup "Zobrazit vyskakovací okno">
 <!ENTITY pdfdownload.downloadButton "Stáhnout">
 <!ENTITY pdfdownload.openButton "Otevřít PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Zobrazit ve formě HTML">
-<!ENTITY pdfdownload.openWithoutExtension "Obejít rozšíření „PDF Download“">
+<!ENTITY pdfdownload.openWithoutExtension "Obejít doplněk „PDF Download“">
 <!ENTITY pdfdownload.cancelButton "Zrušit">
 <!ENTITY pdfdownload.osWarningMsg "Nepodařilo se najít výchozí prohlížeč PDF. Prosím zadejte jeho umístění ručně v dialogu nastavení rozšíření &apos;PDF Download&apos;">
-<!ENTITY pdfdownload.aboutTitle "O rozšíření PDF Download">
+<!ENTITY pdfdownload.aboutTitle "O doplňku PDF Download">
 <!ENTITY pdfdownload.websiteTooltip "Přejít na autorovu stránku">
 <!ENTITY pdfdownload.moreInfo "Více informací:">
 <!ENTITY pdfdownload.readLicenseTooltip "Licence koncového uživatele">

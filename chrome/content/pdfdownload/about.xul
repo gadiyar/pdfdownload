@@ -47,7 +47,7 @@
 <hbox>
 <vbox>
   <text value="PDF Download" style="font-weight: bold; font-size: x-large;"/>
-  <label>ver. 0.7.5</label>
+  <label>ver. 0.7.6</label>
   <separator class="thin"/>
   <text value="&pdfdownload.createdByLabel;" style="font-weight: bold;"/>
   <label>Denis Remondini</label> 

@@ -9,7 +9,7 @@
 <!ENTITY pdfdownload.cancelButton "إلغاء الأمر">
 <!ENTITY pdfdownload.osWarningMsg "لم يستطع الإمتداد إيجاد برنامج قرائة الـ PDF الإفتراضي الخاص بك. رجاءً إختر واحداً في صفحة خصائص التنزيل.">
 <!ENTITY pdfdownload.aboutTitle "حول الإمتداد">
-<!ENTITY pdfdownload.websiteTooltip "تصفع موقع المؤلف">
+<!ENTITY pdfdownload.websiteTooltip "تصفح موقع المؤلف">
 <!ENTITY pdfdownload.moreInfo "تفاصيل أخرى:">
 <!ENTITY pdfdownload.readLicenseTooltip "إقرأ ترخيص المستخدم النهائي">
 <!ENTITY pdfdownload.license "الترخيص">

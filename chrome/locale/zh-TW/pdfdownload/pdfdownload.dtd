@@ -1,43 +1,48 @@
 <!ENTITY pdfdownload.createdByLabel "作者：">
-<!ENTITY pdfdownload.websiteLabel "網站：">
-<!ENTITY pdfdownload.defaultActionLabel "預設動作">
-<!ENTITY pdfdownload.showPopup "跳出對話框">
+<!ENTITY pdfdownload.websiteLabel "網站">
+<!ENTITY pdfdownload.defaultActionLabel "預設的動作">
+<!ENTITY pdfdownload.showPopup "用對話視窗問我">
 <!ENTITY pdfdownload.downloadButton "下載">
-<!ENTITY pdfdownload.openButton "開啟">
-<!ENTITY pdfdownload.viewHtmlButton "以網頁（HTML）格式檢視">
+<!ENTITY pdfdownload.openButton "開啟PDF">
+<!ENTITY pdfdownload.viewHtmlButton "以HTML檢視">
+<!ENTITY pdfdownload.openWithoutExtension "跳過PDF Download">
 <!ENTITY pdfdownload.cancelButton "取消">
-<!ENTITY pdfdownload.osWarningMsg "找不到PDF閱讀軟體！請於選項中設定。">
-<!ENTITY pdfdownload.aboutTitle "PDF Download - 關於">
-<!ENTITY pdfdownload.websiteTooltip "瀏覽作者網站">
-<!ENTITY pdfdownload.moreInfo "更多資訊">
-<!ENTITY pdfdownload.readLicenseTooltip "閱讀使用者授權提款">
-<!ENTITY pdfdownload.license "授權提款">
-<!ENTITY pdfdownload.readChangelogTooltip "瀏覽更新日誌">
-<!ENTITY pdfdownload.changelog "更新日誌">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download找不到您預設的PDF軟體。請在選項的視窗中指定一個！">
+<!ENTITY pdfdownload.aboutTitle "關於PDF Download">
+<!ENTITY pdfdownload.websiteTooltip "檢視作者的網站">
+<!ENTITY pdfdownload.moreInfo "更多詳情：">
+<!ENTITY pdfdownload.readLicenseTooltip "閱讀使用者授權合約">
+<!ENTITY pdfdownload.license "授權合約">
+<!ENTITY pdfdownload.readChangelogTooltip "檢視改版記錄">
+<!ENTITY pdfdownload.changelog "改版記錄">
 <!ENTITY pdfdownload.acknowledgments "致謝">
-<!ENTITY pdfdownload.siteListTitle "免責條款">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - 選項">
-<!ENTITY pdfdownload.optionsGeneralTab "一般設定">
-<!ENTITY pdfdownload.optionsPDFTab "PDF開啟設定">
-<!ENTITY pdfdownload.optionsHTMLTab "HTML轉換設定">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "更多資訊">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "工具列設定">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "顯示PDF Download選項於工具列">
-<!ENTITY pdfdownload.optionsOpenLink "開啟於：">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "開啟於：">
-<!ENTITY pdfdownload.optionsSameTab "目前的分頁">
-<!ENTITY pdfdownload.optionsNewTab "新分頁">
-<!ENTITY pdfdownload.optionsNewWindow "新視窗">
-<!ENTITY pdfdownload.optionsOpenPdf "PDF文件開啟方式：">
-<!ENTITY pdfdownload.optionsUsePlugin "使用Firefox開啟">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "使用預設的閱讀軟體開啟">
-<!ENTITY pdfdownload.optionsUseCustomProgram "使用自訂的閱讀軟體開啟">
-<!ENTITY pdfdownload.optionsBrowse "瀏覽...">
-<!ENTITY pdfdownload.optionsBrowseTitle "選擇PDF瀏覽軟體">
-<!ENTITY pdfdownload.optionsExeFiles "執行檔">
+<!ENTITY pdfdownload.siteListTitle "例外">
+<!ENTITY pdfdownload.optionsTitle "PDF Download選項">
+<!ENTITY pdfdownload.optionsGeneralTab "一般">
+<!ENTITY pdfdownload.optionsPDFTab "開啟PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF轉換成HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "詳情">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "工具選單">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "在Firefox的工具選單中顯示PDF Download">
+<!ENTITY pdfdownload.optionsOpenLink "如何使用Firefox的PDF外掛來開啟PDF檔的連結：">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "如何開啟轉換成HTML的PDF檔案：">
+<!ENTITY pdfdownload.optionsSameTab "用同一個分頁開啟">
+<!ENTITY pdfdownload.optionsNewTab "在新的分頁開啟">
+<!ENTITY pdfdownload.optionsNewWindow "在新的視窗開啟">
+<!ENTITY pdfdownload.optionsOpenPdf "開啟PDF檔案：">
+<!ENTITY pdfdownload.optionsUsePlugin "使用PDF外掛">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "使用作業系統的預設程式">
+<!ENTITY pdfdownload.optionsUseCustomProgram "用這個程式：">
+<!ENTITY pdfdownload.optionsBrowse "瀏覽…">
+<!ENTITY pdfdownload.optionsBrowseTitle "選擇PDF檢視程式">
+<!ENTITY pdfdownload.optionsExeFiles "視窗程式">
 <!ENTITY pdfdownload.optionsAllFiles "所有檔案">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "您所選擇的檔案不是執行檔！">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "指定的程式不是一個可執行的檔案！">
 <!ENTITY pdfdownload.optionsUpdateLabel "更新">
 <!ENTITY pdfdownload.optionsCheckUpdates "檢查更新">
-<!ENTITY pdfdownload.optionsHowToHelp "求助">
+<!ENTITY pdfdownload.optionsHowToHelp "如何幫助">
 <!ENTITY pdfdownload.optionsMakeDonation "贊助">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "影像">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "在轉換成HTML的PDF檔案中顯示影像">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "為了要讓您能檢視影像，圖片將會存在我們的伺服器上。">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "這些圖片在一天之後就會被移除。">

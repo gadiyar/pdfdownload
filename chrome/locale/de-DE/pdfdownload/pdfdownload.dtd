@@ -7,14 +7,14 @@
 <!ENTITY pdfdownload.viewHtmlButton "PDF als HTML anzeigen">
 <!ENTITY pdfdownload.openWithoutExtension "PDF Download umgehen">
 <!ENTITY pdfdownload.cancelButton "Abbrechen">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download kann keinen Standard-Dateibetrachter für PDF-Dokumente finden. Bitte wählen sie ein entsprechendes Programm im Einstellungsdialog von PDF Download aus!">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download kann keinen Standard-Dateibetrachter für PDF-Dokumente finden. Bitte wählen Sie ein entsprechendes Programm im Einstellungsdialog von PDF Download aus!">
 <!ENTITY pdfdownload.aboutTitle "Über PDF Download">
 <!ENTITY pdfdownload.websiteTooltip "Homepage des Autors besuchen">
 <!ENTITY pdfdownload.moreInfo "Weitere Informationen">
 <!ENTITY pdfdownload.readLicenseTooltip "Lizenzbedingungen anzeigen">
 <!ENTITY pdfdownload.license "Lizenzbedingungen">
-<!ENTITY pdfdownload.readChangelogTooltip "Changelog anzeigen">
-<!ENTITY pdfdownload.changelog "Changelog">
+<!ENTITY pdfdownload.readChangelogTooltip "Versionshinweise anzeigen">
+<!ENTITY pdfdownload.changelog "Versionshinweise">
 <!ENTITY pdfdownload.acknowledgments "Danksagungen">
 <!ENTITY pdfdownload.siteListTitle "Ausnahmen">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Einstellungen">

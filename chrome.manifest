@@ -69,3 +69,5 @@ locale	pdfdownload	tr-TR	jar:chrome/pdfdownload.jar!/locale/tr-TR/pdfdownload/
 locale	pdfdownload	uk-UA	jar:chrome/pdfdownload.jar!/locale/uk-UA/pdfdownload/
 
 locale	pdfdownload	zh-CN	jar:chrome/pdfdownload.jar!/locale/zh-CN/pdfdownload/
+
+locale	pdfdownload	zh-TW	jar:chrome/pdfdownload.jar!/locale/zh-TW/pdfdownload/

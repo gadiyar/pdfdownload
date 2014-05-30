@@ -19,7 +19,7 @@
 <!ENTITY pdfdownload.siteListTitle "Undantag">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Inställningar">
 <!ENTITY pdfdownload.optionsGeneralTab "Allmänt">
-<!ENTITY pdfdownload.optionsPDFTab "PDF-öppning">
+<!ENTITY pdfdownload.optionsPDFTab "Öppning av PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Omvandling av PDF till HTML">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Mer detaljer">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Verktygsmeny">

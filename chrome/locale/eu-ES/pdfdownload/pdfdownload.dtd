@@ -24,7 +24,7 @@
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Aukera gehiago">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Tresna menua">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF Download Firefox-eko tresna menuan erakutsi">
-<!ENTITY pdfdownload.optionsOpenLink "Firefox-en PDF irakurgailua erabiltzean PDF fitxategiak nola ireki:">
+<!ENTITY pdfdownload.optionsOpenLink "Firefox-en PDF irakurgailua erabiltzean PDF fitxategiak honela ireki:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF fitxategien HTML bertsioa honela ireki:">
 <!ENTITY pdfdownload.optionsSameTab "Fitxa berean ireki">
 <!ENTITY pdfdownload.optionsNewTab "Fitxa berri batean ireki">

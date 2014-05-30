@@ -4,7 +4,7 @@
      <RDF:Seq about="urn:mozilla:locale:root">
          <RDF:li resource="urn:mozilla:locale:zh-TW"/>
      </RDF:Seq>
-      <RDF:Description about="urn:mozilla:locale:zh-TW">
+      <RDF:Description about="urn:mozilla:locale:zh-TW" chrome:name="zh-TW">
          <chrome:packages>
              <RDF:Seq about="urn:mozilla:locale:zh-TW:packages">
                  <RDF:li resource="urn:mozilla:locale:zh-TW:pdfdownload"/>

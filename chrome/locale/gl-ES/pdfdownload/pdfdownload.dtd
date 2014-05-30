@@ -11,8 +11,8 @@
 <!ENTITY pdfdownload.aboutTitle "PDF Download - Arredor de">
 <!ENTITY pdfdownload.websiteTooltip "Ver o sitio web do autor">
 <!ENTITY pdfdownload.moreInfo "Máis detalles:">
-<!ENTITY pdfdownload.readLicenseTooltip "Ler licencia de usuario final">
-<!ENTITY pdfdownload.license "Licencia">
+<!ENTITY pdfdownload.readLicenseTooltip "Ler licenza de usuario final">
+<!ENTITY pdfdownload.license "Licenza">
 <!ENTITY pdfdownload.readChangelogTooltip "Ver rexistro de cambios">
 <!ENTITY pdfdownload.changelog "Rexistro de cambios">
 <!ENTITY pdfdownload.acknowledgments "Recoñecementos">
