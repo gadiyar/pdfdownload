@@ -42,23 +42,7 @@ var sltPrefs = Components.classes['@mozilla.org/preferences-service;1']
 var fileCID  = '@mozilla.org/file/local;1';
 var fileIID  = Components.interfaces.nsILocalFile;
 
-// check if the linked file is a pdf file. In that case, ask to the user what he wants to do with it.
-function checkUrl(event) {
-   var url = event.currentTarget.href;
-   var ext = url.substring(url.lastIndexOf('.') + 1,url.length);
-   if (ext.toLowerCase() == "pdf") {
-	if (confirm("The file you are going to view is a PDF file.\nClick OK to download it!")) {
-		savelink(url);
-	} else {
-		var browser = getBrowser();
-		var tab = browser.addTab(url);
-		browser.selectedTab = tab;
-	}
-	event.stopPropagation();
-	event.preventDefault();
-   }
-   
-}
+
 
 // save the linked file 
 function savelink(url) {
@@ -94,11 +78,14 @@ function savelink(url) {
 	saveURL(url, file, null, false, true);
 }
 
-
-function mousedown(aEvent) {
+// handle the click event
+function mouseClick(aEvent) {
 
     if (!aEvent)
       return;
+
+    if (aEvent.button == 2)
+	return;
       
     if (aEvent.target)
       var targ = aEvent.originalTarget;
@@ -118,33 +105,58 @@ function mousedown(aEvent) {
         return;
     }
     /* END of the code taken by an extension written by Ben Basson (Cusser) */
-
+	
     var url = targ.getAttribute("href");
-    if (url) url = url.toLowerCase();
+    if ( (!isLinkType("http:", url)) && (!isLinkType("file:",url)) ) {
+	var dir = document.commandDispatcher.focusedWindow.location.href;
+	dir = dir.substring(0,dir.lastIndexOf('/'));
+	url = dir + "/" + url;
+    } 
 
-	var ext = url.substring(url.lastIndexOf('.') + 1,url.length);
-      if (ext.toLowerCase() == "pdf") {
-	if (confirm("The file you are going to view is a PDF file.\nClick OK to download it!")) {
+    var lastDotPosition = url.lastIndexOf('.');
+    var ext = url.substring(lastDotPosition + 1,url.length);
+    if (ext.toLowerCase() == "pdf") {
+	var questionMarkPos = url.lastIndexOf('?');
+      if (questionMarkPos != -1) {
+		// In this case the url should be a server-side script with a pdf file name as parameter, so we don't need to 
+ 		// do anything with that link.
+		// For example: http://www.google.it/search?hl=it&client=firefox-a&rls=org.mozilla%3Ait-IT%3Aofficial&q=test.pdf&btnG=Cerca&meta=
+		return;
+	}
+
+	var answer = new Object();
+	answer.res = "cancel";
+	window.openDialog("chrome://pdfdownload/content/questionBox.xul", "PDF Download", "chrome,modal,centerscreen,dialog,width=200,height=100",answer);
+	if (answer.res == "download") {
 		savelink(url);
-	} else {
+	} else if (answer.res == "open") {
 		var browser = getBrowser();
 		var tab = browser.addTab(url);
 		browser.selectedTab = tab;
+	} else if (answer.res == "openHtml") {
+		var browser = getBrowser();
+		var pdf2htmlUrl = "http://access.adobe.com/access/convert.do?srcPdfUrl="+url+"&convertTo=html&visuallyImpaired=preferhtml&platform=Windows&comments=&preferHTMLReason=&platformOther=&comments=";
+		var tab = browser.addTab(pdf2htmlUrl);
+		browser.selectedTab = tab;
 	}
-	aEvent.stopPropagation();
 	aEvent.preventDefault();
-   }
+	aEvent.stopPropagation();
+    }
 }
 
-function donothing() {
-	event.stopPropagation();
-	event.preventDefault();
+
+function isLinkType (linktype, link) {
+	try {
+		var protocol = link.substr(0, linktype.length);
+		return protocol.toLowerCase() == linktype;
+	} catch(e) {
+		return false;
+	}
 }
+
 
 function init() {
-	//window._content.addEventListener('load', registerListener, true);
-	getBrowser().addEventListener("click", mousedown, true);
-	getBrowser().addEventListener("mouseup", donothing, true);
+	getBrowser().addEventListener("click", mouseClick, true);
 }
 
 // do the init on load

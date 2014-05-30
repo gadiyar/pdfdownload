@@ -1,0 +1,11 @@
+
+#genericAbout {
+  padding: 0px 0px 10px 0px;
+  background-color: #FFFFFF;
+}
+
+.link {
+  color: #0000FF;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,37 @@
+CHANGELOG
+
+
+v0.2.5  :	2005-04-30
+
+  - Added new functionality: "Open as HTML". This feature let you view the HTML 
+    version of the PDF file using the online conversion service provided by Adobe. 
+
+v0.2.4  :	2005-04-29
+
+  - Added language support for Italian, English and Swedish.
+  - Improved the dialog box that appears when you click on a pdf file link. Now it's 
+    possibile to choose if you want to download the file, view it or if you just want 
+    to cancel the operation.
+  - Added support for link with pdf filename as parameter inside the url.
+    Example: http://www.google.it/search?hl=it&client=firefox-a&rls=org.mozilla%3Ait-IT%3Aofficial&q=test.pdf&btnG=Cerca&meta=
+
+
+v0.2.3:	2005-04-28
+
+  - Fixed the right click problem: so far, the extension captured both left and right 
+    click annoying the user in some cases, but now it captures only the left mouse click.
+  - Tested with FlashGot extension.
+
+v0.2.2: 	2005-04-28
+  
+  - Adds support for links to files that resides in the local filesystem (links like: "file:///");
+  - Fixed a problem that occurred only in 0.2.1 version: in that version the extension 
+    didn't manage relative link properly.
+
+v0.2.1:     2005-04-27
+  
+  - Now it works also inside webpages with frame
+
+v0.2  :	2005-04-26
+
+  - Fixed the problem that occurred if no "Default directory" is set in download options. 

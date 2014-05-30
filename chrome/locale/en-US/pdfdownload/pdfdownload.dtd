@@ -1,0 +1,7 @@
+<!ENTITY pdfdownload.CreatedByLabel "Created by:">
+<!ENTITY pdfdownload.WebsiteLabel "Website">
+<!ENTITY pdfdownload.DownloadQuestionLabel "The file you have selected is a PDF file. What do you want to do?">
+<!ENTITY pdfdownload.DownloadButton "Download it">
+<!ENTITY pdfdownload.OpenButton "Open it in a new tab">
+<!ENTITY pdfdownload.ViewHtmlButton "View as HTML in a new tab">
+<!ENTITY pdfdownload.CancelButton "Cancel">

@@ -1,37 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<window class="dialog"
-	title="PDF Download - About"
-	orient="vertical"
-	autostretch="always"
-	onload="sizeToContent()"
-	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<?xml-stylesheet href="chrome://pdfdownload/skin/pdfdownload.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://pdfdownload/locale/pdfdownload.dtd">
 
-<!-- Original template by Jed Brown -->
+<dialog title="PDF Download - About" chromehidden="menubar toolbar location directories status extrachrome" id="genericAbout" onload="window.focus()" buttons="accept" xmlns:em="http://www.mozilla.org/2004/em-rdf#" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 <groupbox align="center" orient="horizontal">
 <vbox>
   <text value="PDF Download" style="font-weight: bold; font-size: x-large;"/>
-  <text value="ver. 0.2.1"/>
+  <label>ver. 0.2.5</label>
   <separator class="thin"/>
-  <text value="Created By:" style="font-weight: bold;"/>
-  <text value="Denis Remondini"/> 
+  <text value="&pdfdownload.CreatedByLabel;" style="font-weight: bold;"/>
+  <label>Denis Remondini</label> 
   <separator class="thin"/>
   <text value="E-mail" style="font-weight: bold;"/>
-  <text value="denistn@gmail.com"/>
+  <label>denistn@gmail.com</label>
   <separator class="thin"/>
-  <text value="Website" style="font-weight: bold;"/>
-  <text value="http://www.rabotat.org/firefox" 
-	  class="url" 
-        onclick="window.open('http://www.rabotat.org/firefox'); window.close();"/>
+  <text value="&pdfdownload.WebsiteLabel;" style="font-weight: bold;"/>
+  <label class="link" tooltiptext="View Author's website" onclick="window.open('http://www.rabotat.org/firefox'); window.close();">http://www.rabotat.org/firefox</label>
+  <separator class="thin"/>
+  <text value="More details:" style="font-weight: bold;"/>
+   <hbox>
+	<label class="link" tooltiptext="Read end-user license" onclick="window.open('chrome://pdfdownload/content/LICENSE', '_blank')">License</label>
+	<spacer flex="1"/>
+	<label class="link" align="center" tooltiptext="View Changelog" onclick="window.open('chrome://pdfdownload/content/CHANGELOG', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">Changelog</label>
+	<spacer flex="1"/>
+  </hbox>
+
 </vbox>
 <spring flex="1"/>
 <image src="chrome://pdfdownload/skin/pdfdownloadbig.png"/>
 </groupbox>
-
-  <hbox>
-  <spacer flex="1"/>
-   <button label="Close" oncommand="window.close();"/>
-  </hbox>
-
-</window>
+</dialog>

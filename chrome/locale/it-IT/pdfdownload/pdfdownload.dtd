@@ -1,0 +1,7 @@
+<!ENTITY pdfdownload.CreatedByLabel "Creato da:">
+<!ENTITY pdfdownload.WebsiteLabel "Sito web">
+<!ENTITY pdfdownload.DownloadQuestionLabel "Il file che hai selezionato è un file PDF: cosa si desidera fare?">
+<!ENTITY pdfdownload.DownloadButton "Salva">
+<!ENTITY pdfdownload.OpenButton "Apri in una nuova scheda">
+<!ENTITY pdfdownload.ViewHtmlButton "Apri la versione HTML">
+<!ENTITY pdfdownload.CancelButton "Annulla">
