@@ -56,6 +56,9 @@
 			<preference id="pd_defaultAction"
 				name="extensions.pdfdownload.defaultAction"
 				type="string"/>
+			<preference id="pd_clickMode"
+				name="extensions.pdfdownload.clickMode"
+				type="string"/>
 			<preference id="pd_showTooltips"
 				name="extensions.pdfdownload.showTooltips"
 				type="bool"/>
@@ -77,13 +80,23 @@
 					<vbox>					
 						<radio label="&pdfdownload.downloadButton;" value="download"/>
 						<radio label="&pdfdownload.viewHtmlButton;" value="openHtml"/>
-					</vbox>					
+					</vbox>
+					<vbox>
+						<radio label="&pdfdownload.viewOnlineRadioButton;" value="viewOnline"/>
+					</vbox>
 				</radiogroup>
 		</groupbox>
-		<groupbox class="box-inset">
-			<caption label="&pdfdownload.optionsTooltips;" class="rounded outset"/>
-			<checkbox id="showTooltips" label="&pdfdownload.optionsShowTooltips;" preference="pd_showTooltips"/>
-		</groupbox>
+
+		<!--<groupbox class="box-inset">
+			<caption label="&pdfdownload.clickModeLabel;" class="rounded outset"/>
+				<radiogroup preference="pd_clickMode" orient="horizontal">
+					<vbox>
+						<radio label="&pdfdownload.clickModeName;" value="name"/>
+						<radio label="&pdfdownload.clickModeType;" value="type"/>
+					</vbox>
+				</radiogroup>
+		</groupbox>-->
+
 		<groupbox class="box-inset">
 			<caption label="&pdfdownload.optionsToggleFirefoxMenus;" class="rounded outset"/>
 			<checkbox id="showItemTools" label="&pdfdownload.optionsShowItemToolsMenu;" preference="pd_showToolsMenuItem"/>
@@ -124,7 +137,6 @@
 			<radiogroup id="pdfdownload-openPDFLink" preference="pd_openPDFLink">
 				<radio id="openPDFSameTab" label="&pdfdownload.optionsSameTab;" value="openPDFSameTab"/>
 				<radio id="openPDFNewTab"	label="&pdfdownload.optionsNewTab;" value="openPDFNewTab"/>
-				<radio id="openPDFNewWindow" label="&pdfdownload.optionsNewWindow;" value="openPDFNewWindow"/>
 			</radiogroup>
 		</groupbox>
 	</prefpane>
@@ -135,6 +147,9 @@
 			<preference id="pd_openPDFtoHTML"
 				name="extensions.pdfdownload.openPDFtoHTML"
 				type="string"/>
+			<preference id="pd_viewPDFOnline"
+				name="extensions.pdfdownload.viewPDFOnline"
+				type="string"/>
 			<preference id="pd_imagesInHTML"
 				name="extensions.pdfdownload.showImagesInHTML"
 				type="bool"/>
@@ -142,20 +157,29 @@
 
 		<groupbox class="box-inset">
 			<caption label="&pdfdownload.optionsOpenPDFtoHTML;" class="rounded outset"/>
-			<radiogroup id="pdfdownload-openPDFtoHTML" preference="pd_openPDFtoHTML">
-						<radio id="openHTMLSameTab" label="&pdfdownload.optionsSameTab;" value="openHTMLSameTab"/>
-						<radio id="openHTMLNewTab"	label="&pdfdownload.optionsNewTab;" value="openHTMLNewTab"/>
-				<radio id="openHTMLNewWindow" label="&pdfdownload.optionsNewWindow;" value="openHTMLNewWindow"/>
-			</radiogroup>
+			<hbox>
+				<radiogroup id="pdfdownload-openPDFtoHTML" preference="pd_openPDFtoHTML">
+					<radio id="openHTMLSameTab" label="&pdfdownload.optionsSameTab;" value="openHTMLSameTab"/>
+					<radio id="openHTMLNewTab"	label="&pdfdownload.optionsNewTab;" value="openHTMLNewTab"/>
+				</radiogroup>
+				
+				<spacer flex="1" />
+				
+				<vbox>
+					<checkbox id="showImagesInHTML" label="&pdfdownload.optionsShowImagesInHTML;" preference="pd_imagesInHTML"/>
+					<spacer style="height: 10px"/>
+					<description>&pdfdownload.optionsImagesInHTMLPrivacyWarningPart1;</description>
+					<description>&pdfdownload.optionsImagesInHTMLPrivacyWarningPart2;</description>
+				</vbox>
+			</hbox>
+			
 		</groupbox>
 		<groupbox class="box-inset">
-			<caption label="&pdfdownload.imagesIntoTheHTMLVersion;" class="rounded outset"/>
-			<vbox>
-				<checkbox id="showImagesInHTML" label="&pdfdownload.optionsShowImagesInHTML;" preference="pd_imagesInHTML"/>
-				<spacer style="height: 10px"/>
-				<description>&pdfdownload.optionsImagesInHTMLPrivacyWarningPart1;</description>
-				<description>&pdfdownload.optionsImagesInHTMLPrivacyWarningPart2;</description>
-			</vbox>
+			<caption label="&pdfdownload.viewingOnlineTabActionsGroup;" class="rounded outset"/>
+			<radiogroup id="pdfdownload-viewingPDFOnline" preference="pd_viewPDFOnline">
+				<radio id="viewingPDFSameTab" label="&pdfdownload.optionsSameTab;" value="viewingPDFSameTab" />
+				<radio id="viewingPDFNewTab" label="&pdfdownload.optionsNewTab;" value="viewingPDFNewTab" />
+			</radiogroup>
 		</groupbox>
 	</prefpane>
 	
@@ -228,6 +252,30 @@
 		</groupbox>
 	</prefpane>
 	
+	
+	<prefpane id="optionsAdvancedPane" label="&pdfdownload.options.AdvancedTab;">
+		<preferences />
+		
+		<groupbox class="box-inset">
+			<caption label="&pdfdownload.clickModeLabel;" class="rounded outset"/>
+				<radiogroup preference="pd_clickMode" orient="horizontal">
+					<vbox>
+						<radio label="&pdfdownload.clickModeName;" value="name"/>
+						<radio label="&pdfdownload.clickModeType;" value="type"/>
+					</vbox>
+				</radiogroup>
+		</groupbox>
+		
+		<groupbox class="box-inset">
+			<caption label="&pdfdownload.optionsDetectingLinksLabel;" class="rounded outset"/>
+			<hbox align="center">
+				<label value="&pdfdownload.advanced.banlistLabel;" />
+				<button label="&pdfdownload.advanced.viewBanlistButton;" onclick="showExclusionListDialog();" />
+			</hbox>
+		</groupbox>
+		
+	</prefpane>
+	
 
 	<prefpane id="UpdatesPane" label="&pdfdownload.options.UpdatesTab;">
 		<preferences/>
@@ -239,6 +287,19 @@
 				<spacer flex="1"/>
 				<button label="&pdfdownload.optionsCheckUpdates;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');"/>
 			</hbox>
+		</groupbox>
+		
+		<groupbox class="box-inset">
+			<caption label="&pdfdownload.optionsSubscribeLabel;" class="rounded outset"/>
+			<vbox>
+				<label value="&pdfdownload.optionsSubscribeText;" />
+				<hbox align="center">
+					<label value="&pdfdownload.optionsSubscribeEmailLabel;" />
+					<textbox id="subscribeEmailValue" flex="1" />
+					<button label="&pdfdownload.optionsSubscribeButton;" onclick="subscribe();"/>
+				</hbox>
+				<!--<spacer flex="1"/>-->
+			</vbox>
 		</groupbox>
 	</prefpane>
 

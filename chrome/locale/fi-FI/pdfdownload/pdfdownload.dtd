@@ -4,63 +4,113 @@
 <!ENTITY pdfdownload.showPopup "Näytä valintaikkuna">
 <!ENTITY pdfdownload.downloadButton "Lataa">
 <!ENTITY pdfdownload.openButton "Avaa PDF:nä">
-<!ENTITY pdfdownload.viewHtmlButton "Avaa HTML:nä">
+<!ENTITY pdfdownload.viewHtmlButton "Näytä HTML:nä">
 <!ENTITY pdfdownload.openWithoutExtension "Ohita PDF Download">
 <!ENTITY pdfdownload.cancelButton "Peruuta">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download ei kyennyt paikallistamaan PDF-tiedostojen oletuslukijaa. Ole hyvä ja valitse yksi lukija PDF Downloadin asetusikkunasta!">
-<!ENTITY pdfdownload.about.Title "PDF Download Nitro PDF Softwarelta - Tietoja">
+<!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "Muuta verkkosivu PDF:ksi">
+<!ENTITY pdfdownload.webtopdf.outputSettings "PDF:n ulostuloasetukset">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.label "Sivun asettelu:">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "Muotokuva">
+<!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "Maisemakuva">
+<!ENTITY pdfdownload.webtopdf.margins.label "Marginaalit:">
+<!ENTITY pdfdownload.webtopdf.margins.inches "tuumaa">
+<!ENTITY pdfdownload.webtopdf.margins.top "Yläreuna:">
+<!ENTITY pdfdownload.webtopdf.margins.bottom "Alareuna:">
+<!ENTITY pdfdownload.webtopdf.margins.left "Vasen reuna:">
+<!ENTITY pdfdownload.webtopdf.margins.right "Oikea reuna:">
+<!ENTITY pdfdownload.webtopdf.defaulAction "Oletustoiminto">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly "Tallenna verkkosivu PDF:nä">
+<!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "Muunna sivu PDF:ksi ja lataa.">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "Tallenna sivu PDF:nä">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "D">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "D">
+<!ENTITY pdfdownload.webtopdf.action.askEmail "Kysy sähköpostiosoitetta">
+<!ENTITY pdfdownload.webtopdf.action.sendEmail "Lähetä sähköpostit aina osoitteeseen:">
+<!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "kysy sähköpostiosoitetta joka kerta">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "Lähetä sähköpostilla verkkosivu PDF:nä">
+<!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "Muunna sivu PDF:ksi ja lähetä sähköpostin liitteenä.">
+<!ENTITY pdfdownload.webtopdf.options "Asetukset...">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "Muokkaa PDF Downloadin tapaa toimia.">
+<!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "Syötä kohdesähköpostiosoite. Nykyinen verkkosivu muunnetaan PDF:ksi ja lähetetään sähköpostin liitteenä.">
+<!ENTITY pdfdownload.help "PDF Download - Ohje">
+<!ENTITY pdfdownload.help.tooltip "Saa apua PDF Downloadin käyttämisessä.">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download ei löydä PDF:n oletuslukijaa. Valitse lukija PDF Downloadin valintaikkunasta.">
+<!ENTITY pdfdownload.about.Title "Nitro PDF Software: PDF Download - Tietoja">
 <!ENTITY pdfdownload.about.width "55ex">
-<!ENTITY pdfdownload.websiteTooltip "Vieraile tekijän verkkosivulla">
-<!ENTITY pdfdownload.moreInfo "Lisää tietoja:">
-<!ENTITY pdfdownload.readLicenseTooltip "Lue lisenssi">
+<!ENTITY pdfdownload.websiteTooltip "Avaa tekijän verkkosivu">
+<!ENTITY pdfdownload.moreInfo "Lisätietoja:">
+<!ENTITY pdfdownload.readLicenseTooltip "Lue loppukäyttäjän lisenssi">
 <!ENTITY pdfdownload.license "Lisenssi">
 <!ENTITY pdfdownload.readChangelogTooltip "Näytä muutokset">
 <!ENTITY pdfdownload.changelog "Muutokset">
-<!ENTITY pdfdownload.acknowledgments "Tunnustukset">
-<!ENTITY pdfdownload.siteListTitle "Poikkeukset">
-<!ENTITY pdfdownload.options.Title "PDF Download Nitro PDF Softwarelta - Asetukset">
+<!ENTITY pdfdownload.acknowledgments "Huomionosoitukset">
+<!ENTITY pdfdownload.siteListTitle "Poikkeus">
+<!ENTITY pdfdownload.options.Title "PDF Download - Asetukset">
 <!ENTITY pdfdownload.optionsGeneralTab "Yleiset">
-<!ENTITY pdfdownload.optionsPDFTab "PDF:n avaaminen">
-<!ENTITY pdfdownload.optionsHTMLTab "PDF:n muuttaminen HTML:ksi">
-<!ENTITY pdfdownload.options.UpdatesTab "Ilmaiset päivitykset">
-<!ENTITY pdfdownload.options.CompanyTab "Tietoja Nitro PDF Sofwaresta">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Työkalut-valikko">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "Näytä PDF Downloadin kohta Firefoxin Työkalut-valikossa">
-<!ENTITY pdfdownload.optionsTooltips "Työkaluvihjeet">
-<!ENTITY pdfdownload.optionsShowTooltips "Näytä työkaluvihjeet valintaikkunassa">
-<!ENTITY pdfdownload.optionsOpenLink "PDF-linkkien avaaminen käyttäen Firefoxin PDF-liitännäistä:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF-tiedostojen HTML-version avaaminen:">
-<!ENTITY pdfdownload.optionsSameTab "Avaa avoimeen välilehteen">
+<!ENTITY pdfdownload.optionsPDFTab "Avaaminen">
+<!ENTITY pdfdownload.optionsHTMLTab "Näyttäminen">
+<!ENTITY pdfdownload.options.WebToPDFTab "Verkosta PDF">
+<!ENTITY pdfdownload.options.AdvancedTab "Lisäasetukset">
+<!ENTITY pdfdownload.options.UpdatesTab "Päivitykset">
+<!ENTITY pdfdownload.options.CompanyTab "Tietoja Nitrosta">
+<!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefoxin valikot">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Näytä PDF Downloadin kohta Työkalut-valikossa">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "Näytä &quot;Tallenna sivu PDF:nä&quot; Tiedosto-valikossa">
+<!ENTITY pdfdownload.optionsTooltips "Työkaluvinkit">
+<!ENTITY pdfdownload.optionsShowTooltips "Näytä työkaluvinkit valintaikkunassa">
+<!ENTITY pdfdownload.optionsOpenLink "Käytettäessä selaimen PDF-liitännäistä">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Muutettaessa HTML:ksi">
+<!ENTITY pdfdownload.optionsSameTab "Avaa samaan välilehteen">
 <!ENTITY pdfdownload.optionsNewTab "Avaa uuteen välilehteen">
 <!ENTITY pdfdownload.optionsNewWindow "Avaa uuteen ikkunaan">
-<!ENTITY pdfdownload.optionsOpenPdf "PDF-tiedoston avaaminen:">
+<!ENTITY pdfdownload.optionsOpenPdf "Avattaessa PDF-tiedostoja">
 <!ENTITY pdfdownload.optionsUsePlugin "Käytä PDF-liitännäistä">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Käytä käyttöjärjestelmän oletuslukijaa">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Käytä tätä lukijaa:">
 <!ENTITY pdfdownload.optionsBrowse "Selaa...">
 <!ENTITY pdfdownload.optionsBrowseTitle "Valitse PDF-lukija">
-<!ENTITY pdfdownload.optionsExeFiles "Windowsin sovellukset">
+<!ENTITY pdfdownload.optionsExeFiles "Windowsin ohjelmat">
 <!ENTITY pdfdownload.optionsAllFiles "Kaikki tiedostot">
-<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Valittu lukijan tiedosto ei ole suoritettava tiedosto!">
-<!ENTITY pdfdownload.optionsUpdateLabel "Päivittäminen">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Määritelty lukija ei ole suoritettava tiedosto!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Asennettu versio">
 <!ENTITY pdfdownload.optionsCheckUpdates "Tarkista päivitykset">
+<!ENTITY pdfdownload.optionsSubscribeLabel "Tilaa PDF Downloadin uutisia">
+<!ENTITY pdfdownload.optionsSubscribeButton "Tilaa">
+<!ENTITY pdfdownload.optionsSubscribeEmailLabel "Sähköpostiosoite:">
+<!ENTITY pdfdownload.optionsSubscribeText "Kirjoittaudu saadaksesi uutisia ja ohjelmien päivityksiä">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Kuvat">
-<!ENTITY pdfdownload.options.width "80ex">
-<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.viewingOnlineTabActionsGroup "Katsottaessa verkossa">
+<!ENTITY pdfdownload.options.width "85ex">
 <!ENTITY pdfdownload.popup.width "85ex">
-<!ENTITY pdfdownload.popup.title "PDF Download Nitro PDF Softwarelta">
+<!ENTITY pdfdownload.popup.title "PDF Download">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Näytä kuvat PDF:n HTML-versiossa">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Jotta näkisit kuvat, on ne tallennettava meidän palvelimelle.">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Tallennetut kuvat poistetaan automaattisesti yhden päivän kuluessa.">
-<!ENTITY pdfdownload.options.CompanyInformation "Tietoja yhtiöstä">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Kuvien näyttäminen vaatii, että ne tallennetaan palvelimillemme.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Kuvat poistetaan automaattisesti päivän kuluttua.">
+<!ENTITY pdfdownload.options.CompanyInformation "Yrityksen tiedot">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
-<!ENTITY pdfdownload.options.nitroDescription "PDF Download on ilmainen tuote Nitro PDF Sofware -tiimiltä. Nitro PDF Software loi ensimmäisen todellisen vaihtoehdon Adobe&#174;Acrobatille&#174;, Nitro PDF Professional. Nitro PDF Professional antaa mahdollisuuden luoda, muuntaa, muokata, turvata, manipuloida ja tehdä yhteistyötä käyttäen PDF:ää.">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download is a free product from the Nitro PDF Software team. Nitro PDF Software created the first true alternative to Adobe® Acrobat®, Nitro PDF Professional. Nitro PDF Professional lets you create, convert, edit, secure, manipulate and collaborate using PDF.">
 <!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
 <!ENTITY pdfdownload.options.tryNitroPDFProfessional "Kokeile Nitro PDF Professionalia -">
-<!ENTITY pdfdownload.options.free14dayTrial "Ilmainen 14 päivän koeaika.">
-<!ENTITY pdfdownload.tooltip.downloadButton "Lataa PDF-tiedoston. Jos olet asettanut Firefoxin asetuksista tallennuskansion,
-tiedosto tallennetaan sinne. Muutoin sijainti, johon tiedosto tallennetaan tulee määritellä erikseen joka kerta.">
-<!ENTITY pdfdownload.tooltip.openPDFButton "Avaa PDF-tiedoston. Riippuen PDF Downloadin asetuksista, PDF-tiedostot avataan Firefoxin sisällä PDF-liitännäisellä (, joka täytyy olla asennettuna) tai käyttöjärjestelmän PDF-lukijalla tai määrittelemälläsi omalla PDF-lukijalla.">
-<!ENTITY pdfdownload.tooltip.viewHtmlButton "Näyttää PDF:n HTML:nä. PDF-tiedostot avataan ulkoiselle palvelimelle ja muutetaan HTML:ksi. PDF-tiedosto poistetaan palvelimelta automaattisesti muuttamisen lopuksi.">
-<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Avaa PDF-tiedoston niin kuin PDF Downloadia ei olisi asennettu. Firefox käsittelee PDF-tiedostot samalla tavalla kuin ennen PDF Downloadin asentamista.">
-<!ENTITY pdfdownload.tooltip.cancelButton "Sulkee tämän valintaikkunan. PDF-tiedostoa ei ladata eikä avata ja jatkat selailuasi.">
+<!ENTITY pdfdownload.options.free14dayTrial "ilmainen 14 päivän koeaika.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Lataa PDF käyttäen Firefoxin asetuksia. Firefoxin asetuksista voit asettaa, että kysytäänkö latauspaikkaa joka kerta tai määritellä oletushakemiston, johon lataus tapahtuu automaattisesti.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Avaa PDF:n käyttäen Firefoxissa määriteltyjä asetuksia. Muokataksesi asetuksia mene &quot;Työkalut -&gt; PDF Download - Asetukset&quot;.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Muuntaa PDF:n HTML:ksi ja näyttää sen Firefoxissa. Tallentaaksesi HTML:n mene Tiedosto-valikkoon.">
+<!ENTITY pdfdownload.tooltip.viewOnlineButton "Muuntaa PDF:n kuvaksi ja näyttää Firefoxissa nopeaa tutkiskelua varten.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Ohittaa PDF Downloadin ja antaa Firefoxin käyttää normaalia tapaa avata tällaiset tiedostot.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Sulkee tämän valintaikkunan ja ei tee mitään.">
+<!ENTITY pdfdownload.clickModeLabel "Kuinka PDF-linkit tunnistetaan">
+<!ENTITY pdfdownload.clickModeName "Nimen perusteella">
+<!ENTITY pdfdownload.clickModeType "Mime-tyypin perusteella">
+<!ENTITY pdfdownload.viewOnlineRadioButton "Näytä verkossa">
+<!ENTITY pdfdownload.viewOnlineButton "Näytä verkossa">
+<!ENTITY pdfdownload.optionsDetectingLinksLabel "Linkkien tunnistaminen">
+<!ENTITY pdfdownload.advanced.banlistLabel "Poista PDF Download käytöstä tietyillä sivustoilla lisäämällä ne listaan">
+<!ENTITY pdfdownload.advanced.viewBanlistButton "Näytä lista">
+<!ENTITY pdfdownload.banList.DialogTitle "Poissuljettujen sivustojen lista">
+<!ENTITY pdfdownload.banList.AddButtonLable "Lisää">
+<!ENTITY pdfdownload.banList.DeleteButtonLable "Poista">
+<!ENTITY pdfdownload.banList.CloseButtonLable "Sulje">
+<!ENTITY pdfdownload.banList.StatusbarButtonLabel "PDF Download">
+<!ENTITY pdfdownload.banList.StatusbarEnableLabel "Ota lisäosa käyttöön tällä sivustolla">
+<!ENTITY pdfdownload.banList.StatusbarDisableLabel "Poista lisäosa käytöstä tällä sivustolla">
+<!ENTITY pdfdownload.banList.ToolbarButtonMenuItemLabel "Lisää tämä sivu poissuljettujen sivustojen listalle">

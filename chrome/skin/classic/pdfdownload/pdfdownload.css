@@ -1,5 +1,10 @@
 #pdfDownload-button {
-  list-style-image: url("chrome://pdfdownload/skin/pdfdownload_24.png");
+  list-style-image: url("chrome://pdfdownload/skin/pdfdownload_24.png ");
+}
+
+.pdfDownloadButton {
+  list-style-image: url("chrome://pdfdownload/skin/pdfdownload_16.png") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
 }
 
 toolbar[iconsize="small"] #pdfDownload-button {
@@ -34,6 +39,14 @@ radio[pane=optionsWebToPDFPane]:hover, radio[pane=optionsWebToPDFPane][selected=
   -moz-image-region: rect(32px, 128px,  64px, 96px)
 }
 
+radio[pane=optionsAdvancedPane] {
+  -moz-image-region: rect(0px, 224px, 32px, 192px);
+}
+
+radio[pane=optionsAdvancedPane]:hover, radio[pane=optionsAdvancedPane][selected="true"]  {
+  -moz-image-region: rect(32px, 224px,  64px, 192px)
+}
+
 radio[pane=optionsHTMLPane] {
   -moz-image-region: rect(0px, 96px, 32px, 64px);
 }
@@ -60,6 +73,20 @@ radio[pane=CompanyPane]:hover, radio[pane=CompanyPane][selected="true"]  {
 
 .box-padded {
   list-style-image: url("chrome://pdfdownload/skin/nitropdfsoftware_logo.png");
+}
+
+statusbarpanel .pdfDownloadButton {
+  padding:0 0 0 0;
+  list-style-image: url("chrome://pdfdownload/skin/pdfdownload_ff_active.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+
+#addonEnabledPicture {
+  list-style-image: url("chrome://pdfdownload/skin/pdfdownload_ff_active.png");
+}
+
+#addonDisabledPicture {
+  list-style-image: url("chrome://pdfdownload/skin/pdfdownload_ff_inactive.png");
 }
 
 #myButtons {

@@ -89,6 +89,8 @@ function onCancel(notExecutableFileMsg) {
 
     var path = document.getElementById(_pdfViewerPathTextBox).value;
     var openPDF = document.getElementById(_openPDFRadioGroup);
+
+try { 
     if (preferencesService.getCharPref("openPDF") == "customViewer") {
 		if (pdfDownloadShared.resolveFileName(path) == null) {
 				//alert(notExecutableFileMsg);
@@ -99,15 +101,28 @@ function onCancel(notExecutableFileMsg) {
 				//return false;
 		}
     }
+}
+catch(ex) {
+	// no nothing
+}
+
+
+try { 
     if (preferencesService.getCharPref("webToPDF.action") == "sendEmail" && 
           !checkEmail("emailAddress")) {
               preferencesService.setCharPref("webToPDF.action", previousValueWebToPDFDefaultAction);
               //return false;
     }
+}
+catch(ex) {
+	// no nothing
+}
+
     return true;
 }
 
 function onLoad() {
+	
     //sizeToContentTrick();
     previousValueOpenPDFPref = preferencesService.getCharPref("openPDF");
     previousValueWebToPDFDefaultAction = preferencesService.getCharPref("webToPDF.action");
@@ -210,3 +225,52 @@ function onPickPdfViewerPath(dialogTitle,exeFiles,allFiles,notExecutableFileMsg)
      }
      return true;
  }
+ 
+ 
+ function getMostRecentBrowserWindow()
+{
+	var windowManager = Components.classes['@mozilla.org/appshell/window-mediator;1'].getService();
+	var windowManagerInterface = windowManager.QueryInterface( Components.interfaces.nsIWindowMediator);
+	
+	return windowManagerInterface.getMostRecentWindow( "navigator:browser" );
+}
+
+function getMostRecentBrowser()
+{
+	return getMostRecentBrowserWindow().getBrowser();
+}
+
+ 
+ function showExclusionListDialog() {
+	 
+	window.openDialog("chrome://pdfdownload/content/exclusionListDialog.xul", "Exclusion List - Web sites", "chrome,modal,dialog,centerscreen", "", "");
+ }
+ 
+ 
+ function subscribe() {
+ 
+	if (!checkEmail("subscribeEmailValue")) {
+	
+		pdfDownloadShared.showMessage("You must enter a valid email address.");
+		return;
+	}
+	
+	if (window.XMLHttpRequest) {
+		
+		var subscribeUrl = "http://www.nitropdf.com/free/newsletters/free_subscribe.aspx";
+		var emailTextBox = document.getElementById("subscribeEmailValue");
+
+		var request = new XMLHttpRequest();
+		request.open("POST", subscribeUrl, false);
+		request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		
+		var dataToSend = "email=" + emailTextBox.value + "&src=pdfdownload";
+
+		request.send(dataToSend);
+
+		if (200 == request.status) {
+
+			pdfDownloadShared.showMessage("Thank you for subscribing. You will receive an email shortly asking you to confirm your subscription.");
+		}
+	}
+ } 

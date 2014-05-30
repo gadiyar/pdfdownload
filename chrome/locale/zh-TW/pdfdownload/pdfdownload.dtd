@@ -50,11 +50,12 @@
 <!ENTITY pdfdownload.optionsPDFTab "開啟PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF轉換成HTML">
 <!ENTITY pdfdownload.options.WebToPDFTab "頁面轉換成PDF">
-<!ENTITY pdfdownload.options.UpdatesTab "免費更新">
+<!ENTITY pdfdownload.options.AdvancedTab "進階">
+<!ENTITY pdfdownload.options.UpdatesTab "更新">
 <!ENTITY pdfdownload.options.CompanyTab "關於 Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefox 菜單">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "在Firefox的工具選單中顯示PDF Download">
-<!ENTITY pdfdownload.optionsShowItemFileMenu "在&apos;檔案&apos;菜單顯示 &apos;儲存頁面為PDF...&apos;">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "在'檔案'菜單顯示 '儲存頁面為PDF...'">
 <!ENTITY pdfdownload.optionsTooltips "工具提示">
 <!ENTITY pdfdownload.optionsShowTooltips "在對話框顯示工具提示">
 <!ENTITY pdfdownload.optionsOpenLink "如何使用Firefox的PDF外掛來開啟PDF檔的連結：">
@@ -73,8 +74,13 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "指定的程式不是一個可執行的檔案！">
 <!ENTITY pdfdownload.optionsUpdateLabel "更新">
 <!ENTITY pdfdownload.optionsCheckUpdates "檢查更新">
+<!ENTITY pdfdownload.optionsSubscribeLabel "訂閱 PDF Download">
+<!ENTITY pdfdownload.optionsSubscribeButton "訂閱">
+<!ENTITY pdfdownload.optionsSubscribeEmailLabel "電郵:">
+<!ENTITY pdfdownload.optionsSubscribeText "登記後可獲得最新的資訊和產品更新">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "影像">
-<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.viewingOnlineTabActionsGroup "當線上瀏覽時...">
+<!ENTITY pdfdownload.options.width "85ex">
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.popup.title "PDF Download by Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "在HTML版本的PDF檔案中顯示圖像">
@@ -89,5 +95,22 @@
 <!ENTITY pdfdownload.tooltip.downloadButton "下載PDF檔案。如果你在Firefox選項中已經設定了預設的下載資料夾，檔案將會自動下載到該資料夾中。若否，你就必須指定檔案儲存的資料夾。">
 <!ENTITY pdfdownload.tooltip.openPDFButton "打開PDF檔案。依照您在PDF Download中的設定，PDF檔將可能在Firefox中使用PDF外掛程式（必須已經安裝），或者作業系統的預設PDF瀏覽軟體，或是您指定的軟體開啟。">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "以HTML格式檢視PDF。PDF檔案將會由一個外部伺服器轉換成HTML。PDF檔案會在轉換完成後自動從外部伺服器上刪除。">
+<!ENTITY pdfdownload.tooltip.viewOnlineButton "將PDF轉換成圖像，並快速顯示於Firefox內。">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "依照Firefox預設打開PDF檔案。這跟沒有安裝PDF Download的情況是一樣的。">
 <!ENTITY pdfdownload.tooltip.cancelButton "關閉對話視窗。PDF檔將不會被下載，也不會被打開，您可以繼續瀏覽網頁。">
+<!ENTITY pdfdownload.clickModeLabel "如何抓取PDF鏈結">
+<!ENTITY pdfdownload.clickModeName "依名稱">
+<!ENTITY pdfdownload.clickModeType "依檔案類型">
+<!ENTITY pdfdownload.viewOnlineRadioButton "線上瀏覽">
+<!ENTITY pdfdownload.viewOnlineButton "線上瀏覽">
+<!ENTITY pdfdownload.optionsDetectingLinksLabel "偵測鏈結中">
+<!ENTITY pdfdownload.advanced.banlistLabel "將例外網站加入清單中可停用PDF Download">
+<!ENTITY pdfdownload.advanced.viewBanlistButton "顯示清單...">
+<!ENTITY pdfdownload.banList.DialogTitle "例外網站清單">
+<!ENTITY pdfdownload.banList.AddButtonLable "增加">
+<!ENTITY pdfdownload.banList.DeleteButtonLable "刪除">
+<!ENTITY pdfdownload.banList.CloseButtonLable "關閉">
+<!ENTITY pdfdownload.banList.StatusbarButtonLabel "PDF Download">
+<!ENTITY pdfdownload.banList.StatusbarEnableLabel "啟用 PDF Download">
+<!ENTITY pdfdownload.banList.StatusbarDisableLabel "停用 PDF Download">
+<!ENTITY pdfdownload.banList.ToolbarButtonMenuItemLabel "增加此網站到例外網站清單">

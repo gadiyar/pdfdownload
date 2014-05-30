@@ -50,7 +50,8 @@
 <!ENTITY pdfdownload.optionsPDFTab "PDF wurdt iepene">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF nei HTML konverzje">
 <!ENTITY pdfdownload.options.WebToPDFTab "Web nei PDF">
-<!ENTITY pdfdownload.options.UpdatesTab "Fernijings">
+<!ENTITY pdfdownload.options.AdvancedTab "Avansearre">
+<!ENTITY pdfdownload.options.UpdatesTab "Fergese fernijings">
 <!ENTITY pdfdownload.options.CompanyTab "Oer Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefox menu&apos;s">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Toan PDF Download ûnderdiel yn it Ekstra Firefox Menu">
@@ -73,7 +74,12 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "De spesifisearre viewer is net in útfierber bestân!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Fernijing">
 <!ENTITY pdfdownload.optionsCheckUpdates "Kontrolearje op fernijings">
+<!ENTITY pdfdownload.optionsSubscribeLabel "Abonnearje op PDF Download">
+<!ENTITY pdfdownload.optionsSubscribeButton "Abonnearje">
+<!ENTITY pdfdownload.optionsSubscribeEmailLabel "E-mail:">
+<!ENTITY pdfdownload.optionsSubscribeText "Skriuw jo yn om nijs- en produktfernijings te krijen">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Ofbyldings">
+<!ENTITY pdfdownload.viewingOnlineTabActionsGroup "As it online besjoen wurdt">
 <!ENTITY pdfdownload.options.width "80ex">
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.popup.title "PDF Download troch Nitro PDF Software">
@@ -89,5 +95,22 @@
 <!ENTITY pdfdownload.tooltip.downloadButton "Laadt it PDF-bestân yn. As jo in standert ynlaadmap ynstelt hawwe yn the Firefox opsjes, sill it automatysk nei die map ynladen wurde; oars moatte jo in map opjaan om te bewarjen.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "Iepen it PDF-bestân. Ofhinklik fan wat jo ynsteld hawwe yn de PDF Download opsjes, sil it PDF-bestân iepene wurde yn Firefox mei de PDF-ynstekker (die moat al ynstallearre wêze), of iepene wurde mei jo standert OS PDF lêzer, of mei it sels spesifisearre programma.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "Besjoch it PDF-bestân as HTML. It PDF-bestân sil ynladen wurde troch in eksterne spegel en omset nei HTML. It PDF-bestân wurdt automatysk fuortsmiten fan de spegel oan it ein fan de konverzje.">
+<!ENTITY pdfdownload.tooltip.viewOnlineButton "Konvertearje de ODF nei in ôfbylding en toan it dan yn Firefox foar fluch besjen.">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Iepen it PDF-bestân as PDF Download net ynstallearre is. Jo krije itselde gedrach as Firefox hat foardat jo PDF Download ynstallearre.">
 <!ENTITY pdfdownload.tooltip.cancelButton "Slút dizze dialooch. It PDF-bestân sil net ynladen of iepene wurde en jo kinne fierder gean mei blêdzjen.">
+<!ENTITY pdfdownload.clickModeLabel "Hoe PDF keppelings te finen">
+<!ENTITY pdfdownload.clickModeName "By namme">
+<!ENTITY pdfdownload.clickModeType "By mime-type">
+<!ENTITY pdfdownload.viewOnlineRadioButton "Besjoch online">
+<!ENTITY pdfdownload.viewOnlineButton "Besjoch online">
+<!ENTITY pdfdownload.optionsDetectingLinksLabel "Detektearje keppelings">
+<!ENTITY pdfdownload.advanced.banlistLabel "Skeakel PDF Download út op spesifike websteeën troch se ta te foegjen oan de útsûnderingslist">
+<!ENTITY pdfdownload.advanced.viewBanlistButton "Toan list...">
+<!ENTITY pdfdownload.banList.DialogTitle "Utsûnderingslist - Websteeën">
+<!ENTITY pdfdownload.banList.AddButtonLable "Tafoegje">
+<!ENTITY pdfdownload.banList.DeleteButtonLable "Fuortsmite">
+<!ENTITY pdfdownload.banList.CloseButtonLable "Slute">
+<!ENTITY pdfdownload.banList.StatusbarButtonLabel "PDF Download">
+<!ENTITY pdfdownload.banList.StatusbarEnableLabel "Skeakel tafoeging oan foar dit webstee">
+<!ENTITY pdfdownload.banList.StatusbarDisableLabel "Skeakel tafoeging út foar dit webstee">
+<!ENTITY pdfdownload.banList.ToolbarButtonMenuItemLabel "Foech dit webstee ta oan útsûnderingslist">

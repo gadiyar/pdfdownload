@@ -50,6 +50,7 @@
 <!ENTITY pdfdownload.optionsPDFTab "Deschidere fişiere PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Conversie din PDF în HTML">
 <!ENTITY pdfdownload.options.WebToPDFTab "Web către PDF">
+<!ENTITY pdfdownload.options.AdvancedTab "Avansat">
 <!ENTITY pdfdownload.options.UpdatesTab "Actualizări gratuite">
 <!ENTITY pdfdownload.options.CompanyTab "Despre Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleFirefoxMenus "Meniuri Firefox">
@@ -73,7 +74,12 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Programul de vizualizare specificat nu este executabil!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Actualizeză">
 <!ENTITY pdfdownload.optionsCheckUpdates "Caută actualizări">
+<!ENTITY pdfdownload.optionsSubscribeLabel "Abonare PDF Download">
+<!ENTITY pdfdownload.optionsSubscribeButton "Abonează">
+<!ENTITY pdfdownload.optionsSubscribeEmailLabel "Email:">
+<!ENTITY pdfdownload.optionsSubscribeText "Înscrie-mă pentru a primi noutăţi şi actualizări ale produsului">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Imagini">
+<!ENTITY pdfdownload.viewingOnlineTabActionsGroup "În mod conectat">
 <!ENTITY pdfdownload.options.width "80ex">
 <!ENTITY pdfdownload.popup.width "80ex">
 <!ENTITY pdfdownload.popup.title "PDF Download, creat de Nitro PDF Software">
@@ -89,5 +95,22 @@
 <!ENTITY pdfdownload.tooltip.downloadButton "Descărcare fişier PDF. Dacă în prealabil aţi setat un dosar de descărcare în Firefox, atunci fişierul se va salva automat acolo. Dacă nu, atunci va trebui să specificaţi dosarul în care doriţi să salvaţi fişierul.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "Deschidere fişier PDF. În funcţie de ceea ce aţi setat în Opţiunile PDF Download, fişierul va fi deschis de către: pluginul PDF al navigatorului (care trebuie să fie deja instalat), aplicaţia implicită a sistemului de operare sau de către programul individual specificat.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "Vizualizare fişier PDF ca HTML. Fişierul va fi descărcat de către un server extern şi convertit în HTML. Serverul extern va şterge fişierul imediat după terminarea conversiei.">
+<!ENTITY pdfdownload.tooltip.viewOnlineButton "Converteşte fişierul PDF în imagine pentru vizualizare rapidă">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Deschidere fişier în maniera standard. Fişierul va fi deschis de către navigator ca şi cum extensia PDF Download nu ar fi fost instalată.">
 <!ENTITY pdfdownload.tooltip.cancelButton "Închidere fereastră de dialog. Fişierul PDF nu va fi nici descărcat, nici deschis.">
+<!ENTITY pdfdownload.clickModeLabel "Mod prondere legături PDF">
+<!ENTITY pdfdownload.clickModeName "în funcţie de nume">
+<!ENTITY pdfdownload.clickModeType "în funcţie de tipul MIME">
+<!ENTITY pdfdownload.viewOnlineRadioButton "Vizualizare online">
+<!ENTITY pdfdownload.viewOnlineButton "Vizualizare online">
+<!ENTITY pdfdownload.optionsDetectingLinksLabel "Detectare legături">
+<!ENTITY pdfdownload.advanced.banlistLabel "Dezactivează PDF Download pentru paginile specificate în lista de excluderi">
+<!ENTITY pdfdownload.advanced.viewBanlistButton "Arată lista...">
+<!ENTITY pdfdownload.banList.DialogTitle "Lista de excluderi">
+<!ENTITY pdfdownload.banList.AddButtonLable "Adăugare">
+<!ENTITY pdfdownload.banList.DeleteButtonLable "Ştergere">
+<!ENTITY pdfdownload.banList.CloseButtonLable "Închidere">
+<!ENTITY pdfdownload.banList.StatusbarButtonLabel "PDF Download">
+<!ENTITY pdfdownload.banList.StatusbarEnableLabel "Activează extensia pentru această pagină">
+<!ENTITY pdfdownload.banList.StatusbarDisableLabel "Dezactivează extensia pentru această pagină">
+<!ENTITY pdfdownload.banList.ToolbarButtonMenuItemLabel "Adaugă pagina curentă în lista de excluderi">

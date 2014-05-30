@@ -40,12 +40,13 @@
 const kPluginHandlerContractID = "@mozilla.org/content/plugin/document-loader-factory;1";
 const pBranch = Components.interfaces.nsIPrefBranch;
 const kDisabledPluginTypesPref = "plugin.disable_full_page_plugin_for_types";
-const focusNewTabPref = "browser.tabs.loadInBackground";
 
 const fileCID  = "@mozilla.org/file/local;1";
 const fileIID  = Components.interfaces.nsILocalFile;
 const nsIWBP = Components.interfaces.nsIWebBrowserPersist;
 const mimeType = "application/pdf";
+const sPrefPrefix = "extensions.pdfdownload.";
+const viewOnlineURL = "http://www.pdfdownload.org/pdf2html/view_online.php";
 
 /******************************************************************************
  *                        				VARIABLES                             *
@@ -58,6 +59,15 @@ var bundleService = Components.classes["@mozilla.org/intl/stringbundle;1"]
 var bundle = bundleService.createBundle("chrome://pdfdownload/locale/pdfdownload.properties");
 
 var downloadQueue = new Array();
+
+var openedSite = {
+
+	url: "",
+	isAddonDisabed: ""
+};
+
+// stores disabled sites URLs
+var sitesWithDisabledAddon = new Array();
 
 /******************************************************************************
  *                        	HELPFUL FUNCTIONS                                 *
@@ -139,6 +149,23 @@ function getMostRecentBrowser()
 	return getMostRecentBrowserWindow().getBrowser();
 }
 
+
+function loadNewTabURI(url)
+{
+	var tab = getMostRecentBrowser().addTab(url);
+
+	if (shouldNewTabFocused()) {
+		getBrowser().selectedTab = tab;
+	}
+}
+
+		
+function loadNewWindowURI(url)
+{
+	loadNewTabURI(url);
+	//openNewWindowWith(url, null, null);
+}
+		
 /**
  * Extract file anme from HTTP header
  */
@@ -165,6 +192,59 @@ catch(ex) {
 }
 
 return null;
+}
+
+
+/******************************************************************************
+ *                        	get settings                                  *
+ *****************************************************************************/
+function getAbsSetting(name, defvalue)
+{
+	var value = defvalue;
+
+	try {
+		value = sltPrefs.getCharPref(name);
+	} catch(ex) {
+	}
+
+	return value;
+}
+
+function getAbsBoolSetting(name, defvalue)
+{
+	var value = defvalue;
+
+	try {
+		value = sltPrefs.getBoolPref(name);
+	} catch(ex) {
+	}
+
+	return value;
+}
+
+
+function getSetting(name, defvalue)
+{
+	return getAbsSetting(sPrefPrefix + name, defvalue);
+}
+
+function getBoolSetting(name, defvalue)
+{
+	return getAbsBoolSetting(sPrefPrefix + name, defvalue)
+}
+
+
+function isMouseClickMode()
+{
+	var defvalue = "name";
+	var value = getSetting("clickMode", defvalue);
+	
+	return (value == defvalue);
+}
+
+function shouldNewTabFocused()
+{
+	return !getAbsBoolSetting("browser.tabs.loadInBackground", true);
 }
 
 /******************************************************************************
@@ -212,7 +292,13 @@ PDFDownloadService.prototype = {
   }  
 ,
   doContent: function(contentType, isContentPreferred, channel, contentHandler) {
-	
+
+	// this is not our mode
+	if (isMouseClickMode()) {
+		contentHandler = nsnull;
+		return false;
+	}
+
     const ci=Components.interfaces;
     channel.QueryInterface(ci.nsIChannel);
 
@@ -228,7 +314,16 @@ PDFDownloadService.prototype = {
 		contentHandler = nsnull;
 		return false;
 	}
-    
+	
+	//navigateUrl(url);
+	
+	if (/*!isSiteAvailable(url) || */openedSite.isAddonDisabled || !isSiteAvailable(url)/*isAddonDisabled*/) {
+	
+		// a site in an Exclusion list - do default action
+		contentHandler = nsnull;
+		return false;
+	}
+	
 	// stop this download
     //getBrowser().stop();
 	getMostRecentBrowser().stop();
@@ -248,14 +343,9 @@ PDFDownloadService.prototype = {
 	
 	answer.res = "cancel";
 	answer.url = url;	
-	answer.size = size;
-    
-    try {
-	  answer.res = sltPrefs.getCharPref("extensions.pdfdownload.defaultAction");
-    } catch(ex) {
-	  answer.res = "showPopup";
-	}
-
+	answer.filesize = size;
+    answer.res = getSetting("defaultAction", "showPopup");
+	
 	handlePDF(answer, 'pdf', url, filename);
   }
 }
@@ -267,14 +357,18 @@ var pdfDownloadService = new PDFDownloadService();
  *                        	handle the click event                           *
  *****************************************************************************/
 function mouseClick(aEvent) {
-
+	
 	var globalHistory = Components.classes["@mozilla.org/browser/global-history;2"]
 	                                       .getService(Components.interfaces.nsIBrowserHistory);
-
-	return;
-	
-	if (!aEvent)
+	if (!isMouseClickMode()) {
+		// this is not our mode
 		return;
+	}
+
+	if (!aEvent) {
+		
+		return;
+	}
 
 	// if right click, we do not do anything
 	if (aEvent.button == 2)
@@ -348,7 +442,6 @@ function mouseClick(aEvent) {
 	if (firstQuestionMarkPosition != -1) {
 		url = url.substring(0,firstQuestionMarkPosition);
 	} 
-
 	// we check if the link points to a pdf or pdf.gz file
 	var lastDotPosition = url.lastIndexOf('.');
 	var ext = url.substring(lastDotPosition + 1,lastDotPosition + 3);
@@ -372,12 +465,33 @@ function mouseClick(aEvent) {
 		answer.res = "cancel";
 		answer.url = originalUrl;
 		answer.filesize = "unknown";
-		try {
-			answer.res = sltPrefs.getCharPref("extensions.pdfdownload.defaultAction");
-		} catch(ex) {
-			answer.res = "showPopup";
+		answer.res = getSetting("defaultAction", "showPopup");
+
+		// get a file size
+		var httpRequest = new XMLHttpRequest();
+		httpRequest.open("HEAD", originalUrl, false);
+		httpRequest.send(null);
+		
+		if (200 == httpRequest.status) {
+			
+			// all is ok a file size can be read
+			
+			var contentLength = httpRequest.getResponseHeader("Content-Length");
+			answer.filesize = contentLength;
 		}
-        handlePDF(answer, ext, url, null);
+		
+		//navigateUrl(url);
+		
+		if (/*!isSiteAvailable(url) || */openedSite.isAddonDisabled || !isSiteAvailable(url)/*isAddonDisabled*/) {
+
+			// a site in an Exclusion list - do default action
+			answer.res = "openWithoutExtension";
+		}
+		else {
+		
+			handlePDF(answer, ext, url, null);	
+		}
+        
         if (answer.res != "cancel") {
 			// we set the pdf link as a visited link!!
 			var referrer = makeURL(getCurrentLocation());
@@ -392,27 +506,28 @@ function mouseClick(aEvent) {
 	}
 }
 
-
 /******************************************************************************
  *                        	handle PDF download                               *
  *****************************************************************************/
 function handlePDF(params, ext, normalizedUrl, filename) {
+		
     	if ((params.res == "showPopup") || 
 			((params.res == "openHtml") && ((params.url.indexOf("//localhost") != -1) || (params.url.indexOf("//127.0.0.1") != -1)))) {
-			window.openDialog("chrome://pdfdownload/content/questionBox.xul", "PDF Download", "chrome,modal,centerscreen,dialog,resizable",params,ext);
+			getMostRecentBrowserWindow().openDialog("chrome://pdfdownload/content/questionBox.xul", "PDF Download", "chrome,modal,centerscreen,dialog", params, ext);
 		} 
+		
         var isLocalFile = isLinkType("file:",params.url);
         var fname = normalizedUrl.substring(normalizedUrl.lastIndexOf('/') + 1);
 		var openPDF = "";
 		
 		if (filename != null) {
 			fname = filename;
-		} else {
-	    	var pos = fname.lastIndexOf('.');
-    		var ext = fname.substring(pos).toLowerCase();
+		} 
+		else {
+	    		var pos = fname.lastIndexOf('.');
+	    		var ext = fname.substring(pos).toLowerCase();
     	
-	    	if (ext != '.pdf')
-    		{
+		    	if (ext != '.pdf') {
 				fname = fname.substring(0, pos) + '.pdf';
 			}
 		}
@@ -430,11 +545,8 @@ function handlePDF(params, ext, normalizedUrl, filename) {
         	openPDFWithPlugin(params.url);
 		} else if (params.res == "open") {
 			// we check how to open the PDF
-			try {
-				openPDF = sltPrefs.getCharPref("extensions.pdfdownload.openPDF");
-			} catch(ex) {
-				openPDF = "";
-			}
+			openPDF = getSetting("openPDF", "");
+
 			
             if (!isLocalFile) {	
     			if (openPDF == "usePlugin") {
@@ -459,6 +571,24 @@ function handlePDF(params, ext, normalizedUrl, filename) {
             } else {
 			    getMirror(encodeURIComponent(params.url),params.filesize);
             }
+		} else if (params.res == "viewOnline") {
+            if (isLocalFile) {
+                // since we are dealing with a local file, we cannot use the "View as HTML" option
+                params.res = "showPopup";
+                handlePDF(params,ext,normalizedUrl);
+            } else {
+			    //var prefvalue = getSetting("openPDFtoHTML", "openHTMLNewTab");
+				var prefvalue = getSetting("viewPDFOnline", "viewingPDFNewTab");
+			    var url = viewOnlineURL + "?url=" + encodeURIComponent(params.url);
+			    				
+				if (prefvalue == "viewingPDFNewTab") {
+					loadNewTabURI(url);
+				//} else if (prefvalue == "openHTMLNewWindow") {
+				//	loadNewWindowURI(url);
+				} else {
+					getBrowser().loadURI(url); // Just do a normal load.
+				}
+            }            
 		}
 }
 
@@ -467,28 +597,17 @@ function openPDFWithPlugin(url) {
 	 * In the preferences there was written to open the PDF file using the PDF plugin.
 	 * Now we check in which tab/window we must open the PDF file using the PDF plugin.
 	 */		
-	var prefvalue;
-	try {
-		prefvalue = sltPrefs.getCharPref("extensions.pdfdownload.openPDFLink");
-	} catch(ex) {
-		prefvalue = "openPDFNewTab";
-	}
+	var prefvalue = getSetting("openPDFLink", "openPDFNewTab");
 
 	enablePDFPlugin();
-/*
 
 	if (prefvalue == "openPDFNewTab") {
-		var tab = getBrowser().addTab(url);
-		if (shouldNewTabFocused()) {
-			getBrowser().selectedTab = tab;
-		}
+		loadNewTabURI(url);
 	} else if (prefvalue == "openPDFNewWindow") {
-		openNewWindowWith(url, null, null);
+		loadNewWindowURI(url);
 	} else {
 		getBrowser().loadURI(url);
 	}     
-*/
-	getBrowser().loadURI(url);
 
     setTimeout(function() {
     	disablePDFPlugin();
@@ -628,12 +747,9 @@ function getMirror(url,filesize) {
 							pdf2htmlUrl = pdf2htmlUrl + "&images=yes";
 						}
 						if (prefvalue == "openHTMLNewTab") {
-							var tab = getBrowser().addTab(pdf2htmlUrl);
-							if (shouldNewTabFocused()) {
-								getBrowser().selectedTab = tab;
-							}
+							loadNewTabURI(pdf2htmlUrl);
 						} else if (prefvalue == "openHTMLNewWindow") {
-							openNewWindowWith(pdf2htmlUrl, null, null);
+							loadNewWindowURI(pdf2htmlUrl);
 						} else {
 							getBrowser().loadURI(pdf2htmlUrl); // Just do a normal load.
 						}
@@ -692,15 +808,9 @@ function openPDFExternally(filename) {
 	var oFile 	= Components.classes["@mozilla.org/file/local;1"].getService(Components.interfaces.nsILocalFile);
 	oFile.initWithPath(filename);
 	if (oFile != null && oFile.exists()) {
-		var pdfViewerPath = "";
-		var openPDF = "";
-		// we check how to open the PDF
-		try {
-			openPDF = sltPrefs.getCharPref("extensions.pdfdownload.openPDF");
-			pdfViewerPath = sltPrefs.getCharPref("extensions.pdfdownload.pdfViewerPath");
-		} catch(ex) {
-			pdfViewerPath = "";
-		}
+		var pdfViewerPath = getSetting("pdfViewerPath", "");
+		var openPDF = getSetting("openPDF", "");
+
 		if (openPDF == "defaultViewer") {
 			// In the preferences there was written to open PDF files using the default viewer
 			try {
@@ -714,12 +824,9 @@ function openPDFExternally(filename) {
 					 */
 					window.openDialog("chrome://pdfdownload/content/osWarning.xul","pdfdownload-OS-warning-window","centerscreen,chrome,modal");
 					showPDFDownloadSettings();
-					try {
-						openPDF = sltPrefs.getCharPref("extensions.pdfdownload.openPDF");
-						pdfViewerPath = sltPrefs.getCharPref("extensions.pdfdownload.pdfViewerPath");
-					} catch(ex) {
-						openPDF = "defaultViewer";
-					}
+
+					openPDF = getSetting("openPDF", "defaultViewer");
+					pdfViewerPath = getSetting("pdfViewerPath", "");
 				}
 			}
 		} 
@@ -809,16 +916,6 @@ function showPDFDownloadSettings() {
 	}
 	var settingsHandle = window.openDialog("chrome://pdfdownload/content/options.xul", "",features);
 	settingsHandle.focus();
-}
-
-function shouldNewTabFocused() {
-	var focusNewTab;
-	try {
-		focusNewTab = !sltPrefs.getBoolPref(focusNewTabPref);
-	} catch(ex) {
-		focusNewTab = false;
-	}
-	return focusNewTab;
 }
 
 
@@ -974,10 +1071,7 @@ function removeDownloadedFiles() {
 }
 
 function generatePDFFromPage() {
-    var action = "askEmail";
-    try {
-        action = sltPrefs.getCharPref("extensions.pdfdownload.webToPDF.action");
-    } catch (e) {}   
+    var action = getSetting("webToPDF.action", "askEmail");
     generatePDFFromPageWithAction(action);
 }
  
@@ -1011,13 +1105,9 @@ function generatePDFFromPageWithAction(action) {
         var tab = getBrowser().addTab(saveAsPdfUrl);
         getBrowser().selectedTab = tab;
     } else {
-        try {
-        	var emailAddress = sltPrefs.getCharPref("extensions.pdfdownload.webToPDF.emailAddress");
-    	} catch(ex) {
-	  		var emailAddress = '';
-		}
-	
+      	var emailAddress = getSetting("webToPDF.emailAddress", "");
         var validEmail = pdfDownloadShared.validateEmail(emailAddress);
+
         if (action == "sendEmail" && validEmail) {
             saveAsPdfUrl = saveAsPdfUrl + "&email=" + emailAddress;
             var tab = getBrowser().addTab(saveAsPdfUrl);
@@ -1123,7 +1213,7 @@ function isFirstPDFDownloadInstallation() {
         setTimeout(function() {openInNewTab("http://www.nitropdf.com/pdfdownload/welcome.asp")}, 0);
 		return true;
 	} else {
-		var lastVersion = "1.0";
+		var lastVersion = "2.0";
 		try {
 			lastVersion = sltPrefs.getCharPref("extensions.pdfdownload.last-version");
 		}catch(e) {}
@@ -1241,6 +1331,8 @@ function init() {
 
 	//myPrefObserver.register();
 
+	addressChangedEventHandler.init();
+	
 	//add download observer
 	initDownloadObserver();
     //register the uninstall observer
@@ -1248,6 +1340,7 @@ function init() {
 }
 
 function uninit() {
+	
 	//myPrefObserver.unregister();
 	unloadDownloadObserver();
 	
@@ -1266,6 +1359,8 @@ function uninit() {
     //register the uninstall observer
     UninstallObserver.unregister();
 
+	addressChangedEventHandler.uninit();
+	
 	pdfDownloadService.unregister();
 	enablePDFPlugin();
 }
@@ -1326,8 +1421,318 @@ var myPrefObserver =
   }
 }
 */
+	
+/******************************************************************************
+ *                       Status bar button handlers                           *
+ *****************************************************************************/
+ 
+ function onStatusBarButtonClick() {
+ 
+	//isAddonDisabled = !isAddonDisabled;
+	openedSite.isAddonDisabled = !openedSite.isAddonDisabled;
+	
+	if (openedSite.isAddonDisabled) {
+	
+		sitesWithDisabledAddon.push(parseUrl(getCurrentLocation()));
+	}
+	else {
+	
+		removeSiteFromDisabledSitesList(parseUrl(getCurrentLocation()));
+	}
 
+	setStatusBarButtonIcon(openedSite.isAddonDisabled);
+	//changeWidgetsVisibility();
+ }
+ 
+ 
+ function setStatusBarButtonIcon(isAddonDisabled) {
+ 
+	var strings = document.getElementById("pdfdownloadStrings");
+	var iconPath = isAddonDisabled ? strings.getString("addonDisabledIconPath") : strings.getString("addonEnabledIconPath");
+	var statusBarButtonIcon = document.getElementById("statusBarButtonIcon");
+	
+	statusBarButtonIcon.src = iconPath;
+ }
+ 
+ 
+ function onAddSiteToBanListMenuItemClick() {
+ 
+	var preferencesString = getExclusionList();
+	var siteUrlBase = parseUrl(getCurrentLocation());
+		
+	if (preferencesString.search(siteUrlBase) == -1) {
+	
+		preferencesString = preferencesString.concat(";" + siteUrlBase);
+		
+		var preferencesService  = Components.classes["@mozilla.org/preferences-service;1"].
+								getService(Components.interfaces.nsIPrefService).getBranch("extensions.pdfdownload.");
+							
+		preferencesService.setCharPref("exclusionListPref", preferencesString);
+		
+		//setOpenedSite(siteUrlBase, true);
+		//openedSite.isAddonDisabled = true;
+	}
+ }
+ 
+ 
+ /*function onDeleteSiteFromBanList(sitesToRemove) {
 
+	 for (i = 0; i < sitesToRemove.length; i++) {
+	 
+		 var site = sitesToRemove[i];
+		 if (site.value == openedSite.url) {
+		 
+			 alert("OK");
+			 openedSite.isAddonDisabled = false;
+			 return;
+		 }
+	 }
+ }*/
+ 
+ /*function changeWidgetsVisibility() {
+
+	document.getElementById("PDFDownloadToolsItem").disabled = openedSite.isAddonDisabled;//isAddonDisabled;
+	document.getElementById("filemenu-pdfdownload-savepdf").disabled = openedSite.isAddonDisabled;//isAddonDisabled;
+	document.getElementById("pdfDownload-button").disabled = openedSite.isAddonDisabled;//isAddonDisabled;
+ }*/
+ 
+ 
+ function isSiteAvailable(siteUrl) {
+	
+	var siteUrlBase = parseUrl(siteUrl);
+	var preferencesString = getExclusionList();
+		
+	if (preferencesString.search(siteUrlBase) != -1) {
+	
+		// a site is in Exclusion list
+		return false;
+	}
+	
+	return true;
+ }
+ 
+ 
+ function getExclusionList() {
+ 
+	var preferencesService  = Components.classes["@mozilla.org/preferences-service;1"].
+								getService(Components.interfaces.nsIPrefService).getBranch("extensions.pdfdownload.");
+	var preferencesString = "";
+	try {
+		preferencesString = preferencesService.getCharPref("exclusionListPref");
+	}
+	catch(ex) { }
+	
+	return preferencesString;
+ }
+ 
+ 
+ function parseUrl(siteUrl) {
+
+	 const protocolPrefix = "://";//"http://";
+	 var parsingResult = "";
+	 
+	 var protocolPrefixIndex = siteUrl.search(protocolPrefix);
+	 if (protocolPrefixIndex != -1) {
+		
+		protocolPrefixIndex += protocolPrefix.length;
+		var nextSlashIndex = siteUrl.indexOf('/', protocolPrefixIndex);
+		if (nextSlashIndex != -1) {
+			
+			parsingResult = siteUrl.substr(protocolPrefixIndex, nextSlashIndex - protocolPrefixIndex);
+		}
+		else {
+		
+			parsingResult = siteUrl.substr(protocolPrefixIndex, siteUrl.length - protocolPrefixIndex - 1);
+		}
+	 }
+	 else {
+	 
+		parsingResult = siteUrl;
+	 }
+	 
+	 const wwwDomain = "www";
+	 var wwwDomainIndex = parsingResult.indexOf(wwwDomain);
+	 if (wwwDomainIndex != -1) {
+	 
+		var startingIndex = wwwDomainIndex + wwwDomain.length + 1;
+		parsingResult = parsingResult.substr(startingIndex, parsingResult.length - startingIndex);
+	 }
+	 
+	 /*var lastDotIndex = parsingResult.lastIndexOf('.');
+	 if (lastDotIndex != -1) {
+	 
+		 var beginDotIndex = 0;
+		 var index = 0;
+		 while (beginDotIndex != -1 && (index = parsingResult.indexOf('.', index + 1)) != lastDotIndex) {
+		 
+			beginDotIndex = index;
+		 }
+
+		 if (beginDotIndex == 0) {
+		 
+			return parsingResult.substring(beginDotIndex);
+		 }
+		 		 
+		 return parsingResult.substring(beginDotIndex + 1);
+	 }*/
+	 
+	 return parsingResult;
+ }
+ 
+ 
+ // if user navigates to a new site then enable an addon by default
+ function navigateUrl(url) {
+
+	 var urlBase = parseUrl(url);
+	 
+	 for (i = 0; i < sitesWithDisabledAddon.length; i++) {
+
+		if (urlBase == sitesWithDisabledAddon[i]) {
+		
+			//openedSite.url = sitesWithDisabledAddon[i];
+			//openedSite.isAddonDisabled = true;
+			//changeWidgetsVisibility();
+			setOpenedSite(sitesWithDisabledAddon[i], true);
+			
+			return;
+		}
+	 }
+	 
+	 //alert(openedSite.url + ' ' + urlBase);
+	 if (openedSite.url != urlBase) {
+		//openedSite.url = urlBase;
+		//openedSite.isAddonDisabled = false;
+		//changeWidgetsVisibility();
+		setOpenedSite(urlBase, !isSiteAvailable(url));
+	 }	 	 
+ }
+ 
+
+ function setOpenedSite(siteUrl, addonDisabled) {
+ 
+	openedSite.url = siteUrl;
+	openedSite.isAddonDisabled = addonDisabled;
+	
+	setStatusBarButtonIcon(openedSite.isAddonDisabled);
+	//changeWidgetsVisibility();
+ }
+ 
+ 
+ function onTabHasBeenRemoved(event) {
+
+	// a closing tab
+	var browser = event.target.linkedBrowser;
+	// a site that is opened in a closing tab
+	var closingTabUrl = parseUrl(browser.currentURI.spec);
+	
+	removeSiteFromDisabledSitesList(closingTabUrl);
+ }
+
+ 
+ function removeSiteFromDisabledSitesList(siteUrl) {
+ 
+	var tempArray = new Array();
+	for (i = 0; i < sitesWithDisabledAddon.length; i++) {
+	
+		if (siteUrl != sitesWithDisabledAddon[i]) {
+		
+			tempArray[i] = sitesWithDisabledAddon[i];
+		}
+	}
+	
+	sitesWithDisabledAddon = tempArray;
+ }
+ 
+ 
+ function tabHasBeenSelected() {
+ 
+	navigateUrl(getCurrentLocation());
+ }
+ 
+ 
+ function onMouseOver(event) {
+ 
+	showStatusBarButtonState(event, getToolTipForStatusBarButton());
+ }
+ 
+ function onMouseOut(event) {
+ 
+	hideStatusBarButtonState(getToolTipForStatusBarButton());
+ }
+ 
+ function getToolTipForStatusBarButton() {
+ 
+	 if (openedSite.isAddonDisabled) {
+	 
+		 return "enableAddonTooltip";
+	 }
+	 
+	 return "disableAddonTooltip";
+ }
+ 
+ function hideStatusBarButtonState(tooltipName) {
+ 
+	var popup = document.getElementById(tooltipName);
+	popup.hidePopup();
+ }
+ 
+ function showStatusBarButtonState(event, tooltipName) {
+ 
+	var popup = document.getElementById(tooltipName);
+	var statusBarButton = document.getElementById('pdfdownload-statusbarButton');
+	
+	//popup.showPopup(statusBarButton, -1, -1, "tooltip", "topleft", "topleft");
+	popup.showPopup(statusBarButton, statusBarButton.boxObject.screenX, statusBarButton.boxObject.screenY - 3.5 * statusBarButton.boxObject.height, "tooltip", "topleft", "topleft");
+ }
+ 
+/**********************************************************************************************************************
+ **********************************************************************************************************************/
+ 
+ var pdfDownloadAddressChangedListener = {
+  QueryInterface: function(aIID)
+  {
+   if (aIID.equals(Components.interfaces.nsIWebProgressListener) ||
+       aIID.equals(Components.interfaces.nsISupportsWeakReference) ||
+       aIID.equals(Components.interfaces.nsISupports))
+     return this;
+   throw Components.results.NS_NOINTERFACE;
+  },
+
+  onLocationChange: function(aProgress, aRequest, aURI)
+  {
+    addressChangedEventHandler.processNewURL(aURI);
+  }
+};
+
+var addressChangedEventHandler = {
+  oldURL: null,
+  
+  init: function() {
+    // Listen for webpage loads
+    gBrowser.addProgressListener(pdfDownloadAddressChangedListener,
+        Components.interfaces.nsIWebProgress.NOTIFY_LOCATION);
+  },
+  
+  uninit: function() {
+    gBrowser.removeProgressListener(pdfDownloadAddressChangedListener);
+  },
+
+  processNewURL: function(aURI) {
+	  
+    if (aURI.spec == this.oldURL)
+      return;
+    
+	navigateUrl(aURI.spec);
+    
+    this.oldURL = aURI.spec;
+  }
+};
+
+ 
+// listen a tab selecting event
+//getMostRecentBrowser().mTabContainer.addEventListener("select", tabHasBeenSelected, false);
+// listen a tab removing event
+gBrowser.mTabContainer.addEventListener("TabClose", onTabHasBeenRemoved, false);
 //do the init on load
 window.addEventListener("load", init, false);
 //do the unload

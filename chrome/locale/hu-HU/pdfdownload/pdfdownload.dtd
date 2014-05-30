@@ -50,11 +50,12 @@
 <!ENTITY pdfdownload.optionsPDFTab "Megnyitás">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF -&gt; HTML">
 <!ENTITY pdfdownload.options.WebToPDFTab "Web -&gt; PDF">
+<!ENTITY pdfdownload.options.AdvancedTab "Haladó">
 <!ENTITY pdfdownload.options.UpdatesTab "Frissítések">
 <!ENTITY pdfdownload.options.CompanyTab "Névjegy">
 <!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefox menük">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "A PDF Download menüpont megjelenítése az Eszközök menüben">
-<!ENTITY pdfdownload.optionsShowItemFileMenu "Az &apos;Oldal mentése mint PDF...&apos; menüpont megjelenítése a Fájl menüben">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "Az 'Oldal mentése PDF-ként...' menüpont megjelenítése a Fájl menüben">
 <!ENTITY pdfdownload.optionsTooltips "Buboréksúgó">
 <!ENTITY pdfdownload.optionsShowTooltips "Buboréksúgó megjelenítése a párbeszédablakban">
 <!ENTITY pdfdownload.optionsOpenLink "PDF linkek megnyitása a Firefox beépülőjének segítségével:">
@@ -73,7 +74,12 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "A kiválaszott fájl nem indítható alkalmazásként!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Telepített változat">
 <!ENTITY pdfdownload.optionsCheckUpdates "Frissítések keresése...">
+<!ENTITY pdfdownload.optionsSubscribeLabel "Feliratkozás: PDF Download">
+<!ENTITY pdfdownload.optionsSubscribeButton "Feliratkozás">
+<!ENTITY pdfdownload.optionsSubscribeEmailLabel "Email:">
+<!ENTITY pdfdownload.optionsSubscribeText "Értesítés az újdonságokról és frissítésekről">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Képek">
+<!ENTITY pdfdownload.viewingOnlineTabActionsGroup "Online böngészés esetén">
 <!ENTITY pdfdownload.options.width "80ex">
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.popup.title "PDF Download (Nitro PDF Software)">
@@ -89,5 +95,22 @@
 <!ENTITY pdfdownload.tooltip.downloadButton "A PDF fájl letöltése. Ha van alapértelmezett mappa kijelölve a mentésre, akkor oda töltődik le, máskülönben meg kell adnia egy mappát, ahova a fájl mentésre kerül.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "A PDF fájl megnyitása. A kiterjesztés beállításaitól függően a fájl a Firefoxban PDF modullal (telepítve kell lennie), alapértelmezett PDF fájl alkalmazással, vagy a megadott program segítségével lesz megnyitva.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "A PDF fájl megjelenítése HTML fájlként. A PDF fájl egy külső szerverre lesz feltöltve és konvertálva HTML fájlra. A művelet után automatikusan törlődik a szerverről.">
+<!ENTITY pdfdownload.tooltip.viewOnlineButton "Gyorsnézetben a PDF fájl megjelenítése képként.">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "A PDF fájl megyitása (mintha a PDF Download kiterjesztés nem lenne telepítve). A Firefox úgy fog viselkedni, mint a PDF Download kiterjesztés telepítése előtt.">
 <!ENTITY pdfdownload.tooltip.cancelButton "Bezárja ezt a párbeszédablakot. A PDF fájl nem kerül letöltésre és megnyitásra - folytathatja tovább a böngészést.">
+<!ENTITY pdfdownload.clickModeLabel "PDF linkek kezelése az alábbiak szerint:">
+<!ENTITY pdfdownload.clickModeName "Név">
+<!ENTITY pdfdownload.clickModeType "Mime-típus">
+<!ENTITY pdfdownload.viewOnlineRadioButton "Online nézet">
+<!ENTITY pdfdownload.viewOnlineButton "Online nézet">
+<!ENTITY pdfdownload.optionsDetectingLinksLabel "Linkek felismerése">
+<!ENTITY pdfdownload.advanced.banlistLabel "A PDF Download letiltása a kizáró listában szereplő weboldalakon">
+<!ENTITY pdfdownload.advanced.viewBanlistButton "Lista megjelenítése..">
+<!ENTITY pdfdownload.banList.DialogTitle "Weboldalak - Kizáró lista">
+<!ENTITY pdfdownload.banList.AddButtonLable "Hozzáadás">
+<!ENTITY pdfdownload.banList.DeleteButtonLable "Törlés">
+<!ENTITY pdfdownload.banList.CloseButtonLable "Bezárás">
+<!ENTITY pdfdownload.banList.StatusbarButtonLabel "PDF Download">
+<!ENTITY pdfdownload.banList.StatusbarEnableLabel "Engedélyezés az oldalon">
+<!ENTITY pdfdownload.banList.StatusbarDisableLabel "Letiltás az oldalon">
+<!ENTITY pdfdownload.banList.ToolbarButtonMenuItemLabel "Oldal hozzáadása a kizáró listához">

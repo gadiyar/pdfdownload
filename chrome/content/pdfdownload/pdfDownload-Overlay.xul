@@ -64,6 +64,37 @@
 			accesskey="&pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu;" insertafter="context-savepage" oncommand="generatePDFFromPageWithAction('download');"/>
 	</popup>
 	
+	
+	<!-- firefox status bar -->
+	<statusbar id="status-bar">
+		<statusbarpanel id="pdfdownload-statusbarpanel"
+                    label="PDF Download"
+                    status="unloaded"
+                    quickblock="off"
+                    xxinsertafter="statusbarpanel-progress, security-button, privacy-button, offline-status, popupIcon, statusbar-display, component-bar"
+                    >
+			<box id="pdfdownload-statusbarButton" onclick="onStatusBarButtonClick();" onmouseover="onMouseOver(event);" onmouseout="onMouseOut(event);">
+				<!--<image tooltiptext="&pdfdownload.banList.StatusbarButtonLabel;" class="pdfDownloadButton" /> -->
+				<image id="statusBarButtonIcon" src="chrome://pdfdownload/skin/pdfdownload_ff_active.png" />
+				
+				<tooltip id="enableAddonTooltip" orient="vertical">
+					<vbox>
+						<label>&pdfdownload.banList.StatusbarEnableLabel;</label>
+					</vbox>
+					<spacer flex="1"/>
+				</tooltip>
+				
+				<tooltip id="disableAddonTooltip" orient="vertical">
+					<vbox>
+						<label>&pdfdownload.banList.StatusbarDisableLabel;</label>
+					</vbox>
+					<spacer flex="1"/>
+				</tooltip> 
+			</box>
+		</statusbarpanel>
+	</statusbar>
+
+	
 	<!-- firefox toolbar -->
 	<toolbarpalette id="BrowserToolbarPalette">
 	
@@ -85,6 +116,9 @@
 					<menuitem label="&pdfdownload.help;" 
 							  tooltiptext="&pdfdownload.help.tooltip;" image="chrome://pdfdownload/skin/menu_help.png" class="menuitem-iconic"
 							  oncommand="pdfDownloadShared.help(); event.stopPropagation();" />
+					<menuseparator/>
+					<menuitem label="&pdfdownload.banList.ToolbarButtonMenuItemLabel;"
+							  oncommand="onAddSiteToBanListMenuItemClick(); event.stopPropagation();" />
 					<menuseparator/>
 				    <menuitem label="&pdfdownload.webtopdf.options;" 
 				    		  tooltiptext="&pdfdownload.webtopdf.options.tooltip;" image="chrome://pdfdownload/skin/pdfdownload_16.png" class="menuitem-iconic"

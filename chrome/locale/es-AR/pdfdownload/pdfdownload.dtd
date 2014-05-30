@@ -50,6 +50,7 @@
 <!ENTITY pdfdownload.optionsPDFTab "Abriendo PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Conversión de PDF a HTML">
 <!ENTITY pdfdownload.options.WebToPDFTab "Web a PDF">
+<!ENTITY pdfdownload.options.AdvancedTab "Avanzado">
 <!ENTITY pdfdownload.options.UpdatesTab "Actualizaciones gratis">
 <!ENTITY pdfdownload.options.CompanyTab "Acerca de Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleFirefoxMenus "Menues de Firefox">
@@ -73,7 +74,12 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "El visualizador elegido no es un archivo ejecutable!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Actualizar">
 <!ENTITY pdfdownload.optionsCheckUpdates "Revisar actualizaciones">
+<!ENTITY pdfdownload.optionsSubscribeLabel "Suscribirse a PDF Download">
+<!ENTITY pdfdownload.optionsSubscribeButton "Suscribirse">
+<!ENTITY pdfdownload.optionsSubscribeEmailLabel "Email:">
+<!ENTITY pdfdownload.optionsSubscribeText "Regístrese para recibir noticias y actualizaciones de productos">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Imágenes">
+<!ENTITY pdfdownload.viewingOnlineTabActionsGroup "Cuando visualiza en línea">
 <!ENTITY pdfdownload.options.width "95ex">
 <!ENTITY pdfdownload.popup.width "95ex">
 <!ENTITY pdfdownload.popup.title "PDF Download por Nitro PDF Software">
@@ -89,5 +95,22 @@
 <!ENTITY pdfdownload.tooltip.downloadButton "Descargar el archivo PDF. Si usted definió un directorio por defecto para las descargas de archivos en el Firefox, se descargarán automáticamente allí; caso contrario deberá especificar el directorio donde desee guardar el archivo.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "Abrir el archivo PDF. Dependiendo de como haya definido la configuración en las opciones de PDF Download, el archivo PDF se abrirá dentro del Firefox con el plug-in de PDF (el que debe haber sido instalado previamente), o se abrirá utilizando el visor de archivos PDF que uested haya definido.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "Ver el archivo PDF como HTML. El archivo PDF será descargado por un sitio externo y convertido al formato HTML. Al finalizar la conversión el archivo PDF se eliminará automáticamente del servidor externo.">
+<!ENTITY pdfdownload.tooltip.viewOnlineButton "Convertir el archivo PDF en una imagen y luego mostrarla en Firefox para una vista rápida.">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Abrir el archivo PDF como si PDF Download no estuviese instalado. Firefox se comportará de la misma forma que antes de haber instalado PDF Download.">
 <!ENTITY pdfdownload.tooltip.cancelButton "Cerrar éste diálogo. El archivo PDF no será ni descargado ni abierto y usted podrá continuar navegando.">
+<!ENTITY pdfdownload.clickModeLabel "Cómo capturar vínculos PDF">
+<!ENTITY pdfdownload.clickModeName "Por nombre">
+<!ENTITY pdfdownload.clickModeType "Por tipo mime">
+<!ENTITY pdfdownload.viewOnlineRadioButton "Ver en línea">
+<!ENTITY pdfdownload.viewOnlineButton "Ver en Línea">
+<!ENTITY pdfdownload.optionsDetectingLinksLabel "Detectando enlaces">
+<!ENTITY pdfdownload.advanced.banlistLabel "Deshabilitar PDF Download para sitios web específicos agregándolos a ésta lista de exclusiones">
+<!ENTITY pdfdownload.advanced.viewBanlistButton "Mostrar lista...">
+<!ENTITY pdfdownload.banList.DialogTitle "Lista de Exclusiones - Sitios Web">
+<!ENTITY pdfdownload.banList.AddButtonLable "Agregar">
+<!ENTITY pdfdownload.banList.DeleteButtonLable "Eliminar">
+<!ENTITY pdfdownload.banList.CloseButtonLable "Cerrar">
+<!ENTITY pdfdownload.banList.StatusbarButtonLabel "PDF Download">
+<!ENTITY pdfdownload.banList.StatusbarEnableLabel "Habilitar el complemento para éste sitio">
+<!ENTITY pdfdownload.banList.StatusbarDisableLabel "Deshabilitar el complemento para éste sitio">
+<!ENTITY pdfdownload.banList.ToolbarButtonMenuItemLabel "Agregar éste sitio a la Lista de Exclusiones">

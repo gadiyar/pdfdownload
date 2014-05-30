@@ -50,6 +50,7 @@
 <!ENTITY pdfdownload.optionsPDFTab "PDF openen">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF naar HTML-conversie">
 <!ENTITY pdfdownload.options.WebToPDFTab "HTML naar PDF-conversie">
+<!ENTITY pdfdownload.options.AdvancedTab "Geavanceerd">
 <!ENTITY pdfdownload.options.UpdatesTab "Gratis updates">
 <!ENTITY pdfdownload.options.CompanyTab "Over Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefox-menu&apos;s">
@@ -73,7 +74,12 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "De opgegeven lezer is geen uitvoerbaar bestand!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Update">
 <!ENTITY pdfdownload.optionsCheckUpdates "Updates zoeken">
+<!ENTITY pdfdownload.optionsSubscribeLabel "Inschrijven op PDF Download">
+<!ENTITY pdfdownload.optionsSubscribeButton "Inschrijven">
+<!ENTITY pdfdownload.optionsSubscribeEmailLabel "E-mail:">
+<!ENTITY pdfdownload.optionsSubscribeText "U inschrijven om nieuws en productupdates te ontvangen">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Afbeeldingen">
+<!ENTITY pdfdownload.viewingOnlineTabActionsGroup "Bij het online bekijken">
 <!ENTITY pdfdownload.options.width "80ex">
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.popup.title "PDF Download, door Nitro PDF Software">
@@ -89,5 +95,22 @@
 <!ENTITY pdfdownload.tooltip.downloadButton "Het bestand downloaden. Als u een standaard downloadmap heeft ingesteld in de Firefox-opties, wordt het naar deze map gedownload, anders naar de map die u selecteert in het venster erna.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "Het bestand openen. Afhankelijk van de PDF Download-instellingen, zal het PDF-bestand geopend worden in Firefox met de PDF-plugin (die al moet geïnstalleerd zijn), met de standaard PDF-lezer van uw besturingssysteem, of met een andere PDF-lezer die u koos.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "Het PDF-bestand als HTML bekijken. Het PDF-bestand zal naar een externe mirror gedownload worden, en geconverteerd worden naar HTML. Na de conversie wordt het PDF-bestand verwijderd van de mirror.">
+<!ENTITY pdfdownload.tooltip.viewOnlineButton "Het PDF-bestand naar een afbeelding omzetten en weergeven in Firefox, voor snel bekijken.">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Het PDF-bestand openen zoals dat gebeurde voordat PDF Download geïnstalleerd werd.">
 <!ENTITY pdfdownload.tooltip.cancelButton "Dit venster sluiten. Het PDF-bestand niet downloaden of openen, maar verder surfen zoals u bezig was.">
+<!ENTITY pdfdownload.clickModeLabel "Hoe PDF-links te herkennen">
+<!ENTITY pdfdownload.clickModeName "Volgens naam">
+<!ENTITY pdfdownload.clickModeType "Volgens MIME-type">
+<!ENTITY pdfdownload.viewOnlineRadioButton "Online bekijken">
+<!ENTITY pdfdownload.viewOnlineButton "Online bekijken">
+<!ENTITY pdfdownload.optionsDetectingLinksLabel "Links aan het detecteren">
+<!ENTITY pdfdownload.advanced.banlistLabel "PDF Download uitschakelen op specifieke websites door deze aan een uitzonderingenlijst toe te voegen">
+<!ENTITY pdfdownload.advanced.viewBanlistButton "Lijst weergeven...">
+<!ENTITY pdfdownload.banList.DialogTitle "Uitzonderingen - websites">
+<!ENTITY pdfdownload.banList.AddButtonLable "Toevoegen">
+<!ENTITY pdfdownload.banList.DeleteButtonLable "Verwijderen">
+<!ENTITY pdfdownload.banList.CloseButtonLable "Sluiten">
+<!ENTITY pdfdownload.banList.StatusbarButtonLabel "PDF Download">
+<!ENTITY pdfdownload.banList.StatusbarEnableLabel "Plugin inschakelen voor deze site">
+<!ENTITY pdfdownload.banList.StatusbarDisableLabel "Plugin uitschakelen voor deze site">
+<!ENTITY pdfdownload.banList.ToolbarButtonMenuItemLabel "Deze site toevoegen aan de uitzonderingenlijst">

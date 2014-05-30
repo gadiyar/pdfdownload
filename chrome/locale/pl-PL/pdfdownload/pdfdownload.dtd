@@ -13,7 +13,7 @@
 <!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "Pionowa">
 <!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "Pozioma">
 <!ENTITY pdfdownload.webtopdf.margins.label "Marginesy:">
-<!ENTITY pdfdownload.webtopdf.margins.inches "w">
+<!ENTITY pdfdownload.webtopdf.margins.inches "in">
 <!ENTITY pdfdownload.webtopdf.margins.top "Górny:">
 <!ENTITY pdfdownload.webtopdf.margins.bottom "Dolny:">
 <!ENTITY pdfdownload.webtopdf.margins.left "Lewy:">
@@ -21,7 +21,7 @@
 <!ENTITY pdfdownload.webtopdf.defaulAction "Domyślne działanie">
 <!ENTITY pdfdownload.webtopdf.action.downloadDirectly "Zapisuj stronę jako PDF">
 <!ENTITY pdfdownload.webtopdf.action.downloadDirectly.tooltip "Konwertuj stronę do PDF i pobierz">
-<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "Zapisz stronę jako PDF...">
+<!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem "Zapisz stronę jako PDF…">
 <!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyContextMenu "D">
 <!ENTITY pdfdownload.webtopdf.action.saveAsPDFMenuItem.keyFileMenu "Z">
 <!ENTITY pdfdownload.webtopdf.action.askEmail "Proś o podanie adresu e-mail">
@@ -29,7 +29,7 @@
 <!ENTITY pdfdownload.webtopdf.action.alwaysAskEmail "Zawsze proś o podanie adresu e-mail">
 <!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "Wyślij stronę jako PDF">
 <!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "Konwertuj stronę do PDF i dołącz do e-maila">
-<!ENTITY pdfdownload.webtopdf.options "Opcje...">
+<!ENTITY pdfdownload.webtopdf.options "Opcje…">
 <!ENTITY pdfdownload.webtopdf.options.tooltip "Konfiguruj działanie PDF Download">
 <!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "Wprowadź docelowy adres e-mail">
 <!ENTITY pdfdownload.help "PDF Download - pomoc">
@@ -45,16 +45,17 @@
 <!ENTITY pdfdownload.changelog "Opis zmian">
 <!ENTITY pdfdownload.acknowledgments "Podziękowania">
 <!ENTITY pdfdownload.siteListTitle "Wyjątki">
-<!ENTITY pdfdownload.options.Title "PDF Download - opcje">
+<!ENTITY pdfdownload.options.Title "PDF Download - ustawienia">
 <!ENTITY pdfdownload.optionsGeneralTab "Ogólne">
 <!ENTITY pdfdownload.optionsPDFTab "Otwieranie">
 <!ENTITY pdfdownload.optionsHTMLTab "Konwersja">
 <!ENTITY pdfdownload.options.WebToPDFTab "Sieć a PDF">
+<!ENTITY pdfdownload.options.AdvancedTab "Zaawansowane">
 <!ENTITY pdfdownload.options.UpdatesTab "Aktualizacja">
 <!ENTITY pdfdownload.options.CompanyTab "Info">
 <!ENTITY pdfdownload.optionsToggleFirefoxMenus "Menu Firefoksa">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "Wyświetlaj element &quot;PDF Download - opcje&quot; w menu &quot;Narzędzia&quot;">
-<!ENTITY pdfdownload.optionsShowItemFileMenu "Wyświetlaj element &quot;Zapisz stronę jako PDF&quot; w menu &quot;Plik&quot;">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Wyświetlaj element PDF Download - ustawienia w menu Narzędzia">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "Wyświetlaj element Zapisz stronę jako PDF w menu Plik">
 <!ENTITY pdfdownload.optionsTooltips "Podpowiedzi">
 <!ENTITY pdfdownload.optionsShowTooltips "Wyświetlaj podpowiedzi w oknach dialogowych">
 <!ENTITY pdfdownload.optionsOpenLink "Odnośniki do plików PDF otwierane za pomocą wtyczki PDF otwieraj w:">
@@ -73,21 +74,43 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Wybrany plik przeglądarki nie jest plikiem wykonywalnym!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Zainstalowana wersja">
 <!ENTITY pdfdownload.optionsCheckUpdates "Sprawdź aktualizacje">
+<!ENTITY pdfdownload.optionsSubscribeLabel "Subskrybuj PDF Download">
+<!ENTITY pdfdownload.optionsSubscribeButton "Subskrybuj">
+<!ENTITY pdfdownload.optionsSubscribeEmailLabel "E-mail:">
+<!ENTITY pdfdownload.optionsSubscribeText "Zaloguj się, aby odbierać wiadomości i aktualizacje produktu">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Grafiki">
+<!ENTITY pdfdownload.viewingOnlineTabActionsGroup "Przeglądaj online w:">
 <!ENTITY pdfdownload.options.width "75ex">
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.popup.title "PDF Download">
-<!ENTITY pdfdownload.optionsShowImagesInHTML "Pokaż grafiki w wersji HTML rozszerzenia">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Aby zobaczyć grafiki, muszą być one zapisane na naszym serwerze">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Grafiki zostaną automatycznie usunięte po upływie jednego dnia">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Wyświetlaj grafiki w wersji HTML rozszerzenia">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Aby zobaczyć grafiki, muszą być one zapisane na naszym serwerze.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Grafiki zostaną automatycznie usunięte po upływie jednego dnia.">
 <!ENTITY pdfdownload.options.CompanyInformation "Informacje o firmie Nitro PDF Software">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
 <!ENTITY pdfdownload.options.nitroDescription "PDF Download jest darmowym oprogramowaniem wyprodukowanym przez zespół Nitro PDF Software. Nitro PDF Software stworzyło pierwszą, naprawdę alternatywną dla programu Adobe® Acrobat® aplikację. Nitro PDF Professional pozwala tworzyć, konwertować, edytować, współpracować i bezpiecznie manipulować plikami PDF.">
 <!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
-<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Wypróbuj Nitro PDF Professional -">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Wypróbuj Nitro PDF Professional —">
 <!ENTITY pdfdownload.options.free14dayTrial "okres próbny 14 dni">
 <!ENTITY pdfdownload.tooltip.downloadButton "Jeśli w opcjach Firefoksa jest określony folder pobierania, to nastąpi automatyczny zapis pobieranego pliku w tym folderze. Jeśli nie ma określonego folderu pobierania, należy wskazać folder gdzie plik zostanie zapisany.">
-<!ENTITY pdfdownload.tooltip.openPDFButton "W zależności od ustawień rozszerzenia, plik PDF zostanie otworzony w Firefoksie za pomocą wtyczki PDF (musi być ona zainstalowana), otworzony za pomocą domyślnego czytnika plików PDF systemu operacyjnego lub innego, określonego przez użytkownika, czytnika.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "W zależności od ustawień rozszerzenia, plik PDF zostanie otworzony w Firefoksie za pomocą wtyczki PDF (musi być ona zainstalowana), otworzony za pomocą domyślnego czytnika plików PDF systemu operacyjnego lub innego, określonego przez użytkownika czytnika.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "Plik PDF zostanie pobrany przez zewnętrzny serwer i skonwertowany do HTML. Plik ten zostanie automatycznie usunięty z serwera po wykonaniu konwersji.">
+<!ENTITY pdfdownload.tooltip.viewOnlineButton "Konwertuje PDF na obrazek i wyświetla go w Firefoksie.">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Nastąpi otwarcie pliku PDF tak jakby nie było zainstalowanego rozszerzenia PDF Download. Firefox będzie zachowywał się w sposób standardowy.">
 <!ENTITY pdfdownload.tooltip.cancelButton "Nastąpi zamknięcie tego okna dialogowego. Żaden plik PDF nie zostanie pobrany ani otworzony. Powrócisz do przeglądania aktywnej witryny.">
+<!ENTITY pdfdownload.clickModeLabel "Przechwytuj odnośniki PDF wg:">
+<!ENTITY pdfdownload.clickModeName "nazwy">
+<!ENTITY pdfdownload.clickModeType "typu mime">
+<!ENTITY pdfdownload.viewOnlineRadioButton "Zobacz online">
+<!ENTITY pdfdownload.viewOnlineButton "Zobacz online">
+<!ENTITY pdfdownload.optionsDetectingLinksLabel "Wykrywanie odnośników PDF">
+<!ENTITY pdfdownload.advanced.banlistLabel "Wyłącz PDF Download na stronach znajdujących się na liście wykluczeń">
+<!ENTITY pdfdownload.advanced.viewBanlistButton "Lista">
+<!ENTITY pdfdownload.banList.DialogTitle "Lista wykluczeń – witryny">
+<!ENTITY pdfdownload.banList.AddButtonLable "Dodaj">
+<!ENTITY pdfdownload.banList.DeleteButtonLable "Usuń">
+<!ENTITY pdfdownload.banList.CloseButtonLable "Zamknij">
+<!ENTITY pdfdownload.banList.StatusbarButtonLabel "PDF Download">
+<!ENTITY pdfdownload.banList.StatusbarEnableLabel "Włącz PDF Download dla tej witryny">
+<!ENTITY pdfdownload.banList.StatusbarDisableLabel "Wyłącz PDF Download dla tej witryny">
+<!ENTITY pdfdownload.banList.ToolbarButtonMenuItemLabel "Dodaj tę witrynę do listy wykluczeń">

@@ -70,6 +70,13 @@ function doOpenWithoutExtension() {
 	window.close();
 }
 
+// Open normally button handler
+function doOpenOnline() {
+	window.arguments[0].res = "viewOnline";
+	window.close();
+}
+
+
 function disableBtns(url,ext) {
 	/*
 	 * If it is a pdf.gz file, we disable the open button because usually a 
@@ -93,47 +100,28 @@ function isLinkType(linktype, link) {
 	}
 }
 
-function getFileSize(url) {
-	var xmlhttp
-	var done = 0;
+function getFileSize(url, size) {
 	strbundle = document.getElementById("strings");
 	var part1 = strbundle.getString("questionPart1");				
 	var descr = document.getElementById("QuestionLabel");
-	var fileSize = document.getElementById("fileSize");
-	try {
-		xmlhttp = new XMLHttpRequest();
-	} catch (e) {
-		xmlhttp = false;
+	var fileSize = document.getElementById("fileSize");	
+
+	fileSize.value = size;								
+	
+	if (size >= 1024*1024) {
+		size = size / (1024*1024);
+		part1 = part1 + " (" + size.toFixed(1) + " MB)" ;
+	} else if (size >= 1024) {
+		size = size / 1024;
+		part1 = part1 + " (" + parseInt(size + .5) + " KB)";
+	} else if (size != null) {
+		part1 = part1 + " (" + size + " bytes)";
 	}
-	if (xmlhttp) {
-		xmlhttp.open("HEAD", url, true);
-		xmlhttp.onreadystatechange=function() {
-			if (xmlhttp.readyState == 4) {
-				if (xmlhttp.status == 200) {
-					var size = xmlhttp.getResponseHeader("Content-Length");		
-					fileSize.value = size;								
-					if (size >= 1024*1024) {
-						size = size / (1024*1024);
-						part1 = part1 + " (" + size.toFixed(1) + " MB)" ;
-					} else if (size >= 1024) {
-						size = size / 1024;
-						part1 = part1 + " (" + parseInt(size + .5) + " KB)";
-					} else if (size != null) {
-						part1 = part1 + " (" + size + " bytes)";
-					}
-					descr.value = part1 + strbundle.getString("questionPart2");
-					done = 1;
-				} else if (done == 0) {
-					descr.value = part1 + strbundle.getString("questionPart2");
-				} 
-			} else if (done == 0) {
-				descr.value = part1 + strbundle.getString("questionPart2");
-			}	 
-		}
-		xmlhttp.send(null);
-	}
+
+	descr.value = part1 + strbundle.getString("questionPart2");
 }
 
+					
 function isTooltipEnabled() {
 	if (!sltPrefs.prefHasUserValue("extensions.pdfdownload.showTooltips")) {
 		sltPrefs.setBoolPref("extensions.pdfdownload.showTooltips",true);

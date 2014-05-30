@@ -40,14 +40,14 @@
 <?xml-stylesheet href="chrome://pdfdownload/skin/pdfdownload.css" type="text/css"?>
 <!DOCTYPE window SYSTEM "chrome://pdfdownload/locale/pdfdownload.dtd">
 
+<!-- style="width: &pdfdownload.popup.width;; height=30ex" -->
 
 <window class="dialog"
     id="PDFDownload-question-window"
     title="&pdfdownload.popup.title;"
     orient="horizontal"
     align="stretch"
-    style="width: &pdfdownload.popup.width;; height=30ex" 
-    onload="disableBtns(window.arguments[0].url,window.arguments[1]); getFileSize(window.arguments[0].url);"
+    onload="disableBtns(window.arguments[0].url,window.arguments[1]); getFileSize(window.arguments[0].url, window.arguments[0].filesize);"
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	
@@ -88,15 +88,24 @@
 		</vbox>
 		<spacer flex="1"/>
 	</tooltip>
+	
+	<tooltip id="viewOnlineTooltip" orient="vertical"
+	         onpopupshowing="return onTooltipPopupShowing(this);">
+		<vbox>
+			<label class="tooltipTitle">&pdfdownload.viewOnlineButton;</label>
+			<label>&pdfdownload.tooltip.viewOnlineButton;</label>
+		</vbox>
+		<spacer flex="1"/>
+	</tooltip>
 
-	<tooltip id="openWithoutExtensionTooltip" orient="vertical"
+	<!-- <tooltip id="openWithoutExtensionTooltip" orient="vertical"
 	   onpopupshowing="return onTooltipPopupShowing(this);">
 		<vbox>
 			<label class="tooltipTitle">&pdfdownload.openWithoutExtension;</label>
 			<label>&pdfdownload.tooltip.openWithoutExtensionButton;</label>
 		</vbox>
 		<spacer flex="1"/>
-	</tooltip>
+	</tooltip> -->
 
 	<tooltip id="cancelTooltip" orient="vertical"
 	   onpopupshowing="return onTooltipPopupShowing(this);">
@@ -110,9 +119,9 @@
 	<label id="fileSize" value="unknown" hidden="true"/>
 	<hbox>
 		<vbox pack="center">
-			<image src="chrome://pdfdownload/skin/popup_dialog_question_mark.gif"/>
+			<image src="chrome://pdfdownload/skin/popup_dialog_question_mark.gif" />
 		</vbox>
-		<vbox flex="1">
+		<vbox flex="2">
 			<separator class="thin"/>
 			<description id="QuestionLabel" value=""/>    
 			<separator class="thin"/>
@@ -120,9 +129,11 @@
 				<button id="download-button" label="&pdfdownload.downloadButton;" oncommand="doDownload();" onmouseover="onMouseOver(event,'downloadTooltip',this)" onmouseout="onMouseOut('downloadTooltip')" />
 				<button id="open-button" label="&pdfdownload.openButton;" oncommand="doOpen();" default="true" key="enter" onmouseover="onMouseOver(event,'openTooltip',this)" onmouseout="onMouseOut('openTooltip')"/>
 				<button id="openHTML-button" label="&pdfdownload.viewHtmlButton;" oncommand="doOpenHtml();" onmouseover="onMouseOver(event,'viewHTMLTooltip',this)" onmouseout="onMouseOut('viewHTMLTooltip')"/>
-				<button id="openWithoutExtension" label="&pdfdownload.openWithoutExtension;" oncommand="doOpenWithoutExtension();" onmouseover="onMouseOver(event,'openWithoutExtensionTooltip',this)" onmouseout="onMouseOut('openWithoutExtensionTooltip')"/>
+				<!-- <button id="openWithoutExtension" label="&pdfdownload.openWithoutExtension;" oncommand="doOpenWithoutExtension();" onmouseover="onMouseOver(event,'openWithoutExtensionTooltip',this)" onmouseout="onMouseOut('openWithoutExtensionTooltip')"/> -->
+				<button id="online" label="&pdfdownload.viewOnlineButton;" oncommand="doOpenOnline()();" onmouseover="onMouseOver(event,'viewOnlineTooltip',this)" onmouseout="onMouseOut('viewOnlineTooltip')"/>
 				<button id="cancel-button" label="&pdfdownload.cancelButton;" oncommand="doCancel();" key="escape" onmouseover="onMouseOver(event,'cancelTooltip',this)" onmouseout="onMouseOut('cancelTooltip')"/>
 			</hbox>
 		</vbox>
+		<spacer width="25" />
 	</hbox>
 </window>

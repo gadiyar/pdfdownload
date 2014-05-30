@@ -50,11 +50,12 @@
 <!ENTITY pdfdownload.optionsPDFTab "PDF を開く">
 <!ENTITY pdfdownload.optionsHTMLTab "HTML　へ変換">
 <!ENTITY pdfdownload.options.WebToPDFTab "PDF　へ変換">
-<!ENTITY pdfdownload.options.UpdatesTab "フリーアップデート">
-<!ENTITY pdfdownload.options.CompanyTab "Nitro PDF Software について">
+<!ENTITY pdfdownload.options.AdvancedTab "詳細設定">
+<!ENTITY pdfdownload.options.UpdatesTab "アップデート">
+<!ENTITY pdfdownload.options.CompanyTab "About Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleFirefoxMenus "Firefox のメニュー">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF Download の項目を Firefox のツールに表示">
-<!ENTITY pdfdownload.optionsShowItemFileMenu "ファイルメニューに &apos;ページを PDF で保存...&apos; を表示">
+<!ENTITY pdfdownload.optionsShowItemFileMenu "ファイルメニューに 'ページを PDF で保存...' を表示">
 <!ENTITY pdfdownload.optionsTooltips "ツールチップ">
 <!ENTITY pdfdownload.optionsShowTooltips "ダイアログ内にツールチップを表示">
 <!ENTITY pdfdownload.optionsOpenLink "Firefox PDF プラグインを使用して PDF リンクを開く時の動作:">
@@ -73,12 +74,17 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "指定されたビューアーでは開けません!">
 <!ENTITY pdfdownload.optionsUpdateLabel "更新">
 <!ENTITY pdfdownload.optionsCheckUpdates "更新の確認">
+<!ENTITY pdfdownload.optionsSubscribeLabel "最新情報の通知">
+<!ENTITY pdfdownload.optionsSubscribeButton "登録">
+<!ENTITY pdfdownload.optionsSubscribeEmailLabel "メールアドレス:">
+<!ENTITY pdfdownload.optionsSubscribeText "登録することでアップデートなどの最新情報を通知します">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "画像">
+<!ENTITY pdfdownload.viewingOnlineTabActionsGroup "オンラインで表示">
 <!ENTITY pdfdownload.options.width "80ex">
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.popup.title "PDF Download by Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "PDF 内の画像を HTML で表示">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "画像を表示するには一度サーバーに保存する必要があります。">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "画像を表示するには一旦サーバーに保存する必要があります。">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "画像は一日後に自動的に削除されます。">
 <!ENTITY pdfdownload.options.CompanyInformation "会社情報">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
@@ -89,5 +95,22 @@
 <!ENTITY pdfdownload.tooltip.downloadButton "PDF ファイルをダウンロードします。Firefox のオプションでデフォルトのダウンロードフォルダを設定されている場合は、そのフォルダに自動的にダウンロードされます。もし設定されていない場合は保存先のフォルダを指定してください。">
 <!ENTITY pdfdownload.tooltip.openPDFButton "PDF ファイルを開きます。PDF Download の設定に従って、PDF ファイルを PDF プラグイン (PDF プラグインがインストールされている必要があります) を使用して Firefox で表示したり 、OS によって設定された既定の PDF リーダーやあなたが指定した PDF リーダーで開く事ができます。">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "PDF ファイルを HTML として表示します。PDF ファイルは外部サーバーにアップロードされ HTML に変換されます。アップロードされた PDF ファイルは変換終了後に自動的にサーバーから削除されます。">
+<!ENTITY pdfdownload.tooltip.viewOnlineButton "画像に変換された PDF ファイルを Firefox　で表示します。">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "PDF Download がインストールされていなかった時のように PDF ファイルを開きます。Firefox は PDF Download がインストールされる前と同じ動作をします。">
 <!ENTITY pdfdownload.tooltip.cancelButton "このダイアログを閉じます。PDF ファイルのダウンロードや表示を行なわず、ネットサーフィンを続ける事ができます。">
+<!ENTITY pdfdownload.clickModeLabel "PDF リンクの判別方法">
+<!ENTITY pdfdownload.clickModeName "ファイル名">
+<!ENTITY pdfdownload.clickModeType "コンテンツの種類">
+<!ENTITY pdfdownload.viewOnlineRadioButton "オンラインを表示">
+<!ENTITY pdfdownload.viewOnlineButton "オンラインを表示">
+<!ENTITY pdfdownload.optionsDetectingLinksLabel "リンク制御">
+<!ENTITY pdfdownload.advanced.banlistLabel "除外リストに追加することで特定の Web サイト上で PDF Download の使用を停止します">
+<!ENTITY pdfdownload.advanced.viewBanlistButton "一覧を表示...">
+<!ENTITY pdfdownload.banList.DialogTitle "除外リスト - Web サイト">
+<!ENTITY pdfdownload.banList.AddButtonLable "追加">
+<!ENTITY pdfdownload.banList.DeleteButtonLable "削除">
+<!ENTITY pdfdownload.banList.CloseButtonLable "閉じる">
+<!ENTITY pdfdownload.banList.StatusbarButtonLabel "PDF Download">
+<!ENTITY pdfdownload.banList.StatusbarEnableLabel "このサイトではアドオンを有効">
+<!ENTITY pdfdownload.banList.StatusbarDisableLabel "このサイトではアドオンを無効">
+<!ENTITY pdfdownload.banList.ToolbarButtonMenuItemLabel "このサイトを除外リストに追加">

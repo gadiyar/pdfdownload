@@ -349,6 +349,12 @@ PdfDownloadShared.prototype.validateEmail = function(elementValue) {
     return emailPattern.test(elementValue); 
 }
 
+PdfDownloadShared.prototype.showMessage = function(errorMessage) {
+
+	var prompts = Components.classes["@mozilla.org/embedcomp/prompt-service;1"].getService(Components.interfaces.nsIPromptService);
+	prompts.alert(this, "PDF Download", errorMessage); 
+}
+
 PdfDownloadShared.prototype.getBundle = function() {
        const bundleURL = "chrome://pdfdownload/locale/pdfdownload.properties";
        const sbsContractID = "@mozilla.org/intl/stringbundle;1";
