@@ -162,13 +162,13 @@
     		return true;
 	}
 
-	function onMouseOver(toolTipName,obj) {
+	function onMouseOver(e,toolTipName,obj) {
+		var xulWindow = document.getElementById("PDFDownload-question-window");
 		var popup = document.getElementById(toolTipName);
      		var diff = popup.boxObject.height - popup.firstChild.boxObject.height;
         
     		popup.sizeTo(popup.boxObject.width, popup.firstChild.boxObject.height + diff);
-
-		popup.showPopup(obj, -1, -1, "tooltip", "bottomleft", "topleft");
+		popup.showPopup(obj, e.clientX+xulWindow.boxObject.screenX-(popup.boxObject.width/2), xulWindow.boxObject.screenY+window.innerHeight-10, "tooltip", "bottomleft", "topleft");
 	}
 
 	function onMouseOut(toolTipName) {
@@ -240,11 +240,11 @@
     <description id="QuestionLabel" value=""/>    
     <separator class="thin"/>
     <hbox pack="center">    
-	<button id="download-button" label="&pdfdownload.downloadButton;" oncommand="doDownload();" onmouseover="onMouseOver('downloadTooltip',this)" onmouseout="onMouseOut('downloadTooltip')" />
-  	<button id="open-button" label="&pdfdownload.openButton;" oncommand="doOpen();" default="true" key="enter" onmouseover="onMouseOver('openTooltip',this)" onmouseout="onMouseOut('openTooltip')"/>
-  	<button id="openHTML-button" label="&pdfdownload.viewHtmlButton;" oncommand="doOpenHtml();" onmouseover="onMouseOver('viewHTMLTooltip',this)" onmouseout="onMouseOut('viewHTMLTooltip')"/>
-	<button id="openWithoutExtension" label="&pdfdownload.openWithoutExtension;" oncommand="doOpenWithoutExtension();" onmouseover="onMouseOver('openWithoutExtensionTooltip',this)" onmouseout="onMouseOut('openWithoutExtensionTooltip')"/>
-  	<button id="cancel-button" label="&pdfdownload.cancelButton;" oncommand="doCancel();" key="escape" onmouseover="onMouseOver('cancelTooltip',this)" onmouseout="onMouseOut('cancelTooltip')"/>
+	<button id="download-button" label="&pdfdownload.downloadButton;" oncommand="doDownload();" onmouseover="onMouseOver(event,'downloadTooltip',this)" onmouseout="onMouseOut('downloadTooltip')" />
+  	<button id="open-button" label="&pdfdownload.openButton;" oncommand="doOpen();" default="true" key="enter" onmouseover="onMouseOver(event,'openTooltip',this)" onmouseout="onMouseOut('openTooltip')"/>
+  	<button id="openHTML-button" label="&pdfdownload.viewHtmlButton;" oncommand="doOpenHtml();" onmouseover="onMouseOver(event,'viewHTMLTooltip',this)" onmouseout="onMouseOut('viewHTMLTooltip')"/>
+	<button id="openWithoutExtension" label="&pdfdownload.openWithoutExtension;" oncommand="doOpenWithoutExtension();" onmouseover="onMouseOver(event,'openWithoutExtensionTooltip',this)" onmouseout="onMouseOut('openWithoutExtensionTooltip')"/>
+  	<button id="cancel-button" label="&pdfdownload.cancelButton;" oncommand="doCancel();" key="escape" onmouseover="onMouseOver(event,'cancelTooltip',this)" onmouseout="onMouseOut('cancelTooltip')"/>
     </hbox>
   </vbox>
   </hbox>
