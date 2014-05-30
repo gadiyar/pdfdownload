@@ -1,5 +1,13 @@
 CHANGELOG
 
+v1.0.0.0:	2007-12-20
+
+ - Restyled the options window.
+ - Fixed a bug on the options window: the check for the option set was done against the old preference
+   saved instead of the one selected in the window.
+ - Extension has been updated with branding and text updates reflecting 
+   the new owners of PDF Download (Nitro PDF Software).
+
 v0.9.3.2:	2007-11-01
 
  - Fixed sk-SK and am-HY localization problem occurring with Microsoft Vista.

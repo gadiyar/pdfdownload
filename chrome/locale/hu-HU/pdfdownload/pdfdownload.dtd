@@ -1,56 +1,63 @@
 <!ENTITY pdfdownload.createdByLabel "Szerző:">
-<!ENTITY pdfdownload.websiteLabel "Weboldal">
+<!ENTITY pdfdownload.websiteLabel "Honlap">
 <!ENTITY pdfdownload.defaultActionLabel "Alapértelmezett művelet">
-<!ENTITY pdfdownload.showPopup "Előbukkanó ablak megjelenítése">
+<!ENTITY pdfdownload.showPopup "Párbeszédablak megjelenítése">
 <!ENTITY pdfdownload.downloadButton "Letöltés">
-<!ENTITY pdfdownload.openButton "PDF megnyitása">
+<!ENTITY pdfdownload.openButton "Megnyitás">
 <!ENTITY pdfdownload.viewHtmlButton "Megjelenítés HTML-ként">
 <!ENTITY pdfdownload.openWithoutExtension "PDF Download megkerülése">
-<!ENTITY pdfdownload.cancelButton "Mégsem">
+<!ENTITY pdfdownload.cancelButton "Mégse">
 <!ENTITY pdfdownload.osWarningMsg "A PDF Download nem találja a PDF fájl olvasásához alapértelmezettként megadott alkalmazást. Kérem, válassza ki a PDF Download beállításainak párbeszédablakából!">
-<!ENTITY pdfdownload.aboutTitle "A PDF Download névjegye">
-<!ENTITY pdfdownload.websiteTooltip "Honlap meglátogatása">
+<!ENTITY pdfdownload.about.Title "PDF Download (Nitro PDF Software) névjegye">
+<!ENTITY pdfdownload.about.width "55ex">
+<!ENTITY pdfdownload.websiteTooltip "A szerző honlapjának meglátogatása">
 <!ENTITY pdfdownload.moreInfo "További információk:">
-<!ENTITY pdfdownload.readLicenseTooltip "Felhsználói licenc">
+<!ENTITY pdfdownload.readLicenseTooltip "Felhasználói licenc">
 <!ENTITY pdfdownload.license "Licenc">
-<!ENTITY pdfdownload.readChangelogTooltip "Változások megtekintése">
-<!ENTITY pdfdownload.changelog "Változtatások">
-<!ENTITY pdfdownload.acknowledgments "Köszönet">
+<!ENTITY pdfdownload.readChangelogTooltip "Verzióinformáció megtekintése">
+<!ENTITY pdfdownload.changelog "Verzióinformáció">
+<!ENTITY pdfdownload.acknowledgments "Köszönetnyilvánítás">
 <!ENTITY pdfdownload.siteListTitle "Kivételek">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - Beállítások">
+<!ENTITY pdfdownload.options.Title "PDF Download (Nitro PDF Software) – Beállítások">
 <!ENTITY pdfdownload.optionsGeneralTab "Általános">
-<!ENTITY pdfdownload.optionsPDFTab "PDF megnyitása">
-<!ENTITY pdfdownload.optionsHTMLTab "PDF -&gt; HTML konverzió">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "Részletek">
+<!ENTITY pdfdownload.optionsPDFTab "Megnyitás">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF -&gt; HTML">
+<!ENTITY pdfdownload.options.UpdatesTab "Szabad frissítések">
+<!ENTITY pdfdownload.options.CompanyTab "Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Eszközök menü">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "&apos;PDF Download - Beállítások&apos; megjelenítése a Firefox Eszközök menüjében">
-<!ENTITY pdfdownload.optionsTooltips "Tooltippek">
-<!ENTITY pdfdownload.optionsShowTooltips "Tooltippek megjelenítése a párbeszédablakban">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "A PDF Download menüpont megjelenítése az Eszközök menüben">
+<!ENTITY pdfdownload.optionsTooltips "Buboréksúgó (Tooltipp)">
+<!ENTITY pdfdownload.optionsShowTooltips "Buboréksúgó megjelenítése a párbeszédablakban">
 <!ENTITY pdfdownload.optionsOpenLink "PDF linkek megnyitásának módja a Firefox beépülőjének segítségével:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "A PDF fájlok HTML változatának megnyitása:">
-<!ENTITY pdfdownload.optionsSameTab "Az aktuális lapon">
+<!ENTITY pdfdownload.optionsSameTab "A jelenlegi lapon">
 <!ENTITY pdfdownload.optionsNewTab "Új lapon">
 <!ENTITY pdfdownload.optionsNewWindow "Új ablakban">
 <!ENTITY pdfdownload.optionsOpenPdf "PDF fájlok megnyitása:">
-<!ENTITY pdfdownload.optionsUsePlugin "Firefox alapértelmezett műveletének végrehajtása">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Operációs redszer alapértelmezett műveletének végrehajtása">
+<!ENTITY pdfdownload.optionsUsePlugin "A Firefox alapértelmezett műveletének végrehajtása">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Az operációs redszer alapértelmezett műveletének végrehajtása">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Más alkalmazás használata:">
 <!ENTITY pdfdownload.optionsBrowse "Tallózás...">
 <!ENTITY pdfdownload.optionsBrowseTitle "Alkalmazás kiválasztása a PDF fájlok megnyitásához">
 <!ENTITY pdfdownload.optionsExeFiles "Alkalmazások">
 <!ENTITY pdfdownload.optionsAllFiles "Összes fájl">
-<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "A kiválaszott program nem indítható alkalmazásként!">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "A kiválaszott fájl nem indítható alkalmazásként!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Frissítés">
-<!ENTITY pdfdownload.optionsCheckUpdates "Frissítés keresése">
-<!ENTITY pdfdownload.optionsHowToHelp "Hogyan segíthet">
-<!ENTITY pdfdownload.optionsMakeDonation "Felajánlás a készítőnek">
+<!ENTITY pdfdownload.optionsCheckUpdates "Frissítések keresése...">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Képek">
 <!ENTITY pdfdownload.options.width "80ex">
-<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.options.height "58ex">
 <!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.popup.title "PDF Download (Nitro PDF Software)">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Képek megjelenítése a PDF fájl HTML változatában">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Ha szeretné látni a képeket, a szerverünkre kell őket elmentenie.">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Egy nap múlva a képek automatikusan törlődnek.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Egy nap eltelte után a képek automatikusan törlődnek.">
+<!ENTITY pdfdownload.options.CompanyInformation "Cég információ">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
+<!ENTITY pdfdownload.options.nitroDescription "A PDF Download a Nitro PDF Software csoport szabadon használható terméke. A Nitro PDF Software elkészítette az Adobe® Acrobat® első valódi alternatíváját, a Nitro PDF Professional alkalmazást. A Nitro PDF Professional segít Önnek a PDF fájlokkal kapcsolatos műveletekben (létrehozás, konverzió, szerkesztés, kezelés) és a PDF fájlok biztonságossá tételében.">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Nitro PDF Professional –">
+<!ENTITY pdfdownload.options.free14dayTrial "14 napos változat.">
 <!ENTITY pdfdownload.tooltip.downloadButton "A PDF fájl letöltése. Ha van alapértelmezett mappa kijelölve a mentésre, akkor oda töltődik le, máskülönben meg kell adnia egy mappát, ahova a fájl mentésre kerül.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "A PDF fájl megnyitása. A kiterjesztés beállításaitól függően a fájl a Firefoxban PDF modullal (telepítve kell lennie), alapértelmezett PDF fájl alkalmazással, vagy a megadott program segítségével lesz megnyitva.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "A PDF fájl megjelenítése HTML fájlként. A PDF fájl egy külső szerverre lesz feltöltve és konvertálva HTML fájlra. A művelet után automatikusan törlődik a szerverről.">

@@ -8,7 +8,8 @@
 <!ENTITY pdfdownload.openWithoutExtension "Bypass PDF Download">
 <!ENTITY pdfdownload.cancelButton "Cancel">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download can&apos;t find your default PDF reader. Please choose one in the PDF Download option dialog!">
-<!ENTITY pdfdownload.aboutTitle "PDF Download - About">
+<!ENTITY pdfdownload.about.Title "PDF Download by Nitro PDF Software - About">
+<!ENTITY pdfdownload.about.width "55ex">
 <!ENTITY pdfdownload.websiteTooltip "View author&apos;s website">
 <!ENTITY pdfdownload.moreInfo "More details:">
 <!ENTITY pdfdownload.readLicenseTooltip "Read end-user license">
@@ -17,11 +18,12 @@
 <!ENTITY pdfdownload.changelog "Changelog">
 <!ENTITY pdfdownload.acknowledgments "Acknowledgments">
 <!ENTITY pdfdownload.siteListTitle "Exceptions">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - Options">
+<!ENTITY pdfdownload.options.Title "PDF Download by Nitro PDF Software - Options">
 <!ENTITY pdfdownload.optionsGeneralTab "General">
 <!ENTITY pdfdownload.optionsPDFTab "PDF opening">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF to HTML conversion">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "More details">
+<!ENTITY pdfdownload.options.UpdatesTab "Free updates">
+<!ENTITY pdfdownload.options.CompanyTab "About Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Tools Menu">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Show PDF Download item in Tools Firefox Menu">
 <!ENTITY pdfdownload.optionsTooltips "Tooltips">
@@ -42,17 +44,22 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "The viewer specified is not an executable file!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Update">
 <!ENTITY pdfdownload.optionsCheckUpdates "Check updates">
-<!ENTITY pdfdownload.optionsHowToHelp "How to help">
-<!ENTITY pdfdownload.optionsMakeDonation "Make a donation">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Images">
-<!ENTITY pdfdownload.options.width "80ex">
-<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.options.width "85ex">
+<!ENTITY pdfdownload.options.height "58ex">
 <!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.popup.title "PDF Download by Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Show images in the HTML version of PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "To let you see the images, they must be saved in our server.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "The images will be automatically deleted after one day.">
-<!ENTITY pdfdownload.tooltip.downloadButton "Download the PDF file. If you have set a default download directory in the Firefox options, it will automatically download the file to that directory; otherwise you will need to specify a directory where to save the file.">
-<!ENTITY pdfdownload.tooltip.openPDFButton "Open the PDF file. Depending on what you have set in the PDF Download options, the PDF file will be opened inside Firefox with the PDF plugin (that must have been already installed), or opened with your OS default PDF reader, or opened with the custom viewer you specified.">
-<!ENTITY pdfdownload.tooltip.viewHtmlButton "View the PDF file as HTML. The PDF file will be downloaded by an external mirror and converted into HTML. The PDF file is automatically removed from the mirror at the end of the conversion.">
-<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Open the PDF file as PDF Download was not installed. You will get the same behavior Firefox had before installing PDF Download.">
-<!ENTITY pdfdownload.tooltip.cancelButton "Close this dialog. The PDF file will be neither downloaded nor opened and you will continue your surfing experience.">
+<!ENTITY pdfdownload.options.CompanyInformation "Company information">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download is a free product from the Nitro PDF Software team. Nitro PDF Software created the first true alternative to Adobe&#174; Acrobat&#174;, Nitro PDF Professional. Nitro PDF Professional lets you create, convert, edit, secure, manipulate and collaborate using PDF.">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Try Nitro PDF Professional -">
+<!ENTITY pdfdownload.options.free14dayTrial "free 14-day trial.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Download the PDF file using the settings you have chosen in Firefox. In Options you can set it to ask you each time or specify a folder to use automatically.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Opens the PDF using the settings specified in Firefox. To edit your setting, go to &apos;Tools &gt; PDF Download by Nitro PDF Software - Options &gt; PDF opening&apos;.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Convert the PDF to HTML and then display it in Firefox. To save the HTML, go to the File menu in your browser.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Ignore the PDF Download settings and let Firefox use its normal method for handling this kind of file.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Close this dialog and don&apos;t do anything with the PDF file.">

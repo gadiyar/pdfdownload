@@ -1,5 +1,62 @@
+
+radio[pane] {
+  list-style-image: url("chrome://pdfdownload/skin/options.png");
+}
+
+radio[pane=generalPane] {
+  -moz-image-region: rect(0px, 32px, 32px, 0px);
+ }
+
+radio[pane=generalPane]:hover, radio[pane=generalPane][selected="true"]  {
+  -moz-image-region: rect(32px, 32px,  64px, 0px)
+}
+
+radio[pane=optionsPDFPane] {
+  -moz-image-region: rect(0px, 64px, 32px, 32px);
+}
+
+radio[pane=optionsPDFPane]:hover, radio[pane=optionsPDFPane][selected="true"]  {
+  -moz-image-region: rect(32px, 64px,  64px, 32px)
+}
+
+radio[pane=optionsHTMLPane] {
+  -moz-image-region: rect(0px, 96px, 32px, 64px);
+ }
+
+radio[pane=optionsHTMLPane]:hover, radio[pane=optionsHTMLPane][selected="true"]  {
+  -moz-image-region: rect(32px, 96px,  64px, 64px)
+}
+
+radio[pane=UpdatesPane] {
+  -moz-image-region: rect(0px, 128px, 32px, 96px);
+}
+
+radio[pane=UpdatesPane]:hover, radio[pane=UpdatesPane][selected="true"]  {
+  -moz-image-region: rect(32px, 128px,  64px, 96px)
+}
+
+radio[pane=CompanyPane] {
+  -moz-image-region: rect(0px, 160px, 32px, 128px);
+ }
+
+radio[pane=CompanyPane]:hover, radio[pane=CompanyPane][selected="true"]  {
+  -moz-image-region: rect(32px, 160px,  64px, 128px)
+}
+
+.box-padded {
+  list-style-image: url("chrome://pdfdownload/skin/nitropdfsoftware_logo.png");
+}
+
+.box-padded1 {
+  list-style-image: url("chrome://pdfdownload/skin/options.png");
+  -moz-image-region: rect(32px, 160px,  64px, 128px)
+}
+
+#myButtons {
+  padding: 0 5px 5px 0;
+}
 #genericAbout {
-  padding: 0px 0px 10px 0px;
+  padding: 0 0 10px 0;
   background-color: #FFFFFF;
 }
 
@@ -9,6 +66,19 @@
   cursor: pointer;
 }
 
+.link-trial {
+  color: #0000FF;
+  margin-left: 5px; 
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .tooltipTitle {
   font-weight: bold;
+}
+
+.rounded {
+	background-color: rgb(255,255,255);
+	-moz-border-radius: 3ex;
+	padding-bottom: .4ex;
 }

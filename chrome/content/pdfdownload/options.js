@@ -46,7 +46,7 @@ function onOK(notExecutableFileMsg) {
 
     var path = document.getElementById(_pdfViewerPathTextBox).value;
     var openPDF = document.getElementById(_openPDFRadioGroup);
-    if (preferencesService.getCharPref("openPDF") == "customViewer") {
+    if (openPDF.selectedItem.id == "customViewer") {
 		if (pdfDownloadShared.resolveFileName(path) == null) {
 				alert(notExecutableFileMsg);
                 if (openPDF.selectedItem.id != preferencesService.getCharPref("openPDF")) {
@@ -54,7 +54,7 @@ function onOK(notExecutableFileMsg) {
                 }
 				return false;
 		}
-    } else if (preferencesService.getCharPref("openPDF") == "usePlugin") {
+    } else if (openPDF.selectedItem.id == "usePlugin") {
         const kDisabledPluginTypesPref = "plugin.disable_full_page_plugin_for_types";
 	    var prefs = Components.classes["@mozilla.org/preferences-service;1"]
 	                               .getService(Components.interfaces.nsIPrefBranch);
@@ -160,3 +160,7 @@ function onPickPdfViewerPath(dialogTitle,exeFiles,allFiles,notExecutableFileMsg)
 		}
 	}
 }
+
+ function enableCustomViewer() {
+     document.getElementById("pdfdownload-openPDF").selectedItem = document.getElementById("customViewer");
+ }

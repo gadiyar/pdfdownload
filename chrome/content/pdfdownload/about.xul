@@ -39,9 +39,10 @@
 <?xml-stylesheet href="chrome://pdfdownload/skin/pdfdownload.css" type="text/css"?>
 <!DOCTYPE window SYSTEM "chrome://pdfdownload/locale/pdfdownload.dtd">
 
-<dialog title="&pdfdownload.aboutTitle;" 
+<dialog title="&pdfdownload.about.Title;" 
 	chromehidden="menubar toolbar location directories status extrachrome" 
 	id="genericAbout" 
+	style="width: &pdfdownload.about.width; !important;" 
 	onload="window.focus()" 
 	buttons="accept" 
 	xmlns:em="http://www.mozilla.org/2004/em-rdf#" 
@@ -49,26 +50,28 @@
 
 	<script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
 
-	<groupbox align="left" orient="vertical">
+	<groupbox orient="vertical">
 		<hbox>
 			<vbox>
 				<text value="PDF Download" style="font-weight: bold; font-size: x-large;"/>
-				<label>ver. 0.9.3.2</label>
+				<label>ver. 1.0.0.0</label>
 				<separator class="thin"/>
 				<text value="&pdfdownload.createdByLabel;" style="font-weight: bold;"/>
 				<label>Denis Remondini</label> 
 				<separator class="thin"/>
 				<text value="E-mail" style="font-weight: bold;"/>
-				<label>denistn@gmail.com</label>
+				<label>pdfdownload@nitropdf.com</label>
 				<separator class="thin"/>
 				<text value="&pdfdownload.websiteLabel;" style="font-weight: bold;"/>
 				<label class="link" tooltiptext="&pdfdownload.websiteTooltip;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');">http://www.pdfdownload.org</label>
 			</vbox>
+			<spacer flex="1"/>
 			<vbox>
 				<spacer flex="1"/>
 				<image src="chrome://pdfdownload/skin/pdfdownloadbig.png"/>
 				<spacer flex="1"/>
 			</vbox>
+			<spacer flex="1"/>
 		</hbox>
 		<separator class="thin"/>
 		<separator class="thin"/>

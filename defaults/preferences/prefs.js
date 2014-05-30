@@ -13,4 +13,5 @@ pref("extensions.pdfdownload.openPDFLink","openPDFNewTab");
 pref("extensions.pdfdownload.showImagesInHTML",true);
 pref("extensions.pdfdownload.showToolsMenuItem",true);
 pref("extensions.pdfdownload.showTooltips",true);
+pref("extensions.pdfdownload.firstInstallation",true);
 

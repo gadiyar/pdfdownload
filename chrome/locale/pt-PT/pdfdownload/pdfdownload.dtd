@@ -8,7 +8,8 @@
 <!ENTITY pdfdownload.openWithoutExtension "Ignorar o PDF Download">
 <!ENTITY pdfdownload.cancelButton "Cancelar">
 <!ENTITY pdfdownload.osWarningMsg "O PDF Download não consegue encontrar o seu leitor de PDFs. Por favor, escolha um no menu Opções">
-<!ENTITY pdfdownload.aboutTitle "PDF Download - Acerca">
+<!ENTITY pdfdownload.about.Title "PDF Download - Nitro PDF Software - Acerca de">
+<!ENTITY pdfdownload.about.width "55ex">
 <!ENTITY pdfdownload.websiteTooltip "Ver o endereço do Autor">
 <!ENTITY pdfdownload.moreInfo "Mais detalhes :">
 <!ENTITY pdfdownload.readLicenseTooltip "Ler a licença de utilizador">
@@ -17,11 +18,12 @@
 <!ENTITY pdfdownload.changelog "Relatório de Alterações">
 <!ENTITY pdfdownload.acknowledgments "Autorizações">
 <!ENTITY pdfdownload.siteListTitle "Excepções">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - Opções">
+<!ENTITY pdfdownload.options.Title "PDF Download - Nitro PDF Software - Opções">
 <!ENTITY pdfdownload.optionsGeneralTab "Geral">
 <!ENTITY pdfdownload.optionsPDFTab "Abrir PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Conversão de PDF para HTML">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "Mais detalhes">
+<!ENTITY pdfdownload.options.UpdatesTab "Actualizações gratuitas">
+<!ENTITY pdfdownload.options.CompanyTab "Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menu Ferramentas">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Mostrar o PDF Download no Menu Ferramentas do Firefox">
 <!ENTITY pdfdownload.optionsTooltips "Dicas">
@@ -42,15 +44,20 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "O visualizador especificado não é um ficheiro executável!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Actualizar">
 <!ENTITY pdfdownload.optionsCheckUpdates "Verificar Actualizações">
-<!ENTITY pdfdownload.optionsHowToHelp "Como ajudar">
-<!ENTITY pdfdownload.optionsMakeDonation "Fazer um donativo">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Imagens">
 <!ENTITY pdfdownload.options.width "80ex">
 <!ENTITY pdfdownload.options.height "55ex">
 <!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.popup.title "PDF Download - Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Mostrar imagens na versão HTML do ficheiro PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Para mostrar as imagens, estas devem estar guardadas no nosso servidor.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "As imagens serão automaticamente apagadas no prazo de um dia.">
+<!ENTITY pdfdownload.options.CompanyInformation "Informação">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download é uma produção gratuita da equipa Nitro PDF Software. A Nitro PDF Software criou a primeira verdadeira alternativa ao Adobe&#174; Acrobat&#174;, o Nitro PDF Professional. Nitro PDF Professional permite-lhe criar, converter, editar, proteger, manipular e colaborar usando o formato PDF.">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Experimente Nitro PDF Professional -">
+<!ENTITY pdfdownload.options.free14dayTrial "versão de demonstração de 14 dias.">
 <!ENTITY pdfdownload.tooltip.downloadButton "Fazer download do ficheiro PDF. Se seleccionou uma directoria por defeito nas opções do Firefox o ficheiro será automaticamente guardado nessa directoria; de outra forma necessitará de especificar uma directoria onde guardar o ficheiro.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "Abrir o ficheiro PDF. Dependendo do que determinou nas opções do PDF Download o ficheiro PDF será aberto dentro do Firefox com o plugin (que deverá ter sido instalado), aberto com o visualizador PDF por defeito ou aberto com o visualizador que especificou.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "Ver ficheiro PDF como HTML. O ficheiro PDF será copiado por um servidor externo e convertido para HTML. O ficheiro PDF será automaticamente removido desse servidor no final da conversão.">

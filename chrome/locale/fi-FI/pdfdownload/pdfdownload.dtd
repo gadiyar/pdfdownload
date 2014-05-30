@@ -8,7 +8,8 @@
 <!ENTITY pdfdownload.openWithoutExtension "Ohita PDF Download">
 <!ENTITY pdfdownload.cancelButton "Peruuta">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download ei kyennyt paikallistamaan PDF-tiedostojen oletuslukijaa. Ole hyvä ja valitse yksi lukija PDF Downloadin asetusikkunasta!">
-<!ENTITY pdfdownload.aboutTitle "PDF Download - Tietoja">
+<!ENTITY pdfdownload.about.Title "PDF Download Nitro PDF Softwarelta - Tietoja">
+<!ENTITY pdfdownload.about.width "55ex">
 <!ENTITY pdfdownload.websiteTooltip "Vieraile tekijän verkkosivulla">
 <!ENTITY pdfdownload.moreInfo "Lisää tietoja:">
 <!ENTITY pdfdownload.readLicenseTooltip "Lue lisenssi">
@@ -17,11 +18,12 @@
 <!ENTITY pdfdownload.changelog "Muutokset">
 <!ENTITY pdfdownload.acknowledgments "Tunnustukset">
 <!ENTITY pdfdownload.siteListTitle "Poikkeukset">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - Asetukset">
+<!ENTITY pdfdownload.options.Title "PDF Download Nitro PDF Softwarelta - Asetukset">
 <!ENTITY pdfdownload.optionsGeneralTab "Yleiset">
 <!ENTITY pdfdownload.optionsPDFTab "PDF:n avaaminen">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF:n muuttaminen HTML:ksi">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "Lisää toimintoja">
+<!ENTITY pdfdownload.options.UpdatesTab "Ilmaiset päivitykset">
+<!ENTITY pdfdownload.options.CompanyTab "Tietoja Nitro PDF Sofwaresta">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Työkalut-valikko">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Näytä PDF Downloadin kohta Firefoxin Työkalut-valikossa">
 <!ENTITY pdfdownload.optionsTooltips "Työkaluvihjeet">
@@ -42,15 +44,20 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Valittu lukijan tiedosto ei ole suoritettava tiedosto!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Päivittäminen">
 <!ENTITY pdfdownload.optionsCheckUpdates "Tarkista päivitykset">
-<!ENTITY pdfdownload.optionsHowToHelp "Auttaminen">
-<!ENTITY pdfdownload.optionsMakeDonation "Tee lahjoitus">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Kuvat">
 <!ENTITY pdfdownload.options.width "80ex">
 <!ENTITY pdfdownload.options.height "55ex">
 <!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.popup.title "PDF Download Nitro PDF Softwarelta">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Näytä kuvat PDF:n HTML-versiossa">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Jotta näkisit kuvat, on ne tallennettava meidän palvelimelle.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Tallennetut kuvat poistetaan automaattisesti yhden päivän kuluessa.">
+<!ENTITY pdfdownload.options.CompanyInformation "Tietoja yhtiöstä">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download on ilmainen tuote Nitro PDF Sofware -tiimiltä. Nitro PDF Software loi ensimmäisen todellisen vaihtoehdon Adobe&#174;Acrobatille&#174;, Nitro PDF Professional. Nitro PDF Professional antaa mahdollisuuden luoda, muuntaa, muokata, turvata, manipuloida ja tehdä yhteistyötä käyttäen PDF:ää.">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Kokeile Nitro PDF Professionalia -">
+<!ENTITY pdfdownload.options.free14dayTrial "Ilmainen 14 päivän koeaika.">
 <!ENTITY pdfdownload.tooltip.downloadButton "Lataa PDF-tiedoston. Jos olet asettanut Firefoxin asetuksista tallennuskansion,
 tiedosto tallennetaan sinne. Muutoin sijainti, johon tiedosto tallennetaan tulee määritellä erikseen joka kerta.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "Avaa PDF-tiedoston. Riippuen PDF Downloadin asetuksista, PDF-tiedostot avataan Firefoxin sisällä PDF-liitännäisellä (, joka täytyy olla asennettuna) tai käyttöjärjestelmän PDF-lukijalla tai määrittelemälläsi omalla PDF-lukijalla.">

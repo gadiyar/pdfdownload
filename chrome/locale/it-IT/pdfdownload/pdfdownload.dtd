@@ -8,7 +8,8 @@
 <!ENTITY pdfdownload.openWithoutExtension "Bypassa PDF Download">
 <!ENTITY pdfdownload.cancelButton "Annulla">
 <!ENTITY pdfdownload.osWarningMsg "Impossibile per PDF Download riuscire a determinare il lettore PDF predefinito. Selezionarne uno nella finestra delle opzioni di PDF Download!">
-<!ENTITY pdfdownload.aboutTitle "Informazioni su PDF Download">
+<!ENTITY pdfdownload.about.Title "PDF Download da Nitro PDF Software - Informazioni">
+<!ENTITY pdfdownload.about.width "60ex">
 <!ENTITY pdfdownload.websiteTooltip "Visita il sito web">
 <!ENTITY pdfdownload.moreInfo "Ulteriori informazioni:">
 <!ENTITY pdfdownload.readLicenseTooltip "Leggi la licenza">
@@ -17,11 +18,12 @@
 <!ENTITY pdfdownload.changelog "Modifiche">
 <!ENTITY pdfdownload.acknowledgments "Ringraziamenti">
 <!ENTITY pdfdownload.siteListTitle "Eccezioni">
-<!ENTITY pdfdownload.optionsTitle "Opzioni di PDF Download">
+<!ENTITY pdfdownload.options.Title "PDF Download da Nitro PDF Software - Opzioni">
 <!ENTITY pdfdownload.optionsGeneralTab "Generali">
 <!ENTITY pdfdownload.optionsPDFTab "Apertura PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Conversione PDF in HTML">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "Ulteriori dettagli">
+<!ENTITY pdfdownload.options.UpdatesTab "Aggiornamenti gratuiti">
+<!ENTITY pdfdownload.options.CompanyTab "Informazioni su Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menu Strumenti">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Mostra PDF Download nel menu Strumenti di Firefox">
 <!ENTITY pdfdownload.optionsTooltips "Suggerimenti">
@@ -42,15 +44,20 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Il programma specificato non è un file eseguibile!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Aggiornamenti">
 <!ENTITY pdfdownload.optionsCheckUpdates "Controlla aggiornamenti">
-<!ENTITY pdfdownload.optionsHowToHelp "Come contribuire">
-<!ENTITY pdfdownload.optionsMakeDonation "Fai una donazione">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Immagini">
-<!ENTITY pdfdownload.options.width "90ex">
-<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.options.width "95ex">
+<!ENTITY pdfdownload.options.height "58ex">
 <!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.popup.title "PDF Download da Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Mostra immagini nella versione HTML">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Per permettere la visualizzazione delle immagini, queste devono essere salvate sul nostro server.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Le immagini vengono automaticamente rimosse dopo un giorno.">
+<!ENTITY pdfdownload.options.CompanyInformation "Informazioni sulla società">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download è un prodotto gratuito fornito da Nitro PDF Software. Nitro PDF Software ha creato la prima vera alternativa ad Adobe® Acrobat®. Nitro PDF Professional. Nitro PDF Professional ti permette di creare, convertire, modificare, manipolare e collaborare usando PDF.">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Prova Nitro PDF Professional -">
+<!ENTITY pdfdownload.options.free14dayTrial "14-giorni di prova">
 <!ENTITY pdfdownload.tooltip.downloadButton "Scarica il file PDF. Se si è impostato una cartella predefinita di download nelle opzioni di Firefox, il file verrà automaticamente scaricato in tale cartella; altrimenti sarà necessario specificare una cartella dove salvare il file.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "Apre il file PDF. In base a ciò che si è impostato nelle opzioni di PDF Download, il file PDF verrà aperto in Firefox con il plug-in PDF (che deve essere già stato installato) oppure aperto con il lettore PDF predefinito del sistema operativo, oppure aperto con un altro lettore indicato.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "Vede il file come HTML. Il file PDF verrà scaricato da un mirror esterno e convertito in HTML. Il file PDF verrà automaticamente rimosso dal mirror alla fine della conversione.">

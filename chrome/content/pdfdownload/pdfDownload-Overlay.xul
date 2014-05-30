@@ -46,7 +46,7 @@
 
     <!-- Tools menu -->
 	<menupopup id="menu_ToolsPopup">
-		<menuitem insertafter="devToolsSeparator" label="&pdfdownload.optionsTitle;" id="PDFDownloadToolsItem" 
+		<menuitem insertafter="devToolsSeparator" label="&pdfdownload.options.Title;" id="PDFDownloadToolsItem" 
 			image="chrome://pdfdownload/skin/pdfdownloadsmall.png" class="menuitem-iconic" oncommand="showPDFDownloadSettings();" />
 	</menupopup>    
 

@@ -8,7 +8,8 @@
 <!ENTITY pdfdownload.openWithoutExtension "PDF Download を無視">
 <!ENTITY pdfdownload.cancelButton "キャンセル">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download はデフォルトの PDF リーダーを見つけることができませんでした。PDF Download のオプション ダイアログから設定してください。">
-<!ENTITY pdfdownload.aboutTitle "PDF Download について">
+<!ENTITY pdfdownload.about.Title "About - PDF Download by Nitro PDF Software">
+<!ENTITY pdfdownload.about.width "55ex">
 <!ENTITY pdfdownload.websiteTooltip "作成者のホームページを表示します">
 <!ENTITY pdfdownload.moreInfo "その他の詳細:">
 <!ENTITY pdfdownload.readLicenseTooltip "エンドユーザーライセンスを表示します">
@@ -17,11 +18,12 @@
 <!ENTITY pdfdownload.changelog "更新履歴">
 <!ENTITY pdfdownload.acknowledgments "謝辞">
 <!ENTITY pdfdownload.siteListTitle "例外">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - オプション">
+<!ENTITY pdfdownload.options.Title "オプション - PDF Download by Nitro PDF Software">
 <!ENTITY pdfdownload.optionsGeneralTab "全般">
 <!ENTITY pdfdownload.optionsPDFTab "PDF を開く">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF から HTML への変換">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "その他">
+<!ENTITY pdfdownload.options.UpdatesTab "フリーアップデート">
+<!ENTITY pdfdownload.options.CompanyTab "About Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "ツール メニュー">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF Download の項目を Firefox のツールに表示">
 <!ENTITY pdfdownload.optionsTooltips "ツールチップ">
@@ -42,15 +44,20 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "指定されたビューアーでは開けません!">
 <!ENTITY pdfdownload.optionsUpdateLabel "更新">
 <!ENTITY pdfdownload.optionsCheckUpdates "更新の確認">
-<!ENTITY pdfdownload.optionsHowToHelp "開発を助けてください">
-<!ENTITY pdfdownload.optionsMakeDonation "寄付をする">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "画像">
 <!ENTITY pdfdownload.options.width "80ex">
 <!ENTITY pdfdownload.options.height "55ex">
 <!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.popup.title "PDF Download by Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "PDF 内の画像を HTML で表示">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "画像を表示するには一旦サーバーに保存する必要があります。">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "画像は一日後に自動的に削除されます。">
+<!ENTITY pdfdownload.options.CompanyInformation "会社情報">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download は Nitro PDF Software チームから提供される無料のソフトウェアです。Nitro PDF Software には &quot;Adobe Acrobat&quot; の代替となる Nitro PDF Software Professional があります。Nitro PDF Software Professional を使って PDF をセキュアに作成、変換、編集、共同作業する事ができます。">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Nitro PDF Professional を試す -">
+<!ENTITY pdfdownload.options.free14dayTrial "14日間無料試用。">
 <!ENTITY pdfdownload.tooltip.downloadButton "PDF ファイルをダウンロードします。Firefox のオプションでデフォルトのダウンロードフォルダを設定されている場合は、そのフォルダに自動的にダウンロードされます。もし設定されていない場合は保存先のフォルダを指定してください。">
 <!ENTITY pdfdownload.tooltip.openPDFButton "PDF ファイルを開きます。PDF Download の設定に従って、PDF ファイルを PDF プラグイン (PDF プラグインがインストールされている必要があります) を使用して Firefox で表示したり 、OS によって設定された既定の PDF リーダーやあなたが指定した PDF リーダーで開く事ができます。">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "PDF ファイルを HTML として表示します。PDF ファイルは外部サーバーにアップロードされ HTML に変換されます。アップロードされた PDF ファイルは変換終了後に自動的にサーバーから削除されます。">

@@ -8,7 +8,8 @@
 <!ENTITY pdfdownload.openWithoutExtension "Otwórz standardowo">
 <!ENTITY pdfdownload.cancelButton "Anuluj">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download nie może znaleźć domyślnego czytnika plików PDF. Proszę wybrać czytnik w opcjach rozszerzenia.">
-<!ENTITY pdfdownload.aboutTitle "O PDF Download">
+<!ENTITY pdfdownload.about.Title "PDF Download - informacje">
+<!ENTITY pdfdownload.about.width "55ex">
 <!ENTITY pdfdownload.websiteTooltip "Zobacz stronę autora">
 <!ENTITY pdfdownload.moreInfo "Inne informacje:">
 <!ENTITY pdfdownload.readLicenseTooltip "Przeczytaj umowę licencyjną">
@@ -17,17 +18,18 @@
 <!ENTITY pdfdownload.changelog "Opis zmian">
 <!ENTITY pdfdownload.acknowledgments "Podziękowania">
 <!ENTITY pdfdownload.siteListTitle "Wyjątki">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - opcje">
+<!ENTITY pdfdownload.options.Title "PDF Download - opcje">
 <!ENTITY pdfdownload.optionsGeneralTab "Ogólne">
 <!ENTITY pdfdownload.optionsPDFTab "Otwieranie">
 <!ENTITY pdfdownload.optionsHTMLTab "Konwersja">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "Różne">
+<!ENTITY pdfdownload.options.UpdatesTab "Aktualizacja">
+<!ENTITY pdfdownload.options.CompanyTab "Info">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Narzędzia">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Wyświetl element &quot;PDF Download - opcje&quot; w menu &quot;Narzędzia&quot;">
 <!ENTITY pdfdownload.optionsTooltips "Podpowiedzi">
 <!ENTITY pdfdownload.optionsShowTooltips "Wyświetlaj podpowiedzi w oknach dialogowych">
 <!ENTITY pdfdownload.optionsOpenLink "Odnośniki do plików PDF otwierane za pomocą wtyczki PDF otwórz w:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Pliki PDF przekonwertowane do formatu HTML otwórz w:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Pliki PDF skonwertowane do formatu HTML otwórz w:">
 <!ENTITY pdfdownload.optionsSameTab "aktywnej karcie">
 <!ENTITY pdfdownload.optionsNewTab "nowej karcie">
 <!ENTITY pdfdownload.optionsNewWindow "nowym oknie">
@@ -40,19 +42,24 @@
 <!ENTITY pdfdownload.optionsExeFiles "Aplikacje Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Wszystkie pliki">
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Wybrany plik przeglądarki nie jest plikiem wykonywalnym!">
-<!ENTITY pdfdownload.optionsUpdateLabel "Aktualizacja">
+<!ENTITY pdfdownload.optionsUpdateLabel "Aktualna wersja">
 <!ENTITY pdfdownload.optionsCheckUpdates "Sprawdź aktualizacje">
-<!ENTITY pdfdownload.optionsHowToHelp "Dotacje">
-<!ENTITY pdfdownload.optionsMakeDonation "Wspomóż autora">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Grafiki">
 <!ENTITY pdfdownload.options.width "80ex">
 <!ENTITY pdfdownload.options.height "55ex">
 <!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.popup.title "PDF Download">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Pokaż grafiki w wersji HTML rozszerzenia">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Aby zobaczyć grafiki, muszą być one zapisane na naszym serwerze">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Grafiki zostaną automatycznie usunięte po upływie jednego dnia">
+<!ENTITY pdfdownload.options.CompanyInformation "Informacje o firmie Nitro PDF Software">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download jest darmowym oprogramowaniem wyprodukowanym przez zespół Nitro PDF Software. Nitro PDF Software stworzyło pierwszą, naprawdę alternatywną dla programu Adobe&#174; Acrobat&#174; aplikację. Nitro PDF Professional pozwala utworzyć, konwertować, edytować, współpracować i bezpiecznie manipulować plikami PDF.">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Wypróbuj Nitro PDF Professional -">
+<!ENTITY pdfdownload.options.free14dayTrial "okres próbny 14 dni">
 <!ENTITY pdfdownload.tooltip.downloadButton "Jeśli w opcjach Firefoksa jest określony folder pobierania, to nastąpi automatyczny zapis pobieranego pliku w tym folderze. Jeśli nie ma określonego folderu pobierania, należy wskazać folder gdzie plik zostanie zapisany.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "W zależności od ustawień rozszerzenia, plik PDF zostanie otworzony w Firefoksie za pomocą wtyczki PDF (musi być ona zainstalowana), otworzony za pomocą domyślnego czytnika plików PDF systemu operacyjnego lub innego, określonego przez użytkownika, czytnika.">
-<!ENTITY pdfdownload.tooltip.viewHtmlButton "Plik PDF zostanie pobrany przez zewnętrzny serwer i przekonwertowany do HTML. Plik ten zostanie automatycznie usunięty z serwera po wykonaniu konwersji.">
-<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Otwiera plik PDF tak jakby nie było zainstalowanego rozszerzenia PDF Download. Firefox będzie zachowywał się w sposób standardowy.">
-<!ENTITY pdfdownload.tooltip.cancelButton "Zamyka to okno dialogowe. Żaden plik PDF nie zostanie pobrany ani otworzony. Powrócisz do przeglądania aktywnej witryny.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Plik PDF zostanie pobrany przez zewnętrzny serwer i skonwertowany do HTML. Plik ten zostanie automatycznie usunięty z serwera po wykonaniu konwersji.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Nastąpi otwarcie pliku PDF tak jakby nie było zainstalowanego rozszerzenia PDF Download. Firefox będzie zachowywał się w sposób standardowy.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Nastąpi zamknięcie tego okna dialogowego. Żaden plik PDF nie zostanie pobrany ani otworzony. Powrócisz do przeglądania aktywnej witryny.">

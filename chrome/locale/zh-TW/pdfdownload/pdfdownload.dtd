@@ -8,7 +8,8 @@
 <!ENTITY pdfdownload.openWithoutExtension "跳過PDF Download">
 <!ENTITY pdfdownload.cancelButton "取消">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download找不到您預設的PDF閱讀軟體。請在選項的視窗中指定一個！">
-<!ENTITY pdfdownload.aboutTitle "關於PDF Download">
+<!ENTITY pdfdownload.about.Title "PDF Download by Nitro PDF Software - 關於">
+<!ENTITY pdfdownload.about.width "55ex">
 <!ENTITY pdfdownload.websiteTooltip "檢視作者的網站">
 <!ENTITY pdfdownload.moreInfo "更多詳情：">
 <!ENTITY pdfdownload.readLicenseTooltip "閱讀使用者授權合約">
@@ -17,11 +18,12 @@
 <!ENTITY pdfdownload.changelog "更新日誌">
 <!ENTITY pdfdownload.acknowledgments "致謝">
 <!ENTITY pdfdownload.siteListTitle "例外">
-<!ENTITY pdfdownload.optionsTitle "PDF Download選項">
+<!ENTITY pdfdownload.options.Title "PDF Download by Nitro PDF Software - 選項">
 <!ENTITY pdfdownload.optionsGeneralTab "一般">
 <!ENTITY pdfdownload.optionsPDFTab "開啟PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF轉換成HTML">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "詳情">
+<!ENTITY pdfdownload.options.UpdatesTab "免費更新">
+<!ENTITY pdfdownload.options.CompanyTab "關於 Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "工具選單">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "在Firefox的工具選單中顯示PDF Download">
 <!ENTITY pdfdownload.optionsTooltips "工具提示">
@@ -42,15 +44,20 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "指定的程式不是一個可執行的檔案！">
 <!ENTITY pdfdownload.optionsUpdateLabel "更新">
 <!ENTITY pdfdownload.optionsCheckUpdates "檢查更新">
-<!ENTITY pdfdownload.optionsHowToHelp "如何幫助">
-<!ENTITY pdfdownload.optionsMakeDonation "贊助">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "影像">
 <!ENTITY pdfdownload.options.width "80ex">
 <!ENTITY pdfdownload.options.height "55ex">
 <!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.popup.title "PDF Download by Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "在HTML版本的PDF檔案中顯示圖像">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "為了要讓您能檢視影像，圖片將會存在我們的伺服器上。">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "這些圖片在一天之後就會被移除。">
+<!ENTITY pdfdownload.options.CompanyInformation "公司資料">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download 是一個免費軟件，由 Nitro PDF Software team 製作。Nitro PDF Software 製作首個真正代替到Adobe&#174; Acrobat&#174; 的軟件，Nitro PDF Professional。Nitro PDF Professional可以讓你自由建立，轉換，修改，加密，控管，合作 PDF。">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "試用 Nitro PDF Professional -">
+<!ENTITY pdfdownload.options.free14dayTrial "14 日免費版">
 <!ENTITY pdfdownload.tooltip.downloadButton "下載PDF檔案。如果你在Firefox選項中已經設定了預設的下載資料夾，檔案將會自動下載到該資料夾中。若否，你就必須指定檔案儲存的資料夾。">
 <!ENTITY pdfdownload.tooltip.openPDFButton "打開PDF檔案。依照您在PDF Download中的設定，PDF檔將可能在Firefox中使用PDF外掛程式（必須已經安裝），或者作業系統的預設PDF瀏覽軟體，或是您指定的軟體開啟。">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "以HTML格式檢視PDF。PDF檔案將會由一個外部伺服器轉換成HTML。PDF檔案會在轉換完成後自動從外部伺服器上刪除。">

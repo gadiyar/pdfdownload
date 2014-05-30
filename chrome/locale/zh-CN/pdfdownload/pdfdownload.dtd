@@ -8,7 +8,8 @@
 <!ENTITY pdfdownload.openWithoutExtension "不使用 PDF Download 打开">
 <!ENTITY pdfdownload.cancelButton "取消">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download 无法检测到您默认的 PDF 阅读器.请在 PDF Download 选项对话框中选择一个 PDF 阅读器!">
-<!ENTITY pdfdownload.aboutTitle "PDF Download － 关于">
+<!ENTITY pdfdownload.about.Title "Nitro PDF Software 出品的 PDF Download - 关于">
+<!ENTITY pdfdownload.about.width "55ex">
 <!ENTITY pdfdownload.websiteTooltip "浏览作者的网站">
 <!ENTITY pdfdownload.moreInfo "更多详情：">
 <!ENTITY pdfdownload.readLicenseTooltip "阅读最终用户许可协议">
@@ -17,11 +18,12 @@
 <!ENTITY pdfdownload.changelog "更新日志">
 <!ENTITY pdfdownload.acknowledgments "感谢">
 <!ENTITY pdfdownload.siteListTitle "例外">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - 选项">
+<!ENTITY pdfdownload.options.Title "Nitro PDF Software 出品的 PDF Download - 选项">
 <!ENTITY pdfdownload.optionsGeneralTab "常规">
 <!ENTITY pdfdownload.optionsPDFTab "打开 PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF 转换到 HTML">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "更多细节">
+<!ENTITY pdfdownload.options.UpdatesTab "随意更新">
+<!ENTITY pdfdownload.options.CompanyTab "关于 Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "工具菜单">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "在 Firefox 工具菜单显示 PDF Download 选项">
 <!ENTITY pdfdownload.optionsTooltips "工具提示">
@@ -42,15 +44,20 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "指定的查看器不是一个可执行文件！">
 <!ENTITY pdfdownload.optionsUpdateLabel "更新">
 <!ENTITY pdfdownload.optionsCheckUpdates "检查更新">
-<!ENTITY pdfdownload.optionsHowToHelp "如何帮助">
-<!ENTITY pdfdownload.optionsMakeDonation "捐助:">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "图片">
 <!ENTITY pdfdownload.options.width "80ex">
 <!ENTITY pdfdownload.options.height "55ex">
 <!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.popup.title "Nitro PDF Software 出品的 PDF Download">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "按 PDF 的 HTML 版本显示图片">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "在您查看这些图片之前，图片必须先保存在我们的服务器上。">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "这些图片将在一天之后自动删除。">
+<!ENTITY pdfdownload.options.CompanyInformation "公司信息">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software：">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download 是 Nitro PDF Software 小组出品的一款自由产品。Nitro PDF Software 曾出品过有别于 Adobe&#174; Acrobat&#174; 的第一款软件 Nitro PDF Professional，该软件允许您对 PDF 文件进行创建、转换、编辑、加密、操作以与其他人合作。">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download：">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "试用 Nitro PDF Professional -">
+<!ENTITY pdfdownload.options.free14dayTrial "14 天免费试用。">
 <!ENTITY pdfdownload.tooltip.downloadButton "下载该 PDF 文件。如果您在 Firefox 的选项中设置了默认的下载目录，它将自动下载文件到该目录，否则您需要指定一个目录来保存文件。">
 <!ENTITY pdfdownload.tooltip.openPDFButton "打开该 PDF 文件。取决于您在 PDF Download 的选项中的设置，PDF 文件将使用 PDF 插件在 Firefox 中打开（该插件必须已安装），或使用您系统默认 PDF 阅读器打开，或使用您指定的的查看器打开。">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "以 HTML 形式查看该 PDF 文件。该 PDF 文件下载自外部镜像并转换到 HTML。在转换结束后 PDF 文件自动从镜像中移除。">

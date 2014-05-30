@@ -1,15 +1,16 @@
 <!ENTITY pdfdownload.createdByLabel "Autor:">
-<!ENTITY pdfdownload.websiteLabel "WWW stránka">
+<!ENTITY pdfdownload.websiteLabel "Webová stránka">
 <!ENTITY pdfdownload.defaultActionLabel "Predvolená akcia">
 <!ENTITY pdfdownload.showPopup "Zobraziť vyskakovacie okno">
-<!ENTITY pdfdownload.downloadButton "Stiahnuť">
+<!ENTITY pdfdownload.downloadButton "Prevziať">
 <!ENTITY pdfdownload.openButton "Otvoriť PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Zobraziť ako HTML">
 <!ENTITY pdfdownload.openWithoutExtension "Obísť PDF Download">
 <!ENTITY pdfdownload.cancelButton "Zrušiť">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download nedokázal nájsť váš predvolený program na čítanie PDF súborov. Prosím, vyberte si ho v dialógovom okne nastavení rozšírenia PDF Download!">
-<!ENTITY pdfdownload.aboutTitle "PDF Download - Čo je...">
-<!ENTITY pdfdownload.websiteTooltip "Zobraziť www stránku autora">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download nedokázal nájsť váš predvolený program na čítanie súborov PDF. Prosím, vyberte si ho v dialógovom okne nastavení rozšírenia PDF Download!">
+<!ENTITY pdfdownload.about.Title "Čo je PDF Download - produkt Nitro PDF Software">
+<!ENTITY pdfdownload.about.width "55ex">
+<!ENTITY pdfdownload.websiteTooltip "Zobraziť webovú stránku autora">
 <!ENTITY pdfdownload.moreInfo "Viac informácií:">
 <!ENTITY pdfdownload.readLicenseTooltip "Zmluva koncového používateľa">
 <!ENTITY pdfdownload.license "Licencia">
@@ -17,42 +18,48 @@
 <!ENTITY pdfdownload.changelog "Zmeny od poslednej verzie">
 <!ENTITY pdfdownload.acknowledgments "Poďakovanie">
 <!ENTITY pdfdownload.siteListTitle "Výnimky">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - Nastavenia">
+<!ENTITY pdfdownload.options.Title "Nastavenia PDF Download - produkt Nitro PDF Software">
 <!ENTITY pdfdownload.optionsGeneralTab "Všeobecné">
-<!ENTITY pdfdownload.optionsPDFTab "Otváranie PDF">
+<!ENTITY pdfdownload.optionsPDFTab "Otváranie súborov PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Konverzia PDF do HTML">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "Detaily">
+<!ENTITY pdfdownload.options.UpdatesTab "Aktualizácie zadarmo">
+<!ENTITY pdfdownload.options.CompanyTab "Čo je Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Ponuka Nástroje">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Zobraziť položku PDF Download v hlavnej ponuke Nástroje">
 <!ENTITY pdfdownload.optionsTooltips "Bublinové popisy">
 <!ENTITY pdfdownload.optionsShowTooltips "Zobrazovať bublinové popisy v dialógovom okne">
-<!ENTITY pdfdownload.optionsOpenLink "Ako otvárať PDF odkazy využitím zásuvného modulu Firefoxu:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Ako otvárať HTML verzie PDF súborov:">
+<!ENTITY pdfdownload.optionsOpenLink "Ako otvárať odkazy na súbory PDF využitím zásuvného modulu Firefoxu:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Ako otvárať HTML verzie súborov PDF:">
 <!ENTITY pdfdownload.optionsSameTab "Otvoriť na aktuálnej karte">
 <!ENTITY pdfdownload.optionsNewTab "Otvoriť na novej karte">
 <!ENTITY pdfdownload.optionsNewWindow "Otvoriť v novom okne">
-<!ENTITY pdfdownload.optionsOpenPdf "Otváranie pdf súborov:">
-<!ENTITY pdfdownload.optionsUsePlugin "Vykonať predvolenú akciu Firefoxu">
+<!ENTITY pdfdownload.optionsOpenPdf "Otváranie súborov PDF:">
+<!ENTITY pdfdownload.optionsUsePlugin "Použiť zásuvný modul PDF">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Použiť program predvolený v systéme">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Použiť tento program:">
 <!ENTITY pdfdownload.optionsBrowse "Prehľadávať...">
-<!ENTITY pdfdownload.optionsBrowseTitle "Výber programu na zobrazovanie PDF súborov">
+<!ENTITY pdfdownload.optionsBrowseTitle "Výber programu na zobrazovanie súborov PDF">
 <!ENTITY pdfdownload.optionsExeFiles "Aplikácie">
 <!ENTITY pdfdownload.optionsAllFiles "Všetky súbory">
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Zadaný prehliadač nie je spustiteľná aplikácia!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Aktualizácia">
 <!ENTITY pdfdownload.optionsCheckUpdates "Zistiť aktualizácie">
-<!ENTITY pdfdownload.optionsHowToHelp "Ako pomôcť">
-<!ENTITY pdfdownload.optionsMakeDonation "Príspevok autorovi">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Obrázky">
-<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.width "105ex">
 <!ENTITY pdfdownload.options.height "65ex">
 <!ENTITY pdfdownload.popup.width "85ex">
-<!ENTITY pdfdownload.optionsShowImagesInHTML "Zobraziť obrázky v HTML verzii PDF súboru">
+<!ENTITY pdfdownload.popup.title "PDF Download - produkt Nitro PDF Software">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Zobraziť obrázky v HTML verzii súboru PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Ak chcete vidieť obrázky, musia byť uložené na náš server.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Obrázky budú po jednom dni automaticky odstránené.">
-<!ENTITY pdfdownload.tooltip.downloadButton "Stiahne PDF súbor. Ak máte určený predvolený priečinok, do ktorého sú ukladané sťahované súbory, PDF súbor bude uložený tam, inak budete musieť určiť priečinok, kam bude súbor uložený.">
-<!ENTITY pdfdownload.tooltip.openPDFButton "Otvorí PDF súbor. V závislosti na tom, čo máte nastavené v nastaveniach rozšírenia bude súbor otvorený vo Firefoxe pomocou PDF modulu (musí byť nainštalovaný) alebo bude otvorený predvoleným prehliadačom PDF súborov, prípadne prehliadačom, ktorý určíte.">
-<!ENTITY pdfdownload.tooltip.viewHtmlButton "Zobrazí PDF súbor ako HTML. PDF súbor bude stiahnutý na externý server a skonvertovaný na HTML. Po konverzii bude súbor zo servera automaticky odstránený.">
+<!ENTITY pdfdownload.options.CompanyInformation "Informácie spoločnosti">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
+<!ENTITY pdfdownload.options.nitroDescription "Rozšírenie PDF Download je produkt tímu Nitro PDF Software poskytovaný zadarmo. Nitro PDF Software vytvoril prvú reálnu alternatívu k Adobe® Acrobat®, Nitro PDF Professional. Nitro PDF Professional vám umožní vytvárať, konvertovať, upraviť, zabezpečiť a manipulovať s formátom PDF.">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Vyskúšajte Nitro PDF Professional -">
+<!ENTITY pdfdownload.options.free14dayTrial "zadarmo na 14 dní.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Prevziať súbor PDF využitím nastavení Firefoxu. V nastaveniach môžete určiť, či sa bude prehliadač pýtam, kam súbor uložiť alebo ho bude automaticky ukladať do zvoleného priečinka.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Otvorí PDF súbor využitím nastavení Firefoxu. Ak chcete zmeniť nastavenia, použite ponuku &apos;Nástroje &gt; Nastavenia PDF Download - produkt Nitro PDF Software &gt; Otváranie súborov PDF&apos;.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Skonvertuje súbor PDF do HTML a zobrazí vo Firefoxe. Ak chcete uložiť ako HTML, prejdite do ponuky Súbor v prehliadači.">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Otvorí PDF súbor ako keby toto rozšírenie nebolo nainštalované. Firefox sa bude správať presne tak ako pred inštaláciou rozšírenia PDF Download.">
-<!ENTITY pdfdownload.tooltip.cancelButton "Zatvorí toto dialógové okno. PDF súbor nebude ani stiahnutý ani otvorený a vy môžete pokračovať v surfovaní.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Zatvorí toto dialógové okno. Súbor PDF súbor nebude ani prevzatý ani otvorený.">

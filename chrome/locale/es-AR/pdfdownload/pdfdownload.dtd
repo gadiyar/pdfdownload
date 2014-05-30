@@ -8,7 +8,8 @@
 <!ENTITY pdfdownload.openWithoutExtension "Evitar descarga PDF">
 <!ENTITY pdfdownload.cancelButton "Cancelar">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download no puede encontrar un visor de PDF. Por favor seleccione uno en opciones de PDF Download">
-<!ENTITY pdfdownload.aboutTitle "Acerca de PDF Download">
+<!ENTITY pdfdownload.about.Title "PDF Download por Nitro PDF Software - Acerca de">
+<!ENTITY pdfdownload.about.width "65ex">
 <!ENTITY pdfdownload.websiteTooltip "Ver el sitio web del autor">
 <!ENTITY pdfdownload.moreInfo "Más detalles:">
 <!ENTITY pdfdownload.readLicenseTooltip "Leer la licencia para usuario final">
@@ -17,11 +18,12 @@
 <!ENTITY pdfdownload.changelog "Registro de modificaciones">
 <!ENTITY pdfdownload.acknowledgments "Reconocimientos">
 <!ENTITY pdfdownload.siteListTitle "Excepciones">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - Opciones">
+<!ENTITY pdfdownload.options.Title "PDF Download por Nitro PDF Software - Opciones">
 <!ENTITY pdfdownload.optionsGeneralTab "General">
 <!ENTITY pdfdownload.optionsPDFTab "Abriendo PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Conversión de PDF a HTML">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "Mas Detalles">
+<!ENTITY pdfdownload.options.UpdatesTab "Actualizaciones gratis">
+<!ENTITY pdfdownload.options.CompanyTab "Acerca de Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menú de Herramientas">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Mostrar los elementos de PDF Download en el Menú de Herramientas de Firefox">
 <!ENTITY pdfdownload.optionsTooltips "Tooltips">
@@ -42,15 +44,20 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "El visualizador elegido no es un archivo ejecutable!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Actualizar">
 <!ENTITY pdfdownload.optionsCheckUpdates "Revisar actualizaciones">
-<!ENTITY pdfdownload.optionsHowToHelp "¿Como Ayudar?">
-<!ENTITY pdfdownload.optionsMakeDonation "Hacer una donación">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Imágenes">
-<!ENTITY pdfdownload.options.width "80ex">
-<!ENTITY pdfdownload.options.height "55ex">
-<!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.options.width "95ex">
+<!ENTITY pdfdownload.options.height "58ex">
+<!ENTITY pdfdownload.popup.width "95ex">
+<!ENTITY pdfdownload.popup.title "PDF Download por Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Mostrar imágenes en la versión HTML del PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Las imágenes deben ser descargadas en nuestro servidor para que Usted pueda verlas.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Las imágenes se borrarán automáticamente pasado un día.">
+<!ENTITY pdfdownload.options.CompanyInformation "Información de la Compañía">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download es un producto libre del equipo de Nitro PDF Software. Nitro PDF Software creó la primera alternativa verdadera al Adobe® Acrobat®, Nitro PDF Profesional. Nitro PDF Profesional le permite a usted crear, convertir, redactar, asegurar, manipular y colaborar utilizando PDF.">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Pruebe Nitro PDF Professional -">
+<!ENTITY pdfdownload.options.free14dayTrial "gratis a prueba por 14 días.">
 <!ENTITY pdfdownload.tooltip.downloadButton "Descargar el archivo PDF. Si usted definió un directorio por defecto para las descargas de archivos en el Firefox, se descargarán automáticamente allí; caso contrario deberá especificar el directorio donde desee guardar el archivo.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "Abrir el archivo PDF. Dependiendo de como haya definido la configuración en las opciones de PDF Download, el archivo PDF se abrirá dentro del Firefox con el plug-in de PDF (el que debe haber sido instalado previamente), o se abrirá utilizando el visor de archivos PDF que uested haya definido.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "Ver el archivo PDF como HTML. El archivo PDF será descargado por un sitio externo y convertido al formato HTML. Al finalizar la conversión el archivo PDF se eliminará automáticamente del servidor externo.">

@@ -738,6 +738,48 @@ function removeDownloadedFiles() {
     }
 }
 
+/******************************************************************************
+ *                        LISTENER FOR THE URL CHANGE                         *
+ ******************************************************************************/
+
+var pdfDownloadUrlBarListener = {
+  QueryInterface: function(aIID)
+  {
+   if (aIID.equals(Components.interfaces.nsIWebProgressListener) ||
+       aIID.equals(Components.interfaces.nsISupportsWeakReference) ||
+       aIID.equals(Components.interfaces.nsISupports))
+     return this;
+   throw Components.results.NS_NOINTERFACE;
+  },
+
+  onLocationChange: function(aProgress, aRequest, aURI)
+  {
+    if (isFirstPDFDownloadInstallation()) {
+       getBrowser().removeProgressListener(pdfDownloadUrlBarListener);
+       setTimeout(function() { openInNewTab("http://www.nitropdf.com/pdfdownload/welcome.asp"); }, 0);    
+    }
+  },
+
+  onStateChange: function() {},
+  onProgressChange: function() {},
+  onStatusChange: function() {},
+  onSecurityChange: function() {},
+  onLinkIconAvailable: function() {}
+};
+
+function openInNewTab(url) {
+	var aTab = getBrowser().addTab(url);
+	getBrowser().selectedTab = aTab;
+}
+
+function isFirstPDFDownloadInstallation() {
+	if (sltPrefs.getBoolPref("extensions.pdfdownload.firstInstallation")) {
+		sltPrefs.setBoolPref("extensions.pdfdownload.firstInstallation", false);
+		return true;
+	} 
+	return false;
+}
+
 //Register the event listener for a mouse click
 function init() {
 
@@ -750,6 +792,7 @@ function init() {
 	} catch(ex) {}
 
 	document.getElementById("menu_ToolsPopup").addEventListener("popupshowing",togglePDFDownloadItem, false);
+    getBrowser().addProgressListener(pdfDownloadUrlBarListener, Components.interfaces.nsIWebProgress.NOTIFY_STATE_DOCUMENT);
 
 	//add download observer
 	initDownloadObserver();
@@ -757,6 +800,7 @@ function init() {
 
 function uninit() {
 	unloadDownloadObserver();
+    getBrowser().removeProgressListener(pdfDownloadUrlBarListener);
 	getBrowser().removeEventListener("click",mouseClick,true);
 	document.getElementById("menu_ToolsPopup").removeEventListener("popupshowing",togglePDFDownloadItem, false);
 }

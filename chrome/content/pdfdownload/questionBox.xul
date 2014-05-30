@@ -42,7 +42,7 @@
 
 <window class="dialog"
     id="PDFDownload-question-window"
-    title="PDF Download"
+    title="&pdfdownload.popup.title;"
     orient="horizontal"
     align="stretch"
     style="width: &pdfdownload.popup.width;; height=30ex" 

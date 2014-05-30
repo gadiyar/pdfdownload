@@ -8,7 +8,8 @@
 <!ENTITY pdfdownload.openWithoutExtension "PDF 우회 다운로드">
 <!ENTITY pdfdownload.cancelButton "취소">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download는 기본 PDF 뷰어를 찾아낼 수 없습니다. PDF Download의 환경설정에서 1개를 선택하십시오!">
-<!ENTITY pdfdownload.aboutTitle "PDF Download에 대하여">
+<!ENTITY pdfdownload.about.Title "Nitro PDF Software의 PDF Download - 정보">
+<!ENTITY pdfdownload.about.width "55ex">
 <!ENTITY pdfdownload.websiteTooltip "저작자의 웹사이트 보기">
 <!ENTITY pdfdownload.moreInfo "세부 상세:">
 <!ENTITY pdfdownload.readLicenseTooltip "최종 사용자 사용권 계약서 읽기">
@@ -17,11 +18,12 @@
 <!ENTITY pdfdownload.changelog "변경사항">
 <!ENTITY pdfdownload.acknowledgments "승인">
 <!ENTITY pdfdownload.siteListTitle "예외">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - 선택사항">
+<!ENTITY pdfdownload.options.Title "Nitro PDF Software의 PDF Download - 선택사항">
 <!ENTITY pdfdownload.optionsGeneralTab "기본">
 <!ENTITY pdfdownload.optionsPDFTab "PDF 열기">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF를 HTML로 변환">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "세부 상세">
+<!ENTITY pdfdownload.options.UpdatesTab "무료 갱신">
+<!ENTITY pdfdownload.options.CompanyTab "Nitro PDF Software에 대해서">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "도구 메뉴">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Firefox 메뉴내 도구에 있는 PDF 다운로드 항목 보기">
 <!ENTITY pdfdownload.optionsTooltips "툴팁">
@@ -42,15 +44,20 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "지정한 뷰어는 실행가능 파일이 아닙니다!">
 <!ENTITY pdfdownload.optionsUpdateLabel "갱신">
 <!ENTITY pdfdownload.optionsCheckUpdates "갱신 확인">
-<!ENTITY pdfdownload.optionsHowToHelp "도움 받기">
-<!ENTITY pdfdownload.optionsMakeDonation "기부하기">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "이미지">
 <!ENTITY pdfdownload.options.width "80ex">
 <!ENTITY pdfdownload.options.height "55ex">
 <!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.popup.title "Nitro PDF Software의 PDF Download">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "PDF의 HTML 버전 내 그림 보이기">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "그림을 보도록 하면, 그것들은 반드시 우리 서버에 저장됩니다.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "그림들은 1일 후 자동으로 삭제될 것입니다.">
+<!ENTITY pdfdownload.options.CompanyInformation "회사 정보">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
+<!ENTITY pdfdownload.options.nitroDescription "Nitro PDF Software 에서 만든 PDF Download는 무료 제품입니다. Nitro PDF Software는 최초로 Adobe® Acrobat®의 진정한 대체품인 Nitro PDF Professional을 개발했습니다. Nitro PDF Professional은 제작, 변환, 편집, 보안, 조작, PDF를 통한 공동작업을 당신이 할 수 있게 합니다.">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Nitro PDF Professional 체험 -">
+<!ENTITY pdfdownload.options.free14dayTrial "14일 무료 체험.">
 <!ENTITY pdfdownload.tooltip.downloadButton "PDF파일을 다운로드합니다.Firefox 환경설정에 있는 기본 다운로드 디렉토리를 설정 경우,저 디렉토리에 자동으로 파일을 다운로드할 것입니다;그렇지 않으면 파일을 저장하기 위하여 디렉토리를 지정할 필요가 있을 것이다.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "PDF 파일을 엽니다. PDF Download 의 환경설정에 따라, PDF 파일을 PDF 플러그 인 (PDF 플러그 인이 인스톨 되어 있을 필요가 있습니다)을 사용해 Firefox 로 표시하거나 , OS에 의해 설정된 기본의 PDF 리더나 당신이 지정한 PDF 리더로 열 수가 있습니다.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "PDF 파일을 HTML로 표시합니다. PDF 파일은 외부 서버에 업 로드되고 HTML로 변환됩니다. 업로드된 PDF 파일은 변환 종료후에 자동적으로 서버로부터 삭제됩니다.">

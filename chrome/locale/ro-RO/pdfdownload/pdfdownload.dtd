@@ -8,7 +8,8 @@
 <!ENTITY pdfdownload.openWithoutExtension "Ignoră PDF Download">
 <!ENTITY pdfdownload.cancelButton "Renunţă">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download nu găseşte programul implicit pentru fişiere PDF. Specificaţi un program în Opţiuni.">
-<!ENTITY pdfdownload.aboutTitle "Despre PDF Download">
+<!ENTITY pdfdownload.about.Title "Despre PDF Download, creat de Nitro PDF Software">
+<!ENTITY pdfdownload.about.width "55ex">
 <!ENTITY pdfdownload.websiteTooltip "Vizitează pagina autorului">
 <!ENTITY pdfdownload.moreInfo "Mai multe informaţii:">
 <!ENTITY pdfdownload.readLicenseTooltip "Citeşte Acordul de Utilizator">
@@ -17,11 +18,12 @@
 <!ENTITY pdfdownload.changelog "Jurnal schimbări">
 <!ENTITY pdfdownload.acknowledgments "Mulţumiri">
 <!ENTITY pdfdownload.siteListTitle "Excepţii">
-<!ENTITY pdfdownload.optionsTitle "Opţiuni PDF Download">
+<!ENTITY pdfdownload.options.Title "Opţiuni PDF Download, creat de Nitro PDF Software">
 <!ENTITY pdfdownload.optionsGeneralTab "General">
 <!ENTITY pdfdownload.optionsPDFTab "Deschidere fişiere PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Conversie din PDF în HTML">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "Mai multe detalii">
+<!ENTITY pdfdownload.options.UpdatesTab "Actualizări gratuite">
+<!ENTITY pdfdownload.options.CompanyTab "Despre Nitro PDF Software">
 <!ENTITY pdfdownload.optionsToggleItemToolsMenu "Meniul Unelte">
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Arată intrare în meniul Unelte al navigatorului">
 <!ENTITY pdfdownload.optionsTooltips "Sfaturi ecran">
@@ -42,15 +44,20 @@
 <!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Programul de vizualizare specificat nu este executabil!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Actualizeză">
 <!ENTITY pdfdownload.optionsCheckUpdates "Caută actualizări">
-<!ENTITY pdfdownload.optionsHowToHelp "Ajutor">
-<!ENTITY pdfdownload.optionsMakeDonation "Faceţi o donaţie">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Imagini">
 <!ENTITY pdfdownload.options.width "80ex">
 <!ENTITY pdfdownload.options.height "55ex">
 <!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.popup.title "PDF Download, creat de Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Arată imaginile în versiunea HTML a fişierului PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Pentru a fi vizualizate, imaginile trebuie salvate pe serverul nostru.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Imaginile salvate vor fi şterse automat după o zi.">
+<!ENTITY pdfdownload.options.CompanyInformation "Informaţii companie">
+<!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software">
+<!ENTITY pdfdownload.options.nitroDescription "PDF Download este un produs gratuit al companiei Nitro PDF Software, care a creat Nitro PDF Professional, prima alternativă viabilă a produsului Adobe&#174; Acrobat&#174;.">
+<!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
+<!ENTITY pdfdownload.options.tryNitroPDFProfessional "Probează Nitro PDF Professional -">
+<!ENTITY pdfdownload.options.free14dayTrial "varianta de încercare gratuită (14 zile).">
 <!ENTITY pdfdownload.tooltip.downloadButton "Descărcare fişier PDF. Dacă în prealabil aţi setat un dosar de descărcare în Firefox, atunci fişierul se va salva automat acolo. Dacă nu, atunci va trebui să specificaţi dosarul în care doriţi să salvaţi fişierul.">
 <!ENTITY pdfdownload.tooltip.openPDFButton "Deschidere fişier PDF. În funcţie de ceea ce aţi setat în Opţiunile PDF Download, fişierul va fi deschis de către: pluginul PDF al navigatorului (care trebuie să fie deja instalat), aplicaţia implicită a sistemului de operare sau de către programul individual specificat.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "Vizualizare fişier PDF ca HTML. Fişierul va fi descărcat de către un server extern şi convertit în HTML. Serverul extern va şterge fişierul imediat după terminarea conversiei.">
