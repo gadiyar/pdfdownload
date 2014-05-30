@@ -45,11 +45,14 @@
 <!ENTITY pdfdownload.optionsHowToHelp "Unterstützung">
 <!ENTITY pdfdownload.optionsMakeDonation "Spenden mit PayPal">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Grafiken">
-<!ENTITY pdfdownload.optionsShowImagesInHTML "Grafiken in der HTLM-Version einer PDF-Datei anzeigen">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Grafiken in der HTML-Version einer PDF-Datei anzeigen">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Um die Grafiken anzeigen zu können, müssen sie auf unserem Server gespeichert werden.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Die Grafiken werden automatisch nach einem Tag gelöscht.">
 <!ENTITY pdfdownload.tooltip.downloadButton "Lädt die PDF-Datei herunter. Falls ein Standard-Download-Ordner in den Firefox-Einstellungen festgelegt wurde, wird die Datei automatisch dort gespeichert. Andernfalls muss ein Download-Ziel angegeben werden.">
-<!ENTITY pdfdownload.tooltip.openPDFButton "Öffnet die PDF-Datei. Abhängig davon, welche Option in den Einstellungen von PDF Download gewählt wurde, wird die Datei entweder in Firefox mit dem entsprechenden Plugin angezeigt oder mit dem Standard-PDF-Betrachter des Betriebssystems oder mit einem benutzerdefinierten Programm geöffnet.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Öffnet die PDF-Datei. Abhängig davon, welche Option in den Einstellungen von PDF Download gewählt wurde, wird die Datei entweder in Firefox mit dem entsprechenden Plug-in angezeigt oder mit dem Standard-PDF-Betrachter des Betriebssystems oder mit einem benutzerdefinierten Programm geöffnet.">
 <!ENTITY pdfdownload.tooltip.viewHtmlButton "Zeigt die PDF-Datei im HTML-Format an. Die Datei wird dazu durch einen externen Spiegelserver heruntergeladen und in HTML konvertiert. Das PDF wird nach Beendigung der Konvertierung automatisch von dem externen Server entfernt.">
 <!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Öffnet die PDF-Datei, als ob PDF Download nicht installiert wäre. Das Download-Verhalten entspricht dem, das Firefox hatte, bevor PDF Download installiert wurde.">
 <!ENTITY pdfdownload.tooltip.cancelButton "Schließt diesen Dialog. Die PDF-Datei wird weder heruntergeladen noch geöffnet.">

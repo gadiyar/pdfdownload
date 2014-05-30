@@ -45,6 +45,9 @@
 <!ENTITY pdfdownload.optionsHowToHelp "How to help">
 <!ENTITY pdfdownload.optionsMakeDonation "Make a donation">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Images">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Show images in the HTML version of PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "To let you see the images, they must be saved in our server.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "The images will be automatically deleted after one day.">

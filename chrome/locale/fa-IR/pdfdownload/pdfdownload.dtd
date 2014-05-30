@@ -1,0 +1,58 @@
+<!ENTITY pdfdownload.createdByLabel "نویسنده">
+<!ENTITY pdfdownload.websiteLabel "وب سایت">
+<!ENTITY pdfdownload.defaultActionLabel "واکنش پیش فرض">
+<!ENTITY pdfdownload.showPopup "باز کردن پنجره پاپ آپ">
+<!ENTITY pdfdownload.downloadButton "دانلود">
+<!ENTITY pdfdownload.openButton "باز کردن فایل PDF">
+<!ENTITY pdfdownload.viewHtmlButton "نمایش به صورت HTML">
+<!ENTITY pdfdownload.openWithoutExtension "عبور از PDF Download">
+<!ENTITY pdfdownload.cancelButton "انصراف">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download نمی تواند نرم افزار نمایش دهنده فایل های PDF شما را پیدا کند.لطفا از بخش تنظیمات برنامه خود را مشخص کنید.">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - About">
+<!ENTITY pdfdownload.websiteTooltip "نمایش وب سایت نویسنده">
+<!ENTITY pdfdownload.moreInfo "جزئیات بیشتر:">
+<!ENTITY pdfdownload.readLicenseTooltip "Read end-user license">
+<!ENTITY pdfdownload.license "مجوز">
+<!ENTITY pdfdownload.readChangelogTooltip "نمایش تغییرات">
+<!ENTITY pdfdownload.changelog "تغییرات">
+<!ENTITY pdfdownload.acknowledgments "سپاسگزاری">
+<!ENTITY pdfdownload.siteListTitle "استثناها">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - تنظیمات">
+<!ENTITY pdfdownload.optionsGeneralTab "عمومی">
+<!ENTITY pdfdownload.optionsPDFTab "باز کردن PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "تبدیل PDF به HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "جزئیات بیشتر">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "منوی ابزارها">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "نمایش گزینه PDF Download در منوی ابزارها">
+<!ENTITY pdfdownload.optionsTooltips "تول تیپ ها">
+<!ENTITY pdfdownload.optionsShowTooltips "نمایش تول تیپ ها در پنجره باز شونده">
+<!ENTITY pdfdownload.optionsOpenLink "شیوه باز شدن لینک های PDF با استفاده از پلاگین PDF فایرفاکس:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "شیوه باز کردن نسخه HTML فایل های PDF:">
+<!ENTITY pdfdownload.optionsSameTab "باز کردن در همان تب">
+<!ENTITY pdfdownload.optionsNewTab "باز کردن در تب جدید">
+<!ENTITY pdfdownload.optionsNewWindow "باز کردن در پنجره جدید">
+<!ENTITY pdfdownload.optionsOpenPdf "باز کردن فایل PDF">
+<!ENTITY pdfdownload.optionsUsePlugin "استفاده از پلاگین PDF">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "استفاده از برنامه پیش فرض سیستم عامل">
+<!ENTITY pdfdownload.optionsUseCustomProgram "استفاده از این برنامه:">
+<!ENTITY pdfdownload.optionsBrowse "جستجو...">
+<!ENTITY pdfdownload.optionsBrowseTitle "انتخاب برنامه نمایش PDF">
+<!ENTITY pdfdownload.optionsExeFiles "برنامه های ویندوز">
+<!ENTITY pdfdownload.optionsAllFiles "تمام فایل ها">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "نمایش دهنده مشخص شده یم فایل اجرایی نیست!">
+<!ENTITY pdfdownload.optionsUpdateLabel "به روز رسانی">
+<!ENTITY pdfdownload.optionsCheckUpdates "جستجو برای به روز رسانی">
+<!ENTITY pdfdownload.optionsHowToHelp "یاری رساندن">
+<!ENTITY pdfdownload.optionsMakeDonation "Make a donation">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "تصاویر">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "58ex">
+<!ENTITY pdfdownload.popup.width "85ex">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "نمایش تصاویر در نسخه HTML فایل های PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "تصاویر برای نمایش به شما باید روی سرور ما ذخیره شوند.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "تصاویر پس از یک روز به صورت خودکار پاک می شوند.">
+<!ENTITY pdfdownload.tooltip.downloadButton "دریافت فایل PDF.اگر در تنظیمات فایرفاکس پوشه پیش فرض برای دانلود انتخاب کرده اید فایل در همان پوشه ذخیره خواهد شد در غیر این صورت باید پوشه ای را برای ذخیره فایل باید مکان ذخیره فایل را مشخص کنید.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "باز کردن فایل PDF.بسته به انتخاب شما در بخش تنظیمات فایل با پلاگین PDF فایرفاکس،برنامه پیش فرض سیستم عامل و یا با استفاده از برنامه انتخابی شما باز خواهد شد.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "نمایش فایل PDF به صورت HTML.فایل توسط یک سرور دریافت شده و به یک صفحه HTML تبدیل می شود.صفحه HTML پس از بسته شدن به صورت خودکار از سرور پاک می شود.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "این گزینه فایل PDF را با استفاده از شیوه فایرفاکس باز می کند.مانند زمانی که PDF Download نصب نباشد.">
+<!ENTITY pdfdownload.tooltip.cancelButton "بستن پنجره.در این صورت فایل PDF نه دانلود شده و نه باز می شود.">

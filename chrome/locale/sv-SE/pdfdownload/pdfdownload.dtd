@@ -45,6 +45,9 @@
 <!ENTITY pdfdownload.optionsHowToHelp "Hjälp till">
 <!ENTITY pdfdownload.optionsMakeDonation "Ge ett bidrag">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Bilder">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Visa bilder i HTML-versionen av PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "För att låta dig se bilder måste de sparas på vår server">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Bilderna kommer att tas bort automatiskt efter ett dygn.">

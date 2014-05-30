@@ -45,6 +45,9 @@
 <!ENTITY pdfdownload.optionsHowToHelp "Dotacje">
 <!ENTITY pdfdownload.optionsMakeDonation "Wspomóż autora">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Grafiki">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Pokaż grafiki w wersji HTML rozszerzenia">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Aby zobaczyć grafiki, muszą być one zapisane na naszym serwerze">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Grafiki zostaną automatycznie usunięte po upływie jednego dnia">

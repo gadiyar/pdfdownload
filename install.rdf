@@ -7,7 +7,7 @@
 
     <em:id>{37E4D8EA-8BDA-4831-8EA1-89053939A250}</em:id>
     <em:name>PDF Download</em:name>
-    <em:version>0.9.2</em:version>
+    <em:version>0.9.3</em:version>
     <em:description>Allows to choose if you want to view a PDF file inside the browser (as PDF or HTML), if you want to view it outside Firefox with your default or custom PDF reader, or if you want to download it!</em:description>
     <em:creator>Denis Remondini</em:creator>
     <em:iconURL>chrome://pdfdownload/skin/pdfdownload.png</em:iconURL>
@@ -18,36 +18,30 @@
 	<Description about="urn:mozilla:extension:file:pdfdownload.jar">
 		<em:package>content/pdfdownload/</em:package>
 		<em:locale>locale/en-US/pdfdownload/</em:locale>
-		<em:locale>locale/am-HY/pdfdownload/</em:locale>
 		<em:locale>locale/bg-BG/pdfdownload/</em:locale>
-		<em:locale>locale/cs-CZ/pdfdownload/</em:locale>
 		<em:locale>locale/de-DE/pdfdownload/</em:locale>
 		<em:locale>locale/el-GR/pdfdownload/</em:locale>
 		<em:locale>locale/es-AR/pdfdownload/</em:locale>
 		<em:locale>locale/es-ES/pdfdownload/</em:locale>
 		<em:locale>locale/eu-ES/pdfdownload/</em:locale>
+		<em:locale>locale/fa-IR/pdfdownload/</em:locale>
 		<em:locale>locale/fi-FI/pdfdownload/</em:locale>
 		<em:locale>locale/fr-FR/pdfdownload/</em:locale>
 		<em:locale>locale/fy-NL/pdfdownload/</em:locale>
-		<em:locale>locale/he-IL/pdfdownload/</em:locale>
-		<em:locale>locale/hr-HR/pdfdownload/</em:locale>
 		<em:locale>locale/hu-HU/pdfdownload/</em:locale>
-		<em:locale>locale/id-ID/pdfdownload/</em:locale>
 		<em:locale>locale/it-IT/pdfdownload/</em:locale>
 		<em:locale>locale/ja-JP/pdfdownload/</em:locale>
 		<em:locale>locale/ko-KR/pdfdownload/</em:locale>
 		<em:locale>locale/nb-NO/pdfdownload/</em:locale>
 		<em:locale>locale/nl-NL/pdfdownload/</em:locale>
 		<em:locale>locale/pl-PL/pdfdownload/</em:locale>
-		<em:locale>locale/pt-BR/pdfdownload/</em:locale>
 		<em:locale>locale/pt-PT/pdfdownload/</em:locale>
-		<em:locale>locale/ro-RO/pdfdownload/</em:locale>
 		<em:locale>locale/sk-SK/pdfdownload/</em:locale>
 		<em:locale>locale/sl-SI/pdfdownload/</em:locale>
 		<em:locale>locale/sq-AL/pdfdownload/</em:locale>
 		<em:locale>locale/sv-SE/pdfdownload/</em:locale>
+		<em:locale>locale/tr-TR/pdfdownload/</em:locale>
 		<em:locale>locale/uk-UA/pdfdownload/</em:locale>
-		<em:locale>locale/vi-VN/pdfdownload/</em:locale>
 		<em:locale>locale/zh-CN/pdfdownload/</em:locale>
 		<em:locale>locale/zh-TW/pdfdownload/</em:locale>
 		<em:skin>skin/classic/pdfdownload/</em:skin>

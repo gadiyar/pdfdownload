@@ -410,9 +410,13 @@ function getMirror(url) {
 //save the file in a temporary directory
 function saveTempFile(url,fname) {
 	// Local File Target
-	var fileLocator = Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties);
-	var dir = fileLocator.get("TmpD", Components.interfaces.nsILocalFile);
-	var localTarget = dir.clone();
+    var todayDir = "pdfdownload-"+pdfDownloadShared.getTodayDate();
+	var localTarget = pdfDownloadShared.getPDFDownloadTempDir();
+    localTarget.append(todayDir);
+    if (!localTarget.exists()) {
+        localTarget.create(Components.interfaces.nsIFile.DIRECTORY_TYPE, 0777);
+    }
+    var dir = localTarget.clone();
 	localTarget.append(fname);
 	var i = 0;
 	while (localTarget.exists()) {
@@ -714,31 +718,31 @@ function removeFileFromQueue(sPath){
 	}
 }
 
-
-function removeSubString(str, subStr) {
-	var newString = str.split(subStr).join('').split(',,').join(',');
-	if (newString.indexOf(',') == 0) newString = newString.substring(1); // reomove leading comma
-	if (newString.lastIndexOf(',') == newString.length-1) newString = newString.substring(0,newString.length-1); // remove trailing comma
-	return newString;
+function removeDownloadedFiles() {
+    var todayDir = "pdfdownload-"+pdfDownloadShared.getTodayDate();
+	var tempDir = pdfDownloadShared.getPDFDownloadTempDir();
+    if (tempDir.exists()) {
+        var entries = tempDir.directoryEntries;
+        var array = [];
+        while(entries.hasMoreElements()) {
+          var entry = entries.getNext();
+          entry.QueryInterface(Components.interfaces.nsIFile);
+          array.push(entry);
+        }
+        for (var i=0; i < array.length; i++) {
+          if (array[i].leafName.indexOf("pdfdownload-") == 0 && array[i].leafName < todayDir) {
+              array[i].remove(true);
+          }
+        }
+    }
 }
 
 //Register the event listener for a mouse click
 function init() {
 
+    removeDownloadedFiles();
 	window.removeEventListener("load", init, true);
 	getBrowser().addEventListener("click", mouseClick, true);
-	//re-enable pdf plugin
-	const kDisabledPluginTypesPref = "plugin.disable_full_page_plugin_for_types";
-	var prefs = Components.classes["@mozilla.org/preferences-service;1"]
-	                               .getService(Components.interfaces.nsIPrefBranch);
-
-	var prefValue = "";
-	try {
-		prefValue = prefs.getCharPref(kDisabledPluginTypesPref);
-	} catch(ex) {}
-	prefValue = removeSubString(prefValue, "application/pdf");
-	prefs.setCharPref(kDisabledPluginTypesPref, prefValue);   
-
 	try {
 		//legacy options
 		retrieveLegacyOptions();

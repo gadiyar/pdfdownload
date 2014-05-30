@@ -45,7 +45,8 @@
     title="PDF Download"
     orient="horizontal"
     align="stretch"
-    onload="sizeToContentTrick(); disableBtns(window.arguments[0].url,window.arguments[1]); getFileSize(window.arguments[0].url);"
+    style="width: &pdfdownload.popup.width;; height=30ex" 
+    onload="disableBtns(window.arguments[0].url,window.arguments[1]); getFileSize(window.arguments[0].url);"
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	
@@ -113,21 +114,6 @@
 				}
 			}
 	
-
-			function sizeToContentTrick() {
-				/*
-				 * Workaround to sizeToContent bug (Bug 91137)
-				 */
-				var xulWindow = document.getElementById("PDFDownload-question-window");
-				var wdth = window.innerWidth; // THIS IS NEEDED,
-				window.sizeToContent();
-				xulWindow.setAttribute("width",window.innerWidth + 30);
-
-				var hght = window.innerHeight; // THIS IS NEEDED,
-				window.sizeToContent();
-				xulWindow.setAttribute("height",window.innerHeight + 30);     
-			}
-
 			function getFileSize(url) {
 				var xmlhttp
 				var done = 0;

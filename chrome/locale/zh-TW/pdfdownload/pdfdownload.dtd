@@ -45,6 +45,9 @@
 <!ENTITY pdfdownload.optionsHowToHelp "如何幫助">
 <!ENTITY pdfdownload.optionsMakeDonation "贊助">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "影像">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "在HTML版本的PDF檔案中顯示圖像">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "為了要讓您能檢視影像，圖片將會存在我們的伺服器上。">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "這些圖片在一天之後就會被移除。">

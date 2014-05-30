@@ -45,6 +45,9 @@
 <!ENTITY pdfdownload.optionsHowToHelp "Kako lahko pomagam?">
 <!ENTITY pdfdownload.optionsMakeDonation "Donirajte">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Slike">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Pokaži slike v različici HTML dokumenta PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Da bi videli slike, jih je potrebno prej shraniti na našem strežniku.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Slike bodo samodejno izbrisane po enem dnevu.">

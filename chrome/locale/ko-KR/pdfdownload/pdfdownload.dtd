@@ -45,6 +45,9 @@
 <!ENTITY pdfdownload.optionsHowToHelp "도움 받기">
 <!ENTITY pdfdownload.optionsMakeDonation "기부하기">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "이미지">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "PDF의 HTML 버전 내 그림 보이기">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "그림을 보도록 하면, 그것들은 반드시 우리 서버에 저장됩니다.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "그림들은 1일 후 자동으로 삭제될 것입니다.">

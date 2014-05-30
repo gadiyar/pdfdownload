@@ -1,5 +1,17 @@
 CHANGELOG
 
+v0.9.3	:	2007-10-08
+
+ - Added functionality to remove automatically the temporary files created by PDF Download. 
+   When you choose to open a PDF directly with the viewer, PDF Download downloads the PDF file
+   into a temporary directory and then open it with your viewer. From now on, PDF Download will
+   remove such temporary files the day after they have been downloaded. Doing this, you will avoid 
+   to have bunch of unused pdf files stored in a temporary directory of your file system.
+ - Fixed bug that, at each Firefox was restarted, was setting the Firefox options to use PDF plugin 
+   when PDF Download was not active (i.e., javascript links) or bypassed.
+ - Changed the size of option and popup window to do not use pixels but ex units. The size is specified in 
+   the locale dtd to avoid problems of visualization in some languages.
+
 v0.9.2	:	2007-09-13
 
  - Added possibility to specify relative path for the custom PDF viewer: the relative path is

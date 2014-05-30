@@ -7,7 +7,7 @@
 <!ENTITY pdfdownload.viewHtmlButton "以 HTML 方式查看该文件">
 <!ENTITY pdfdownload.openWithoutExtension "不使用 PDF Download 打开">
 <!ENTITY pdfdownload.cancelButton "取消">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download无法检测到您默认的PDF阅读器.请在PDF Download选项对话框中选择一个PDF阅读器!">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download 无法检测到您默认的 PDF 阅读器.请在 PDF Download 选项对话框中选择一个 PDF 阅读器!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download － 关于">
 <!ENTITY pdfdownload.websiteTooltip "浏览作者的网站">
 <!ENTITY pdfdownload.moreInfo "更多详情：">
@@ -45,6 +45,9 @@
 <!ENTITY pdfdownload.optionsHowToHelp "如何帮助">
 <!ENTITY pdfdownload.optionsMakeDonation "捐助:">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "图片">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "按 PDF 的 HTML 版本显示图片">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "在您查看这些图片之前，图片必须先保存在我们的服务器上。">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "这些图片将在一天之后自动删除。">

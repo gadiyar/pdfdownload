@@ -5,7 +5,7 @@
 <!ENTITY pdfdownload.downloadButton "Laadt it yn">
 <!ENTITY pdfdownload.openButton "Iepenje PDF">
 <!ENTITY pdfdownload.viewHtmlButton "Besjoch as HTML">
-<!ENTITY pdfdownload.openWithoutExtension "Bypass PDF Download">
+<!ENTITY pdfdownload.openWithoutExtension "PDF Download Oerslaan">
 <!ENTITY pdfdownload.cancelButton "Annulearje">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download kin jo standert PDF lêzer net fine. Kies ien fan de PDF Download opsjes dialooch!">
 <!ENTITY pdfdownload.aboutTitle "PDF Download - Oer">
@@ -45,6 +45,9 @@
 <!ENTITY pdfdownload.optionsHowToHelp "Hoe kinne jo stypje">
 <!ENTITY pdfdownload.optionsMakeDonation "Meitsje in donaasje">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Ofbyldings">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Toan ôfbyldings yn de HTML ferzje fan PDF">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Om jo ôfbyldings te toanen, moatte se bewarre wêze op ús tsjinner.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "De ôfbyldings sille automatysk nei ien dei fuortsmiten wurde.">

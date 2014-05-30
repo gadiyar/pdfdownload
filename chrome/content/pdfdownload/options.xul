@@ -41,17 +41,13 @@
 
 
 <prefwindow id="PDFDownload_Options"
-  windowtype="Browser:Preferences" 
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
   dlgbuttons="accept,cancel" 
+  style="width: &pdfdownload.options.width; !important; height: &pdfdownload.options.height; !important"
   onload="onLoad();"  
-  ondialogcancel='return onOK("&pdfdownload.optionsViewerNotExecutableFileMsg;");'
+  ondialogcancel='return onCancel("&pdfdownload.optionsViewerNotExecutableFileMsg;");'
   ondialogaccept='return onOK("&pdfdownload.optionsViewerNotExecutableFileMsg;");'
   title="&pdfdownload.optionsTitle;">
-
-  <stringbundle id="strings" src="chrome://pdfdownload/locale/pdfdownload.properties"/>
-  <script type="application/x-javascript" src="chrome://pdfdownload/content/options.js"/>
-  <script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
 
   <prefpane id="myPane">
     <preferences>
@@ -164,7 +160,7 @@
 				<groupbox>
 					<caption label="&pdfdownload.optionsUpdateLabel;"/>
 					<hbox>
-						<label value="PDF Download 0.9.2"/>
+						<label value="PDF Download 0.9.3"/>
 						<spacer flex="1"/>
 						<button label="&pdfdownload.optionsCheckUpdates;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');" />
 					</hbox>
@@ -192,6 +188,11 @@
 	</tabbox>
 
   </prefpane>
+  
+  <stringbundle id="strings" src="chrome://pdfdownload/locale/pdfdownload.properties"/>
+  <script type="application/x-javascript" src="chrome://pdfdownload/content/options.js"/>
+  <script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
+  
 
 </prefwindow>
 

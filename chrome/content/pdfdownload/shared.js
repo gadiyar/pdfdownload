@@ -134,6 +134,13 @@ PdfDownloadShared.prototype.getFilePath = function (oFile,platform) {
     return null;
 }
 
+PdfDownloadShared.prototype.removeSubString = function(str, subStr) {
+	var newString = str.split(subStr).join('').split(',,').join(',');
+	if (newString.indexOf(',') == 0) newString = newString.substring(1); // remove leading comma
+	if (newString.lastIndexOf(',') == newString.length-1) newString = newString.substring(0,newString.length-1); // remove trailing comma
+	return newString;
+}
+
 /* BEGIN of the code provided by Davide Ficano (aka Dafizilla) */
 PdfDownloadShared.prototype.getFileNameToExecuteForMac = function(oFile) {
         // See bug 307463 and 322865
@@ -249,6 +256,28 @@ PdfDownloadShared.prototype.toUnicode = function(text, charset, defValue) {
 }
 /* END of the code provided by Davide Ficano (aka Dafizilla) */
 
+
+PdfDownloadShared.prototype.getTodayDate = function() {
+    var date = new Date();
+    var day = date.getDate();
+    var month = date.getMonth();
+    var year = date.getFullYear();    
+    if (day <= 9) {
+        day = "0" + day;
+    }
+    if (month <= 9) {
+        month = "0" + month;
+    }
+    return year + "" + month + "" + day;
+}
+
+PdfDownloadShared.prototype.getPDFDownloadTempDir = function() {
+    var fileLocator = Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties);
+	var dir = fileLocator.get("TmpD", Components.interfaces.nsILocalFile);
+	var tempDir = dir.clone();
+    tempDir.append("pdfdownload");
+    return tempDir;
+}
 
 PdfDownloadShared.prototype.help = function(s) {
 	var url = "http://www.pdfdownload.org";

@@ -45,6 +45,9 @@
 <!ENTITY pdfdownload.optionsHowToHelp "Hogyan segíthet">
 <!ENTITY pdfdownload.optionsMakeDonation "Felajánlás a készítőnek">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Képek">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "55ex">
+<!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Képek megjelenítése a PDF fájl HTML változatában">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Ha szeretné látni a képeket, a szerverünkre kell őket elmentenie.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Egy nap múlva a képek automatikusan törlődnek.">

@@ -54,12 +54,40 @@ function onOK(notExecutableFileMsg) {
                 }
 				return false;
 		}
+    } else if (preferencesService.getCharPref("openPDF") == "usePlugin") {
+        const kDisabledPluginTypesPref = "plugin.disable_full_page_plugin_for_types";
+	    var prefs = Components.classes["@mozilla.org/preferences-service;1"]
+	                               .getService(Components.interfaces.nsIPrefBranch);
+
+	    var prefValue = "";
+	    try {
+		    prefValue = prefs.getCharPref(kDisabledPluginTypesPref);
+	    } catch(ex) {}
+	    prefValue = pdfDownloadShared.removeSubString(prefValue, "application/pdf");
+	    prefs.setCharPref(kDisabledPluginTypesPref, prefValue);   
+    }
+    
+    return true;
+}
+
+function onCancel(notExecutableFileMsg) {
+
+    var path = document.getElementById(_pdfViewerPathTextBox).value;
+    var openPDF = document.getElementById(_openPDFRadioGroup);
+    if (preferencesService.getCharPref("openPDF") == "customViewer") {
+		if (pdfDownloadShared.resolveFileName(path) == null) {
+				alert(notExecutableFileMsg);
+                if (openPDF.selectedItem.id != preferencesService.getCharPref("openPDF")) {
+                    openPDF.selectedItem = document.getElementById(preferencesService.getCharPref("openPDF"));
+                }
+				return false;
+		}
     }
     return true;
 }
 
 function onLoad() {
-    sizeToContentTrick();
+    //sizeToContentTrick();
     if (!preferencesService.prefHasUserValue("showToolsMenuItem")) {
 		preferencesService.setBoolPref("showToolsMenuItem",true);
 		document.getElementById("showItemTools").checked = true;

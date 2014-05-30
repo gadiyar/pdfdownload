@@ -26,7 +26,7 @@
 <!ENTITY pdfdownload.optionsShowItemToolsMenu "Zobraziť položku PDF Download v hlavnej ponuke Nástroje">
 <!ENTITY pdfdownload.optionsTooltips "Bublinové popisy">
 <!ENTITY pdfdownload.optionsShowTooltips "Zobrazovať bublinové popisy v dialógovom okne">
-<!ENTITY pdfdownload.optionsOpenLink "Ako otvárať PDF odkazy využitím plug-inu Firefoxu:">
+<!ENTITY pdfdownload.optionsOpenLink "Ako otvárať PDF odkazy využitím zásuvného modulu Firefoxu:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Ako otvárať HTML verzie PDF súborov:">
 <!ENTITY pdfdownload.optionsSameTab "Otvoriť na aktuálnej karte">
 <!ENTITY pdfdownload.optionsNewTab "Otvoriť na novej karte">
@@ -45,6 +45,9 @@
 <!ENTITY pdfdownload.optionsHowToHelp "Ako pomôcť">
 <!ENTITY pdfdownload.optionsMakeDonation "Príspevok autorovi">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Obrázky">
+<!ENTITY pdfdownload.options.width "80ex">
+<!ENTITY pdfdownload.options.height "65ex">
+<!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Zobraziť obrázky v HTML verzii PDF súboru">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Ak chcete vidieť obrázky, musia byť uložené na náš server.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Obrázky budú po jednom dni automaticky odstránené.">
