@@ -1,5 +1,11 @@
 CHANGELOG
 
+v1.0.1.0:	2008-01-22
+
+ - Fixed a typo in german locale.
+ - Fixed Bug 1873424: added support for links in the Yahoo search results.
+ - Added support for links having leading white spaces.
+
 v1.0.0.2:	2008-01-07
 
  - Fixed regression related to middle-click detection.

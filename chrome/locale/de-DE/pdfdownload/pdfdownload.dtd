@@ -50,11 +50,11 @@
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.popup.title "PDF Download von Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Grafiken in der HTML-Version einer PDF-Datei anzeigen">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Um die Grafiken anzeigen zu können, müssen sie auf unserem Server gespeichert werden.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Um die Grafiken anzeigen zu können, müssen diese auf unserem Server gespeichert werden.">
 <!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Die Grafiken werden automatisch nach einem Tag gelöscht.">
 <!ENTITY pdfdownload.options.CompanyInformation "Firmeninformationen">
 <!ENTITY pdfdownload.options.pdfNitroSoftware "Nitro PDF Software:">
-<!ENTITY pdfdownload.options.nitroDescription "&quot;PDF Download&quot; ist ein kostenfreies Produkt vom &quot;Nitro PDF Software&quot;-Team. &quot;Nitro PDF Software&quot; erstellte als einer der ersten eine echte Alternative zu Adobe® Acrobat®. Mit &quot;Nitro PDF Proffesional&quot; haben Sie die Möglichkeit PDF-Dateien zu erstellen, editieren, schützen, manipulieren und zusammenzuführen.">
+<!ENTITY pdfdownload.options.nitroDescription "&quot;PDF Download&quot; ist ein kostenfreies Produkt vom &quot;Nitro PDF Software&quot;-Team. &quot;Nitro PDF Software&quot; erstellte als einer der ersten eine echte Alternative zu Adobe® Acrobat®. Mit &quot;Nitro PDF Professional&quot; haben Sie die Möglichkeit PDF-Dateien zu erstellen, editieren, schützen, manipulieren und zusammenzuführen.">
 <!ENTITY pdfdownload.options.pdfDownload "PDF Download:">
 <!ENTITY pdfdownload.options.tryNitroPDFProfessional "Nitro PDF Professional -">
 <!ENTITY pdfdownload.options.free14dayTrial "Testen Sie unverbindlich für 14 Tage">

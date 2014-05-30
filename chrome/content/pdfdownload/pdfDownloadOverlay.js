@@ -107,6 +107,9 @@ function mouseClick(aEvent) {
 	var url = targ.getAttribute("href");	
 	if (url == null) return;
 
+    // remove heading spaces
+    url = url.replace(/^\s+/, '');
+   
 	// we check if the link is absolute or not
 	if ( (!isLinkType("http", url)) && (!isLinkType("file:",url)) && (!isLinkType("ftp",url)) ) {
 		// the link is not absolute, hence we need to build the absolute link
@@ -131,7 +134,11 @@ function mouseClick(aEvent) {
 	if ((url.match(/^http:\/\/[a-z.]+google.[a-z.]+\/url\?/i)) && (url.match(/[\\?&]url=([^&#]+)/i))) {
 		url = decodeURIComponent(RegExp.$1);
 	}
-
+    // special case for yahoo search results
+    if (url.match(/^http:\/\/[a-z.]+yahoo.[a-z.]+\//i) && (url.match(/\/\*\*([^&#]+)/i))) {
+        url = decodeURIComponent(RegExp.$1);
+    }
+    
 	var originalUrl = url;
 	// we remove eventual parameters in the url    
 	var firstSharpPosition = url.indexOf('#');  
