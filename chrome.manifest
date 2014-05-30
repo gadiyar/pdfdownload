@@ -20,6 +20,8 @@ locale	pdfdownload	es-AR	jar:chrome/pdfdownload.jar!/locale/es-AR/pdfdownload/
 
 locale	pdfdownload	es-ES	jar:chrome/pdfdownload.jar!/locale/es-ES/pdfdownload/
 
+locale	pdfdownload	eu-ES	jar:chrome/pdfdownload.jar!/locale/eu-ES/pdfdownload/
+
 locale	pdfdownload	fi-FI	jar:chrome/pdfdownload.jar!/locale/fi-FI/pdfdownload/
 
 locale	pdfdownload	fr-FR	jar:chrome/pdfdownload.jar!/locale/fr-FR/pdfdownload/
@@ -31,6 +33,8 @@ locale	pdfdownload	he-IL	jar:chrome/pdfdownload.jar!/locale/he-IL/pdfdownload/
 locale	pdfdownload	hr-HR	jar:chrome/pdfdownload.jar!/locale/hr-HR/pdfdownload/
 
 locale	pdfdownload	hu-HU	jar:chrome/pdfdownload.jar!/locale/hu-HU/pdfdownload/
+
+locale	pdfdownload	id-ID	jar:chrome/pdfdownload.jar!/locale/id-ID/pdfdownload/
 
 locale	pdfdownload	it-IT	jar:chrome/pdfdownload.jar!/locale/it-IT/pdfdownload/
 
@@ -57,6 +61,8 @@ locale	pdfdownload	sl-SI	jar:chrome/pdfdownload.jar!/locale/sl-SI/pdfdownload/
 locale	pdfdownload	sq-AL	jar:chrome/pdfdownload.jar!/locale/sq-AL/pdfdownload/
 
 locale	pdfdownload	sv-SE	jar:chrome/pdfdownload.jar!/locale/sv-SE/pdfdownload/
+
+locale	pdfdownload	uk-UA	jar:chrome/pdfdownload.jar!/locale/uk-UA/pdfdownload/
 
 locale	pdfdownload	vi-VN	jar:chrome/pdfdownload.jar!/locale/vi-VN/pdfdownload/
 

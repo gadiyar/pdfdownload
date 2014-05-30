@@ -100,9 +100,10 @@ function onPickPdfViewerPath(dialogTitle,exeFiles,allFiles,notExecutableFileMsg)
 	if (res == Components.interfaces.nsIFilePicker.returnOK) {
 		try {
 			file.initWithPath(fp.file.path);
-			if (file.isFile() && file.isExecutable()) {
-				preferencesService.setCharPref(prefname,fp.file.path);
-				document.getElementById(_pdfViewerPathTextBox).value = fp.file.path;
+            path = pdfDownloadShared.resolveFileName(fp.file.path);
+			if (path != null) {
+				preferencesService.setCharPref(prefname,path);
+				document.getElementById(_pdfViewerPathTextBox).value = path;
 				document.getElementById(_pdfViewerPathTextBox).disabled = false;
 				var openPDF = document.getElementById(_openPDFRadioGroup);
 				openPDF.selectedItem = document.getElementById("customViewer");
@@ -110,6 +111,7 @@ function onPickPdfViewerPath(dialogTitle,exeFiles,allFiles,notExecutableFileMsg)
 				alert(notExecutableFileMsg);
 			}
 		} catch (ex) {
+            //writeLog("Exception: "+ex);
 			alert(notExecutableFileMsg);
 		}
 	}

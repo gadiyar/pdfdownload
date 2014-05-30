@@ -98,10 +98,21 @@
 				if (ext == "pdf.gz") {
 					document.getElementById("open-button").disabled = true;
 				}
-				if ((url.indexOf("//localhost") != -1) || (url.indexOf("//127.0.0.1") != -1)) {
+				if (isLinkType("file:",url) || (url.indexOf("//localhost") != -1) || (url.indexOf("//127.0.0.1") != -1)) {
 					document.getElementById("openHTML-button").disabled = true;
 				}
 			}
+				
+			// Checks the type of a link
+			function isLinkType(linktype, link) {
+				try {
+					var protocol = link.substr(0, linktype.length);
+					return protocol.toLowerCase() == linktype;
+				} catch(e) {
+					return false;
+				}
+			}
+	
 
 			function sizeToContentTrick() {
 				/*

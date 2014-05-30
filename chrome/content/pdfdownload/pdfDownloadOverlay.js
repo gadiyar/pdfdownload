@@ -162,11 +162,6 @@ function mouseClick(aEvent) {
 		url = url.substring(0, lastDotPosition + 4);
 	}
 	if ( (ext.toLowerCase() == "pdf") || (ext.toLowerCase() == "pdf.gz") ) {
-		// we do not support local files. In a future version, we will do it (maybe)
-		if (isLinkType("file:",url)) {
-			return;
-		} 
-
 		var answer = new Object();
 		answer.res = "cancel";
 		answer.url = originalUrl;
@@ -175,55 +170,11 @@ function mouseClick(aEvent) {
 		} catch(ex) {
 			answer.res = "showPopup";
 		}
-
-		if ((answer.res == "showPopup") || 
-				((answer.res == "openHtml") && ((url.indexOf("//localhost") != -1) || (url.indexOf("//127.0.0.1") != -1)))) {
-			window.openDialog("chrome://pdfdownload/content/questionBox.xul", "PDF Download", "chrome,modal,centerscreen,dialog,resizable",answer,ext);
-		} 
-		var openPDF = "";
-		if (answer.res == "download") {
-			savelink(originalUrl);
-		} else if (answer.res == "open") {
-			// we check how to open the PDF
-			try {
-				openPDF = sltPrefs.getCharPref("extensions.pdfdownload.openPDF");
-			} catch(ex) {
-				openPDF = "";
-			}
-			if (openPDF == "usePlugin") {
-				/*
-				 * In the preferences there was written to open the PDF file using the PDF plugin.
-				 * Now we check in which tab/window we must open the PDF file using the PDF plugin.
-				 */		
-				var prefvalue;
-				try {
-					prefvalue = sltPrefs.getCharPref("extensions.pdfdownload.openPDFLink");
-				} catch(ex) {
-					prefvalue = "openPDFNewTab";
-				}
-				if (prefvalue == "openPDFNewTab") {
-					var tab = getBrowser().addTab(originalUrl);
-					if (shouldNewTabFocused()) {
-						getBrowser().selectedTab = tab;
-					}
-				} else if (prefvalue == "openPDFNewWindow") {
-					openNewWindowWith(originalUrl, null, null);
-				} else {
-					getBrowser().loadURI(originalUrl);
-				} 
-			} else {
-				// In the preferences there was written to open the PDF file using a PDF viewer (default or custom).
-				var fname = url.substring(url.lastIndexOf('/') + 1);
-				saveTempFile(originalUrl,fname);	
-			}
-		} else if (answer.res == "openHtml") {
-			getMirror(encodeURIComponent(originalUrl));
-		}
-		if (answer.res != "cancel") {
+        handlePDF(answer,ext);
+        if (answer.res != "cancel") {
 			// we set the pdf link as a visited link!!
 			var referrer = makeURL(getCurrentLocation());
-			var gURIFixer = Components.classes["@mozilla.org/docshell/urifixup;1"].
-			getService(Components.interfaces.nsIURIFixup);
+			var gURIFixer = Components.classes["@mozilla.org/docshell/urifixup;1"].getService(Components.interfaces.nsIURIFixup);
 			var visitedURI = gURIFixer.createFixupURI(targ.href, 0)
 			markLinkVisited(visitedURI.spec, targ, referrer);
 		}
@@ -232,6 +183,79 @@ function mouseClick(aEvent) {
 			aEvent.stopPropagation();	
 		}
 	}
+}
+
+function handlePDF(params,ext) {
+    	if ((params.res == "showPopup") || 
+			((params.res == "openHtml") && ((params.url.indexOf("//localhost") != -1) || (params.url.indexOf("//127.0.0.1") != -1)))) {
+			window.openDialog("chrome://pdfdownload/content/questionBox.xul", "PDF Download", "chrome,modal,centerscreen,dialog,resizable",params,ext);
+		} 
+        var isLocalFile = isLinkType("file:",params.url);
+        var fname = params.url.substring(params.url.lastIndexOf('/') + 1);
+		var openPDF = "";
+		if (params.res == "download") {
+            if (isLocalFile) {
+                var localTarget = buildLocalTarget(fname);
+                if (localTarget != null) {
+			        copyFile(params.url,localTarget.path);
+                }
+            } else {
+                savelink(params.url);
+            }
+		} else if (params.res == "open") {
+			// we check how to open the PDF
+			try {
+				openPDF = sltPrefs.getCharPref("extensions.pdfdownload.openPDF");
+			} catch(ex) {
+				openPDF = "";
+			}
+            if (!isLocalFile) {	
+    			if (openPDF == "usePlugin") {
+    				openPDFWithPlugin(params.url);
+    			} else {
+    				// In the preferences there was written to open the PDF file using a PDF viewer (default or custom).
+    				saveTempFile(params.url,fname);	
+    			}
+            } else {
+    			var file = getFileFromUrl(params.url);
+    			if (openPDF == "usePlugin") {
+    				openPDFWithPlugin(file.path);
+    			} else {
+    				openPDFExternally(file.path);
+    			}
+		    }
+		} else if (params.res == "openHtml") {
+            if (isLocalFile) {
+                // since we are dealing with a local file, we cannot use the "View as HTML" option
+                params.res = "showPopup";
+                handlePDF(params,ext);
+            } else {
+			    getMirror(encodeURIComponent(params.url));
+            }
+		}
+}
+
+function openPDFWithPlugin(url) {
+    /*
+	 * In the preferences there was written to open the PDF file using the PDF plugin.
+	 * Now we check in which tab/window we must open the PDF file using the PDF plugin.
+	 */		
+	var prefvalue;
+	try {
+		prefvalue = sltPrefs.getCharPref("extensions.pdfdownload.openPDFLink");
+	} catch(ex) {
+		prefvalue = "openPDFNewTab";
+	}
+	if (prefvalue == "openPDFNewTab") {
+		var tab = getBrowser().addTab(url);
+		if (shouldNewTabFocused()) {
+			getBrowser().selectedTab = tab;
+		}
+	} else if (prefvalue == "openPDFNewWindow") {
+		openNewWindowWith(url, null, null);
+	} else {
+		getBrowser().loadURI(url);
+	}     
 }
 
 //function taken from old contentAreaUtils.js and fixed up a little bit 
@@ -254,6 +278,43 @@ function markLinkVisited(href, linkNode,referrer)
 	}
 }
 
+function buildLocalTarget(fileName) {
+	var file  = Components.classes[fileCID].createInstance(fileIID);
+	var useDownloadDir = sltPrefs.getBoolPref("browser.download.useDownloadDir");
+	if (useDownloadDir == true) {
+		var folderList = sltPrefs.getIntPref('browser.download.folderList');
+		if (folderList == 0) {
+			var fileLocator = Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties);
+			var dir = fileLocator.get("Desk", fileIID);
+			var localTarget = dir.clone();
+			localTarget.append(fileName);	
+			return localTarget;			
+		} else {
+			var downloadDir = sltPrefs.getCharPref('browser.download.dir');
+			if (downloadDir) {
+				file.initWithPath(downloadDir);
+				file.append(fileName);
+				return file;
+			}
+		}
+	}	
+
+	var nsIFilePicker = Components.interfaces.nsIFilePicker;
+	var fp = Components.classes["@mozilla.org/filepicker;1"]
+      	  .createInstance(nsIFilePicker);
+	fp.init(window, "", nsIFilePicker.modeSave);
+    fp.defaultString = fileName;
+	appendFiltersForContentType(fp, "application/pdf", "pdf", SAVEMODE_FILEONLY);
+	var res = fp.show();
+	if (res == Components.interfaces.nsIFilePicker.returnOK) {
+	    file.initWithPath(getNormalizedLeafName(fp.file.path,"pdf"));
+          //file.append(fileName);
+	    return file;
+      } 
+
+	return null;
+}
+
 function makeURL(aURL)
 {
 	var ioService = Components.classes["@mozilla.org/network/io-service;1"]
@@ -265,6 +326,37 @@ function makeFileURL(aFile) {
 	var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
 	return ioService.newFileURI(aFile);
 } 
+
+function getFileFromUrl(url) {
+ 	var ioService = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
+  	var fileHandler = ioService.getProtocolHandler("file").QueryInterface(Components.interfaces.nsIFileProtocolHandler);
+	return fileHandler.getFileFromURLSpec(url).QueryInterface(Components.interfaces.nsILocalFile);
+}
+
+
+
+function copyFile(sourceFile,destFile) {
+
+  	var aDest = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+  	if (!aDest) return false;
+
+  	aFile = getFileFromUrl(sourceFile);
+  	aDest.initWithPath(destFile);
+
+  	var newFileName = aDest.leafName;
+  	var localTarget = aDest.clone();
+  	aDest.initWithPath(destFile.substring(0,destFile.lastIndexOf(aDest.leafName)));
+
+  	var i = 0;
+  	while (localTarget.exists()) {
+		i++;
+		localTarget = null;
+		localTarget = aDest.clone();
+		localTarget.append(this.createNumber(i) + "_" + newFileName);
+  	}
+  	aFile.copyTo(aDest,localTarget.leafName);
+ }
+ 
 
 //we find which mirror is better to use to do the PDF->HTML conversion
 function getMirror(url) {
@@ -351,11 +443,10 @@ function saveTempFile(url,fname) {
 
 	progressPersist.saveURI(uri, null, referer, null, null, localTarget);
 
-
 }
 
 //Opens the pdf file with an external program (the os default one or the one specified by the user under the PDF Download options)
-function openPDF(filename) {
+function openPDFExternally(filename) {
 	var oFile 	= Components.classes["@mozilla.org/file/local;1"].getService(Components.interfaces.nsILocalFile);
 	oFile.initWithPath(filename);
 	if (oFile != null && oFile.exists()) {
@@ -596,7 +687,7 @@ var DQ_DownloadObserver = {
 
 			// Execute			
 			try {
-				openPDF(oFile.path);
+				openPDFExternally(oFile.path);
 			} catch(err) {
 				alert(bundle.GetStringFromName("fatalException"));
 			}

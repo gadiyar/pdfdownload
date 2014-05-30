@@ -1,0 +1,55 @@
+<!ENTITY pdfdownload.createdByLabel "Dibuat oleh:">
+<!ENTITY pdfdownload.websiteLabel "Website">
+<!ENTITY pdfdownload.defaultActionLabel "Aksi asali">
+<!ENTITY pdfdownload.showPopup "Tampilkan jendela popup">
+<!ENTITY pdfdownload.downloadButton "Unduh (Download)">
+<!ENTITY pdfdownload.openButton "Buka berkas PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Tampilkan sebagai HTML">
+<!ENTITY pdfdownload.openWithoutExtension "Bypass PDF Download">
+<!ENTITY pdfdownload.cancelButton "Batal">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download tidak menemukan aplikasi asali pembuka berkas PDF. Silahkan memilihnya pada jendela pengaturan milik PDF Download!">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - Tentang Kami">
+<!ENTITY pdfdownload.websiteTooltip "Lihat website pemilik">
+<!ENTITY pdfdownload.moreInfo "Detil lainnya:">
+<!ENTITY pdfdownload.readLicenseTooltip "Baca lisensi pengguna">
+<!ENTITY pdfdownload.license "Lisensi">
+<!ENTITY pdfdownload.readChangelogTooltip "Lihat Changelog">
+<!ENTITY pdfdownload.changelog "Changelog">
+<!ENTITY pdfdownload.acknowledgments "Pernyataan">
+<!ENTITY pdfdownload.siteListTitle "Pengecualian">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Pengaturan">
+<!ENTITY pdfdownload.optionsGeneralTab "Umum">
+<!ENTITY pdfdownload.optionsPDFTab "Membuka PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Konversi PDF ke HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Detil lainnya">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menu Tools">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Tampilkan PDF Download pada menu Tools Firefox">
+<!ENTITY pdfdownload.optionsTooltips "Pesan Bantuan">
+<!ENTITY pdfdownload.optionsShowTooltips "Tampilkan pesan bantuan pada kotak dialog">
+<!ENTITY pdfdownload.optionsOpenLink "Cara membuka PDF dengan plugin PDF milik Firefox:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Cara membuka versi HTML dari berkas PDF:">
+<!ENTITY pdfdownload.optionsSameTab "Buka pada tab yang sama">
+<!ENTITY pdfdownload.optionsNewTab "Buka pada tab yang baru">
+<!ENTITY pdfdownload.optionsNewWindow "Buka pada jendela baru">
+<!ENTITY pdfdownload.optionsOpenPdf "Membuka berkas PDF">
+<!ENTITY pdfdownload.optionsUsePlugin "Gunakan plugin PDF">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Gunakan penampil asali milik OS">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Gunakan penampil ini:">
+<!ENTITY pdfdownload.optionsBrowse "Jelajah...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Pilih penampil PDF">
+<!ENTITY pdfdownload.optionsExeFiles "Aplikasi Windows">
+<!ENTITY pdfdownload.optionsAllFiles "Semua Berkas">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Penampil yang dipilih bukanlah sebuah berkas *.exe!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Update">
+<!ENTITY pdfdownload.optionsCheckUpdates "Cek sekarang">
+<!ENTITY pdfdownload.optionsHowToHelp "Cara ikut membantu">
+<!ENTITY pdfdownload.optionsMakeDonation "Berikan donasi">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Gambar">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Tampilkan gambar dalam versi HTML dari berkas PDF">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Untuk memungkinkan Anda melihat gambar2 tsb, diharuskan untuk menyimpannya pada server kami.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Gambar tsb secara otomatis dihapus setelah satu hari.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Unduh berkas PDF. Berkas ini akan disimpan pada folder asali Download milik Firefox.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Buka berkas PDF.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Tampilkan berkas PDF sebagai HTML.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Buka berkas PDF tanpa menggunakan fitur milik PDF Download. Efeknya mirip seperti cara Firefox membuka berkas serupa tanpa extension PDF Download terpasang.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Tutup dialog ini. Berkas PDF tidak akan diunduh atau dibuka.">

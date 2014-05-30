@@ -54,7 +54,6 @@
   <script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
 
   <prefpane id="myPane">
-
     <preferences>
       <preference id="pd_defaultAction"
         name="extensions.pdfdownload.defaultAction"
@@ -165,7 +164,7 @@
 				<groupbox>
 					<caption label="&pdfdownload.optionsUpdateLabel;"/>
 					<hbox>
-						<label value="PDF Download 0.8.1"/>
+						<label value="PDF Download 0.9"/>
 						<spacer flex="1"/>
 						<button label="&pdfdownload.optionsCheckUpdates;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');" />
 					</hbox>

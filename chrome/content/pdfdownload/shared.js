@@ -59,19 +59,31 @@ PdfDownloadShared.prototype.openURL = function(aURL) {
 	}
 }
 
+function writeLog(msg) {
+    Components.classes["@mozilla.org/consoleservice;1"].getService(Components.interfaces.nsIConsoleService).logStringMessage("PDF Download: " + msg);
+}
+
 PdfDownloadShared.prototype.resolveFileName = function(fileName) {
-   	var oFile 	= Components.classes["@mozilla.org/file/local;1"].getService(Components.interfaces.nsILocalFile);
-	try {
-		oFile.initWithPath(fileName);
-	   	if (oFile.isFile() && oFile.isExecutable()) {
-	   		return oFile.path;
-	   	}
-   	} catch (ex) {}
-	var userEnvironment = Components.classes["@mozilla.org/process/environment;1"].getService(Components.interfaces.nsIEnvironment);
-	var path_separator = "";
 	var platform = /mac/i.test(navigator.platform) ? "mac" :
                    /win/i.test(navigator.platform) ? "win" :
                    /os\/2/i.test(navigator.platform) ? "os/2" : "unix";
+
+   	var oFile 	= Components.classes["@mozilla.org/file/local;1"].getService(Components.interfaces.nsILocalFile);
+	try {
+		oFile.initWithPath(fileName);
+        if (platform != "mac") {
+    	   	if (oFile.exists() && oFile.isFile() && oFile.isExecutable()) {
+    	   		return oFile.path;
+    	   	}
+        } else {
+            var path = pdfDownloadShared.getFileNameToExecuteForMac(oFile);
+            if (path != null) {
+                return path;
+            }
+        }
+   	} catch (ex) {}
+	var userEnvironment = Components.classes["@mozilla.org/process/environment;1"].getService(Components.interfaces.nsIEnvironment);
+	var path_separator = "";
     if (platform == "win") {
     	path_separator = ";";
     } else if (platform == "mac") {
@@ -87,14 +99,137 @@ PdfDownloadShared.prototype.resolveFileName = function(fileName) {
     		try {
 				oFile.initWithPath(systemPath[i]);
 				oFile.append(fileName);
-	   			if (oFile.isFile() && oFile.isExecutable()) {
-	   				return oFile.path;
-	   			}
+                if (platform != "mac") {
+    	   			if (oFile.exists() && oFile.isFile() && oFile.isExecutable()) {
+    	   				return oFile.path;
+    	   			}
+                } else {
+                    var path = pdfDownloadShared.getFileNameToExecuteForMac(oFile);
+                    if (path != null) {
+                        return path;
+                    }
+                }
    			} catch (ex) {}
     	}
     }
     return null;
 }
+
+/* BEGIN of the code provided by Davide Ficano (aka Dafizilla) */
+PdfDownloadShared.prototype.getFileNameToExecuteForMac = function(oFile) {
+        // See bug 307463 and 322865
+        var leafName = oFile.leafName;
+        var bundleFile = oFile;
+
+        if (leafName.match(/\.app$/) && oFile.exists() && oFile.isDirectory()) {
+            try {
+                var pListFile = pdfDownloadShared.makeLocalFile(oFile.path, ["Contents", "Info.plist"]);
+                var m;
+                if (pListFile.exists() && pListFile.isFile()) {
+                    var pListText = pdfDownloadShared.loadTextFile(pListFile);
+                    var re = /\<key\>CFBundleExecutable\<\/key\>[ \t\n\v\r]*\<string\>[ \t\n\v\r]*(.*)[ \t\n\v\r]*\<\/string\>/
+                    m = pListText.match(re);
+                }
+                if (m && m.length == 2) {
+                    bundleFile = pdfDownloadShared.makeLocalFile(oFile.path,["Contents", "MacOS", m[1]]);
+                } else {
+                    // workaround for binary version of Info.plist file (by Denis Remondini)
+                    // we assume that the executable file has the same name of the bundle .app directory
+                    var fileName = leafName.substring(0,leafName.length-4);
+                    bundleFile = pdfDownloadShared.makeLocalFile(oFile.path,["Contents", "MacOS", fileName]);
+                    if (!bundleFile.exists() || !bundleFile.isFile()) {
+                        fileName = "AdobeReader";
+                        bundleFile = pdfDownloadShared.makeLocalFile(oFile.path,["Contents", "MacOS", fileName]);
+                        if (!bundleFile.exists() || !bundleFile.isFile()) {
+                            fileName = "Adobe Reader";
+                            bundleFile = pdfDownloadShared.makeLocalFile(oFile.path,["Contents", "MacOS", fileName]);
+                        }                        
+                    }
+                }
+            } catch (err) { 
+                //writeLog("error: "+err);
+            }
+        }
+
+        if (bundleFile.exists() && bundleFile.isFile()) {
+            return bundleFile.path;
+        }
+        return null;
+}
+
+PdfDownloadShared.prototype.makeLocalFile = function(path, arrayAppendPaths) {
+        var file;
+    
+        try {
+            file = path.QueryInterface(Components.interfaces.nsILocalFile);
+        } catch (err) {
+            file = Components.classes["@mozilla.org/file/local;1"]
+                   .createInstance(Components.interfaces.nsILocalFile);
+            file.initWithPath(path);
+        }
+    
+        if (arrayAppendPaths != null
+            && arrayAppendPaths != undefined
+            && arrayAppendPaths.length) {
+            for (var i = 0; i < arrayAppendPaths.length; i++) {
+                file.append(arrayAppendPaths[i]);
+            }
+        }
+        return file;
+    }
+    
+PdfDownloadShared.prototype.read = function(file) {
+    const CONTRACTID_FIS = "@mozilla.org/network/file-input-stream;1";
+    const nsFis = Components.interfaces.nsIFileInputStream;
+    const CONTRACTID_SIS = "@mozilla.org/scriptableinputstream;1";
+    const nsSis = Components.interfaces.nsIScriptableInputStream;
+
+
+    var str = "";
+    var fiStream = Components.classes[CONTRACTID_FIS].createInstance(nsFis);
+    var siStream = Components.classes[CONTRACTID_SIS].createInstance(nsSis);
+
+    fiStream.init(file, 1, 0, false);
+    siStream.init(fiStream);
+    str += siStream.read(-1);
+    siStream.close();
+    fiStream.close();
+    return str;
+}
+    
+PdfDownloadShared.prototype.loadTextFile = function(fileName) {
+    var file = pdfDownloadShared.makeLocalFile(fileName);
+
+    var fileContent = pdfDownloadShared.read(file);
+
+    return pdfDownloadShared.toUnicode(fileContent, "UTF-8", fileContent);
+}
+    
+PdfDownloadShared.prototype.getUnicodeConverterService = function (charset) {
+    const CONTRACTID_UNICODE = "@mozilla.org/intl/scriptableunicodeconverter";
+    const nsUnicodeService = Components.interfaces.nsIScriptableUnicodeConverter;
+
+    var unicodeCvt = Components.classes[CONTRACTID_UNICODE].getService(nsUnicodeService);
+    if (charset) {
+        unicodeCvt.charset = charset;
+    }
+
+    return unicodeCvt;
+}
+    
+PdfDownloadShared.prototype.toUnicode = function(text, charset, defValue) {
+    try {
+        return pdfDownloadShared.getUnicodeConverterService(charset)
+                .ConvertToUnicode(text);
+    } catch (err) {
+        if (defValue) {
+            return defValue;
+        }
+    }
+    return null;
+}
+/* END of the code provided by Davide Ficano (aka Dafizilla) */
+
 
 PdfDownloadShared.prototype.help = function(s) {
 	var url = "http://www.pdfdownload.org";

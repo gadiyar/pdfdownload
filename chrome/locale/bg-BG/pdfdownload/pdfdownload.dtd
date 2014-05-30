@@ -15,7 +15,7 @@
 <!ENTITY pdfdownload.license "Лиценз">
 <!ENTITY pdfdownload.readChangelogTooltip "Виж Промените">
 <!ENTITY pdfdownload.changelog "Промени">
-<!ENTITY pdfdownload.acknowledgments "Потвърждения">
+<!ENTITY pdfdownload.acknowledgments "Благодаря на...">
 <!ENTITY pdfdownload.siteListTitle "Изключения">
 <!ENTITY pdfdownload.optionsTitle "PDF Даунлоуд - Настройки">
 <!ENTITY pdfdownload.optionsGeneralTab "Главно">

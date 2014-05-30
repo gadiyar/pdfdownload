@@ -1,48 +1,55 @@
 <!ENTITY pdfdownload.createdByLabel "Створено:">
-<!ENTITY pdfdownload.websiteLabel "Сайт">
-<!ENTITY pdfdownload.defaultActionLabel "Стандартна дія">
-<!ENTITY pdfdownload.showPopup "Відображати вигулькний діалог">
+<!ENTITY pdfdownload.websiteLabel "Інтернет сторінка">
+<!ENTITY pdfdownload.defaultActionLabel "Дія за замовчуванням">
+<!ENTITY pdfdownload.showPopup "Показувати вистрибуючий діалог">
 <!ENTITY pdfdownload.downloadButton "Завантажити">
-<!ENTITY pdfdownload.openButton "Відкрити PDF">
+<!ENTITY pdfdownload.openButton "Відкрити">
 <!ENTITY pdfdownload.viewHtmlButton "Переглянути як HTML">
-<!ENTITY pdfdownload.openWithoutExtension "Ігнорувати PDF Download">
+<!ENTITY pdfdownload.openWithoutExtension "Не використовувати PDF Download">
 <!ENTITY pdfdownload.cancelButton "Скасувати">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download не може знайти Ваш переглядач PDF. Будь ласка, вкажіть його у налаштуваннях PDF Download!">
-<!ENTITY pdfdownload.aboutTitle "PDF Download - Про">
-<!ENTITY pdfdownload.websiteTooltip "Відвідати сторінку автора">
-<!ENTITY pdfdownload.moreInfo "Додатково:">
-<!ENTITY pdfdownload.readLicenseTooltip "Переглянути ліцензійну угоду кінцевого користувача">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download не може знайти вашого читача PDF за замовчуванням. Будь ласка вкажіть його в діалозі налаштувань!">
+<!ENTITY pdfdownload.aboutTitle "Про PDF Download">
+<!ENTITY pdfdownload.websiteTooltip "Перейти на інтернет сторінку автора">
+<!ENTITY pdfdownload.moreInfo "Більше інформації">
+<!ENTITY pdfdownload.readLicenseTooltip "Переглянути ліцензію користувача">
 <!ENTITY pdfdownload.license "Ліцензія">
-<!ENTITY pdfdownload.readChangelogTooltip "Переглянути список змін">
-<!ENTITY pdfdownload.changelog "Список змін">
-<!ENTITY pdfdownload.acknowledgments "Подяка">
-<!ENTITY pdfdownload.siteListTitle "Виключення">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - Налаштування">
+<!ENTITY pdfdownload.readChangelogTooltip "Переглянути зміни у цій версії">
+<!ENTITY pdfdownload.changelog "Зміни">
+<!ENTITY pdfdownload.acknowledgments "Підтвердження">
+<!ENTITY pdfdownload.siteListTitle "Винятки">
+<!ENTITY pdfdownload.optionsTitle "Налаштування PDF Download">
 <!ENTITY pdfdownload.optionsGeneralTab "Загальні">
 <!ENTITY pdfdownload.optionsPDFTab "Відкриття PDF">
-<!ENTITY pdfdownload.optionsHTMLTab "Конвертування PDF у HTML">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "Додатково">
-<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Меню інструментів">
-<!ENTITY pdfdownload.optionsShowItemToolsMenu "Відображати PDF Download у панелі інструментів Firefox">
-<!ENTITY pdfdownload.optionsOpenLink "Параметри відкриття посилань PDF використовуючи додаток Firefox PDF:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Параметри відкриття HTML-версії файлів PDF:">
-<!ENTITY pdfdownload.optionsSameTab "Відкривати у поточній вкладці">
+<!ENTITY pdfdownload.optionsHTMLTab "Перетворення PDF у HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Більше інформації">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Меню дій">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Показувати пункт PDF Download у меню операції Firefox">
+<!ENTITY pdfdownload.optionsTooltips "Підказки">
+<!ENTITY pdfdownload.optionsShowTooltips "Показувати підказки у вікні діалогів">
+<!ENTITY pdfdownload.optionsOpenLink "Як відкривати PDF-посилання використовуючи PDF-розширення Firefox">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Як відкривати HTML-версію PDF-файлів">
+<!ENTITY pdfdownload.optionsSameTab "Відкривати у тій же ж вкладці">
 <!ENTITY pdfdownload.optionsNewTab "Відкривати у новій вкладці">
 <!ENTITY pdfdownload.optionsNewWindow "Відкривати у новому вікні">
-<!ENTITY pdfdownload.optionsOpenPdf "Відкриття файлів PDF:">
-<!ENTITY pdfdownload.optionsUsePlugin "Використовувати додаток Firefox PDF">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Використовувати стандартну програму ОС">
-<!ENTITY pdfdownload.optionsUseCustomProgram "Використовувати цю програму:">
-<!ENTITY pdfdownload.optionsBrowse "Огляд...">
-<!ENTITY pdfdownload.optionsBrowseTitle "Оберіть переглядач PDF">
+<!ENTITY pdfdownload.optionsOpenPdf "Відкриття PDF-файла">
+<!ENTITY pdfdownload.optionsUsePlugin "Використовувати PDF-розширення">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Використовувати читач за замовчуванням">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Використовувати цей читач">
+<!ENTITY pdfdownload.optionsBrowse "Шукати">
+<!ENTITY pdfdownload.optionsBrowseTitle "Обрати читач PDF">
 <!ENTITY pdfdownload.optionsExeFiles "Програми Windows">
-<!ENTITY pdfdownload.optionsAllFiles "Усі файли">
-<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Вказаний файл не є програмою!">
-<!ENTITY pdfdownload.optionsUpdateLabel "Оновлення">
+<!ENTITY pdfdownload.optionsAllFiles "Всі файли">
+<!ENTITY pdfdownload.optionsViewerNotExecutableFileMsg "Неможливо виконати вказаний файл">
+<!ENTITY pdfdownload.optionsUpdateLabel "Оновити">
 <!ENTITY pdfdownload.optionsCheckUpdates "Перевірити наявність оновлень">
 <!ENTITY pdfdownload.optionsHowToHelp "Як допомогти">
-<!ENTITY pdfdownload.optionsMakeDonation "Зробити пожертву">
-<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Зображення">
-<!ENTITY pdfdownload.optionsShowImagesInHTML "Відображати зображення у HTML-версії PDF">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Для можливості перегляду зображень вони повинні бути збережені на нашому сервері">
-<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Зображення будуть автоматично видалені через один день">
+<!ENTITY pdfdownload.optionsMakeDonation "Стати спонсором">
+<!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Картинки">
+<!ENTITY pdfdownload.optionsShowImagesInHTML "Показувати картинки у HTML-версії PDF-файла">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart1 "Картинки повинні бути збережені на нашому сервері аби ви побачили їх.">
+<!ENTITY pdfdownload.optionsImagesInHTMLPrivacyWarningPart2 "Картинки будуть автоматично видалені через день.">
+<!ENTITY pdfdownload.tooltip.downloadButton "Завантажити PDF-файл. Якщо ви вказали теку для збереження в налаштуваннях Firefox, файл буде завантажено у неї, інакше вам буде запропоновано вказати її.">
+<!ENTITY pdfdownload.tooltip.openPDFButton "Відкрити PDF-файл. Залежно від ваших налаштувань, файл відкриється внутрішнім PDF-розширенням Firefox або ж системним читачем за замовчуванням.">
+<!ENTITY pdfdownload.tooltip.viewHtmlButton "Переглянути PDF-файл як HTML. Файл буде завантажено на зовнішній сервер і перетворено в HTML. Файл буде видалено після завершення роботи з ним.">
+<!ENTITY pdfdownload.tooltip.openWithoutExtensionButton "Відкрити PDF-файл так, ніби PDF Download не встановлено. Поведінка Firefox буде такою, як до встановлення PDF Download.">
+<!ENTITY pdfdownload.tooltip.cancelButton "Закрити цей діалог. PDF-файл не буде завантажено чи відкрито і ви продовжите вашу мандрівку Інтернетом.">

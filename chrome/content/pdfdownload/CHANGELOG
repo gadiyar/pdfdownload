@@ -1,5 +1,10 @@
 CHANGELOG
 
+v0.9.0  :	2007-08-25
+
+ - Fixed major issue in Mac OS: now the open PDF with an external viewer works fine. 
+ - Added support for local PDF files.
+
 v0.8.1  :   2007-06-02
 
  - Fixed bug about URL, sent to the conversion mirrors, that contains special characters.
