@@ -62,6 +62,15 @@ var downloadQueue = new Array();
 /******************************************************************************
  *                        	HELPFUL FUNCTIONS                                 *
  *****************************************************************************/
+ 
+String.prototype.trimSpace = function() {
+	return this.replace(/^\s+|\s+$/g, '');
+}
+ 
+String.prototype.trimQuotes = function() {
+	return this.replace(/^\"+|\"+$/g, '');
+}
+ 
 // get URL of the focuced window
 function getCurrentLocation() {
 	return document.commandDispatcher.focusedWindow.location.href;
@@ -79,9 +88,8 @@ function getBaseUrl() {
 	return dir;
 }
 
-
 //save the linked file 
-function savelink(url)
+function savelink(url, filename)
 {
     var ifi = initFileInfo;
    	var ogdfn = getDefaultFileName;
@@ -100,6 +108,10 @@ function savelink(url)
 			var npos = aURL.lastIndexOf('/');
 			var name = aURL.substring(npos+1, pos);
 			
+			if (filename != null) {
+				name = filename;
+			}
+			
         	aFI.uri = makeURI(aURL);
         	aFI.fileName = name;
         	aFI.fileExt = 'pdf';
@@ -117,14 +129,43 @@ function savelink(url)
 function getMostRecentBrowserWindow()
 {
 	var windowManager = Components.classes['@mozilla.org/appshell/window-mediator;1'].getService();
-      var windowManagerInterface = windowManager.QueryInterface( Components.interfaces.nsIWindowMediator);
+	var windowManagerInterface = windowManager.QueryInterface( Components.interfaces.nsIWindowMediator);
+	
 	return windowManagerInterface.getMostRecentWindow( "navigator:browser" );
 }
 
-function getMostRecentBrowser() {
+function getMostRecentBrowser()
+{
 	return getMostRecentBrowserWindow().getBrowser();
 }
 
+/**
+ * Extract file anme from HTTP header
+ */
+function getHttpRequestFileName(http)
+{
+try {
+	var fname = http.getResponseHeader("Content-Disposition");
+	var parts = fname.split(';');
+    	
+	for(var i=0; i<parts.length; i++) {
+		var line = parts[i].trimSpace();
+
+   		if ("filename=" == line.substring(0, 9)) {
+   			var filename = line.substring(9).trimQuotes();
+   			
+   			if (filename.length > 0) {
+   				return filename;
+   			}
+   		}
+    }
+}
+catch(ex) {
+	// no nothing
+}
+
+return null;
+}
 
 /******************************************************************************
  *                        	Handle download request                           *
@@ -167,7 +208,6 @@ PDFDownloadService.prototype = {
   }
 ,
   onStartURIOpen: function(uri) {
-	firebug('aaa');
     return false;
   }  
 ,
@@ -175,23 +215,34 @@ PDFDownloadService.prototype = {
 	
     const ci=Components.interfaces;
     channel.QueryInterface(ci.nsIChannel);
-	
+
+	// get information about the request
     var url = channel.URI.spec;
     var size = channel.contentLength;
+    
+	var http = channel.QueryInterface(ci.nsIHttpChannel);
+	var filename = getHttpRequestFileName(http);
 
+	// do not process POST requests	
+	if ('POST' == http.requestMethod) {
+		contentHandler = nsnull;
+		return false;
+	}
+    
+	// stop this download
     //getBrowser().stop();
 	getMostRecentBrowser().stop();
-    
     channel.cancel(Components.results.NS_BINDING_ABORTED);     
     
-	this.chooseWhatToDo(url,size);
+	// handle the download
+	this.chooseWhatToDo(url, size, filename);
 
 	contentHandler.value=null;
 
 	return true;
   }
 ,
-  chooseWhatToDo: function(url,size) {
+  chooseWhatToDo: function(url, size, filename) {
    
 	var answer = new Object();
 	
@@ -205,11 +256,13 @@ PDFDownloadService.prototype = {
 	  answer.res = "showPopup";
 	}
 
-	handlePDF(answer, 'pdf', url);
+	handlePDF(answer, 'pdf', url, filename);
   }
 }
 
 var pdfDownloadService = new PDFDownloadService();
+
+
 /******************************************************************************
  *                        	handle the click event                           *
  *****************************************************************************/
@@ -324,7 +377,7 @@ function mouseClick(aEvent) {
 		} catch(ex) {
 			answer.res = "showPopup";
 		}
-        handlePDF(answer,ext,url);
+        handlePDF(answer, ext, url, null);
         if (answer.res != "cancel") {
 			// we set the pdf link as a visited link!!
 			var referrer = makeURL(getCurrentLocation());
@@ -343,15 +396,27 @@ function mouseClick(aEvent) {
 /******************************************************************************
  *                        	handle PDF download                               *
  *****************************************************************************/
-function handlePDF(params,ext,normalizedUrl) {
+function handlePDF(params, ext, normalizedUrl, filename) {
     	if ((params.res == "showPopup") || 
 			((params.res == "openHtml") && ((params.url.indexOf("//localhost") != -1) || (params.url.indexOf("//127.0.0.1") != -1)))) {
 			window.openDialog("chrome://pdfdownload/content/questionBox.xul", "PDF Download", "chrome,modal,centerscreen,dialog,resizable",params,ext);
 		} 
         var isLocalFile = isLinkType("file:",params.url);
-        var fname = normalizedUrl.substring(normalizedUrl.lastIndexOf('/') + 1, normalizedUrl.lastIndexOf('.')) + '.pdf';
+        var fname = normalizedUrl.substring(normalizedUrl.lastIndexOf('/') + 1);
 		var openPDF = "";
-
+		
+		if (filename != null) {
+			fname = filename;
+		} else {
+	    	var pos = fname.lastIndexOf('.');
+    		var ext = fname.substring(pos).toLowerCase();
+    	
+	    	if (ext != '.pdf')
+    		{
+				fname = fname.substring(0, pos) + '.pdf';
+			}
+		}
+		
 		if (params.res == "download") {
             if (isLocalFile) {
                 var localTarget = buildLocalTarget(fname);
@@ -359,7 +424,7 @@ function handlePDF(params,ext,normalizedUrl) {
 			        copyFile(params.url,localTarget.path);
                 }
             } else {
-                savelink(params.url);
+                savelink(params.url, filename);
             }
         } else if (params.res == "openWithoutExtension") {
         	openPDFWithPlugin(params.url);
