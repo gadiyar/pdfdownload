@@ -1,5 +1,16 @@
 CHANGELOG
 
+v0.7	  :   2006-05-24
+
+ - Changed the way a PDF file is intercepted by PDF Download: now EVERY PDF file is intercepted!!
+ - Added a default action: if set, PDF Download will not show the popup dialog but it will do the default action chosen by the user.
+ - Added the chance to remove the PDF Download item from the Tools menu of Firefox.
+ - Added support for local PDF files.
+ - Added support for more languages (bg-BG, el-GR, es-CL, fy-NL, gl-ES, lt-LT, mk-MK, sq-AL, th-TH, uk-UA).
+ - Removed support for ga-IE, sl-SL, pl-PL languages.
+ - Added support for Firefox 2.0
+
+
 v0.6    :   2006-01-02
 
  - Added new feature: now it is possible to open a pdf file directly with an external program. 

@@ -1,38 +1,43 @@
-<!ENTITY pdfdownload.CreatedByLabel "Laget av:">
-<!ENTITY pdfdownload.WebsiteLabel "Hjemmeside">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Last ned">
-<!ENTITY pdfdownload.OpenButton "Åpne PDF">
-<!ENTITY pdfdownload.ViewHtmlButton "Se som HTML">
-<!ENTITY pdfdownload.CancelButton "Avbryt">
+<!ENTITY pdfdownload.createdByLabel "Laget av:">
+<!ENTITY pdfdownload.websiteLabel "Webside">
+<!ENTITY pdfdownload.defaultActionLabel "Standard handling">
+<!ENTITY pdfdownload.showPopup "Vis dialogvindu">
+<!ENTITY pdfdownload.downloadButton "Last ned">
+<!ENTITY pdfdownload.openButton "Åpne PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Se som HTML">
+<!ENTITY pdfdownload.cancelButton "Avbryt">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download kan ikke finne din forvalgte PDF-leser. Vennligst velg en i innstillingene!">
-<!ENTITY pdfdownload.AboutTitle "Om PDF Download">
-<!ENTITY pdfdownload.WebsiteTooltip "Se utviklerens hjemmeside">
-<!ENTITY pdfdownload.MoreInfo "Flere detaljer:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Les sluttbrukerlisensen">
-<!ENTITY pdfdownload.License "Lisens">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Se prosjektlogg">
-<!ENTITY pdfdownload.Changelog "Prosjektlogg">
-<!ENTITY pdfdownload.Acknowledgments "Takk til">
-<!ENTITY pdfdownload.optionsTitle "Innstillinger">
+<!ENTITY pdfdownload.aboutTitle "Om PDF Download">
+<!ENTITY pdfdownload.websiteTooltip "Se utviklers hjemmeside">
+<!ENTITY pdfdownload.moreInfo "Flere detaljer:">
+<!ENTITY pdfdownload.readLicenseTooltip "Vis sluttbrukeravtale">
+<!ENTITY pdfdownload.license "Lisens">
+<!ENTITY pdfdownload.readChangelogTooltip "Vis prosjektlogg">
+<!ENTITY pdfdownload.changelog "Prosjektlogg">
+<!ENTITY pdfdownload.acknowledgments "Takk til">
+<!ENTITY pdfdownload.siteListTitle "Utelatelser">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Innstillinger">
+<!ENTITY pdfdownload.optionsGeneralTab "Generelt">
 <!ENTITY pdfdownload.optionsPDFTab "Åpning av PDF-filer">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF til HTML-omgjøring">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Flere detaljer">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Verktøymeny">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Vis PDF Download i Firefox' verktøylinje">
 <!ENTITY pdfdownload.optionsOpenLink "Hvordan åpne PDF-linker med Firefoxs PDF-plugin:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hvordan åpne en HTML-versjon av PDF-filer:">
 <!ENTITY pdfdownload.optionsSameTab "Åpne i samme fane">
 <!ENTITY pdfdownload.optionsNewTab "Åpne i ny fane">
 <!ENTITY pdfdownload.optionsNewWindow "Åpne i nytt vindu">
 <!ENTITY pdfdownload.optionsOpenPdf "Åpning av PDF-filer">
-<!ENTITY pdfdownload.optionsUsePlugin "Bruk Firefoxs standardhandling">
+<!ENTITY pdfdownload.optionsUsePlugin "Bruk PDF-plugin">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Bruk operativsystemets forvalgte leser">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Bruk denne leseren:">
 <!ENTITY pdfdownload.optionsBrowse "Finn...">
 <!ENTITY pdfdownload.optionsBrowseTitle "Velg PDF-leser">
-<!ENTITY pdfdownload.optionsExeFiles "Programmer">
+<!ENTITY pdfdownload.optionsExeFiles "Windows-programmer">
 <!ENTITY pdfdownload.optionsAllFiles "Alle filer">
 <!ENTITY pdfdownload.optionsNotExecutableFileMsg "Den valgte filen lar seg ikke kjøre!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Oppdater">
 <!ENTITY pdfdownload.optionsCheckUpdates "Se etter oppdateringer">
-<!ENTITY pdfdownload.optionsHowToHelp "Hvordan hjelpe">
+<!ENTITY pdfdownload.optionsHowToHelp "Hvordan kan du hjelpe">
 <!ENTITY pdfdownload.optionsMakeDonation "Gi en donasjon">

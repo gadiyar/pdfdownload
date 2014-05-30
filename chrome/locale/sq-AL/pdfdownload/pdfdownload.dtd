@@ -1,0 +1,43 @@
+<!ENTITY pdfdownload.createdByLabel "Krijuar nga">
+<!ENTITY pdfdownload.websiteLabel "Uebsiti">
+<!ENTITY pdfdownload.defaultActionLabel "Veprime tipike">
+<!ENTITY pdfdownload.showPopup "Shfaqe tabelën hyrëse">
+<!ENTITY pdfdownload.downloadButton "Sharkoje">
+<!ENTITY pdfdownload.openButton "Hape">
+<!ENTITY pdfdownload.viewHtmlButton "Shikoje si HTML">
+<!ENTITY pdfdownload.cancelButton "Anulo">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download nuk mund ta gjejë lexuesin tuaj të PDFve! Ju lutemi zgjidhni një në tabelën e mundësive të PDF Download!">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - Info">
+<!ENTITY pdfdownload.websiteTooltip "Vizitoni faqen e autorit">
+<!ENTITY pdfdownload.moreInfo "Më tepër detaje:">
+<!ENTITY pdfdownload.readLicenseTooltip "Lexoni licensën e përdoruesit">
+<!ENTITY pdfdownload.license "Licensë">
+<!ENTITY pdfdownload.readChangelogTooltip "Shfaqni ditarin e ndryshimeve">
+<!ENTITY pdfdownload.changelog "Ditari i ndryshimeve">
+<!ENTITY pdfdownload.acknowledgments "Falënderime">
+<!ENTITY pdfdownload.siteListTitle "Përjashtime">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Mundësi">
+<!ENTITY pdfdownload.optionsGeneralTab "Përgjithësi">
+<!ENTITY pdfdownload.optionsPDFTab "Hapja e PDFve">
+<!ENTITY pdfdownload.optionsHTMLTab "Konvertimi i PDFve në HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Më tepër detaje">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menyja e mjeteve">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Shfaqe njësinë 'PDF Download' në menynë e Mjeteve të Firefox">
+<!ENTITY pdfdownload.optionsOpenLink "Si do i hapni linket PDF me prizën e Firefox:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Si do e hapni versionin HTML të skedarëve PDF:">
+<!ENTITY pdfdownload.optionsSameTab "Në të njëjtën tabelë">
+<!ENTITY pdfdownload.optionsNewTab "Në një tabelë të re">
+<!ENTITY pdfdownload.optionsNewWindow "Në një dritare të re">
+<!ENTITY pdfdownload.optionsOpenPdf "Si do i hapni skedarët PDF:">
+<!ENTITY pdfdownload.optionsUsePlugin "Me prizën e PDFve">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Me shikuesin tipik të sistemit">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Me këtë:">
+<!ENTITY pdfdownload.optionsBrowse "Shfleto...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Zgjidhni shikuesin e PDFve">
+<!ENTITY pdfdownload.optionsExeFiles "Aplikime">
+<!ENTITY pdfdownload.optionsAllFiles "Gjithë skedarët">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Ky skedar nuk ekzekutohet!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Ridatime">
+<!ENTITY pdfdownload.optionsCheckUpdates "Ridatoje">
+<!ENTITY pdfdownload.optionsHowToHelp "Si të ndihmoni">
+<!ENTITY pdfdownload.optionsMakeDonation "Kontribuoni">

@@ -1,23 +1,28 @@
-<!ENTITY pdfdownload.CreatedByLabel "Készítette:">
-<!ENTITY pdfdownload.WebsiteLabel "Honlap">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Letöltés">
-<!ENTITY pdfdownload.OpenButton "PDF megnyitása">
-<!ENTITY pdfdownload.ViewHtmlButton "Nézet HTML-ként">
-<!ENTITY pdfdownload.CancelButton "Mégse">
+<!ENTITY pdfdownload.createdByLabel "Készítette:">
+<!ENTITY pdfdownload.websiteLabel "Webhely:">
+<!ENTITY pdfdownload.defaultActionLabel "Alapértelmezett művelet">
+<!ENTITY pdfdownload.showPopup "Előugró ablak megnyitása">
+<!ENTITY pdfdownload.downloadButton "Letöltés">
+<!ENTITY pdfdownload.openButton "PDF megnyitása">
+<!ENTITY pdfdownload.viewHtmlButton "Nézet HTML-ként">
+<!ENTITY pdfdownload.cancelButton "Mégse">
 <!ENTITY pdfdownload.osWarningMsg "Nem találja a PDF Download az alapértelmezett PDF-olvasót. Válassza ki a PDF Download beállítások párbeszédablakában!">
-<!ENTITY pdfdownload.AboutTitle "PDF Download - Névjegy">
-<!ENTITY pdfdownload.WebsiteTooltip "Keresse fel a szerző honlapját">
-<!ENTITY pdfdownload.MoreInfo "További információk:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Olvassa el a végfelhasználói licencszerződést">
-<!ENTITY pdfdownload.License "Licenc">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Tekintse meg a fejlesztési naplót">
-<!ENTITY pdfdownload.Changelog "Fejlesztési napló">
-<!ENTITY pdfdownload.Acknowledgments "Köszönetnyilvánítások">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - Névjegy">
+<!ENTITY pdfdownload.websiteTooltip "Keresse fel a szerző webhelyét">
+<!ENTITY pdfdownload.moreInfo "További részletek:">
+<!ENTITY pdfdownload.readLicenseTooltip "Olvassa el a végfelhasználói licencszerződést">
+<!ENTITY pdfdownload.license "Licenc">
+<!ENTITY pdfdownload.readChangelogTooltip "Tekintse meg a fejlesztési naplót">
+<!ENTITY pdfdownload.changelog "Fejlesztési napló">
+<!ENTITY pdfdownload.acknowledgments "Elismerések">
+<!ENTITY pdfdownload.siteListTitle "Kivételek">
 <!ENTITY pdfdownload.optionsTitle "PDF Download beállításai">
+<!ENTITY pdfdownload.optionsGeneralTab "Általános">
 <!ENTITY pdfdownload.optionsPDFTab "PDF megnyitása">
 <!ENTITY pdfdownload.optionsHTMLTab "Konvertálás HTML formátumba">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Egyebek">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Eszközök menü">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "A PDF Download menüpont látható a Firefox Eszközök menüjében">
 <!ENTITY pdfdownload.optionsOpenLink "A PDF-hivatkozások megnyitása a Firefox PDF beépülő moduljával:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "A PDF-fájlok HTML-változatainak megnyitása">
 <!ENTITY pdfdownload.optionsSameTab "Ugyanazon a fülön">

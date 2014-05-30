@@ -1,0 +1,43 @@
+<!ENTITY pdfdownload.createdByLabel "Napraveno od:">
+<!ENTITY pdfdownload.websiteLabel "Website">
+<!ENTITY pdfdownload.defaultActionLabel "Osnovna podesena akcija">
+<!ENTITY pdfdownload.showPopup "Pokazi go dijalogot">
+<!ENTITY pdfdownload.downloadButton "Simni">
+<!ENTITY pdfdownload.openButton "Otvori PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Pogledni kako HTML">
+<!ENTITY pdfdownload.cancelButton "Otkazi">
+<!ENTITY pdfdownload.osWarningMsg "PDF Simnuvacot ne moze da go najde vasiot osnoven PDF citac. Ve molime odberete eden vo dijalogot za PDF Simnuvac opcii!">
+<!ENTITY pdfdownload.aboutTitle "PDF Download-Za programata">
+<!ENTITY pdfdownload.websiteTooltip "Poglednete ja avtorskata stranica">
+<!ENTITY pdfdownload.moreInfo "Povece detali:">
+<!ENTITY pdfdownload.readLicenseTooltip "Procitajte ja dozvolata za kraen korisnik">
+<!ENTITY pdfdownload.license "Dozvola">
+<!ENTITY pdfdownload.readChangelogTooltip "Poglednete promeneti zapisi">
+<!ENTITY pdfdownload.changelog "Promenet zapis">
+<!ENTITY pdfdownload.acknowledgments "Poznavanja">
+<!ENTITY pdfdownload.siteListTitle "Isklucoco">
+<!ENTITY pdfdownload.optionsTitle "PDF Doownload-Opcii">
+<!ENTITY pdfdownload.optionsGeneralTab "Opsto">
+<!ENTITY pdfdownload.optionsPDFTab "Otvoranje na PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Menuvanje od PDF vo HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Povece detali">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Meni za alatki">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Pokazete go PDF simnuvanje vo Menito za alatki vo Firefox">
+<!ENTITY pdfdownload.optionsOpenLink "Kako da otvoram PDF linkovi upotrebuvajci PDF dodatoci:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Kako da otvoram HTML verzija od PDF datoteki:">
+<!ENTITY pdfdownload.optionsSameTab "Otvori vo istiot tab">
+<!ENTITY pdfdownload.optionsNewTab "Otvori vo noc tab">
+<!ENTITY pdfdownload.optionsNewWindow "Otvori vo nov prozorec">
+<!ENTITY pdfdownload.optionsOpenPdf "Otvoranje na PDF datoteki:">
+<!ENTITY pdfdownload.optionsUsePlugin "Upotrebi PDF dodatok">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Upotrebi go osnovniot viewer na operatiniot sistem sto goi imate">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Upotrebi go ovoj viewer:">
+<!ENTITY pdfdownload.optionsBrowse "Baraj...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Odberi PDF viewer">
+<!ENTITY pdfdownload.optionsExeFiles "Windows Aplikacii">
+<!ENTITY pdfdownload.optionsAllFiles "Site datoteki">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Selektiranata datoteka ne e izvrsna!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Obnovi">
+<!ENTITY pdfdownload.optionsCheckUpdates "Proveri gi novite obnovuvanja">
+<!ENTITY pdfdownload.optionsHowToHelp "Kako do pomos">
+<!ENTITY pdfdownload.optionsMakeDonation "Donirajte">

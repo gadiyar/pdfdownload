@@ -1,38 +1,43 @@
-<!ENTITY pdfdownload.CreatedByLabel "Gemaakt door:">
-<!ENTITY pdfdownload.WebsiteLabel "Website">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Downloaden">
-<!ENTITY pdfdownload.OpenButton "Open PDF">
-<!ENTITY pdfdownload.ViewHtmlButton "Als HTML bekijken">
-<!ENTITY pdfdownload.CancelButton "Annuleren">
+<!ENTITY pdfdownload.createdByLabel "Gemaakt door:">
+<!ENTITY pdfdownload.websiteLabel "Website">
+<!ENTITY pdfdownload.defaultActionLabel "Standaard actie">
+<!ENTITY pdfdownload.showPopup "Popupdialoogvenster weergeven">
+<!ENTITY pdfdownload.downloadButton "Downloaden">
+<!ENTITY pdfdownload.openButton "PDF openen">
+<!ENTITY pdfdownload.viewHtmlButton "Als HTML bekijken">
+<!ENTITY pdfdownload.cancelButton "Annuleren">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download kan uw standaard PDF-lezer niet vinden. Gelieve er een te kiezen in het optiesvenster van PDF Download.">
-<!ENTITY pdfdownload.AboutTitle "PDF Download - Over">
-<!ENTITY pdfdownload.WebsiteTooltip "Ga naar de website van de auteur">
-<!ENTITY pdfdownload.MoreInfo "Meer details:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Licentie voor de eindgebruiker lezen">
-<!ENTITY pdfdownload.License "Licentie">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Changelog bekijken">
-<!ENTITY pdfdownload.Changelog "Changelog">
-<!ENTITY pdfdownload.Acknowledgments "Dankbetuigingen">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - Over">
+<!ENTITY pdfdownload.websiteTooltip "De website van de auteur bekijken">
+<!ENTITY pdfdownload.moreInfo "Meer details:">
+<!ENTITY pdfdownload.readLicenseTooltip "Eindgebruikerslicentie lezen">
+<!ENTITY pdfdownload.license "Licentie">
+<!ENTITY pdfdownload.readChangelogTooltip "Changelog bekijken">
+<!ENTITY pdfdownload.changelog "Changelog">
+<!ENTITY pdfdownload.acknowledgments "Dankbetuigingen">
+<!ENTITY pdfdownload.siteListTitle "Uitzonderingen">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Opties">
-<!ENTITY pdfdownload.optionsPDFTab "PDF aan het openen">
+<!ENTITY pdfdownload.optionsGeneralTab "Algemeen">
+<!ENTITY pdfdownload.optionsPDFTab "PDF wordt geopend">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF naar HTML-conversie">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Meer details">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Extra-menu">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF Download in menu Extra weergeven">
 <!ENTITY pdfdownload.optionsOpenLink "Hoe PDF-links openen met de Firefox PDF-plugin:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hoe de HTML-versie van PDF-bestanden openen:">
-<!ENTITY pdfdownload.optionsSameTab "Open in hetzelfde tabblad">
-<!ENTITY pdfdownload.optionsNewTab "Open in een nieuw tabblad">
-<!ENTITY pdfdownload.optionsNewWindow "Open in een nieuw venster">
+<!ENTITY pdfdownload.optionsSameTab "In hetzelfde tabblad openen">
+<!ENTITY pdfdownload.optionsNewTab "In een nieuw tabblad openen">
+<!ENTITY pdfdownload.optionsNewWindow "In een nieuw venster openen">
 <!ENTITY pdfdownload.optionsOpenPdf "Open het PDF-bestand:">
-<!ENTITY pdfdownload.optionsUsePlugin "Gebruik de standaardactie van Firefox">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Met het standaardprogramma van uw besturingssysteem">
+<!ENTITY pdfdownload.optionsUsePlugin "Met de PDF-plugin">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Met het standaardprogramma van het besturingssyteem">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Met dit programma:">
 <!ENTITY pdfdownload.optionsBrowse "Bladeren...">
-<!ENTITY pdfdownload.optionsBrowseTitle "Kies een PDF-lezer">
+<!ENTITY pdfdownload.optionsBrowseTitle "Een PDF-lezer kiezen">
 <!ENTITY pdfdownload.optionsExeFiles "Windows-programma's">
 <!ENTITY pdfdownload.optionsAllFiles "Alle bestanden">
 <!ENTITY pdfdownload.optionsNotExecutableFileMsg "Het geselecteerde bestand is geen programma!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Update">
-<!ENTITY pdfdownload.optionsCheckUpdates "Controleer voor updates">
+<!ENTITY pdfdownload.optionsCheckUpdates "Updates zoeken">
 <!ENTITY pdfdownload.optionsHowToHelp "Hoe helpen">
 <!ENTITY pdfdownload.optionsMakeDonation "Een donatie maken">

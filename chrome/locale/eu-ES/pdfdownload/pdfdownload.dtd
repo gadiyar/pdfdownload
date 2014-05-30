@@ -1,23 +1,28 @@
-<!ENTITY pdfdownload.CreatedByLabel "Egilea:">
-<!ENTITY pdfdownload.WebsiteLabel "Webgunea">
-<!ENTITY pdfdownload.DownloadQuestionLabel "#Mezu hutsa#">
-<!ENTITY pdfdownload.DownloadButton "Fitxategia ekarri">
-<!ENTITY pdfdownload.OpenButton "PDF fitxategia ireki">
-<!ENTITY pdfdownload.ViewHtmlButton "HTML moduan ikusi">
-<!ENTITY pdfdownload.CancelButton "Utzi">
+<!ENTITY pdfdownload.createdByLabel "Egilea:">
+<!ENTITY pdfdownload.websiteLabel "Webgunea">
+<!ENTITY pdfdownload.defaultActionLabel "Aurrez aukeratutako ekintza">
+<!ENTITY pdfdownload.showPopup "Popup mezua erakutsi">
+<!ENTITY pdfdownload.downloadButton "Fitxategia ekarri">
+<!ENTITY pdfdownload.openButton "PDF fitxategia ireki">
+<!ENTITY pdfdownload.viewHtmlButton "HTML moduan ikusi">
+<!ENTITY pdfdownload.cancelButton "Utzi">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download-ek ezin du sistemaren PDF irakurgailua topatu. Mesedez, aukeratu bat PDF Download-en aukeretan.">
-<!ENTITY pdfdownload.AboutTitle "PDF Download-en gainean">
-<!ENTITY pdfdownload.WebsiteTooltip "Egilearen webgunea ikusi">
-<!ENTITY pdfdownload.MoreInfo "Informazio gehiago:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Erabiltzaile lizentzia irakurri">
-<!ENTITY pdfdownload.License "Lizentzia">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Aldaketa zerrenda ikusi">
-<!ENTITY pdfdownload.Changelog "Aldaketa zerrenda">
-<!ENTITY pdfdownload.Acknowledgments "Esker onak">
+<!ENTITY pdfdownload.aboutTitle "PDF Download-en gainean">
+<!ENTITY pdfdownload.websiteTooltip "Egilearen webgunea ikusi">
+<!ENTITY pdfdownload.moreInfo "Informazio gehiago:">
+<!ENTITY pdfdownload.readLicenseTooltip "Erabiltzaile lizentzia irakurri">
+<!ENTITY pdfdownload.license "Lizentzia">
+<!ENTITY pdfdownload.readChangelogTooltip "Aldaketa zerrenda ikusi">
+<!ENTITY pdfdownload.changelog "Aldaketa zerrenda">
+<!ENTITY pdfdownload.acknowledgments "Esker onak">
+<!ENTITY pdfdownload.siteListTitle "Salbuespenak">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Aukerak">
+<!ENTITY pdfdownload.optionsGeneralTab "Orokorrak">
 <!ENTITY pdfdownload.optionsPDFTab "PDF fitxategia irekitzean">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF-tik HTML-ra bihurtzean">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Aukera gehiago">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Tresna menua">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF Download Firefoxe-eko tresna menuan erakutsi">
 <!ENTITY pdfdownload.optionsOpenLink "Firefoxen PDF irakurgailua erabiltzean PDF fitxategiak nola ireki:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF fitxategien HTML bertsioa honela ireki:">
 <!ENTITY pdfdownload.optionsSameTab "Fitxa berean ireki">

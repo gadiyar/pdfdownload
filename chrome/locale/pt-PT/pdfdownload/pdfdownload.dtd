@@ -1,38 +1,43 @@
-<!ENTITY pdfdownload.CreatedByLabel "Criado por:">
-<!ENTITY pdfdownload.WebsiteLabel "Página web">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Descarregar">
-<!ENTITY pdfdownload.OpenButton "Abrir num novo separador">
-<!ENTITY pdfdownload.ViewHtmlButton "Ver como HTML num novo separador">
-<!ENTITY pdfdownload.CancelButton "Cancelar">
-<!ENTITY pdfdownload.osWarningMsg "O PDF Download nao consegue encontrar o seu leitor de PDFs. Por favor, escolha um no menu Opcoes">
-<!ENTITY pdfdownload.AboutTitle "PDF Download - Acerca">
-<!ENTITY pdfdownload.WebsiteTooltip "Ver a página web do autor">
-<!ENTITY pdfdownload.MoreInfo "Mais detalhes:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Ler licença de utilizador final">
-<!ENTITY pdfdownload.License "Licença">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Ver Relatório de Alterações">
-<!ENTITY pdfdownload.Changelog "Relatório de Alterações">
-<!ENTITY pdfdownload.Acknowledgments "Agradecimentos">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - Opcoes">
-<!ENTITY pdfdownload.optionsPDFTab "Abrindo PDF">
-<!ENTITY pdfdownload.optionsHTMLTab "Conversao de PDF para HTML">
+<!ENTITY pdfdownload.createdByLabel "Criado por:">
+<!ENTITY pdfdownload.websiteLabel "Endereço">
+<!ENTITY pdfdownload.defaultActionLabel "Acção por defeito">
+<!ENTITY pdfdownload.showPopup "Mostrar a janela">
+<!ENTITY pdfdownload.downloadButton "Descarregar">
+<!ENTITY pdfdownload.openButton "Abrir PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Ver como HTML">
+<!ENTITY pdfdownload.cancelButton "Cancelar">
+<!ENTITY pdfdownload.osWarningMsg "O PDF Download não consegue encontrar o seu leitor de PDFs. Por favor, escolha um no menu Opções">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - Acerca">
+<!ENTITY pdfdownload.websiteTooltip "Ver o endereço do Autor">
+<!ENTITY pdfdownload.moreInfo "Mais detalhes :">
+<!ENTITY pdfdownload.readLicenseTooltip "Ler a licença de utilizador">
+<!ENTITY pdfdownload.license "Licença">
+<!ENTITY pdfdownload.readChangelogTooltip "Ver o relatório de Alterações">
+<!ENTITY pdfdownload.changelog "Relatório de Alterações">
+<!ENTITY pdfdownload.acknowledgments "Autorizações">
+<!ENTITY pdfdownload.siteListTitle "Excepções">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Opções">
+<!ENTITY pdfdownload.optionsGeneralTab "Geral">
+<!ENTITY pdfdownload.optionsPDFTab "Abrir PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Conversão de PDF para HTML">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Mais detalhes">
-<!ENTITY pdfdownload.optionsOpenLink "Como abrir ligacoes em PDF usando a extensao PDF do Firefox">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Como abrir ficheiros PDF em versao HTML">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menu Ferramentas">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Mostrar o PDF Download no Menu Ferramentas do Firefox">
+<!ENTITY pdfdownload.optionsOpenLink "Como abrir ligações PDF usando a extensão PDF do Firefox:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Como abrir ficheiros PDF em versão HTML">
 <!ENTITY pdfdownload.optionsSameTab "Abrir no mesmo separador">
 <!ENTITY pdfdownload.optionsNewTab "Abrir num novo separador">
 <!ENTITY pdfdownload.optionsNewWindow "Abrir numa nova janela">
 <!ENTITY pdfdownload.optionsOpenPdf "Abertura do ficheiro PDF:">
-<!ENTITY pdfdownload.optionsUsePlugin "Usar a acçao original do Firefox">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Usar o programa utilisado pelo sistema operativo">
-<!ENTITY pdfdownload.optionsUseCustomProgram "Usar este visualizador">
+<!ENTITY pdfdownload.optionsUsePlugin "Usar a acção original do Firefox">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Usar o programa utilizado pelo sistema operativo">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Usar este visualizador:">
 <!ENTITY pdfdownload.optionsBrowse "Procurar...">
 <!ENTITY pdfdownload.optionsBrowseTitle "Escolha o Visualizador PDF">
-<!ENTITY pdfdownload.optionsExeFiles "Aplicacoes do Windows">
+<!ENTITY pdfdownload.optionsExeFiles "Aplicações do Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Todos os Ficheiros">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "O ficheiro seleccionado nao é executavel!">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "O ficheiro seleccionado não é executável!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Actualizar">
-<!ENTITY pdfdownload.optionsCheckUpdates "Ver Actualizacoes">
+<!ENTITY pdfdownload.optionsCheckUpdates "Verificar Actualizações">
 <!ENTITY pdfdownload.optionsHowToHelp "Como ajudar">
-<!ENTITY pdfdownload.optionsMakeDonation "Fazer uma doação">
+<!ENTITY pdfdownload.optionsMakeDonation "Fazer um donativo">

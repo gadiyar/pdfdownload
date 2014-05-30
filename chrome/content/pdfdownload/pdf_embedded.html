@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript">
+  <!--
+  function getURLParam(strParamName){
+  	var strReturn = "";
+  	var strHref = window.location.href;
+  	if ( strHref.indexOf("?pdfFile") > -1 ){
+    		var strReturn = strHref.substr(strHref.indexOf("?pdfFile=")+9);
+	}
+  	return strReturn;
+  }
+  // -->
+</script>
+</head>
+<body>	
+	<script type="text/javascript">
+		document.title = getURLParam("pdfFile");
+		document.write('<EMBED type="application/pdf" SRC="'+getURLParam("pdfFile")+'" HEIGHT='+(window.innerHeight-20)+' WIDTH='+(window.innerWidth-20)+' href="'+getURLParam("pdfFile")+'">');
+	</script>
+		<NOEMBED> Your browser does not support embedded PDF files. </NOEMBED> 
+	</EMBED>
+</body>
+</html>

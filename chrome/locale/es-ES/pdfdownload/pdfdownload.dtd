@@ -1,33 +1,38 @@
-<!ENTITY pdfdownload.CreatedByLabel "Creado por:">
-<!ENTITY pdfdownload.WebsiteLabel "Pagina web">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Guardar">
-<!ENTITY pdfdownload.OpenButton "Abrir">
-<!ENTITY pdfdownload.ViewHtmlButton "Ver como HTML">
-<!ENTITY pdfdownload.CancelButton "Cancelar">
+<!ENTITY pdfdownload.createdByLabel "Creada por:">
+<!ENTITY pdfdownload.websiteLabel "Página web">
+<!ENTITY pdfdownload.defaultActionLabel "Acción por defecto">
+<!ENTITY pdfdownload.showPopup "Mostrar ventana emergente">
+<!ENTITY pdfdownload.downloadButton "Descargarlo">
+<!ENTITY pdfdownload.openButton "Abrir PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Ver como HTML">
+<!ENTITY pdfdownload.cancelButton "Cancelar">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download no puede encontrar tu lector de PDF por defecto. Por favor, escoge uno en las opciones de PDF Download.">
-<!ENTITY pdfdownload.AboutTitle "PDF Download - Acerca de">
-<!ENTITY pdfdownload.WebsiteTooltip "Ver página web del autor">
-<!ENTITY pdfdownload.MoreInfo "Más detalles:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Leer licencia para usuario final">
-<!ENTITY pdfdownload.License "Licencia">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Ver historial de cambios">
-<!ENTITY pdfdownload.Changelog "Historial de cambios">
-<!ENTITY pdfdownload.Acknowledgments "Agradecimientos">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - Acerca de">
+<!ENTITY pdfdownload.websiteTooltip "Ver página web del autor">
+<!ENTITY pdfdownload.moreInfo "Más detalles">
+<!ENTITY pdfdownload.readLicenseTooltip "Lea la licencia del usuario">
+<!ENTITY pdfdownload.license "Licencia">
+<!ENTITY pdfdownload.readChangelogTooltip "Ver lista de cambios">
+<!ENTITY pdfdownload.changelog "Lista de cambios">
+<!ENTITY pdfdownload.acknowledgments "Agradecimientos">
+<!ENTITY pdfdownload.siteListTitle "Excepciones">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Opciones">
+<!ENTITY pdfdownload.optionsGeneralTab "General">
 <!ENTITY pdfdownload.optionsPDFTab "Apertura de PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Conversión PDF a HTML">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Más detalles">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menú Herramientas">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Mostrar el elemento PDF Download en el menú Herramientas de Firefox">
 <!ENTITY pdfdownload.optionsOpenLink "Cómo abrir enlaces PDF utilizando la extensión PDF de Firefox:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Cómo abrir la versión HTML de archivos PDF:">
 <!ENTITY pdfdownload.optionsSameTab "Abrir en misma pestaña">
-<!ENTITY pdfdownload.optionsNewTab "Abrir en nueva pestaña">
-<!ENTITY pdfdownload.optionsNewWindow "Abrir en nueva ventana">
-<!ENTITY pdfdownload.optionsOpenPdf "Apertura de archivo PDF:">
-<!ENTITY pdfdownload.optionsUsePlugin "Usar acción por defecto de Firefox">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Usar visor por defecto del SO">
+<!ENTITY pdfdownload.optionsNewTab "Abrir en una pestaña nueva">
+<!ENTITY pdfdownload.optionsNewWindow "Abrir en una ventana nueva">
+<!ENTITY pdfdownload.optionsOpenPdf "Apertura de archivos PDF:">
+<!ENTITY pdfdownload.optionsUsePlugin "Usar el plugin para archivos PDF">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Usar el visor por defecto del SO">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Usar el siguiente visor:">
-<!ENTITY pdfdownload.optionsBrowse "Examinar...">
+<!ENTITY pdfdownload.optionsBrowse "Seleccionar...">
 <!ENTITY pdfdownload.optionsBrowseTitle "Elegir visor PDF">
 <!ENTITY pdfdownload.optionsExeFiles "Aplicaciones de Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Todos los archivos">
@@ -35,4 +40,4 @@
 <!ENTITY pdfdownload.optionsUpdateLabel "Actualizar">
 <!ENTITY pdfdownload.optionsCheckUpdates "Buscar actualizaciones">
 <!ENTITY pdfdownload.optionsHowToHelp "Como ayudar">
-<!ENTITY pdfdownload.optionsMakeDonation "Hacer donativo">
+<!ENTITY pdfdownload.optionsMakeDonation "Hacer un donativo">

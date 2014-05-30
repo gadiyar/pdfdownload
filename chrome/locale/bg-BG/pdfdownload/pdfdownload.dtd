@@ -1,0 +1,43 @@
+<!ENTITY pdfdownload.createdByLabel "Създадено от:">
+<!ENTITY pdfdownload.websiteLabel "Уебсайт">
+<!ENTITY pdfdownload.defaultActionLabel "Нормално действие">
+<!ENTITY pdfdownload.showPopup "Покажи popup">
+<!ENTITY pdfdownload.downloadButton "Изтегли">
+<!ENTITY pdfdownload.openButton "Отвори PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Покажи като HTML">
+<!ENTITY pdfdownload.cancelButton "Отмени">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download не може да намери PDF четец по подразбиране. Моля, изберете такъв от настройките на PDF Download!">
+<!ENTITY pdfdownload.aboutTitle "PDF Даунлоуд - За">
+<!ENTITY pdfdownload.websiteTooltip "Виж сайта на автора">
+<!ENTITY pdfdownload.moreInfo "Още детайли:">
+<!ENTITY pdfdownload.readLicenseTooltip "Прочети юзър лиценза">
+<!ENTITY pdfdownload.license "Лиценз">
+<!ENTITY pdfdownload.readChangelogTooltip "Виж Промените">
+<!ENTITY pdfdownload.changelog "Промени">
+<!ENTITY pdfdownload.acknowledgments "Потвърждения">
+<!ENTITY pdfdownload.siteListTitle "Изключения">
+<!ENTITY pdfdownload.optionsTitle "PDF Даунлоуд - Настройки">
+<!ENTITY pdfdownload.optionsGeneralTab "Главно">
+<!ENTITY pdfdownload.optionsPDFTab "Отваряне на PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Конвертиране на PDF в HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Още детайли:">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Меню Инструменти">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Показвай PDF Даунлоуд във Firefox Меню Инструменти.">
+<!ENTITY pdfdownload.optionsOpenLink "Как да отваряш PDF линкове, когато използваш Firefox PDF приставка:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Как да отвориш HTML версията на PDF файла:">
+<!ENTITY pdfdownload.optionsSameTab "Отвори в същия подпрозорец">
+<!ENTITY pdfdownload.optionsNewTab "Отвори в нов подпрозорец">
+<!ENTITY pdfdownload.optionsNewWindow "Отвори в нов прозорец">
+<!ENTITY pdfdownload.optionsOpenPdf "Отваря се PDF файл:">
+<!ENTITY pdfdownload.optionsUsePlugin "Използвай PDF приставка-та">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Използвай">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Използвай следния визуализатор:">
+<!ENTITY pdfdownload.optionsBrowse "Брауз...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Избери PDF Визуализатор">
+<!ENTITY pdfdownload.optionsExeFiles "Windows Апликации">
+<!ENTITY pdfdownload.optionsAllFiles "Всички Файлове">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Избраната функция не може да се изпълни за този файл!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Обнови">
+<!ENTITY pdfdownload.optionsCheckUpdates "Провери за ъпдейти">
+<!ENTITY pdfdownload.optionsHowToHelp "Как да помогнеш">
+<!ENTITY pdfdownload.optionsMakeDonation "Направи дарение">

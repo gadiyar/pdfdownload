@@ -14,7 +14,7 @@
    - The Original Code is "PDF Download".
    -
    - The Initial Developer of the Original Code is Denis Remondini.
-   - Portions created by the Initial Developer are Copyright (C) 2005 Denis Remondini.  
+   - Portions created by the Initial Developer are Copyright (C) 2005-2006 Denis Remondini.  
    - All Rights Reserved.
    -
    - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
@@ -34,34 +34,15 @@
    - 
 ***** END LICENSE BLOCK *****/
 
-var _openPDFLinkRadioGroup = "pdfdownload-openPDFLink";
-var _openPDFtoHTMLRadioGroup = "pdfdownload-openPDFtoHTML";
 var _openPDFRadioGroup	  = "pdfdownload-openPDF";
 var _pdfViewerPathTextBox = "pdfdownload-pdfViewerPath";
-var _openPDFNewWindow = "openPDFNewWindow";
-var _openPDFNewTab = "openPDFNewTab";
-var _openPDFSameTab = "openPDFSameTab";
 
-
-const preferencesService  = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch("pdfdownload.");
+const preferencesService  = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch("extensions.pdfdownload.");
 
 const fileCID  = "@mozilla.org/file/local;1";
 const fileIID  = Components.interfaces.nsILocalFile;
 
 function onOK(notExecutableFileMsg) {
-    /*
-	Save how to open the PDF link: in the same tab, in a new tab or in a new window.
-     */
-    var openPDFLink = document.getElementById(_openPDFLinkRadioGroup);
-    var prefname = "openPDFLink";
-    preferencesService.setCharPref(prefname,openPDFLink.selectedItem.id);
-
-    /*
-	Save how to open the PDFtoHTML link: in the same tab, in a new tab or in a new window.
-     */
-    var openPDFtoHTML = document.getElementById(_openPDFtoHTMLRadioGroup);
-    var prefname = "openPDFtoHTML";
-    preferencesService.setCharPref(prefname,openPDFtoHTML.selectedItem.id);
 
     var path = document.getElementById(_pdfViewerPathTextBox).value;
     var openPDF = document.getElementById(_openPDFRadioGroup);
@@ -70,119 +51,25 @@ function onOK(notExecutableFileMsg) {
 	return false;
     }
 
-    /*
-	Save how to open a PDF file: with plugin, with default viewer, with custom viewer
-     */
-    prefname = "openPDF";
-    preferencesService.setCharPref(prefname,openPDF.selectedItem.id);
- 
-    /*
-     Save the path of the custom viewer
-     */
-    prefname = "pdfViewerPath";
-    if (openPDF.selectedItem.id == "customViewer") {
-	preferencesService.setCharPref(prefname,path);
-    }
-
     return true;
 }
 
 function onLoad() {
     sizeToContent();
-    var openLink = document.getElementById(_openPDFLinkRadioGroup);
-    /*
-	Read how to open the link: in the same tab, in a new tab or in a new window.
-     */
-    var prefname = "openPDFLink";
-    var prefvalue;
-    try {
-      prefvalue = preferencesService.getCharPref(prefname);
-    } catch(ex) {
-	prefvalue = "openPDFNewTab";
+    
+    if (!preferencesService.prefHasUserValue("showToolsMenuItem")) {
+	preferencesService.setBoolPref("showToolsMenuItem",true);
+	document.getElementById("showItemTools").checked = true;
     }
-    openLink.selectedItem = document.getElementById(prefvalue);
-
-    var openPDFtoHTML = document.getElementById(_openPDFtoHTMLRadioGroup);
-    /*
-	Read how to open the link: in the same tab, in a new tab or in a new window.
-     */
-    var prefname = "openPDFtoHTML";
-    var prefvalue;
-    try {
-      prefvalue = preferencesService.getCharPref(prefname);
-    } catch(ex) {
-	prefvalue = "openHTMLNewTab";
-    }
-    openPDFtoHTML.selectedItem = document.getElementById(prefvalue);
-
-
-    /*
-	Read how to open a PDF file: with plugin, with default viewer, with custom viewer
-     */
-    var openPDF = document.getElementById(_openPDFRadioGroup);
-    prefname = "openPDF";
-    try {
-      prefvalue = preferencesService.getCharPref(prefname);
-    } catch(ex) {
-	prefvalue = "defaultViewer";
-    }
-    openPDF.selectedItem = document.getElementById(prefvalue);
-
-    if (prefvalue == "customViewer") {
-	document.getElementById(_pdfViewerPathTextBox).disabled = false;
-    } else {
-	document.getElementById(_pdfViewerPathTextBox).disabled = true;
-    }
-    if (prefvalue != "usePlugin") {	
-	document.getElementById(_openPDFSameTab).setAttribute("disabled",true);
-	document.getElementById(_openPDFNewTab).setAttribute("disabled",true);
-	document.getElementById(_openPDFNewWindow).setAttribute("disabled",true);		
-    } else {
-	document.getElementById(_openPDFSameTab).removeAttribute("disabled");
-	document.getElementById(_openPDFNewTab).removeAttribute("disabled");
-	document.getElementById(_openPDFNewWindow).removeAttribute("disabled");
-    }
-
-   
-    /*
-	Read the path of the custom viewer
-     */
-    prefname = "pdfViewerPath";
-    try {
-      prefvalue = preferencesService.getCharPref(prefname);
-    } catch(ex) {
-	prefvalue = "";
-    } 
-
-    document.getElementById(_pdfViewerPathTextBox).value = prefvalue;
-    document.getElementById(_openPDFRadioGroup).addEventListener("select",toggleViewerPath,true);
-
 }
 
-function toggleViewerPath(event) {
-	var openPDF = document.getElementById(_openPDFRadioGroup);
-	if (openPDF.selectedIndex != 2) {
-		document.getElementById(_pdfViewerPathTextBox).setAttribute("disabled",true);
-	} else {
-		document.getElementById(_pdfViewerPathTextBox).removeAttribute("disabled");
-	}
-	if (openPDF.selectedIndex != 0) {	
-		document.getElementById(_openPDFSameTab).setAttribute("disabled",true);
-		document.getElementById(_openPDFNewTab).setAttribute("disabled",true);
-		document.getElementById(_openPDFNewWindow).setAttribute("disabled",true);		
-	} else {
-		document.getElementById(_openPDFSameTab).removeAttribute("disabled");
-		document.getElementById(_openPDFNewTab).removeAttribute("disabled");
-		document.getElementById(_openPDFNewWindow).removeAttribute("disabled");
-	}
-}
 
 function onPickPdfViewerPath(dialogTitle,exeFiles,allFiles,notExecutableFileMsg) {
 	var nsIFilePicker = Components.interfaces.nsIFilePicker;
 	var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(nsIFilePicker);
 	fp.init(window, dialogTitle, nsIFilePicker.modeOpen);
-	fp.appendFilter(exeFiles,"*.exe");
-	fp.appendFilter(allFiles,"*");
+	fp.appendFilters(nsIFilePicker.filterApps);
+	fp.appendFilters(nsIFilePicker.filterAll);
 	var file  = Components.classes[fileCID].createInstance(fileIID);
 	var pdfViewer;
 	var path;

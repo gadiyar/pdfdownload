@@ -15,7 +15,7 @@
    - The Original Code is "PDF Download".
    -
    - The Initial Developer of the Original Code is Denis Remondini.
-   - Portions created by the Initial Developer are Copyright (C) 2005 Denis Remondini.  
+   - Portions created by the Initial Developer are Copyright (C) 2005-2006 Denis Remondini.  
    - All Rights Reserved.
    -
    - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
@@ -39,7 +39,7 @@
 <?xml-stylesheet href="chrome://pdfdownload/skin/pdfdownload.css" type="text/css"?>
 <!DOCTYPE window SYSTEM "chrome://pdfdownload/locale/pdfdownload.dtd">
 
-<dialog title="&pdfdownload.AboutTitle;" chromehidden="menubar toolbar location directories status extrachrome" id="genericAbout" onload="window.focus()" buttons="accept" xmlns:em="http://www.mozilla.org/2004/em-rdf#" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<dialog title="&pdfdownload.aboutTitle;" chromehidden="menubar toolbar location directories status extrachrome" id="genericAbout" onload="window.focus()" buttons="accept" xmlns:em="http://www.mozilla.org/2004/em-rdf#" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
   <script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
 
@@ -47,16 +47,16 @@
 <hbox>
 <vbox>
   <text value="PDF Download" style="font-weight: bold; font-size: x-large;"/>
-  <label>ver. 0.6</label>
+  <label>ver. 0.7</label>
   <separator class="thin"/>
-  <text value="&pdfdownload.CreatedByLabel;" style="font-weight: bold;"/>
+  <text value="&pdfdownload.createdByLabel;" style="font-weight: bold;"/>
   <label>Denis Remondini</label> 
   <separator class="thin"/>
   <text value="E-mail" style="font-weight: bold;"/>
   <label>denistn@gmail.com</label>
   <separator class="thin"/>
-  <text value="&pdfdownload.WebsiteLabel;" style="font-weight: bold;"/>
-  <label class="link" tooltiptext="&pdfdownload.WebsiteTooltip;" onclick="pdfDownloadShared.openURL('http://www.rabotat.org/firefox/');">http://www.rabotat.org/firefox/</label>
+  <text value="&pdfdownload.websiteLabel;" style="font-weight: bold;"/>
+  <label class="link" tooltiptext="&pdfdownload.websiteTooltip;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');">http://www.pdfdownload.org</label>
 </vbox>
 <vbox>
 <spacer flex="1"/>
@@ -66,11 +66,11 @@
 </hbox>
   <separator class="thin"/>
   <separator class="thin"/>
-  <text value="&pdfdownload.MoreInfo;" style="font-weight: bold;"/> 
-  <label class="link" tooltiptext="&pdfdownload.ReadLicenseTooltip;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/LICENSE', '_blank')">&pdfdownload.License;</label>
+  <text value="&pdfdownload.moreInfo;" style="font-weight: bold;"/> 
+  <label class="link" tooltiptext="&pdfdownload.readLicenseTooltip;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/LICENSE', '_blank')">&pdfdownload.license;</label>
   <separator class="thin"/>
-  <label class="link" align="center" tooltiptext="&pdfdownload.ReadChangelogTooltip;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/CHANGELOG', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.Changelog;</label>
+  <label class="link" align="center" tooltiptext="&pdfdownload.readChangelogTooltip;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/CHANGELOG', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.changelog;</label>
   <separator class="thin"/>
-  <label class="link" align="center" tooltiptext="&pdfdownload.Acknowledgments;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/acknowledgments', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.Acknowledgments;</label>
+  <label class="link" align="center" tooltiptext="&pdfdownload.acknowledgments;" onclick="pdfDownloadShared.openURL('chrome://pdfdownload/content/acknowledgments', '_blank', 'scrollbars=yes,menubar=yes,titlebar=yes,resizable=yes')">&pdfdownload.acknowledgments;</label>
 </groupbox>
 </dialog>

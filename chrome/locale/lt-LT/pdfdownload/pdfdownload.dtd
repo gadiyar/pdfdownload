@@ -1,0 +1,43 @@
+<!ENTITY pdfdownload.createdByLabel "Sukūrė:">
+<!ENTITY pdfdownload.websiteLabel "Tinklapis">
+<!ENTITY pdfdownload.defaultActionLabel "Veiksmas pagal nutylėjimą">
+<!ENTITY pdfdownload.showPopup "Rodyti iššokantį langą">
+<!ENTITY pdfdownload.downloadButton "Atsisiųsti">
+<!ENTITY pdfdownload.openButton "Atidaryti PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Peržiūrėti kaip HTML">
+<!ENTITY pdfdownload.cancelButton "Atšaukti">
+<!ENTITY pdfdownload.osWarningMsg "Nerandu programos skirtos PDF peržiūrai. Pabandykite pasirinkti nuostatų skiltyje!">
+<!ENTITY pdfdownload.aboutTitle "Apie PDF Download">
+<!ENTITY pdfdownload.websiteTooltip "Peržiūrėti autoriaus tinklapį.">
+<!ENTITY pdfdownload.moreInfo "Daugiau detalių.:">
+<!ENTITY pdfdownload.readLicenseTooltip "Licenzijos sutartis">
+<!ENTITY pdfdownload.license "Licenzija">
+<!ENTITY pdfdownload.readChangelogTooltip "Atlikti pakeitimai">
+<!ENTITY pdfdownload.changelog "Pasikeitimų sąrašas">
+<!ENTITY pdfdownload.acknowledgments "Patvirtinimai">
+<!ENTITY pdfdownload.siteListTitle "Išimtys">
+<!ENTITY pdfdownload.optionsTitle "Nuostatos">
+<!ENTITY pdfdownload.optionsGeneralTab "Bendros">
+<!ENTITY pdfdownload.optionsPDFTab "PDF atidarymas">
+<!ENTITY pdfdownload.optionsHTMLTab "Konvertavimas PDF į HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Daugiau detalių">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Įrankių juosta">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Nuorodos rodymas naršyklėje">
+<!ENTITY pdfdownload.optionsOpenLink "Kaip atverti PDF nuoruodą pasinaudojus Firefox PDF įskiepu.:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Kaip atverti HTML failo versiją.:">
+<!ENTITY pdfdownload.optionsSameTab "Esamoje kortelėje">
+<!ENTITY pdfdownload.optionsNewTab "Naujoje kortelėje">
+<!ENTITY pdfdownload.optionsNewWindow "Atverti naujame lange">
+<!ENTITY pdfdownload.optionsOpenPdf "PDF atidarymas:">
+<!ENTITY pdfdownload.optionsUsePlugin "Naudojantis PDF įskiepu">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Naudojant įdiegta programa">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Naudoti šį žiūrėjimą.:">
+<!ENTITY pdfdownload.optionsBrowse "Naršyti...">
+<!ENTITY pdfdownload.optionsBrowseTitle "PDF peržiūrėsiu su">
+<!ENTITY pdfdownload.optionsExeFiles "Windows programa">
+<!ENTITY pdfdownload.optionsAllFiles "Visi failai">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Reikia paleidžiamojo failo!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Atnaujinti">
+<!ENTITY pdfdownload.optionsCheckUpdates "Ieškoti atnaujinimų">
+<!ENTITY pdfdownload.optionsHowToHelp "Kaip padėti">
+<!ENTITY pdfdownload.optionsMakeDonation "Paaukoti">

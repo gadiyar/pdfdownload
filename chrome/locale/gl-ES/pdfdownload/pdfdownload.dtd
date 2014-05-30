@@ -1,0 +1,43 @@
+<!ENTITY pdfdownload.createdByLabel "Creado por:">
+<!ENTITY pdfdownload.websiteLabel "Sitio web">
+<!ENTITY pdfdownload.defaultActionLabel "Acción por defecto">
+<!ENTITY pdfdownload.showPopup "Amosar diálogo emerxente">
+<!ENTITY pdfdownload.downloadButton "Baixalo">
+<!ENTITY pdfdownload.openButton "Abrir o PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Ver como HTML">
+<!ENTITY pdfdownload.cancelButton "Cancelar">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download non pode atopar o seu lector de PDF por defecto. Por favor, escolla un no diálogo de opcións de PDF Download">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - Arredor de">
+<!ENTITY pdfdownload.websiteTooltip "Ver o sitio web do autor">
+<!ENTITY pdfdownload.moreInfo "Máis detalles:">
+<!ENTITY pdfdownload.readLicenseTooltip "Ler licencia de usuario final">
+<!ENTITY pdfdownload.license "Licencia">
+<!ENTITY pdfdownload.readChangelogTooltip "Ver rexistro de cambios">
+<!ENTITY pdfdownload.changelog "Rexistro de cambios">
+<!ENTITY pdfdownload.acknowledgments "Recoñecementos">
+<!ENTITY pdfdownload.siteListTitle "Excepcións">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Opcións">
+<!ENTITY pdfdownload.optionsGeneralTab "Xeral">
+<!ENTITY pdfdownload.optionsPDFTab "Apertura de PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Conversión de PDF a HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Máis detalles">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menú de ferramentas">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Amosar elemento &quot;PDF Download&quot; no menú de ferramentas de Firefox">
+<!ENTITY pdfdownload.optionsOpenLink "Como abrir ligazóns de PDF empregando o plugin de PDF de Firefox:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Como abrir a versión HTML de arquivos PDF:">
+<!ENTITY pdfdownload.optionsSameTab "Abrir na mesma pestaña">
+<!ENTITY pdfdownload.optionsNewTab "Abrir nunha nova pestaña">
+<!ENTITY pdfdownload.optionsNewWindow "Abrir nunha nova xanela">
+<!ENTITY pdfdownload.optionsOpenPdf "Apertura de arquivo PDF:">
+<!ENTITY pdfdownload.optionsUsePlugin "Usar o plugin de PDF">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Empregar o visor por defecto do SO">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Empregar este visor:">
+<!ENTITY pdfdownload.optionsBrowse "Examinar...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Escoller visor de PDF">
+<!ENTITY pdfdownload.optionsExeFiles "Aplicacións de Windows">
+<!ENTITY pdfdownload.optionsAllFiles "Tódolos arquivos">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "¡O arquivo seleccionado non é executable!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Actualizar">
+<!ENTITY pdfdownload.optionsCheckUpdates "Comprobar actualizacións">
+<!ENTITY pdfdownload.optionsHowToHelp "Como axudar">
+<!ENTITY pdfdownload.optionsMakeDonation "Facer unha doazón">

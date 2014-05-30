@@ -14,7 +14,7 @@
    - The Original Code is "PDF Download".
    -
    - The Initial Developer of the Original Code is Denis Remondini.
-   - Portions created by the Initial Developer are Copyright (C) 2005 Denis Remondini.  
+   - Portions created by the Initial Developer are Copyright (C) 2005-2006 Denis Remondini.  
    - All Rights Reserved.
    -
    - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
@@ -66,7 +66,6 @@ PdfDownloadShared.prototype.help = function(s) {
 	}
 	pdfDownloadShared.openURL(url);
 }
-
 
 // create the object
 const pdfDownloadShared = new PdfDownloadShared();

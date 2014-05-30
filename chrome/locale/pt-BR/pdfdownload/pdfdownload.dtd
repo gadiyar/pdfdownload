@@ -1,23 +1,28 @@
-<!ENTITY pdfdownload.CreatedByLabel "Criado por:">
-<!ENTITY pdfdownload.WebsiteLabel "Homepage">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Baixar">
-<!ENTITY pdfdownload.OpenButton "Abrir o PDF">
-<!ENTITY pdfdownload.ViewHtmlButton "Visualizar como página HTML">
-<!ENTITY pdfdownload.CancelButton "Cancelar">
+<!ENTITY pdfdownload.createdByLabel "Criado por:">
+<!ENTITY pdfdownload.websiteLabel "Home Page">
+<!ENTITY pdfdownload.defaultActionLabel "Ação padrão">
+<!ENTITY pdfdownload.showPopup "Exibir diálogo popup">
+<!ENTITY pdfdownload.downloadButton "Salvar">
+<!ENTITY pdfdownload.openButton "Abrir PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Exibir como HTML">
+<!ENTITY pdfdownload.cancelButton "Cancelar">
 <!ENTITY pdfdownload.osWarningMsg "O PDF Download não pôde encontrar o seu leitor padrão de PDFs. Por favor, defina algum leitor de PDFs nas opções do PDF Download.">
-<!ENTITY pdfdownload.AboutTitle "Sobre o PDF Download">
-<!ENTITY pdfdownload.WebsiteTooltip "Visitar o site">
-<!ENTITY pdfdownload.MoreInfo "Mais informações:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Ler a licença do usuário final">
-<!ENTITY pdfdownload.License "Licença">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Verificar registro das últimas modificações">
-<!ENTITY pdfdownload.Changelog "Registro de modificações">
-<!ENTITY pdfdownload.Acknowledgments "Créditos">
+<!ENTITY pdfdownload.aboutTitle "Sobre o PDF Download">
+<!ENTITY pdfdownload.websiteTooltip "Visitar o site">
+<!ENTITY pdfdownload.moreInfo "Mais informações:">
+<!ENTITY pdfdownload.readLicenseTooltip "Visualizar licença do usuário final">
+<!ENTITY pdfdownload.license "Licença">
+<!ENTITY pdfdownload.readChangelogTooltip "Visualizar últimas alterações">
+<!ENTITY pdfdownload.changelog "Últimas alterações">
+<!ENTITY pdfdownload.acknowledgments "Notificações">
+<!ENTITY pdfdownload.siteListTitle "Exceções">
 <!ENTITY pdfdownload.optionsTitle "Opções do PDF Download">
+<!ENTITY pdfdownload.optionsGeneralTab "Geral">
 <!ENTITY pdfdownload.optionsPDFTab "Abrir PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Conversão PDF para HTML">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Mais informações">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Menu Ferramentas">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Exibir item do PDF Download no menu Ferramentas">
 <!ENTITY pdfdownload.optionsOpenLink "Abrir PDFs usando o plugin do Firefox em:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Abrir PDFs convertidos para HTML em:">
 <!ENTITY pdfdownload.optionsSameTab "Aba atual">

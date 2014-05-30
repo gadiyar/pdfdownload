@@ -1,23 +1,28 @@
-<!ENTITY pdfdownload.CreatedByLabel "作者:">
-<!ENTITY pdfdownload.WebsiteLabel "網站：">
-<!ENTITY pdfdownload.DownloadQuestionLabel "null">
-<!ENTITY pdfdownload.DownloadButton "下載">
-<!ENTITY pdfdownload.OpenButton "開啟於新分頁">
-<!ENTITY pdfdownload.ViewHtmlButton "轉換成網頁（HTML）格式並開啟於新分頁">
-<!ENTITY pdfdownload.CancelButton "取消">
+<!ENTITY pdfdownload.createdByLabel "作者：">
+<!ENTITY pdfdownload.websiteLabel "網站：">
+<!ENTITY pdfdownload.defaultActionLabel "預設動作">
+<!ENTITY pdfdownload.showPopup "跳出對話框">
+<!ENTITY pdfdownload.downloadButton "下載">
+<!ENTITY pdfdownload.openButton "開啟">
+<!ENTITY pdfdownload.viewHtmlButton "以網頁（HTML）格式檢視">
+<!ENTITY pdfdownload.cancelButton "取消">
 <!ENTITY pdfdownload.osWarningMsg "找不到PDF閱讀軟體！請於選項中設定。">
-<!ENTITY pdfdownload.AboutTitle "PDF Download - 關於">
-<!ENTITY pdfdownload.WebsiteTooltip "瀏覽作者網站">
-<!ENTITY pdfdownload.MoreInfo "更多資訊:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "閲讀軟體合約">
-<!ENTITY pdfdownload.License "軟體合約">
-<!ENTITY pdfdownload.ReadChangelogTooltip "查看更新記錄">
-<!ENTITY pdfdownload.Changelog "更新記錄">
-<!ENTITY pdfdownload.Acknowledgments "致謝">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - 關於">
+<!ENTITY pdfdownload.websiteTooltip "瀏覽作者網站">
+<!ENTITY pdfdownload.moreInfo "更多資訊">
+<!ENTITY pdfdownload.readLicenseTooltip "閱讀使用者授權提款">
+<!ENTITY pdfdownload.license "授權提款">
+<!ENTITY pdfdownload.readChangelogTooltip "瀏覽更新日誌">
+<!ENTITY pdfdownload.changelog "更新日誌">
+<!ENTITY pdfdownload.acknowledgments "致謝">
+<!ENTITY pdfdownload.siteListTitle "免責條款">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - 選項">
-<!ENTITY pdfdownload.optionsPDFTab "PDF格式設定">
-<!ENTITY pdfdownload.optionsHTMLTab "HTML格式設定">
+<!ENTITY pdfdownload.optionsGeneralTab "一般設定">
+<!ENTITY pdfdownload.optionsPDFTab "PDF開啟設定">
+<!ENTITY pdfdownload.optionsHTMLTab "HTML轉換設定">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "更多資訊">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "工具列設定">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "顯示PDF Download選項於工具列">
 <!ENTITY pdfdownload.optionsOpenLink "開啟於：">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "開啟於：">
 <!ENTITY pdfdownload.optionsSameTab "目前的分頁">
@@ -35,4 +40,4 @@
 <!ENTITY pdfdownload.optionsUpdateLabel "更新">
 <!ENTITY pdfdownload.optionsCheckUpdates "檢查更新">
 <!ENTITY pdfdownload.optionsHowToHelp "求助">
-<!ENTITY pdfdownload.optionsMakeDonation "捐獻">
+<!ENTITY pdfdownload.optionsMakeDonation "贊助">

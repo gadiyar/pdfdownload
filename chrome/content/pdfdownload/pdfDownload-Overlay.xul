@@ -15,7 +15,7 @@
    - The Original Code is "PDF Download".
    -
    - The Initial Developer of the Original Code is Denis Remondini.
-   - Portions created by the Initial Developer are Copyright (C) 2005 Denis Remondini.  
+   - Portions created by the Initial Developer are Copyright (C) 2005-2006 Denis Remondini.  
    - All Rights Reserved.
    -
    - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
@@ -44,7 +44,7 @@
 
     <!-- Tools menu -->
     <menupopup id="menu_ToolsPopup">
-        <menuitem insertafter="devToolsSeparator" label="&pdfdownload.optionsTitle;" oncommand="showPDFDownloadSettings();" />
+        <menuitem insertafter="devToolsSeparator" label="&pdfdownload.optionsTitle;" id="PDFDownloadToolsItem" oncommand="showPDFDownloadSettings();" />
     </menupopup>    
 
 

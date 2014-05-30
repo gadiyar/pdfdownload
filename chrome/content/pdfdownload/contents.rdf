@@ -9,7 +9,7 @@
   <RDF:Description about="urn:mozilla:package:pdfdownload"
     chrome:displayName="PDF Download"
     chrome:author="Denis Remondini"
-    chrome:authorURL="http://www.rabotat.org/firefox/"
+    chrome:authorURL="http://www.pdfdownload.org"
     chrome:name="pdfdownload"
     chrome:settingsURL="chrome://pdfdownload/content/options.xul"
     chrome:extension="true"

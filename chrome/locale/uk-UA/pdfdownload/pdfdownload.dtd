@@ -1,0 +1,43 @@
+<!ENTITY pdfdownload.createdByLabel "Створено:">
+<!ENTITY pdfdownload.websiteLabel "Вебсайт">
+<!ENTITY pdfdownload.defaultActionLabel "Дія позамовчуванню">
+<!ENTITY pdfdownload.showPopup "Показувати випливаючий діалог">
+<!ENTITY pdfdownload.downloadButton "Завантажити">
+<!ENTITY pdfdownload.openButton "Відкрити PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Подивитись як HTML">
+<!ENTITY pdfdownload.cancelButton "Скасувати">
+<!ENTITY pdfdownload.osWarningMsg "Завантажувач PDF не може відшукати PDF читалку. Оберіть котрусь у налаштуваннях PDF Завантажувача!">
+<!ENTITY pdfdownload.aboutTitle "PDF Завантажувач - Про це">
+<!ENTITY pdfdownload.websiteTooltip "Відвідати сайт автора">
+<!ENTITY pdfdownload.moreInfo "Більш докладно:">
+<!ENTITY pdfdownload.readLicenseTooltip "Прочитати ліцензію">
+<!ENTITY pdfdownload.license "Ліцензія">
+<!ENTITY pdfdownload.readChangelogTooltip "Подивитись журнал змін">
+<!ENTITY pdfdownload.changelog "Журнал Змін">
+<!ENTITY pdfdownload.acknowledgments "Визнання">
+<!ENTITY pdfdownload.siteListTitle "Виключення">
+<!ENTITY pdfdownload.optionsTitle "PDF Завантажувач - Налаштування">
+<!ENTITY pdfdownload.optionsGeneralTab "Загальне">
+<!ENTITY pdfdownload.optionsPDFTab "PDF відкриття">
+<!ENTITY pdfdownload.optionsHTMLTab "Конвертування PDF у HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Більш докладно">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Меню Інструментів">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Показувати PDF Завантажувач у панелі Інструментів Вогнелиса">
+<!ENTITY pdfdownload.optionsOpenLink "Як відкривати PDF файли фикористовуючи плагін Вогнелиса:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Як відкривати  HTML версії  PDF файлів:">
+<!ENTITY pdfdownload.optionsSameTab "Відкрити у цій же вкладці">
+<!ENTITY pdfdownload.optionsNewTab "Відкрити у новій вкладці">
+<!ENTITY pdfdownload.optionsNewWindow "Відкрити у новому вікні">
+<!ENTITY pdfdownload.optionsOpenPdf "Відкриття PDF:">
+<!ENTITY pdfdownload.optionsUsePlugin "Використовувати PDF плагін">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Використовувати читалку щостоїсть в системі по замовчуваню. ">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Використати цю читалку:">
+<!ENTITY pdfdownload.optionsBrowse "Перегляд...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Обрати PDF Читалку">
+<!ENTITY pdfdownload.optionsExeFiles "Программи Windows">
+<!ENTITY pdfdownload.optionsAllFiles "Усі файли">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Обраний файл не є программою!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Поновити">
+<!ENTITY pdfdownload.optionsCheckUpdates "Перевірити оновлення">
+<!ENTITY pdfdownload.optionsHowToHelp "Як допомогти">
+<!ENTITY pdfdownload.optionsMakeDonation "Зробити пожертву">

@@ -1,23 +1,28 @@
-<!ENTITY pdfdownload.CreatedByLabel "Utvecklad av:">
-<!ENTITY pdfdownload.WebsiteLabel "Webbplats">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Ladda ner">
-<!ENTITY pdfdownload.OpenButton "Öppna PDF">
-<!ENTITY pdfdownload.ViewHtmlButton "Visa som HTML">
-<!ENTITY pdfdownload.CancelButton "Avbryt">
+<!ENTITY pdfdownload.createdByLabel "Skapad av:">
+<!ENTITY pdfdownload.websiteLabel "Webbplats">
+<!ENTITY pdfdownload.defaultActionLabel "Standardfunktion">
+<!ENTITY pdfdownload.showPopup "Visa popupdialog">
+<!ENTITY pdfdownload.downloadButton "Ladda ner">
+<!ENTITY pdfdownload.openButton "Öppna PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Visa som HTML">
+<!ENTITY pdfdownload.cancelButton "Avbryt">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download kan inte hitta din standardläsare för PDF. Välj en i dialogen för inställningar för PDF Download!">
-<!ENTITY pdfdownload.AboutTitle "PDF Download - Om">
-<!ENTITY pdfdownload.WebsiteTooltip "Gå till utvecklarens webbplats">
-<!ENTITY pdfdownload.MoreInfo "Mer detaljer:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Läs användarlicens">
-<!ENTITY pdfdownload.License "Licens">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Visa ändringslogg">
-<!ENTITY pdfdownload.Changelog "Ändringslogg">
-<!ENTITY pdfdownload.Acknowledgments "Tack till">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - om">
+<!ENTITY pdfdownload.websiteTooltip "Visa författares webbplats">
+<!ENTITY pdfdownload.moreInfo "Mer detaljer:">
+<!ENTITY pdfdownload.readLicenseTooltip "Läs slutanvändarlicens">
+<!ENTITY pdfdownload.license "Licens">
+<!ENTITY pdfdownload.readChangelogTooltip "Visa ändringslogg">
+<!ENTITY pdfdownload.changelog "Ändringslogg">
+<!ENTITY pdfdownload.acknowledgments "Erkännanden">
+<!ENTITY pdfdownload.siteListTitle "Undantag">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Inställningar">
+<!ENTITY pdfdownload.optionsGeneralTab "Allmänt">
 <!ENTITY pdfdownload.optionsPDFTab "PDF-öppning">
 <!ENTITY pdfdownload.optionsHTMLTab "Omvandling av PDF till HTML">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Mer detaljer">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Verktygsmeny">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Visa PDF Download-post i Firefox verktygsmeny">
 <!ENTITY pdfdownload.optionsOpenLink "Hur PDF-länkar skall öppnas med hjälp av Firefox PDF plugin:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hur HTML-versioner av PDF-filer skall öppnas:">
 <!ENTITY pdfdownload.optionsSameTab "Öppna i samma flik">

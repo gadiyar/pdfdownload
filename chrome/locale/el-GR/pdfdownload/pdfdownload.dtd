@@ -1,18 +1,43 @@
-<!ENTITY pdfdownload.CreatedByLabel "Δημιουργήθηκε από:">
-<!ENTITY pdfdownload.WebsiteLabel "Δικτυακός Τόπος:">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Κατεβάστε το">
-<!ENTITY pdfdownload.OpenButton "Άνοιγμα σε νέα ετικέτα">
-<!ENTITY pdfdownload.ViewHtmlButton "Δείτε το ως HTML σε νέα καρτέλα">
-<!ENTITY pdfdownload.CancelButton "Ακύρωση">
-
-<!ENTITY pdfdownload.AboutTitle "Πληροφορίες για το PDF Download">
-<!ENTITY pdfdownload.WebsiteTooltip "Δικτυακός τόπος δημιουργού">
-<!ENTITY pdfdownload.MoreInfo "Περισσότερες λεπτομέρειες:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Άδεια χρήσης:">
-<!ENTITY pdfdownload.License "Άδεια χρήσης">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Δείτε τις αλλαγές από τις προηγούμενες εκδόσεις">
-<!ENTITY pdfdownload.Changelog "Λίστα αλλαγών">
-<!ENTITY pdfdownload.Acknowledgments "Ευχαριστίες">
-
-
+<!ENTITY pdfdownload.createdByLabel "Δημιουργήθηκε από:">
+<!ENTITY pdfdownload.websiteLabel "Ιστοσελίδα">
+<!ENTITY pdfdownload.defaultActionLabel "Αρχική ενέργεια">
+<!ENTITY pdfdownload.showPopup "Προβολή αναδυόμενου διαλόγου">
+<!ENTITY pdfdownload.downloadButton "Λήψη του αρχείου">
+<!ENTITY pdfdownload.openButton "Άνοιγμα PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Εμφάνιση σε μορφή HTML">
+<!ENTITY pdfdownload.cancelButton "Ακύρωση">
+<!ENTITY pdfdownload.osWarningMsg "Το PDF Download δεν μπορεί να εντοπίσει το προεπιλεγμένο πρόγραμμα ανάγνωσης αρχείων PDF. Παρακαλούμε επιλέξτε ένα από το διάλογο επιλογών του PDF Download!">
+<!ENTITY pdfdownload.aboutTitle "Περί - PDF Download">
+<!ENTITY pdfdownload.websiteTooltip "Προβολή ιστοσελίδας δημιουργού">
+<!ENTITY pdfdownload.moreInfo "Περισσότερες λεπτομέρειες:">
+<!ENTITY pdfdownload.readLicenseTooltip "Διαβάστε την άδεια χρήσης τελικού χρήστη">
+<!ENTITY pdfdownload.license "Άδεια χρήσης">
+<!ENTITY pdfdownload.readChangelogTooltip "Προβολή ιστορικού μετατροπών">
+<!ENTITY pdfdownload.changelog "Ιστορικό μετατροπών">
+<!ENTITY pdfdownload.acknowledgments "Αναγνώριση">
+<!ENTITY pdfdownload.siteListTitle "Εξαιρέσεις">
+<!ENTITY pdfdownload.optionsTitle "Επιλογές - PDF Download">
+<!ENTITY pdfdownload.optionsGeneralTab "Γενικά">
+<!ENTITY pdfdownload.optionsPDFTab "Άνοιγμα PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Μετατροπή PDF σε HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Περισσότερες λεπτομέρειες">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Μενού εργαλείων">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Προβολή του PDF Download στο μενού εργασιών του Firefox">
+<!ENTITY pdfdownload.optionsOpenLink "Οι δεσμοί PDF θα ανοίγουν με το πρόσθετο πρόγραμμα του Firefox:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Τα αρχεία PDF σε μορφή HTML θα ανοίγουν:">
+<!ENTITY pdfdownload.optionsSameTab "Στην ίδια καρτέλα">
+<!ENTITY pdfdownload.optionsNewTab "Σε νέα καρτέλα">
+<!ENTITY pdfdownload.optionsNewWindow "Σε νέο παράθυρο">
+<!ENTITY pdfdownload.optionsOpenPdf "Άνοιγμα αρχείου PDF:">
+<!ENTITY pdfdownload.optionsUsePlugin "Χρήση του πρόσθετου PDF">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Χρήση του εξ ορισμού προγράμματος ανάγνωσης του λειτουργικού">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Χρήση αυτού του προγράμματος ανάγνωσης:">
+<!ENTITY pdfdownload.optionsBrowse "Εντοπισμός...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Επιλέξτε πρόγραμμα ανάγνωσης PDF">
+<!ENTITY pdfdownload.optionsExeFiles "Εφαρμογές Windows">
+<!ENTITY pdfdownload.optionsAllFiles "Όλα τα αρχεία">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Το επιλεγμένο αρχείο δεν είναι εκτελέσιμο!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Ενημέρωση">
+<!ENTITY pdfdownload.optionsCheckUpdates "Έλεγχος για ενημερώσεις">
+<!ENTITY pdfdownload.optionsHowToHelp "Πώς να βοηθήσετε">
+<!ENTITY pdfdownload.optionsMakeDonation "Κάντε μια δωρεά">

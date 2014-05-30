@@ -1,23 +1,28 @@
-<!ENTITY pdfdownload.CreatedByLabel "Vytvořil:">
-<!ENTITY pdfdownload.WebsiteLabel "Webová stránka">
-<!ENTITY pdfdownload.DownloadQuestionLabel "Jak naložit s tímto odkazem ?">
-<!ENTITY pdfdownload.DownloadButton "Stáhnout">
-<!ENTITY pdfdownload.OpenButton "Otevřít PDF">
-<!ENTITY pdfdownload.ViewHtmlButton "Zobrazit ve formě HTML">
-<!ENTITY pdfdownload.CancelButton "Storno">
+<!ENTITY pdfdownload.createdByLabel "Autor">
+<!ENTITY pdfdownload.websiteLabel "Domovská stránka">
+<!ENTITY pdfdownload.defaultActionLabel "Výchozí akce">
+<!ENTITY pdfdownload.showPopup "Zobrazit vyskakovací okno">
+<!ENTITY pdfdownload.downloadButton "Stáhnout">
+<!ENTITY pdfdownload.openButton "Otevřít PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Zobrazit ve formě HTML">
+<!ENTITY pdfdownload.cancelButton "Zrušit">
 <!ENTITY pdfdownload.osWarningMsg "Nepodařilo se najít výchozí prohlížeč PDF. Prosím zadejte jeho umístění ručně v dialogu nastavení rozšíření 'PDF Download'">
-<!ENTITY pdfdownload.AboutTitle "O rozšíření 'PDF Download'">
-<!ENTITY pdfdownload.WebsiteTooltip "Zobrazit stránky autora">
-<!ENTITY pdfdownload.MoreInfo "Více informací">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Zobrazit licenci pro koncové uživatele">
-<!ENTITY pdfdownload.License "Licence">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Zobrazit záznam změn mezi verzemi">
-<!ENTITY pdfdownload.Changelog "Záznam změn mezi verzemi">
-<!ENTITY pdfdownload.Acknowledgments "Poděkování">
+<!ENTITY pdfdownload.aboutTitle "O rozšíření PDF Download">
+<!ENTITY pdfdownload.websiteTooltip "Přejít na autorovu stránku">
+<!ENTITY pdfdownload.moreInfo "Více informací:">
+<!ENTITY pdfdownload.readLicenseTooltip "Licence koncového uživatele">
+<!ENTITY pdfdownload.license "Licence">
+<!ENTITY pdfdownload.readChangelogTooltip "Zobrazit seznam změn">
+<!ENTITY pdfdownload.changelog "Seznam změn">
+<!ENTITY pdfdownload.acknowledgments "Poděkování">
+<!ENTITY pdfdownload.siteListTitle "Vyjímky">
 <!ENTITY pdfdownload.optionsTitle "Možnosti rozšíření 'PDF Download'">
+<!ENTITY pdfdownload.optionsGeneralTab "Obecné">
 <!ENTITY pdfdownload.optionsPDFTab "Otevření PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Převod PDF do HTML">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "Více informaací">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Více informací">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Nástroje">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Zobrazit PDF Download v menu Nástroje">
 <!ENTITY pdfdownload.optionsOpenLink "Jak otevřít PDF pomocí zásuvného modulu pro PDF Firefoxu.">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Jak otevřít HTML verzi PDF souboru:">
 <!ENTITY pdfdownload.optionsSameTab "Otevřít ve stejném panelu">

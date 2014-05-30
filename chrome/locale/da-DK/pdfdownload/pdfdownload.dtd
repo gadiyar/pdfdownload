@@ -1,23 +1,28 @@
-<!ENTITY pdfdownload.CreatedByLabel "Udviklet af:">
-<!ENTITY pdfdownload.WebsiteLabel "Hjemmeside">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Gem det">
-<!ENTITY pdfdownload.OpenButton "Åben i nyt faneblad">
-<!ENTITY pdfdownload.ViewHtmlButton "Vis som HTML i nyt faneblad">
-<!ENTITY pdfdownload.CancelButton "Annuller">
+<!ENTITY pdfdownload.createdByLabel "Lavet af:">
+<!ENTITY pdfdownload.websiteLabel "Hjemmeside">
+<!ENTITY pdfdownload.defaultActionLabel "Standardhandling">
+<!ENTITY pdfdownload.showPopup "Vis popup dialog">
+<!ENTITY pdfdownload.downloadButton "Download den">
+<!ENTITY pdfdownload.openButton "Åbn PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Vis som HTML">
+<!ENTITY pdfdownload.cancelButton "Annuller">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download kan ikke finde en standard PDF-fremviser. Vælg venligst en i indstillingerne for PDF Download!">
-<!ENTITY pdfdownload.AboutTitle "Om PDF Download">
-<!ENTITY pdfdownload.WebsiteTooltip "Vis forfatterens hjemmeside">
-<!ENTITY pdfdownload.MoreInfo "Vis flere detaljer:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Læs slutbruger-licens">
-<!ENTITY pdfdownload.License "Licens">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Vis ændringsdokument">
-<!ENTITY pdfdownload.Changelog "Ændringsdokument">
-<!ENTITY pdfdownload.Acknowledgments "Tak til bidragsydere">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - Om">
+<!ENTITY pdfdownload.websiteTooltip "Besøg programmørens hjemmeside">
+<!ENTITY pdfdownload.moreInfo "Flere oplysninger:">
+<!ENTITY pdfdownload.readLicenseTooltip "Læs slutbrugerlicens">
+<!ENTITY pdfdownload.license "Licens">
+<!ENTITY pdfdownload.readChangelogTooltip "Vis versionsændringer">
+<!ENTITY pdfdownload.changelog "Versionsændringer">
+<!ENTITY pdfdownload.acknowledgments "Tak til">
+<!ENTITY pdfdownload.siteListTitle "Undtagelser">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Indstillinger">
+<!ENTITY pdfdownload.optionsGeneralTab "Generelt">
 <!ENTITY pdfdownload.optionsPDFTab "PDF åbning">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF til HTML konvertering">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Flere oplysninger">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Vækrtøjslinie">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Vis PDF Download i menupunktet Funktioner i Firefox">
 <!ENTITY pdfdownload.optionsOpenLink "Hvordan skal PDF links åbnes ved brug af PDF plugin:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hvordan skal HTML version af PDF filer åbnes:">
 <!ENTITY pdfdownload.optionsSameTab "Åbn i samme faneblad">

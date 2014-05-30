@@ -15,7 +15,7 @@
    - The Original Code is "PDF Download".
    -
    - The Initial Developer of the Original Code is Denis Remondini.
-   - Portions created by the Initial Developer are Copyright (C) 2005 Denis Remondini.  
+   - Portions created by the Initial Developer are Copyright (C) 2005-2006 Denis Remondini.  
    - All Rights Reserved.
    -
    - Contributor(s): Denis Remondini <denistn AT gmail DOT com>
@@ -39,29 +39,77 @@
 <?xml-stylesheet href="chrome://pdfdownload/skin/pdfdownload.css" type="text/css"?>
 <!DOCTYPE window SYSTEM "chrome://pdfdownload/locale/pdfdownload.dtd">
 
-<dialog title="&pdfdownload.optionsTitle;" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" onload="onLoad();" ondialogaccept='return onOK("&pdfdownload.optionsNotExecutableFileMsg;");' style="width: 40em;">
-  
+<prefwindow id="PDFDownload_Options"
+  type="prefwindow"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  buttons="accept, cancel"
+  onload="onLoad();" 
+  ondialogaccept='return onOK("&pdfdownload.optionsNotExecutableFileMsg;");'
+  title="&pdfdownload.optionsTitle;">
+
   <stringbundle id="strings" src="chrome://pdfdownload/locale/pdfdownload.properties"/>
   <script type="application/x-javascript" src="chrome://pdfdownload/content/options.js"/>
   <script type="application/x-javascript" src="chrome://pdfdownload/content/shared.js"/>
 
+  <prefpane id="myPane">
+
+    <preferences>
+      <preference id="pd_defaultAction"
+        name="extensions.pdfdownload.defaultAction"
+        type="string"/>
+      <preference id="pd_openPDF"
+        name="extensions.pdfdownload.openPDF"
+        type="string"/>
+      <preference id="pd_viewerPath"
+        name="extensions.pdfdownload.pdfViewerPath"
+        type="string"/>
+      <preference id="pd_openPDFLink"
+        name="extensions.pdfdownload.openPDFLink"
+        type="string"/>
+      <preference id="pd_openPDFtoHTML"
+        name="extensions.pdfdownload.openPDFtoHTML"
+        type="string"/>
+      <preference id="pd_showToolsMenuItem"
+        name="extensions.pdfdownload.showToolsMenuItem"
+        type="bool"/>
+    </preferences>
+
+  
 	<tabbox flex="1">
 		<tabs>
+			<tab label="&pdfdownload.optionsGeneralTab;"/>
 			<tab label="&pdfdownload.optionsPDFTab;"/>
 			<tab label="&pdfdownload.optionsHTMLTab;"/>
 			<tab label="&pdfdownload.optionsMoreDetailsTab;"/>
 		</tabs>
 		<tabpanels>
 			<tabpanel orient="vertical">
+			<groupbox>
+				<caption label="&pdfdownload.defaultActionLabel;"/>
+					<radiogroup preference="pd_defaultAction">
+						<vbox flex="1">
+							<radio label="&pdfdownload.showPopup;" value="showPopup"/>
+							<radio label="&pdfdownload.openButton;" value="open"/>
+							<radio label="&pdfdownload.downloadButton;" value="download"/>
+							<radio label="&pdfdownload.viewHtmlButton;" value="openHtml"/>
+						</vbox>
+					</radiogroup>
+			</groupbox>
+			<groupbox>
+				<caption label="&pdfdownload.optionsToggleItemToolsMenu;"/>
+				<checkbox id="showItemTools" label="&pdfdownload.optionsShowItemToolsMenu;" preference="pd_showToolsMenuItem"/>
+			</groupbox>
+			</tabpanel>
+			<tabpanel orient="vertical">
 				<groupbox>
 					<caption label="&pdfdownload.optionsOpenPdf;"/>
 					<vbox>
-						<radiogroup id="pdfdownload-openPDF">
-							<radio id="usePlugin" label="&pdfdownload.optionsUsePlugin;" />
-  							<radio id="defaultViewer" label="&pdfdownload.optionsUseDefaultProgram;" />
+						<radiogroup id="pdfdownload-openPDF" preference="pd_openPDF">
+							<radio id="usePlugin" label="&pdfdownload.optionsUsePlugin;" value="usePlugin" />
+  							<radio id="defaultViewer" label="&pdfdownload.optionsUseDefaultProgram;" value="defaultViewer"/>
 							<hbox>
-  								<radio id="customViewer"  label="&pdfdownload.optionsUseCustomProgram;" />
-								<textbox flex="1" id="pdfdownload-pdfViewerPath" readonly="true"/>
+  								<radio id="customViewer"  label="&pdfdownload.optionsUseCustomProgram;" value="customViewer"/>
+								<textbox readonly="true" flex="1" id="pdfdownload-pdfViewerPath" preference="pd_viewerPath" preference-editable="true" />
 								<button id="pdfdownload-pickPdfViewerPath" label="&pdfdownload.optionsBrowse;"
                                 				oncommand='return onPickPdfViewerPath("&pdfdownload.optionsBrowseTitle;","&pdfdownload.optionsExeFiles;","&pdfdownload.optionsAllFiles;","&pdfdownload.optionsNotExecutableFileMsg;");' />
 							</hbox>
@@ -71,10 +119,10 @@
 				<groupbox>
 					<caption label="&pdfdownload.optionsOpenLink;"/>
 					<vbox>
-						<radiogroup id="pdfdownload-openPDFLink">
-  							<radio id="openPDFSameTab" label="&pdfdownload.optionsSameTab;" />
-  							<radio id="openPDFNewTab"  label="&pdfdownload.optionsNewTab;" />
-							<radio id="openPDFNewWindow" label="&pdfdownload.optionsNewWindow;" />
+						<radiogroup id="pdfdownload-openPDFLink" preference="pd_openPDFLink">
+  							<radio id="openPDFSameTab" label="&pdfdownload.optionsSameTab;" value="openPDFSameTab" />
+  							<radio id="openPDFNewTab"  label="&pdfdownload.optionsNewTab;" value="openPDFNewTab" />
+							<radio id="openPDFNewWindow" label="&pdfdownload.optionsNewWindow;" value="openPDFNewWindow "/>
 						</radiogroup>
 					</vbox>
 				</groupbox>
@@ -83,10 +131,10 @@
 				<groupbox>
 					<caption label="&pdfdownload.optionsOpenPDFtoHTML;"/>
 					<vbox>
-						<radiogroup id="pdfdownload-openPDFtoHTML">
-  							<radio id="openHTMLSameTab" label="&pdfdownload.optionsSameTab;" />
-  							<radio id="openHTMLNewTab"  label="&pdfdownload.optionsNewTab;" />
-							<radio id="openHTMLNewWindow" label="&pdfdownload.optionsNewWindow;" />
+						<radiogroup id="pdfdownload-openPDFtoHTML" preference="pd_openPDFtoHTML">
+  							<radio id="openHTMLSameTab" label="&pdfdownload.optionsSameTab;" value="openHTMLSameTab" />
+  							<radio id="openHTMLNewTab"  label="&pdfdownload.optionsNewTab;" value="openHTMLNewTab" />
+							<radio id="openHTMLNewWindow" label="&pdfdownload.optionsNewWindow;" value="openHTMLNewWindow" />
 						</radiogroup>
 					</vbox>
 				</groupbox>
@@ -95,9 +143,9 @@
 				<groupbox>
 					<caption label="&pdfdownload.optionsUpdateLabel;"/>
 					<hbox>
-						<label value="PDF Download 0.6"/>
+						<label value="PDF Download 0.7"/>
 						<spacer flex="1"/>
-						<button label="&pdfdownload.optionsCheckUpdates;" onclick="pdfDownloadShared.openURL('http://www.rabotat.org/firefox/');" />
+						<button label="&pdfdownload.optionsCheckUpdates;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');" />
 					</hbox>
 		
 				</groupbox>
@@ -105,11 +153,11 @@
 					<caption label="&pdfdownload.optionsHowToHelp;"/>
 					<hbox>
 						<vbox>
-							<image src="chrome://pdfdownload/skin/pdfdownload.png" onclick="pdfDownloadShared.openURL('http://www.rabotat.org/firefox/');" />
+							<image src="chrome://pdfdownload/skin/pdfdownload.png" />
 						</vbox>
 						<vbox flex="1">
 							<hbox>
-								<label value="&pdfdownload.CreatedByLabel;"/><label value=" Denis Remondini"/>
+								<label value="&pdfdownload.createdByLabel;"/><label value=" Denis Remondini"/>
 							</hbox>
 						</vbox>
 						<vbox>
@@ -121,5 +169,8 @@
 			</tabpanel>
 		</tabpanels>
 	</tabbox>
-</dialog>
+
+  </prefpane>
+
+</prefwindow>
 

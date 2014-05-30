@@ -1,23 +1,28 @@
-<!ENTITY pdfdownload.CreatedByLabel "Hazırlayan:">
-<!ENTITY pdfdownload.WebsiteLabel "Anasayfa">
-<!ENTITY pdfdownload.DownloadQuestionLabel ".">
-<!ENTITY pdfdownload.DownloadButton "İndir">
-<!ENTITY pdfdownload.OpenButton "Aç">
-<!ENTITY pdfdownload.ViewHtmlButton "HTML olarak görüntüle">
-<!ENTITY pdfdownload.CancelButton "İptal">
+<!ENTITY pdfdownload.createdByLabel "Yazan:">
+<!ENTITY pdfdownload.websiteLabel "Web sayfası">
+<!ENTITY pdfdownload.defaultActionLabel "Öntanımlı işlem">
+<!ENTITY pdfdownload.showPopup "Açılır kapanır pencereyi göster">
+<!ENTITY pdfdownload.downloadButton "İndir">
+<!ENTITY pdfdownload.openButton "PDF dosyasını aç">
+<!ENTITY pdfdownload.viewHtmlButton "HTML olarak göster">
+<!ENTITY pdfdownload.cancelButton "Vazgeç">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download, varsayılan PDF okuyucunuzu bulamadı. Lütfen PDF Download Seçenekler bölümünden seçiniz!">
-<!ENTITY pdfdownload.AboutTitle "PDF Download - Hakkında">
-<!ENTITY pdfdownload.WebsiteTooltip "Hazırlayanın anasayfasına git">
-<!ENTITY pdfdownload.MoreInfo "Daha fazla bilgi:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Son kullanıcı lisans sözleşmesini okuyun">
-<!ENTITY pdfdownload.License "Lisans">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Değişim günlüğünü görüntüle">
-<!ENTITY pdfdownload.Changelog "Değişim günlüğü">
-<!ENTITY pdfdownload.Acknowledgments "Teşekkür">
+<!ENTITY pdfdownload.aboutTitle "PDF indirme hakkında">
+<!ENTITY pdfdownload.websiteTooltip "Yazarın web sayfasını göster">
+<!ENTITY pdfdownload.moreInfo "Detaylar:">
+<!ENTITY pdfdownload.readLicenseTooltip "Son kullanıcı lisansını oku">
+<!ENTITY pdfdownload.license "Lisans">
+<!ENTITY pdfdownload.readChangelogTooltip "Değişiklikleri göster">
+<!ENTITY pdfdownload.changelog "Değişiklikler">
+<!ENTITY pdfdownload.acknowledgments "Onaylar">
+<!ENTITY pdfdownload.siteListTitle "İstisnalar">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Seçenekler">
+<!ENTITY pdfdownload.optionsGeneralTab "Genel">
 <!ENTITY pdfdownload.optionsPDFTab "PDF açılması">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF'ten HTML'e dönüştür">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Daha fazla bilgi">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Araçlar menüsü">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Firefox araçlar menüsünde PDF indirmeyi göster">
 <!ENTITY pdfdownload.optionsOpenLink "Firefox PDF eklentisi ile PDF bağlantılarının açılması:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF dosyalarının HTML biçiminde açılması:">
 <!ENTITY pdfdownload.optionsSameTab "Aynı sekmede aç">

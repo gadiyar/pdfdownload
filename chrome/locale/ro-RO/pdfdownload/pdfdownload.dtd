@@ -1,38 +1,43 @@
-<!ENTITY pdfdownload.CreatedByLabel "Creat de:">
-<!ENTITY pdfdownload.WebsiteLabel "Pagina web">
-<!ENTITY pdfdownload.DownloadQuestionLabel "Fisierul pe care l-ati selectat este un fisier PDF">
-<!ENTITY pdfdownload.DownloadButton "Salveaza-l">
-<!ENTITY pdfdownload.OpenButton "Deschide-l intr-o fereastra noua">
-<!ENTITY pdfdownload.ViewHtmlButton "Vizualizeaza-l in format HTML">
-<!ENTITY pdfdownload.CancelButton "Anuleaza">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download nu gaseste programul.Va rugam alegeti unul din optiunile:">
-<!ENTITY pdfdownload.AboutTitle "PDF Download - Despre">
-<!ENTITY pdfdownload.WebsiteTooltip "Vezi site-ul autorului">
-<!ENTITY pdfdownload.MoreInfo "Mai multe detalii:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Citeste licenta de utilizare">
-<!ENTITY pdfdownload.License "Licenta">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Vezi jurnalul modificarilor">
-<!ENTITY pdfdownload.Changelog "Jurnalul modificarilor">
-<!ENTITY pdfdownload.Acknowledgments "Multumiri">
-<!ENTITY pdfdownload.optionsTitle "PDF Download - Optiuni">
-<!ENTITY pdfdownload.optionsPDFTab "Deschidere PDF">
-<!ENTITY pdfdownload.optionsHTMLTab "Conversie PDF-HTML">
-<!ENTITY pdfdownload.optionsMoreDetailsTab "Detalii">
-<!ENTITY pdfdownload.optionsOpenLink "Cum sa deschizi link-uri PDF folosind plugin-ul Firefox">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Cum sa deschizi versiuni HTML ale fisierelor PDF">
-<!ENTITY pdfdownload.optionsSameTab "Deschide in acelasi tab">
-<!ENTITY pdfdownload.optionsNewTab "Deschide intr-un nou tab">
-<!ENTITY pdfdownload.optionsNewWindow "Deschide intr-o noua fereastra">
-<!ENTITY pdfdownload.optionsOpenPdf "Deschidere fisier PDF:">
-<!ENTITY pdfdownload.optionsUsePlugin "Foloseste optiunea default a Firefox-ului">
-<!ENTITY pdfdownload.optionsUseDefaultProgram "Foloseste programul default OS">
-<!ENTITY pdfdownload.optionsUseCustomProgram "Foloseste programul:">
-<!ENTITY pdfdownload.optionsBrowse "Cauta...">
-<!ENTITY pdfdownload.optionsBrowseTitle "Alege programul">
-<!ENTITY pdfdownload.optionsExeFiles "Aplicatii Windows">
-<!ENTITY pdfdownload.optionsAllFiles "Toate fisierele">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Fisierul selectat nu este executabil!">
-<!ENTITY pdfdownload.optionsUpdateLabel "Actualizeza">
-<!ENTITY pdfdownload.optionsCheckUpdates "Cauta actualizari">
+<!ENTITY pdfdownload.createdByLabel "Creat de către:">
+<!ENTITY pdfdownload.websiteLabel "Pagină web:">
+<!ENTITY pdfdownload.defaultActionLabel "Acţiune implicită:">
+<!ENTITY pdfdownload.showPopup "Arată fereastra de dialog">
+<!ENTITY pdfdownload.downloadButton "Descarcă">
+<!ENTITY pdfdownload.openButton "Deschide">
+<!ENTITY pdfdownload.viewHtmlButton "Vizualizare în format HTML">
+<!ENTITY pdfdownload.cancelButton "Renunţă">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download nu găseşte programul implicit pentru fişiere PDF. Specificaţi un program în Opţiuni.">
+<!ENTITY pdfdownload.aboutTitle "Despre PDF Download">
+<!ENTITY pdfdownload.websiteTooltip "Vizitează pagina autorului">
+<!ENTITY pdfdownload.moreInfo "Mai multe informaţii:">
+<!ENTITY pdfdownload.readLicenseTooltip "Citeşte Acordul de Utilizator">
+<!ENTITY pdfdownload.license "Licenţă">
+<!ENTITY pdfdownload.readChangelogTooltip "Arată jurnalul de schimbăro">
+<!ENTITY pdfdownload.changelog "Jurnal schimbări">
+<!ENTITY pdfdownload.acknowledgments "Mulţumiri">
+<!ENTITY pdfdownload.siteListTitle "Excepţii">
+<!ENTITY pdfdownload.optionsTitle "Opţiuni PDF Download">
+<!ENTITY pdfdownload.optionsGeneralTab "General">
+<!ENTITY pdfdownload.optionsPDFTab "Deschidere fişiere PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "Conversie din PDF în HTML">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Mai multe detalii">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Meniul Unelte">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Arată intrare în meniul Unelte al navigatorului">
+<!ENTITY pdfdownload.optionsOpenLink "Deschidere legături spre fişiere PDF folosind pluginul Firefox:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Deschidere versiuni HTML ale fişierelor PDF:">
+<!ENTITY pdfdownload.optionsSameTab "Deschide în aceeaşi filă">
+<!ENTITY pdfdownload.optionsNewTab "Deschide în filă nouă">
+<!ENTITY pdfdownload.optionsNewWindow "Deschide în fereastră nouă">
+<!ENTITY pdfdownload.optionsOpenPdf "Deschidere fişier PDF:">
+<!ENTITY pdfdownload.optionsUsePlugin "Foloseşte acţiunea implicită a navigatorului (plugin Firefox)">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Foloseste programul implicit al sistemului de operare">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Foloseşte programul:">
+<!ENTITY pdfdownload.optionsBrowse "Alege...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Alege programul de vizualizat fişiere PDF">
+<!ENTITY pdfdownload.optionsExeFiles "Aplicaţii Windows">
+<!ENTITY pdfdownload.optionsAllFiles "Toate fişierele">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Fişierul selectat nu este executabil!">
+<!ENTITY pdfdownload.optionsUpdateLabel "Actualizeză">
+<!ENTITY pdfdownload.optionsCheckUpdates "Caută actualizări">
 <!ENTITY pdfdownload.optionsHowToHelp "Ajutor">
-<!ENTITY pdfdownload.optionsMakeDonation "Faceti o donatie">
+<!ENTITY pdfdownload.optionsMakeDonation "Faceţi o donaţie">

@@ -1,30 +1,35 @@
-<!ENTITY pdfdownload.CreatedByLabel "作者:">
-<!ENTITY pdfdownload.WebsiteLabel "网站">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "下载">
-<!ENTITY pdfdownload.OpenButton "在新标签页中打开">
-<!ENTITY pdfdownload.ViewHtmlButton "在新标签页中以HTML方式查看">
-<!ENTITY pdfdownload.CancelButton "取消">
+<!ENTITY pdfdownload.createdByLabel "作者：">
+<!ENTITY pdfdownload.websiteLabel "网站">
+<!ENTITY pdfdownload.defaultActionLabel "默认动作">
+<!ENTITY pdfdownload.showPopup "显示弹出对话框">
+<!ENTITY pdfdownload.downloadButton "下载该文件">
+<!ENTITY pdfdownload.openButton "打开该 PDF 文件">
+<!ENTITY pdfdownload.viewHtmlButton "以 HTML 方式查看该文件">
+<!ENTITY pdfdownload.cancelButton "取消">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download无法检测到您默认的PDF阅读器.请在PDF Download选项对话框中选择一个PDF阅读器!">
-<!ENTITY pdfdownload.AboutTitle "PDF Download - 关于">
-<!ENTITY pdfdownload.WebsiteTooltip "访问作者的网站">
-<!ENTITY pdfdownload.MoreInfo "更多详情:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "阅读最终用户许可协议">
-<!ENTITY pdfdownload.License "许可协议">
-<!ENTITY pdfdownload.ReadChangelogTooltip "查看更新记录">
-<!ENTITY pdfdownload.Changelog "更新记录">
-<!ENTITY pdfdownload.Acknowledgments "致谢">
+<!ENTITY pdfdownload.aboutTitle "PDF Download － 关于">
+<!ENTITY pdfdownload.websiteTooltip "浏览作者的网站">
+<!ENTITY pdfdownload.moreInfo "更多详情：">
+<!ENTITY pdfdownload.readLicenseTooltip "阅读最终用户许可协议">
+<!ENTITY pdfdownload.license "许可协议">
+<!ENTITY pdfdownload.readChangelogTooltip "查看更新日志">
+<!ENTITY pdfdownload.changelog "更新日志">
+<!ENTITY pdfdownload.acknowledgments "感谢">
+<!ENTITY pdfdownload.siteListTitle "例外">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - 选项">
-<!ENTITY pdfdownload.optionsPDFTab "打开PDF">
-<!ENTITY pdfdownload.optionsHTMLTab "PDF转换到HTML">
+<!ENTITY pdfdownload.optionsGeneralTab "常规">
+<!ENTITY pdfdownload.optionsPDFTab "打开 PDF">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF 转换到 HTML">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "更多细节">
-<!ENTITY pdfdownload.optionsOpenLink "如何使用Firefox的PDF插件打开PDF链接:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "如何以HTML形式打开PDF文件:">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "工具菜单">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "在 Firefox 工具菜单显示 PDF Download 选项">
+<!ENTITY pdfdownload.optionsOpenLink "如何使用 Firefox 的 PDF 插件打开 PDF 链接:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "如何以 HTML 形式打开 PDF 文件:">
 <!ENTITY pdfdownload.optionsSameTab "打开于当前标签页">
 <!ENTITY pdfdownload.optionsNewTab "打开于新标签页">
 <!ENTITY pdfdownload.optionsNewWindow "打开于新窗口">
-<!ENTITY pdfdownload.optionsOpenPdf "打开PDF文件:">
-<!ENTITY pdfdownload.optionsUsePlugin "使用Firefox默认的下载">
+<!ENTITY pdfdownload.optionsOpenPdf "打开 PDF 文件:">
+<!ENTITY pdfdownload.optionsUsePlugin "使用 PDF 插件">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "使用操作系统默认查看器">
 <!ENTITY pdfdownload.optionsUseCustomProgram "使用以下查看器:">
 <!ENTITY pdfdownload.optionsBrowse "浏览...">

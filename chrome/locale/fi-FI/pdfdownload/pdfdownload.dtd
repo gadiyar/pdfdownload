@@ -1,23 +1,28 @@
-<!ENTITY pdfdownload.CreatedByLabel "Tekijä:">
-<!ENTITY pdfdownload.WebsiteLabel "Verkkosivu">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Lataa se">
-<!ENTITY pdfdownload.OpenButton "Avaa PDF:nä">
-<!ENTITY pdfdownload.ViewHtmlButton "Avaa HTML:nä">
-<!ENTITY pdfdownload.CancelButton "Peruuta">
+<!ENTITY pdfdownload.createdByLabel "Tekijä:">
+<!ENTITY pdfdownload.websiteLabel "Verkkosivu">
+<!ENTITY pdfdownload.defaultActionLabel "Oletustoiminto">
+<!ENTITY pdfdownload.showPopup "Näytä valintaikkuna">
+<!ENTITY pdfdownload.downloadButton "Lataa">
+<!ENTITY pdfdownload.openButton "Avaa PDF:nä">
+<!ENTITY pdfdownload.viewHtmlButton "Avaa HTML:nä">
+<!ENTITY pdfdownload.cancelButton "Peruuta">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download ei kyennyt paikallistamaan PDF-tiedostojen oletuslukijaa. Ole hyvä ja valitse yksi lukija PDF Downloadin valintaikkunasta!">
-<!ENTITY pdfdownload.AboutTitle "PDF Download - Tietoja">
-<!ENTITY pdfdownload.WebsiteTooltip "Vieraile tekijän verkkosivulla">
-<!ENTITY pdfdownload.MoreInfo "Lisää tietoja:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Lue lisenssi">
-<!ENTITY pdfdownload.License "Lisenssi">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Näytä muutokset">
-<!ENTITY pdfdownload.Changelog "Muutokset">
-<!ENTITY pdfdownload.Acknowledgments "Kiitokset">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - Tietoja">
+<!ENTITY pdfdownload.websiteTooltip "Vieraile tekijän verkkosivulla">
+<!ENTITY pdfdownload.moreInfo "Lisää tietoja:">
+<!ENTITY pdfdownload.readLicenseTooltip "Lue lisenssi">
+<!ENTITY pdfdownload.license "Lisenssi">
+<!ENTITY pdfdownload.readChangelogTooltip "Näytä muutokset">
+<!ENTITY pdfdownload.changelog "Muutokset">
+<!ENTITY pdfdownload.acknowledgments "Tunnustukset">
+<!ENTITY pdfdownload.siteListTitle "Poikkeukset">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Asetukset">
+<!ENTITY pdfdownload.optionsGeneralTab "Yleiset">
 <!ENTITY pdfdownload.optionsPDFTab "PDF:n avaaminen">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF:n muuttaminen HTML:ksi">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Lisää toimintoja">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Työkalut-valikko">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Näytä PDF Downloadin kohta Firefoxin Työkalut-valikossa">
 <!ENTITY pdfdownload.optionsOpenLink "PDF-linkkien avaaminen käyttäen Firefoxin PDF-liitännäistä:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF-tiedostojen HTML-version avaaminen:">
 <!ENTITY pdfdownload.optionsSameTab "Avaa avoimeen välilehteen">
@@ -31,7 +36,7 @@
 <!ENTITY pdfdownload.optionsBrowseTitle "Valitse PDF-lukija">
 <!ENTITY pdfdownload.optionsExeFiles "Windowsin sovellukset (*.exe)">
 <!ENTITY pdfdownload.optionsAllFiles "Kaikki tiedostot (*.*)">
-<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Valittu tiedosto ei ole ajettava!">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "Valittu tiedosto ei ole suoritettava!">
 <!ENTITY pdfdownload.optionsUpdateLabel "Päivittäminen">
 <!ENTITY pdfdownload.optionsCheckUpdates "Tarkista päivitykset">
 <!ENTITY pdfdownload.optionsHowToHelp "Auttaminen">

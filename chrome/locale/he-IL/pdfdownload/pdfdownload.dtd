@@ -1,23 +1,28 @@
-<!ENTITY pdfdownload.CreatedByLabel "נוצר על ידי">
-<!ENTITY pdfdownload.WebsiteLabel "אתר אינטרנט">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "הורד את זה">
-<!ENTITY pdfdownload.OpenButton "פתח בלשונית חדשה">
-<!ENTITY pdfdownload.ViewHtmlButton "צפה כ-HTML">
-<!ENTITY pdfdownload.CancelButton "בטל">
+<!ENTITY pdfdownload.createdByLabel "נוצר על ידי:">
+<!ENTITY pdfdownload.websiteLabel "אתר אינטרנט">
+<!ENTITY pdfdownload.defaultActionLabel "פעולת ברירת מחדל">
+<!ENTITY pdfdownload.showPopup "הראה דיאלוג קופץ">
+<!ENTITY pdfdownload.downloadButton "הורד">
+<!ENTITY pdfdownload.openButton "פתח PDF">
+<!ENTITY pdfdownload.viewHtmlButton "הראה כ- HTML">
+<!ENTITY pdfdownload.cancelButton "בטל">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download לא יכול למצוא את קורא ה-PDF שלך. נא בחר באחת בתוך האפשרויות של PDF Download.">
-<!ENTITY pdfdownload.AboutTitle "אודות הורדת PDF">
-<!ENTITY pdfdownload.WebsiteTooltip "צפה באתר המחבר">
-<!ENTITY pdfdownload.MoreInfo "פרטים נוספים:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "ראה רשיון משתמש קצה">
-<!ENTITY pdfdownload.License "רשיון">
-<!ENTITY pdfdownload.ReadChangelogTooltip "ראה יומן שינויים">
-<!ENTITY pdfdownload.Changelog "יומן שינויים">
-<!ENTITY pdfdownload.Acknowledgments "הבעת תודה">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - אודות">
+<!ENTITY pdfdownload.websiteTooltip "ראה את אתר היוצר">
+<!ENTITY pdfdownload.moreInfo "עוד פרטים:">
+<!ENTITY pdfdownload.readLicenseTooltip "קרא רישיון משתמש-קצה">
+<!ENTITY pdfdownload.license "רישיון">
+<!ENTITY pdfdownload.readChangelogTooltip "הראה יומן שינויים">
+<!ENTITY pdfdownload.changelog "יומן שינויים">
+<!ENTITY pdfdownload.acknowledgments "אישור קבלה">
+<!ENTITY pdfdownload.siteListTitle "יוצאים מן הכלל">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - אפשרויות">
+<!ENTITY pdfdownload.optionsGeneralTab "כללי">
 <!ENTITY pdfdownload.optionsPDFTab "פתיחת PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "המרה מ-PDF ל-HTML">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "פרטים נוספים">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "תפריט כלים">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "הראה &quot;PDF Download&quot; בתפריט כלים">
 <!ENTITY pdfdownload.optionsOpenLink "כיצד להשתמש בצופה ה-PDF של Firefox כדי לפתוח קישורי PDF">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "כיצד לפתוח גרסאות HTML של קבצי ה-PDF">
 <!ENTITY pdfdownload.optionsSameTab "פתח באותה הלשונית">

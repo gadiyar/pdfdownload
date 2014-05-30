@@ -1,30 +1,35 @@
-<!ENTITY pdfdownload.CreatedByLabel "Created by:">
-<!ENTITY pdfdownload.WebsiteLabel "Website">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Download it">
-<!ENTITY pdfdownload.OpenButton "Open PDF">
-<!ENTITY pdfdownload.ViewHtmlButton "View as HTML">
-<!ENTITY pdfdownload.CancelButton "Cancel">
+<!ENTITY pdfdownload.createdByLabel "Created by:">
+<!ENTITY pdfdownload.websiteLabel "Website">
+<!ENTITY pdfdownload.defaultActionLabel "Default action">
+<!ENTITY pdfdownload.showPopup "Show popup dialog">
+<!ENTITY pdfdownload.downloadButton "Download it">
+<!ENTITY pdfdownload.openButton "Open PDF">
+<!ENTITY pdfdownload.viewHtmlButton "View as HTML">
+<!ENTITY pdfdownload.cancelButton "Cancel">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download can't find your default PDF reader. Please choose one in the PDF Download option dialog!">
-<!ENTITY pdfdownload.AboutTitle "PDF Download - About">
-<!ENTITY pdfdownload.WebsiteTooltip "View author's website">
-<!ENTITY pdfdownload.MoreInfo "More details:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Read end-user license">
-<!ENTITY pdfdownload.License "License">
-<!ENTITY pdfdownload.ReadChangelogTooltip "View Changelog">
-<!ENTITY pdfdownload.Changelog "Changelog">
-<!ENTITY pdfdownload.Acknowledgments "Acknowledgments">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - About">
+<!ENTITY pdfdownload.websiteTooltip "View author's website">
+<!ENTITY pdfdownload.moreInfo "More details:">
+<!ENTITY pdfdownload.readLicenseTooltip "Read end-user license">
+<!ENTITY pdfdownload.license "License">
+<!ENTITY pdfdownload.readChangelogTooltip "View Changelog">
+<!ENTITY pdfdownload.changelog "Changelog">
+<!ENTITY pdfdownload.acknowledgments "Acknowledgments">
+<!ENTITY pdfdownload.siteListTitle "Exceptions">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - Options">
+<!ENTITY pdfdownload.optionsGeneralTab "General">
 <!ENTITY pdfdownload.optionsPDFTab "PDF opening">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF to HTML conversion">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "More details">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Tools Menu">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Show PDF Download item in Tools Firefox Menu">
 <!ENTITY pdfdownload.optionsOpenLink "How to open PDF links using Firefox PDF plugin:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "How to open HTML version of PDF files:">
 <!ENTITY pdfdownload.optionsSameTab "Open in the same tab">
 <!ENTITY pdfdownload.optionsNewTab "Open in a new tab">
 <!ENTITY pdfdownload.optionsNewWindow "Open in a new window">
 <!ENTITY pdfdownload.optionsOpenPdf "PDF file opening:">
-<!ENTITY pdfdownload.optionsUsePlugin "Use Firefox default action">
+<!ENTITY pdfdownload.optionsUsePlugin "Use PDF plugin">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Use OS default viewer">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Use this viewer:">
 <!ENTITY pdfdownload.optionsBrowse "Browse...">

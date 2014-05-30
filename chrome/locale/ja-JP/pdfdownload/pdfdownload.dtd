@@ -1,23 +1,28 @@
-<!ENTITY pdfdownload.CreatedByLabel "作成者:">
-<!ENTITY pdfdownload.WebsiteLabel "ホームページ">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "ダウンロード">
-<!ENTITY pdfdownload.OpenButton "PDF を開く">
-<!ENTITY pdfdownload.ViewHtmlButton "HTML で表示">
-<!ENTITY pdfdownload.CancelButton "キャンセル">
+<!ENTITY pdfdownload.createdByLabel "作成者:">
+<!ENTITY pdfdownload.websiteLabel "ホームページ">
+<!ENTITY pdfdownload.defaultActionLabel "動作">
+<!ENTITY pdfdownload.showPopup "ダイアログを表示">
+<!ENTITY pdfdownload.downloadButton "ダウンロード">
+<!ENTITY pdfdownload.openButton "PDF を開く">
+<!ENTITY pdfdownload.viewHtmlButton "HTML で表示">
+<!ENTITY pdfdownload.cancelButton "キャンセル">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download はデフォルトの PDF リーダーを見つけることができませんでした。PDF Download のオプション ダイアログから設定してください。">
-<!ENTITY pdfdownload.AboutTitle "PDF ダウンロードについて。">
-<!ENTITY pdfdownload.WebsiteTooltip "作成者のホームページを表示します。">
-<!ENTITY pdfdownload.MoreInfo "その他 詳細:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "エンドユーザー ライセンスを読むことが出来ます。">
-<!ENTITY pdfdownload.License "ライセンス">
-<!ENTITY pdfdownload.ReadChangelogTooltip "更新履歴を表示します。">
-<!ENTITY pdfdownload.Changelog "更新履歴">
-<!ENTITY pdfdownload.Acknowledgments "謝辞">
+<!ENTITY pdfdownload.aboutTitle "PDF Download について">
+<!ENTITY pdfdownload.websiteTooltip "作成者のホームページを表示します">
+<!ENTITY pdfdownload.moreInfo "その他の詳細:">
+<!ENTITY pdfdownload.readLicenseTooltip "エンドユーザーライセンスを表示します">
+<!ENTITY pdfdownload.license "ライセンス">
+<!ENTITY pdfdownload.readChangelogTooltip "更新履歴を表示します">
+<!ENTITY pdfdownload.changelog "更新履歴">
+<!ENTITY pdfdownload.acknowledgments "謝辞">
+<!ENTITY pdfdownload.siteListTitle "例外">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - オプション">
+<!ENTITY pdfdownload.optionsGeneralTab "全般">
 <!ENTITY pdfdownload.optionsPDFTab "PDF を開く">
 <!ENTITY pdfdownload.optionsHTMLTab "PDF から HTML への変換">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "その他">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "ツール メニュー">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "PDF Download の項目を Firefox のツールに表示">
 <!ENTITY pdfdownload.optionsOpenLink "Firefox PDF プラグインを使用して PDF リンクを開く時の動作:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "PDF ファイルを HTML で開く時の動作:">
 <!ENTITY pdfdownload.optionsSameTab "現在のタブで開く">

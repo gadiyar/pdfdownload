@@ -1,34 +1,39 @@
-<!ENTITY pdfdownload.CreatedByLabel "Автор:">
-<!ENTITY pdfdownload.WebsiteLabel "Сайт">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Загрузить его">
-<!ENTITY pdfdownload.OpenButton "Открыть">
-<!ENTITY pdfdownload.ViewHtmlButton "Просмотреть как HTML">
-<!ENTITY pdfdownload.CancelButton "Отмена">
+<!ENTITY pdfdownload.createdByLabel "Автор">
+<!ENTITY pdfdownload.websiteLabel "Сайт">
+<!ENTITY pdfdownload.defaultActionLabel "Стандартное действие">
+<!ENTITY pdfdownload.showPopup "Показывать всплывающий диалог">
+<!ENTITY pdfdownload.downloadButton "Сохранить">
+<!ENTITY pdfdownload.openButton "Открыть">
+<!ENTITY pdfdownload.viewHtmlButton "Просмотреть в HTML">
+<!ENTITY pdfdownload.cancelButton "Отмена">
 <!ENTITY pdfdownload.osWarningMsg "PDF Download не может найти Ваш PDF просмотрщик. Пожалуйста выберите его в настройках PDF Download!">
-<!ENTITY pdfdownload.AboutTitle "PDF Download - О проекте">
-<!ENTITY pdfdownload.WebsiteTooltip "Посетить страницу автора">
-<!ENTITY pdfdownload.MoreInfo "Дополнительно:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Прочитать лицензионное соглашение конечного пользователя">
-<!ENTITY pdfdownload.License "Лицензия">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Просмотреть список изменений">
-<!ENTITY pdfdownload.Changelog "Список изменений">
-<!ENTITY pdfdownload.Acknowledgments "Благодарности">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - О проекте">
+<!ENTITY pdfdownload.websiteTooltip "Посетить страницу автора">
+<!ENTITY pdfdownload.moreInfo "Дополнительно:">
+<!ENTITY pdfdownload.readLicenseTooltip "Читать лицензионное соглашение конечного пользователя">
+<!ENTITY pdfdownload.license "Лицензия">
+<!ENTITY pdfdownload.readChangelogTooltip "Смотреть список изменений">
+<!ENTITY pdfdownload.changelog "Список изменений">
+<!ENTITY pdfdownload.acknowledgments "Благодарности">
+<!ENTITY pdfdownload.siteListTitle "Исключения">
 <!ENTITY pdfdownload.optionsTitle "PDFDownload - Настройки">
-<!ENTITY pdfdownload.optionsPDFTab "PDF открывается">
+<!ENTITY pdfdownload.optionsGeneralTab "Основные">
+<!ENTITY pdfdownload.optionsPDFTab "Открытие PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Конвертирование PDF в HTML">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Дополнительно">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Меню инструментов">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Показывать PDF Download в панели инструментов Firefox">
 <!ENTITY pdfdownload.optionsOpenLink "Как открывать PDF ссылки, используя Firefox PDF плагин:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Как открывать HTML версии PDF файлов:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Как открывать HTML версию PDF файлов:">
 <!ENTITY pdfdownload.optionsSameTab "Открывать в этой вкладке">
 <!ENTITY pdfdownload.optionsNewTab "Открывать в новой вкладке">
 <!ENTITY pdfdownload.optionsNewWindow "Открывать в новом окне">
-<!ENTITY pdfdownload.optionsOpenPdf "Открытие файлов Pdf:">
+<!ENTITY pdfdownload.optionsOpenPdf "Открытие файлов PDF:">
 <!ENTITY pdfdownload.optionsUsePlugin "Использовать Firefox по умолчанию">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Использовать OS стандартную программу">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Использовать эту программу:">
 <!ENTITY pdfdownload.optionsBrowse "Обзор...">
-<!ENTITY pdfdownload.optionsBrowseTitle "Выбрать PDF Просмотрщик ">
+<!ENTITY pdfdownload.optionsBrowseTitle "Выбрать PDF Просмотрщик">
 <!ENTITY pdfdownload.optionsExeFiles "Windows приложения">
 <!ENTITY pdfdownload.optionsAllFiles "Все файлы">
 <!ENTITY pdfdownload.optionsNotExecutableFileMsg "Выбранный файл не является исполняемым!">

@@ -1,0 +1,43 @@
+<!ENTITY pdfdownload.createdByLabel "Makke troch:">
+<!ENTITY pdfdownload.websiteLabel "Webstee">
+<!ENTITY pdfdownload.defaultActionLabel "Standert aksje">
+<!ENTITY pdfdownload.showPopup "Toan pop-up dialooch">
+<!ENTITY pdfdownload.downloadButton "Laadt it yn">
+<!ENTITY pdfdownload.openButton "Iepenje PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Besjoch as HTML">
+<!ENTITY pdfdownload.cancelButton "Annulearje">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download kin jo primaire PDF lêzer net fine. Kies ien fan de PDF Download opsjes dialooch!">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - Oer">
+<!ENTITY pdfdownload.websiteTooltip "Besyk webstee fan de auteur">
+<!ENTITY pdfdownload.moreInfo "Mear details:">
+<!ENTITY pdfdownload.readLicenseTooltip "Lês brûkerslisinsje">
+<!ENTITY pdfdownload.license "Lisinsje">
+<!ENTITY pdfdownload.readChangelogTooltip "Besjoch Wizigingslog">
+<!ENTITY pdfdownload.changelog "Wizigingslog">
+<!ENTITY pdfdownload.acknowledgments "Tank">
+<!ENTITY pdfdownload.siteListTitle "Utsunderings">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - Opsjes">
+<!ENTITY pdfdownload.optionsGeneralTab "Algemien">
+<!ENTITY pdfdownload.optionsPDFTab "PDF wurdt iepend">
+<!ENTITY pdfdownload.optionsHTMLTab "PDF nei HTML konferzje">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "Mear details">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Ark Menu">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Toan PDF Download ûnderdiel yn it Ekstra Firefox Menu">
+<!ENTITY pdfdownload.optionsOpenLink "Hoe PDF-keppelings iepenje mei de Firefox PDF-ynstekker:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Hoe de HTML-ferzje fan PDF-bestannen iepenje:">
+<!ENTITY pdfdownload.optionsSameTab "Iepenje yn itselde ljebblêd">
+<!ENTITY pdfdownload.optionsNewTab "Iepenje yn in nij ljebblêd">
+<!ENTITY pdfdownload.optionsNewWindow "Iepenje yn in nij skerm">
+<!ENTITY pdfdownload.optionsOpenPdf "Iepenje it PDF-bestân:">
+<!ENTITY pdfdownload.optionsUsePlugin "Brûk Firefox syn standert aksje">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "Brûk OS standert viewer">
+<!ENTITY pdfdownload.optionsUseCustomProgram "Brûk dizze viewer:">
+<!ENTITY pdfdownload.optionsBrowse "Blêdzje...">
+<!ENTITY pdfdownload.optionsBrowseTitle "Kies PDF viewer">
+<!ENTITY pdfdownload.optionsExeFiles "Windows Applikaasjes">
+<!ENTITY pdfdownload.optionsAllFiles "Alle bestannen">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "It selektearre bestân is net útfierber">
+<!ENTITY pdfdownload.optionsUpdateLabel "Update">
+<!ENTITY pdfdownload.optionsCheckUpdates "Kontrolearje op updates">
+<!ENTITY pdfdownload.optionsHowToHelp "Hoe kinne jo stypje">
+<!ENTITY pdfdownload.optionsMakeDonation "Meitsje in donaasje">

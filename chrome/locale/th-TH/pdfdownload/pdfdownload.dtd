@@ -1,18 +1,43 @@
-<!ENTITY pdfdownload.CreatedByLabel "สร้างโดย:">
-<!ENTITY pdfdownload.WebsiteLabel "เว็บไซต์">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "ดาวน์โหลด">
-<!ENTITY pdfdownload.OpenButton "เปิดในแท็บใหม่">
-<!ENTITY pdfdownload.ViewHtmlButton "แสดงเป็น HTML ในแท็บใหม่">
-<!ENTITY pdfdownload.CancelButton "ยกเลิก">
-
-<!ENTITY pdfdownload.AboutTitle "เกี่ยวกับ  - PDF Download">
-<!ENTITY pdfdownload.WebsiteTooltip "แสดงเว็บไซต์ผู้ผลิต">
-<!ENTITY pdfdownload.MoreInfo "รายละเอียดเพิ่มเติม:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "อ่านการอนุญาติใช้งานของผู้ใช้ทั่วไป">
-<!ENTITY pdfdownload.License "การอนุญาติใช้งาน">
-<!ENTITY pdfdownload.ReadChangelogTooltip "แสดง Changelog">
-<!ENTITY pdfdownload.Changelog "Changelog">
-<!ENTITY pdfdownload.Acknowledgments "Acknowledgments">
-
-
+<!ENTITY pdfdownload.createdByLabel "สร้างโดย:">
+<!ENTITY pdfdownload.websiteLabel "เว็บไซต์">
+<!ENTITY pdfdownload.defaultActionLabel "การกระทำปริยาย">
+<!ENTITY pdfdownload.showPopup "แสดงกล่องพ็อปอัป">
+<!ENTITY pdfdownload.downloadButton "ดาวน์โหลดมัน">
+<!ENTITY pdfdownload.openButton "เปิดพีดีเอฟ">
+<!ENTITY pdfdownload.viewHtmlButton "ดูแบบเอชทีเอ็มแอล">
+<!ENTITY pdfdownload.cancelButton "ยกเลิก">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download ไม่สามารถหาตัวอ่านพีดีเอฟปริยายของคุณ กรุณาเลือกในหนึ่งในตัวเลือกกล่องข้อความ PDF Download!">
+<!ENTITY pdfdownload.aboutTitle "PDF Download - เกี่ยวกัุบ">
+<!ENTITY pdfdownload.websiteTooltip "ูดูเว็บไซต์ผู้จัดทำ">
+<!ENTITY pdfdownload.moreInfo "รายละเอียดอื่นๆ:">
+<!ENTITY pdfdownload.readLicenseTooltip "อ่านใบอนุญาตผู้ใช้ขั้นปลาย">
+<!ENTITY pdfdownload.license "ใบอนุญาต">
+<!ENTITY pdfdownload.readChangelogTooltip "ดูบันทึกการเปลี่ยนแปลง">
+<!ENTITY pdfdownload.changelog "บันทึกการเปลี่ยนแปลง">
+<!ENTITY pdfdownload.acknowledgments "กิตติกรรมประกาศ">
+<!ENTITY pdfdownload.siteListTitle "สิ่งผิดปกติ">
+<!ENTITY pdfdownload.optionsTitle "PDF Download - ตัวเลือก">
+<!ENTITY pdfdownload.optionsGeneralTab "ทั่วไป">
+<!ENTITY pdfdownload.optionsPDFTab "การเปิดพีดีเอฟ">
+<!ENTITY pdfdownload.optionsHTMLTab "การเปลี่ยนพีีเอฟเป็นเอชทีเอ็มแอล">
+<!ENTITY pdfdownload.optionsMoreDetailsTab "รายละเอียดอื่นๆ">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "เมนูเครื่องมือ">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "แสดงรายการ PDF Download ในเมนูเครื่องมือของไฟร์ฟอกซ์">
+<!ENTITY pdfdownload.optionsOpenLink "การเปิดลิงก์พีดีเอฟโดยใช้ตัวเสริมพีดีเอฟของไฟร์ฟอกซ์:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "การเปิดแฟ้มพีดีเอฟเป็นแบบเอชทีเอ็มแอล:">
+<!ENTITY pdfdownload.optionsSameTab "เปิดในแท็บเดียวกัน">
+<!ENTITY pdfdownload.optionsNewTab "เปิดในแท็บใหม่">
+<!ENTITY pdfdownload.optionsNewWindow "เปิดในหน้าต่างใหม่">
+<!ENTITY pdfdownload.optionsOpenPdf "การเปิดแฟ้มพีดีเอฟ:">
+<!ENTITY pdfdownload.optionsUsePlugin "ใช้ตัวเสริมพีดีเอฟ">
+<!ENTITY pdfdownload.optionsUseDefaultProgram "ใช้ตัวแสดงปริยายของระบบปฏิบัติการ">
+<!ENTITY pdfdownload.optionsUseCustomProgram "ใช้ตัวแสดงนี้:">
+<!ENTITY pdfdownload.optionsBrowse "ค้นดู...">
+<!ENTITY pdfdownload.optionsBrowseTitle "เลือกตัวแสดงพีดีเอฟ">
+<!ENTITY pdfdownload.optionsExeFiles "โปรแกรมประยุกต์ของวินโดวส์">
+<!ENTITY pdfdownload.optionsAllFiles "แฟ้มทั้งหมด">
+<!ENTITY pdfdownload.optionsNotExecutableFileMsg "แฟ้มที่เลือกไม่ใช่แฟ้มที่ปฏิบัติการได้!">
+<!ENTITY pdfdownload.optionsUpdateLabel "อัปเดต">
+<!ENTITY pdfdownload.optionsCheckUpdates "ตรวจสอบการอัปเดต">
+<!ENTITY pdfdownload.optionsHowToHelp "การช่วยเหลือ">
+<!ENTITY pdfdownload.optionsMakeDonation "บริจาค">
