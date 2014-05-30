@@ -1,0 +1,16 @@
+<!ENTITY pdfdownload.CreatedByLabel "נוצר על ידי">
+<!ENTITY pdfdownload.WebsiteLabel "אתר אינטרנט">
+<!ENTITY pdfdownload.DownloadQuestionLabel"">
+<!ENTITY pdfdownload.DownloadButton "הורד את זה">
+<!ENTITY pdfdownload.OpenButton "פתח בלשונית חדשה">
+<!ENTITY pdfdownload.ViewHtnlButton "צפה בלשונית חדשה כ-HTML">
+<!ENTITY pdfdownload.CancelButton "בטל">
+
+<!ENTITY pdfdownload.AboutTitle "אודות הורדת PDF">
+<!ENTITY pdfdownload.WebsiteTooltip "צפה באתר המחבר">
+<!ENTITY pdfdownload.MoreInfo "פרטים נוספים:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "ראה רשיון משתמש קצה">
+<!ENTITY pdfdownload.License "רשיון">
+<!ENTITY pdfdownload.ReadChangelogTooltip "ראה יומן שינויים">
+<!ENTITY pdfdownload.Changelog "יומן שינויים">
+<!ENTITY pdfdownload.Acknowledgments "הודאה באמיתות">

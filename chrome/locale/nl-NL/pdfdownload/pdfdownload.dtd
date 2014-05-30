@@ -1,0 +1,16 @@
+<!ENTITY pdfdownload.CreatedByLabel "Gemaakt door:">
+<!ENTITY pdfdownload.WebsiteLabel "Website">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "Downloaden">
+<!ENTITY pdfdownload.OpenButton "In een nieuwe tab openen">
+<!ENTITY pdfdownload.ViewHtmlButton "Als HTML bekijken in een nieuwe tab">
+<!ENTITY pdfdownload.CancelButton "Annuleren">
+
+<!ENTITY pdfdownload.AboutTitle "PDF Download - Over">
+<!ENTITY pdfdownload.WebsiteTooltip "Ga naar de website van de auteur">
+<!ENTITY pdfdownload.MoreInfo "Meer details:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Licentie voor de eindgebruiker lezen">
+<!ENTITY pdfdownload.License "Licentie">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Changelog bekijken">
+<!ENTITY pdfdownload.Changelog "Changelog">
+<!ENTITY pdfdownload.Acknowledgments "Dankbetuigingen">

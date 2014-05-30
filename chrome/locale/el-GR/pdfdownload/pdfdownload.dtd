@@ -1,0 +1,18 @@
+<!ENTITY pdfdownload.CreatedByLabel "Δημιουργήθηκε από:">
+<!ENTITY pdfdownload.WebsiteLabel "Δικτυακός Τόπος:">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "Κατεβάστε το">
+<!ENTITY pdfdownload.OpenButton "Άνοιγμα σε νέα ετικέτα">
+<!ENTITY pdfdownload.ViewHtmlButton "Δείτε το ως HTML σε νέα καρτέλα">
+<!ENTITY pdfdownload.CancelButton "Ακύρωση">
+
+<!ENTITY pdfdownload.AboutTitle "Πληροφορίες για το PDF Download">
+<!ENTITY pdfdownload.WebsiteTooltip "Δικτυακός τόπος δημιουργού">
+<!ENTITY pdfdownload.MoreInfo "Περισσότερες λεπτομέρειες:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Άδεια χρήσης:">
+<!ENTITY pdfdownload.License "Άδεια χρήσης">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Δείτε τις αλλαγές από τις προηγούμενες εκδόσεις">
+<!ENTITY pdfdownload.Changelog "Λίστα αλλαγών">
+<!ENTITY pdfdownload.Acknowledgments "Ευχαριστίες">
+
+

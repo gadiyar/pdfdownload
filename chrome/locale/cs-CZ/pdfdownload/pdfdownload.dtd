@@ -1,0 +1,18 @@
+<!ENTITY pdfdownload.CreatedByLabel "Vytvořil:">
+<!ENTITY pdfdownload.WebsiteLabel "Webová stránka">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "Stáhnout">
+<!ENTITY pdfdownload.OpenButton "Otevřít v novém panelu">
+<!ENTITY pdfdownload.ViewHtmlButton "Zobrazit jako HTML v novém panelu">
+<!ENTITY pdfdownload.CancelButton "Zrušit">
+
+<!ENTITY pdfdownload.AboutTitle "O PDF Download">
+<!ENTITY pdfdownload.WebsiteTooltip "Zobrazit autorovu webovou stránku">
+<!ENTITY pdfdownload.MoreInfo "Více podrobností:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Přečíst licenci pro koncové uživatele">
+<!ENTITY pdfdownload.License "Licence">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Zobrazit změny v jednotlivých verzích">
+<!ENTITY pdfdownload.Changelog "Změny v jednotlivých verzích">
+<!ENTITY pdfdownload.Acknowledgments "Poděkování">
+
+

@@ -4,13 +4,21 @@
 var XpiInstaller = {
 
 	// --- Editable items begin ---
-	extFullName: 'PDF Download', // The name displayed to the user (don't include the version)
-	extShortName: 'pdfdownload', // The leafname of the JAR file (without the .jar part)
-	extVersion: '0.4.1.1',
+	extFullName: 'PDF Download',
+	extShortName: 'pdfdownload',
+	extVersion: '0.4.1.2',
 	extAuthor: 'Denis Remondini',
-	extLocaleNames: null, // e.g. ['en-US', 'en-GB']
-	extSkinNames: null, // e.g. ['classic', 'modern']
-	extPostInstallMessage: 'Success! Please restart your browser to finish the installation.', // Set to null for no post-install message
+	extLocaleNames: ['en-US', 'cs-CZ',
+			     'da-DK', 'de-DE',
+                       'el-GR', 'es-AR',
+                       'es-ES', 'fi-FI',
+                       'fr-FR', 'he-IL',
+                       'hu-HU', 'it-IT',
+                       'ja-JP', 'nl-NL',
+                       'pt-BR', 'ro-RO',
+                       'sv-SE', 'th-TH'],
+	extSkinNames: ['classic'],
+	extPostInstallMessage: 'Success! Please restart your browser to finish the installation.', 
 	// --- Editable items end ---
 
 	profileInstall: true,

@@ -1,0 +1,18 @@
+<!ENTITY pdfdownload.CreatedByLabel "Udviklet af:">
+<!ENTITY pdfdownload.WebsiteLabel "Hjemmeside">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "Gem det">
+<!ENTITY pdfdownload.OpenButton "Åben i nyt faneblad">
+<!ENTITY pdfdownload.ViewHtmlButton "Vis som HTML i nyt faneblad">
+<!ENTITY pdfdownload.CancelButton "Annuller">
+
+<!ENTITY pdfdownload.AboutTitle "Om PDF Download">
+<!ENTITY pdfdownload.WebsiteTooltip "Vis forfatterens hjemmeside">
+<!ENTITY pdfdownload.MoreInfo "Vis flere detaljer:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Læs slutbruger-licens">
+<!ENTITY pdfdownload.License "Licens">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Vis ændringsdokument">
+<!ENTITY pdfdownload.Changelog "Ændringsdokument">
+<!ENTITY pdfdownload.Acknowledgments "Tak til bidragsydere">
+
+

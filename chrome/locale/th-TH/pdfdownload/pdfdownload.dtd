@@ -1,0 +1,18 @@
+<!ENTITY pdfdownload.CreatedByLabel "สร้างโดย:">
+<!ENTITY pdfdownload.WebsiteLabel "เว็บไซต์">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "ดาวน์โหลด">
+<!ENTITY pdfdownload.OpenButton "เปิดในแท็บใหม่">
+<!ENTITY pdfdownload.ViewHtmlButton "แสดงเป็น HTML ในแท็บใหม่">
+<!ENTITY pdfdownload.CancelButton "ยกเลิก">
+
+<!ENTITY pdfdownload.AboutTitle "เกี่ยวกับ  - PDF Download">
+<!ENTITY pdfdownload.WebsiteTooltip "แสดงเว็บไซต์ผู้ผลิต">
+<!ENTITY pdfdownload.MoreInfo "รายละเอียดเพิ่มเติม:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "อ่านการอนุญาติใช้งานของผู้ใช้ทั่วไป">
+<!ENTITY pdfdownload.License "การอนุญาติใช้งาน">
+<!ENTITY pdfdownload.ReadChangelogTooltip "แสดง Changelog">
+<!ENTITY pdfdownload.Changelog "Changelog">
+<!ENTITY pdfdownload.Acknowledgments "Acknowledgments">
+
+

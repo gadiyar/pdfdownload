@@ -1,0 +1,16 @@
+<!ENTITY pdfdownload.CreatedByLabel "Desenvolvido por:">
+<!ENTITY pdfdownload.WebsiteLabel "Website">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "Baixar">
+<!ENTITY pdfdownload.OpenButton "Abrir em uma nova tab">
+<!ENTITY pdfdownload.ViewHtmlButton "Visualizar como HTML em uma nova tab">
+<!ENTITY pdfdownload.CancelButton "Cancelar">
+<!ENTITY pdfdownload.AboutTitle "PDF Download - Sobre">
+<!ENTITY pdfdownload.WebsiteTooltip "Acessar o site do autor">
+<!ENTITY pdfdownload.MoreInfo "Mais detalhes:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Ler licença (usuário final)">
+<!ENTITY pdfdownload.License "Licença">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Ver log de alterações">
+<!ENTITY pdfdownload.Changelog "Log de alterações">
+<!ENTITY pdfdownload.Acknowledgments "Créditos">
+

@@ -1,0 +1,18 @@
+<!ENTITY pdfdownload.CreatedByLabel "Tekijät:">
+<!ENTITY pdfdownload.WebsiteLabel "Websivu">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "Lataa">
+<!ENTITY pdfdownload.OpenButton "Avaa uudessa välilehdessä">
+<!ENTITY pdfdownload.ViewHtmlButton "Lue HTML uudessa välilehdessä">
+<!ENTITY pdfdownload.CancelButton "Peruuta">
+
+<!ENTITY pdfdownload.AboutTitle "PDF Download - Tietoja">
+<!ENTITY pdfdownload.WebsiteTooltip "Tekijän websivu">
+<!ENTITY pdfdownload.MoreInfo "Lisää tietoja:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Lue käyttäjä lisenssi">
+<!ENTITY pdfdownload.License "Lisenssisopimus">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Näytä muutokset">
+<!ENTITY pdfdownload.Changelog "Muutokset">
+<!ENTITY pdfdownload.Acknowledgments "Tunnusteet">
+
+

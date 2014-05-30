@@ -1,0 +1,18 @@
+<!ENTITY pdfdownload.CreatedByLabel "Készítette:">
+<!ENTITY pdfdownload.WebsiteLabel "Honlap">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "Letöltés">
+<!ENTITY pdfdownload.OpenButton "Megnyitás új böngészőlapon">
+<!ENTITY pdfdownload.ViewHtmlButton "Megnyitás HTML-ként új böngészőlapon">
+<!ENTITY pdfdownload.CancelButton "Mégse">
+
+<!ENTITY pdfdownload.AboutTitle "A PDF Download névjegye">
+<!ENTITY pdfdownload.WebsiteTooltip "A készítő honlapjának megtekintése">
+<!ENTITY pdfdownload.MoreInfo "További információk:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "A végfelhasználói licenc elolvasása">
+<!ENTITY pdfdownload.License "Licenc">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Változások listájának megtekintése">
+<!ENTITY pdfdownload.Changelog "Változások listája">
+<!ENTITY pdfdownload.Acknowledgments "Köszönetnyilvánítások">
+
+

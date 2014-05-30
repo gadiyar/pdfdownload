@@ -1,0 +1,18 @@
+<!ENTITY pdfdownload.CreatedByLabel "作者:">
+<!ENTITY pdfdownload.WebsiteLabel "网站">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "下载">
+<!ENTITY pdfdownload.OpenButton "在新标签页中打开">
+<!ENTITY pdfdownload.ViewHtmlButton "在新标签页中以HTML方式查看">
+<!ENTITY pdfdownload.CancelButton "取消">
+
+<!ENTITY pdfdownload.AboutTitle "PDF Download - 关于">
+<!ENTITY pdfdownload.WebsiteTooltip "访问作者的网站">
+<!ENTITY pdfdownload.MoreInfo "更多详情:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "阅读最终用户许可协议">
+<!ENTITY pdfdownload.License "许可协议">
+<!ENTITY pdfdownload.ReadChangelogTooltip "查看更新记录">
+<!ENTITY pdfdownload.Changelog "更新记录">
+<!ENTITY pdfdownload.Acknowledgments "致谢">
+
+
