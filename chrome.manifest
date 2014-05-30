@@ -52,6 +52,8 @@ locale	pdfdownload	nl-NL	jar:chrome/pdfdownload.jar!/locale/nl-NL/pdfdownload/
 
 locale	pdfdownload	pt-BR	jar:chrome/pdfdownload.jar!/locale/pt-BR/pdfdownload/
 
+locale	pdfdownload	pl-PL	jar:chrome/pdfdownload.jar!/locale/pl-PL/pdfdownload/
+
 locale	pdfdownload	pt-PT	jar:chrome/pdfdownload.jar!/locale/pt-PT/pdfdownload/
 
 locale	pdfdownload	ro-RO	jar:chrome/pdfdownload.jar!/locale/ro-RO/pdfdownload/
@@ -63,6 +65,8 @@ locale	pdfdownload	sk-SK	jar:chrome/pdfdownload.jar!/locale/sk-SK/pdfdownload/
 locale	pdfdownload	sq-AL	jar:chrome/pdfdownload.jar!/locale/sq-AL/pdfdownload/
 
 locale	pdfdownload	sv-SE	jar:chrome/pdfdownload.jar!/locale/sv-SE/pdfdownload/
+
+locale	pdfdownload	sl-SI	jar:chrome/pdfdownload.jar!/locale/sl-SI/pdfdownload/
 
 locale	pdfdownload	th-TH	jar:chrome/pdfdownload.jar!/locale/th-TH/pdfdownload/
 

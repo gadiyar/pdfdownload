@@ -7,7 +7,7 @@
 
     <em:id>{37E4D8EA-8BDA-4831-8EA1-89053939A250}</em:id>
     <em:name>PDF Download</em:name>
-    <em:version>0.7.3</em:version>
+    <em:version>0.7.4</em:version>
     <em:description>Allows to choose if you want to view a PDF file inside the browser (as PDF or HTML), if you want to view it outside Firefox with your default or custom PDF reader, or if you want to download it!</em:description>
     <em:creator>Denis Remondini</em:creator>
     <em:iconURL>chrome://pdfdownload/skin/pdfdownload.png</em:iconURL>
@@ -41,12 +41,14 @@
 		<em:locale>locale/nb-NO/pdfdownload/</em:locale>
 		<em:locale>locale/nl-NL/pdfdownload/</em:locale>
 		<em:locale>locale/pt-BR/pdfdownload/</em:locale>
+		<em:locale>locale/pl-PL/pdfdownload/</em:locale>
 		<em:locale>locale/pt-PT/pdfdownload/</em:locale>
 		<em:locale>locale/ro-RO/pdfdownload/</em:locale>
 		<em:locale>locale/ru-RU/pdfdownload/</em:locale>
 		<em:locale>locale/sk-SK/pdfdownload/</em:locale>
 		<em:locale>locale/sq-AL/pdfdownload/</em:locale>
 		<em:locale>locale/sv-SE/pdfdownload/</em:locale>
+		<em:locale>locale/sl-SI/pdfdownload/</em:locale>
 		<em:locale>locale/th-TH/pdfdownload/</em:locale>
 		<em:locale>locale/tr-TR/pdfdownload/</em:locale>
 		<em:locale>locale/uk-UA/pdfdownload/</em:locale>

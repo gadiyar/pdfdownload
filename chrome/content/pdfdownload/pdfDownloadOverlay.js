@@ -51,7 +51,9 @@ function getBaseUrl() {
 	var dir = document.commandDispatcher.focusedWindow.location.href;
       var baseTag = window._content.document.getElementsByTagName('base')[0];
 	if (baseTag != null) {
-	    dir = baseTag.href;
+		if ((baseTag.href != null) && (baseTag.href != "")) {
+	    		dir = baseTag.href;
+		}
 	}
 	return dir;
 }

@@ -1,23 +1,28 @@
-<!ENTITY pdfdownload.CreatedByLabel "Avtor:">
-<!ENTITY pdfdownload.WebsiteLabel "Spletna stran">
-<!ENTITY pdfdownload.DownloadQuestionLabel "?">
-<!ENTITY pdfdownload.DownloadButton "Prenesi">
-<!ENTITY pdfdownload.OpenButton "Odpri PDF">
-<!ENTITY pdfdownload.ViewHtmlButton "Oglej kot HTML">
-<!ENTITY pdfdownload.CancelButton "Prekliči">
+<!ENTITY pdfdownload.createdByLabel "Avtor:">
+<!ENTITY pdfdownload.websiteLabel "Spletna stran">
+<!ENTITY pdfdownload.defaultActionLabel "Privzeto dejanje">
+<!ENTITY pdfdownload.showPopup "Pokaži pojavno okno">
+<!ENTITY pdfdownload.downloadButton "Prenesi">
+<!ENTITY pdfdownload.openButton "Odpri PDF">
+<!ENTITY pdfdownload.viewHtmlButton "Oglej kot HTML">
+<!ENTITY pdfdownload.cancelButton "Prekliči">
 <!ENTITY pdfdownload.osWarningMsg "PrenosPDF ne more najti privzetega bralnika PDF. Prosimo, da ga izberete v pogovornem oknu možnosti prenosa PDF!">
-<!ENTITY pdfdownload.AboutTitle "PrenosPDF - O programu">
-<!ENTITY pdfdownload.WebsiteTooltip "Avtorjeva domača stran">
-<!ENTITY pdfdownload.MoreInfo "Podrobnosti:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Preberi licenco">
-<!ENTITY pdfdownload.License "Licenca">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Poglej dnevnik sprememb">
-<!ENTITY pdfdownload.Changelog "Dnevnik sprememb">
-<!ENTITY pdfdownload.Acknowledgments "Zahvale">
+<!ENTITY pdfdownload.aboutTitle "Prenos PDF - O razširitvi">
+<!ENTITY pdfdownload.websiteTooltip "Ogled spletne strani avtorja">
+<!ENTITY pdfdownload.moreInfo "Več podrobnosti:">
+<!ENTITY pdfdownload.readLicenseTooltip "Preberi licenco za končnega uporabnika">
+<!ENTITY pdfdownload.license "Licenca">
+<!ENTITY pdfdownload.readChangelogTooltip "Pokaži dnevnik sprememb">
+<!ENTITY pdfdownload.changelog "Dnevnik sprememb">
+<!ENTITY pdfdownload.acknowledgments "Zahvale">
+<!ENTITY pdfdownload.siteListTitle "Izjeme">
 <!ENTITY pdfdownload.optionsTitle "PrenosPDF - Možnosti">
+<!ENTITY pdfdownload.optionsGeneralTab "Splošno">
 <!ENTITY pdfdownload.optionsPDFTab "Opdiranje PDF">
 <!ENTITY pdfdownload.optionsHTMLTab "Pretvorba PDF v HTML">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Več podrobnosti">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Meni Orodja">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Pokaži možnost Prenesi PDF v meniju Orodja v Firefoxu">
 <!ENTITY pdfdownload.optionsOpenLink "Povezave PDF z uporabo razširitve Firefox PDF:">
 <!ENTITY pdfdownload.optionsOpenPDFtoHTML "Različico HTML datotek PDF:">
 <!ENTITY pdfdownload.optionsSameTab "odpri v istem zavihku">

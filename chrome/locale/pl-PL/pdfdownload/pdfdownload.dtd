@@ -1,30 +1,35 @@
-<!ENTITY pdfdownload.CreatedByLabel "Autor:">
-<!ENTITY pdfdownload.WebsiteLabel "Strona domowa">
-<!ENTITY pdfdownload.DownloadQuestionLabel "">
-<!ENTITY pdfdownload.DownloadButton "Zapisz na dysku">
-<!ENTITY pdfdownload.OpenButton "Otwórz plik">
-<!ENTITY pdfdownload.ViewHtmlButton "Pokaż w nowej karcie jako HTML">
-<!ENTITY pdfdownload.CancelButton "Anuluj">
-<!ENTITY pdfdownload.osWarningMsg "PDF Download nie może znależć domyślnego czytnika plików PDF. Proszę wybrać czytnik w opcjach rozszerzenia.">
-<!ENTITY pdfdownload.AboutTitle "O PDF Download">
-<!ENTITY pdfdownload.WebsiteTooltip "Zobacz stronę autora">
-<!ENTITY pdfdownload.MoreInfo "Więcej szczegółów:">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Przeczytaj umowę licencyjną">
-<!ENTITY pdfdownload.License "Umowa licencyjna">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Zobacz opis zmian">
-<!ENTITY pdfdownload.Changelog "Opis zmian">
-<!ENTITY pdfdownload.Acknowledgments "Podziękowania">
+<!ENTITY pdfdownload.createdByLabel "Autor:">
+<!ENTITY pdfdownload.websiteLabel "Strona domowa">
+<!ENTITY pdfdownload.defaultActionLabel "Domyślne działanie rozszerzenia">
+<!ENTITY pdfdownload.showPopup "Wyświetl okno wyboru">
+<!ENTITY pdfdownload.downloadButton "Pobierz plik">
+<!ENTITY pdfdownload.openButton "Otwórz plik">
+<!ENTITY pdfdownload.viewHtmlButton "Wyświetl w formacie HTML">
+<!ENTITY pdfdownload.cancelButton "Anuluj">
+<!ENTITY pdfdownload.osWarningMsg "PDF Download nie może znaleźć domyślnego czytnika plików PDF. Proszę wybrać czytnik w opcjach rozszerzenia.">
+<!ENTITY pdfdownload.aboutTitle "O PDF Download">
+<!ENTITY pdfdownload.websiteTooltip "Zobacz stronę autora">
+<!ENTITY pdfdownload.moreInfo "Inne informacje:">
+<!ENTITY pdfdownload.readLicenseTooltip "Przeczytaj umowę licencyjną">
+<!ENTITY pdfdownload.license "Umowa licencyjna">
+<!ENTITY pdfdownload.readChangelogTooltip "Zobacz opis zmian">
+<!ENTITY pdfdownload.changelog "Opis zmian">
+<!ENTITY pdfdownload.acknowledgments "Podziękowania">
+<!ENTITY pdfdownload.siteListTitle "Wyjątki">
 <!ENTITY pdfdownload.optionsTitle "PDF Download - opcje">
+<!ENTITY pdfdownload.optionsGeneralTab "Ogólne">
 <!ENTITY pdfdownload.optionsPDFTab "Otwieranie">
 <!ENTITY pdfdownload.optionsHTMLTab "Konwersja">
 <!ENTITY pdfdownload.optionsMoreDetailsTab "Różne">
+<!ENTITY pdfdownload.optionsToggleItemToolsMenu "Narzędzia">
+<!ENTITY pdfdownload.optionsShowItemToolsMenu "Wyświetl element &quot;PDF Download - opcje&quot; w menu &quot;Narzędzia&quot;">
 <!ENTITY pdfdownload.optionsOpenLink "Odnośniki do plików PDF otwierane za pomocą wtyczki PDF otwórz w:">
-<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Pliki PDF przekonwertowane do HTML otwórz w:">
+<!ENTITY pdfdownload.optionsOpenPDFtoHTML "Pliki PDF przekonwertowane do formatu HTML otwórz w:">
 <!ENTITY pdfdownload.optionsSameTab "aktywnej karcie">
 <!ENTITY pdfdownload.optionsNewTab "nowej karcie">
 <!ENTITY pdfdownload.optionsNewWindow "nowym oknie">
 <!ENTITY pdfdownload.optionsOpenPdf "Otwieranie plików PDF">
-<!ENTITY pdfdownload.optionsUsePlugin "Użyj domyślnego działania Firefoksa">
+<!ENTITY pdfdownload.optionsUsePlugin "Użyj wtyczki PDF Firefoksa">
 <!ENTITY pdfdownload.optionsUseDefaultProgram "Użyj domyślnego czytnika plików PDF systemu operacyjnego">
 <!ENTITY pdfdownload.optionsUseCustomProgram "Użyj tego czytnika:">
 <!ENTITY pdfdownload.optionsBrowse "Szukaj">
@@ -32,7 +37,7 @@
 <!ENTITY pdfdownload.optionsExeFiles "Aplikacje Windows">
 <!ENTITY pdfdownload.optionsAllFiles "Wszystkie pliki">
 <!ENTITY pdfdownload.optionsNotExecutableFileMsg "Wybrany plik nie jest plikiem wykonywalnym!">
-<!ENTITY pdfdownload.optionsUpdateLabel "Uaktualnianie">
-<!ENTITY pdfdownload.optionsCheckUpdates "Sprawdź uaktualnienia">
+<!ENTITY pdfdownload.optionsUpdateLabel "Zainstalowana wersja rozszerzenia">
+<!ENTITY pdfdownload.optionsCheckUpdates "Sprawdź aktualizacje">
 <!ENTITY pdfdownload.optionsHowToHelp "Dotacje">
 <!ENTITY pdfdownload.optionsMakeDonation "Wspomóż autora">
