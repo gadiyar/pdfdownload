@@ -158,7 +158,7 @@
 		<groupbox class="box-inset">
 			<caption label="&pdfdownload.optionsUpdateLabel;" class="rounded outset"/>
 			<hbox>
-				<label value="PDF Download 1.0.1.1"/>
+				<label value="PDF Download 1.0.1.2"/>
 				<spacer flex="1"/>
 				<button label="&pdfdownload.optionsCheckUpdates;" onclick="pdfDownloadShared.openURL('http://www.pdfdownload.org');"/>
 			</hbox>
