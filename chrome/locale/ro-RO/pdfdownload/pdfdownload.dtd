@@ -8,7 +8,7 @@
 <!ENTITY pdfdownload.openWithoutExtension "Ignoră PDF Download">
 <!ENTITY pdfdownload.cancelButton "Renunţă">
 <!ENTITY pdfdownload.webtopdf.generatePDFBtn.tooltip "Convertire pagină Web către fişier PDF">
-<!ENTITY pdfdownload.webtopdf.outputSettings "">
+<!ENTITY pdfdownload.webtopdf.outputSettings "PDF output settings">
 <!ENTITY pdfdownload.webtopdf.pageOrientation.label "Orientare pagină:">
 <!ENTITY pdfdownload.webtopdf.pageOrientation.portrait "Tip portret">
 <!ENTITY pdfdownload.webtopdf.pageOrientation.landscape "Tip vedere">
@@ -75,7 +75,6 @@
 <!ENTITY pdfdownload.optionsCheckUpdates "Caută actualizări">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Imagini">
 <!ENTITY pdfdownload.options.width "80ex">
-<!ENTITY pdfdownload.options.height "55ex">
 <!ENTITY pdfdownload.popup.width "80ex">
 <!ENTITY pdfdownload.popup.title "PDF Download, creat de Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Arată imaginile în versiunea HTML a fişierului PDF">

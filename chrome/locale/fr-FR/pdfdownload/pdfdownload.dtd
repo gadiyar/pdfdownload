@@ -75,7 +75,6 @@
 <!ENTITY pdfdownload.optionsCheckUpdates "Vérifier les mises à jour">
 <!ENTITY pdfdownload.imagesIntoTheHTMLVersion "Images">
 <!ENTITY pdfdownload.options.width "80ex">
-<!ENTITY pdfdownload.options.height "50ex">
 <!ENTITY pdfdownload.popup.width "85ex">
 <!ENTITY pdfdownload.popup.title "PDF Download de Nitro PDF Software">
 <!ENTITY pdfdownload.optionsShowImagesInHTML "Afficher les images dans la version HTML du fichier PDF">

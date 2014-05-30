@@ -30,7 +30,7 @@
 <!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF "Email Web Page as PDF">
 <!ENTITY pdfdownload.webtopdf.action.emailWebPageAsPDF.tooltip "Convert page to PDF and then attach to an email.">
 <!ENTITY pdfdownload.webtopdf.options "Options...">
-<!ENTITY pdfdownload.webtopdf.options.tooltip "Customize how you'd like PDF Download to work.">
+<!ENTITY pdfdownload.webtopdf.options.tooltip "Customize how you&apos;d like PDF Download to work.">
 <!ENTITY pdfdownload.webtopdf.emaildialog.topDescription "Enter destination email address. The current webpage will be converted to PDF and sent to you as an email attachment.">
 <!ENTITY pdfdownload.help "PDF Download Help">
 <!ENTITY pdfdownload.help.tooltip "Get help using PDF Download.">
