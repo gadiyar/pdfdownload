@@ -1,0 +1,18 @@
+<!ENTITY pdfdownload.CreatedByLabel "Izdelal:">
+<!ENTITY pdfdownload.WebsiteLabel "Domaca stran">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
+<!ENTITY pdfdownload.DownloadButton "Prenesi">
+<!ENTITY pdfdownload.OpenButton "Odpri v novem zavihku">
+<!ENTITY pdfdownload.ViewHtmlButton "Odpri kot HTML v novem zavihku">
+<!ENTITY pdfdownload.CancelButton "Preklici">
+
+<!ENTITY pdfdownload.AboutTitle "PDF Download - O programu">
+<!ENTITY pdfdownload.WebsiteTooltip "Avtorjeva domaca stran">
+<!ENTITY pdfdownload.MoreInfo "Podrobnosti:">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Preberi licenco">
+<!ENTITY pdfdownload.License "Licenca">
+<!ENTITY pdfdownload.ReadChangelogTooltip "Poglej log spremeb">
+<!ENTITY pdfdownload.Changelog "Poglej log">
+<!ENTITY pdfdownload.Acknowledgments "Zahvale">
+
+

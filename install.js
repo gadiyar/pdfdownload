@@ -6,7 +6,7 @@ var XpiInstaller = {
 	// --- Editable items begin ---
 	extFullName: 'PDF Download',
 	extShortName: 'pdfdownload',
-	extVersion: '0.4.1.2',
+	extVersion: '0.5
 	extAuthor: 'Denis Remondini',
 	extLocaleNames: ['en-US', 'cs-CZ',
 			     'da-DK', 'de-DE',
@@ -16,7 +16,10 @@ var XpiInstaller = {
                        'hu-HU', 'it-IT',
                        'ja-JP', 'nl-NL',
                        'pt-BR', 'ro-RO',
-                       'sv-SE', 'th-TH'],
+                       'sv-SE', 'th-TH',
+			     'pl-PL', 'ru-RU',
+ 			     'zh-CN', 'zh-TW',
+ 			     'sl-SI'],
 	extSkinNames: ['classic'],
 	extPostInstallMessage: 'Success! Please restart your browser to finish the installation.', 
 	// --- Editable items end ---

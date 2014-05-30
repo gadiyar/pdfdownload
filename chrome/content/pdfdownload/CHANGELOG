@@ -1,5 +1,12 @@
 CHANGELOG
 
+v0.5    :   2005-07-06
+
+ - Added support for pdf.gz file type (compressed pdf files).
+ - After many requests, the opening new tab feature has been changed: now the tab is not selected anymore and stays in background.
+   In the future, it will be introduced an option to change this behaviour.
+ - Added language support for Slovenian and Polish.
+
 v0.4.1.3:   2005-06-13
  
  - Added language support for Russian.
@@ -31,7 +38,7 @@ v0.3  :     2005-05-03
 
   - Changed the service used to convert pdf to html. Now the extension don't use Adobe service anymore, because it	
     didn't work always. Now the PDF to HTML conversion works always (depending only on the web server up-time).
-  - Changed support for local PDF files, because as made before it was pointless. Now my extension doesn't care about 
+  - Changed support for local PDF files, because as made before it was pointless. Now the extension doesn't care about 
     local files, because if you have a pdf file in your local filesystem you shouldn't need to open it from a html page!
   - Added language support for Spanish, Romanian, German and French.
 

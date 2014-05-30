@@ -127,6 +127,9 @@ function mouseClick(aEvent) {
 
     var lastDotPosition = url.lastIndexOf('.');
     var ext = url.substring(lastDotPosition + 1,url.length);
+    if (ext.toLowerCase() == "gz") {
+	  ext = url.substring(lastDotPosition-3,lastDotPosition);
+    }
     if (ext.toLowerCase() == "pdf") {
 	if (isLinkType("file:",url)) {
 		return;
@@ -149,12 +152,14 @@ function mouseClick(aEvent) {
 		savelink(url);
 	} else if (answer.res == "open") {
 		var myTab = getBrowser().addTab(url);
-		getBrowser().selectedTab = myTab;
+		// Removed because many users have asked to remove it and give them the chance to enable it in the option dialog
+		//getBrowser().selectedTab = myTab;
 	} else if (answer.res == "openHtml") {
 		var hash = computeHash(url);
 		var pdf2htmlUrl = answer.mirror+"?url="+url+"&ID="+hash;
 		var myTab = getBrowser().addTab(pdf2htmlUrl);
-		getBrowser().selectedTab = myTab;
+		// Removed because many users have asked to remove it and give them the chance to enable it in the option dialog
+		//getBrowser().selectedTab = myTab;
 	}
 	aEvent.preventDefault();
 	aEvent.stopPropagation();
