@@ -1,17 +1,17 @@
-<!ENTITY pdfdownload.CreatedByLabel "Hergestellt von:">
-<!ENTITY pdfdownload.WebsiteLabel "Web Site">
-<!ENTITY pdfdownload.DownloadQuestionLabel "Die ausgewaehlte Datei ist eine pdf-Datei ">
+<!ENTITY pdfdownload.CreatedByLabel "Erstellt von:">
+<!ENTITY pdfdownload.WebsiteLabel "Web Seite">
+<!ENTITY pdfdownload.DownloadQuestionLabel "">
 <!ENTITY pdfdownload.DownloadButton "Speichern">
-<!ENTITY pdfdownload.OpenButton "Oeffne in einer neuen na nuova scheda">
-<!ENTITY pdfdownload.ViewHtmlButton "Oeffne HTML-Code">
+<!ENTITY pdfdownload.OpenButton "In einem neuen Fenster &#x00F6;ffnen">
+<!ENTITY pdfdownload.ViewHtmlButton "Als HTML-Seite anzeigen">
 <!ENTITY pdfdownload.CancelButton "Abbrechen">
 
-<!ENTITY pdfdownload.AboutTitle "PDF Download - About">
-<!ENTITY pdfdownload.WebsiteTooltip "Siehe Webseite des Authors">
+<!ENTITY pdfdownload.AboutTitle "&#x00DC;ber - PDF Download">
+<!ENTITY pdfdownload.WebsiteTooltip "Webseite des Authors">
 <!ENTITY pdfdownload.MoreInfo "Mehr Info">
-<!ENTITY pdfdownload.ReadLicenseTooltip "Zeige Lizenz">
+<!ENTITY pdfdownload.ReadLicenseTooltip "Lizenzbedingungen anzeigen">
 <!ENTITY pdfdownload.License "Lizenz">
-<!ENTITY pdfdownload.ReadChangelogTooltip "Siehe Changelog">
-<!ENTITY pdfdownload.Changelog "Changelog">
-
+<!ENTITY pdfdownload.ReadChangelogTooltip "Siehe Programmänderungen">
+<!ENTITY pdfdownload.Changelog "Programmänderungen">
+<!ENTITY pdfdownload.Acknowledgments "Danksagungen">
 

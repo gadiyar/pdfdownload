@@ -6,7 +6,7 @@ var XpiInstaller = {
 	// --- Editable items begin ---
 	extFullName: 'PDF Download', // The name displayed to the user (don't include the version)
 	extShortName: 'pdfdownload', // The leafname of the JAR file (without the .jar part)
-	extVersion: '0.1',
+	extVersion: '0.4',
 	extAuthor: 'Denis Remondini',
 	extLocaleNames: null, // e.g. ['en-US', 'en-GB']
 	extSkinNames: null, // e.g. ['classic', 'modern']

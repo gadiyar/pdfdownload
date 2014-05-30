@@ -1,5 +1,20 @@
 CHANGELOG
 
+v0.4.1:     2005-05-13
+ 
+  - Fixed bug in Save PDF function.
+
+v0.4  :	2005-05-12
+
+  - Fixed some bugs in german and spanish translation.
+  - Introduced a mirroring feature on server side, and updated the extension in order to use the new feature.
+  - Added support for pdf files on FTP servers.
+
+
+v0.3.1:	2005-05-06
+
+  - Added language support for Japanese.
+
 v0.3  :     2005-05-03
 
   - Changed the service used to convert pdf to html. Now the extension don't use Adobe service anymore, because it	

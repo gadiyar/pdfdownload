@@ -70,12 +70,16 @@ function savelink(url) {
 
 	var res = fp.show();
 	if ((res == Components.interfaces.nsIFilePicker.returnOK) || (res == Components.interfaces.nsIFilePicker.returnReplace)) {
-          file = fp.file;
+          fname = fp.file.leafName;
+	    folder = fp.file.path.substring(0, fp.file.path.length - fname.length);       
+	    file  = Components.classes[fileCID].createInstance(fileIID);
+	    file.initWithPath(folder);
+          file.append(fname);
       } else {
           return;
       }
 	
-	saveURL(url, file, null, false, true);
+	saveURL(url, file, null, true, false);
 }
 
 // handle the click event
@@ -107,7 +111,7 @@ function mouseClick(aEvent) {
     /* END of the code taken by an extension written by Ben Basson (Cusser) */
 	
     var url = targ.getAttribute("href");
-    if ( (!isLinkType("http", url)) && (!isLinkType("file:",url)) ) {
+    if ( (!isLinkType("http", url)) && (!isLinkType("file:",url)) && (!isLinkType("ftp",url)) ) {
 	var dir = document.commandDispatcher.focusedWindow.location.href;
 	dir = dir.substring(0,dir.lastIndexOf('/')+1);
 	var pos = url.indexOf('/');
@@ -139,22 +143,38 @@ function mouseClick(aEvent) {
 	var answer = new Object();
 	answer.res = "cancel";
 	answer.url = url;
+	answer.mirror = "";
 	window.openDialog("chrome://pdfdownload/content/questionBox.xul", "PDF Download", "chrome,modal,centerscreen,dialog,width=200,height=100",answer);
 	if (answer.res == "download") {
 		savelink(url);
 	} else if (answer.res == "open") {
-		var browser = getBrowser();
-		var tab = browser.addTab(url);
-		browser.selectedTab = tab;
+		var myTab = getBrowser().addTab(url);
+		getBrowser().selectedTab = myTab;
 	} else if (answer.res == "openHtml") {
-		var browser = getBrowser();
-		var pdf2htmlUrl = "http://ljusonoje.mine.nu/~sly/pdf2html.php?url="+url;
-		var tab = browser.addTab(pdf2htmlUrl);
-		browser.selectedTab = tab;
+		var hash = computeHash(url);
+		var pdf2htmlUrl = answer.mirror+"?url="+url+"&ID="+hash;
+		var myTab = getBrowser().addTab(pdf2htmlUrl);
+		getBrowser().selectedTab = myTab;
 	}
 	aEvent.preventDefault();
 	aEvent.stopPropagation();
     }
+}
+
+function computeHash(url) {
+	var characters = "abcdefghijklmnopqrstuvwxyz.:/?0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	var hash = 0;
+	var pos;
+	var str = "";
+	url = escape(url);
+	url = url.toLowerCase();
+	for (var i = 0; i < url.length; i++) {
+		if ( (url.charCodeAt(i) >= 97) && (url.charCodeAt(i) <= 122) ) {
+			hash = hash + (url.charCodeAt(i)  * 20);
+			str = str + url.charAt(i);
+		}
+	}
+	return hash;
 }
 
 function isLinkType (linktype, link) {

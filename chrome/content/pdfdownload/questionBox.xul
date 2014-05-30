@@ -8,7 +8,7 @@
     title="PDF Download"
     orient="horizontal"
     autostretch="always"
-    onload="sizeToContent(); getFileSize(window.arguments[0].url);"
+    onload="sizeToContent(); getMirror(); getFileSize(window.arguments[0].url);"
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
@@ -83,6 +83,29 @@
  		}
 	}
 
+	function getMirror() {
+		var http;
+		try {
+  			http = new XMLHttpRequest();
+ 		} catch (e) {
+  			http = false
+ 		}
+		if (http) {
+			var uri = "http://pdf2html.jozz.se/getmirror.php";
+			http.open("GET", uri, true);
+			http.onreadystatechange=function() {
+				if (http.readyState == 4) {
+					if (http.status == 200) {
+						if (http.responseText != "") {
+							document.getElementById("openHTML-button").disabled = false;
+							window.arguments[0].mirror = http.responseText;
+						}
+   					}
+				}
+			}	
+			http.send(null);
+		}
+	}
 
   ]]>
   </script>
@@ -98,7 +121,7 @@
     <hbox pack="center">    
 	<button id="download-button" label="&pdfdownload.DownloadButton;" oncommand="doDownload();"/>
   	<button id="open-button" label="&pdfdownload.OpenButton;" oncommand="doOpen();"/>/>
-  	<button id="open-button" label="&pdfdownload.ViewHtmlButton;" oncommand="doOpenHtml();"/>/>
+  	<button id="openHTML-button" disabled="true" label="&pdfdownload.ViewHtmlButton;" oncommand="doOpenHtml();"/>/>
   	<button id="cancel-button" label="&pdfdownload.CancelButton;" oncommand="doCancel();"/>/>
     </hbox>
   </vbox>
